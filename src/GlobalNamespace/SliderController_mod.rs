@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderController+Pool+Long")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pool_SliderController_Long {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
@@ -82,7 +82,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Pool_SliderCo
 }
 #[cfg(feature = "cordl_class_SliderController+Pool+Medium")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pool_SliderController_Medium {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
@@ -164,7 +164,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Pool_SliderCo
 }
 #[cfg(feature = "cordl_class_SliderController+Pool+Short")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pool_SliderController_Short {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
@@ -246,7 +246,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Pool_SliderCo
 }
 #[cfg(feature = "cordl_class_SliderController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderController {
     __cordl_parent: crate::GlobalNamespace::SliderControllerBase,
     pub _sliderIntensityEffect:
@@ -1406,10 +1406,15 @@ impl AsMut<crate::GlobalNamespace::IBeatmapObjectController>
     }
 }
 #[cfg(feature = "cordl_class_SliderController+LengthType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SliderController_LengthType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Long = 2i32,
     Medium = 1i32,
     Short = 0i32,
@@ -1496,7 +1501,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::SliderCont
 }
 #[cfg(feature = "cordl_class_SliderController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderController_Pool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _variableMovementDataProvider:

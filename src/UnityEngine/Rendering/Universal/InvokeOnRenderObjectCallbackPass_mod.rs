@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+InvokeOnRenderObjectCallbackPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InvokeOnRenderObjectCallbackPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
 }
@@ -164,7 +164,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+InvokeOnRenderObjectCallbackPass+PassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InvokeOnRenderObjectCallbackPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub colorTarget: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,

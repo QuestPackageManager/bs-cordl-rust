@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValuePropertyBag_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StyleValuePropertyBag_2<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -136,7 +136,7 @@ impl<TContainer: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Typ
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValuePropertyBag_2+KeywordProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StyleValuePropertyBag_2_KeywordProperty<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -411,7 +411,7 @@ impl<TContainer: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Typ
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValuePropertyBag_2+ValueProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StyleValuePropertyBag_2_ValueProperty<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PyramidBloomMainEffectSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PyramidBloomMainEffectSO {
     __cordl_parent: crate::GlobalNamespace::MainEffectSO,
     pub _bloomRenderer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PyramidBloomRendererSO>,

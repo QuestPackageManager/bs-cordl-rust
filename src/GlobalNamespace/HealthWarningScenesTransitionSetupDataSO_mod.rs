@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HealthWarningScenesTransitionSetupDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HealthWarningScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
 }

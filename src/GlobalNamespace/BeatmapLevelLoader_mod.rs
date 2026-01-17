@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapLevelLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelDownloadingUpdateEvent: quest_hook::libil2cpp::Gc<
@@ -633,7 +633,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapLevelL
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelLoader_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maxCachedBeatmapLevels: i32,
@@ -716,7 +716,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelL
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapLevelLoader_LevelDownloadingUpdate {
     pub levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -862,10 +865,15 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Completed = 2i32,
     Downloading = 1i32,
     PreparingToDownload = 0i32,

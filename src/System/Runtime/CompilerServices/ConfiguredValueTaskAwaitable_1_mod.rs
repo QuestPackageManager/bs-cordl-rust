@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ConfiguredValueTaskAwaitable_1<TResult: quest_hook::libil2cpp::Type> {
     pub _value: crate::System::Threading::Tasks::ValueTask_1<TResult>,
@@ -197,7 +200,10 @@ impl<TResult: quest_hook::libil2cpp::Type>
 #[cfg(
     feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable_1+ConfiguredValueTaskAwaiter"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ConfiguredValueTaskAwaitable_1_ConfiguredValueTaskAwaiter<
     TResult: quest_hook::libil2cpp::Type,

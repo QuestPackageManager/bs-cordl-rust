@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AlwaysVisibleQuad")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AlwaysVisibleQuad {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,

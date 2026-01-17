@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OSCE+Web+REST")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct REST {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpClientHandler>,

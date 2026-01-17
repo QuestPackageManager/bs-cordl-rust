@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameplayCoreInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayCoreInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _beatLineManagerPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLineManager>,

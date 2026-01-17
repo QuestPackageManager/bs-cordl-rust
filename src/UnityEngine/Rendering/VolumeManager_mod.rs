@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+VolumeManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VolumeManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack_k__BackingField:

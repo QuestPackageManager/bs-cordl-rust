@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapCharacteristicCollectionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCharacteristicCollectionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _beatmapCharacteristics: quest_hook::libil2cpp::Gc<

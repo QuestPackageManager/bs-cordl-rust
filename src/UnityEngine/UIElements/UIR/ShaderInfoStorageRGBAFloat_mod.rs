@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBAFloat")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderInfoStorageRGBAFloat {
     __cordl_parent:
         crate::UnityEngine::UIElements::UIR::ShaderInfoStorage_1<crate::UnityEngine::Color>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+ManagedInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ManagedInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Department: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

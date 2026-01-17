@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeListConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeListConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
     pub _types: quest_hook::libil2cpp::Gc<

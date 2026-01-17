@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+ColorBoostEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorBoostEventData {
     __cordl_parent: crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem,
     pub o: bool,

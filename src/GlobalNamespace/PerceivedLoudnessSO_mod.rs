@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PerceivedLoudnessSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PerceivedLoudnessSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _perceivedLoudnessPerLevel: quest_hook::libil2cpp::Gc<
@@ -245,7 +245,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerceivedLoud
 }
 #[cfg(feature = "cordl_class_PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

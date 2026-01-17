@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+FtpDataStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FtpDataStream {
     __cordl_parent: crate::System::IO::Stream,
     pub _request: quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>,

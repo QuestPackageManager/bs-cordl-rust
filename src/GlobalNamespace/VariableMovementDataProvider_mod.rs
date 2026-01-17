@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VariableMovementDataProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VariableMovementDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _wasUpdatedThisFrame_k__BackingField: bool,
@@ -621,7 +621,10 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::VariableMovem
     }
 }
 #[cfg(feature = "cordl_class_VariableMovementDataProvider+InterpolationData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VariableMovementDataProvider_InterpolationData {
     pub _fromValue: f32,

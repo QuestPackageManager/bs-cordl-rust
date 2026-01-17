@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DroneHover")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DroneHover {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _hoverAreaPerAxis: crate::UnityEngine::Vector3,
@@ -207,7 +207,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DroneHover {
 }
 #[cfg(feature = "cordl_class_DroneHover+SineLayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DroneHover_SineLayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub multiplier: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObstacleData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleData {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
     pub _endBeat_k__BackingField: f32,

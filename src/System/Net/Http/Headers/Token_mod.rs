@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Token")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Token {
     pub _cordl_type: crate::System::Net::Http::Headers::Token_Type,
@@ -284,10 +287,15 @@ impl crate::System::Net::Http::Headers::Token {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Token+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Token_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     End = 1i32,
     Error = 0i32,
     OpenParens = 9i32,

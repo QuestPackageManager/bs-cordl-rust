@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PosesRecordingInfoSaveData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PosesRecordingInfoSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -253,7 +253,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PosesRecordin
 }
 #[cfg(feature = "cordl_class_PosesRecordingInfoSaveData+ExternalCameraCalibrationSaveData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PosesRecordingInfoSaveData_ExternalCameraCalibrationSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _fieldOfVision: f32,

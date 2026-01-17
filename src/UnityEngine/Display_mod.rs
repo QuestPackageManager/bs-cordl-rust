@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Display")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Display {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nativeDisplay: crate::System::IntPtr,
@@ -419,7 +419,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Display {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Display+DisplaysUpdatedDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Display_DisplaysUpdatedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

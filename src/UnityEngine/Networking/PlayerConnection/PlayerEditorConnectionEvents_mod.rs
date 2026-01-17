@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerEditorConnectionEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MessageTypeSubscribers: quest_hook::libil2cpp::Gc<
@@ -301,7 +301,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+ConnectionChangeEvent"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerEditorConnectionEvents_ConnectionChangeEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
@@ -395,7 +395,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageEvent"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerEditorConnectionEvents_MessageEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<
@@ -501,7 +501,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerEditorConnectionEvents_MessageTypeSubscribers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_messageTypeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+CLSCompliantAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CLSCompliantAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _compliant: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubjectKeyIdentifierStructure {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
 }

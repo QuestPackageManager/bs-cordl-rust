@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Priority_Queue+FastPriorityQueueNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FastPriorityQueueNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Priority_k__BackingField: f32,

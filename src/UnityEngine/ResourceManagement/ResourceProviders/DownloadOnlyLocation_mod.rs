@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DownloadOnlyLocation {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+DSACryptoServiceProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DSACryptoServiceProvider {
     __cordl_parent: crate::System::Security::Cryptography::DSA,
     pub store: quest_hook::libil2cpp::Gc<crate::Mono::Security::Cryptography::KeyPairPersistence>,

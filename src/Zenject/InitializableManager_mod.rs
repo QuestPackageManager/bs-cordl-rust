@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+InitializableManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InitializableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _initializables: quest_hook::libil2cpp::Gc<
@@ -266,7 +266,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InitializableManager 
 }
 #[cfg(feature = "cordl_class_Zenject+InitializableManager+InitializableInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InitializableManager_InitializableInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Initializable: quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,

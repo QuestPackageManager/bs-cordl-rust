@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpDataValidationException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpDataValidationException {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpException,
 }

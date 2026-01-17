@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayersLobbyPermissionConfigurationNetSerializable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayersLobbyPermissionConfigurationNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _playersPermission: quest_hook::libil2cpp::Gc<

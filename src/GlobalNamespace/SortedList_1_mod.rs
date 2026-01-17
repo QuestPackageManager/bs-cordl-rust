@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SortedList_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_1<TBase: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::SortedList_2<TBase, TBase>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,

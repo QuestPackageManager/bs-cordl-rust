@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+DatatypeImplementation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DatatypeImplementation {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaDatatype,
     pub variety: crate::System::Xml::Schema::XmlSchemaDatatypeVariety,
@@ -1302,7 +1302,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::DatatypeI
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DatatypeImplementation_SchemaDatatypeMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

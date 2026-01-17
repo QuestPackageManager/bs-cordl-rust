@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+TripleDES")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TripleDES {
     __cordl_parent: crate::System::Security::Cryptography::SymmetricAlgorithm,
 }

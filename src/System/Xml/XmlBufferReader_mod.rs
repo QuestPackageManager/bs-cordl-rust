@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlBufferReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBufferReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryReader>,

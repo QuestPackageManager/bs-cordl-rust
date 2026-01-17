@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BindableElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindableElement {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub _binding_k__BackingField:
@@ -158,7 +158,7 @@ impl AsMut<crate::UnityEngine::UIElements::IBindable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BindableElement+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindableElement_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BindableElement>,
@@ -246,7 +246,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BindableElement+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindableElement_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_PropertyPath:

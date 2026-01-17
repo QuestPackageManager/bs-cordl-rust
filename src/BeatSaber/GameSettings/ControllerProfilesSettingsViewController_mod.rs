@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesSettingsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ControllerProfilesSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _profilesDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FileSystemFileStorage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemFileStorage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _persistentDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -358,7 +358,7 @@ impl AsMut<crate::GlobalNamespace::IFileStorage> for crate::GlobalNamespace::Fil
 }
 #[cfg(feature = "cordl_class_FileSystemFileStorage+DeleteFileCommand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemFileStorage_DeleteFileCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -471,7 +471,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_FileSystemFileStorage+FileExistsCommand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemFileStorage_FileExistsCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<bool>,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -581,7 +581,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_FileSystemFileStorage+LoadFileCommand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemFileStorage_LoadFileCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -702,7 +702,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_FileSystemFileStorage+SaveFileCommand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemFileStorage_SaveFileCommand {
     __cordl_parent: crate::GlobalNamespace::SyncBackgroundCommand,
     pub _filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

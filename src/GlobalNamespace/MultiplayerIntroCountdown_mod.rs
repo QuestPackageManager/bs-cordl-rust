@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerIntroCountdown")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerIntroCountdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _textAppearDuration: f32,

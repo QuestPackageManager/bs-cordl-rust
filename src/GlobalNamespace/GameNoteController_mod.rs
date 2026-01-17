@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameNoteController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameNoteController {
     __cordl_parent: crate::GlobalNamespace::NoteController,
     pub _bigCuttableBySaberList: quest_hook::libil2cpp::Gc<
@@ -638,7 +638,7 @@ impl AsMut<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
 }
 #[cfg(feature = "cordl_class_GameNoteController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameNoteController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,

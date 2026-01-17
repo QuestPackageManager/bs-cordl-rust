@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainSettingsMenuViewControllersInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainSettingsMenuViewControllersInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _defaultSettingsMenuViewController:

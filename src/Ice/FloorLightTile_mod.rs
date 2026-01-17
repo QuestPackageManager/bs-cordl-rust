@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Ice+FloorLightTile")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloorLightTile {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _colorSetter:
@@ -234,7 +234,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightTile {
 }
 #[cfg(feature = "cordl_class_Ice+FloorLightTile+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloorLightTile_Pool {
     __cordl_parent:
         crate::Zenject::MonoMemoryPool_1<quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>>,

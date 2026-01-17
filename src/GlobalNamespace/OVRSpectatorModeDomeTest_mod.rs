@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSpectatorModeDomeTest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSpectatorModeDomeTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub inited: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+FreeFunctionAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FreeFunctionAttribute {
     __cordl_parent: crate::UnityEngine::Bindings::NativeMethodAttribute,
 }

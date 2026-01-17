@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnHeaderColumn {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_ContentContainer:

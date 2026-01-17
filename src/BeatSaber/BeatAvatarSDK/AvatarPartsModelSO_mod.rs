@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPartsModelSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarPartsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _headTops: quest_hook::libil2cpp::Gc<

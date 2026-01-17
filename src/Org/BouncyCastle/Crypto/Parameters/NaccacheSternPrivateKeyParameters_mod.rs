@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternPrivateKeyParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NaccacheSternPrivateKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters,
     pub phiN: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,

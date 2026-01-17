@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanDouble"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LessThanInstruction_LessThanDouble {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LessThanInstruction,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+BaseRenderGraphPass_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseRenderGraphPass_2<
     PassData: quest_hook::libil2cpp::Type,
     TRenderGraphContext: quest_hook::libil2cpp::Type,

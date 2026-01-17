@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -110,7 +110,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     pub FilePathsData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

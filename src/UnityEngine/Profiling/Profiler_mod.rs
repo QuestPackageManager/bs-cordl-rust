@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Profiling+Profiler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Profiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

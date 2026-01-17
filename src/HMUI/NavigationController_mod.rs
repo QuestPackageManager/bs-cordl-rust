@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+NavigationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NavigationController {
     __cordl_parent: crate::HMUI::ContainerViewController,
     pub _orientation: crate::HMUI::NavigationController_Orientation,
@@ -309,10 +309,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NavigationController {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+NavigationController+Alignment")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NavigationController_Alignment {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Beginning = 0i32,
     End = 2i32,
     Middle = 1i32,
@@ -392,10 +397,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::NavigationController_
     }
 }
 #[cfg(feature = "cordl_class_HMUI+NavigationController+Orientation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NavigationController_Orientation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 0i32,
     Vertical = 1i32,
 }

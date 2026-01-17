@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlatformLeaderboardViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformLeaderboardViewController {
     __cordl_parent: crate::GlobalNamespace::LeaderboardViewController,
     pub _leaderboardTableView:

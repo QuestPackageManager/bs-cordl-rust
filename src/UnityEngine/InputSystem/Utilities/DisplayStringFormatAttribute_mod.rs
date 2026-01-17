@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisplayStringFormatAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _formatString_k__BackingField:

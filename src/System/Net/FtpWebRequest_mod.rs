@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+FtpWebRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FtpWebRequest {
     __cordl_parent: crate::System::Net::WebRequest,
     pub _syncObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1313,10 +1313,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpWebRequest {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+FtpWebRequest+RequestStage")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FtpWebRequest_RequestStage {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CheckForError = 0i32,
     ReadReady = 3i32,
     ReleaseConnection = 4i32,

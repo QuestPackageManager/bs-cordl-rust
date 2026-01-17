@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XInput+XInputController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XInputController {
     __cordl_parent: crate::UnityEngine::InputSystem::Gamepad,
     pub _menu_k__BackingField:
@@ -297,7 +297,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XInputController_Capabilities {
     pub _cordl_type: crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType,
@@ -403,10 +406,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
 impl crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XInput+XInputController+DeviceFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XInputController_DeviceFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ForceFeedbackSupported = 1i32,
     NoNavigation = 16i32,
     PluginModulesSupported = 8i32,
@@ -498,10 +506,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XInput+XInputController+DeviceSubType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XInputController_DeviceSubType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ArcadePad = 19i32,
     ArcadeStick = 3i32,
     DancePad = 5i32,
@@ -599,10 +612,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XInput+XInputController+DeviceType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XInputController_DeviceType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Gamepad = 0i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XInput+XInputController+DeviceType")]

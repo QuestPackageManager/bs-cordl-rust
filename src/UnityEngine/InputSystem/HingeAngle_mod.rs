@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HingeAngle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HingeAngle {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
     pub _angle_k__BackingField:

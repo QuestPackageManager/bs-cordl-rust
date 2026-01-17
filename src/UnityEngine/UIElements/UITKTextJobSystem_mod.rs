@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextJobSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UITKTextJobSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub textJobDatasHandle: crate::System::Runtime::InteropServices::GCHandle,
@@ -346,7 +346,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UITKT
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextJobSystem+GenerateTextJobData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UITKTextJobSystem_GenerateTextJobData {
     pub managedJobDataHandle: crate::System::Runtime::InteropServices::GCHandle,
@@ -492,7 +495,7 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextJobSystem+ManagedJobData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UITKTextJobSystem_ManagedJobData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub visualElement: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
@@ -614,7 +617,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextJobSystem+PrepareTextJobData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UITKTextJobSystem_PrepareTextJobData {
     pub managedJobDataHandle: crate::System::Runtime::InteropServices::GCHandle,

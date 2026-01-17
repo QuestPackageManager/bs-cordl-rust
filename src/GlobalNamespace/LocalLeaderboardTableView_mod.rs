@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LocalLeaderboardTableView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalLeaderboardTableView {
     __cordl_parent: crate::GlobalNamespace::LeaderboardTableView,
 }

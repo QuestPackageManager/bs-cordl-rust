@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnListViewController {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListViewController,
     pub m_ColumnController:

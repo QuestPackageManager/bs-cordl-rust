@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BSUpsertLeaderboardEntryModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _XocBeatGamesBeatmapLeaderboardEntryUpsert_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -153,7 +153,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertLeaderboardEntryModel+XocBeatGamesBeatmapLeaderboardEntryUpsertModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BSUpsertLeaderboardEntryModel_XocBeatGamesBeatmapLeaderboardEntryUpsertModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _ClientMutationId_k__BackingField:

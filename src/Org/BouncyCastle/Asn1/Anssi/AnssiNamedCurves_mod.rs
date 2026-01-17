@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnssiNamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -359,7 +359,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::Anssi
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Anssi+AnssiNamedCurves+Frp256v1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnssiNamedCurves_Frp256v1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }

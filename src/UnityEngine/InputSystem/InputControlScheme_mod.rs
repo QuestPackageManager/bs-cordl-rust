@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme+DeviceRequirement+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DeviceRequirement_InputControlScheme_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     Optional = 1i32,
     Or = 2i32,
@@ -92,7 +97,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlScheme {
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -772,7 +780,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputCon
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlScheme_DeviceRequirement {
     pub m_ControlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1235,7 +1246,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme+MatchResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlScheme_MatchResult {
     pub m_Result: crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result,
@@ -1640,7 +1654,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlScheme_SchemeJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1883,7 +1900,10 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MatchResult_InputControlScheme_Enumerator {
     pub m_Index: i32,
@@ -2172,7 +2192,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MatchResult_InputControlScheme_Match {
     pub m_RequirementIndex: i32,
@@ -2408,10 +2431,15 @@ impl crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MatchResult_InputControlScheme_Result {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllSatisfied = 0i32,
     MissingOptional = 2i32,
     MissingRequired = 1i32,
@@ -2501,7 +2529,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SchemeJson_InputControlScheme_DeviceJson {
     pub devicePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

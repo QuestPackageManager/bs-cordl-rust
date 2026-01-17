@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SceneRenderPipeline")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneRenderPipeline {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

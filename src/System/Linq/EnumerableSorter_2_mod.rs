@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+EnumerableSorter_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumerableSorter_2<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

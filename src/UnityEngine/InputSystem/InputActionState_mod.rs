@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BindingState_InputActionState_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ChainsWithNext = 1i32,
     Composite = 4i32,
     EndOfChain = 2i32,
@@ -96,7 +101,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputActionState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maps: quest_hook::libil2cpp::Gc<
@@ -3450,7 +3455,10 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionState_ActionMapIndices {
     pub actionStartIndex: i32,
@@ -3565,7 +3573,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+ActionMapIndices")]
 impl crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+BindingState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionState_BindingState {
     padding: quest_hook::libil2cpp::ValueTypePadding<32usize>,
@@ -4520,7 +4531,10 @@ impl crate::UnityEngine::InputSystem::InputActionState_BindingState {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+GlobalState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionState_GlobalState {
     pub globalList: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
@@ -4639,7 +4653,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]
 impl crate::UnityEngine::InputSystem::InputActionState_GlobalState {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionState_InteractionState {
     padding: quest_hook::libil2cpp::ValueTypePadding<48usize>,
@@ -5186,7 +5203,10 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionState_TriggerState {
     padding: quest_hook::libil2cpp::ValueTypePadding<56usize>,
@@ -6327,7 +6347,10 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionState_UnmanagedMemory {
     pub basePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -6621,10 +6644,15 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InteractionState_InputActionState_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     TimerRunning = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
@@ -6712,10 +6740,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TriggerState_InputActionState_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Button = 32i32,
     HasMultipleConcurrentActuations = 8i32,
     HaveMagnitude = 1i32,

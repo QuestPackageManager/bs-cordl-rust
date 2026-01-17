@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+Task")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Task {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_taskId: i32,
@@ -4249,7 +4249,7 @@ impl AsMut<crate::System::Threading::IThreadPoolWorkItem>
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+Task+ContingentProperties")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Task_ContingentProperties {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_capturedContext: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
@@ -4389,7 +4389,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+Task+SetOnInvokeMres")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Task_SetOnInvokeMres {
     __cordl_parent: crate::System::Threading::ManualResetEventSlim,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentOverrideSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _overrideEnvironmentsToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
@@ -265,7 +265,7 @@ impl AsMut<crate::GlobalNamespace::IRefreshable>
 }
 #[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController+Elements")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentOverrideSettingsPanelController_Elements {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub label: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

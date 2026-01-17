@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PreviousColorPanelController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PreviousColorPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _graphics: quest_hook::libil2cpp::Gc<

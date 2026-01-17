@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlSqlBinaryReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSqlBinaryReader {
     __cordl_parent: crate::System::Xml::XmlReader,
     pub inStrm: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -3299,7 +3299,10 @@ impl AsMut<crate::System::Xml::IXmlNamespaceResolver> for crate::System::Xml::Xm
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlSqlBinaryReader+AttrInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlSqlBinaryReader_AttrInfo {
     pub name: crate::System::Xml::XmlSqlBinaryReader_QName,
@@ -3605,7 +3608,10 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlSqlBinaryReader+ElemInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlSqlBinaryReader_ElemInfo {
     pub name: crate::System::Xml::XmlSqlBinaryReader_QName,
@@ -3762,7 +3768,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSqlBinaryReader_NamespaceDecl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3880,7 +3886,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlSqlBinaryReade
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlSqlBinaryReader+NestedBinXml")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSqlBinaryReader_NestedBinXml {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub symbolTables: crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
@@ -3975,7 +3981,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlSqlBinaryReade
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlSqlBinaryReader+QName")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlSqlBinaryReader_QName {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4351,10 +4360,15 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlSqlBinaryReader+ScanState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlSqlBinaryReader_ScanState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Attr = 2i32,
     AttrVal = 3i32,
     AttrValPseudoValue = 4i32,
@@ -4440,7 +4454,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlSqlBinaryRe
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlSqlBinaryReader+SymbolTables")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlSqlBinaryReader_SymbolTables {
     pub symtable: quest_hook::libil2cpp::Gc<

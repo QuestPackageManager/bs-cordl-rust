@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityWebRequestOperation {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,

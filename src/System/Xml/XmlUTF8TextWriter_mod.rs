@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlUTF8TextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlUTF8TextWriter {
     __cordl_parent: crate::System::Xml::XmlBaseWriter,
     pub writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlUTF8NodeWriter>,

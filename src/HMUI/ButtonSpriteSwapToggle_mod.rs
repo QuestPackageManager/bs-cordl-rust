@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ButtonSpriteSwapToggle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonSpriteSwapToggle {
     __cordl_parent: crate::HMUI::ButtonSpriteSwap,
     pub _resetToggleOnEnable: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NumericConvertInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _from: crate::System::TypeCode,

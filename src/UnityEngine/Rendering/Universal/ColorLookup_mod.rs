@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ColorLookup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorLookup {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::TextureParameter>,

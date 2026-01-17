@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByte"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NotEqualInstruction_NotEqualSByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NotEqualInstruction,
 }

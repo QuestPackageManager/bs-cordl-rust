@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TubeBloomPrePassLightWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TubeBloomPrePassLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _tubeBloomPrePassLight:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderIntensityEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderIntensityEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _longSliderHeadIntensity: f32,
@@ -403,7 +403,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderIntensi
 }
 #[cfg(feature = "cordl_class_SliderIntensityEffect+FadeElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderIntensityEffect_FadeElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub duration: f32,
@@ -512,7 +512,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_SliderIntensityEffect+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderIntensityEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sliderColorIntensity: f32,
@@ -603,7 +603,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderIntensi
 }
 #[cfg(feature = "cordl_class_SliderIntensityEffect+IntensityCalculationDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderIntensityEffect_IntensityCalculationDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtlsReliableHandshake {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRecordLayer:
@@ -639,7 +639,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Message")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtlsReliableHandshake_Message {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mMessageSeq: i32,
@@ -804,7 +804,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+RecordLayerBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtlsReliableHandshake_RecordLayerBuffer {
     __cordl_parent: crate::System::IO::MemoryStream,
 }
@@ -920,7 +920,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsReliableHandshake+Retransmit")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtlsReliableHandshake_Retransmit {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mOuter:

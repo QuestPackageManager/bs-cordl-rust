@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ParticleSystemEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightColor0: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,

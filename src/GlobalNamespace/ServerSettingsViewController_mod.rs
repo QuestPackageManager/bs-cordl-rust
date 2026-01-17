@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ServerSettingsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServerSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _enabled: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+RegisteredWaitHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RegisteredWaitHandle {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _waitObject: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,

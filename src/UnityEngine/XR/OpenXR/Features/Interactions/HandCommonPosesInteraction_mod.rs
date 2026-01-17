@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+HandCommonPosesInteraction"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HandCommonPosesInteraction {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature,
 }
@@ -314,7 +314,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+HandCommonPosesInteraction+HandInteractionPoses"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HandCommonPosesInteraction_HandInteractionPoses {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Input::OpenXRDevice,
     pub _devicePose_k__BackingField:

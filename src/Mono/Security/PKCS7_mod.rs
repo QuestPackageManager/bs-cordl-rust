@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+PKCS7")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS7 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -59,7 +59,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7 {
 }
 #[cfg(feature = "cordl_class_Mono+Security+PKCS7+ContentInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS7_ContentInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub contentType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -399,7 +399,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_ContentI
 }
 #[cfg(feature = "cordl_class_Mono+Security+PKCS7+EncryptedData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS7_EncryptedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: u8,
@@ -574,7 +574,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_Encrypte
 }
 #[cfg(feature = "cordl_class_Mono+Security+PKCS7+SignedData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS7_SignedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: u8,
@@ -805,7 +805,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_SignedDa
 }
 #[cfg(feature = "cordl_class_Mono+Security+PKCS7+SignerInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS7_SignerInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: u8,

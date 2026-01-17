@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+NetConnectRequestPacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetConnectRequestPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ConnectionTime: i64,

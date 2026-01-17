@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+AssignableOf_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssignableOf_2<TBase: quest_hook::libil2cpp::Type, TDerived: quest_hook::libil2cpp::Type>
 {
     __cordl_parent: crate::OculusStudios::Platform::Core::AssignableOf_1<TBase>,

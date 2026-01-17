@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Mesh")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Mesh {
     __cordl_parent: crate::UnityEngine::Object,
 }
@@ -13014,7 +13014,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Mesh {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Mesh_MeshData {
     pub m_Ptr: crate::System::IntPtr,
@@ -13615,7 +13618,10 @@ impl crate::UnityEngine::Mesh_MeshData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Mesh+MeshDataArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Mesh_MeshDataArray {
     pub m_Ptrs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

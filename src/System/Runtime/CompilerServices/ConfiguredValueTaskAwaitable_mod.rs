@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ConfiguredValueTaskAwaitable {
     pub _value: crate::System::Threading::Tasks::ValueTask,
@@ -164,7 +167,10 @@ impl crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable {
 #[cfg(
     feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredValueTaskAwaitable+ConfiguredValueTaskAwaiter"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ConfiguredValueTaskAwaitable_ConfiguredValueTaskAwaiter {
     pub _value: crate::System::Threading::Tasks::ValueTask,

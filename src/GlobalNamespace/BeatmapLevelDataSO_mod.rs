@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapLevelDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _version: i32,
@@ -839,7 +839,7 @@ impl AsMut<crate::GlobalNamespace::IBeatmapLevelData>
 }
 #[cfg(feature = "cordl_class_BeatmapLevelDataSO+DifficultyBeatmap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelDataSO_DifficultyBeatmap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _difficulty: crate::GlobalNamespace::BeatmapDifficulty,
@@ -1244,7 +1244,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatmapLevelDataSO+DifficultyBeatmapSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelDataSO_DifficultyBeatmapSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapCharacteristicSerializedName:

@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Priority_Queue+IFixedSizePriorityQueue_2")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IFixedSizePriorityQueue_2<
     TItem: quest_hook::libil2cpp::Type,

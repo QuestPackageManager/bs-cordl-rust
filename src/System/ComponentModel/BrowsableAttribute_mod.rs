@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+BrowsableAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BrowsableAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Browsable_k__BackingField: bool,

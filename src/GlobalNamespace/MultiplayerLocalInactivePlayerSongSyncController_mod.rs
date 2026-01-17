@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalInactivePlayerSongSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CrossFadeAudioSource>,
@@ -441,7 +441,7 @@ impl AsMut<crate::GlobalNamespace::IStartSeekSongController>
 }
 #[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalInactivePlayerSongSyncController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,

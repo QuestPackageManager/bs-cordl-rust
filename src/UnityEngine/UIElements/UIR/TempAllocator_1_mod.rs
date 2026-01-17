@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempAllocator_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TempAllocator_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ExcessMinCapacity: i32,
@@ -376,7 +376,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TempAllocator_1_Page<T: quest_hook::libil2cpp::Type> {
     pub array: crate::Unity::Collections::NativeArray_1<T>,

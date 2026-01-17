@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Request_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Request_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Oculus::Platform::Request,
     pub callback_: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1_Callback<T>>,

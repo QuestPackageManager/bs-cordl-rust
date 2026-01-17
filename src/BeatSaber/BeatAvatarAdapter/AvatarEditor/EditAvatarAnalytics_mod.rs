@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EditAvatarAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _avatarEditorFlowCoordinator:

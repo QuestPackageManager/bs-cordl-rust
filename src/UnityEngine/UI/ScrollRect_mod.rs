@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScrollRect {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_Content: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -2398,10 +2398,15 @@ impl AsMut<crate::UnityEngine::UI::ILayoutGroup> for crate::UnityEngine::UI::Scr
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+MovementType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScrollRect_MovementType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Clamped = 2i32,
     Elastic = 1i32,
     Unrestricted = 0i32,
@@ -2482,7 +2487,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::ScrollRect
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScrollRect_ScrollRectEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Vector2>,
 }
@@ -2559,10 +2564,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ScrollRect_Sc
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScrollRect_ScrollbarVisibility {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AutoHide = 1i32,
     AutoHideAndExpandViewport = 2i32,
     Permanent = 0i32,

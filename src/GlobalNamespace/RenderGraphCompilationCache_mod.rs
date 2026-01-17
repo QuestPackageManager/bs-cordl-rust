@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RenderGraphCompilationCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphCompilationCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_HashEntries: quest_hook::libil2cpp::Gc<
@@ -292,7 +292,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RenderGraphCo
     }
 }
 #[cfg(feature = "cordl_class_RenderGraphCompilationCache+HashEntry_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderGraphCompilationCache_HashEntry_1<T: quest_hook::libil2cpp::Type> {
     pub hash: i32,

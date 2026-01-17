@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+ExcludeFromBurstCompatTestingAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExcludeFromBurstCompatTestingAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Reason_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

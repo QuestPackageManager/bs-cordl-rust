@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+AlignCameraToAnchor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AlignCameraToAnchor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _CameraAlignmentAnchor_k__BackingField:

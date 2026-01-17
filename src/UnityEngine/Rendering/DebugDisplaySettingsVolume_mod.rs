@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettingsVolume")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsVolume {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _volumeDebugSettings_k__BackingField:
@@ -226,7 +226,7 @@ impl AsMut<crate::UnityEngine::Rendering::IDebugDisplaySettingsQuery>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettingsVolume+SettingsPanel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsVolume_SettingsPanel {
     __cordl_parent: crate::UnityEngine::Rendering::DebugDisplaySettingsPanel_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::DebugDisplaySettingsVolume>,
@@ -406,7 +406,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettingsVolume+Strings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsVolume_Strings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -460,7 +460,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettingsVolume+Styles")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsVolume_Styles {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -514,7 +514,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettingsVolume+WidgetFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsVolume_WidgetFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -942,7 +942,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettingsVolume+WidgetFactory+VolumeParameterChain"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct WidgetFactory_DebugDisplaySettingsVolume_VolumeParameterChain {
     pub nameAndTooltip: crate::UnityEngine::Rendering::Widget_DebugUI_NameAndTooltip,

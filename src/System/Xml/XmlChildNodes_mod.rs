@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlChildNodes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlChildNodes {
     __cordl_parent: crate::System::Xml::XmlNodeList,
     pub container: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,

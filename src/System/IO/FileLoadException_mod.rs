@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+FileLoadException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileLoadException {
     __cordl_parent: crate::System::IO::IOException,
     pub _FileName_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

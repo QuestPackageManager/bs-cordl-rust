@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+X509+X509Certificate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509Certificate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub decoder: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,

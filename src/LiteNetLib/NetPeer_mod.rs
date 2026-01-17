@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+NetPeer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetPeer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rtt: i32,
@@ -1382,7 +1382,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetPeer {
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NetPeer+IncomingFragments")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetPeer_IncomingFragments {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Fragments: quest_hook::libil2cpp::Gc<

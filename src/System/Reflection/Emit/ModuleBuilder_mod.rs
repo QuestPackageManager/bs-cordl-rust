@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+Emit+ModuleBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ModuleBuilder {
     __cordl_parent: crate::System::Reflection::Module,
 }

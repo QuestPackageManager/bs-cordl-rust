@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataSet {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
     pub _defaultViewManager: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewManager>,

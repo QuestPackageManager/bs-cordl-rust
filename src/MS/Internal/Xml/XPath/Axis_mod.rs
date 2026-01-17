@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Axis")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Axis {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _axisType: crate::MS::Internal::Xml::XPath::Axis_AxisType,
@@ -419,10 +419,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Axis
     }
 }
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Axis+AxisType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Axis_AxisType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Ancestor = 0i32,
     AncestorOrSelf = 1i32,
     Attribute = 2i32,

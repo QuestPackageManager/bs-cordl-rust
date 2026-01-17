@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Update {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update")]
@@ -100,7 +103,10 @@ impl crate::UnityEngine::PlayerLoop::Update {
     pub type ScriptRunDelayedTasks = crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks;
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Update_DirectorUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+DirectorUpdate")]
@@ -200,7 +206,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+DirectorUpdate")]
 impl crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Update_ScriptRunBehaviourUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
@@ -302,7 +311,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunBehaviourUpdate")]
 impl crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Update_ScriptRunDelayedDynamicFrameRate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
@@ -404,7 +416,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Update+ScriptRunDelayedDynamicFrameRate")]
 impl crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Update_ScriptRunDelayedTasks {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Update+ScriptRunDelayedTasks")]

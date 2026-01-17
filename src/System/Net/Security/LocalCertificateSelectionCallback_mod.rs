@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Security+LocalCertificateSelectionCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalCertificateSelectionCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

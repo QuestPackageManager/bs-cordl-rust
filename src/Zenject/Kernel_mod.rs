@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+Kernel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Kernel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tickableManager: quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,

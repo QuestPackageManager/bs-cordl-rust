@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeConvertorAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTypeConvertorAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Method_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchPlusControllerProfile"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MetaQuestTouchPlusControllerProfile {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature,
 }
@@ -241,7 +241,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+MetaQuestTouchPlusControllerProfile+QuestTouchPlusController"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MetaQuestTouchPlusControllerProfile_QuestTouchPlusController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     pub _thumbstick_k__BackingField:

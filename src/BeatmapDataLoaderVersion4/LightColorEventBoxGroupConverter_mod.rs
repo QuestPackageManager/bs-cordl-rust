@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorEventBoxGroupConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightColorEventBoxGroupConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter,
 }

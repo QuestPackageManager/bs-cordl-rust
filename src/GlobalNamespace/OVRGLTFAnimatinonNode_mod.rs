@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRGLTFAnimatinonNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_intputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
@@ -515,7 +515,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRGLTFAnimat
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+InputNodeState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRGLTFAnimatinonNode_InputNodeState {
     pub down: bool,
@@ -621,10 +624,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 impl crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {}
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRGLTFAnimatinonNode_OVRGLTFTransformType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     Rotation = 2i32,
     Scale = 3i32,
@@ -716,10 +724,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+OVRInterpolationType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRGLTFAnimatinonNode_OVRInterpolationType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CUBICSPLINE = 3i32,
     LINEAR = 1i32,
     None = 0i32,
@@ -810,10 +823,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode+ThumbstickDirection")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRGLTFAnimatinonNode_ThumbstickDirection {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     East = 3i32,
     None = 0i32,
     North = 1i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TubeBloomPrePassLightReflectionEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TubeBloomPrePassLightReflectionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _mainTubeBloomPrePassLight: quest_hook::libil2cpp::Gc<
@@ -197,7 +197,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_TubeBloomPrePassLightReflectionEffect+TubeBloomPrePassLightWithHitPoint"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub light: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,

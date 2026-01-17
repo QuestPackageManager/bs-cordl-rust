@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+NativePassCompiler"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NativePassCompiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub graph: crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativePassCompiler_RenderGraphInputInfo,
@@ -1194,10 +1194,15 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+NativePassCompiler+NativeCompilerProfileId"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NativePassCompiler_NativeCompilerProfileId {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     NRPRGComp_BuildGraph = 2i32,
     NRPRGComp_CullNodes = 3i32,
     NRPRGComp_DetectMemorylessResources = 6i32,
@@ -1306,7 +1311,10 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+NativeRenderPassCompiler+NativePassCompiler+RenderGraphInputInfo"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativePassCompiler_RenderGraphInputInfo {
     pub m_ResourcesForDebugOnly: quest_hook::libil2cpp::Gc<

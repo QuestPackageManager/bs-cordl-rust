@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StyledUITemplates+OverridableBool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OverridableBool {
     __cordl_parent: crate::StyledUITemplates::OverridableData_1<bool>,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Mathematics+math")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct math {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -49215,7 +49215,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Mathematics::math {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Mathematics+math+LongDoubleUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct math_LongDoubleUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
@@ -49309,10 +49312,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
 impl crate::Unity::Mathematics::math_LongDoubleUnion {}
 #[cfg(feature = "cordl_class_Unity+Mathematics+math+RotationOrder")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum math_RotationOrder {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Default = 4u8,
     XYZ = 0u8,
     XZY = 1u8,
@@ -49395,10 +49403,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::math_Ro
     }
 }
 #[cfg(feature = "cordl_class_Unity+Mathematics+math+ShuffleComponent")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum math_ShuffleComponent {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LeftW = 3u8,
     LeftX = 0u8,
     LeftY = 1u8,

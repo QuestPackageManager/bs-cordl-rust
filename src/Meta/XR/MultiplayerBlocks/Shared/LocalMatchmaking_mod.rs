@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+LocalMatchmaking")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalMatchmaking {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub automaticHostOrJoin: bool,

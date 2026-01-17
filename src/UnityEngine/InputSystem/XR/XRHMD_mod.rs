@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRHMD")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRHMD {
     __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
     pub _leftEyePosition_k__BackingField:

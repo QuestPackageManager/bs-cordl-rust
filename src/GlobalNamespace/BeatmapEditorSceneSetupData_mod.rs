@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapEditorSceneSetupData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEditorSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub _levelDirPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

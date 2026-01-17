@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionNodeNameGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionNodeNameGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionNodesManager:

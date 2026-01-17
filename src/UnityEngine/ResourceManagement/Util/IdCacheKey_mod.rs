@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+IdCacheKey")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IdCacheKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_ID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

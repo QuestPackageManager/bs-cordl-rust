@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _InternalIdTransformFunc_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -2845,7 +2845,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::ResourceManagemen
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceManager_CompletedOperation_1<TObject: quest_hook::libil2cpp::Type> {
     __cordl_parent:
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<TObject>,
@@ -3130,7 +3130,10 @@ impl<TObject: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ResourceManager_DeferredCallbackRegisterRequest {
     pub operation: quest_hook::libil2cpp::Gc<
@@ -3249,10 +3252,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest")]
 impl crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {}
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ResourceManager_DiagnosticEventType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AsyncOperationComplete = 3i32,
     AsyncOperationCreate = 1i32,
     AsyncOperationDestroy = 5i32,
@@ -3346,7 +3354,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceManager_InstanceOperation {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

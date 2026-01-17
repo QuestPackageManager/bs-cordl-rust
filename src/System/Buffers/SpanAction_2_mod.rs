@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Buffers+SpanAction_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpanAction_2<T: quest_hook::libil2cpp::Type, TArg: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,

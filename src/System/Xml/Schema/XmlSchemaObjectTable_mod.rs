@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaObjectTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub table: quest_hook::libil2cpp::Gc<
@@ -393,10 +393,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XmlSchema
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlSchemaObjectTable_EnumeratorType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DictionaryEntry = 2i32,
     Keys = 0i32,
     Values = 1i32,
@@ -487,7 +492,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaObjectTable_ValuesCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub entries: quest_hook::libil2cpp::Gc<
@@ -752,7 +757,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaObjectTable_XSODictionaryEnumerator {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator,
 }
@@ -972,7 +977,7 @@ impl AsMut<crate::System::Collections::IEnumerator>
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaObjectTable_XSOEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub entries: quest_hook::libil2cpp::Gc<
@@ -1172,7 +1177,10 @@ impl AsMut<crate::System::Collections::IEnumerator>
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlSchemaObjectTable_XmlSchemaObjectEntry {
     pub qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,

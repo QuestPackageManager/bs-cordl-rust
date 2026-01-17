@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRBounded3D")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRBounded3D {
     pub _Handle_k__BackingField: u64,

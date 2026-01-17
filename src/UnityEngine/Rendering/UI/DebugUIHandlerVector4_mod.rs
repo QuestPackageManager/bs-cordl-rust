@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerVector4")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUIHandlerVector4 {
     __cordl_parent: crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
     pub nameLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,

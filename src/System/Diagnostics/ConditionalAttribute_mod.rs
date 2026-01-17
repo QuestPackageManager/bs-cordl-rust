@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+ConditionalAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ConditionString_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggerDisplayAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebuggerDisplayAttribute {
     __cordl_parent: crate::System::Attribute,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HelpBox {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_HelpBoxMessageType: crate::UnityEngine::UIElements::HelpBoxMessageType,
@@ -278,7 +278,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::HelpB
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HelpBox_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::HelpBox>,
@@ -362,7 +362,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::HelpB
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HelpBox_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_Text:

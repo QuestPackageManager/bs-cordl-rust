@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlLinkedNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlLinkedNode {
     __cordl_parent: crate::System::Xml::XmlNode,
     pub next: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlLinkedNode>,

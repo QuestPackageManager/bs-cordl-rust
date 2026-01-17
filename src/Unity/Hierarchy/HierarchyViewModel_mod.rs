@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyViewModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyViewModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -1214,7 +1214,7 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Hierarchy::HierarchyVie
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyViewModel+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyViewModel_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1295,7 +1295,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyViewModel+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HierarchyViewModel_Enumerator {
     pub m_ViewModel: quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::HierarchyViewModel>,

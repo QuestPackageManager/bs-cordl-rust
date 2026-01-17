@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_month")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Datatype_month {
     __cordl_parent: crate::System::Xml::Schema::Datatype_dateTimeBase,
 }

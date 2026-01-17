@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmakingUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomMatchmakingUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

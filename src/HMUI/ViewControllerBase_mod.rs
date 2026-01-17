@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ViewControllerBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ViewControllerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub didActivateEvent:
@@ -255,7 +255,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewControllerBase {
 }
 #[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidActivateDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ViewControllerBase_DidActivateDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -445,7 +445,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewControllerBase_DidAc
 }
 #[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidDeactivateDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ViewControllerBase_DidDeactivateDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

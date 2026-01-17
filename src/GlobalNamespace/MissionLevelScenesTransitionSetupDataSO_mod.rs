@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionLevelScenesTransitionSetupDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<

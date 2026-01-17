@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationWriterInterpreter {
     __cordl_parent: crate::System::Xml::Serialization::XmlSerializationWriter,
     pub _typeMap: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlMapping>,
@@ -912,7 +912,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationWriterInterpreter_CallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _swi: quest_hook::libil2cpp::Gc<

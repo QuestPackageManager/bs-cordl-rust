@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CryptoApiEntropySourceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRng:
@@ -181,7 +181,7 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::IEntropySourceProvider>
     feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider+CryptoApiEntropySource"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CryptoApiEntropySourceProvider_CryptoApiEntropySource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRng:

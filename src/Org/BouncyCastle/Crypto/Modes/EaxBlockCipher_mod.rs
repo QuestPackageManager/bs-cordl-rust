@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EaxBlockCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Modes::SicBlockCipher>,
@@ -585,10 +585,15 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::Modes::IAeadCipher>
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum EaxBlockCipher_Tag {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     C = 2u8,
     H = 1u8,
     N = 0u8,

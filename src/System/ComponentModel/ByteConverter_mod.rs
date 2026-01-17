@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ByteConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ByteConverter {
     __cordl_parent: crate::System::ComponentModel::BaseNumberConverter,
 }

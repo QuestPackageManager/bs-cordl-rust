@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRGridCube")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRGridCube {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub GridKey: crate::UnityEngine::KeyCode,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapEditorGameplaySceneSetupData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEditorGameplaySceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub data: crate::GlobalNamespace::BeatmapEditorStartTestLevelData,

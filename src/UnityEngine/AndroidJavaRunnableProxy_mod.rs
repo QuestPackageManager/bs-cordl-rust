@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AndroidJavaRunnableProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidJavaRunnableProxy {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
     pub mRunnable: quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaRunnable>,

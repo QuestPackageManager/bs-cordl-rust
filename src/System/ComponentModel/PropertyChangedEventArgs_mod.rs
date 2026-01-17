@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+PropertyChangedEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyChangedEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

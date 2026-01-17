@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MinMaxSlider {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<crate::UnityEngine::Vector2>,
     pub _dragElement_k__BackingField:
@@ -1151,10 +1151,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::MinMa
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+DragState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MinMaxSlider_DragState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MaxThumb = 1i32,
     MiddleThumb = 2i32,
     MinThumb = 0i32,
@@ -1244,7 +1249,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MinMaxSlider_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MinMaxSlider>,
@@ -1332,7 +1337,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MinMaxSlider_UxmlTraits {
     __cordl_parent:
         crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<crate::UnityEngine::Vector2>,

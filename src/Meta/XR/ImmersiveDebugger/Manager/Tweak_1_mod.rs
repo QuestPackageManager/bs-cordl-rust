@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Tweak_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tweak_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::Manager::Tweak,
     pub _getter: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,

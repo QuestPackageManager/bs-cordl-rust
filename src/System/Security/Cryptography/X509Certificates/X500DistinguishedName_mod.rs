@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X500DistinguishedName {
     __cordl_parent: crate::System::Security::Cryptography::AsnEncodedData,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

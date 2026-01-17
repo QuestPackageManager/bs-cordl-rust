@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Touch")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Touch {
     pub m_Finger: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Finger>,
@@ -1245,7 +1248,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Enhanced
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Touch_ExtraDataPerTouchState {
     pub accumulatedDelta: crate::UnityEngine::Vector2,
@@ -1350,7 +1356,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
 impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Touch_FingerAndTouchState {
     pub updateMask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
@@ -1599,7 +1608,10 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Touch_GlobalState {
     pub touchscreens: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<

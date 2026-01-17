@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+RuntimeClipBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeClipBase {
     __cordl_parent: crate::UnityEngine::Timeline::RuntimeElement,
 }

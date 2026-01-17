@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEditor+Analytics+AssetDatabaseRefreshAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetDatabaseRefreshAnalytic {
     __cordl_parent: crate::UnityEngine::Analytics::AnalyticsEventBase,
     pub isV2: bool,

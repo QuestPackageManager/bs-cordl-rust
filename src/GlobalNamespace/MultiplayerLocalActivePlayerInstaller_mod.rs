@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalActivePlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,

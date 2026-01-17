@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Priority_Queue+StablePriorityQueueNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StablePriorityQueueNode {
     __cordl_parent: crate::Priority_Queue::FastPriorityQueueNode,
     pub _InsertionIndex_k__BackingField: i64,

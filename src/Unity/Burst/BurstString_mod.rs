@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstString {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1708,10 +1708,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+CutoffMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BurstString_CutoffMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FractionLength = 2i32,
     TotalLength = 1i32,
     Unique = 0i32,
@@ -1791,7 +1796,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_C
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+FormatOptions")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BurstString_FormatOptions {
     pub Kind: crate::Unity::Burst::BurstString_NumberFormatKind,
@@ -2002,7 +2010,10 @@ impl crate::Unity::Burst::BurstString_FormatOptions {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BurstString_NumberBuffer {
     pub _buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2160,10 +2171,15 @@ impl crate::Unity::Burst::BurstString_NumberBuffer {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberBufferKind")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BurstString_NumberBufferKind {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Float = 1i32,
     Integer = 0i32,
 }
@@ -2242,10 +2258,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_N
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+NumberFormatKind")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum BurstString_NumberFormatKind {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Decimal = 1u8,
     DecimalForceSigned = 2u8,
     General = 0u8,
@@ -2327,7 +2348,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_N
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PreserveAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstString_PreserveAttribute {
     __cordl_parent: crate::System::Attribute,
 }
@@ -2404,10 +2425,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString_Pres
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+PrintFloatFormat")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BurstString_PrintFloatFormat {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Positional = 0i32,
     Scientific = 1i32,
 }
@@ -2486,7 +2512,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::BurstString_P
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BurstString_tBigInt {
     pub m_length: i32,
@@ -2726,7 +2755,10 @@ impl crate::Unity::Burst::BurstString_tBigInt {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion32")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BurstString_tFloatUnion32 {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
@@ -2876,7 +2908,10 @@ impl crate::Unity::Burst::BurstString_tFloatUnion32 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tFloatUnion64")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BurstString_tFloatUnion64 {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
@@ -3026,7 +3061,10 @@ impl crate::Unity::Burst::BurstString_tFloatUnion64 {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstString+tBigInt+_m_blocks_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct tBigInt_BurstString__m_blocks_e__FixedBuffer {
     pub FixedElementField: u32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+ExpressionParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpressionParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _escape: char,
@@ -634,7 +634,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::ExpressionParser
     }
 }
 #[cfg(feature = "cordl_class_System+Data+ExpressionParser+ReservedWords")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ExpressionParser_ReservedWords {
     pub _word: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

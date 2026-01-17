@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderDebugPrintManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderDebugPrintManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_OutputBuffers: quest_hook::libil2cpp::Gc<
@@ -381,10 +381,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Shader
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderDebugPrintManager+DebugValueType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ShaderDebugPrintManager_DebugValueType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     TypeBool = 13i32,
     TypeFloat = 3i32,
     TypeFloat2 = 6i32,
@@ -485,7 +490,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShaderDebugPrintManager+Profiling")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderDebugPrintManager_Profiling {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

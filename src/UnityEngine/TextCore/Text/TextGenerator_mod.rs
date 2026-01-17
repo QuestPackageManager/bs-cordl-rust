@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TextBackingArray: crate::UnityEngine::TextCore::Text::TextBackingContainer,
@@ -1428,7 +1428,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextCore::Text::T
     feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextGenerator_MissingCharacterEventCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1559,7 +1559,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerator+SpecialCharacter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TextGenerator_SpecialCharacter {
     pub character: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,

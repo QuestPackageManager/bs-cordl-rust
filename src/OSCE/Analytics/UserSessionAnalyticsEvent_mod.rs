@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OSCE+Analytics+UserSessionAnalyticsEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UserSessionAnalyticsEvent {
     __cordl_parent: crate::OSCE::Analytics::BaseAnalyticsEvent,
     pub user_id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampToken")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeStampToken {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tsToken: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
@@ -459,7 +459,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Tsp::TimeSt
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampToken+CertID")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeStampToken_CertID {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certID: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ess::EssCertID>,

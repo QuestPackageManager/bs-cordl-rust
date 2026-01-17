@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AdaptiveSfxVolume")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AdaptiveSfxVolume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
@@ -199,7 +199,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AdaptiveSfxVo
 }
 #[cfg(feature = "cordl_class_AdaptiveSfxVolume+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AdaptiveSfxVolume_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub userSettingsVolumeOffset: f32,

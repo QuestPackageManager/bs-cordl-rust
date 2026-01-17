@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+CultureAwareComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CultureAwareComparer {
     __cordl_parent: crate::System::StringComparer,
     pub _compareInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,

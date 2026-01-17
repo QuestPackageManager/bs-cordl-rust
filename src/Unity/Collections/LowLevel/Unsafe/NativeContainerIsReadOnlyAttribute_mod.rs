@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsReadOnlyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NativeContainerIsReadOnlyAttribute {
     __cordl_parent: crate::System::Attribute,
 }

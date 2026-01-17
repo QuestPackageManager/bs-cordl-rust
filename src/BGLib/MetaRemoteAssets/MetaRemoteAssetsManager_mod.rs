@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MetaRemoteAssetsManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _platformStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -526,7 +526,7 @@ impl AsMut<crate::Zenject::IInitializable>
     feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MetaRemoteAssetsManager_AddResourceLocatorInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ResourceLocator: quest_hook::libil2cpp::Gc<

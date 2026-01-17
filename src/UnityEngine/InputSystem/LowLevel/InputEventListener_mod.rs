@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputEventListener {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener")]
@@ -246,7 +249,7 @@ impl AsMut<crate::System::IObservable_1<crate::UnityEngine::InputSystem::LowLeve
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+DisposableObserver"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputEventListener_DisposableObserver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub observer: quest_hook::libil2cpp::Gc<
@@ -375,7 +378,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputEventListener_ObserverState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub observers: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<

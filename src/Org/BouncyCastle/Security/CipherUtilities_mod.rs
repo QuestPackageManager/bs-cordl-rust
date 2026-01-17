@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CipherUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -283,10 +283,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Security::C
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CipherUtilities_CipherAlgorithm {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AES = 0i32,
     ARC4 = 1i32,
     BLOWFISH = 2i32,
@@ -412,10 +417,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CipherUtilities_CipherMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CBC = 2i32,
     CCM = 3i32,
     CFB = 4i32,
@@ -516,10 +526,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CipherUtilities_CipherPadding {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ISO10126D2PADDING = 3i32,
     ISO10126PADDING = 2i32,
     ISO10126_2PADDING = 4i32,

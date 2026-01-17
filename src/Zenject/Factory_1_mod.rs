@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+Factory_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Factory_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::PlaceholderFactory_1<TValue>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BombExecutionRating")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BombExecutionRating {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectExecutionRating,
     pub _rating_k__BackingField: crate::GlobalNamespace::BombExecutionRating_Rating,
@@ -114,10 +114,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombExecution
     }
 }
 #[cfg(feature = "cordl_class_BombExecutionRating+Rating")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BombExecutionRating_Rating {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     NotGood = 1i32,
     OK = 0i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+CustomFormatRangeValuesSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomFormatRangeValuesSlider {
     __cordl_parent: crate::HMUI::RangeValuesTextSlider,
     pub _formatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

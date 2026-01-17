@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlObjectSerializerWriteContextComplex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlObjectSerializerWriteContextComplex {
     __cordl_parent: crate::System::Runtime::Serialization::XmlObjectSerializerWriteContext,
     pub dataContractSurrogate:

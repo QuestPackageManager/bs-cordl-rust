@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerScoreProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerScoreProvider {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreSyncStateManager:
@@ -375,7 +375,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerSc
 }
 #[cfg(feature = "cordl_class_MultiplayerScoreProvider+RankedPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerScoreProvider_RankedPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSyncState: quest_hook::libil2cpp::Gc<

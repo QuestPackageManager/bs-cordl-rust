@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Colocation+AnchorDebugVisual")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnchorDebugVisual {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

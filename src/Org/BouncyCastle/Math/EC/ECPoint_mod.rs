@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECPoint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ECPoint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
@@ -1434,7 +1434,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECPoint+ValidityCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ECPoint_ValidityCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,

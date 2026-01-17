@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HeadObstacleLowPassAudioEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HeadObstacleLowPassAudioEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerHeadAndObstacleInteraction:

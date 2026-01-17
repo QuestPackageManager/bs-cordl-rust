@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+TextUtf8RawTextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextUtf8RawTextWriter {
     __cordl_parent: crate::System::Xml::XmlUtf8RawTextWriter,
 }

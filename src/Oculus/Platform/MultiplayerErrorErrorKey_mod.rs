@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+MultiplayerErrorErrorKey")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MultiplayerErrorErrorKey {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DestinationUnavailable = 1i32,
     DlcRequired = 2i32,
     General = 3i32,

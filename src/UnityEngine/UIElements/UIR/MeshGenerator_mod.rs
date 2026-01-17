@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshGenerator+BackgroundRepeatInstance")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshGenerator_BackgroundRepeatInstance {
     pub rect: crate::UnityEngine::Rect,
@@ -105,7 +108,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+UIR+MeshGenerator+BackgroundRepeatInstance")]
 impl crate::UnityEngine::UIElements::UIR::MeshGenerator_BackgroundRepeatInstance {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshGenerator+BorderParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshGenerator_BorderParams {
     pub rect: crate::UnityEngine::Rect,
@@ -254,7 +260,10 @@ impl crate::UnityEngine::UIElements::UIR::MeshGenerator_BorderParams {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshGenerator+RectangleParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshGenerator_RectangleParams {
     pub rect: crate::UnityEngine::Rect,
@@ -780,7 +789,10 @@ impl crate::UnityEngine::UIElements::UIR::MeshGenerator_RectangleParams {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshGenerator+RepeatRectUV")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshGenerator_RepeatRectUV {
     pub rect: crate::UnityEngine::Rect,
@@ -885,7 +897,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+UIR+MeshGenerator+RepeatRectUV")]
 impl crate::UnityEngine::UIElements::UIR::MeshGenerator_RepeatRectUV {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshGenerator+TessellationJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshGenerator_TessellationJob {
     pub allocator: crate::UnityEngine::UIElements::TempMeshAllocator,
@@ -1189,7 +1204,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshGenerator+TessellationJobParameters")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshGenerator_TessellationJobParameters {
     pub isBorderJob: bool,

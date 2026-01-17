@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+CollectionHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -892,7 +892,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Collections::Collection
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+CollectionHelper+DummyJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CollectionHelper_DummyJob {}
 #[cfg(feature = "cordl_class_Unity+Collections+CollectionHelper+DummyJob")]
@@ -1023,7 +1026,10 @@ impl AsMut<crate::Unity::Jobs::IJob> for crate::Unity::Collections::CollectionHe
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+CollectionHelper+LongDoubleUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CollectionHelper_LongDoubleUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,

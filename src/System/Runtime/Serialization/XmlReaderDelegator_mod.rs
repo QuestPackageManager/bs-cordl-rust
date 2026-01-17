@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlReaderDelegator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlReaderDelegator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ServerPlayerListViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServerPlayerListViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _gameServerPlayersTableView:

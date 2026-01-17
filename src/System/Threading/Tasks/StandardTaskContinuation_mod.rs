@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+StandardTaskContinuation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardTaskContinuation {
     __cordl_parent: crate::System::Threading::Tasks::TaskContinuation,
     pub m_task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

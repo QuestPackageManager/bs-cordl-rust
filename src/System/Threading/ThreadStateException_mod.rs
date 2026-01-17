@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ThreadStateException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadStateException {
     __cordl_parent: crate::System::SystemException,
 }

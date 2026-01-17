@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+SetValueVisitor_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SetValueVisitor_1<TSrcValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Unity::Properties::PathVisitor,
     pub Value: TSrcValue,

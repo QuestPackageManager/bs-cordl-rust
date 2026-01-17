@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StyleVariableResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Matcher: quest_hook::libil2cpp::Gc<
@@ -543,7 +543,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Style
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StyleVariableResolver_ResolveContext {
     pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
@@ -650,10 +653,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
 impl crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableResolver+Result")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum StyleVariableResolver_Result {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Invalid = 1i32,
     NotFound = 2i32,
     Valid = 0i32,

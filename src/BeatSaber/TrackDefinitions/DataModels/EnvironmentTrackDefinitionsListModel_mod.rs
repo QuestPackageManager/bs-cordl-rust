@@ -2,7 +2,7 @@
     feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentTrackDefinitionsListModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _environmentTracksTypeMap: quest_hook::libil2cpp::Gc<

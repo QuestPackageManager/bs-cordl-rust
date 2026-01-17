@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FlyingScoreEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlyingScoreEffect {
     __cordl_parent: crate::GlobalNamespace::FlyingObjectEffect,
     pub _fadeAnimationCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -280,7 +280,7 @@ impl AsMut<crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver>
 }
 #[cfg(feature = "cordl_class_FlyingScoreEffect+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlyingScoreEffect_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingScoreEffect>,

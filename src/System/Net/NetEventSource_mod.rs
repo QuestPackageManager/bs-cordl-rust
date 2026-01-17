@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetEventSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetEventSource {
     __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
 }
@@ -715,7 +715,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::NetEventSource {
 }
 #[cfg(feature = "cordl_class_System+Net+NetEventSource+Keywords")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetEventSource_Keywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

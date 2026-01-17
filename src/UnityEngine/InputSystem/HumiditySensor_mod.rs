@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HumiditySensor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HumiditySensor {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
     pub _relativeHumidity_k__BackingField:

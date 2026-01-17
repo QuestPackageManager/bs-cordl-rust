@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImmutableCollectionsUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -213,7 +213,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImmutableCollectionsUtils_ImmutableCollectionTypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ContractTypeName_k__BackingField:

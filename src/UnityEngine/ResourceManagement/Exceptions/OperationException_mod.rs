@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+OperationException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OperationException {
     __cordl_parent: crate::System::Exception,
 }

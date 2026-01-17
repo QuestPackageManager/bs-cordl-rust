@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderControllerBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderControllerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockController:

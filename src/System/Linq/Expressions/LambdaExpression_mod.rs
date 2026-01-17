@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+LambdaExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LambdaExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,

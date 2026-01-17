@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+InternalTaskOptions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InternalTaskOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ContinuationTask = 512i32,
     DoNotDispose = 16384i32,
     InternalOptionsMask = 65280i32,

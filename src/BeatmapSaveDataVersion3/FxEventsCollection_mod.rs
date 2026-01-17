@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventsCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FxEventsCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _il: quest_hook::libil2cpp::Gc<

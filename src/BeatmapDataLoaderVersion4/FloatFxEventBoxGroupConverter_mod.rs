@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+FloatFxEventBoxGroupConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxEventBoxGroupConverter {
     __cordl_parent: crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter,
 }

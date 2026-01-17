@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlList_1<TControl: quest_hook::libil2cpp::Type> {
     pub m_Count: i32,
@@ -1218,7 +1221,10 @@ impl<TControl: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlList_1+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlList_1_Enumerator<TControl: quest_hook::libil2cpp::Type> {
     pub m_Indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

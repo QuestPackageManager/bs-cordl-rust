@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AsyncComputeOperation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncComputeOperation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _timeoutMs: i32,

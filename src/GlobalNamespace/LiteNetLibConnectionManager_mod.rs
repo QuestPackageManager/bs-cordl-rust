@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiteNetLibConnectionManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _unconnectedPacketHeader: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2447,7 +2447,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::LiteNetLibCon
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectToServerParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiteNetLibConnectionManager_ConnectToServerParams {
     __cordl_parent:
         crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
@@ -2538,10 +2538,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+ConnectionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LiteNetLibConnectionManager_ConnectionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Connected = 2i32,
     Connecting = 1i32,
     Disconnecting = 3i32,
@@ -2633,7 +2638,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectionRequestHandler:
@@ -2760,7 +2765,7 @@ impl
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiteNetLibConnectionManager_NetPeerConnection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3154,7 +3159,7 @@ impl
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiteNetLibConnectionManager_NetPeerConnectionRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3429,10 +3434,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+NetworkMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LiteNetLibConnectionManager_NetworkMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Client = 1i32,
     None = 0i32,
     Server = 2i32,
@@ -3523,7 +3533,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartClientParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiteNetLibConnectionManager_StartClientParams {
     __cordl_parent:
         crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
@@ -3607,7 +3617,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLibConnectionManager+StartServerParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiteNetLibConnectionManager_StartServerParams {
     __cordl_parent:
         crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+DiscretionaryAcl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiscretionaryAcl {
     __cordl_parent: crate::System::Security::AccessControl::CommonAcl,
 }

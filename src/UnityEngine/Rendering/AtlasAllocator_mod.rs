@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AtlasAllocator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AtlasAllocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Root: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::AtlasAllocator_AtlasNode>,
@@ -147,7 +147,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::AtlasA
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+AtlasAllocator+AtlasNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AtlasAllocator_AtlasNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RightChild:

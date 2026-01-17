@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataColumnPropertyDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataColumnPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub _Column_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,

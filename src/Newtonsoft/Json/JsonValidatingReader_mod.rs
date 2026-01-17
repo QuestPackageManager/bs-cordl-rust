@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonValidatingReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
@@ -1394,7 +1394,7 @@ impl AsMut<crate::Newtonsoft::Json::IJsonLineInfo>
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonValidatingReader_SchemaScope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tokenType: crate::Newtonsoft::Json::Linq::JTokenType,

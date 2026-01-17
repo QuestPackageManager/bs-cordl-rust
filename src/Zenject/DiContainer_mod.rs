@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+DiContainer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiContainer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _decorators: quest_hook::libil2cpp::Gc<
@@ -8804,7 +8804,7 @@ impl AsMut<crate::Zenject::IInstantiator> for crate::Zenject::DiContainer {
 }
 #[cfg(feature = "cordl_class_Zenject+DiContainer+ProviderInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiContainer_ProviderInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

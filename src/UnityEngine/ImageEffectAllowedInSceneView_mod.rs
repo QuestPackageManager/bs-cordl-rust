@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ImageEffectAllowedInSceneView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImageEffectAllowedInSceneView {
     __cordl_parent: crate::System::Attribute,
 }

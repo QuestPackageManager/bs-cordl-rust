@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SoloFreePlayFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SoloFreePlayFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
     pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,

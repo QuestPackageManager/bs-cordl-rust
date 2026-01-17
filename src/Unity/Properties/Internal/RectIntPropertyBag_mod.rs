@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+RectIntPropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectIntPropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::RectInt>,
 }
@@ -86,7 +86,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::Internal::R
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+RectIntPropertyBag+HeightProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectIntPropertyBag_HeightProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::RectInt, i32>,
 }
@@ -265,7 +265,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+RectIntPropertyBag+WidthProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectIntPropertyBag_WidthProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::RectInt, i32>,
 }
@@ -444,7 +444,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+RectIntPropertyBag+XProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectIntPropertyBag_XProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::RectInt, i32>,
 }
@@ -623,7 +623,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+RectIntPropertyBag+YProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectIntPropertyBag_YProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::RectInt, i32>,
 }

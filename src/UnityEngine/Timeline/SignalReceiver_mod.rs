@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalReceiver {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Events:
@@ -456,7 +456,7 @@ impl AsMut<crate::UnityEngine::Playables::INotificationReceiver>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalReceiver_EventKeyValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Signals: quest_hook::libil2cpp::Gc<

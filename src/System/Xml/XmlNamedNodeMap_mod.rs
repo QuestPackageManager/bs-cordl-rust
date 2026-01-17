@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub loneValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -177,7 +177,7 @@ impl AsMut<crate::System::Collections::IEnumerator>
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlNamedNodeMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parent: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
@@ -565,7 +565,10 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::System::Xml::XmlN
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlNamedNodeMap_SmallXmlNodeList {
     pub field: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

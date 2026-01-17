@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerEnumHistory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUIHandlerEnumHistory {
     __cordl_parent: crate::UnityEngine::Rendering::UI::DebugUIHandlerEnumField,
     pub historyValues: quest_hook::libil2cpp::Gc<

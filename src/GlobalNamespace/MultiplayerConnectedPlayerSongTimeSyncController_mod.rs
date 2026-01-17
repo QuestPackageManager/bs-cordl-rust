@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerSongTimeSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSyncLerpSpeed: f32,
@@ -414,7 +414,7 @@ impl AsMut<crate::GlobalNamespace::IAudioTimeSource>
 }
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerSongTimeSyncController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startSongTime: f32,

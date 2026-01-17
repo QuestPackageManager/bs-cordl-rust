@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_LoadBeatmapLevelDataResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LoadBeatmapLevelDataResult {
     pub errorType:
@@ -230,10 +233,15 @@ impl crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     }
 }
 #[cfg(feature = "cordl_class_LoadBeatmapLevelDataResult+ErrorType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LoadBeatmapLevelDataResult_ErrorType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BeatmapLevelDataNotFound = 2i32,
     BeatmapLevelNotFoundInRepository = 0i32,
     BeatmapLevelNotOwned = 1i32,

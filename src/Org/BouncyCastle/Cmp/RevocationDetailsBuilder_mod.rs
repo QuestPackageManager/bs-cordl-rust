@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+RevocationDetailsBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RevocationDetailsBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _templateBuilder:

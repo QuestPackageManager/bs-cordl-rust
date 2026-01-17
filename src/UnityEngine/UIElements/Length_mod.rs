@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Length")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Length {
     pub m_Value: f32,
@@ -558,7 +561,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length>>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Length_PropertyBag {
     __cordl_parent:
         crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::UIElements::Length>,
@@ -641,10 +644,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Lengt
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+Unit")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Length_Unit {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Auto = 2i32,
     None = 3i32,
     Percent = 1i32,
@@ -726,7 +734,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Le
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+PropertyBag+UnitProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Length_UnitProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Length,
@@ -916,7 +924,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Length+PropertyBag+ValueProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Length_ValueProperty {
     __cordl_parent:
         crate::Unity::Properties::Property_2<crate::UnityEngine::UIElements::Length, f32>,

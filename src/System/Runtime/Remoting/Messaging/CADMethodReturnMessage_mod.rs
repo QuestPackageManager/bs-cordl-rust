@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CADMethodReturnMessage {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::CADMessageBase,
     pub _returnValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

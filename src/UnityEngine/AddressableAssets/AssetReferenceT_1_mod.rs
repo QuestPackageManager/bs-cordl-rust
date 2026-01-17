@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceT_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetReferenceT_1<TObject: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::AddressableAssets::AssetReference,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Variable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Variable {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _localname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameplaySetupViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplaySetupViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _selectionSegmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControl>,
@@ -504,7 +504,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplaySetup
 }
 #[cfg(feature = "cordl_class_GameplaySetupViewController+Panel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplaySetupViewController_Panel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

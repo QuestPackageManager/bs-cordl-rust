@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SDFPoint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SDFPoint {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _radius: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatAvatarEditorFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatAvatarEditorFlowCoordinator {
     __cordl_parent: crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
     pub _avatarTweenController: quest_hook::libil2cpp::Gc<

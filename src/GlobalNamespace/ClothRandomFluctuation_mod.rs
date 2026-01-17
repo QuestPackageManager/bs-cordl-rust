@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ClothRandomFluctuation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClothRandomFluctuation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _cloth: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cloth>,
@@ -162,7 +162,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ClothRandomFl
 }
 #[cfg(feature = "cordl_class_ClothRandomFluctuation+SineLayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClothRandomFluctuation_SineLayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub multiplier: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualTreeUpdater {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
@@ -288,7 +288,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::Visua
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdater+UpdaterArray")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualTreeUpdater_UpdaterArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_VisualTreeUpdaters: quest_hook::libil2cpp::Gc<

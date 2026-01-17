@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ConnectionErrorDialogViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConnectionErrorDialogViewController {
     __cordl_parent: crate::GlobalNamespace::SimpleDialogPromptViewController,
 }

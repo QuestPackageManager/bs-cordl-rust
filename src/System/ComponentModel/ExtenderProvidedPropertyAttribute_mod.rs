@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExtenderProvidedPropertyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ExtenderProperty_k__BackingField:

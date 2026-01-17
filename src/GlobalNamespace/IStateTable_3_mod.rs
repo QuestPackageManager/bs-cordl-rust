@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_IStateTable_3")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IStateTable_3<
     TStateTable: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+BaseMeshEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseMeshEffect {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_Graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,

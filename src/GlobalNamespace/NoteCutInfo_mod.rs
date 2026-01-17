@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_NoteCutInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NoteCutInfo {
     pub noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
@@ -259,10 +262,15 @@ impl crate::GlobalNamespace::NoteCutInfo {
     }
 }
 #[cfg(feature = "cordl_class_NoteCutInfo+FailReason")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NoteCutInfo_FailReason {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CutHarder = 3i32,
     None = 0i32,
     TooSoon = 1i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_ScrollbarEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_ScrollbarEventHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub isSelected: bool,

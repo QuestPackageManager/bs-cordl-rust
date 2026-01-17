@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafPreCompInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WNafPreCompInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_promotionCountdown: i32,

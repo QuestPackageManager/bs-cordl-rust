@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+WaitHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaitHandle {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub waitHandle: crate::System::IntPtr,

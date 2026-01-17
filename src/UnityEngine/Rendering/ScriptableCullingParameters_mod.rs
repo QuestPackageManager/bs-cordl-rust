@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableCullingParameters")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScriptableCullingParameters {
     pub m_LODParameters: crate::UnityEngine::Rendering::LODParameters,
@@ -571,7 +574,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::Scriptable
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -691,7 +697,10 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer {
     pub FixedElementField: f32,

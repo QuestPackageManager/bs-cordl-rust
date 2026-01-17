@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+SkinColorSetSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SkinColorSetSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _colors: quest_hook::libil2cpp::Gc<

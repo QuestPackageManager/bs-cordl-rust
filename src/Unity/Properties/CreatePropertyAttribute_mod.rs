@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+CreatePropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CreatePropertyAttribute {
     __cordl_parent: crate::UnityEngine::Scripting::RequiredMemberAttribute,
     pub _ReadOnly_k__BackingField: bool,

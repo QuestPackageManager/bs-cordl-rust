@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRBody")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRBody {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _bodyState: crate::GlobalNamespace::OVRPlugin_BodyState,

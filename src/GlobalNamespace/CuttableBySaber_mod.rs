@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CuttableBySaber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CuttableBySaber {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub wasCutBySaberEvent:
@@ -267,7 +267,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CuttableBySab
 }
 #[cfg(feature = "cordl_class_CuttableBySaber+WasCutBySaberDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CuttableBySaber_WasCutBySaberDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

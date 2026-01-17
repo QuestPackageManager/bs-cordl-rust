@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+AbstractFpCurve")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AbstractFpCurve {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::ECCurve,
 }

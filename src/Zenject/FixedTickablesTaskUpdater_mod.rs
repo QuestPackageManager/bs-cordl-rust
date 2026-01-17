@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+FixedTickablesTaskUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FixedTickablesTaskUpdater {
     __cordl_parent:
         crate::Zenject::TaskUpdater_1<quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable>>,

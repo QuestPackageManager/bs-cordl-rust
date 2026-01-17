@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EndOfLifeNoticeViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EndOfLifeNoticeViewController {
     __cordl_parent: crate::GlobalNamespace::CompletableViewController,
     pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

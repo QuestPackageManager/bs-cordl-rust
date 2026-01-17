@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptingUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -96,7 +96,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScriptingUtility 
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ScriptingUtility+TestClass")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScriptingUtility_TestClass {
     pub value: i32,

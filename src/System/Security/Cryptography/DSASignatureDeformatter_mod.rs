@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+DSASignatureDeformatter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DSASignatureDeformatter {
     __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureDeformatter,
     pub _dsaKey: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,

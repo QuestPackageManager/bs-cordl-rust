@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DictionaryWrapper_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1534,7 +1534,10 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DictionaryWrapper_2_DictionaryEnumerator_2<
     TKey: quest_hook::libil2cpp::Type,

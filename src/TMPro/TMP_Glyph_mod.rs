@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_Glyph")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Glyph {
     __cordl_parent: crate::TMPro::TMP_TextElement_Legacy,
 }

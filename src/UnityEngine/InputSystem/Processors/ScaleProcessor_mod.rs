@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+ScaleProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScaleProcessor {
     __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<f32>,
     pub factor: f32,

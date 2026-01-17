@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionNodeConnection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionNodeConnection {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _separator: f32,

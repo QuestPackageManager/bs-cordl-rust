@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameEnergyUIPanel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameEnergyUIPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _energyBar: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,

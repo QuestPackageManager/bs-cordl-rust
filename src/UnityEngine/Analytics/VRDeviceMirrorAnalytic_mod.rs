@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+VRDeviceMirrorAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRDeviceMirrorAnalytic {
     __cordl_parent: crate::UnityEngine::Analytics::VRDeviceAnalyticBase,
     pub vr_device_mirror_mode: bool,

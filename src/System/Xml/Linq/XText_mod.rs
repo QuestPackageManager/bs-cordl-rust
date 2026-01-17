@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Linq+XText")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XText {
     __cordl_parent: crate::System::Xml::Linq::XNode,
     pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

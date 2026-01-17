@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+LimitedInputStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LimitedInputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

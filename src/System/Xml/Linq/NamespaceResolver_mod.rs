@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NamespaceResolver {
     pub _scope: i32,
@@ -224,7 +227,7 @@ impl crate::System::Xml::Linq::NamespaceResolver {
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamespaceResolver_NamespaceDeclaration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

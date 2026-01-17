@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StreamCompressionModel {
     pub m_Initialized: u8,
@@ -420,7 +423,7 @@ impl crate::Unity::Collections::StreamCompressionModel {
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+SharedStaticCompressionModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StreamCompressionModel_SharedStaticCompressionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -483,7 +486,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StreamCompressionModel__bucketOffsets_e__FixedBuffer {
     pub FixedElementField: u32,
@@ -599,7 +605,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Collections+StreamCompressionModel+_bucketOffsets_e__FixedBuffer")]
 impl crate::Unity::Collections::StreamCompressionModel__bucketOffsets_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StreamCompressionModel__bucketSizes_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -703,7 +712,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Collections+StreamCompressionModel+_bucketSizes_e__FixedBuffer")]
 impl crate::Unity::Collections::StreamCompressionModel__bucketSizes_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StreamCompressionModel__decodeTable_e__FixedBuffer {
     pub FixedElementField: u16,
@@ -807,7 +819,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Collections+StreamCompressionModel+_decodeTable_e__FixedBuffer")]
 impl crate::Unity::Collections::StreamCompressionModel__decodeTable_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_Unity+Collections+StreamCompressionModel+_encodeTable_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StreamCompressionModel__encodeTable_e__FixedBuffer {
     pub FixedElementField: u16,

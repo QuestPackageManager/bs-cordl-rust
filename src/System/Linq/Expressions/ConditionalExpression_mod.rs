@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+ConditionalExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Test_k__BackingField:

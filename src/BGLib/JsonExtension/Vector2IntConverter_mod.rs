@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector2IntConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector2IntConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Vector2Int>,
 }

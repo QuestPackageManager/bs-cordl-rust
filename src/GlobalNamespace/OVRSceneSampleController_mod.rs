@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSceneSampleController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneSampleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub quitKey: crate::UnityEngine::KeyCode,

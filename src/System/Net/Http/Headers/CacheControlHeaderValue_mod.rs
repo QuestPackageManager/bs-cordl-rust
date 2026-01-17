@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+CacheControlHeaderValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CacheControlHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub extensions: quest_hook::libil2cpp::Gc<

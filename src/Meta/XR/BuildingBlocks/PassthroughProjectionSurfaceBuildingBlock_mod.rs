@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+PassthroughProjectionSurfaceBuildingBlock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PassthroughProjectionSurfaceBuildingBlock {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub projectionObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,

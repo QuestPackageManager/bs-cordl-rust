@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+ClientActivatedIdentity")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClientActivatedIdentity {
     __cordl_parent: crate::System::Runtime::Remoting::ServerIdentity,
     pub _targetThis: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,

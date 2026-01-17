@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameServerPlayerTableCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameServerPlayerTableCell {
     __cordl_parent: crate::GlobalNamespace::TableCellWithSeparator,
     pub _playerNameText: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedTextMeshPro>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioMixer {
     __cordl_parent: crate::UnityEngine::Object,
 }

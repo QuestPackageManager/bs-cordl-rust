@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+CollectionUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

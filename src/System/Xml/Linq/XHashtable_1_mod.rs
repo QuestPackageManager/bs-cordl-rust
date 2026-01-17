@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1+XHashtableState+Entry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XHashtableState_XHashtable_1_Entry<TValue: quest_hook::libil2cpp::Type> {
     pub Value: TValue,
@@ -124,7 +127,7 @@ impl<TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XHashtable_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _state:
@@ -318,7 +321,7 @@ impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XHashtable_1_ExtractKeyDelegate<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -475,7 +478,7 @@ impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1+XHashtableState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XHashtable_1_XHashtableState<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubsystemWithProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _running_k__BackingField: bool,

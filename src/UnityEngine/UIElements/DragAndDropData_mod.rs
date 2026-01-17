@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DragAndDropData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DragAndDropData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _paths_k__BackingField: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+PKMacStreamCalculator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKMacStreamCalculator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stream: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IO::MacSink>,

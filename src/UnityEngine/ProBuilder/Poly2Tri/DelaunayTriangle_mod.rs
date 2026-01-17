@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DelaunayTriangle {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Points: crate::UnityEngine::ProBuilder::Poly2Tri::FixedArray3_1<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightGroupSubsystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightGroupSubsystem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,

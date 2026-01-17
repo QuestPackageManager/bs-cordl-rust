@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapEventRecorder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEventRecorder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _samples: quest_hook::libil2cpp::Gc<
@@ -291,7 +291,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapEventR
     }
 }
 #[cfg(feature = "cordl_class_BeatmapEventRecorder+EventCounts")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapEventRecorder_EventCounts {
     pub bpm: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct G_FpsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_fpsGraphGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

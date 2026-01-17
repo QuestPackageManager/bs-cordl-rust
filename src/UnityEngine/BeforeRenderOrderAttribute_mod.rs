@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+BeforeRenderOrderAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeforeRenderOrderAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _order_k__BackingField: i32,

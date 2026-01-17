@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameLiftConnectionManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameLiftConnectionManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
@@ -1575,7 +1575,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::GameLiftConne
 }
 #[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectToServerParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameLiftConnectionManager_ConnectToServerParams {
     __cordl_parent:
         crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,
@@ -1662,10 +1662,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_GameLiftConnectionManager+ConnectionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameLiftConnectionManager_ConnectionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Connected = 2i32,
     Connecting = 1i32,
     Disconnecting = 3i32,
@@ -1757,7 +1762,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub authenticationTokenProviderTask: quest_hook::libil2cpp::Gc<
@@ -1885,7 +1890,7 @@ impl
 }
 #[cfg(feature = "cordl_class_GameLiftConnectionManager+StartClientParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameLiftConnectionManager_StartClientParams {
     __cordl_parent:
         crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase,

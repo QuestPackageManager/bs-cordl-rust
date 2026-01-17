@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+MiscPemGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MiscPemGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

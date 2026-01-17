@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+TypeNames")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeNames {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -53,7 +53,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNames {
 }
 #[cfg(feature = "cordl_class_System+TypeNames+ATypeName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeNames_ATypeName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

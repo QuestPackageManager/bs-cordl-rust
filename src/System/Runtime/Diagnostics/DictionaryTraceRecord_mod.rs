@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Diagnostics+DictionaryTraceRecord")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DictionaryTraceRecord {
     __cordl_parent: crate::System::Runtime::Diagnostics::TraceRecord,
     pub dictionary: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,

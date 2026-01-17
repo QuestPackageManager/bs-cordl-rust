@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+FastTouchscreen")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FastTouchscreen {
     __cordl_parent: crate::UnityEngine::InputSystem::Touchscreen,
 }

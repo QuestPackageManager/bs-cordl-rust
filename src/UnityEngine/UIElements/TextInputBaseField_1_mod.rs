@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextInputBaseField_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextInputBaseField_1<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
     pub m_TextInputBase: quest_hook::libil2cpp::Gc<
@@ -1828,7 +1828,7 @@ impl<TValueType: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::UIElemen
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextInputBaseField_1+TextInputBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextInputBaseField_1_TextInputBase<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub _textElement_k__BackingField:
@@ -2831,7 +2831,7 @@ impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextInputBaseField_1+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextInputBaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

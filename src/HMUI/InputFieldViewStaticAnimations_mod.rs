@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+InputFieldViewStaticAnimations")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputFieldViewStaticAnimations {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _inputFieldView: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,

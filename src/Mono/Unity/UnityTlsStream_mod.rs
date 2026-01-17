@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTlsStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTlsStream {
     __cordl_parent: crate::Mono::Net::Security::MobileAuthenticatedStream,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomMatchmaking {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub onRoomCreationFinished: quest_hook::libil2cpp::Gc<
@@ -588,7 +588,7 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+ICustomMatchmakingBehaviour"
 )]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct CustomMatchmaking_ICustomMatchmakingBehaviour {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -865,7 +865,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomCreationOptions"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CustomMatchmaking_RoomCreationOptions {
     pub RoomPassword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -986,7 +989,10 @@ impl crate::Meta::XR::MultiplayerBlocks::Shared::CustomMatchmaking_RoomCreationO
 #[cfg(
     feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+CustomMatchmaking+RoomOperationResult"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CustomMatchmaking_RoomOperationResult {
     pub ErrorMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

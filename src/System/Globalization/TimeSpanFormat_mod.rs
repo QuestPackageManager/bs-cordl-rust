@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeSpanFormat {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -249,7 +249,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+FormatLiterals")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeSpanFormat_FormatLiterals {
     pub AppCompatLiteral: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -574,10 +577,15 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanFormat+Pattern")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimeSpanFormat_Pattern {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Full = 2i32,
     Minimum = 1i32,
     None = 0i32,

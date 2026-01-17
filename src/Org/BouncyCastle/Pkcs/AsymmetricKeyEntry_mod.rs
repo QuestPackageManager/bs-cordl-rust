@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+AsymmetricKeyEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsymmetricKeyEntry {
     __cordl_parent: crate::Org::BouncyCastle::Pkcs::Pkcs12Entry,
     pub key: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableObjectInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstallerBase,
 }

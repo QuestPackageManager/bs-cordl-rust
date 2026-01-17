@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyDebugger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphyDebugger {
     __cordl_parent: crate::Tayx::Graphy::Utils::G_Singleton_1<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger>,
@@ -660,10 +660,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::GraphyDebugger {
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyDebugger_ConditionEvaluation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All_conditions_must_be_met = 0i32,
     Only_one_condition_has_to_be_met = 1i32,
 }
@@ -752,10 +757,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyDebugger+DebugComparer")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyDebugger_DebugComparer {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Equals = 2i32,
     Equals_or_greater_than = 3i32,
     Equals_or_less_than = 1i32,
@@ -837,7 +847,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Tayx::Graphy::GraphyDebugge
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyDebugger+DebugCondition")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GraphyDebugger_DebugCondition {
     pub Variable: crate::Tayx::Graphy::GraphyDebugger_DebugVariable,
@@ -936,7 +949,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::Tayx::Graphy::GraphyDebugger_DebugCondition {}
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyDebugger+DebugPacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphyDebugger_DebugPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Active: bool,
@@ -1097,10 +1110,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::GraphyDebugger_D
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyDebugger+DebugVariable")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyDebugger_DebugVariable {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Audio_DB = 7i32,
     Fps = 0i32,
     Fps_Avg = 3i32,
@@ -1185,10 +1203,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Tayx::Graphy::GraphyDebugge
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyDebugger+MessageType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyDebugger_MessageType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Error = 2i32,
     Log = 0i32,
     Warning = 1i32,

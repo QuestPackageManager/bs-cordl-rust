@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightGroupElementsSpawner")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightGroupElementsSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

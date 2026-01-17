@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlEventCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlEventCache {
     __cordl_parent: crate::System::Xml::XmlRawWriter,
     pub pages: quest_hook::libil2cpp::Gc<
@@ -1110,7 +1110,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlEventCache {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEvent")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlEventCache_XmlEvent {
     pub eventType: crate::System::Xml::XmlEventCache_XmlEventType,
@@ -1508,10 +1511,15 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlEventCache+XmlEventType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlEventCache_XmlEventType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Base64 = 14i32,
     BinHex = 15i32,
     CData = 5i32,

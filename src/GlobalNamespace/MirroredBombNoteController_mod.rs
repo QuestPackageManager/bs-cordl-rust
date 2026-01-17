@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MirroredBombNoteController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredBombNoteController {
     __cordl_parent: crate::GlobalNamespace::MirroredNoteController_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable>,
@@ -84,7 +84,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirroredBombN
 }
 #[cfg(feature = "cordl_class_MirroredBombNoteController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredBombNoteController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredBombNoteController>,

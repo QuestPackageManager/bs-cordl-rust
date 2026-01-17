@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GhostEffectBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GhostEffectBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub alphaCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -185,10 +185,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GhostEffectBe
     }
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+EndBehavior")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GhostEffectBehaviour_EndBehavior {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DisableAll = 0i32,
     DisableCopies = 1i32,
     Nothing = 2i32,
@@ -278,10 +283,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_GhostEffectBehaviour+GhostEffectType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GhostEffectBehaviour_GhostEffectType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Canvas = 1i32,
     TextMeshPro = 0i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BindingUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindingUpdater {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -591,7 +591,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Bindi
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BindingUpdater+CastDataSourceVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindingUpdater_CastDataSourceVisitor {
     __cordl_parent: crate::Unity::Properties::ConcreteTypeVisitor,
     pub _Binding_k__BackingField:
@@ -885,7 +885,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BindingUpdater+UIPathVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindingUpdater_UIPathVisitor {
     __cordl_parent: crate::Unity::Properties::PathVisitor,
     pub _binding_k__BackingField:

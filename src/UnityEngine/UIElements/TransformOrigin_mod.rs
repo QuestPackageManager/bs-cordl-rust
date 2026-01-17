@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin+PropertyBag+XProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_TransformOrigin_XProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::TransformOrigin,
@@ -191,7 +191,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin+PropertyBag+YProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_TransformOrigin_YProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::TransformOrigin,
@@ -382,7 +382,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin+PropertyBag+ZProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_TransformOrigin_ZProperty {
     __cordl_parent:
         crate::Unity::Properties::Property_2<crate::UnityEngine::UIElements::TransformOrigin, f32>,
@@ -565,7 +565,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TransformOrigin {
     pub m_X: crate::UnityEngine::UIElements::Length,
@@ -1046,7 +1049,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Transform
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransformOrigin+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TransformOrigin_PropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::UIElements::TransformOrigin,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+QuoteInstruction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuoteInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
@@ -198,7 +198,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Linq+Expressions+Interpreter+QuoteInstruction+ExpressionQuoter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuoteInstruction_ExpressionQuoter {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
     pub _variables: quest_hook::libil2cpp::Gc<

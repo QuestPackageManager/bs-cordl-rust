@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PresetsSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PresetsSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _presets: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NamedPresetsSO>,

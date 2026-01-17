@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BaseNetworkPlayerModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseNetworkPlayerModel {
     __cordl_parent: crate::GlobalNamespace::StandaloneMonobehavior,
     pub _connectedPlayerManager:
@@ -1324,7 +1324,7 @@ impl AsMut<crate::GlobalNamespace::INetworkPlayerModel>
 }
 #[cfg(feature = "cordl_class_BaseNetworkPlayerModel+PartyConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseNetworkPlayerModel_PartyConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,

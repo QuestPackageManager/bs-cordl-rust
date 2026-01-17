@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JObject {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
     pub _properties:
@@ -2492,7 +2492,7 @@ impl AsMut<crate::System::ComponentModel::INotifyPropertyChanging>
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JObject_JObjectDynamicProxy {
     __cordl_parent: crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
@@ -2682,7 +2682,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     pub __1__state: i32,

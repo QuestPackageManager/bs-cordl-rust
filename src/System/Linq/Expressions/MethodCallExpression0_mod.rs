@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+MethodCallExpression0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MethodCallExpression0 {
     __cordl_parent: crate::System::Linq::Expressions::MethodCallExpression,
 }

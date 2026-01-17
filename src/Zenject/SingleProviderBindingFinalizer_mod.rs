@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SingleProviderBindingFinalizer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SingleProviderBindingFinalizer {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
     pub _providerFactory: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+AbandonedMutexException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AbandonedMutexException {
     __cordl_parent: crate::System::SystemException,
     pub _mutexIndex: i32,

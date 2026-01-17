@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Foldout {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub m_Toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
@@ -496,7 +496,7 @@ impl AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<bool>>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Foldout_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout>,
@@ -580,7 +580,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Foldo
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Foldout_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
     pub m_Text:

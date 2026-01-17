@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Security+SslClientAuthenticationOptions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SslClientAuthenticationOptions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _encryptionPolicy: crate::System::Net::Security::EncryptionPolicy,

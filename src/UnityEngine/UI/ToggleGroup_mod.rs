@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+ToggleGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ToggleGroup {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_AllowSwitchOff: bool,

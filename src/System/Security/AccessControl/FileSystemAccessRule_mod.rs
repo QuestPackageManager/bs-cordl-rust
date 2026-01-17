@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+FileSystemAccessRule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemAccessRule {
     __cordl_parent: crate::System::Security::AccessControl::AccessRule,
 }

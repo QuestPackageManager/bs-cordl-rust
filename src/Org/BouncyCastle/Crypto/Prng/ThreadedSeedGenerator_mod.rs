@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadedSeedGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -116,7 +116,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadedSeedGenerator_SeedGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub counter: i32,

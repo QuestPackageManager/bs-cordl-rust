@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+ScheduleRuntimeClip")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScheduleRuntimeClip {
     __cordl_parent: crate::UnityEngine::Timeline::RuntimeClipBase,
     pub m_Clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,

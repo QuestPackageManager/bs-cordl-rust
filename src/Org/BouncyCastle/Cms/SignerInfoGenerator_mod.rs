@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+SignerInfoGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignerInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certificate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,

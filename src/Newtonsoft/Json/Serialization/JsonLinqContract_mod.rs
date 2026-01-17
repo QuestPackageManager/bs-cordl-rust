@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonLinqContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonLinqContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContract,
 }

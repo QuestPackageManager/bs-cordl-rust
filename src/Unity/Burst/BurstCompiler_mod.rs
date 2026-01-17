@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstCompiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1067,7 +1067,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler {
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1236,7 +1236,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+BurstCompilerHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstCompiler_BurstCompilerHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1358,7 +1358,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler_Bu
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+CommandBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstCompiler_CommandBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -1588,7 +1588,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler_Co
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+FakeDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstCompiler_FakeDelegate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Method_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -1704,7 +1704,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler_Fa
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstCompiler_StaticTypeReinitAttribute {
     __cordl_parent: crate::System::Attribute,
     pub reinitType: quest_hook::libil2cpp::Gc<crate::System::Type>,

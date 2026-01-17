@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_INodePoseSyncStateManager_5")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct INodePoseSyncStateManager_5<
     TStateTable: quest_hook::libil2cpp::Type,

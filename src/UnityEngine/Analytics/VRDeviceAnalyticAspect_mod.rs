@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+VRDeviceAnalyticAspect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRDeviceAnalyticAspect {
     __cordl_parent: crate::UnityEngine::Analytics::VRDeviceAnalyticBase,
     pub vr_aspect_ratio: f32,

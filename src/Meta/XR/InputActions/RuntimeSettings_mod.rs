@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+InputActions+RuntimeSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeSettings {
     __cordl_parent: crate::GlobalNamespace::OVRRuntimeAssetsBase,
     pub InputActionDefinitions: quest_hook::libil2cpp::Gc<

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+LightProbesQuery")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LightProbesQuery {
     pub m_LightProbeContextWrapper: crate::System::IntPtr,
@@ -315,7 +318,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::LightProbesQuery 
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+LightProbesQuery+LightProbesQueryDispose")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LightProbesQuery_LightProbesQueryDispose {
     pub m_LightProbeContextWrapper: crate::System::IntPtr,
@@ -440,7 +446,10 @@ impl crate::UnityEngine::LightProbesQuery_LightProbesQueryDispose {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+LightProbesQuery+LightProbesQueryDisposeJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LightProbesQuery_LightProbesQueryDisposeJob {
     pub Data: crate::UnityEngine::LightProbesQuery_LightProbesQueryDispose,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FlyingSpriteEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlyingSpriteEffect {
     __cordl_parent: crate::GlobalNamespace::FlyingObjectEffect,
     pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
@@ -149,7 +149,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingSpriteE
 }
 #[cfg(feature = "cordl_class_FlyingSpriteEffect+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlyingSpriteEffect_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingSpriteEffect>,

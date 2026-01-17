@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AbstractProgressBar {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub m_Background: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -372,7 +372,7 @@ impl AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<f32>>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AbstractProgressBar_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
     pub m_LowValue:

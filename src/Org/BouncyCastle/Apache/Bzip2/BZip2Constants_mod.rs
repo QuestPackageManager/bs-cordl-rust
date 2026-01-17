@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+BZip2Constants")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BZip2Constants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackMediaType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackMediaType {
     __cordl_parent: crate::System::Attribute,
     pub m_MediaType: crate::UnityEngine::Timeline::TimelineAsset_MediaType,

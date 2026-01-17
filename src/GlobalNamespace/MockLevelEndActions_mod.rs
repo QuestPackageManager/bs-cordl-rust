@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockLevelEndActions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockLevelEndActions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,

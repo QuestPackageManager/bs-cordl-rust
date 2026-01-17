@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+MD4")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MD4 {
     __cordl_parent: crate::System::Security::Cryptography::HashAlgorithm,
 }

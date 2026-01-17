@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+CrossContextChannel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CrossContextChannel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -174,7 +174,7 @@ impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
     feature = "cordl_class_System+Runtime+Remoting+Contexts+CrossContextChannel+ContextRestoreSink"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CrossContextChannel_ContextRestoreSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _next: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessageSink>,

@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+IDictionary_2")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IDictionary_2<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

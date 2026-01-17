@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseListViewController {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
     pub itemsSourceSizeChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,

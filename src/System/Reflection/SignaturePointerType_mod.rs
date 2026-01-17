@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+SignaturePointerType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignaturePointerType {
     __cordl_parent: crate::System::Reflection::SignatureHasElementType,
 }

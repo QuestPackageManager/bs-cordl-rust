@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Environment")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Environment {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1218,10 +1218,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Environment {
     }
 }
 #[cfg(feature = "cordl_class_System+Environment+SpecialFolder")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Environment_SpecialFolder {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AdminTools = 48i32,
     ApplicationData = 26i32,
     CDBurning = 59i32,
@@ -1344,10 +1349,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Environment_Special
     }
 }
 #[cfg(feature = "cordl_class_System+Environment+SpecialFolderOption")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Environment_SpecialFolderOption {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Create = 32768i32,
     DoNotVerify = 16384i32,
     None = 0i32,

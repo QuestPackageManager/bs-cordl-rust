@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+X931SecureRandomBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X931SecureRandomBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRandom: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,

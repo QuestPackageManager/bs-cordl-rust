@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+BadImageFormatException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BadImageFormatException {
     __cordl_parent: crate::System::SystemException,
     pub _fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

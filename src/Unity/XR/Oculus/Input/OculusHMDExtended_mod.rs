@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusHMDExtended")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusHMDExtended {
     __cordl_parent: crate::Unity::XR::Oculus::Input::OculusHMD,
     pub _back_k__BackingField:

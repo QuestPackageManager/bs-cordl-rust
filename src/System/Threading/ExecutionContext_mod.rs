@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExecutionContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _syncContext: quest_hook::libil2cpp::Gc<crate::System::Threading::SynchronizationContext>,
@@ -1114,10 +1114,15 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContext+CaptureOptions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ExecutionContext_CaptureOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     IgnoreSyncCtx = 1i32,
     None = 0i32,
     OptimizeDefaultCase = 2i32,
@@ -1207,10 +1212,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ExecutionContext_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     IsFlowSuppressed = 2i32,
     IsNewCapture = 1i32,
     IsPreAllocatedDefault = 4i32,
@@ -1291,7 +1301,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Threading::Executio
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContext+Reader")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ExecutionContext_Reader {
     pub m_ec: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,

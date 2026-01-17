@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+LightmapSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightmapSettings {
     __cordl_parent: crate::UnityEngine::Object,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EncryptionUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EncryptionUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -337,7 +337,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EncryptionUti
 }
 #[cfg(feature = "cordl_class_EncryptionUtility+EncryptionState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EncryptionUtility_EncryptionState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _isValid: bool,
@@ -804,7 +804,7 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_EncryptionUtility+IEncryptionState")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct EncryptionUtility_IEncryptionState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

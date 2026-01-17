@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchSparse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MatchSparse {
     __cordl_parent: crate::System::Text::RegularExpressions::Match,
     pub _caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,

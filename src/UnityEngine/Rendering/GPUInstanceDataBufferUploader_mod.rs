@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUInstanceDataBufferUploader {
     pub m_UintPerInstance: i32,
@@ -492,7 +495,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+GPUResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUInstanceDataBufferUploader_GPUResources {
     pub instanceData: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
@@ -707,7 +713,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+UploadKernelIDs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUInstanceDataBufferUploader_UploadKernelIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -766,7 +772,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferUploader+WriteInstanceDataParameterJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUInstanceDataBufferUploader_WriteInstanceDataParameterJob {
     pub gatherData: bool,

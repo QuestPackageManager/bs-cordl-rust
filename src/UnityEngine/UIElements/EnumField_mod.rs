@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumField {
     __cordl_parent:
         crate::UnityEngine::UIElements::BaseField_1<quest_hook::libil2cpp::Gc<crate::System::Enum>>,
@@ -564,7 +564,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::EnumF
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EnumField>,
@@ -648,7 +648,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::EnumF
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EnumField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         quest_hook::libil2cpp::Gc<crate::System::Enum>,

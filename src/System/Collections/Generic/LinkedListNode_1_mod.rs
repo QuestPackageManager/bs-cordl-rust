@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+LinkedListNode_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LinkedListNode_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::LinkedList_1<T>>,

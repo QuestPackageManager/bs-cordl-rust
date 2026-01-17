@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+Utils+G_ExtensionMethods")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct G_ExtensionMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlasPage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicAtlasPage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _textureId_k__BackingField: crate::UnityEngine::UIElements::TextureId,

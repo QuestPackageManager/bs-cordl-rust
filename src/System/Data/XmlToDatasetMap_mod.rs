@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+XmlToDatasetMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlToDatasetMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tableSchemaMap:
@@ -653,7 +653,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XmlToDatasetMap 
 }
 #[cfg(feature = "cordl_class_System+Data+XmlToDatasetMap+TableSchemaInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlToDatasetMap_TableSchemaInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub TableSchema: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -742,7 +742,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XmlToDatasetMap_
 }
 #[cfg(feature = "cordl_class_System+Data+XmlToDatasetMap+XmlNodeIdHashtable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlToDatasetMap_XmlNodeIdHashtable {
     __cordl_parent: crate::System::Collections::Hashtable,
     pub _id: quest_hook::libil2cpp::Gc<crate::System::Data::XmlToDatasetMap_XmlNodeIdentety>,
@@ -934,7 +934,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XmlToDatasetMap_
 }
 #[cfg(feature = "cordl_class_System+Data+XmlToDatasetMap+XmlNodeIdentety")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlToDatasetMap_XmlNodeIdentety {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub LocalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLevelAnalytics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLevelAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _multiplayerLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<

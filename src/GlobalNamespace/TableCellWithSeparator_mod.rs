@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TableCellWithSeparator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TableCellWithSeparator {
     __cordl_parent: crate::HMUI::TableCell,
     pub _separator: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

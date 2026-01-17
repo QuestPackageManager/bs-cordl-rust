@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+SerializableDictionaryBase_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializableDictionaryBase_3<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

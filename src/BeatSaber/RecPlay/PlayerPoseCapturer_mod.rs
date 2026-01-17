@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseCapturer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerPoseCapturer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub frames: quest_hook::libil2cpp::Gc<

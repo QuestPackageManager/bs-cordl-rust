@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLobbyAvatarPlaceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLobbyAvatarPlaceManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lobbyStateDataModel:

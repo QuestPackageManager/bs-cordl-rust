@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BpmController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BpmController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapCallbacksController:
@@ -214,7 +214,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BpmController
 }
 #[cfg(feature = "cordl_class_BpmController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BpmController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startBpm: f32,

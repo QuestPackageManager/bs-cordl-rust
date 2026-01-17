@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataCommon+BasicEventTypesWithKeywords")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicEventTypesWithKeywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub d: quest_hook::libil2cpp::Gc<
@@ -164,7 +164,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatmapSaveDataCommon+BasicEventTypesWithKeywords+BasicEventTypesForKeyword"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicEventTypesWithKeywords_BasicEventTypesForKeyword {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameplayRpcManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager:
@@ -2381,7 +2381,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::GameplayRpcMa
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+GetGameplaySceneReadyRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_GetGameplaySceneReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -2463,7 +2463,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+GetGameplaySongReadyRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_GetGameplaySongReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -2545,7 +2545,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+LevelFinishedRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_LevelFinishedRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLevelCompletionResults>,
@@ -2631,7 +2631,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+NoteCutRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_NoteCutRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_2<
         f32,
@@ -2715,7 +2715,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayRpcMa
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+NoteMissedRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_NoteMissedRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_2<
         f32,
@@ -2803,7 +2803,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+NoteSpawnedRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_NoteSpawnedRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_2<
         f32,
@@ -2891,7 +2891,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+ObstacleSpawnedRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_ObstacleSpawnedRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_2<
         f32,
@@ -2979,7 +2979,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+RequestReturnToMenuRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_RequestReturnToMenuRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -3061,7 +3061,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+ReturnToMenuRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_ReturnToMenuRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -3142,10 +3142,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+RpcType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum GameplayRpcManager_RpcType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     GetGameplaySceneReady = 2u8,
     GetGameplaySongReady = 5u8,
     LevelFinished = 9u8,
@@ -3240,7 +3245,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::GameplayRp
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+SetGameplaySceneReadyRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_SetGameplaySceneReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable>,
@@ -3326,7 +3331,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+SetGameplaySceneSyncFinishedRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_SetGameplaySceneSyncFinishedRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_2<
         quest_hook::libil2cpp::Gc<
@@ -3422,7 +3427,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+SetGameplaySongReadyRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_SetGameplaySongReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -3504,7 +3509,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+SetPlayerDidConnectLateRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_SetPlayerDidConnectLateRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_3<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3598,7 +3603,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+SetSongStartTimeRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_SetSongStartTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<i64>,
 }
@@ -3680,7 +3685,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_GameplayRpcManager+SliderSpawnedRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayRpcManager_SliderSpawnedRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_2<
         f32,

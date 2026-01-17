@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DiagnosticUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiagnosticUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -61,7 +61,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DiagnosticUtility+DiagnosticTrace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiagnosticUtility_DiagnosticTrace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -148,7 +148,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DiagnosticUtility+ExceptionUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiagnosticUtility_ExceptionUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

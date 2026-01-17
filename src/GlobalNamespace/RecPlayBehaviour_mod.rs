@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RecPlayBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecPlayBehaviour {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapCallbacksController:
@@ -474,7 +474,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecPlayBehavi
 }
 #[cfg(feature = "cordl_class_RecPlayBehaviour+State")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecPlayBehaviour_State {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recording: bool,

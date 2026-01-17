@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JobsUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -663,7 +663,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Jobs::LowLevel::Unsafe:
     }
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JobsUtility_JobScheduleParameters {
     pub Dependency: crate::Unity::Jobs::JobHandle,
@@ -807,7 +810,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JobsUtility_PanicFunction_ {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AddressablesAsyncInstaller_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddressablesAsyncInstaller_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
     pub _handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<

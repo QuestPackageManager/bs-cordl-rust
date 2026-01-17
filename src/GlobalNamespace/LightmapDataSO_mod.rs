@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightmapDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightmapDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _lightmap1: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,

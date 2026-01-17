@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_defaultCancellationToken: crate::System::Threading::CancellationToken,
@@ -851,7 +851,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskFactory_CompleteOnInvokePromise {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

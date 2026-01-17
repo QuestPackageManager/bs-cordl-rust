@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryUserIdCommand")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct QueryUserIdCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<520usize>,
@@ -228,7 +231,10 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryUserIdCommand+_idBuffer_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct QueryUserIdCommand__idBuffer_e__FixedBuffer {
     pub FixedElementField: u8,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+NjsEventConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NjsEventConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _noteJumpMovementSpeedEvents: quest_hook::libil2cpp::Gc<

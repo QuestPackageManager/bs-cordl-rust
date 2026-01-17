@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+MaterialPropertyBlock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -1962,7 +1962,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::MaterialPropertyB
 }
 #[cfg(feature = "cordl_class_UnityEngine+MaterialPropertyBlock+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyBlock_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

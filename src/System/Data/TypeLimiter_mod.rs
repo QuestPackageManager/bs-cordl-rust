@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+TypeLimiter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeLimiter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_instanceScope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
@@ -289,7 +289,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter {
 }
 #[cfg(feature = "cordl_class_System+Data+TypeLimiter+Scope")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeLimiter_Scope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_allowedTypes: quest_hook::libil2cpp::Gc<

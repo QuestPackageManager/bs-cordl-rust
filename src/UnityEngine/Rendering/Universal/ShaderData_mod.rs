@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ShaderData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_LightDataBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteTrailEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteTrailEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particlesPerFrame: i32,

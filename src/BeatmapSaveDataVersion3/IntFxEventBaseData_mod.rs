@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+IntFxEventBaseData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntFxEventBaseData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub b: f32,

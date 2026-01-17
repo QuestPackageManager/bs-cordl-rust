@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Input+HapticControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HapticControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::XR::OpenXR::Input::Haptic,

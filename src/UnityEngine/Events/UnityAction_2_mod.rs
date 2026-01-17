@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Events+UnityAction_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityAction_2<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,

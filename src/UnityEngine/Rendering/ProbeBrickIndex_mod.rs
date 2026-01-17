@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickIndex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeBrickIndex {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_IndexChunks: quest_hook::libil2cpp::Gc<crate::System::Collections::BitArray>,
@@ -726,7 +726,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::ProbeB
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickIndex+Brick")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeBrickIndex_Brick {
     pub position: crate::UnityEngine::Vector3Int,
@@ -924,7 +927,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::ProbeBrick
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickIndex+CellIndexUpdateInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeBrickIndex_CellIndexUpdateInfo {
     pub entriesInfo: quest_hook::libil2cpp::Gc<
@@ -1052,7 +1058,10 @@ impl crate::UnityEngine::Rendering::ProbeBrickIndex_CellIndexUpdateInfo {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeBrickIndex+IndirectionEntryUpdateInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeBrickIndex_IndirectionEntryUpdateInfo {
     pub firstChunkIndex: i32,

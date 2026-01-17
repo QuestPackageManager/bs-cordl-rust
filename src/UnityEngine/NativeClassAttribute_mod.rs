@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+NativeClassAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NativeClassAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _QualifiedNativeName_k__BackingField:

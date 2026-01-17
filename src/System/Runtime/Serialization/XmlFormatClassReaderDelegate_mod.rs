@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlFormatClassReaderDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlFormatClassReaderDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

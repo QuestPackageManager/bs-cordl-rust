@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Texture2DArray")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Texture2DArray {
     __cordl_parent: crate::UnityEngine::Texture,
 }

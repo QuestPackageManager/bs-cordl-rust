@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderer {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderer,
     pub m_Clustering: bool,
@@ -3165,10 +3165,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderer+ColorCopySchedule")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum UniversalRenderer_ColorCopySchedule {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AfterSkybox = 0i32,
     None = 1i32,
 }
@@ -3260,7 +3265,7 @@ unsafe impl quest_hook::libil2cpp::Return
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderer+CopyToDebugTexturePassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderer_CopyToDebugTexturePassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub src: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -3351,10 +3356,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderer+DepthCopySchedule")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum UniversalRenderer_DepthCopySchedule {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AfterGBuffer = 2i32,
     AfterOpaques = 3i32,
     AfterPrepass = 1i32,
@@ -3449,7 +3459,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderer+Profiling")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderer_Profiling {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3506,7 +3516,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderer+RenderPassInputSummary"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UniversalRenderer_RenderPassInputSummary {
     pub requiresDepthTexture: bool,
@@ -3632,7 +3645,10 @@ impl crate::UnityEngine::Rendering::Universal::UniversalRenderer_RenderPassInput
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderer+TextureCopySchedules"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UniversalRenderer_TextureCopySchedules {
     pub depth: crate::UnityEngine::Rendering::Universal::UniversalRenderer_DepthCopySchedule,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ConnectionFailedException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConnectionFailedException {
     __cordl_parent: crate::System::Exception,
     pub reason: crate::GlobalNamespace::ConnectionFailedReason,

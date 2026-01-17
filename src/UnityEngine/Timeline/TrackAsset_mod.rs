@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Version: i32,
@@ -2848,7 +2848,7 @@ impl AsMut<crate::UnityEngine::Timeline::IPropertyPreview>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackAsset_TrackAssetUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2901,7 +2901,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+TransientBuildData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TrackAsset_TransientBuildData {
     pub trackList: quest_hook::libil2cpp::Gc<
@@ -3065,10 +3068,15 @@ impl crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackAsset+Versions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TrackAsset_Versions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AnimatedTrackProperties = 3i32,
     Initial = 0i32,
     RootMotionUpgrade = 2i32,

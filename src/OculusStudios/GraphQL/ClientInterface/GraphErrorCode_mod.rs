@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+GraphErrorCode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphErrorCode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     GRAPH_QL__ADFINDER_EXCEPTION = 1675018i32,
     GRAPH_QL__BAD_ARGUMENTS = 1675012i32,
     GRAPH_QL__BAD_QUERY = 1675002i32,

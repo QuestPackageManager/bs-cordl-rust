@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DefiniteLengthInputStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefiniteLengthInputStream {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::LimitedInputStream,
     pub _originalLength: i32,

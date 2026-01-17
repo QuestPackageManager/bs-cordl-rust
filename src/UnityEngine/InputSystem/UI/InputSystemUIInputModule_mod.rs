@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputSystemUIInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
     pub m_MoveRepeatDelay: f32,
@@ -2918,10 +2918,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputSystemUIInputModule_CursorLockBehavior {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     OutsideScreen = 0i32,
     ScreenCenter = 1i32,
 }
@@ -3022,7 +3027,10 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputSystemUIInputModule_InputActionReferenceState {
     pub refCount: i32,

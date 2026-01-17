@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+AutoValidator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AutoValidator {
     __cordl_parent: crate::System::Xml::Schema::BaseValidator,
 }

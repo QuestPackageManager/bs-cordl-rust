@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsLighting")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsLighting {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lightingDebugMode_k__BackingField:
@@ -374,7 +374,7 @@ impl AsMut<crate::UnityEngine::Rendering::IDebugDisplaySettingsQuery>
     feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsLighting+SettingsPanel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsLighting_SettingsPanel {
     __cordl_parent: crate::UnityEngine::Rendering::DebugDisplaySettingsPanel_1<
         quest_hook::libil2cpp::Gc<
@@ -483,7 +483,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsLighting+Strings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsLighting_Strings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -543,7 +543,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsLighting+WidgetFactory"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsLighting_WidgetFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

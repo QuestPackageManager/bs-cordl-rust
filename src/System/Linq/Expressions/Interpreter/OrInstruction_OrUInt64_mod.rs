@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+OrInstruction+OrUInt64")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OrInstruction_OrUInt64 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::OrInstruction,
 }

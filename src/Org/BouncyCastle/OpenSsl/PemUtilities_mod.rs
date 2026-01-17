@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PemUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -194,10 +194,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::OpenSsl::Pe
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PemUtilities_PemBaseAlg {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AES_128 = 0i32,
     AES_192 = 1i32,
     AES_256 = 2i32,
@@ -294,10 +299,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PemUtilities_PemMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CBC = 0i32,
     CFB = 1i32,
     ECB = 2i32,

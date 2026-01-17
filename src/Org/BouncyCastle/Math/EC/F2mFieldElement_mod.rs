@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mFieldElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct F2mFieldElement {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement,
     pub representation: i32,

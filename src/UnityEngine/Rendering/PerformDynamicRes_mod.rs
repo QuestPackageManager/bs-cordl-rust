@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+PerformDynamicRes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PerformDynamicRes {
     __cordl_parent: crate::System::MulticastDelegate,
 }

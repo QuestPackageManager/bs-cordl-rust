@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileTlsProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MobileTlsProvider {
     __cordl_parent: crate::Mono::Security::Interface::MonoTlsProvider,
 }

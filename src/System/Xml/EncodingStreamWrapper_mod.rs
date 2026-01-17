@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+EncodingStreamWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EncodingStreamWrapper {
     __cordl_parent: crate::System::IO::Stream,
     pub encodingCode: crate::System::Xml::EncodingStreamWrapper_SupportedEncoding,
@@ -992,10 +992,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::EncodingStreamWra
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+EncodingStreamWrapper+SupportedEncoding")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum EncodingStreamWrapper_SupportedEncoding {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 3i32,
     UTF16BE = 2i32,
     UTF16LE = 1i32,

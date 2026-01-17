@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatFxGroupEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
@@ -185,7 +185,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FloatFxGroupE
 }
 #[cfg(feature = "cordl_class_FloatFxGroupEffect+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,

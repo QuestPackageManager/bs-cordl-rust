@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FreeCamera")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FreeCamera {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_LookSpeedController: f32,

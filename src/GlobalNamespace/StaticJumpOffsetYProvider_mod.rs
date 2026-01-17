@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StaticJumpOffsetYProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StaticJumpOffsetYProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _initData:
@@ -117,7 +117,7 @@ impl AsMut<crate::GlobalNamespace::IJumpOffsetYProvider>
 }
 #[cfg(feature = "cordl_class_StaticJumpOffsetYProvider+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StaticJumpOffsetYProvider_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub jumpyYOffset: f32,

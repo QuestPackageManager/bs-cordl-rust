@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Sockets+SocketException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SocketException {
     __cordl_parent: crate::System::ComponentModel::Win32Exception,
     pub m_EndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,

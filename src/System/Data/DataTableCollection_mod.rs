@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataTableCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataTableCollection {
     __cordl_parent: crate::System::Data::InternalDataCollectionBase,
     pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,

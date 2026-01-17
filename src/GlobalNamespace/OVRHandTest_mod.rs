@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRHandTest+BoolMonitor+BoolGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoolMonitor_OVRHandTest_BoolGenerator {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -165,7 +165,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRHandTest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHandTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub uiText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
@@ -302,7 +302,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHandTest {
 }
 #[cfg(feature = "cordl_class_OVRHandTest+BoolMonitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHandTest_BoolMonitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

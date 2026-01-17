@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Light")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Light {
     __cordl_parent: crate::UnityEngine::Behaviour,
     pub _shape_k__BackingField: crate::UnityEngine::LightShape,

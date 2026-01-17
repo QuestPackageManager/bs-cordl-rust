@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TriggerFloatFxGroupEffectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TriggerFloatFxGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _floatFxGroups: quest_hook::libil2cpp::Gc<

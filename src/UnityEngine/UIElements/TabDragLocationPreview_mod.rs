@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TabDragLocationPreview")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TabDragLocationPreview {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_Preview: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

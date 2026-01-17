@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+GenericParameterDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericParameterDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract,
     pub helper: quest_hook::libil2cpp::Gc<
@@ -118,7 +118,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+Serialization+GenericParameterDataContract+GenericParameterDataContractCriticalHelper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericParameterDataContract_GenericParameterDataContractCriticalHelper {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract_DataContractCriticalHelper,
     pub parameterPosition: i32,

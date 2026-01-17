@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelScenesTransitionSetupDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     pub _telemetryModel: quest_hook::libil2cpp::Gc<crate::Analytics::Model::TelemetryModel>,

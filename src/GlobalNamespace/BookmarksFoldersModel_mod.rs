@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BookmarksFoldersModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BookmarksFoldersModel {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub myFolders: quest_hook::libil2cpp::Gc<

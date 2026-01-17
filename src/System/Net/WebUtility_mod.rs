@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -261,7 +261,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebUtility {
 }
 #[cfg(feature = "cordl_class_System+Net+WebUtility+UrlDecoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebUtility_UrlDecoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bufferSize: i32,

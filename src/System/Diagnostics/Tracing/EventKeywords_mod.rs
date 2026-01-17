@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventKeywords")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i64)]
 pub enum EventKeywords {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = -1i64,
     AuditFailure = 4503599627370496i64,
     AuditSuccess = 9007199254740992i64,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_Text")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Text {
     __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
     pub m_text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -8203,7 +8203,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Text {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Text+CharacterSubstitution")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TMP_Text_CharacterSubstitution {
     pub index: i32,
@@ -8322,7 +8325,7 @@ impl crate::TMPro::TMP_Text_CharacterSubstitution {
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Text+MissingCharacterEventCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Text_MissingCharacterEventCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8521,7 +8524,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Text_MissingCharact
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TMP_Text_SpecialCharacter {
     pub character: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
@@ -8644,7 +8650,10 @@ impl crate::TMPro::TMP_Text_SpecialCharacter {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TMP_Text_TextBackingContainer {
     pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -8917,10 +8926,15 @@ impl crate::TMPro::TMP_Text_TextBackingContainer {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Text+TextInputSources")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TMP_Text_TextInputSources {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     SetText = 1i32,
     SetTextArray = 2i32,
     TextInputBox = 0i32,
@@ -9001,7 +9015,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_TextInputSo
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Text+TextProcessingElement")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TMP_Text_TextProcessingElement {
     pub elementType: crate::TMPro::TextProcessingElementType,

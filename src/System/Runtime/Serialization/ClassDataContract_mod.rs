@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+ClassDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClassDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract,
     pub ContractNamespaces: quest_hook::libil2cpp::Gc<
@@ -1074,7 +1074,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+Serialization+ClassDataContract+ClassDataContractCriticalHelper+DataMemberConflictComparer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClassDataContractCriticalHelper_ClassDataContract_DataMemberConflictComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1231,7 +1231,10 @@ for crate::System::Runtime::Serialization::ClassDataContractCriticalHelper_Class
 #[cfg(
     feature = "cordl_class_System+Runtime+Serialization+ClassDataContract+ClassDataContractCriticalHelper+Member"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ClassDataContractCriticalHelper_ClassDataContract_Member {
     pub member: quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::DataMember>,
@@ -1387,7 +1390,7 @@ impl
     feature = "cordl_class_System+Runtime+Serialization+ClassDataContract+ClassDataContractCriticalHelper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClassDataContract_ClassDataContractCriticalHelper {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract_DataContractCriticalHelper,
     pub baseContract:
@@ -2566,7 +2569,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+ClassDataContract+DataMemberComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClassDataContract_DataMemberComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

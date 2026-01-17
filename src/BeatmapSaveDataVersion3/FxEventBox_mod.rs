@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FxEventBox {
     __cordl_parent: crate::BeatmapSaveDataVersion3::EventBox,
     pub l: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,

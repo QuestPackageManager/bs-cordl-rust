@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+OverflowException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OverflowException {
     __cordl_parent: crate::System::ArithmeticException,
 }

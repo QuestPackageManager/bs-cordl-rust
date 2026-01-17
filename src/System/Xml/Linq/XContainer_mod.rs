@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Linq+XContainer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XContainer {
     __cordl_parent: crate::System::Xml::Linq::XNode,
     pub content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -717,7 +717,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XContainer 
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XContainer+ContentReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XContainer_ContentReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eCache: crate::System::Xml::Linq::NamespaceCache,

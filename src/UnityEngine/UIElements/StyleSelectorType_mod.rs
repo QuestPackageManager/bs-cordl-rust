@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSelectorType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum StyleSelectorType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Class = 3i32,
     _cordl_ID = 6i32,
     Predicate = 7i32,

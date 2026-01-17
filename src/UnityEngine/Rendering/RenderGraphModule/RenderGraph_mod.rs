@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+BufferResourceData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugData_RenderGraph_BufferResourceData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub count: i32,
@@ -97,7 +97,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+PassData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DebugData_RenderGraph_PassData {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -245,7 +248,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::DebugData_RenderGraph_Pas
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+PassScriptInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugData_RenderGraph_PassScriptInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -338,7 +341,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+ResourceData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DebugData_RenderGraph_ResourceData {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -469,7 +475,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::DebugData_RenderGraph_Res
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+TextureResourceData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugData_RenderGraph_TextureResourceData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub width: i32,
@@ -574,7 +580,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+PassData+NRPInfo+NativeRenderPassInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NRPInfo_PassData_DebugData_RenderGraph_NativeRenderPassInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub passBreakReasoning: quest_hook::libil2cpp::Gc<
@@ -695,7 +701,7 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NRPInfo_PassData_DebugData
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+PassData+NRPInfo+NativeRenderPassInfo+AttachmentInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NativeRenderPassInfo_NRPInfo_PassData_DebugData_RenderGraph_AttachmentInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub resourceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -794,7 +800,10 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassInfo_NRPIn
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+PassData+NRPInfo+NativeRenderPassInfo+PassCompatibilityInfo"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeRenderPassInfo_NRPInfo_PassData_DebugData_RenderGraph_PassCompatibilityInfo {
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -915,7 +924,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassInfo_NRPI
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData+PassData+NRPInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PassData_DebugData_RenderGraph_NRPInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nativePassInfo: quest_hook::libil2cpp::Gc<
@@ -1023,7 +1032,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraph {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nativeCompiler: quest_hook::libil2cpp::Gc<
@@ -5025,7 +5034,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+CompiledGraph")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraph_CompiledGraph {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub compiledResourcesInfos: quest_hook::libil2cpp::Gc<
@@ -5249,7 +5258,10 @@ impl AsMut<crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph_ICompil
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+CompiledPassInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderGraph_CompiledPassInfo {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -5409,7 +5421,10 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph_CompiledPassI
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+CompiledResourceInfo"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderGraph_CompiledResourceInfo {
     pub producers: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
@@ -5550,7 +5565,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::RenderGraph_CompiledResou
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+DebugData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraph_DebugData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub passList: quest_hook::libil2cpp::Gc<
@@ -5687,7 +5702,7 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+ICompiledGraph")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct RenderGraph_ICompiledGraph {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -5772,7 +5787,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+OnExecutionRegisteredDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraph_OnExecutionRegisteredDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5975,7 +5990,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+OnGraphRegisteredDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraph_OnGraphRegisteredDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6165,7 +6180,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraph+ProfilingScopePassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraph_ProfilingScopePassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sampler: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ProfilingSampler>,

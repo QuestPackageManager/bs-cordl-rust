@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidHingeAngle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidHingeAngle {
     __cordl_parent: crate::UnityEngine::InputSystem::HingeAngle,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SpawnChevronObjectPoolsInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpawnChevronObjectPoolsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _spawnRotationChevronPrefab:

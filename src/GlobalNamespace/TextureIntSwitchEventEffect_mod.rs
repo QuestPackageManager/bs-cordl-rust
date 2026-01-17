@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TextureIntSwitchEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextureIntSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockController:
@@ -202,7 +202,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextureIntSwi
     }
 }
 #[cfg(feature = "cordl_class_TextureIntSwitchEventEffect+TextureValueTuple")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TextureIntSwitchEventEffect_TextureValueTuple {
     pub value: i32,

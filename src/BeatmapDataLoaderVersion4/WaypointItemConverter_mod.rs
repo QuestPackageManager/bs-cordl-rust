@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+WaypointItemConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaypointItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _waypoints: quest_hook::libil2cpp::Gc<

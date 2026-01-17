@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureDescription")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RSAPKCS1SignatureDescription {
     __cordl_parent: crate::System::Security::Cryptography::SignatureDescription,
     pub _hashAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

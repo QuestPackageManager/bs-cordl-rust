@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+LockQueue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LockQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rwlock: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterLock>,

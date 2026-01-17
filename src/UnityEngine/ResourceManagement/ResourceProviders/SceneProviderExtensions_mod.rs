@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneProviderExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

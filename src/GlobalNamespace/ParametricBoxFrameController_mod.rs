@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ParametricBoxFrameController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParametricBoxFrameController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub width: f32,

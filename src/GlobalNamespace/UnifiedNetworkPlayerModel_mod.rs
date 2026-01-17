@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnifiedNetworkPlayerModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameLiftNetworkPlayerModel:
@@ -1582,10 +1582,15 @@ impl AsMut<crate::Zenject::IInitializable> for crate::GlobalNamespace::UnifiedNe
     }
 }
 #[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     GameLift = 0i32,
     LocalServer = 2i32,
     Platform = 1i32,
@@ -1676,7 +1681,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -1798,7 +1803,7 @@ impl
 }
 #[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+StartClientPartyConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnifiedNetworkPlayerModel_StartClientPartyConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRRuntimeController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRRuntimeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_controller: crate::GlobalNamespace::OVRInput_Controller,

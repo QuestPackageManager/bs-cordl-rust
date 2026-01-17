@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultTlsAgreementCredentials {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials,
     pub mCertificate: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::Certificate>,

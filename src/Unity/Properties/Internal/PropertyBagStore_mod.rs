@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBagStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -229,7 +229,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::Internal::P
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PropertyBagStore_TypedStore_1<TContainer: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NormalizeProcessor {
     __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<f32>,
     pub min: f32,

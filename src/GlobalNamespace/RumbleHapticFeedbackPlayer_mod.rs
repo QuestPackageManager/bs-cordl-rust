@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RumbleHapticFeedbackPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RumbleHapticFeedbackPlayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>,
@@ -237,7 +237,7 @@ impl AsMut<crate::GlobalNamespace::IHapticFeedbackPlayer>
 }
 #[cfg(feature = "cordl_class_RumbleHapticFeedbackPlayer+RumbleData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RumbleHapticFeedbackPlayer_RumbleData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub active: bool,

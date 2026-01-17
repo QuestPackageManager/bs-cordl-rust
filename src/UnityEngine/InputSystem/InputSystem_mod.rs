@@ -1,7 +1,10 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer+_data_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -118,7 +121,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3319,7 +3322,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputSystem_DeltaStateEventBuffer {
     pub stateEvent: crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent,
@@ -3432,7 +3438,10 @@ impl crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
         crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer;
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSystem+StateEventBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputSystem_StateEventBuffer {
     pub stateEvent: crate::UnityEngine::InputSystem::LowLevel::StateEvent,
@@ -3544,7 +3553,10 @@ impl crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputSystem+StateEventBuffer+_data_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StateEventBuffer_InputSystem__data_e__FixedBuffer {
     pub FixedElementField: u8,

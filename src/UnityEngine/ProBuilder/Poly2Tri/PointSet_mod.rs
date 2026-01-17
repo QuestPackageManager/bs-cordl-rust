@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PointSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Points_k__BackingField: quest_hook::libil2cpp::Gc<

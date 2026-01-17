@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGNet+Logging+Debug")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Debug {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -231,7 +231,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug {
     }
 }
 #[cfg(feature = "cordl_class_BGNet+Logging+Debug+ILogger")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct Debug_ILogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -391,7 +391,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug_ILogger 
 }
 #[cfg(feature = "cordl_class_BGNet+Logging+Debug+LoggerLinkedList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Debug_LoggerLinkedList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub logger: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub s_DebugSetupPassData: quest_hook::libil2cpp::Gc<
@@ -1298,7 +1298,7 @@ impl AsMut<crate::UnityEngine::Rendering::IDebugDisplaySettingsQuery>
     feature = "cordl_class_UnityEngine+Rendering+Universal+DebugHandler+DebugFinalValidationPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugHandler_DebugFinalValidationPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isFinalPass: bool,
@@ -1401,7 +1401,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugHandler+DebugSetupPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugHandler_DebugSetupPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isActiveForCamera: bool,

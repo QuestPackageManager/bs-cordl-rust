@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ColliderBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColliderBehaviour {
     __cordl_parent: crate::UnityEngine::ProBuilder::EntityBehaviour,
 }

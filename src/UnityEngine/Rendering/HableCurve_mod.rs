@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HableCurve")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HableCurve {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _whitePoint_k__BackingField: f32,
@@ -443,7 +443,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::HableC
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HableCurve+DirectParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HableCurve_DirectParams {
     pub x0: f32,
@@ -553,7 +556,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::Rendering::HableCurve_DirectParams {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HableCurve+Segment")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HableCurve_Segment {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub offsetX: f32,
@@ -656,7 +659,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::HableC
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HableCurve+Uniforms")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HableCurve_Uniforms {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::HableCurve>,

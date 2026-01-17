@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Array")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Array {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -4612,7 +4612,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Array {
 }
 #[cfg(feature = "cordl_class_System+Array+ArrayEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Array_ArrayEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -4816,7 +4816,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Array_ArrayEnumerator {
 }
 #[cfg(feature = "cordl_class_System+Array+EmptyInternalEnumerator_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Array_EmptyInternalEnumerator_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -5110,7 +5110,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_System+Array+InternalEnumerator_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Array_InternalEnumerator_1<T: quest_hook::libil2cpp::Type> {
     pub array: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -5446,7 +5449,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_System+Array+RawData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Array_RawData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Bounds: crate::System::IntPtr,
@@ -5498,7 +5501,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Array_RawData {
     }
 }
 #[cfg(feature = "cordl_class_System+Array+SorterGenericArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Array_SorterGenericArray {
     pub keys: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -5845,7 +5851,10 @@ impl crate::System::Array_SorterGenericArray {
     }
 }
 #[cfg(feature = "cordl_class_System+Array+SorterObjectArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Array_SorterObjectArray {
     pub keys: quest_hook::libil2cpp::Gc<

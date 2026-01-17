@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SignalTickPriorityCopyBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalTickPriorityCopyBinder {
     __cordl_parent: crate::Zenject::SignalCopyBinder,
     pub _SignalBindInfo_k__BackingField:

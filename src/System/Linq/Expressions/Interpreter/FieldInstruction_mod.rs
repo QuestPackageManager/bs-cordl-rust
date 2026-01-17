@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+FieldInstruction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FieldInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,

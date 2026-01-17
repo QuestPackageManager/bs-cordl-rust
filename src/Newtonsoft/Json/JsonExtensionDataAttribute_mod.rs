@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonExtensionDataAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonExtensionDataAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _WriteData_k__BackingField: bool,

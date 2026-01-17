@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicHeightVirtualizationController_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicHeightVirtualizationController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::VerticalVirtualizationController_1<
         T,
@@ -1559,7 +1559,10 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ContentHeightCacheInfo"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
     T: quest_hook::libil2cpp::Type,
@@ -1745,10 +1748,15 @@ impl<T: quest_hook::libil2cpp::Type>
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ScrollDirection"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DynamicHeightVirtualizationController_1_ScrollDirection {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Down = 2i32,
     Idle = 0i32,
     Up = 1i32,
@@ -1850,10 +1858,15 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+DynamicHeightVirtualizationController_1+VirtualizationChange"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DynamicHeightVirtualizationController_1_VirtualizationChange {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ForcedScroll = 3i32,
     None = 0i32,
     Resize = 1i32,

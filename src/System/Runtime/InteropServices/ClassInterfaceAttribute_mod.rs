@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClassInterfaceAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _val: crate::System::Runtime::InteropServices::ClassInterfaceType,

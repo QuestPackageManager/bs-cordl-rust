@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ClampedFloatParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClampedFloatParameter {
     __cordl_parent: crate::UnityEngine::Rendering::FloatParameter,
     pub min: f32,

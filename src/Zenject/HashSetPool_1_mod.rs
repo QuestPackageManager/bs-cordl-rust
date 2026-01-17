@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+HashSetPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HashSetPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::StaticMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,

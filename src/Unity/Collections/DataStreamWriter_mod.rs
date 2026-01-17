@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+DataStreamWriter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DataStreamWriter {
     pub m_Data: crate::Unity::Collections::DataStreamWriter_StreamData,
@@ -1595,7 +1598,10 @@ impl crate::Unity::Collections::DataStreamWriter {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+DataStreamWriter+StreamData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DataStreamWriter_StreamData {
     pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

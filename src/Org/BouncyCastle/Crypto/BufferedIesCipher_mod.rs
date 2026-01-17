@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+BufferedIesCipher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BufferedIesCipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::BufferedCipherBase,
     pub engine: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Engines::IesEngine>,

@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Avx+CMP")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Avx_X86_CMP {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EQ_OQ = 0i32,
     EQ_OS = 16i32,
     EQ_UQ = 8i32,
@@ -111,7 +116,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::Intrinsics::A
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Fma+Union")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Fma_X86_Union {
     padding: quest_hook::libil2cpp::ValueTypePadding<4usize>,
@@ -203,10 +211,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Burst::Intrins
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
 impl crate::Unity::Burst::Intrinsics::Fma_X86_Union {}
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Sse4_2_X86_SIDD {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BIT_MASK = 0i32,
     CMP_EQUAL_EACH = 8i32,
     CMP_EQUAL_ORDERED = 12i32,
@@ -294,7 +307,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::Intrinsics::S
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Sse4_2_X86_StrBoolArray {
     pub Bits: crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer,
@@ -447,7 +463,10 @@ impl crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {
     pub FixedElementField: u16,
@@ -552,7 +571,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -974,7 +993,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86 
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Avx")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Avx {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -6321,7 +6340,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Avx2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Avx2 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -11952,7 +11971,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Bmi1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Bmi1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -12288,7 +12307,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Bmi2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Bmi2 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -12524,7 +12543,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+F16C")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_F16C {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -12734,7 +12753,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Fma")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Fma {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -13787,10 +13806,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+MXCSRBits")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum X86_MXCSRBits {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DenormalFlag = 2i32,
     DenormalOperationMask = 256i32,
     DenormalsAreZeroes = 64i32,
@@ -13888,7 +13912,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::Intrinsics::X
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Popcnt")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Popcnt {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -13995,10 +14019,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+RoundingMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum X86_RoundingMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FROUND_CEIL = 2i32,
     FROUND_CEIL_NOEXC = 10i32,
     FROUND_CUR_DIRECTION = 4i32,
@@ -14085,7 +14114,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::Intrinsics::X
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+RoundingScope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct X86_RoundingScope {
     pub OldBits: crate::Unity::Burst::Intrinsics::X86_MXCSRBits,
@@ -14241,7 +14273,7 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Sse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -16658,7 +16690,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Sse2 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -21881,7 +21913,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Sse3 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -22186,7 +22218,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Sse4_1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -23939,7 +23971,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Sse4_2 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -24853,7 +24885,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Ssse3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X86_Ssse3 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

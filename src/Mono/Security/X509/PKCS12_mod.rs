@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS12 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -899,7 +899,7 @@ impl AsMut<crate::System::ICloneable> for crate::Mono::Security::X509::PKCS12 {
 }
 #[cfg(feature = "cordl_class_Mono+Security+X509+PKCS12+DeriveBytes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS12_DeriveBytes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

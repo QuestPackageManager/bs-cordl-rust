@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentTracksDefinitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _environmentInfo: quest_hook::libil2cpp::Gc<
@@ -239,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _trackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -469,10 +469,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum EnvironmentTracksDefinitionSO_BasicEventTrackPage {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = 2i32,
     Page1 = 0i32,
     Page2 = 1i32,
@@ -575,7 +580,7 @@ unsafe impl quest_hook::libil2cpp::Return
     feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupPageInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventBoxGroupPageName: quest_hook::libil2cpp::Gc<
@@ -747,7 +752,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+EventBoxGroupTrackInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1267,10 +1272,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     NoOverride = 0i32,
     X = 1i32,
     Y = 2i32,

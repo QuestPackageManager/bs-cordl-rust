@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Assets+OVR+Scripts+FixRecord")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FixRecord {
     __cordl_parent: crate::Assets::OVR::Scripts::Record,
     pub fixMethod: quest_hook::libil2cpp::Gc<crate::Assets::OVR::Scripts::FixMethodDelegate>,

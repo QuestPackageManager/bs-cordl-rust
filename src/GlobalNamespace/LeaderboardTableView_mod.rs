@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LeaderboardTableView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _cellPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardTableCell>,
@@ -204,7 +204,7 @@ impl AsMut<crate::HMUI::TableView_IDataSource> for crate::GlobalNamespace::Leade
 }
 #[cfg(feature = "cordl_class_LeaderboardTableView+ScoreData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardTableView_ScoreData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _score_k__BackingField: i32,

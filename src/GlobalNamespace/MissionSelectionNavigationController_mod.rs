@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionSelectionNavigationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionSelectionNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
     pub _missionSelectionMapViewController:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+PriorityQueue_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PriorityQueue_2<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

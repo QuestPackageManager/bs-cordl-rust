@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGNet+Logging+UnityLogger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityLogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+ResponsePayload")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResponsePayload {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _error_k__BackingField:

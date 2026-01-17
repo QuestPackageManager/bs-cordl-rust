@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectDispatcher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -957,10 +957,15 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::ObjectDispatcher 
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TransformTrackingType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ObjectDispatcher_TransformTrackingType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     GlobalTRS = 0i32,
     Hierarchy = 2i32,
     LocalTRS = 1i32,
@@ -1050,10 +1055,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectDispatcher+TypeTrackingFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ObjectDispatcher_TypeTrackingFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 7i32,
     Assets = 2i32,
     Default = 3i32,

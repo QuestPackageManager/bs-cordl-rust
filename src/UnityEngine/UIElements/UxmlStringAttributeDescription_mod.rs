@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlStringAttributeDescription")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UxmlStringAttributeDescription {
     __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

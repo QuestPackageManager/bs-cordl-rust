@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JoystickState {
     pub buttons: i32,
@@ -171,10 +174,15 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum JoystickState_Button {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HatSwitchDown = 1i32,
     HatSwitchLeft = 2i32,
     HatSwitchRight = 3i32,

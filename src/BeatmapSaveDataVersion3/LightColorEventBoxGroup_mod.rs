@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightColorEventBoxGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightColorEventBoxGroup {
     __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorEventBox>,

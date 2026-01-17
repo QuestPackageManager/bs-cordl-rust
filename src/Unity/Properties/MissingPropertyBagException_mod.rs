@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+MissingPropertyBagException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissingPropertyBagException {
     __cordl_parent: crate::System::Exception,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,

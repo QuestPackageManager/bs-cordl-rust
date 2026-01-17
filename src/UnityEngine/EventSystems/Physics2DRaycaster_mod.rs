@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+Physics2DRaycaster")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Physics2DRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::PhysicsRaycaster,
     pub m_Hits: quest_hook::libil2cpp::Gc<

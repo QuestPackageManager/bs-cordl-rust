@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MeshRendererSwitchEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MeshRendererSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,

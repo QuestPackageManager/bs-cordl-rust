@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+PanelAnimationSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PanelAnimationSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _duration: f32,

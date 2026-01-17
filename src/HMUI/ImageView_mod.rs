@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ImageView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImageView {
     __cordl_parent: crate::HMUI::ImageViewBase,
     pub _useScriptableObjectColors: bool,
@@ -975,10 +975,15 @@ impl AsMut<crate::GlobalNamespace::IComponentRefresher> for crate::HMUI::ImageVi
     }
 }
 #[cfg(feature = "cordl_class_HMUI+ImageView+GradientDirection")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ImageView_GradientDirection {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 0i32,
     Vertical = 1i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+MultilineAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultilineAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub lines: i32,

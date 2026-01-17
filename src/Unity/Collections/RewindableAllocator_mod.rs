@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+RewindableAllocator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RewindableAllocator {
     pub m_spinner: crate::Unity::Collections::Spinner,
@@ -647,7 +650,10 @@ impl AsMut<crate::Unity::Collections::AllocatorManager_IAllocator>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+RewindableAllocator+MemoryBlock")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RewindableAllocator_MemoryBlock {
     pub m_pointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -854,7 +860,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_Unity+Collections+RewindableAllocator+Try_000009DE_BurstDirectCall")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RewindableAllocator_Try_000009DE_BurstDirectCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -988,7 +994,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Unity+Collections+RewindableAllocator+Try_000009DE_PostfixBurstDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RewindableAllocator_Try_000009DE_PostfixBurstDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1204,7 +1210,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+RewindableAllocator+Union")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RewindableAllocator_Union {
     pub m_long: i64,

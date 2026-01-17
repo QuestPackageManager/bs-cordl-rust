@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRMixedRealityCaptureTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub inited: bool,
@@ -167,10 +167,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMixedReali
     }
 }
 #[cfg(feature = "cordl_class_OVRMixedRealityCaptureTest+CameraMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRMixedRealityCaptureTest_CameraMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Normal = 0i32,
     OverrideFov = 1i32,
     ThirdPerson = 2i32,

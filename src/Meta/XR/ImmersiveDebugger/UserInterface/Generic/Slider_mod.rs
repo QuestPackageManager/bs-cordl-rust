@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+Slider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Slider {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Button,
     pub _emptyBackground: quest_hook::libil2cpp::Gc<

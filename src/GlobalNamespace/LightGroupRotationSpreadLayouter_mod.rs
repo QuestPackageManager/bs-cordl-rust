@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightGroupRotationSpreadLayouter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightGroupRotationSpreadLayouter {
     __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _rotationStep: crate::UnityEngine::Vector3,

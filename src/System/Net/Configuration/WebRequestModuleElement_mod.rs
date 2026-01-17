@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Configuration+WebRequestModuleElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebRequestModuleElement {
     __cordl_parent: crate::System::Configuration::ConfigurationElement,
 }

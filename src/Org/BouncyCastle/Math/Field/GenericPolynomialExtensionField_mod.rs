@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericPolynomialExtensionField {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub subfield: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IFiniteField>,

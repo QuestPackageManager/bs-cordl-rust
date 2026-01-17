@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SchemaCollectionPreprocessor {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
     pub schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
@@ -1056,10 +1056,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SchemaCollectionPreprocessor_Compositor {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Import = 2i32,
     Include = 1i32,
     Root = 0i32,

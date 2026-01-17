@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathDocumentNavigator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XPathDocumentNavigator {
     __cordl_parent: crate::System::Xml::XPath::XPathNavigator,
     pub _pageCurrent: quest_hook::libil2cpp::Gc<

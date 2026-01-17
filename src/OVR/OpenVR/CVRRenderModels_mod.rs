@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVRRenderModels {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRRenderModels,
@@ -704,7 +704,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRRenderModels {
     }
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+GetComponentStateUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CVRRenderModels_GetComponentStateUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
@@ -809,7 +812,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::OVR::OpenVR::CVRRenderModels_GetComponentStateUnion {}
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVRRenderModels__GetComponentStatePacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }

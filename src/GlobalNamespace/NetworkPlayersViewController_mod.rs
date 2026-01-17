@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NetworkPlayersViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkPlayersViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _networkPlayersTableView:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonTextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonTextWriter {
     __cordl_parent: crate::Newtonsoft::Json::JsonWriter,
     pub _safeAsync: bool,

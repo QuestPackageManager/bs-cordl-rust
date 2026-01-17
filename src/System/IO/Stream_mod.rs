@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+Stream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Stream {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _activeReadWriteTask: quest_hook::libil2cpp::Gc<crate::System::IO::Stream_ReadWriteTask>,
@@ -1724,7 +1724,10 @@ impl AsMut<crate::System::IDisposable> for crate::System::IO::Stream {
     }
 }
 #[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteParameters")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Stream_ReadWriteParameters {
     pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1819,7 +1822,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::IO::Stream_Re
 impl crate::System::IO::Stream_ReadWriteParameters {}
 #[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteTask")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Stream_ReadWriteTask {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<i32>,
     pub _isRead: bool,
@@ -2079,7 +2082,7 @@ impl AsMut<crate::System::Threading::Tasks::ITaskCompletionAction>
 }
 #[cfg(feature = "cordl_class_System+IO+Stream+SynchronousAsyncResult")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Stream_SynchronousAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stateObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2420,7 +2423,10 @@ impl AsMut<crate::System::IAsyncResult> for crate::System::IO::Stream_Synchronou
     }
 }
 #[cfg(feature = "cordl_class_System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     pub __1__state: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoTlsSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoTlsSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _RemoteCertificateValidationCallback_k__BackingField: quest_hook::libil2cpp::Gc<

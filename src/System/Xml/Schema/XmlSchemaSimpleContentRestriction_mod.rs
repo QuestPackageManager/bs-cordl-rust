@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleContentRestriction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaSimpleContentRestriction {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaContent,
     pub baseTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,

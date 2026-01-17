@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceListV1Compat")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamespaceListV1Compat {
     __cordl_parent: crate::System::Xml::Schema::NamespaceList,
 }

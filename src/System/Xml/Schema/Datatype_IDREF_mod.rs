@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_IDREF")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Datatype_IDREF {
     __cordl_parent: crate::System::Xml::Schema::Datatype_NCName,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+XDRSchema")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XDRSchema {
     __cordl_parent: crate::System::Data::XMLSchema,
     pub _schemaName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -491,7 +491,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XDRSchema {
 }
 #[cfg(feature = "cordl_class_System+Data+XDRSchema+NameType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XDRSchema_NameType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

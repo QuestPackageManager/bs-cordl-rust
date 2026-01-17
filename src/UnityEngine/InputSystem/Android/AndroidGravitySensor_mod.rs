@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGravitySensor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidGravitySensor {
     __cordl_parent: crate::UnityEngine::InputSystem::GravitySensor,
 }

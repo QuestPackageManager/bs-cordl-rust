@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509V1CertificateGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509V1CertificateGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tbsGen:

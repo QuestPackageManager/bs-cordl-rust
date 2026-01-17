@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderSpawnInfoNetSerializable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderSpawnInfoNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub colorType: crate::GlobalNamespace::ColorType,

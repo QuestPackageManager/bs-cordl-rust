@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderMeshConstructor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderMeshConstructor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,

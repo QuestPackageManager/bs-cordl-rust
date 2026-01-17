@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+RecipientInformation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecipientInformation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rid: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::RecipientID>,

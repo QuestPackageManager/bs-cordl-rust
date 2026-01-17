@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_Settings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Settings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub assetVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1431,7 +1431,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Settings {
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Settings+LineBreakingTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Settings_LineBreakingTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub leadingCharacters:

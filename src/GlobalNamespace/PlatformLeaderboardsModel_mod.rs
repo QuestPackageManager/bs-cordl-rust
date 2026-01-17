@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformLeaderboardsModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _gameplayModifiersModel:
@@ -572,7 +572,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformLeade
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformLeaderboardsModel_GetScoresCompletionHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -792,10 +792,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlatformLeaderboardsModel_GetScoresResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failed = 1i32,
     FailedTooManyRequests = 2i32,
     _cordl_Ok = 0i32,
@@ -886,7 +891,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformLeaderboardsModel_LeaderboardScore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub score: i32,
@@ -1054,10 +1059,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel+ScoresScope")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlatformLeaderboardsModel_ScoresScope {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AroundPlayer = 1i32,
     Friends = 2i32,
     Global = 0i32,
@@ -1147,10 +1157,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel+State")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlatformLeaderboardsModel_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Initialized = 2i32,
     Initializing = 1i32,
     NotInitialized = 0i32,
@@ -1241,7 +1256,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1419,10 +1434,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlatformLeaderboardsModel_UploadScoreResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failed = 1i32,
     FailedTooManyRequests = 2i32,
     _cordl_Ok = 0i32,

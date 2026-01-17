@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+OculusTouchControllerProfile"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusTouchControllerProfile {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature,
 }
@@ -217,7 +217,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+OculusTouchControllerProfile+OculusTouchController"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusTouchControllerProfile_OculusTouchController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     pub _thumbstick_k__BackingField:

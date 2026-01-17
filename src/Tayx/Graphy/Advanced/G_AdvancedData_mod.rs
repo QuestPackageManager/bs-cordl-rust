@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+Advanced+G_AdvancedData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct G_AdvancedData {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_backgroundImages: quest_hook::libil2cpp::Gc<

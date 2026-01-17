@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+TripleDESTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TripleDESTransform {
     __cordl_parent: crate::Mono::Security::Cryptography::SymmetricTransform,
     pub E1: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DESTransform>,

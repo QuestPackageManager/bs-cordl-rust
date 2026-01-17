@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HelpMenuViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HelpMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _helpMenuSegmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControl>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ByRefMethodInfoCallInstruction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ByRefMethodInfoCallInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::MethodInfoCallInstruction,
     pub _byrefArgs: quest_hook::libil2cpp::Gc<

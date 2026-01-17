@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MovedFromAttribute {
     __cordl_parent: crate::System::Attribute,
     pub data: crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData,

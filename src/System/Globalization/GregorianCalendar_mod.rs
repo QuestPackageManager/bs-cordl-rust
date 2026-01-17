@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+GregorianCalendar")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GregorianCalendar {
     __cordl_parent: crate::System::Globalization::Calendar,
     pub m_type: crate::System::Globalization::GregorianCalendarTypes,

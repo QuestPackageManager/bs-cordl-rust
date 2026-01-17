@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+EnumConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
     pub values: quest_hook::libil2cpp::Gc<

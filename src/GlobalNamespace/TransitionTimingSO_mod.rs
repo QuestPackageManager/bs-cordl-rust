@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TransitionTimingSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TransitionTimingSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _easeType: crate::GlobalNamespace::EaseType,

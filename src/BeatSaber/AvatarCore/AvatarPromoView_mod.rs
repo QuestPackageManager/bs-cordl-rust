@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarPromoView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarPromoView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,

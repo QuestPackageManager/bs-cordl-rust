@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelSelectionNavigationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelSelectionNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
     pub _levelFilteringNavigationController:

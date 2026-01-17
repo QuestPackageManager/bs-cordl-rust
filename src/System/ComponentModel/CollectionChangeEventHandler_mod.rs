@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+CollectionChangeEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionChangeEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPreviewUpdateCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimationPreviewUpdateCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Output: crate::UnityEngine::Animations::AnimationPlayableOutput,

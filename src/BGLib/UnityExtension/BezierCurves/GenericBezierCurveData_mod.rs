@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+GenericBezierCurveData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericBezierCurveData {
     __cordl_parent: crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData,
     pub _startPoint: crate::UnityEngine::Vector3,

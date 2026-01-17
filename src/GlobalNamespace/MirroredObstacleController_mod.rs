@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MirroredObstacleController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredObstacleController {
     __cordl_parent: crate::GlobalNamespace::ObstacleControllerBase,
     pub _stretchableObstacle:
@@ -273,7 +273,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MirroredObsta
 }
 #[cfg(feature = "cordl_class_MirroredObstacleController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredObstacleController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,

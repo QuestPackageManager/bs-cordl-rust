@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DisableGCWhileEnabled")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisableGCWhileEnabled {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

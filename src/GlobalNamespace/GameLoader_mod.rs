@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _context: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,

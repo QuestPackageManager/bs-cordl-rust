@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+VolumeComponentDeprecated")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VolumeComponentDeprecated {
     __cordl_parent: crate::System::Attribute,
 }

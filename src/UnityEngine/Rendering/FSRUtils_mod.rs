@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FSRUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FSRUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -237,7 +237,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::FSRUti
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FSRUtils+ShaderConstants")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FSRUtils_ShaderConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

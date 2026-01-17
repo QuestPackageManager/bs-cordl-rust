@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+BooleanDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BooleanDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::PrimitiveDataContract,
 }

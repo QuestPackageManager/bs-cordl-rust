@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+InternalFE")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InternalFE {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FEtypeFormat: crate::System::Runtime::Serialization::Formatters::FormatterTypeStyle,

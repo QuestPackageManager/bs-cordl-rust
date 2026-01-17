@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeFieldAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub _useEditMode_k__BackingField: crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode,
@@ -114,10 +114,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::TimeFie
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimeFieldAttribute_UseEditMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ApplyEditMode = 1i32,
     None = 0i32,
 }

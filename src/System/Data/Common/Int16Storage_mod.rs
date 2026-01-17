@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+Common+Int16Storage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Int16Storage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
     pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,

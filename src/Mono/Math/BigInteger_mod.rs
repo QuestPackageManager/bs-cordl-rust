@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Math+BigInteger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BigInteger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub length: u32,
@@ -1173,7 +1173,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::BigInteger {
 }
 #[cfg(feature = "cordl_class_Mono+Math+BigInteger+Kernel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BigInteger_Kernel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1657,7 +1657,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::BigInteger_Kernel 
 }
 #[cfg(feature = "cordl_class_Mono+Math+BigInteger+ModulusRing")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BigInteger_ModulusRing {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_mod: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -1890,10 +1890,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::BigInteger_Modulus
     }
 }
 #[cfg(feature = "cordl_class_Mono+Math+BigInteger+Sign")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BigInteger_Sign {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Negative = -1i32,
     Positive = 1i32,
     Zero = 0i32,

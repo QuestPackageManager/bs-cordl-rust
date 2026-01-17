@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MemoryPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MemoryPool_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::MemoryPoolBase_1<TValue>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

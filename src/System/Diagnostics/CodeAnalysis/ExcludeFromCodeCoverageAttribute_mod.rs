@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+ExcludeFromCodeCoverageAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExcludeFromCodeCoverageAttribute {
     __cordl_parent: crate::System::Attribute,
 }

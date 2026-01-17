@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+SerializableHashSet_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializableHashSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::BGLib::UnityExtension::SerializableHashSetBase,
     pub m_hashSet: quest_hook::libil2cpp::Gc<

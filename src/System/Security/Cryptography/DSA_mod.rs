@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+DSA")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DSA {
     __cordl_parent: crate::System::Security::Cryptography::AsymmetricAlgorithm,
 }

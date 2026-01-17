@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LineLight")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LineLight {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _p0: crate::UnityEngine::Vector3,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+CryptoStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CryptoStream {
     __cordl_parent: crate::System::IO::Stream,
     pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

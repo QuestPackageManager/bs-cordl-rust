@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+ArrayList+ReadOnlyArrayList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayList_ReadOnlyArrayList {
     __cordl_parent: crate::System::Collections::ArrayList,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

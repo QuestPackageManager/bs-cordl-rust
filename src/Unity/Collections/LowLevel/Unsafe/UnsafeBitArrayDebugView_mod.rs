@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeBitArrayDebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeBitArrayDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Data: crate::Unity::Collections::LowLevel::Unsafe::UnsafeBitArray,

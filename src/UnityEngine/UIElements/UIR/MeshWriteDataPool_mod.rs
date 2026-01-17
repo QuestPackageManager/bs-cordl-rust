@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshWriteDataPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MeshWriteDataPool {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::ImplicitPool_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,

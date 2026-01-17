@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+DesignerSerializationVisibilityAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesignerSerializationVisibilityAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Visibility_k__BackingField: crate::System::ComponentModel::DesignerSerializationVisibility,

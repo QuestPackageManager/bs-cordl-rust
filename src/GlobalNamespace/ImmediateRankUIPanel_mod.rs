@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ImmediateRankUIPanel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImmediateRankUIPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rankText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

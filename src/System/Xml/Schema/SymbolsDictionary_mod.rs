@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+SymbolsDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SymbolsDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub last: i32,

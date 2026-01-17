@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TimelineArrayReference")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimelineArrayReference {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub arrayType: crate::GlobalNamespace::TimelineArrayReference_ArrayTypes,
@@ -103,10 +103,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TimelineArray
     }
 }
 #[cfg(feature = "cordl_class_TimelineArrayReference+ArrayTypes")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimelineArrayReference_ArrayTypes {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Canvas = 2i32,
     DirectionalLight = 4i32,
     TextMeshPro = 3i32,

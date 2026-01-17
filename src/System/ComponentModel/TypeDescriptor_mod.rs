@@ -1,7 +1,10 @@
 #[cfg(
     feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultExtendedTypeDescriptor"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TypeDescriptionNode_TypeDescriptor_DefaultExtendedTypeDescriptor {
     pub _node: quest_hook::libil2cpp::Gc<
@@ -539,7 +542,10 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
 #[cfg(
     feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode+DefaultTypeDescriptor"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TypeDescriptionNode_TypeDescriptor_DefaultTypeDescriptor {
     pub _node: quest_hook::libil2cpp::Gc<
@@ -1074,7 +1080,7 @@ impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2438,7 +2444,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::TypeDe
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptor_AttributeFilterCacheItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _filter: quest_hook::libil2cpp::Gc<
@@ -2570,7 +2576,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptor_FilterCacheItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _filterService: quest_hook::libil2cpp::Gc<
@@ -2698,7 +2704,7 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+IUnimplemented")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct TypeDescriptor_IUnimplemented {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -2757,7 +2763,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptor_MemberDescriptorComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2881,7 +2887,7 @@ impl AsMut<crate::System::Collections::IComparer>
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptor_MergedTypeDescriptor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _primary: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
@@ -3359,7 +3365,7 @@ impl AsMut<crate::System::ComponentModel::ICustomTypeDescriptor>
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptor_TypeDescriptionNode {
     __cordl_parent: crate::System::ComponentModel::TypeDescriptionProvider,
     pub Next: quest_hook::libil2cpp::Gc<
@@ -3678,7 +3684,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptor_TypeDescriptorComObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3732,7 +3738,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptor_TypeDescriptorInterface {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

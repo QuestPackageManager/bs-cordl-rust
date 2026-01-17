@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLeaderboardPanelItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLeaderboardPanelItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerNameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

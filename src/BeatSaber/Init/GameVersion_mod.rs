@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameVersion {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub content: crate::BeatSaber::Init::GameVersion_Content,
@@ -307,7 +307,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+BuildInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GameVersion_BuildInfo {
     pub buildId: u64,
@@ -601,7 +604,10 @@ impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Build
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Content")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GameVersion_Content {
     pub major: u32,
@@ -939,7 +945,10 @@ impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Conte
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+Metadata")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GameVersion_Metadata {
     pub preReleaseLabel: crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
@@ -1291,7 +1300,10 @@ impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Metad
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleaseLabel")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GameVersion_PreReleaseLabel {
     pub prefix: crate::BeatSaber::Init::GameVersion_PreReleasePrefix,
@@ -1619,10 +1631,15 @@ impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_PreRe
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Init+GameVersion+PreReleasePrefix")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameVersion_PreReleasePrefix {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Alpha = 0i32,
     Beta = 10i32,
     Nightly = 20i32,

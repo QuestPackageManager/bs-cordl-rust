@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TextOnlyTableCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextOnlyTableCell {
     __cordl_parent: crate::HMUI::TableCell,
     pub _selectedHighlightColor: crate::UnityEngine::Color,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BerOctetString {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerOctetString,
     pub chunkSize: i32,
@@ -532,7 +532,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BerOctetString_ChunkEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub octets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

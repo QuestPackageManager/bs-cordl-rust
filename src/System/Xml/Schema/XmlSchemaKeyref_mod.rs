@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaKeyref")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaKeyref {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
     pub refer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,

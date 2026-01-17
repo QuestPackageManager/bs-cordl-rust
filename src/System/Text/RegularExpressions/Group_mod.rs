@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+Group")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Group {
     __cordl_parent: crate::System::Text::RegularExpressions::Capture,
     pub _caps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

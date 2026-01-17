@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+CategoryAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CategoryAttribute {
     __cordl_parent: crate::System::Attribute,
     pub localized: bool,

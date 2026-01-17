@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Stairs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Stairs {
     __cordl_parent: crate::UnityEngine::ProBuilder::Shapes::Shape,
     pub m_StepGenerationType: crate::UnityEngine::ProBuilder::Shapes::StepGenerationType,

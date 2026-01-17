@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+PlatformPotentialPiracyException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformPotentialPiracyException {
     __cordl_parent: crate::System::Exception,
 }

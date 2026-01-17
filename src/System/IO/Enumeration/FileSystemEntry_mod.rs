@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEntry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FileSystemEntry {
     pub _directoryEntry: crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
@@ -415,7 +418,10 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
 #[cfg(
     feature = "cordl_class_System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FileSystemEntry___fileNameBuffer_e__FixedBuffer {
     pub FixedElementField: char,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ListBindableAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListBindableAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _isDefault: bool,

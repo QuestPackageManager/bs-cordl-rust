@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSpatialAnchor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSpatialAnchor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _startCalled: bool,
@@ -2764,7 +2764,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpatialAnc
 }
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+Development")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSpatialAnchor_Development {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2979,7 +2979,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpatialAnc
     }
 }
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+EraseOptions")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpatialAnchor_EraseOptions {
     pub Storage: crate::GlobalNamespace::OVRSpace_StorageLocation,
@@ -3081,7 +3084,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRSpatialAnchor+EraseOptions")]
 impl crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {}
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+InvertedCapture_2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpatialAnchor_InvertedCapture_2<
     TResult: quest_hook::libil2cpp::Type,
@@ -3328,7 +3334,10 @@ impl<TResult: quest_hook::libil2cpp::Type, TCapture: quest_hook::libil2cpp::Type
     }
 }
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+LoadOptions")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpatialAnchor_LoadOptions {
     pub _StorageLocation_k__BackingField: crate::GlobalNamespace::OVRSpace_StorageLocation,
@@ -3649,10 +3658,15 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     }
 }
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorActionType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSpatialAnchor_MultiAnchorActionType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Save = 0i32,
     Share = 1i32,
 }
@@ -3741,7 +3755,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+MultiAnchorDelegatePair")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpatialAnchor_MultiAnchorDelegatePair {
     pub Anchors: quest_hook::libil2cpp::Gc<
@@ -3859,10 +3876,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRSpatialAnchor+MultiAnchorDelegatePair")]
 impl crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {}
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+OperationResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSpatialAnchor_OperationResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failure = -1000i32,
     Failure_DataIsInvalid = -1008i32,
     Failure_GroupNotFound = -2009i32,
@@ -3959,7 +3981,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+SaveOptions")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpatialAnchor_SaveOptions {
     pub Storage: crate::GlobalNamespace::OVRSpace_StorageLocation,
@@ -4059,7 +4084,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRSpatialAnchor+SaveOptions")]
 impl crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {}
 #[cfg(feature = "cordl_class_OVRSpatialAnchor+UnboundAnchor")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpatialAnchor_UnboundAnchor {
     pub _space: crate::GlobalNamespace::OVRSpace,

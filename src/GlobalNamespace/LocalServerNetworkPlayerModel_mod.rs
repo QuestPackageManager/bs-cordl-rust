@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LocalServerNetworkPlayerModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalServerNetworkPlayerModel {
     __cordl_parent: crate::GlobalNamespace::NetworkPlayerModel_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LocalServerConnectionManager>,
@@ -397,7 +397,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalServerNe
 }
 #[cfg(feature = "cordl_class_LocalServerNetworkPlayerModel+LocalServerJoinMatchmakingPartyConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalServerNetworkPlayerModel_LocalServerJoinMatchmakingPartyConfig {
     __cordl_parent: crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LocalServerConnectionManager>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+OpenVR+ViveWand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ViveWand {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     pub _grip_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _EventId_k__BackingField: i32,

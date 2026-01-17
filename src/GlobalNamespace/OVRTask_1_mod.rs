@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRTask_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTask_1<TResult: quest_hook::libil2cpp::Type> {
     pub _id: crate::System::Guid,
@@ -1235,7 +1238,7 @@ impl<TResult: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_OVRTask_1+AwaitableSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_1_AwaitableSource<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::AwaitableCompletionSource_1<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -1446,7 +1449,10 @@ impl<TResult: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::OVRObje
     }
 }
 #[cfg(feature = "cordl_class_OVRTask_1+Awaiter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTask_1_Awaiter<TResult: quest_hook::libil2cpp::Type> {
     pub _task: crate::GlobalNamespace::OVRTask_1<TResult>,
@@ -1696,7 +1702,10 @@ impl<TResult: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_OVRTask_1+Callback")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTask_1_Callback<TResult: quest_hook::libil2cpp::Type> {
     pub _delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
@@ -1989,7 +1998,10 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1_Cal
     }
 }
 #[cfg(feature = "cordl_class_OVRTask_1+CallbackWithState_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTask_1_CallbackWithState_1<
     TResult: quest_hook::libil2cpp::Type,
@@ -2322,7 +2334,10 @@ impl<TResult: quest_hook::libil2cpp::Type, T: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_OVRTask_1+CombinedTaskData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTask_1_CombinedTaskData<TResult: quest_hook::libil2cpp::Type> {
     pub Task: crate::GlobalNamespace::OVRTask_1<
@@ -2573,7 +2588,10 @@ impl<TResult: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRTask_1+CombinedTaskDataWithCompletedTaskId")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTask_1_CombinedTaskDataWithCompletedTaskId<TResult: quest_hook::libil2cpp::Type> {
     pub CompletedTaskId: crate::System::Guid,
@@ -2697,7 +2715,7 @@ impl<TResult: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_OVRTask_1+ContinueWithInvoker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_1_ContinueWithInvoker<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -2923,7 +2941,7 @@ impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTask_1+ContinueWithRemover")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_1_ContinueWithRemover<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -3138,7 +3156,7 @@ impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTask_1+IncrementalResultSubscriber_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_1_IncrementalResultSubscriber_1<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
@@ -3354,7 +3372,7 @@ impl<TResult: quest_hook::libil2cpp::Type, T: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_OVRTask_1+InternalDataRemover")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_1_InternalDataRemover<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -3569,7 +3587,7 @@ impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTask_1+InternalData_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_1_InternalData_1<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
@@ -3777,7 +3795,7 @@ impl<TResult: quest_hook::libil2cpp::Type, T: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_OVRTask_1+TaskSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_1_TaskSource<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _manualSource:

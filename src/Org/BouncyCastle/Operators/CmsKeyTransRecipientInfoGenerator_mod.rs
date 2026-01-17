@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsKeyTransRecipientInfoGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::KeyTransRecipientInfoGenerator,
     pub keyWrapper: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,

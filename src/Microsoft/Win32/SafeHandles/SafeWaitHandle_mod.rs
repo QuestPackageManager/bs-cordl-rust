@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeWaitHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SafeWaitHandle {
     __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
 }

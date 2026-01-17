@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+SecurityElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecurityElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -582,7 +582,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::SecurityElem
 }
 #[cfg(feature = "cordl_class_System+Security+SecurityElement+SecurityAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecurityElement_SecurityAttribute {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

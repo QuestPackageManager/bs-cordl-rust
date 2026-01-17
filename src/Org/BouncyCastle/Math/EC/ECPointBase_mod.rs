@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECPointBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ECPointBase {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::ECPoint,
 }

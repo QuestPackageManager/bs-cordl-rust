@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSelectionView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapSelectionView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,

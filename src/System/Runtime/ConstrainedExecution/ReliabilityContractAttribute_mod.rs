@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReliabilityContractAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ConsistencyGuarantee_k__BackingField:

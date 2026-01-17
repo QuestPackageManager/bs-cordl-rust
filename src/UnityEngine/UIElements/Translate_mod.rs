@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate+PropertyBag+XProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Translate_XProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Translate,
@@ -190,7 +190,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate+PropertyBag+YProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Translate_YProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Translate,
@@ -380,7 +380,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate+PropertyBag+ZProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Translate_ZProperty {
     __cordl_parent:
         crate::Unity::Properties::Property_2<crate::UnityEngine::UIElements::Translate, f32>,
@@ -564,7 +564,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Translate {
     pub m_X: crate::UnityEngine::UIElements::Length,
@@ -1040,7 +1043,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Translate
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Translate+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Translate_PropertyBag {
     __cordl_parent:
         crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::UIElements::Translate>,

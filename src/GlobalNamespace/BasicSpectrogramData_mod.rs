@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BasicSpectrogramData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicSpectrogramData {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _determinismConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DeterminismConfig>,

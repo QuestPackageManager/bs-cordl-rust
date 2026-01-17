@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalWeakTable_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -558,7 +558,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
     feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalWeakTable_2_CreateValueCallback<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -745,7 +745,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalWeakTable_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

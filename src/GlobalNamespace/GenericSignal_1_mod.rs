@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GenericSignal_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericSignal_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::Signal,
     pub _floatEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,

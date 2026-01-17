@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomFogSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomFogSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _bloomFogEnabled: bool,

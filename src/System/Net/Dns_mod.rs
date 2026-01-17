@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Dns")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Dns {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -565,7 +565,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Dns {
 }
 #[cfg(feature = "cordl_class_System+Net+Dns+GetHostAddressesCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Dns_GetHostAddressesCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

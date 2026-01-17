@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Specialized+OrderedDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OrderedDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objectsArray: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -856,7 +856,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
     feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OrderedDictionary_OrderedDictionaryEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objectReturnType: i32,
@@ -1133,7 +1133,7 @@ impl AsMut<crate::System::Collections::IEnumerator>
     feature = "cordl_class_System+Collections+Specialized+OrderedDictionary+OrderedDictionaryKeyValueCollection"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OrderedDictionary_OrderedDictionaryKeyValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objects: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

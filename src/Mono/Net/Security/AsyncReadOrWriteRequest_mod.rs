@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Net+Security+AsyncReadOrWriteRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncReadOrWriteRequest {
     __cordl_parent: crate::Mono::Net::Security::AsyncProtocolRequest,
     pub _UserBuffer_k__BackingField:

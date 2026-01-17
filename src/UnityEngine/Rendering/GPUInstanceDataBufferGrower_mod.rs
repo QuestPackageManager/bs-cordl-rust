@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferGrower")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUInstanceDataBufferGrower {
     pub m_SrcBuffer:
@@ -221,7 +224,7 @@ impl AsMut<crate::System::IDisposable>
     feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferGrower+CopyInstancesKernelIDs"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUInstanceDataBufferGrower_CopyInstancesKernelIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -282,7 +285,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUInstanceDataBufferGrower+GPUResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUInstanceDataBufferGrower_GPUResources {
     pub cs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,

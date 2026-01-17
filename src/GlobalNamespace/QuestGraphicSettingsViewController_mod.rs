@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_QuestGraphicSettingsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuestGraphicSettingsViewController {
     __cordl_parent: crate::GlobalNamespace::GraphicSettingsViewController,
     pub _mirror: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PresetsSettingsController>,

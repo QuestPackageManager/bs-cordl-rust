@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Jobs+IJobParallelForTransformExtensions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IJobParallelForTransformExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -120,7 +120,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Jobs+IJobParallelForTransformExtensions+TransformParallelForLoopStruct_1"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IJobParallelForTransformExtensions_TransformParallelForLoopStruct_1<
     T: quest_hook::libil2cpp::Type,
@@ -355,7 +358,7 @@ impl<T: quest_hook::libil2cpp::Type>
     feature = "cordl_class_UnityEngine+Jobs+IJobParallelForTransformExtensions+TransformParallelForLoopStruct_1+ExecuteJobFunction"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TransformParallelForLoopStruct_1_IJobParallelForTransformExtensions_ExecuteJobFunction<
     T: quest_hook::libil2cpp::Type,
 > {
@@ -549,7 +552,10 @@ for crate::UnityEngine::Jobs::TransformParallelForLoopStruct_1_IJobParallelForTr
 #[cfg(
     feature = "cordl_class_UnityEngine+Jobs+IJobParallelForTransformExtensions+TransformParallelForLoopStruct_1+TransformJobData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TransformParallelForLoopStruct_1_IJobParallelForTransformExtensions_TransformJobData<
     T: quest_hook::libil2cpp::Type,

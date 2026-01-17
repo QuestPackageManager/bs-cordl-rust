@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+ForeignKeyConstraintEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ForeignKeyConstraintEnumerator {
     __cordl_parent: crate::System::Data::ConstraintEnumerator,
 }

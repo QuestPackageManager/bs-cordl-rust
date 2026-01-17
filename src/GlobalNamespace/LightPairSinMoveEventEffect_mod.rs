@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightPairSinMoveEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightPairSinMoveEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _eventL: crate::GlobalNamespace::BasicBeatmapEventType,
@@ -230,7 +230,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightPairSinM
 }
 #[cfg(feature = "cordl_class_LightPairSinMoveEventEffect+MovementData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightPairSinMoveEventEffect_MovementData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enabled: bool,

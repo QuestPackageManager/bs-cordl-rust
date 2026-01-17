@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventCallbackList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Array: quest_hook::libil2cpp::Gc<

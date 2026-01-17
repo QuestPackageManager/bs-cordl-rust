@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapObjectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub noteWasAddedEvent: quest_hook::libil2cpp::Gc<
@@ -2381,7 +2381,7 @@ impl AsMut<crate::GlobalNamespace::ISliderDidFinishJumpEvent>
 }
 #[cfg(feature = "cordl_class_BeatmapObjectManager+NoteWasCutDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectManager_NoteWasCutDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorSignal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorSignal {
     __cordl_parent: crate::GlobalNamespace::GenericSignal_1<crate::UnityEngine::Color>,
 }

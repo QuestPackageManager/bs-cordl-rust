@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSceneAnchor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneAnchor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Space_k__BackingField: crate::GlobalNamespace::OVRSpace,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,

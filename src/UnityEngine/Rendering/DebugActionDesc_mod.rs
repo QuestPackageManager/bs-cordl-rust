@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugActionDesc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugActionDesc {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buttonAction: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,

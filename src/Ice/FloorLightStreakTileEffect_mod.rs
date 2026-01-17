@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloorLightStreakTileEffect {
     __cordl_parent: crate::GlobalNamespace::AbstractPoolContainer,
     pub _stayOnTileDuration: f32,
@@ -234,7 +234,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightStreakTileEffec
 }
 #[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect+Element")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloorLightStreakTileEffect_Element {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didMoveToNextTile: quest_hook::libil2cpp::Gc<

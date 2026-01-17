@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+TextWriter+SyncTextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextWriter_SyncTextWriter {
     __cordl_parent: crate::System::IO::TextWriter,
     pub _out: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,

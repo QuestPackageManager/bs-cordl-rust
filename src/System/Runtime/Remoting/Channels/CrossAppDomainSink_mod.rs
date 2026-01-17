@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CrossAppDomainSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _domainID: i32,
@@ -315,7 +315,10 @@ impl AsMut<crate::System::Runtime::Remoting::Messaging::IMessageSink>
 #[cfg(
     feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainSink+ProcessMessageRes"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CrossAppDomainSink_ProcessMessageRes {
     pub arrResponse: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

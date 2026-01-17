@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+DirectorControlPlayable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DirectorControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub director: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
@@ -408,10 +408,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Directo
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+DirectorControlPlayable+PauseAction")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DirectorControlPlayable_PauseAction {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     PauseDirector = 1i32,
     StopDirector = 0i32,
 }

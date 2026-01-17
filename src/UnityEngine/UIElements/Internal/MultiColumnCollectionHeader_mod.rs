@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnCollectionHeader {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_SortingEnabled: bool,
@@ -1449,7 +1449,7 @@ impl AsMut<crate::System::IDisposable>
     feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnCollectionHeader_ColumnData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _control_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -1664,7 +1664,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MultiColumnCollectionHeader_SortedColumnState {
     pub columnDesc:
@@ -1815,7 +1818,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorte
     feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnCollectionHeader_ViewState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_HasPersistedData: bool,
@@ -1978,7 +1981,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ViewState_MultiColumnCollectionHeader_ColumnState {
     pub index: i32,

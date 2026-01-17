@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+IsoDateTimeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IsoDateTimeConverter {
     __cordl_parent: crate::Newtonsoft::Json::Converters::DateTimeConverterBase,
     pub _dateTimeStyles: crate::System::Globalization::DateTimeStyles,

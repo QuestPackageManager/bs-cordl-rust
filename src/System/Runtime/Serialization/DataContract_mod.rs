@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataContract {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
@@ -2875,7 +2875,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Serialization
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DataContract+DataContractCriticalHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataContract_DataContractCriticalHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub underlyingType: quest_hook::libil2cpp::Gc<crate::System::Type>,

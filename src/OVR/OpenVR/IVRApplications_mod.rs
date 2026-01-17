@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRApplications {
     pub AddApplicationManifest:
@@ -250,7 +253,7 @@ impl crate::OVR::OpenVR::IVRApplications {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__AddApplicationManifest {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -438,7 +441,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_CancelApplicationLaunch")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__CancelApplicationLaunch {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -611,7 +614,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationAutoLaunch")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationAutoLaunch {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -784,7 +787,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationCount")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationCount {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -949,7 +952,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationKeyByIndex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationKeyByIndex {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1145,7 +1148,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationKeyByProcessId {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1339,7 +1342,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationLaunchArguments")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationLaunchArguments {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1522,7 +1525,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationProcessId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationProcessId {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1695,7 +1698,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyBool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationPropertyBool {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1880,7 +1883,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationPropertyString {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2093,7 +2096,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationPropertyUint64 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2278,7 +2281,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationSupportedMimeTypes {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2471,7 +2474,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationsErrorNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2646,7 +2649,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationsThatSupportMimeType {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2849,7 +2852,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsTransitionStateNameFromEnum"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetApplicationsTransitionStateNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3032,7 +3035,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetCurrentSceneProcessId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetCurrentSceneProcessId {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3197,7 +3200,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetDefaultApplicationForMimeType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetDefaultApplicationForMimeType {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3390,7 +3393,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetStartingApplication")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetStartingApplication {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3571,7 +3574,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetTransitionState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__GetTransitionState {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3740,7 +3743,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRApplications__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IdentifyApplication")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__IdentifyApplication {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3919,7 +3922,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IsApplicationInstalled")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__IsApplicationInstalled {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4092,7 +4095,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IsQuitUserPromptRequested")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__IsQuitUserPromptRequested {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4257,7 +4260,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchApplication")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__LaunchApplication {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4428,7 +4431,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRApplications__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__LaunchApplicationFromMimeType {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4607,7 +4610,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchDashboardOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__LaunchDashboardOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4782,7 +4785,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__LaunchInternalProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4976,7 +4979,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchTemplateApplication")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__LaunchTemplateApplication {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5195,7 +5198,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__PerformApplicationPrelaunchCheck {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5370,7 +5373,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__RemoveApplicationManifest {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5551,7 +5554,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__SetApplicationAutoLaunch {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5730,7 +5733,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRApplications__SetDefaultApplicationForMimeType {
     __cordl_parent: crate::System::MulticastDelegate,
 }

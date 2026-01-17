@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerBigAvatarAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerBigAvatarAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _displayedScale: f32,

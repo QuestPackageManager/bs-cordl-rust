@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlNumeric2Converter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlNumeric2Converter {
     __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
 }

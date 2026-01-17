@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Principal+NTAccount")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NTAccount {
     __cordl_parent: crate::System::Security::Principal::IdentityReference,
     pub _value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

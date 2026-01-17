@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Joint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Joint {
     __cordl_parent: crate::UnityEngine::Component,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusLevelProductCollectionModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusLevelProductCollectionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelIdToProductData: quest_hook::libil2cpp::Gc<
@@ -301,7 +301,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+AdditionalSkus")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusLevelProductCollectionModel_AdditionalSkus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub checkAdditionalSkus: bool,
@@ -387,7 +387,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackProductData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusLevelProductCollectionModel_LevelPackProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -689,7 +689,7 @@ impl
 }
 #[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelPackRedirectionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusLevelProductCollectionModel_LevelPackRedirectionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _targetLevelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -883,7 +883,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OculusLevelProductCollectionModel+LevelProductData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusLevelProductCollectionModel_LevelProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

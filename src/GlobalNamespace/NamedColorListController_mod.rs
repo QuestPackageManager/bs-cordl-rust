@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NamedColorListController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamedColorListController {
     __cordl_parent: crate::GlobalNamespace::ListColorController,
     pub _textValuePairs: quest_hook::libil2cpp::Gc<
@@ -288,7 +288,7 @@ impl AsMut<crate::HMUI::IValueChanger_1<i32>> for crate::GlobalNamespace::NamedC
 }
 #[cfg(feature = "cordl_class_NamedColorListController+ColorValuePair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamedColorListController_ColorValuePair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub color: crate::UnityEngine::Color,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObstacleController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleController {
     __cordl_parent: crate::GlobalNamespace::ObstacleControllerBase,
     pub _layerSwitch: quest_hook::libil2cpp::Gc<
@@ -894,7 +894,7 @@ impl AsMut<crate::GlobalNamespace::IBeatmapObjectController>
 }
 #[cfg(feature = "cordl_class_ObstacleController+Layers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleController_Layers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -944,7 +944,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObstacleContr
 }
 #[cfg(feature = "cordl_class_ObstacleController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,

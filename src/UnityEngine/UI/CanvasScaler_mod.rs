@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CanvasScaler {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_UiScaleMode: crate::UnityEngine::UI::CanvasScaler_ScaleMode,
@@ -787,10 +787,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::CanvasScaler 
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScaleMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CanvasScaler_ScaleMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ConstantPhysicalSize = 2i32,
     ConstantPixelSize = 0i32,
     ScaleWithScreenSize = 1i32,
@@ -870,10 +875,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::CanvasScal
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CanvasScaler_ScreenMatchMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Expand = 1i32,
     MatchWidthOrHeight = 0i32,
     Shrink = 2i32,
@@ -959,10 +969,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::CanvasScal
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+CanvasScaler+Unit")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CanvasScaler_Unit {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Centimeters = 0i32,
     Inches = 2i32,
     Millimeters = 1i32,

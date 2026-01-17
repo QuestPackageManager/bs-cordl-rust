@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_SupportedDevices: quest_hook::libil2cpp::Gc<
@@ -1278,10 +1278,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputSettings_BackgroundBehavior {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     IgnoreFocus = 2i32,
     ResetAndDisableAllDevices = 1i32,
     ResetAndDisableNonBackgroundDevices = 0i32,
@@ -1371,10 +1376,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputSettings_EditorInputBehaviorInPlayMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllDeviceInputAlwaysGoesToGameView = 2i32,
     AllDevicesRespectGameViewFocus = 1i32,
     PointersAndKeyboardsRespectGameViewFocus = 0i32,
@@ -1464,10 +1474,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+InputActionPropertyDrawerMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputSettings_InputActionPropertyDrawerMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Compact = 0i32,
     MultilineBoth = 2i32,
     MultilineEffective = 1i32,
@@ -1557,10 +1572,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+ScrollDeltaBehavior")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputSettings_ScrollDeltaBehavior {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     KeepPlatformSpecificInputRange = 1i32,
     UniformAcrossAllPlatforms = 0i32,
 }
@@ -1649,10 +1669,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+UpdateMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputSettings_UpdateMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ProcessEventsInDynamicUpdate = 1i32,
     ProcessEventsInFixedUpdate = 2i32,
     ProcessEventsManually = 3i32,

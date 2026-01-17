@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+IntegerControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntegerControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<i32>,
 }

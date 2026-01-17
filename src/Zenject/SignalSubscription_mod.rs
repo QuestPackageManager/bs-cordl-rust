@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SignalSubscription")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalSubscription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pool: quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription_Pool>,
@@ -377,7 +377,7 @@ impl
 }
 #[cfg(feature = "cordl_class_Zenject+SignalSubscription+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalSubscription_Pool {
     __cordl_parent: crate::Zenject::PoolableMemoryPool_3<
         quest_hook::libil2cpp::Gc<

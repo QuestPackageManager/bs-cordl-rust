@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateParsingException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CertificateParsingException {
     __cordl_parent: crate::Org::BouncyCastle::Security::Certificates::CertificateException,
 }

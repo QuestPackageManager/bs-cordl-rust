@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+StringWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StringWriter {
     __cordl_parent: crate::System::IO::TextWriter,
     pub _sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,

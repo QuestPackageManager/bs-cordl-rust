@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SafeAreaRectChecker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SafeAreaRectChecker {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _minAngleX: f32,
@@ -132,7 +132,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SafeAreaRectC
 }
 #[cfg(feature = "cordl_class_SafeAreaRectChecker+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SafeAreaRectChecker_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub checkingEnabled: bool,

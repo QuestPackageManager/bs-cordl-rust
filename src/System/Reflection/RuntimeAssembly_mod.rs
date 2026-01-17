@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+RuntimeAssembly")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeAssembly {
     __cordl_parent: crate::System::Reflection::Assembly,
     pub _mono_assembly: crate::System::IntPtr,
@@ -1007,7 +1007,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::RuntimeAss
 }
 #[cfg(feature = "cordl_class_System+Reflection+RuntimeAssembly+UnmanagedMemoryStreamForModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeAssembly_UnmanagedMemoryStreamForModule {
     __cordl_parent: crate::System::IO::UnmanagedMemoryStream,
     pub _cordl_module: quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,

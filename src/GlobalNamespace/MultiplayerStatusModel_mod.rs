@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerStatusModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerStatusModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
@@ -242,7 +242,7 @@ impl AsMut<crate::GlobalNamespace::IMultiplayerStatusModel>
 }
 #[cfg(feature = "cordl_class_MultiplayerStatusModel+MultiplayerStatusDataFB")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerStatusModel_MultiplayerStatusDataFB {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub data: quest_hook::libil2cpp::Gc<

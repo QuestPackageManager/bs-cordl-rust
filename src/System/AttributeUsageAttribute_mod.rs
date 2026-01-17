@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+AttributeUsageAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AttributeUsageAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _attributeTarget: crate::System::AttributeTargets,

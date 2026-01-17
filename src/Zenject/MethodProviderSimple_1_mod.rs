@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MethodProviderSimple_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MethodProviderSimple_1<TReturn: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _method: quest_hook::libil2cpp::Gc<crate::System::Func_1<TReturn>>,

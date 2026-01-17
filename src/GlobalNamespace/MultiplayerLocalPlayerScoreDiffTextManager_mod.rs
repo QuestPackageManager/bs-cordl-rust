@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalPlayerScoreDiffTextManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalPlayerScoreDiffTextManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreDiffText: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerScoreDiffText>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongTimeToShaderWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongTimeToShaderWriter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,

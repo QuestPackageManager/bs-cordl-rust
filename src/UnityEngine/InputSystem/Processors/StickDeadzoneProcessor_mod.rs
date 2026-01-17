@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+StickDeadzoneProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StickDeadzoneProcessor {
     __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<crate::UnityEngine::Vector2>,
     pub min: f32,

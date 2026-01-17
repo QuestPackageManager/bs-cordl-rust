@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VectorImage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VectorImage {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub version: i32,

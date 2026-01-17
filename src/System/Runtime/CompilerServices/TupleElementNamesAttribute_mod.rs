@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+TupleElementNamesAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TupleElementNamesAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _transformNames: quest_hook::libil2cpp::Gc<

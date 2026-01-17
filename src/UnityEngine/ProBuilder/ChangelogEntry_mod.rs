@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ChangelogEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ChangelogEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_VersionInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BezierSplineEvaluator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BezierSplineEvaluator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _segments: quest_hook::libil2cpp::Gc<
@@ -338,7 +338,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BezierSplineE
     }
 }
 #[cfg(feature = "cordl_class_BezierSplineEvaluator+CubicSolveResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BezierSplineEvaluator_CubicSolveResult {
     pub numberOfSolutions: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+SavedStructState_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SavedStructState_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_State: T,
@@ -223,7 +223,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::InputSystem::Util
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+SavedStructState_1+TypedRestore")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SavedStructState_1_TypedRestore<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,

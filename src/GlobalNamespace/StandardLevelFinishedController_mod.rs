@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StandardLevelFinishedController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelFinishedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _standardLevelSceneSetupData:

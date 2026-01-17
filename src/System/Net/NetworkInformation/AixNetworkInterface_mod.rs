@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+AixNetworkInterface")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AixNetworkInterface {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterface,
     pub _ifa_flags: u32,

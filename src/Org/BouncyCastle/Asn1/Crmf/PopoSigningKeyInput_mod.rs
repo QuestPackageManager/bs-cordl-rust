@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Crmf+PopoSigningKeyInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PopoSigningKeyInput {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub sender: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::GeneralName>,

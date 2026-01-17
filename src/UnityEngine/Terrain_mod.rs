@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Terrain")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Terrain {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }

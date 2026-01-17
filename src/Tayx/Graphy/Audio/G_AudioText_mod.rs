@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioText")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct G_AudioText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_DBText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,

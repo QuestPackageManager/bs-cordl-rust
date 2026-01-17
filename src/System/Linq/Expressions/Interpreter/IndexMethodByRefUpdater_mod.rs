@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+IndexMethodByRefUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IndexMethodByRefUpdater {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
     pub _indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,

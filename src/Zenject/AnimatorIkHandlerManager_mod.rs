@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+AnimatorIkHandlerManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimatorIkHandlerManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _handlers: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed448Signer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ed448Signer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buffer:
@@ -296,7 +296,7 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::ISigner>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed448Signer+Buffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ed448Signer_Buffer {
     __cordl_parent: crate::System::IO::MemoryStream,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XmlElementWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlElementWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XmlNodeWrapper,
     pub _element: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,

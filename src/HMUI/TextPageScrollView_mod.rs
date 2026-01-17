@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+TextPageScrollView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextPageScrollView {
     __cordl_parent: crate::HMUI::ScrollView,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

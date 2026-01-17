@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EndoUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -204,7 +204,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EndoUtilities_MapPointCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_endomorphism:

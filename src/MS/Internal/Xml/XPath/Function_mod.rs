@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Function")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Function {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _functionType: crate::MS::Internal::Xml::XPath::Function_FunctionType,
@@ -246,10 +246,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Func
     }
 }
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Function+FunctionType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Function_FunctionType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FuncBoolean = 8i32,
     FuncCeiling = 25i32,
     FuncConcat = 13i32,

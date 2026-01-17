@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CacheInitialization {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -203,7 +203,7 @@ impl AsMut<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
     feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CacheInitialization_CacheInitOp {
     __cordl_parent:
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<bool>,

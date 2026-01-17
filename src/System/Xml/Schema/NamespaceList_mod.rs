@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamespaceList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::System::Xml::Schema::NamespaceList_ListType,
@@ -467,10 +467,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::Namespace
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceList+ListType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NamespaceList_ListType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = 0i32,
     Other = 1i32,
     Set = 2i32,

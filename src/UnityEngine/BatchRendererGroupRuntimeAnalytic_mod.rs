@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+BatchRendererGroupRuntimeAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BatchRendererGroupRuntimeAnalytic {
     __cordl_parent: crate::UnityEngine::Analytics::AnalyticsEventBase,
     pub brgRuntimeStatus: i32,

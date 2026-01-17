@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+HttpListenerException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpListenerException {
     __cordl_parent: crate::System::ComponentModel::Win32Exception,
 }

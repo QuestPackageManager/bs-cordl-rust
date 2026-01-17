@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeVolumeBakingSet {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub singleSceneMode: bool,
@@ -1487,7 +1487,10 @@ impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingSet+CellCounts")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeVolumeBakingSet_CellCounts {
     pub bricksCount: i32,
@@ -1620,7 +1623,7 @@ impl crate::UnityEngine::Rendering::ProbeVolumeBakingSet_CellCounts {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingSet+PerScenarioDataInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeVolumeBakingSet_PerScenarioDataInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sceneHash: i32,
@@ -1806,7 +1809,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingSet+ProbeLayerMask")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeVolumeBakingSet_ProbeLayerMask {
     pub mask: crate::UnityEngine::RenderingLayerMask,
@@ -1913,7 +1919,10 @@ impl crate::UnityEngine::Rendering::ProbeVolumeBakingSet_ProbeLayerMask {}
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingSet+SerializedPerSceneCellList"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeVolumeBakingSet_SerializedPerSceneCellList {
     pub sceneGUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2030,10 +2039,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+ProbeVolumeBakingSet+SerializedPerSceneCellList")]
 impl crate::UnityEngine::Rendering::ProbeVolumeBakingSet_SerializedPerSceneCellList {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingSet+Version")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProbeVolumeBakingSet_Version {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Initial = 0i32,
     RemoveProbeVolumeSceneData = 1i32,
 }

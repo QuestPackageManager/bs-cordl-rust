@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+TimeSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeSlider {
     __cordl_parent: crate::HMUI::RangeValuesTextSlider,
     pub _timeType: crate::HMUI::TimeSlider_TimeType,
@@ -164,10 +164,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TimeSlider {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+TimeSlider+TimeType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimeSlider_TimeType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Default = 0i32,
     Milliseconds = 1i32,
     Normalized = 2i32,

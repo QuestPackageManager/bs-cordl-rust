@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+TraceJsonReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TraceJsonReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _innerReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,

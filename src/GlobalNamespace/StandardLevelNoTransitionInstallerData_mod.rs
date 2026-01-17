@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StandardLevelNoTransitionInstallerData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelNoTransitionInstallerData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<

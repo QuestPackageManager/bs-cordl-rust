@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyDescriptorCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cachedFoundProperties: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -1500,7 +1500,7 @@ impl AsMut<crate::System::Collections::IList>
     feature = "cordl_class_System+ComponentModel+PropertyDescriptorCollection+PropertyDescriptorEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyDescriptorCollection_PropertyDescriptorEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _owner:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FinalBlitPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_Source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
@@ -454,7 +454,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitMaterialData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FinalBlitPass_BlitMaterialData {
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -573,7 +576,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::Rendering::Universal::Internal::FinalBlitPass_BlitMaterialData {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitPassNames")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FinalBlitPass_BlitPassNames {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -633,10 +636,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+BlitType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FinalBlitPass_BlitType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Core = 0i32,
     Count = 2i32,
     HDR = 1i32,
@@ -727,7 +735,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+FinalBlitPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FinalBlitPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub source: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,

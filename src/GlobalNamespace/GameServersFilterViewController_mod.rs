@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameServersFilterViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameServersFilterViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _filterByDifficultyToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

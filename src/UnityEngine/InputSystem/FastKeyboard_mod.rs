@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+FastKeyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FastKeyboard {
     __cordl_parent: crate::UnityEngine::InputSystem::Keyboard,
 }

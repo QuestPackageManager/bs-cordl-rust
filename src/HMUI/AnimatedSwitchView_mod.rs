@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimatedSwitchView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _knobRectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -354,10 +354,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AnimatedSwitchView {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+AnimationState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum AnimatedSwitchView_AnimationState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DisablingOff = 32i32,
     DisablingOn = 16i32,
     HighlightingOff = 8i32,
@@ -442,7 +447,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::AnimatedSwitchView_An
 }
 #[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+ColorBlock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimatedSwitchView_ColorBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub knobColor: crate::UnityEngine::Color,
@@ -526,7 +531,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AnimatedSwitchView_Color
 }
 #[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+GetColorDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimatedSwitchView_GetColorDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

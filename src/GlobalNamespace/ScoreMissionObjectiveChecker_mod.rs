@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScoreMissionObjectiveChecker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoreMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
     pub _scoreController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IScoreController>,

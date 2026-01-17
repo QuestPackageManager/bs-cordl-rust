@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultDragAndDropClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultDragAndDropClient {
     __cordl_parent: crate::UnityEngine::UIElements::DragAndDropData,
     pub m_GenericData: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,

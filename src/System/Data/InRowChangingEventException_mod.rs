@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+InRowChangingEventException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InRowChangingEventException {
     __cordl_parent: crate::System::Data::DataException,
 }

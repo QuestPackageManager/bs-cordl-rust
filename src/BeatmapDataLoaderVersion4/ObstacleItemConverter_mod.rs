@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ObstacleItemConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _obstacles: quest_hook::libil2cpp::Gc<

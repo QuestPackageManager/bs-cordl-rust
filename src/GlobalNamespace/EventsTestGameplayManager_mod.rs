@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EventsTestGameplayManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventsTestGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _moveTime: bool,
@@ -249,7 +249,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EventsTestGam
 }
 #[cfg(feature = "cordl_class_EventsTestGameplayManager+MockBeatToTimeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventsTestGameplayManager_MockBeatToTimeConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bpm: f32,

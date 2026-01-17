@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Security+AuthenticatedStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AuthenticatedStream {
     __cordl_parent: crate::System::IO::Stream,
     pub _InnerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

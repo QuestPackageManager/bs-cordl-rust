@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+VolumeComponentMenuForRenderPipeline")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VolumeComponentMenuForRenderPipeline {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponentMenu,
     pub _pipelineTypes_k__BackingField: quest_hook::libil2cpp::Gc<

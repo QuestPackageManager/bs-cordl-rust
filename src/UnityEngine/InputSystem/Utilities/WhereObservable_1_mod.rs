@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+WhereObservable_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WhereObservable_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
@@ -177,7 +177,7 @@ impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IObservable_1<TVa
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+WhereObservable_1+Where")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WhereObservable_1_Where<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Observable: quest_hook::libil2cpp::Gc<

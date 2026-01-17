@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GridElementController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GridElementController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _gridPivotAnchor: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HDROutputUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HDROutputUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -245,7 +245,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::HDROut
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HDROutputUtils+HDRDisplayInformation")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HDROutputUtils_HDRDisplayInformation {
     pub maxFullFrameToneMapLuminance: i32,
@@ -390,10 +393,15 @@ impl crate::UnityEngine::Rendering::HDROutputUtils_HDRDisplayInformation {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HDROutputUtils+Operation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HDROutputUtils_Operation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ColorConversion = 1i32,
     ColorEncoding = 2i32,
     None = 0i32,
@@ -484,7 +492,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HDROutputUtils+ShaderKeywords")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HDROutputUtils_ShaderKeywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -544,7 +552,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+HDROutputUtils+ShaderPropertyId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HDROutputUtils_ShaderPropertyId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

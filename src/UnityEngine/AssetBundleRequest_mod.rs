@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AssetBundleRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetBundleRequest {
     __cordl_parent: crate::UnityEngine::ResourceRequest,
 }
@@ -231,7 +231,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AssetBundleReques
 }
 #[cfg(feature = "cordl_class_UnityEngine+AssetBundleRequest+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetBundleRequest_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

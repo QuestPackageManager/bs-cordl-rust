@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Converter_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Converter_2<TInput: quest_hook::libil2cpp::Type, TOutput: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TInput: std::marker::PhantomData<TInput>,

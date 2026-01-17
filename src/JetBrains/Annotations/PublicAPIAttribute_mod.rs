@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+PublicAPIAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PublicAPIAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Comment_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

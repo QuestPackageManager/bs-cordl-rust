@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+IPEndPoint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IPEndPoint {
     __cordl_parent: crate::System::Net::EndPoint,
     pub _address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,

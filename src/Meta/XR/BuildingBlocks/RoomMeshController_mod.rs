@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+RoomMeshController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RoomMeshController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _meshPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

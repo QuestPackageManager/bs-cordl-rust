@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Object")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Object {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_CachedPtr: crate::System::IntPtr,
@@ -3634,7 +3634,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Object {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Object+MarshalledUnityObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Object_MarshalledUnityObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

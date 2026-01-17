@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloorAdjustViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloorAdjustViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _yIncButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

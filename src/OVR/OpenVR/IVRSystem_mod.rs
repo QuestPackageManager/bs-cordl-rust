@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRSystem {
     pub GetRecommendedRenderTargetSize:
@@ -303,7 +306,7 @@ impl crate::OVR::OpenVR::IVRSystem {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_AcknowledgeQuit_Exiting")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__AcknowledgeQuit_Exiting {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -466,7 +469,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__Acknow
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_AcknowledgeQuit_UserPrompt")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__AcknowledgeQuit_UserPrompt {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -633,7 +636,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ApplyTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__ApplyTransform {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -836,7 +839,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__ApplyT
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ComputeDistortion")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__ComputeDistortion {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1036,7 +1039,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__Comput
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_DriverDebugRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__DriverDebugRequest {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1237,7 +1240,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__Driver
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetArrayTrackedDeviceProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetArrayTrackedDeviceProperty {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1449,7 +1452,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetBoolTrackedDeviceProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetBoolTrackedDeviceProperty {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1634,7 +1637,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetButtonIdNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetButtonIdNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1805,7 +1808,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetBut
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerAxisTypeNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetControllerAxisTypeNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1980,7 +1983,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerRoleForTrackedDeviceIndex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetControllerRoleForTrackedDeviceIndex {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2154,7 +2157,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetControllerState {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2351,7 +2354,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetCon
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerStateWithPose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetControllerStateWithPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2574,7 +2577,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetD3D9AdapterIndex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetD3D9AdapterIndex {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2735,7 +2738,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetD3D
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetDXGIOutputInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetDXGIOutputInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2908,7 +2911,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetDXG
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetDeviceToAbsoluteTrackingPose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetDeviceToAbsoluteTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3134,7 +3137,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetEventTypeNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetEventTypeNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3307,7 +3310,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetEve
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetEyeToHeadTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetEyeToHeadTransform {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3478,7 +3481,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetEye
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetFloatTrackedDeviceProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetFloatTrackedDeviceProperty {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3663,7 +3666,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetHiddenAreaMesh")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetHiddenAreaMesh {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3838,7 +3841,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetHid
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetInt32TrackedDeviceProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetInt32TrackedDeviceProperty {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4023,7 +4026,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetMatrix34TrackedDeviceProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetMatrix34TrackedDeviceProperty {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4208,7 +4211,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetOutputDevice")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetOutputDevice {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4390,7 +4393,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetOut
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetProjectionMatrix")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetProjectionMatrix {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4568,7 +4571,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetPro
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetProjectionRaw")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetProjectionRaw {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4767,7 +4770,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetPro
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetPropErrorNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetPropErrorNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4940,7 +4943,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetPro
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetRawZeroPoseToStandingAbsoluteTrackingPose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5111,7 +5114,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetRecommendedRenderTargetSize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetRecommendedRenderTargetSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5295,7 +5298,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetSeatedZeroPoseToStandingAbsoluteTrackingPose"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5470,7 +5473,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetSortedTrackedDeviceIndicesOfClass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetSortedTrackedDeviceIndicesOfClass {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5683,7 +5686,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetStringTrackedDeviceProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetStringTrackedDeviceProperty {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5888,7 +5891,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTimeSinceLastVsync")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetTimeSinceLastVsync {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6072,7 +6075,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetTim
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceActivityLevel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetTrackedDeviceActivityLevel {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6246,7 +6249,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceClass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetTrackedDeviceClass {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6414,7 +6417,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__GetTra
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceIndexForControllerRole")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetTrackedDeviceIndexForControllerRole {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6586,7 +6589,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetUint64TrackedDeviceProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__GetUint64TrackedDeviceProperty {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6771,7 +6774,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsDisplayOnDesktop")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__IsDisplayOnDesktop {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6932,7 +6935,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__IsDisp
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsInputAvailable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__IsInputAvailable {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7093,7 +7096,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__IsInpu
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsSteamVRDrawingControllers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__IsSteamVRDrawingControllers {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7258,7 +7261,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsTrackedDeviceConnected")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__IsTrackedDeviceConnected {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7424,7 +7427,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__IsTrac
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PerformFirmwareUpdate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__PerformFirmwareUpdate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7592,7 +7595,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__Perfor
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PollNextEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__PollNextEvent {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7768,7 +7771,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__PollNe
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PollNextEventWithPose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__PollNextEventWithPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7973,7 +7976,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__PollNe
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ResetSeatedZeroPose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__ResetSeatedZeroPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8136,7 +8139,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__ResetS
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_SetDisplayVisibility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__SetDisplayVisibility {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8301,7 +8304,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__SetDis
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ShouldApplicationPause")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__ShouldApplicationPause {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8462,7 +8465,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSystem__Should
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ShouldApplicationReduceRenderingWork")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__ShouldApplicationReduceRenderingWork {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8627,7 +8630,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_TriggerHapticPulse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSystem__TriggerHapticPulse {
     __cordl_parent: crate::System::MulticastDelegate,
 }

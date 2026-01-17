@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeNativeMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -322,7 +322,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Interop::Unsa
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EtwEnableCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeNativeMethods_EtwEnableCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -470,7 +470,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Runtime+Interop+UnsafeNativeMethods+EventData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeNativeMethods_EventData {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,

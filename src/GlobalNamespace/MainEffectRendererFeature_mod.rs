@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainEffectRendererFeature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainEffectRendererFeature {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRendererFeature,
     pub _sceneEffectContainer:

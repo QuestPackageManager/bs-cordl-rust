@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+ChunkedInputStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ChunkedInputStream {
     __cordl_parent: crate::System::Net::RequestStream,
     pub disposed: bool,
@@ -244,7 +244,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ChunkedInputStrea
 }
 #[cfg(feature = "cordl_class_System+Net+ChunkedInputStream+ReadBufferState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ChunkedInputStream_ReadBufferState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

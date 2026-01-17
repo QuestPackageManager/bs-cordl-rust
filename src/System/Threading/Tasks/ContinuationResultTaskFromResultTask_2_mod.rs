@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationResultTaskFromResultTask_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContinuationResultTaskFromResultTask_2<
     TAntecedentResult: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

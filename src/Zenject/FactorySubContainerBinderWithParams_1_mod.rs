@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinderWithParams_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FactorySubContainerBinderWithParams_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::FactorySubContainerBinderBase_1<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UIKeyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _keyButtonPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TextMeshProButton>,

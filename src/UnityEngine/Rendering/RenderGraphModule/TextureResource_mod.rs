@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+TextureResource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextureResource {
     __cordl_parent: crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphResource_2<
         crate::UnityEngine::Rendering::RenderGraphModule::TextureDesc,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventTrigger {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Delegates: quest_hook::libil2cpp::Gc<
@@ -1018,7 +1018,7 @@ impl AsMut<crate::UnityEngine::EventSystems::IUpdateSelectedHandler>
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger+Entry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventTrigger_Entry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub eventID: crate::UnityEngine::EventSystems::EventTriggerType,
@@ -1099,7 +1099,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EventSystems::Eve
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventTrigger_TriggerEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseEventData>,

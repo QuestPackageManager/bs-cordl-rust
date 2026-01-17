@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt16"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NegateCheckedInstruction_NegateCheckedInt16 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction,
 }

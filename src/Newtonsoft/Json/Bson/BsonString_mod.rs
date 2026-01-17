@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BsonString {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonValue,
     pub _ByteCount_k__BackingField: i32,

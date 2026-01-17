@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ArcAndObstacleHapticEffectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArcAndObstacleHapticEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _hapticPreset: quest_hook::libil2cpp::Gc<crate::Libraries::HM::HMLib::VR::HapticPresetSO>,
@@ -390,7 +390,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_ArcAndObstacleHapticEffectManager+EffectState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArcAndObstacleHapticEffectManager_EffectState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub colorType: crate::GlobalNamespace::ColorType,

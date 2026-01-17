@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IValueField_1")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IValueField_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

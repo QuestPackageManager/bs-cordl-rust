@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseWriter+NamespaceManager+Namespace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamespaceManager_XmlBaseWriter_Namespace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -329,7 +329,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseWriter+NamespaceManager+XmlAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamespaceManager_XmlBaseWriter_XmlAttribute {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub space: crate::System::Xml::XmlSpace,
@@ -574,7 +574,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseWriter {
     __cordl_parent: crate::System::Xml::XmlDictionaryWriter,
     pub writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNodeWriter>,
@@ -2542,10 +2542,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseWriter {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseWriter+DocumentState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum XmlBaseWriter_DocumentState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Document = 1u8,
     End = 3u8,
     Epilog = 2u8,
@@ -2627,7 +2632,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlBaseWriter_
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseWriter+Element")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseWriter_Element {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2874,7 +2879,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseWriter_Ele
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseWriter+NamespaceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseWriter_NamespaceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub namespaces: quest_hook::libil2cpp::Gc<

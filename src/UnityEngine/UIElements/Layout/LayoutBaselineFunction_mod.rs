@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutBaselineFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LayoutBaselineFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

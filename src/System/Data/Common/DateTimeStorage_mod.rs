@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+Common+DateTimeStorage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DateTimeStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
     pub _values:

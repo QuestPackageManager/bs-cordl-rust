@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+IDREFSDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IDREFSDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::StringDataContract,
 }

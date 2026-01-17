@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+NotSupportedException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NotSupportedException {
     __cordl_parent: crate::System::SystemException,
 }

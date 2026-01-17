@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngineInternal+GenericStack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericStack {
     __cordl_parent: crate::System::Collections::Stack,
 }

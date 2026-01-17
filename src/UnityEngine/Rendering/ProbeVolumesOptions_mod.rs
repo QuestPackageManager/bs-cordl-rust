@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumesOptions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeVolumesOptions {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub normalBias: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ClampedFloatParameter>,

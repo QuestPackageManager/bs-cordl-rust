@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongPackMasksModelSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongPackMasksModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _defaultSongPackMaskItems: quest_hook::libil2cpp::Gc<

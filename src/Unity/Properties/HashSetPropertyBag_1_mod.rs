@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+HashSetPropertyBag_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HashSetPropertyBag_1<TElement: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Unity::Properties::SetPropertyBagBase_2<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<TElement>>,

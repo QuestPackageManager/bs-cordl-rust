@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEditor+Analytics+PackageManagerResolvePackageAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackageManagerResolvePackageAnalytic {
     __cordl_parent: crate::UnityEditor::Analytics::PackageManagerBaseAnalytic,
     pub packages: quest_hook::libil2cpp::Gc<

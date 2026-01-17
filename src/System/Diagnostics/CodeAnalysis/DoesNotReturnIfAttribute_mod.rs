@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DoesNotReturnIfAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ParameterValue_k__BackingField: bool,

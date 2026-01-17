@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+Graph+G_Graph")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct G_Graph {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

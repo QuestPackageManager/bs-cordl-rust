@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementAnimationSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElementAnimationSystem {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
     pub m_Animations: quest_hook::libil2cpp::Gc<

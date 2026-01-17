@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRInteractionFeature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRInteractionFeature {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRFeature,
 }
@@ -427,7 +427,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRInteractionFeature+ActionBinding"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRInteractionFeature_ActionBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub interactionProfileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -524,7 +524,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRInteractionFeature+ActionConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRInteractionFeature_ActionConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -628,7 +628,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRInteractionFeature+ActionMapConfig"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRInteractionFeature_ActionMapConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -736,10 +736,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRInteractionFeature+ActionType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRInteractionFeature_ActionType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Axis1D = 1i32,
     Axis2D = 2i32,
     Binary = 0i32,
@@ -833,7 +838,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRInteractionFeature+DeviceConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRInteractionFeature_DeviceConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub characteristics: crate::UnityEngine::XR::InputDeviceCharacteristics,
@@ -922,10 +927,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRInteractionFeature+InteractionProfileType"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRInteractionFeature_InteractionProfileType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Device = 0i32,
     XRController = 1i32,
 }
@@ -1025,7 +1035,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRInteractionFeature+UserPaths")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRInteractionFeature_UserPaths {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

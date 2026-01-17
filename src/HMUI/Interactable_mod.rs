@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+Interactable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Interactable {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub _interactable: bool,

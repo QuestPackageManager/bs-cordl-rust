@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AssetBundleCreateRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetBundleCreateRequest {
     __cordl_parent: crate::UnityEngine::AsyncOperation,
 }
@@ -137,7 +137,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AssetBundleCreate
 }
 #[cfg(feature = "cordl_class_UnityEngine+AssetBundleCreateRequest+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetBundleCreateRequest_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

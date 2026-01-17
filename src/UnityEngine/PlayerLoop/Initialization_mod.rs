@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Initialization {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization")]
@@ -106,7 +109,10 @@ impl crate::UnityEngine::PlayerLoop::Initialization {
     pub type XREarlyUpdate = crate::UnityEngine::PlayerLoop::Initialization_XREarlyUpdate;
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Initialization_AsyncUploadTimeSlicedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
@@ -208,7 +214,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+AsyncUploadTimeSlicedUpdate")]
 impl crate::UnityEngine::PlayerLoop::Initialization_AsyncUploadTimeSlicedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Initialization_DirectorSampleTime {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
@@ -310,7 +319,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+DirectorSampleTime")]
 impl crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Initialization_ProfilerStartFrame {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
@@ -412,7 +424,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+ProfilerStartFrame")]
 impl crate::UnityEngine::PlayerLoop::Initialization_ProfilerStartFrame {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Initialization_SynchronizeInputs {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
@@ -514,7 +529,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeInputs")]
 impl crate::UnityEngine::PlayerLoop::Initialization_SynchronizeInputs {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+SynchronizeState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Initialization_SynchronizeState {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+SynchronizeState")]
@@ -616,7 +634,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+SynchronizeState")]
 impl crate::UnityEngine::PlayerLoop::Initialization_SynchronizeState {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+UpdateCameraMotionVectors")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Initialization_UpdateCameraMotionVectors {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+UpdateCameraMotionVectors")]
@@ -718,7 +739,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+Initialization+UpdateCameraMotionVectors")]
 impl crate::UnityEngine::PlayerLoop::Initialization_UpdateCameraMotionVectors {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+XREarlyUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Initialization_XREarlyUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+Initialization+XREarlyUpdate")]

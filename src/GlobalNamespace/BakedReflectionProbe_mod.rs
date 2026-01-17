@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BakedReflectionProbe")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BakedReflectionProbe {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _resolutionBeforeDownsample: i32,

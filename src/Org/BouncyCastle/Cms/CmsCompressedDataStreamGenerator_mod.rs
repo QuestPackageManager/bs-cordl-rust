@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsCompressedDataStreamGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bufferSize: i32,
@@ -175,7 +175,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub _out: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream>,

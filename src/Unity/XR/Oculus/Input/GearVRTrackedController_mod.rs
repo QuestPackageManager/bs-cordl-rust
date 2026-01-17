@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+GearVRTrackedController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GearVRTrackedController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
     pub _touchpad_k__BackingField:

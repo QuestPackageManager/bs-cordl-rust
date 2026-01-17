@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualTreeHierarchyFlagsUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
     pub m_Version: u32,

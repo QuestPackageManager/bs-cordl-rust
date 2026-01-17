@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Button")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Button {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_OnClick: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button_ButtonClickedEvent>,
@@ -288,7 +288,7 @@ impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler> for crate::UnityEng
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Button+ButtonClickedEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Button_ButtonClickedEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent,
 }

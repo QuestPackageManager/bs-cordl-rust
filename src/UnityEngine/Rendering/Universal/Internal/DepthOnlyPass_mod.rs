@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DepthOnlyPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DepthOnlyPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub _destination_k__BackingField:
@@ -426,7 +426,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DepthOnlyPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DepthOnlyPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rendererList: crate::UnityEngine::Rendering::RenderGraphModule::RendererListHandle,

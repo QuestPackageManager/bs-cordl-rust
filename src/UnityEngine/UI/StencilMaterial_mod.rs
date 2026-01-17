@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+StencilMaterial")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StencilMaterial {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -249,7 +249,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::StencilMateri
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+StencilMaterial+MatEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StencilMaterial_MatEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub baseMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

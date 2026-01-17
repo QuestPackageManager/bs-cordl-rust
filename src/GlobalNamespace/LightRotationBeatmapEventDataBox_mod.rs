@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightRotationBeatmapEventDataBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightRotationBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _lightRotationBaseDataList: quest_hook::libil2cpp::Gc<

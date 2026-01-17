@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalCameraHistory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalCameraHistory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Items: quest_hook::libil2cpp::Gc<
@@ -473,7 +473,10 @@ impl AsMut<crate::UnityEngine::Rendering::IPerFrameHistoryAccessTracker>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalCameraHistory+Item")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UniversalCameraHistory_Item {
     pub storage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ContextItem>,
@@ -601,7 +604,7 @@ impl crate::UnityEngine::Rendering::Universal::UniversalCameraHistory_Item {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalCameraHistory+TypeId_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalCameraHistory_TypeId_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,

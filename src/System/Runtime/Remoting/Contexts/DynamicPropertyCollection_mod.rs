@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicPropertyCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _properties: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -219,7 +219,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+Remoting+Contexts+DynamicPropertyCollection+DynamicPropertyReg"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicPropertyCollection_DynamicPropertyReg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Property:

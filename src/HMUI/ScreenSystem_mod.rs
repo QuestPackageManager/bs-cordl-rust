@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ScreenSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSystem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _mainScreen: quest_hook::libil2cpp::Gc<crate::HMUI::Screen>,

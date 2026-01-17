@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerIntroCountdownTextController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerIntroCountdownTextController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _texts: quest_hook::libil2cpp::Gc<

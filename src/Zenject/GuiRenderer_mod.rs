@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+GuiRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GuiRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _renderableManager: quest_hook::libil2cpp::Gc<crate::Zenject::GuiRenderableManager>,

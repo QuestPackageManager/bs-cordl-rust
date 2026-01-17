@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoaderHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRLoaderHelper {
     __cordl_parent: crate::UnityEngine::XR::Management::XRLoader,
     pub m_SubsystemInstanceMap: quest_hook::libil2cpp::Gc<

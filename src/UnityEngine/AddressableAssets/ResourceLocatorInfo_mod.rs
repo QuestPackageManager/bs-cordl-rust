@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocatorInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceLocatorInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Locator_k__BackingField: quest_hook::libil2cpp::Gc<

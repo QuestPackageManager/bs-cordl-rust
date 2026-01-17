@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerSetGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DerSetGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerGenerator,
     pub _bOut: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,

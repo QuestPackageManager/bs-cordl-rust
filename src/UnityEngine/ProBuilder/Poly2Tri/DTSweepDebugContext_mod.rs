@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepDebugContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DTSweepDebugContext {
     __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
     pub _primaryTriangle:

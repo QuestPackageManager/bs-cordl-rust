@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarHeadOffset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarHeadOffset {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _positionOffset: crate::UnityEngine::Vector3,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+SplitToning")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SplitToning {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub shadows: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ColorParameter>,

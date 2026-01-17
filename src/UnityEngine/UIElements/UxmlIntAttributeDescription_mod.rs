@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlIntAttributeDescription")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UxmlIntAttributeDescription {
     __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<i32>,
 }

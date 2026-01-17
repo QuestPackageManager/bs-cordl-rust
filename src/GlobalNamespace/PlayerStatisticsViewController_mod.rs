@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerStatisticsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerStatisticsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _statsScopeSegmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControl>,
@@ -356,7 +356,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerStatist
     }
 }
 #[cfg(feature = "cordl_class_PlayerStatisticsViewController+StatsScopeData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PlayerStatisticsViewController_StatsScopeData {
     pub _text_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

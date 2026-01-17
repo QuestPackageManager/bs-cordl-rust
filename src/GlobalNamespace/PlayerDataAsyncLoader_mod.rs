@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerDataAsyncLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerDataAsyncLoader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
     pub _playerDataContent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

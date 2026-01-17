@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Hierarchy+Item")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Item {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _parent: quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::Hierarchy::Item>,

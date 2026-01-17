@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerResultsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerResultsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

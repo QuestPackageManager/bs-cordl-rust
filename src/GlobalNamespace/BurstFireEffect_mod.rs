@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BurstFireEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstFireEffect {
     __cordl_parent: crate::GlobalNamespace::FireEffect,
     pub _fadeOutDuration: f32,

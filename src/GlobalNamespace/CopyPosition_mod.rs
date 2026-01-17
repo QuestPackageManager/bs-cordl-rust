@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CopyPosition")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CopyPosition {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -121,7 +121,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CopyPosition 
 }
 #[cfg(feature = "cordl_class_CopyPosition+CopyPositionUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CopyPosition_CopyPositionUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _copyPositions: quest_hook::libil2cpp::Gc<

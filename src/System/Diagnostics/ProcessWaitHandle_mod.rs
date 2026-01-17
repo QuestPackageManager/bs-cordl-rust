@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+ProcessWaitHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProcessWaitHandle {
     __cordl_parent: crate::System::Threading::WaitHandle,
 }

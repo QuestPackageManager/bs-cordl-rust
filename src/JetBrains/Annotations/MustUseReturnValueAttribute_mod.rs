@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+MustUseReturnValueAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MustUseReturnValueAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Justification_k__BackingField:

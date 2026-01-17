@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+OpenVR+OpenVRControllerWMR")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenVRControllerWMR {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
     pub _deviceVelocity_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkStreamWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkStreamWrapper {
     __cordl_parent: crate::System::IO::Stream,
     pub _client: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Authenticode+AuthenticodeDeformatter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AuthenticodeDeformatter {
     __cordl_parent: crate::Mono::Security::Authenticode::AuthenticodeBase,
     pub filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

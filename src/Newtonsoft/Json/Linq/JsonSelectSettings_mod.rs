@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonSelectSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonSelectSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _RegexMatchTimeout_k__BackingField: crate::System::Nullable_1<crate::System::TimeSpan>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromPropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderPropertyIDFromPropertyAttribute {
     __cordl_parent: crate::BGLib::UnityExtension::ShaderPropertyIDFromRendererAttribute,
     pub nestedPropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

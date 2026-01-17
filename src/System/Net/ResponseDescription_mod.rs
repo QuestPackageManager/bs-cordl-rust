@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+ResponseDescription")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResponseDescription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Multiline: bool,

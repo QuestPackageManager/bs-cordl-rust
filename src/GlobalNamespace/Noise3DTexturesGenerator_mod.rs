@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Noise3DTexturesGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _data: quest_hook::libil2cpp::Gc<
@@ -143,7 +143,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Noise3DTextur
     }
 }
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Noise3DTexturesGenerator_MaterialPropertyNameCouple {
     pub texturePropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -248,7 +251,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 impl crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {}
 #[cfg(feature = "cordl_class_Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Noise3DTexturesGenerator_MaterialTextureParamsCouple {
     pub globalPropertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

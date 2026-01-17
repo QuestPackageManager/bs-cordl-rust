@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_AuthenticationToken")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AuthenticationToken {
     pub platform: crate::GlobalNamespace::AuthenticationToken_PlatformType,
@@ -393,10 +396,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum AuthenticationToken_PlatformType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Oculus = 2u8,
     OculusRift = 1u8,
     PS4 = 4u8,

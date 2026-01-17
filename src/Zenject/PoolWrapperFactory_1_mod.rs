@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+PoolWrapperFactory_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PoolWrapperFactory_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct G_RamManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_ramGraphGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

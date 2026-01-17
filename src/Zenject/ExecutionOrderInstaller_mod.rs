@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ExecutionOrderInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExecutionOrderInstaller {
     __cordl_parent: crate::Zenject::Installer_2<
         quest_hook::libil2cpp::Gc<

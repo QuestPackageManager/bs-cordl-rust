@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ShaderWarmupScenesTransitionSetupDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderWarmupScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
 }

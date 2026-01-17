@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+ComDefaultInterfaceAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ComDefaultInterfaceAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _val: quest_hook::libil2cpp::Gc<crate::System::Type>,

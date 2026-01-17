@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Interop+MonoPInvokeCallbackAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoPInvokeCallbackAttribute {
     __cordl_parent: crate::System::Attribute,
 }

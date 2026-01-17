@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+DebugMember")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugMember {
     __cordl_parent: crate::UnityEngine::Scripting::PreserveAttribute,
     pub GizmoType: crate::Meta::XR::ImmersiveDebugger::DebugGizmoType,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+Marker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Marker {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Time: f64,

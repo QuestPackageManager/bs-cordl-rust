@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+MotionVectorRenderPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MotionVectorRenderPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_Color: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
@@ -551,7 +551,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+MotionVectorRenderPass+MotionMatrixPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MotionVectorRenderPass_MotionMatrixPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub motionData: quest_hook::libil2cpp::Gc<
@@ -645,7 +645,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+MotionVectorRenderPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MotionVectorRenderPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,

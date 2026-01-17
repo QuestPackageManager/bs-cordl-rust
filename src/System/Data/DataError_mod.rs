@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataError")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataError {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rowError: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -376,7 +376,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataError {
     }
 }
 #[cfg(feature = "cordl_class_System+Data+DataError+ColumnError")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DataError_ColumnError {
     pub _column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,

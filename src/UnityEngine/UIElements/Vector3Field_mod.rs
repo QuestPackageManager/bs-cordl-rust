@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector3Field {
     __cordl_parent: crate::UnityEngine::UIElements::BaseCompositeField_3<
         crate::UnityEngine::Vector3,
@@ -174,7 +174,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Vecto
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector3Field_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vector3Field>,
@@ -262,7 +262,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector3Field_UxmlTraits {
     __cordl_parent:
         crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<crate::UnityEngine::Vector3>,

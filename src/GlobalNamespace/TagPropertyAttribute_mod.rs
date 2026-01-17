@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TagPropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TagPropertyAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }

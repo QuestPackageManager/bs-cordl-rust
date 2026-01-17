@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationBase"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceLocationBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

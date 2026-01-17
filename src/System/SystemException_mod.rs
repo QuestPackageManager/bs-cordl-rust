@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+SystemException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SystemException {
     __cordl_parent: crate::System::Exception,
 }

@@ -2,7 +2,7 @@
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSLeaderboardTopNModel+XocBeatGamesCurrentUserModel+ActiveDataEnvironmentModel+BeatmapModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ActiveDataEnvironmentModel_XocBeatGamesCurrentUserModel_BSLeaderboardTopNModel_BeatmapModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _LeaderboardEntriesPage_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -162,7 +162,7 @@ for crate::BeatSaber::Main::GraphQL::Models::ActiveDataEnvironmentModel_XocBeatG
 }
 #[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSLeaderboardTopNModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BSLeaderboardTopNModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _XocBeatGamesCurrentUser_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -315,7 +315,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSLeaderboardTopNModel+XocBeatGamesCurrentUserModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BSLeaderboardTopNModel_XocBeatGamesCurrentUserModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _ActiveDataEnvironment_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -482,7 +482,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSLeaderboardTopNModel+XocBeatGamesCurrentUserModel+ActiveDataEnvironmentModel+BeatmapModel+LeaderboardEntriesPageModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapModel_ActiveDataEnvironmentModel_XocBeatGamesCurrentUserModel_BSLeaderboardTopNModel_LeaderboardEntriesPageModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _Nodes_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -668,7 +668,7 @@ for crate::BeatSaber::Main::GraphQL::Models::BeatmapModel_ActiveDataEnvironmentM
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSLeaderboardTopNModel+XocBeatGamesCurrentUserModel+ActiveDataEnvironmentModel+BeatmapModel+LeaderboardEntriesPageModel+NodesModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardEntriesPageModel_BeatmapModel_ActiveDataEnvironmentModel_XocBeatGamesCurrentUserModel_BSLeaderboardTopNModel_NodesModel
 {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
@@ -902,7 +902,7 @@ for crate::BeatSaber::Main::GraphQL::Models::LeaderboardEntriesPageModel_Beatmap
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSLeaderboardTopNModel+XocBeatGamesCurrentUserModel+ActiveDataEnvironmentModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XocBeatGamesCurrentUserModel_BSLeaderboardTopNModel_ActiveDataEnvironmentModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _Beatmap_k__BackingField: quest_hook::libil2cpp::Gc<

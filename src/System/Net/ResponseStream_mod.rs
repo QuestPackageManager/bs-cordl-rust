@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+ResponseStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResponseStream {
     __cordl_parent: crate::System::IO::Stream,
     pub response: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerResponse>,

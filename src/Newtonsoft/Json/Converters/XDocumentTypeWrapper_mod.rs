@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XDocumentTypeWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XDocumentTypeWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XObjectWrapper,
     pub _documentType: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XDocumentType>,

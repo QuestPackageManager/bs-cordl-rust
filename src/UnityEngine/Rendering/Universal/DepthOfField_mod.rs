@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DepthOfField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DepthOfField {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub mode: quest_hook::libil2cpp::Gc<

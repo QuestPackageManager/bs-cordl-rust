@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlCDataSection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlCDataSection {
     __cordl_parent: crate::System::Xml::XmlCharacterData,
 }

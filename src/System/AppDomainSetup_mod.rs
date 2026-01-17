@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+AppDomainSetup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AppDomainSetup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub application_base: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

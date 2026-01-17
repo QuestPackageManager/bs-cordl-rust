@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerContainer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUIHandlerContainer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub contentHolder: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Guid")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Guid {
     pub _a: i32,
@@ -1247,10 +1250,15 @@ impl AsMut<crate::System::ISpanFormattable> for crate::System::Guid {
     }
 }
 #[cfg(feature = "cordl_class_System+Guid+GuidParseThrowStyle")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Guid_GuidParseThrowStyle {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 1i32,
     AllButOverflow = 2i32,
     None = 0i32,
@@ -1330,7 +1338,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_GuidParseThrow
     }
 }
 #[cfg(feature = "cordl_class_System+Guid+GuidResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Guid_GuidResult {
     pub _parsedGuid: crate::System::Guid,
@@ -1613,10 +1624,15 @@ impl crate::System::Guid_GuidResult {
     }
 }
 #[cfg(feature = "cordl_class_System+Guid+GuidStyles")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Guid_GuidStyles {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllowBraces = 2i32,
     AllowDashes = 4i32,
     AllowHexPrefix = 8i32,
@@ -1706,10 +1722,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Guid_GuidStyles {
     }
 }
 #[cfg(feature = "cordl_class_System+Guid+ParseFailureKind")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Guid_ParseFailureKind {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ArgumentNull = 1i32,
     Format = 2i32,
     FormatWithInnerException = 5i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FileBrowserTableView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileBrowserTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,

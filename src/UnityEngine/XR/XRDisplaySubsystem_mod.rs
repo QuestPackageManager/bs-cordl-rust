@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRDisplaySubsystem_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -79,10 +79,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XRDisplaySubsystem_LateLatchNode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Head = 0i32,
     LeftHand = 1i32,
     RightHand = 2i32,
@@ -172,10 +177,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+TextureLayout")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XRDisplaySubsystem_TextureLayout {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     SeparateTexture2Ds = 4i32,
     SingleTexture2D = 2i32,
     Texture2DArray = 1i32,
@@ -265,7 +275,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XRDisplaySubsystem_XRBlitParams {
     pub srcTex: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -376,7 +389,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRBlitParams")]
 impl crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {}
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRMirrorViewBlitDesc")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XRDisplaySubsystem_XRMirrorViewBlitDesc {
     pub displaySubsystemInstance: crate::System::IntPtr,
@@ -516,7 +532,10 @@ impl crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderParameter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XRDisplaySubsystem_XRRenderParameter {
     pub view: crate::UnityEngine::Matrix4x4,
@@ -626,7 +645,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+XRRenderParameter")]
 impl crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderParameter {}
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystem+XRRenderPass")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XRDisplaySubsystem_XRRenderPass {
     pub displaySubsystemInstance: crate::System::IntPtr,

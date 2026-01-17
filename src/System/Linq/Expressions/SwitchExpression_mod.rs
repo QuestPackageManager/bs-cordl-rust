@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+SwitchExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SwitchExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _SwitchValue_k__BackingField:

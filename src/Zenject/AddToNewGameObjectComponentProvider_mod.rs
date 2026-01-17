@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+AddToNewGameObjectComponentProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddToNewGameObjectComponentProvider {
     __cordl_parent: crate::Zenject::AddToGameObjectComponentProviderBase,
     pub _gameObjectBindInfo:

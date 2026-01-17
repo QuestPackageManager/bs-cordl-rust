@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+NamespaceManager+XmlAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamespaceManager_XmlBaseReader_XmlAttribute {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub space: crate::System::Xml::XmlSpace,
@@ -225,7 +225,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader {
     __cordl_parent: crate::System::Xml::XmlDictionaryReader,
     pub bufferReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlBufferReader>,
@@ -3249,7 +3249,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader {
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+AttributeSorter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_AttributeSorter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub indeces: quest_hook::libil2cpp::Gc<
@@ -3531,7 +3531,7 @@ impl AsMut<crate::System::Collections::IComparer>
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+Namespace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_Namespace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub prefix: quest_hook::libil2cpp::Gc<crate::System::Xml::PrefixHandle>,
@@ -3845,7 +3845,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Nam
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+NamespaceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_NamespaceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bufferReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlBufferReader>,
@@ -4381,10 +4381,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Nam
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+QNameType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlBaseReader_QNameType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Normal = 0i32,
     Xmlns = 1i32,
 }
@@ -4464,7 +4469,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlBaseReader_
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+QuotaNameTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_QuotaNameTable {
     __cordl_parent: crate::System::Xml::XmlNameTable,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryReader>,
@@ -4697,7 +4702,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Quo
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlAtomicTextNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlAtomicTextNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlTextNode,
 }
@@ -4783,7 +4788,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlAttributeNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlAttributeNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
 }
@@ -4909,7 +4914,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlAttributeTextNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlAttributeTextNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlTextNode,
 }
@@ -5000,7 +5005,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlCDataNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlCDataNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlTextNode,
 }
@@ -5086,7 +5091,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlClosedNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlClosedNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
 }
@@ -5172,7 +5177,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlCommentNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlCommentNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
 }
@@ -5258,7 +5263,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlComplexTextNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlComplexTextNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlTextNode,
 }
@@ -5344,7 +5349,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlDeclarationNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlDeclarationNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
 }
@@ -5430,7 +5435,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlElementNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlElementNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
     pub endElementNode:
@@ -5633,7 +5638,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlEndElementNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlEndElementNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
 }
@@ -5724,7 +5729,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlEndOfFileNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlEndOfFileNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
 }
@@ -5810,7 +5815,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlInitialNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlInitialNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
 }
@@ -5896,7 +5901,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nodeType: crate::System::Xml::XmlNodeType,
@@ -6862,7 +6867,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlTextNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlTextNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlNode,
 }
@@ -6998,7 +7003,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlWhitespaceTextNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlBaseReader_XmlWhitespaceTextNode {
     __cordl_parent: crate::System::Xml::XmlBaseReader_XmlTextNode,
 }
@@ -7085,10 +7090,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBaseReader_Xml
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlBaseReader+XmlNode+XmlNodeFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlNode_XmlBaseReader_XmlNodeFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AtomicValue = 8i32,
     CanGetAttribute = 1i32,
     CanMoveToElement = 2i32,

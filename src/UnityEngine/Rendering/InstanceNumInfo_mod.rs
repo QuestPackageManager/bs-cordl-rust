@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceNumInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceNumInfo {
     pub InstanceNums: crate::UnityEngine::Rendering::InstanceNumInfo__InstanceNums_e__FixedBuffer,
@@ -233,7 +236,10 @@ impl crate::UnityEngine::Rendering::InstanceNumInfo {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceNumInfo+_InstanceNums_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceNumInfo__InstanceNums_e__FixedBuffer {
     pub FixedElementField: i32,

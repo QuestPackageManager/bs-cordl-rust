@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlTemplateTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UxmlTemplateTraits {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
     pub m_Name:

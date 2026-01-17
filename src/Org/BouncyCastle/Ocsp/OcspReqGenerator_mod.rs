@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OcspReqGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -440,7 +440,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Ocsp::OcspR
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OcspReqGenerator_RequestObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certId: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,

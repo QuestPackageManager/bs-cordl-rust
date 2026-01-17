@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
     pub commandLists: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ComboMissionObjectiveChecker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ComboMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
     pub _comboController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ComboController>,

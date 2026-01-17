@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Resources+ResourceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub BaseNameField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -599,7 +599,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Resources::ResourceMan
 }
 #[cfg(feature = "cordl_class_System+Resources+ResourceManager+CultureNameResourceSetPair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceManager_CultureNameResourceSetPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lastCultureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -683,7 +683,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Resources+ResourceManager+ResourceManagerMediator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceManager_ResourceManagerMediator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rm: quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceManager>,

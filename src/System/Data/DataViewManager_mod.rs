@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataViewManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataViewManager {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
     pub _dataViewSettingsCollection:

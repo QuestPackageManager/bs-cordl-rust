@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongPackMasksModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongPackMasksModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub content: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMasksModelSO>,
@@ -234,7 +234,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPackMasks
     }
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+LocalizedText")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SongPackMasksModel_LocalizedText {
     pub textKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -393,7 +396,10 @@ impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     }
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel+MaskInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SongPackMasksModel_MaskInfo {
     pub localizedText: crate::GlobalNamespace::SongPackMasksModel_LocalizedText,

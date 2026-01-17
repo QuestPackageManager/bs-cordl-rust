@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PressureSensor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PressureSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
     pub _atmosphericPressure_k__BackingField:

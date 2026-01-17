@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Toggle {
     __cordl_parent: crate::UnityEngine::UIElements::BaseBoolField,
 }
@@ -161,7 +161,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Toggl
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Toggle_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
@@ -245,7 +245,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Toggl
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Toggle+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Toggle_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
         bool,

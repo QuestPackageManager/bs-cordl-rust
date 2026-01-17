@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+CollectionDataNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionDataNode {
     __cordl_parent: crate::System::Runtime::Serialization::DataNode_1<
         quest_hook::libil2cpp::Gc<crate::System::Array>,

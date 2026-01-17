@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonDynamicContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonDynamicContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
     pub _Properties_k__BackingField:

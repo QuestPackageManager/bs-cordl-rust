@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+AutoIncrementValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AutoIncrementValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Auto_k__BackingField: bool,

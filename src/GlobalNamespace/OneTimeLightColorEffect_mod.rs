@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OneTimeLightColorEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OneTimeLightColorEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _color: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,

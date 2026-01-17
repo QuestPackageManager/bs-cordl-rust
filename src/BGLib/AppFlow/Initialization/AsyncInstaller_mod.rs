@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
 }
@@ -150,7 +150,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGLib::AppFlow::Initialization
     }
 }
 #[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstaller+IInstallerRegistry")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct AsyncInstaller_IInstallerRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

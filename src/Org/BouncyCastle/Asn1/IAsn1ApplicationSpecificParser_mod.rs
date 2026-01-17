@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IAsn1ApplicationSpecificParser")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IAsn1ApplicationSpecificParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

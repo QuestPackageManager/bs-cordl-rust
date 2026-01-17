@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Configuration+DefaultProxySection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultProxySection {
     __cordl_parent: crate::System::Configuration::ConfigurationSection,
 }

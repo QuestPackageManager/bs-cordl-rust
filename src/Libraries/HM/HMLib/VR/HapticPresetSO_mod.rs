@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Libraries+HM+HMLib+VR+HapticPresetSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HapticPresetSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _duration: f32,

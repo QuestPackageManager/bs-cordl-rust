@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+InjectAttributeBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InjectAttributeBase {
     __cordl_parent: crate::Zenject::Internal::PreserveAttribute,
     pub _Optional_k__BackingField: bool,

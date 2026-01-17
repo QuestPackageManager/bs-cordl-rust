@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlAttributeAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlAttributeAttribute {
     __cordl_parent: crate::System::Attribute,
     pub attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

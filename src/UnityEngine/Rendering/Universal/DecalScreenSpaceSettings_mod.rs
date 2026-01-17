@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalScreenSpaceSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalScreenSpaceSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub normalBlend: crate::UnityEngine::Rendering::Universal::DecalNormalBlend,

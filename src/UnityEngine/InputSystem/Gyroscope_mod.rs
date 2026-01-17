@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Gyroscope")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Gyroscope {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
     pub _angularVelocity_k__BackingField:

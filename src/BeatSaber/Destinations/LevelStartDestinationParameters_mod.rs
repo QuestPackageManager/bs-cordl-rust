@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Destinations+LevelStartDestinationParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelStartDestinationParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub gameMode: crate::BeatSaber::Destinations::GameMode,

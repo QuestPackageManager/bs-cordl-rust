@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TrackLaneRing")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackLaneRing {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _prevRotZ: f32,

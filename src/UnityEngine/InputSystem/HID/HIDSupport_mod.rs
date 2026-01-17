@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HIDSupport {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -131,7 +131,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::HID:
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HIDSupport_HIDPageUsage {
     pub page: crate::UnityEngine::InputSystem::HID::HID_UsagePage,

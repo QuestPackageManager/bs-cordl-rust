@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlCharacterData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlCharacterData {
     __cordl_parent: crate::System::Xml::XmlLinkedNode,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

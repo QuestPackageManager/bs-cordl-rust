@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+NearestNeighbourList_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NearestNeighbourList_2<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,

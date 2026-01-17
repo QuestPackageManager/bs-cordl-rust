@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StyledUITemplates+OverridableFloat")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OverridableFloat {
     __cordl_parent: crate::StyledUITemplates::OverridableData_1<f32>,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+PlaceholderFactoryBindingFinalizer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlaceholderFactoryBindingFinalizer_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
     pub _factoryBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,

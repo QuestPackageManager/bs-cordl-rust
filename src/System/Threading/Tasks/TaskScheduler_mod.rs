@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskScheduler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskScheduler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_taskSchedulerId: i32,
@@ -370,7 +370,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task
     feature = "cordl_class_System+Threading+Tasks+TaskScheduler+SystemThreadingTasks_TaskSchedulerDebugView"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskScheduler_SystemThreadingTasks_TaskSchedulerDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

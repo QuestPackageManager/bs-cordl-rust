@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LeaveFinallyInstruction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaveFinallyInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
 }

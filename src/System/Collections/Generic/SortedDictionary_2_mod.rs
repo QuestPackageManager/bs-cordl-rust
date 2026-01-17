@@ -1,7 +1,10 @@
 #[cfg(
     feature = "cordl_class_System+Collections+Generic+SortedDictionary_2+KeyCollection+Enumerator"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct KeyCollection_SortedDictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
@@ -430,7 +433,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedDictionary_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedDictionary_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2196,7 +2199,10 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedDictionary_2+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SortedDictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
@@ -2791,7 +2797,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedDictionary_2+KeyCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedDictionary_2_KeyCollection<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3449,7 +3455,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedDictionary_2+KeyValuePairComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedDictionary_2_KeyValuePairComparer<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3631,7 +3637,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedDictionary_2+ValueCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedDictionary_2_ValueCollection<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4292,7 +4298,10 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 #[cfg(
     feature = "cordl_class_System+Collections+Generic+SortedDictionary_2+ValueCollection+Enumerator"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ValueCollection_SortedDictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,

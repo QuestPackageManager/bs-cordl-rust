@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatAvatarVisualController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _headTopMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -301,7 +301,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+BeatAvatarSDK+BeatAvatarVisualController+HighlighterDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatAvatarVisualController_HighlighterDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

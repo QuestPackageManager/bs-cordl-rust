@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonSerializationException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonSerializationException {
     __cordl_parent: crate::Newtonsoft::Json::JsonException,
     pub _LineNumber_k__BackingField: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+SectionTableView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SectionTableView {
     __cordl_parent: crate::HMUI::TableView,
     pub _unfoldSectionsByDefault: bool,
@@ -604,7 +604,7 @@ impl AsMut<crate::HMUI::TableView_IDataSource> for crate::HMUI::SectionTableView
     }
 }
 #[cfg(feature = "cordl_class_HMUI+SectionTableView+IDataSource")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct SectionTableView_IDataSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -769,7 +769,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SectionTableView_IDataSo
     }
 }
 #[cfg(feature = "cordl_class_HMUI+SectionTableView+Section")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SectionTableView_Section {
     pub unfolded: bool,

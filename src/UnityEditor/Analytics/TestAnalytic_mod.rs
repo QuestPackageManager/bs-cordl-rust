@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEditor+Analytics+TestAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TestAnalytic {
     __cordl_parent: crate::UnityEngine::Analytics::AnalyticsEventBase,
     pub param: i32,

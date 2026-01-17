@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ResizableTextMeshPro")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResizableTextMeshPro {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _textMeshPro: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,

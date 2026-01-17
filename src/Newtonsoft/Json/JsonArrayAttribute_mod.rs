@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonArrayAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonArrayAttribute {
     __cordl_parent: crate::Newtonsoft::Json::JsonContainerAttribute,
     pub _allowNullItems: bool,

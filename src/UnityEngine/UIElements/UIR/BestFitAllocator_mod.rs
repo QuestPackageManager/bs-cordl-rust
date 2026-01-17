@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BestFitAllocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _totalSize_k__BackingField: u32,
@@ -273,7 +273,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BestFitAllocator_Block {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block>,
@@ -389,7 +389,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BestFitAllocator_BlockPool {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPool_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block>,

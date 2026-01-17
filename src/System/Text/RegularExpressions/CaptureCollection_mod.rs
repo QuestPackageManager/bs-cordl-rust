@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+CaptureCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CaptureCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _group: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
@@ -1140,7 +1140,7 @@ impl AsMut<crate::System::Collections::IList>
 }
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+CaptureCollection+Enumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CaptureCollection_Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _collection:

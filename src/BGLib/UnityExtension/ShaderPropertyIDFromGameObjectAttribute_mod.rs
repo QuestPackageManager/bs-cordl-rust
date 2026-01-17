@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderPropertyIDFromGameObjectAttribute {
     __cordl_parent: crate::BGLib::UnityExtension::ShaderPropertyIDAttribute,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MidiParser+MidiFile")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MidiFile {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub format: i32,
@@ -195,7 +195,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::MidiParser::MidiFile {
 }
 #[cfg(feature = "cordl_class_MidiParser+MidiFile+Reader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MidiFile_Reader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

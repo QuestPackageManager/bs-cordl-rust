@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncOperationBase_1<TObject: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Result_k__BackingField: TObject,

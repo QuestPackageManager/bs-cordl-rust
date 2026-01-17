@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockPlatformAdditionalContentModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockPlatformAdditionalContentModel {
     __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
     pub _levelsEntitlements: quest_hook::libil2cpp::Gc<

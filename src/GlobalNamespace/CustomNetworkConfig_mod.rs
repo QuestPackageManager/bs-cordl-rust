@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CustomNetworkConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomNetworkConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _maxPartySize_k__BackingField: i32,

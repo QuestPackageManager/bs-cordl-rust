@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRPlatformMenu")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlatformMenu {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub inputCode: crate::GlobalNamespace::OVRInput_RawButton,
@@ -191,10 +191,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlatformMe
     }
 }
 #[cfg(feature = "cordl_class_OVRPlatformMenu+eBackButtonAction")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlatformMenu_eBackButtonAction {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     NONE = 0i32,
     SHORT_PRESS = 1i32,
 }
@@ -283,10 +288,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlatformMenu+eHandler")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlatformMenu_eHandler {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     RetreatOneLevel = 1i32,
     ShowConfirmQuit = 0i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StandardLevelInfoSaveData_V100")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelInfoSaveData_V100 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -469,7 +469,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StandardLevel
 }
 #[cfg(feature = "cordl_class_StandardLevelInfoSaveData_V100+DifficultyBeatmap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelInfoSaveData_V100_DifficultyBeatmap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _difficulty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Orientation: crate::UnityEngine::ScreenOrientation,

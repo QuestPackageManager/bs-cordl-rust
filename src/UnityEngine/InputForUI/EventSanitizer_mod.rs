@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+EventSanitizer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct EventSanitizer {
     pub _sanitizers: quest_hook::libil2cpp::Gc<
@@ -192,7 +195,7 @@ impl crate::UnityEngine::InputForUI::EventSanitizer {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+EventSanitizer+IEventSanitizer")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct EventSanitizer_IEventSanitizer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

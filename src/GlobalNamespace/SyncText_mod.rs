@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SyncText")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SyncText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _otherTextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRChaperone {
     pub GetCalibrationState:
@@ -121,7 +124,7 @@ impl crate::OVR::OpenVR::IVRChaperone {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone+_AreBoundsVisible")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperone__AreBoundsVisible {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -282,7 +285,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperone__Are
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone+_ForceBoundsVisible")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperone__ForceBoundsVisible {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -450,7 +453,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperone__For
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone+_GetBoundsColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperone__GetBoundsColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -657,7 +660,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperone__Get
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone+_GetCalibrationState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperone__GetCalibrationState {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -824,7 +827,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperone__Get
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone+_GetPlayAreaRect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperone__GetPlayAreaRect {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -995,7 +998,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperone__Get
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone+_GetPlayAreaSize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperone__GetPlayAreaSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1173,7 +1176,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperone__Get
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone+_ReloadInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperone__ReloadInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1336,7 +1339,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperone__Rel
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperone+_SetSceneColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperone__SetSceneColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }

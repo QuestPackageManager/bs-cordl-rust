@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FormattableStringFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -98,7 +98,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FormattableStringFactory_ConcreteFormattableString {
     __cordl_parent: crate::System::FormattableString,
     pub _format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

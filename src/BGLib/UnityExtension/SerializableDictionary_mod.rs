@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+SerializableDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializableDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -54,7 +54,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGLib::UnityExtension::Seriali
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+SerializableDictionary+Storage_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializableDictionary_Storage_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::BGLib::UnityExtension::SerializableDictionaryBase_Storage,
     pub data: T,

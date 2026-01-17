@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MenuSceneSetup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuSceneSetup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rootFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,

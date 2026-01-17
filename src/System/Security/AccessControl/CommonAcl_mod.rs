@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAcl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CommonAcl {
     __cordl_parent: crate::System::Security::AccessControl::GenericAcl,
     pub is_aefa: bool,
@@ -849,7 +849,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::AccessContro
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+CommonAcl+RemoveAcesCallback_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CommonAcl_RemoveAcesCallback_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,

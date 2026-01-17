@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ProfilerMetrics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProfilerMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _metrics: quest_hook::libil2cpp::Gc<
@@ -442,7 +442,10 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::ProfilerMetri
     }
 }
 #[cfg(feature = "cordl_class_ProfilerMetrics+ProfilerMetric")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProfilerMetrics_ProfilerMetric {
     pub category: crate::Unity::Profiling::ProfilerCategory,

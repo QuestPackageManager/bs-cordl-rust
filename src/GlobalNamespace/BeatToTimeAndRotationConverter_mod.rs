@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatToTimeAndRotationConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatToTimeAndRotationConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _rotationTimeProcessor:

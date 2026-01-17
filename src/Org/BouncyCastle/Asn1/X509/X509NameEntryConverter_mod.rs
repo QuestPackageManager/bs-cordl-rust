@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+X509NameEntryConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509NameEntryConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

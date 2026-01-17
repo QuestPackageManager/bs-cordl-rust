@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectedMemberProperty_2<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -314,7 +314,7 @@ impl<TContainer: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Typ
 }
 #[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectedMemberProperty_2_GetClassValueAction<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -483,7 +483,7 @@ impl<TContainer: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Typ
 }
 #[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectedMemberProperty_2_GetStructValueAction<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -657,7 +657,7 @@ impl<TContainer: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Typ
 }
 #[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectedMemberProperty_2_SetClassValueAction<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -833,7 +833,7 @@ impl<TContainer: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Typ
 }
 #[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectedMemberProperty_2_SetStructValueAction<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

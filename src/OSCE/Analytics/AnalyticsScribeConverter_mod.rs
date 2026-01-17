@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OSCE+Analytics+AnalyticsScribeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnalyticsScribeConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerTransforms")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerTransforms {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _headTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

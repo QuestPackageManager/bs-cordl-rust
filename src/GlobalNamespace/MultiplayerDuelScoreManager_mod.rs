@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerDuelScoreManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerDuelScoreManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreItem: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerScoreItem>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteMovement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _waiting: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteWaiting>,

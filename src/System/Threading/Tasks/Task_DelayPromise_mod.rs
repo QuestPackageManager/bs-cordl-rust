@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+Task+DelayPromise")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Task_DelayPromise {
     __cordl_parent:
         crate::System::Threading::Tasks::Task_1<crate::System::Threading::Tasks::VoidTaskResult>,

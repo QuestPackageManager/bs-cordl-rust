@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskToApm {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -169,7 +169,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskToApm_TaskWrapperAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CreditsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CreditsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub creditsItems: quest_hook::libil2cpp::Gc<
@@ -117,7 +117,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData {
 }
 #[cfg(feature = "cordl_class_CreditsData+ChildCreditsItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CreditsData_ChildCreditsItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub title: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CreditsData_Text>,
@@ -235,7 +235,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData_C
 }
 #[cfg(feature = "cordl_class_CreditsData+RootCreditsItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CreditsData_RootCreditsItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub title: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CreditsData_Text>,
@@ -378,7 +378,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData_R
 }
 #[cfg(feature = "cordl_class_CreditsData+Text")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CreditsData_Text {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -503,10 +503,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData_T
     }
 }
 #[cfg(feature = "cordl_class_CreditsData+TextStyle")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CreditsData_TextStyle {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Header = 2i32,
     Normal = 0i32,
     Title = 1i32,

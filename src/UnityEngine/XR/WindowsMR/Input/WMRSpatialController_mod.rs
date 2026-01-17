@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRSpatialController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WMRSpatialController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     pub _joystick_k__BackingField:

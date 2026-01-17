@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+ThrowStub")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThrowStub {
     __cordl_parent: crate::System::ObjectDisposedException,
 }

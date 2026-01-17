@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Touchscreen")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Touchscreen {
     __cordl_parent: crate::UnityEngine::InputSystem::Pointer,
     pub _primaryTouch_k__BackingField:

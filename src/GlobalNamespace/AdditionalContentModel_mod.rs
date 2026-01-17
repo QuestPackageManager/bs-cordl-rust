@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AdditionalContentModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AdditionalContentModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didInvalidateDataEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -741,10 +741,15 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::AdditionalCon
     }
 }
 #[cfg(feature = "cordl_class_AdditionalContentModel+UpdateEntitlementsResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum AdditionalContentModel_UpdateEntitlementsResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failed = 1i32,
     OK = 0i32,
 }

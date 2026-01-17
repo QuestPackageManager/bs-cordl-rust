@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+SymmetricTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SymmetricTransform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algo: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::SymmetricAlgorithm>,

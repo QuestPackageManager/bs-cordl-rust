@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+UIFoldout")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIFoldout {
     __cordl_parent: crate::UnityEngine::UI::Toggle,
     pub content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

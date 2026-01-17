@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CenterStageLobbyViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CenterStageLobbyViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _beatmapSelectionView:

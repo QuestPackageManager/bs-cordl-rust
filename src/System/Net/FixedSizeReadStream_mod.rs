@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+FixedSizeReadStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FixedSizeReadStream {
     __cordl_parent: crate::System::Net::WebReadStream,
     pub _ContentLength_k__BackingField: i64,

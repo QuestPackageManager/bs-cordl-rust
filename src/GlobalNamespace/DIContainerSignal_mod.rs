@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DIContainerSignal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DIContainerSignal {
     __cordl_parent: crate::GlobalNamespace::GenericSignal_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

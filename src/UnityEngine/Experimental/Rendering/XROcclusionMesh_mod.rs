@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+XROcclusionMesh")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XROcclusionMesh {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Pass: quest_hook::libil2cpp::Gc<crate::UnityEngine::Experimental::Rendering::XRPass>,

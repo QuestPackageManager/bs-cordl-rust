@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderCore")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AsyncMethodBuilderCore {
     pub m_stateMachine:
@@ -338,7 +341,7 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
     feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncMethodBuilderCore_ContinuationWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -467,7 +470,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncMethodBuilderCore_MoveNextRunner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,

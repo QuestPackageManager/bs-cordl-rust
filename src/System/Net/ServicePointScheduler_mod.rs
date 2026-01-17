@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+ServicePointScheduler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServicePointScheduler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ServicePoint_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
@@ -649,7 +649,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ServicePointSched
 }
 #[cfg(feature = "cordl_class_System+Net+ServicePointScheduler+AsyncManualResetEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServicePointScheduler_AsyncManualResetEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_tcs:
@@ -806,7 +806,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Net+ServicePointScheduler+ConnectionGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServicePointScheduler_ConnectionGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Scheduler_k__BackingField:

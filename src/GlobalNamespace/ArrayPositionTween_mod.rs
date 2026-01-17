@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ArrayPositionTween")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayPositionTween {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub arrayReference: crate::UnityEngine::ExposedReference_1<

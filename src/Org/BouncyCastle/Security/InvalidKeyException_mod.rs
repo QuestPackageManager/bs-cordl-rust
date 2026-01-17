@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+InvalidKeyException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InvalidKeyException {
     __cordl_parent: crate::Org::BouncyCastle::Security::KeyException,
 }

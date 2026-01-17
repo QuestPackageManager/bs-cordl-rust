@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextHandlePermanentCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextHandlePermanentCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub s_TextInfoPool: quest_hook::libil2cpp::Gc<

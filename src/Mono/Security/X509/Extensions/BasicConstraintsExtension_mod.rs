@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicConstraintsExtension {
     __cordl_parent: crate::Mono::Security::X509::X509Extension,
     pub cA: bool,

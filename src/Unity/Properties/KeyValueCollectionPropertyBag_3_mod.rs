@@ -2,7 +2,7 @@
     feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+Enumerable+Enumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable_KeyValueCollectionPropertyBag_3_Enumerator<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -523,7 +523,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KeyValueCollectionPropertyBag_3<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -1140,7 +1140,10 @@ impl<
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+Enumerable")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct KeyValueCollectionPropertyBag_3_Enumerable<
     TDictionary: quest_hook::libil2cpp::Type,
@@ -1575,7 +1578,7 @@ impl<
     feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KeyValueCollectionPropertyBag_3_KeyValuePairProperty<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

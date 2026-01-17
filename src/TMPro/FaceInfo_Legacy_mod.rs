@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+FaceInfo_Legacy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FaceInfo_Legacy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

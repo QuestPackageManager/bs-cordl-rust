@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEventDataBoxGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beat: f32,
@@ -376,7 +376,7 @@ impl
 }
 #[cfg(feature = "cordl_class_BeatmapEventDataBoxGroup+ElementData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEventDataBoxGroup_ElementData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startBeat: f32,

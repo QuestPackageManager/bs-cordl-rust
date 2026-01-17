@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceGameObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetReferenceGameObject {
     __cordl_parent: crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRDriverManager {
     pub GetDriverCount:
@@ -104,7 +107,7 @@ impl crate::OVR::OpenVR::IVRDriverManager {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRDriverManager__GetDriverCount {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -265,7 +268,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRDriverManager_
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRDriverManager__GetDriverHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -435,7 +438,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRDriverManager_
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRDriverManager__GetDriverName {
     __cordl_parent: crate::System::MulticastDelegate,
 }

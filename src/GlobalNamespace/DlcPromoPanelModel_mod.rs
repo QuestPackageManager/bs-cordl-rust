@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DlcPromoPanelModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DlcPromoPanelModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _additionalContentModel:
@@ -1046,7 +1046,7 @@ impl AsMut<crate::Zenject::IInitializable> for crate::GlobalNamespace::DlcPromoP
 }
 #[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DlcPromoPanelModel_PromoInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
@@ -1277,10 +1277,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanel
     }
 }
 #[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo+PromoType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PromoInfo_DlcPromoPanelModel_PromoType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Level = 1i32,
     Pack = 0i32,
     Store = 2i32,

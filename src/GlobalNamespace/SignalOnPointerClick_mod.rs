@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SignalOnPointerClick")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalOnPointerClick {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _inputFieldClickedSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,

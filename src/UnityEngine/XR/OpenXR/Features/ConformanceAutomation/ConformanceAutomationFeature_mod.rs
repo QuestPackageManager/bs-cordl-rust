@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+ConformanceAutomation+ConformanceAutomationFeature"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConformanceAutomationFeature {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRFeature,
 }

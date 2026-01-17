@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleInputHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboardSampleInputHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub OVRVirtualKeyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,

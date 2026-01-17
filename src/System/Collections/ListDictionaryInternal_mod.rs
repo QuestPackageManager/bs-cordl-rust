@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListDictionaryInternal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub head: quest_hook::libil2cpp::Gc<
@@ -537,7 +537,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal+DictionaryNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListDictionaryInternal_DictionaryNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -624,7 +624,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListDictionaryInternal_NodeEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::ListDictionaryInternal>,
@@ -895,7 +895,7 @@ impl AsMut<crate::System::Collections::IEnumerator>
 }
 #[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeKeyValueCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListDictionaryInternal_NodeKeyValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::ListDictionaryInternal>,
@@ -1157,7 +1157,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
     feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::ListDictionaryInternal>,

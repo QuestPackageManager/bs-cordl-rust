@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorHueSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorHueSlider {
     __cordl_parent: crate::HMUI::CircleSlider,
     pub _darkColor: crate::UnityEngine::Color,

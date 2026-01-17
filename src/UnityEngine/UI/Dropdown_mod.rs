@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Dropdown {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_Template: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -1428,7 +1428,7 @@ impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler> for crate::UnityEng
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Dropdown_DropdownEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
@@ -1506,7 +1506,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown_Drop
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Dropdown_DropdownItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Text: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
@@ -1900,7 +1900,7 @@ impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Dropdown_OptionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2190,7 +2190,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown_Opti
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionDataList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Dropdown_OptionDataList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Options: quest_hook::libil2cpp::Gc<

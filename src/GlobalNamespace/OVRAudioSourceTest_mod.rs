@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRAudioSourceTest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRAudioSourceTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub period: f32,

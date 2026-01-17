@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Notepad+NoteSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

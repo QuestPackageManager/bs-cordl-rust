@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+Emit+GenericTypeParameterBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericTypeParameterBuilder {
     __cordl_parent: crate::System::Reflection::TypeInfo,
 }

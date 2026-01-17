@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ConditionalActivation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalActivation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,

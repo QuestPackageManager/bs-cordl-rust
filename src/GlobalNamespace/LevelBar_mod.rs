@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelBar")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelBar {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _songArtworkImageView: quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,

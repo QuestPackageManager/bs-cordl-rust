@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MonoInstallerBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoInstallerBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Container_k__BackingField: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

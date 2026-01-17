@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+NativePropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NativePropertyAttribute {
     __cordl_parent: crate::UnityEngine::Bindings::NativeMethodAttribute,
     pub _TargetType_k__BackingField: crate::UnityEngine::Bindings::TargetType,

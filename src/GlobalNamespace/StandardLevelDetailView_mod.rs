@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StandardLevelDetailView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelDetailView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _actionButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

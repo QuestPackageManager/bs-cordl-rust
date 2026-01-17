@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StretchableCube")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StretchableCube {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _uvs:

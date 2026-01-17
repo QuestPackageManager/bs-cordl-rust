@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+InvocationExpressionN")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InvocationExpressionN {
     __cordl_parent: crate::System::Linq::Expressions::InvocationExpression,
     pub _arguments: quest_hook::libil2cpp::Gc<

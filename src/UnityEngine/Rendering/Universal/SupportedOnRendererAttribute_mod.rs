@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+SupportedOnRendererAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SupportedOnRendererAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _rendererTypes_k__BackingField: quest_hook::libil2cpp::Gc<

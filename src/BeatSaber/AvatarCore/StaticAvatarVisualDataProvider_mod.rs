@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+StaticAvatarVisualDataProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StaticAvatarVisualDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _avatarsData: crate::GlobalNamespace::MultiplayerAvatarsData,

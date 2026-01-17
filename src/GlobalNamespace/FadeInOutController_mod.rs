@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FadeInOutController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FadeInOutController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _easeValue: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatSO>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventHandlerList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _head: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventHandlerList_ListEntry>,
@@ -112,7 +112,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::EventH
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventHandlerList_ListEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _next: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventHandlerList_ListEntry>,

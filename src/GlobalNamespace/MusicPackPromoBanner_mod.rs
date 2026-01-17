@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MusicPackPromoBanner")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MusicPackPromoBanner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _promoBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

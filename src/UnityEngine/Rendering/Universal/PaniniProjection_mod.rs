@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PaniniProjection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PaniniProjection {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub distance: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ClampedFloatParameter>,

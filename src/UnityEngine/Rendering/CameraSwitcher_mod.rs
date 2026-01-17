@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraSwitcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CameraSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Cameras: quest_hook::libil2cpp::Gc<

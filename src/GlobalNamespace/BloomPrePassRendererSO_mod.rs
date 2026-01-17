@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassRendererSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassRendererSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _bloomFog: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogSO>,
@@ -524,7 +524,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassR
     }
 }
 #[cfg(feature = "cordl_class_BloomPrePassRendererSO+InputData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BloomPrePassRendererSO_InputData {
     pub limitAlpha: f32,
@@ -666,7 +669,7 @@ impl crate::GlobalNamespace::BloomPrePassRendererSO_InputData {
 }
 #[cfg(feature = "cordl_class_BloomPrePassRendererSO+LightsRenderingData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassRendererSO_LightsRenderingData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -819,7 +822,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_BloomPrePassRendererSO+PreallocationData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassRendererSO_PreallocationData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightType: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,

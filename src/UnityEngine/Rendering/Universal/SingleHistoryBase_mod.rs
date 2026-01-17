@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+SingleHistoryBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SingleHistoryBase {
     __cordl_parent: crate::UnityEngine::Rendering::CameraHistoryItem,
     pub m_Id: i32,

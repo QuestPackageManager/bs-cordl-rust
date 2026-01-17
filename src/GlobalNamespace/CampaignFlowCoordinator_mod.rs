@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CampaignFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CampaignFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _defaultLightsPreset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,

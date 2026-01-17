@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorTMPTextStateTransition")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorTMPTextStateTransition {
     __cordl_parent: crate::GlobalNamespace::ColorStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,

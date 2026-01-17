@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskFactory_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_defaultCancellationToken: crate::System::Threading::CancellationToken,
@@ -1099,7 +1099,7 @@ impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory_1+FromAsyncTrimPromise_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskFactory_1_FromAsyncTrimPromise_1<
     TResult: quest_hook::libil2cpp::Type,
     TInstance: quest_hook::libil2cpp::Type,

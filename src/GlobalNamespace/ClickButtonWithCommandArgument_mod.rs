@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ClickButtonWithCommandArgument")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClickButtonWithCommandArgument {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _argument: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

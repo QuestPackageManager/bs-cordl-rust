@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BottleneckHistory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BottleneckHistory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Bottlenecks: quest_hook::libil2cpp::Gc<

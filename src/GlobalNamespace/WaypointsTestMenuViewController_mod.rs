@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_WaypointsTestMenuViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaypointsTestMenuViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _btsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

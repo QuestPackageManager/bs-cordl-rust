@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameSongController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameSongController {
     __cordl_parent: crate::GlobalNamespace::SongController,
     pub _audioTimeSyncController:

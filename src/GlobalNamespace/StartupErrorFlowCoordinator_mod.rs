@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StartupErrorFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StartupErrorFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _startupErrorViewController:

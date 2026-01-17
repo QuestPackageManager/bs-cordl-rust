@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRLoaderBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRLoaderBase {
     __cordl_parent: crate::UnityEngine::XR::Management::XRLoaderHelper,
     pub featureLoggingInfo: quest_hook::libil2cpp::Gc<
@@ -1177,7 +1177,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::OpenXR::OpenX
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRLoaderBase+FeatureLoggingInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRLoaderBase_FeatureLoggingInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_nameUi: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1280,10 +1280,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRLoaderBase+LoaderState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRLoaderBase_LoaderState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DeinitializeAttempted = 7i32,
     InitializeAttempted = 1i32,
     Initialized = 2i32,
@@ -1379,7 +1384,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRLoaderBase+ReceiveNativeEventDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRLoaderBase_ReceiveNativeEventDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

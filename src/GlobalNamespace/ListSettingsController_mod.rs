@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ListSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListSettingsController {
     __cordl_parent: crate::GlobalNamespace::IncDecSettingsController,
     pub _idx: i32,

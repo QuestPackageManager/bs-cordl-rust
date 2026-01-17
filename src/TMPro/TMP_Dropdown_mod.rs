@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_Dropdown")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Dropdown {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_Template: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -1570,7 +1570,7 @@ impl AsMut<crate::UnityEngine::EventSystems::ISubmitHandler> for crate::TMPro::T
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Dropdown+DropdownEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Dropdown_DropdownEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
@@ -1648,7 +1648,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_DropdownEv
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Dropdown+DropdownItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Dropdown_DropdownItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Text: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -2040,7 +2040,7 @@ impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Dropdown+OptionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Dropdown_OptionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2380,7 +2380,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_OptionData
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Dropdown+OptionDataList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Dropdown_OptionDataList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Options: quest_hook::libil2cpp::Gc<

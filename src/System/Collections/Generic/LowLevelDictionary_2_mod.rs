@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LowLevelDictionary_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -455,7 +455,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LowLevelDictionary_2_DefaultComparer_1<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -701,7 +701,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+Entry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LowLevelDictionary_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

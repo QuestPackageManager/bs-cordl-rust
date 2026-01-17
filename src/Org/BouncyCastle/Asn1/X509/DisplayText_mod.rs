@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+DisplayText")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisplayText {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub contentType: i32,

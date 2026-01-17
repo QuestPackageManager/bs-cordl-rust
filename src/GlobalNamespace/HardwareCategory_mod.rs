@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_HardwareCategory")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HardwareCategory {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Quest1 = 1i32,
     Quest2 = 2i32,
     Quest3 = 3i32,

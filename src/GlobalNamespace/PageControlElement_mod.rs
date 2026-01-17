@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PageControlElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PageControlElement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,

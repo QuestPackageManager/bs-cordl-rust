@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DynamicString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicString {
     __cordl_parent: crate::UnityEngine::Rendering::DynamicArray_1<char>,
 }

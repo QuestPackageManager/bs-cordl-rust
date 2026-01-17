@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+ControlPlayableAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ControlPlayableAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub sourceGameObject: crate::UnityEngine::ExposedReference_1<

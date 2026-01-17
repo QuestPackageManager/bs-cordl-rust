@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProBuilderMesh {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_MeshFormatVersion: i32,
@@ -4560,10 +4560,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::ProBu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum ProBuilderMesh_CacheValidState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     SharedTexture = 2u8,
     SharedVertex = 1u8,
 }
@@ -4652,7 +4657,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProBuilderMesh_NonVersionedEditScope {
     pub m_Mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,

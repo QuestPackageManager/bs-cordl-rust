@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseTreeViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseTreeViewController {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
     pub m_Hierarchy: quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,

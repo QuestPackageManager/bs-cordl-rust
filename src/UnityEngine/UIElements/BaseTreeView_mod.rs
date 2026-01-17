@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseTreeView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseTreeView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     pub itemExpandedChanged: quest_hook::libil2cpp::Gc<
@@ -743,7 +743,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::BaseT
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseTreeView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseTreeView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
     pub m_AutoExpand:

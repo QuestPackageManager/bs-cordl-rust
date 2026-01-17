@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+TimeZoneInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeZoneInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3211,7 +3211,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable> for crate::Syst
 }
 #[cfg(feature = "cordl_class_System+TimeZoneInfo+AdjustmentRule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeZoneInfo_AdjustmentRule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dateStart: crate::System::DateTime,
@@ -3936,7 +3936,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 }
 #[cfg(feature = "cordl_class_System+TimeZoneInfo+CachedData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeZoneInfo_CachedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _localTimeZone: quest_hook::libil2cpp::Gc<crate::System::TimeZoneInfo>,
@@ -4090,10 +4090,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo_CachedDat
     }
 }
 #[cfg(feature = "cordl_class_System+TimeZoneInfo+TZVersion")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum TimeZoneInfo_TZVersion {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     V1 = 0u8,
     V2 = 1u8,
     V3 = 2u8,
@@ -4173,7 +4178,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZVers
     }
 }
 #[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifHead")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeZoneInfo_TZifHead {
     pub Magic: u32,
@@ -4300,7 +4308,10 @@ impl crate::System::TimeZoneInfo_TZifHead {
     }
 }
 #[cfg(feature = "cordl_class_System+TimeZoneInfo+TZifType")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeZoneInfo_TZifType {
     pub UtcOffset: crate::System::TimeSpan,
@@ -4422,7 +4433,10 @@ impl crate::System::TimeZoneInfo_TZifType {
     }
 }
 #[cfg(feature = "cordl_class_System+TimeZoneInfo+TransitionTime")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeZoneInfo_TransitionTime {
     pub _timeOfDay: crate::System::DateTime,

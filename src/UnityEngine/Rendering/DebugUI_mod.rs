@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -149,7 +149,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+BitField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_BitField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_EnumField_1<
         quest_hook::libil2cpp::Gc<crate::System::Enum>,
@@ -282,7 +282,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+BoolField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_BoolField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<bool>,
 }
@@ -360,7 +360,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Button")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Button {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Widget,
     pub _action_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -489,7 +489,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+ColorField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_ColorField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<crate::UnityEngine::Color>,
     pub hdr: bool,
@@ -598,7 +598,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Container")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Container {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Widget,
     pub _children_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -1065,7 +1065,7 @@ impl AsMut<crate::UnityEngine::Rendering::DebugUI_IContainer>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+EnumField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_EnumField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_EnumField_1<i32>,
     pub quickSeparators: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -1392,7 +1392,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+EnumField_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_EnumField_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<T>,
     pub enumNames: quest_hook::libil2cpp::Gc<
@@ -1609,7 +1609,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Field_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Field_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Widget,
     pub _getter_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
@@ -2042,10 +2042,15 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::Rendering::DebugU
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DebugUI_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EditorForceUpdate = 8i32,
     EditorOnly = 2i32,
     FrequentlyUsed = 16i32,
@@ -2128,7 +2133,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::Deb
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+FloatField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_FloatField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<f32>,
     pub min: quest_hook::libil2cpp::Gc<crate::System::Func_1<f32>>,
@@ -2230,7 +2235,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Foldout")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Foldout {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Container,
     pub opened: bool,
@@ -2743,7 +2748,7 @@ impl AsMut<crate::UnityEngine::Rendering::DebugUI_IValueField>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+HBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_HBox {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Container,
 }
@@ -2821,7 +2826,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+HistoryBoolField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_HistoryBoolField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_BoolField,
     pub _historyGetter_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -3009,7 +3014,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+HistoryEnumField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_HistoryEnumField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_EnumField,
     pub _historyIndexGetter_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -3197,7 +3202,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+IContainer")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct DebugUI_IContainer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -3366,7 +3371,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+IValueField")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct DebugUI_IValueField {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -3500,7 +3505,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+IntField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_IntField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<i32>,
     pub min: quest_hook::libil2cpp::Gc<crate::System::Func_1<i32>>,
@@ -3601,7 +3606,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+MaskField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_MaskField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_EnumField_1<u32>,
 }
@@ -3733,7 +3738,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+MessageBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_MessageBox {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Widget,
     pub style: crate::UnityEngine::Rendering::MessageBox_DebugUI_Style,
@@ -3843,7 +3848,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+ObjectField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_ObjectField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -3926,7 +3931,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+ObjectListField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_ObjectListField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<
         quest_hook::libil2cpp::Gc<
@@ -4017,7 +4022,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+ObjectPopupField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_ObjectPopupField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -4196,7 +4201,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Panel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Panel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _flags_k__BackingField: crate::UnityEngine::Rendering::DebugUI_Flags,
@@ -4877,7 +4882,7 @@ impl AsMut<crate::UnityEngine::Rendering::DebugUI_IContainer>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+ProgressBarValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_ProgressBarValue {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Value,
     pub min: f32,
@@ -5011,7 +5016,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+RuntimeDebugShadersMessageBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_RuntimeDebugShadersMessageBox {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_MessageBox,
 }
@@ -5093,7 +5098,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Table")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Table {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Container,
     pub isReadOnly: bool,
@@ -5343,7 +5348,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+UIntField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_UIntField {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<u32>,
     pub min: quest_hook::libil2cpp::Gc<crate::System::Func_1<u32>>,
@@ -5444,7 +5449,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+VBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_VBox {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Container,
 }
@@ -5522,7 +5527,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Value")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Value {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Widget,
     pub _getter_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -5718,7 +5723,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+ValueTuple")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_ValueTuple {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Widget,
     pub values: quest_hook::libil2cpp::Gc<
@@ -5840,7 +5845,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Vector2Field")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Vector2Field {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<crate::UnityEngine::Vector2>,
     pub incStep: f32,
@@ -5921,7 +5926,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Vector3Field")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Vector3Field {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<crate::UnityEngine::Vector3>,
     pub incStep: f32,
@@ -6002,7 +6007,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Vector4Field")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Vector4Field {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Field_1<crate::UnityEngine::Vector4>,
     pub incStep: f32,
@@ -6083,7 +6088,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Widget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUI_Widget {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::DebugUI_Panel>,
@@ -6634,7 +6639,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugU
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Foldout+ContextMenuItem")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Foldout_DebugUI_ContextMenuItem {
     pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6739,10 +6747,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+DebugUI+Foldout+ContextMenuItem")]
 impl crate::UnityEngine::Rendering::Foldout_DebugUI_ContextMenuItem {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+MessageBox+Style")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MessageBox_DebugUI_Style {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Error = 2i32,
     Info = 0i32,
     Warning = 1i32,
@@ -6833,7 +6846,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Table+Row")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Table_DebugUI_Row {
     __cordl_parent: crate::UnityEngine::Rendering::DebugUI_Foldout,
 }
@@ -6910,7 +6923,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Table_
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugUI+Widget+NameAndTooltip")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Widget_DebugUI_NameAndTooltip {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

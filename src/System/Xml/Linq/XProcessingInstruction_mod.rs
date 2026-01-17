@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Linq+XProcessingInstruction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XProcessingInstruction {
     __cordl_parent: crate::System::Xml::Linq::XNode,
     pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

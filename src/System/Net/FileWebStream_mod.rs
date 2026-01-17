@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+FileWebStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileWebStream {
     __cordl_parent: crate::System::IO::FileStream,
     pub m_request: quest_hook::libil2cpp::Gc<crate::System::Net::FileWebRequest>,

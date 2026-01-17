@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PerformanceRecorder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PerformanceRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub minFpsWindow: f32,

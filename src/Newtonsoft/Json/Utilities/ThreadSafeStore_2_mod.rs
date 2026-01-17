@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+ThreadSafeStore_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadSafeStore_2<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

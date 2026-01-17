@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+FrameRateFieldAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FrameRateFieldAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }

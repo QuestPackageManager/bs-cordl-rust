@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatToTimeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatToTimeConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bpmTimeProcessor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatToTimeConverter>,

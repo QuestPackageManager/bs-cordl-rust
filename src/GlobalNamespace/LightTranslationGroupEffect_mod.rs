@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightTranslationGroupEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightTranslationGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
@@ -308,7 +308,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightTranslat
 }
 #[cfg(feature = "cordl_class_LightTranslationGroupEffect+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightTranslationGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,

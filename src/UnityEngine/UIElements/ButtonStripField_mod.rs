@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ButtonStripField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonStripField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<i32>,
     pub m_Buttons: quest_hook::libil2cpp::Gc<
@@ -134,7 +134,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Butto
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ButtonStripField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonStripField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ButtonStripField>,
@@ -222,7 +222,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ButtonStripField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonStripField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<i32>,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FixedHeightVirtualizationController_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FixedHeightVirtualizationController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::VerticalVirtualizationController_1<T>,
     pub m_ScrolledToItemIndex: crate::System::Nullable_1<i32>,

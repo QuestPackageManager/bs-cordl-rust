@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+RuntimeType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeType {
     __cordl_parent: crate::System::Reflection::TypeInfo,
     pub type_info: quest_hook::libil2cpp::Gc<crate::System::MonoTypeInfo>,
@@ -4657,7 +4657,10 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable> for crate::Syst
     }
 }
 #[cfg(feature = "cordl_class_System+RuntimeType+ListBuilder_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RuntimeType_ListBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub _items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -4956,10 +4959,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::RuntimeType_ListBuilder_1<T>
     }
 }
 #[cfg(feature = "cordl_class_System+RuntimeType+MemberListType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RuntimeType_MemberListType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 0i32,
     CaseInsensitive = 2i32,
     CaseSensitive = 1i32,

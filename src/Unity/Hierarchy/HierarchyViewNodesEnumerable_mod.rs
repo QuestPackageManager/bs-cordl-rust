@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyViewNodesEnumerable")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HierarchyViewNodesEnumerable {
     pub m_HierarchyViewModel:
@@ -170,7 +173,10 @@ impl crate::Unity::Hierarchy::HierarchyViewNodesEnumerable {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyViewNodesEnumerable+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HierarchyViewNodesEnumerable_Enumerator {
     pub m_HierarchyFlattened:
@@ -380,7 +386,7 @@ impl crate::Unity::Hierarchy::HierarchyViewNodesEnumerable_Enumerator {
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyViewNodesEnumerable+Predicate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyViewNodesEnumerable_Predicate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

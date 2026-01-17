@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSimultaneousHandsAndControllersSample")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSimultaneousHandsAndControllersSample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub enableButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

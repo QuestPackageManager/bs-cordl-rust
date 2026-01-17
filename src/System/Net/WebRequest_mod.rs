@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebRequest {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub m_AuthenticationLevel: crate::System::Net::Security::AuthenticationLevel,
@@ -1221,7 +1221,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 }
 #[cfg(feature = "cordl_class_System+Net+WebRequest+DesignerWebRequestCreate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebRequest_DesignerWebRequestCreate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

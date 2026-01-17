@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+FilmGrainLookupParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FilmGrainLookupParameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<
         crate::UnityEngine::Rendering::Universal::FilmGrainLookup,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SM2KeyExchangePublicParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SM2KeyExchangePublicParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mStaticPublicKey: quest_hook::libil2cpp::Gc<

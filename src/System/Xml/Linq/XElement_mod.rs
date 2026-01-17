@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Linq+XElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XElement {
     __cordl_parent: crate::System::Xml::Linq::XContainer,
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,

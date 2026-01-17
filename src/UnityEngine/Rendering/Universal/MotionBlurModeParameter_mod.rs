@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+MotionBlurModeParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MotionBlurModeParameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<
         crate::UnityEngine::Rendering::Universal::MotionBlurMode,

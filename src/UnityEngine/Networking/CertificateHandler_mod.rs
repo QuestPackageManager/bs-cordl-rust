@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Networking+CertificateHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CertificateHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -264,7 +264,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Networking::Certi
 }
 #[cfg(feature = "cordl_class_UnityEngine+Networking+CertificateHandler+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CertificateHandler_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

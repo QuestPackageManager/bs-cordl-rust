@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRGLTFLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRGLTFLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_deferredStream: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TriggerFloatFxGroupEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TriggerFloatFxGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapCallbacksController:
@@ -157,7 +157,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TriggerFloatF
 }
 #[cfg(feature = "cordl_class_TriggerFloatFxGroupEffect+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TriggerFloatFxGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SwitchSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SwitchSettingsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

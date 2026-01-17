@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueueThreadLocals")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadPoolWorkQueueThreadLocals {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub workQueue: quest_hook::libil2cpp::Gc<crate::System::Threading::ThreadPoolWorkQueue>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+TextSegmentedControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextSegmentedControl {
     __cordl_parent: crate::HMUI::SegmentedControl,
     pub _fontSize: f32,

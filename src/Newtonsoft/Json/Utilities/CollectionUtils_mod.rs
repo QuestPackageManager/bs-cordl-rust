@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+CollectionUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -647,7 +647,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Utilities::C
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+CollectionUtils+EmptyArrayContainer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionUtils_EmptyArrayContainer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+KeyEvent+ButtonsState+_buttons_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ButtonsState_KeyEvent__buttons_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -103,7 +106,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputForUI+KeyEvent+ButtonsState+_buttons_e__FixedBuffer")]
 impl crate::UnityEngine::InputForUI::ButtonsState_KeyEvent__buttons_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+KeyEvent")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct KeyEvent {
     pub _cordl_type: crate::UnityEngine::InputForUI::KeyEvent_Type,
@@ -397,7 +403,10 @@ impl AsMut<crate::UnityEngine::InputForUI::IEventProperties>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+KeyEvent+ButtonsState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct KeyEvent_ButtonsState {
     pub buttons: crate::UnityEngine::InputForUI::ButtonsState_KeyEvent__buttons_e__FixedBuffer,
@@ -717,10 +726,15 @@ impl crate::UnityEngine::InputForUI::KeyEvent_ButtonsState {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+KeyEvent+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum KeyEvent_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     KeyPressed = 1i32,
     KeyReleased = 3i32,
     KeyRepeated = 2i32,

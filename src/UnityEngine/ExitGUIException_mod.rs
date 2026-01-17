@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ExitGUIException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExitGUIException {
     __cordl_parent: crate::System::Exception,
 }

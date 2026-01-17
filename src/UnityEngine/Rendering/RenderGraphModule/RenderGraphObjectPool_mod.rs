@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphObjectPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphObjectPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ArrayPool: quest_hook::libil2cpp::Gc<
@@ -276,7 +276,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphObjectPool+SharedObjectPoolBase"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphObjectPool_SharedObjectPoolBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -394,7 +394,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphObjectPool+SharedObjectPool_1"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphObjectPool_SharedObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphObjectPool_SharedObjectPoolBase,
     __cordl_phantom_T: std::marker::PhantomData<T>,

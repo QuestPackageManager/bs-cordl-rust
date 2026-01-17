@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SynchronizedActionQueue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SynchronizedActionQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _synchronizedActionQueue: quest_hook::libil2cpp::Gc<
@@ -155,7 +155,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SynchronizedA
     }
 }
 #[cfg(feature = "cordl_class_SynchronizedActionQueue+SynchronizedAction")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SynchronizedActionQueue_SynchronizedAction {
     pub _cordl_time: f32,

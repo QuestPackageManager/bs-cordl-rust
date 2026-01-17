@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainSettingsMenuViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainSettingsMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub didSelectSettingsSubMenuEvent: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderParticleInteractionEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderParticleInteractionEffect {
     __cordl_parent: crate::GlobalNamespace::SliderInteractionEffect,
     pub _particleSystems: quest_hook::libil2cpp::Gc<

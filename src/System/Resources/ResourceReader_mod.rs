@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Resources+ResourceReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _store: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
@@ -791,7 +791,7 @@ impl AsMut<crate::System::Resources::IResourceReader> for crate::System::Resourc
 }
 #[cfg(feature = "cordl_class_System+Resources+ResourceReader+ResourceEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceReader_ResourceEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _reader: quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceReader>,

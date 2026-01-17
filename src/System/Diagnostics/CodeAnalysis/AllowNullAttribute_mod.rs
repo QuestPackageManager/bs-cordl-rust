@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AllowNullAttribute {
     __cordl_parent: crate::System::Attribute,
 }

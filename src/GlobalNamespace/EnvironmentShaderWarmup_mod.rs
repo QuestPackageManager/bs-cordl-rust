@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnvironmentShaderWarmup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentShaderWarmup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materials: quest_hook::libil2cpp::Gc<

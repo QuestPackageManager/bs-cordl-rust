@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineGlobalSettings"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineGlobalSettings {
     __cordl_parent: crate::UnityEngine::Rendering::RenderPipelineGlobalSettings_2<
         quest_hook::libil2cpp::Gc<

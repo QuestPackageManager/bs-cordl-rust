@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DownloadHandlerBuffer {
     __cordl_parent: crate::UnityEngine::Networking::DownloadHandler,
     pub m_NativeData: crate::Unity::Collections::NativeArray_1<u8>,

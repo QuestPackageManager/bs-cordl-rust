@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PemReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,

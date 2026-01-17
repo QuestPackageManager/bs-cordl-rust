@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+VmpcEngine")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VmpcEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub n: u8,

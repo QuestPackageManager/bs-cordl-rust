@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Mutations+BSUpsertLeaderboardEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BSUpsertLeaderboardEntry {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLMutationOperation,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BoolSignal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoolSignal {
     __cordl_parent: crate::GlobalNamespace::GenericSignal_1<bool>,
 }

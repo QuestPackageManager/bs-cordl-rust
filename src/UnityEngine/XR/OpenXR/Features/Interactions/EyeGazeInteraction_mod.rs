@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+EyeGazeInteraction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EyeGazeInteraction {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature,
 }
@@ -241,7 +241,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+EyeGazeInteraction+EyeGazeDevice"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EyeGazeInteraction_EyeGazeDevice {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Input::OpenXRDevice,
     pub _pose_k__BackingField:

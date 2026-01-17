@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SafeSerializationManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_serializedStates: quest_hook::libil2cpp::Gc<

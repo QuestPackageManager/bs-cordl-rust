@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SHA256SignatureDescription")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RSAPKCS1SHA256SignatureDescription {
     __cordl_parent: crate::System::Security::Cryptography::RSAPKCS1SignatureDescription,
 }

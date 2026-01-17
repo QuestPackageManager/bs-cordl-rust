@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipelineAsset_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderPipelineAsset_1<TRenderPipeline: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::RenderPipelineAsset,
     __cordl_phantom_TRenderPipeline: std::marker::PhantomData<TRenderPipeline>,

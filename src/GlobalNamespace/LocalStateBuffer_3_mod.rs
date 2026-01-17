@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LocalStateBuffer_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalStateBuffer_3<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

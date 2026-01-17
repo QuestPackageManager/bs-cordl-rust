@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WrappedGeneratorStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::FilterStream,
     pub _cordl_gen:

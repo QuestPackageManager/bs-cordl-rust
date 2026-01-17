@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ListPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::StaticMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,

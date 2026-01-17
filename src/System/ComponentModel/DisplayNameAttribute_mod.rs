@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+DisplayNameAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisplayNameAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _DisplayNameValue_k__BackingField:

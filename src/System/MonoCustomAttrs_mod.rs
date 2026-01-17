@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+MonoCustomAttrs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoCustomAttrs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -790,7 +790,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::MonoCustomAttrs {
 }
 #[cfg(feature = "cordl_class_System+MonoCustomAttrs+AttributeInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoCustomAttrs_AttributeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _usage: quest_hook::libil2cpp::Gc<crate::System::AttributeUsageAttribute>,

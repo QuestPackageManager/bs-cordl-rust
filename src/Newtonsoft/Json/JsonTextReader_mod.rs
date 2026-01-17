@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonTextReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonTextReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _safeAsync: bool,

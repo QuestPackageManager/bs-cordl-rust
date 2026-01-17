@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongRunningHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongRunningHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapCharacteristics:
@@ -239,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongRunningHe
 }
 #[cfg(feature = "cordl_class_SongRunningHelper+MessageStrings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongRunningHelper_MessageStrings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -303,7 +303,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SongRunningHelper_QueuedSongParams {
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,

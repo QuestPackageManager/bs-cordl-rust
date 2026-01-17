@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatGames+Analytics+Events+NavigationEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NavigationEvent {
     __cordl_parent: crate::BeatGames::Analytics::Events::BasePlatformSessionAnalyticsEvent,
     pub button_id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

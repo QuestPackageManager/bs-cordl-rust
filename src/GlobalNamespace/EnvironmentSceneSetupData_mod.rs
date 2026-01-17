@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnvironmentSceneSetupData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub hideBranding: bool,

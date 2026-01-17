@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataHelpers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapSaveDataHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -117,7 +117,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapSaveDa
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataHelpers+VersionSerializedData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapSaveDataHelpers_VersionSerializedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

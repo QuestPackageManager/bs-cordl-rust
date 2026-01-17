@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BTSCharacterMaterialSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rendererMaterialsPairs: quest_hook::libil2cpp::Gc<
@@ -113,7 +113,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BTSCharacterM
 }
 #[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+MaterialPairs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BTSCharacterMaterialSwitcher_MaterialPairs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub materialIndex: i32,
@@ -198,7 +198,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ed448 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1697,10 +1697,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::R
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Ed448_Algorithm {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Ed448 = 0i32,
     Ed448ph = 1i32,
 }
@@ -1790,7 +1795,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointExt")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ed448_PointExt {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1875,7 +1880,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Rfc8032+Ed448+PointPrecomp")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ed448_PointPrecomp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,

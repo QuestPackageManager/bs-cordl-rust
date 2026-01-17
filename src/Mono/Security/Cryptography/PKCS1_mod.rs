@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

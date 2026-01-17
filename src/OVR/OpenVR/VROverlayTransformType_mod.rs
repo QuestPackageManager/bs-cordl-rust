@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+VROverlayTransformType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum VROverlayTransformType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     VROverlayTransform_Absolute = 0i32,
     VROverlayTransform_SystemOverlay = 2i32,
     VROverlayTransform_TrackedComponent = 3i32,

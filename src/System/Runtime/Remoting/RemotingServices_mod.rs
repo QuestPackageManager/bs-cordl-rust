@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+RemotingServices")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemotingServices {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1337,7 +1337,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Remoting::Rem
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+RemotingServices+CACD")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemotingServices_CACD {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub d: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

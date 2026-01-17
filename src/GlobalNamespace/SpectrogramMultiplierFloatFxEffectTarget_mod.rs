@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SpectrogramMultiplierFloatFxEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpectrogramMultiplierFloatFxEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _spectrogram:

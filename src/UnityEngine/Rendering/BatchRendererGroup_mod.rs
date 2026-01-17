@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BatchRendererGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_GroupHandle: crate::System::IntPtr,
@@ -798,7 +798,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::BatchR
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BatchRendererGroup_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -882,7 +882,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnFinishedCulling")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BatchRendererGroup_OnFinishedCulling {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -999,7 +999,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BatchRendererGroup_OnPerformCulling {
     __cordl_parent: crate::System::MulticastDelegate,
 }

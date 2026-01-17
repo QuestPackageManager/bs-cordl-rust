@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceOcclusionEventDebugArray {
     pub m_CounterBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
@@ -275,7 +278,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Info")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceOcclusionEventDebugArray_Info {
     pub viewInstanceID: i32,
@@ -403,7 +409,10 @@ impl crate::UnityEngine::Rendering::InstanceOcclusionEventDebugArray_Info {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceOcclusionEventDebugArray+Request")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceOcclusionEventDebugArray_Request {
     pub info: crate::Unity::Collections::LowLevel::Unsafe::UnsafeList_1<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Slider {
     __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1<f32>,
 }
@@ -329,7 +329,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Slide
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Slider_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider>,
@@ -413,7 +413,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Slide
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Slider+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Slider_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
         f32,

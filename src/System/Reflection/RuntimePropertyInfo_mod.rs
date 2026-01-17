@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimePropertyInfo {
     __cordl_parent: crate::System::Reflection::PropertyInfo,
     pub klass: crate::System::IntPtr,
@@ -1043,7 +1043,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 }
 #[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimePropertyInfo_GetterAdapter {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1162,7 +1162,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+Getter_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimePropertyInfo_Getter_2<
     T: quest_hook::libil2cpp::Type,
     R: quest_hook::libil2cpp::Type,
@@ -1329,7 +1329,7 @@ impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimePropertyInfo_StaticGetter_1<R: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_R: std::marker::PhantomData<R>,

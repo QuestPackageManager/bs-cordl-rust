@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LoadingControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LoadingControl {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _loadingContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

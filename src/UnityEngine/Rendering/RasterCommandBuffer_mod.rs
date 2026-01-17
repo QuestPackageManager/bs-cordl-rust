@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RasterCommandBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RasterCommandBuffer {
     __cordl_parent: crate::UnityEngine::Rendering::BaseCommandBuffer,
 }

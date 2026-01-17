@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
     pub rayTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -1296,10 +1296,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EventSystems::OVR
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule+InputMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInputModule_InputMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Buttons = 1i32,
     Mouse = 0i32,
 }
@@ -1388,7 +1393,7 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRInputModule+InputSource")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRInputModule_InputSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

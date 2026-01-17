@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+PropertyCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyCollection {
     __cordl_parent: crate::System::Collections::Hashtable,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicProxyMetaObject_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObject,
     pub _proxy: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>>,
@@ -1305,7 +1305,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+Fallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicProxyMetaObject_1_Fallback<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -1542,7 +1542,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1+GetBinderAdapter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicProxyMetaObject_1_GetBinderAdapter<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Dynamic::GetMemberBinder,
     __cordl_phantom_T: std::marker::PhantomData<T>,

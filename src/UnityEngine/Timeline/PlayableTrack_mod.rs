@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+PlayableTrack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayableTrack {
     __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
 }

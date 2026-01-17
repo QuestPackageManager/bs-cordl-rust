@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Asn1Set {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
     pub elements: quest_hook::libil2cpp::Gc<
@@ -518,7 +518,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::Org::BouncyCastle
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Asn1Set_Asn1SetParserImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
@@ -704,7 +704,7 @@ impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Convertible>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Asn1Set_DerComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

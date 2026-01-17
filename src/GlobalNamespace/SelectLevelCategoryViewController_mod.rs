@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SelectLevelCategoryViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectLevelCategoryViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _allLevelCategoryInfos: quest_hook::libil2cpp::Gc<
@@ -344,10 +344,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_SelectLevelCategoryViewController+LevelCategory")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SelectLevelCategoryViewController_LevelCategory {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 4i32,
     CustomSongs = 2i32,
     Favorites = 3i32,
@@ -440,7 +445,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_SelectLevelCategoryViewController+LevelCategoryInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectLevelCategoryViewController_LevelCategoryInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,

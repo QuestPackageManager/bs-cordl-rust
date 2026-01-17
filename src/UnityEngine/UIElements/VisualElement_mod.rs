@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement {
     __cordl_parent: crate::UnityEngine::UIElements::Focusable,
     pub _UnityEngine_UIElements_IStylePropertyAnimations_runningAnimationCount_k__BackingField: i32,
@@ -10263,7 +10263,7 @@ impl AsMut<crate::UnityEngine::UIElements::IVisualElementScheduler>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement_BaseVisualElementScheduledItem {
     __cordl_parent: crate::UnityEngine::UIElements::ScheduledItem,
     pub _element_k__BackingField:
@@ -10886,7 +10886,7 @@ impl AsMut<crate::UnityEngine::UIElements::IVisualElementScheduledItem>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement_CustomStyleAccess {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_CustomProperties: quest_hook::libil2cpp::Gc<
@@ -11315,7 +11315,10 @@ impl AsMut<crate::UnityEngine::UIElements::ICustomStyle>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+Hierarchy")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VisualElement_Hierarchy {
     pub m_Owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -12091,10 +12094,15 @@ impl crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+MeasureMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum VisualElement_MeasureMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AtMost = 2i32,
     Exactly = 1i32,
     Undefined = 0i32,
@@ -12184,10 +12192,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+RenderTargetMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum VisualElement_RenderTargetMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     GammaToLinear = 3i32,
     LinearToGamma = 2i32,
     NoColorConversion = 1i32,
@@ -12279,7 +12292,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement_SimpleScheduledItem {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
         quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -12401,7 +12414,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement_TimerStateScheduledItem {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
         quest_hook::libil2cpp::Gc<
@@ -12533,7 +12546,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+TypeData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement_TypeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -12698,7 +12711,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Visua
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -12786,7 +12799,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlTraits,
     pub m_Name:
@@ -12988,7 +13001,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElement+VisualElementScheduledItem_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElement_VisualElementScheduledItem_1<ActionType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem,
     pub updateEvent: ActionType,

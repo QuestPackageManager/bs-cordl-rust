@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IClientChannelSinkProvider")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IClientChannelSinkProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

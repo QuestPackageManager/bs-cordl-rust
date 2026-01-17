@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+Installers+MetaRemoteAssetsInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MetaRemoteAssetsInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
     pub _appInitSetupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,

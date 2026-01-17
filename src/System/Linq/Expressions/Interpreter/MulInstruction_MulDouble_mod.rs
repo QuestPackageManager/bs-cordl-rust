@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+MulInstruction+MulDouble")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MulInstruction_MulDouble {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::MulInstruction,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+PrimitiveParameterExpression_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrimitiveParameterExpression_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Expressions::ParameterExpression,
     __cordl_phantom_T: std::marker::PhantomData<T>,

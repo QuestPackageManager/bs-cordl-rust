@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Assets+OVR+Scripts+Record")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Record {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortOrder: i32,

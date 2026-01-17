@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AllocatorManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1160,7 +1160,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Collections::AllocatorM
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+AllocatorCache_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AllocatorManager_AllocatorCache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -1235,7 +1235,10 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+AllocatorHandle")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_AllocatorHandle {
     pub Index: u16,
@@ -2118,7 +2121,10 @@ impl AsMut<crate::Unity::Collections::AllocatorManager_IAllocator>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+Array16_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_Array16_1<T: quest_hook::libil2cpp::Type> {
     pub f0: T,
@@ -2252,7 +2258,10 @@ unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Collections+AllocatorManager+Array16_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::AllocatorManager_Array16_1<T> {}
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+Array256_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_Array256_1<T: quest_hook::libil2cpp::Type> {
     pub f0: crate::Unity::Collections::AllocatorManager_Array16_1<T>,
@@ -2386,7 +2395,10 @@ unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Collections+AllocatorManager+Array256_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::AllocatorManager_Array256_1<T> {}
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+Array32768_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_Array32768_1<T: quest_hook::libil2cpp::Type> {
     pub f0: crate::Unity::Collections::AllocatorManager_Array4096_1<T>,
@@ -2612,7 +2624,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Unity::Collections::IIndexable
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+Array4096_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_Array4096_1<T: quest_hook::libil2cpp::Type> {
     pub f0: crate::Unity::Collections::AllocatorManager_Array256_1<T>,
@@ -2746,7 +2761,10 @@ unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Collections+AllocatorManager+Array4096_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::AllocatorManager_Array4096_1<T> {}
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+Block")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_Block {
     pub Range: crate::Unity::Collections::AllocatorManager_Range,
@@ -3085,7 +3103,10 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Collections::AllocatorM
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+BlockHandle")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_BlockHandle {
     pub Value: u16,
@@ -3189,7 +3210,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Collections+AllocatorManager+BlockHandle")]
 impl crate::Unity::Collections::AllocatorManager_BlockHandle {}
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+IAllocator")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct AllocatorManager_IAllocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -3421,7 +3442,7 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Collections::AllocatorM
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+Managed")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AllocatorManager_Managed {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3525,7 +3546,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Collections::AllocatorM
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+Range")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_Range {
     pub Pointer: crate::System::IntPtr,
@@ -3655,7 +3679,7 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Collections::AllocatorM
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+SharedStatics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AllocatorManager_SharedStatics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3743,7 +3767,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+SlabAllocator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_SlabAllocator {
     pub m_handle: crate::Unity::Collections::AllocatorManager_AllocatorHandle,
@@ -4247,7 +4274,10 @@ impl AsMut<crate::Unity::Collections::AllocatorManager_IAllocator>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+StackAllocator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_StackAllocator {
     pub m_handle: crate::Unity::Collections::AllocatorManager_AllocatorHandle,
@@ -4643,7 +4673,10 @@ impl AsMut<crate::Unity::Collections::AllocatorManager_IAllocator>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+TableEntry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AllocatorManager_TableEntry {
     pub function: crate::System::IntPtr,
@@ -4747,7 +4780,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::Unity::Collections::AllocatorManager_TableEntry {}
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+TryFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AllocatorManager_TryFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4931,7 +4964,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Collections::AllocatorM
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+SharedStatics+IsAutoDispose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SharedStatics_AllocatorManager_IsAutoDispose {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -5015,7 +5048,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+SharedStatics+IsInstalled")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SharedStatics_AllocatorManager_IsInstalled {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -5097,7 +5130,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AllocatorManager+SharedStatics+TableEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SharedStatics_AllocatorManager_TableEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -5181,7 +5214,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Unity+Collections+AllocatorManager+SlabAllocator+Try_000000B9_BurstDirectCall"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SlabAllocator_AllocatorManager_Try_000000B9_BurstDirectCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -5320,7 +5353,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Unity+Collections+AllocatorManager+SlabAllocator+Try_000000B9_PostfixBurstDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SlabAllocator_AllocatorManager_Try_000000B9_PostfixBurstDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5547,7 +5580,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Unity+Collections+AllocatorManager+StackAllocator+Try_000000AB_BurstDirectCall"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StackAllocator_AllocatorManager_Try_000000AB_BurstDirectCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -5686,7 +5719,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Unity+Collections+AllocatorManager+StackAllocator+Try_000000AB_PostfixBurstDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StackAllocator_AllocatorManager_Try_000000AB_PostfixBurstDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

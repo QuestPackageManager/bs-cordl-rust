@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLevelCompletionResults {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerLevelEndState:
@@ -454,10 +454,15 @@ impl AsMut<crate::System::IComparable>
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Cleared = 0i32,
     ConnectedAfterLevelEnded = 7i32,
     Failed = 1i32,
@@ -553,10 +558,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     NotFinished = 1i32,
     NotStarted = 2i32,
     SongFinished = 0i32,

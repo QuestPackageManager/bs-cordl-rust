@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BackgroundTextureGradientSwitchEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BackgroundTextureGradientSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _defaultTextureGradient:

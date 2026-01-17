@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+NoAllocHelpers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoAllocHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -238,7 +238,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::NoAllocHelpers {
 }
 #[cfg(feature = "cordl_class_UnityEngine+NoAllocHelpers+ListPrivateFieldAccess_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoAllocHelpers_ListPrivateFieldAccess_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

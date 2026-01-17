@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IconAndTextSegmentedControl {
     __cordl_parent: crate::HMUI::SegmentedControl,
     pub _firstCellPrefab: quest_hook::libil2cpp::Gc<crate::HMUI::IconAndTextSegmentedControlCell>,
@@ -224,7 +224,7 @@ impl AsMut<crate::HMUI::SegmentedControl_IDataSource> for crate::HMUI::IconAndTe
 }
 #[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControl+DataItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IconAndTextSegmentedControl_DataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _icon_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Shadow")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Shadow {
     __cordl_parent: crate::UnityEngine::UI::BaseMeshEffect,
     pub m_EffectColor: crate::UnityEngine::Color,

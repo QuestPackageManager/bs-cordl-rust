@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpExperimental")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpExperimental {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject,
     pub p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::ExperimentalPacket>,

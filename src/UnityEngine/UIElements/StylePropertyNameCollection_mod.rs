@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StylePropertyNameCollection {
     pub propertiesList: quest_hook::libil2cpp::Gc<
@@ -286,7 +289,10 @@ impl AsMut<crate::System::Collections::IEnumerable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StylePropertyNameCollection_Enumerator {
     pub m_Enumerator: crate::System::Collections::Generic::List_1_Enumerator<

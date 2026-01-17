@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OnScreenControl {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
@@ -382,7 +382,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenControl+OnScreenDeviceInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OnScreenControl_OnScreenDeviceInfo {
     pub eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,

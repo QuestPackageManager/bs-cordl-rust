@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseSlider_1<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
     pub _dragContainer_k__BackingField:
@@ -2487,10 +2487,15 @@ impl<TValueType: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+SliderKey")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BaseSlider_1_SliderKey {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Higher = 4i32,
     HigherPage = 5i32,
     Highest = 6i32,
@@ -2583,7 +2588,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseSlider_1_UxmlTraits_1<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,

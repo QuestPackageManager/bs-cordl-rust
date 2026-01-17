@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimelineClip {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Version: i32,
@@ -2159,10 +2159,15 @@ impl AsMut<crate::UnityEngine::Timeline::ICurvesOwner>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimelineClip_BlendCurveMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Auto = 0i32,
     Manual = 1i32,
 }
@@ -2251,10 +2256,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimelineClip_ClipExtrapolation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Continue = 4i32,
     Hold = 1i32,
     Loop = 2i32,
@@ -2347,7 +2357,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimelineClip_TimelineClipUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2428,10 +2438,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+Versions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimelineClip_Versions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ClipInFromGlobalToLocal = 1i32,
     Initial = 0i32,
 }

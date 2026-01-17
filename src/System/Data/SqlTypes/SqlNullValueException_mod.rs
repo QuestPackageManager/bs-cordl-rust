@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlNullValueException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SqlNullValueException {
     __cordl_parent: crate::System::Data::SqlTypes::SqlTypeException,
 }

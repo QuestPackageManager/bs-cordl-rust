@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformInternal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -149,7 +149,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInte
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+HTTP")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformInternal_HTTP {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -233,10 +233,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInte
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+MessageTypeInternal")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum PlatformInternal_MessageTypeInternal {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AbuseReport_LaunchAdvancedReportFlow = 1286683246u32,
     Application_ExecuteCoordinatedLaunch = 645772532u32,
     Application_GetInstalledApplications = 1376744524u32,
@@ -387,7 +392,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+PlatformInternal+Users")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformInternal_Users {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

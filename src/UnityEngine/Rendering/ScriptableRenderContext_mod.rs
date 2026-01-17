@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScriptableRenderContext {
     pub m_Ptr: crate::System::IntPtr,
@@ -2304,7 +2307,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::Scriptable
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ScriptableRenderContext+CullShadowCastersContext"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScriptableRenderContext_CullShadowCastersContext {
     pub cullResults: crate::System::IntPtr,

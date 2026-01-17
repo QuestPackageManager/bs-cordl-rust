@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarPropertyBlockColorSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _defaultColor: crate::UnityEngine::Color,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Pen")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pen {
     __cordl_parent: crate::UnityEngine::InputSystem::Pointer,
     pub _tip_k__BackingField:

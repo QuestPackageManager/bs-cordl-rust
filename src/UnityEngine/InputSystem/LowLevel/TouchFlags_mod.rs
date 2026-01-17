@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum TouchFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BeganInSameFrame = 128u8,
     IndirectTouch = 1u8,
     OrphanedPrimaryTouch = 64u8,

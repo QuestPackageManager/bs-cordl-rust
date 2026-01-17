@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceProviderBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ProviderId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -416,7 +416,7 @@ impl AsMut<crate::UnityEngine::ResourceManagement::Util::IInitializableObject>
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceProviderBase_BaseInitAsyncOp {
     __cordl_parent:
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<bool>,

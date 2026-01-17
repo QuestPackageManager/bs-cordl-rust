@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Math+Prime+PrimalityTest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrimalityTest {
     __cordl_parent: crate::System::MulticastDelegate,
 }

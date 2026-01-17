@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderMeshConstructorCrossedStrips")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderMeshConstructorCrossedStrips {
     __cordl_parent: crate::GlobalNamespace::SliderMeshConstructor,
     pub _triangleMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

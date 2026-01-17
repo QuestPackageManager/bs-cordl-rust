@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRProgressIndicator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRProgressIndicator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub progressImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,

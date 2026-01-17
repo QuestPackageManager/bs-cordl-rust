@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+HtmlUtf8RawTextWriterIndent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HtmlUtf8RawTextWriterIndent {
     __cordl_parent: crate::System::Xml::HtmlUtf8RawTextWriter,
     pub indentLevel: i32,

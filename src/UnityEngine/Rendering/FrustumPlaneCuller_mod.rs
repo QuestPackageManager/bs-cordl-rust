@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FrustumPlaneCuller")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FrustumPlaneCuller {
     pub planePackets: crate::Unity::Collections::NativeList_1<
@@ -205,7 +208,10 @@ impl crate::UnityEngine::Rendering::FrustumPlaneCuller {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FrustumPlaneCuller+PlanePacket4")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FrustumPlaneCuller_PlanePacket4 {
     pub nx: crate::Unity::Mathematics::float4,
@@ -345,7 +351,10 @@ impl crate::UnityEngine::Rendering::FrustumPlaneCuller_PlanePacket4 {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FrustumPlaneCuller+SplitInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FrustumPlaneCuller_SplitInfo {
     pub packetCount: i32,

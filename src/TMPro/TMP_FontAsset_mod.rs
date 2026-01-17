@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_FontAsset {
     __cordl_parent: crate::TMPro::TMP_Asset,
     pub m_SourceFontFileGUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

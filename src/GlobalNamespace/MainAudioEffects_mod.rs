@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainAudioEffects")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainAudioEffects {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioLowPassFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioLowPassFilter>,

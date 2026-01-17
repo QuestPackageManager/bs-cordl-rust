@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FireworkItemController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FireworkItemController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particleSystems: quest_hook::libil2cpp::Gc<
@@ -404,7 +404,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FireworkItemC
 }
 #[cfg(feature = "cordl_class_FireworkItemController+FireworkItemParticleSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FireworkItemController_FireworkItemParticleSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
@@ -494,7 +494,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_FireworkItemController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FireworkItemController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,

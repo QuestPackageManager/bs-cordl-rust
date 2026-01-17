@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemEnumerable_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enumerator: quest_hook::libil2cpp::Gc<
@@ -372,7 +372,7 @@ impl<TResult: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEn
 }
 #[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemEnumerable_1_DelegateEnumerator<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult>,
     pub _enumerable:
@@ -590,7 +590,7 @@ impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemEnumerable_1_FindPredicate<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -745,7 +745,7 @@ impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemEnumerable_1_FindTransform<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,

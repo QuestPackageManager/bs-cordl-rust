@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+SubsystemsAnalyticBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubsystemsAnalyticBase {
     __cordl_parent: crate::UnityEngine::Analytics::AnalyticsEventBase,
     pub subsystem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ReaderWriterLock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReaderWriterLock {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
     pub seq_num: i32,

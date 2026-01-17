@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UQuery {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -62,7 +62,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UQuer
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UQuery_FirstQueryMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher,
 }
@@ -197,7 +197,7 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct UQuery_IVisualPredicateWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -281,7 +281,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+IsOfType_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UQuery_IsOfType_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -440,7 +440,7 @@ impl<T: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UQuery_SingleQueryMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
     pub _match_k__BackingField:
@@ -662,7 +662,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+UQueryMatcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UQuery_UQueryMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
     pub m_Matchers: quest_hook::libil2cpp::Gc<

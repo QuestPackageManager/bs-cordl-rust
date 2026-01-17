@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialPropertyBlockControllerArrayRandomValueSetter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyBlockControllerArrayRandomValueSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<

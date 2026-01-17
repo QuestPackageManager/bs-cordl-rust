@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DefaultEnvironmentEvents")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultEnvironmentEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _basicBeatmapEvents: quest_hook::libil2cpp::Gc<
@@ -203,7 +203,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DefaultEnviro
 }
 #[cfg(feature = "cordl_class_DefaultEnvironmentEvents+BasicBeatmapEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultEnvironmentEvents_BasicBeatmapEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventType: crate::GlobalNamespace::BasicBeatmapEventType,
@@ -350,7 +350,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_DefaultEnvironmentEvents+LightGroupDistribution")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultEnvironmentEvents_LightGroupDistribution {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _useDistribution: bool,
@@ -502,7 +502,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_DefaultEnvironmentEvents+LightGroupEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultEnvironmentEvents_LightGroupEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
@@ -1181,7 +1181,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_DefaultEnvironmentEvents+LightGroupFiltering")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultEnvironmentEvents_LightGroupFiltering {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _useFiltering: bool,

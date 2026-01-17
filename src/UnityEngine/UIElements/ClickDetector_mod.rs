@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ClickDetector")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClickDetector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ClickStatus: quest_hook::libil2cpp::Gc<
@@ -302,7 +302,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Click
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ClickDetector+ButtonClickStatus")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClickDetector_ButtonClickStatus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

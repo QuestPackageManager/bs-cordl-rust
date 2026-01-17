@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+TextReader+SyncTextReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextReader_SyncTextReader {
     __cordl_parent: crate::System::IO::TextReader,
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,

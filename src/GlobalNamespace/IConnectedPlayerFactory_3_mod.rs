@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_IConnectedPlayerFactory_3")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IConnectedPlayerFactory_3<
     TConnectedPlayer: quest_hook::libil2cpp::Type,

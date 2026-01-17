@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BpmChangeEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BpmChangeEventData {
     __cordl_parent: crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem,
     pub m: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Texture3D")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Texture3D {
     __cordl_parent: crate::UnityEngine::Texture,
 }

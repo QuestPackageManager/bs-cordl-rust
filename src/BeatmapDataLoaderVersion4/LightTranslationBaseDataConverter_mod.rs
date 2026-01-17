@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightTranslationBaseDataConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightTranslationBaseDataConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+TailoringInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TailoringInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub LCID: i32,

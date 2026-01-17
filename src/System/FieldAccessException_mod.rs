@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+FieldAccessException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FieldAccessException {
     __cordl_parent: crate::System::MemberAccessException,
 }

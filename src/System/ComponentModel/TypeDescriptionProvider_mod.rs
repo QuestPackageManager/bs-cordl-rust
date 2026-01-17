@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _parent: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeDescriptionProvider>,
@@ -392,7 +392,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::TypeDe
     feature = "cordl_class_System+ComponentModel+TypeDescriptionProvider+EmptyCustomTypeDescriptor"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDescriptionProvider_EmptyCustomTypeDescriptor {
     __cordl_parent: crate::System::ComponentModel::CustomTypeDescriptor,
 }

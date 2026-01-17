@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TemporalAA")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TemporalAA {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -361,7 +361,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Univer
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TemporalAA+JitterFunc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TemporalAA_JitterFunc {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -548,7 +548,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TemporalAA+Settings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TemporalAA_Settings {
     pub m_Quality: crate::UnityEngine::Rendering::Universal::TemporalAAQuality,
@@ -954,7 +957,7 @@ impl crate::UnityEngine::Rendering::Universal::TemporalAA_Settings {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TemporalAA+ShaderConstants")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TemporalAA_ShaderConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1008,7 +1011,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TemporalAA+ShaderKeywords")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TemporalAA_ShaderKeywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1062,7 +1065,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TemporalAA+TaaPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TemporalAA_TaaPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub dstTex: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,

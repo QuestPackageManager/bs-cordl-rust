@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LayoutNative {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -129,7 +129,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Layou
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LayoutNative_LayoutLogData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub node: crate::UnityEngine::UIElements::Layout::LayoutNode,
@@ -213,10 +213,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNative+LayoutLogEventType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LayoutNative_LayoutLogEventType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BeginLayout = 5i32,
     CacheUsage = 4i32,
     EndLayout = 6i32,

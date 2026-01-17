@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+NativeThrowsAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NativeThrowsAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ThrowsException_k__BackingField: bool,

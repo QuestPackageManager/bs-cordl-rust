@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BasicEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicEventData {
     __cordl_parent: crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem,
     pub et: crate::BeatmapSaveDataCommon::BeatmapEventType,

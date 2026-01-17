@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionHelpViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionHelpViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
@@ -266,7 +266,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionHelpVi
 }
 #[cfg(feature = "cordl_class_MissionHelpViewController+MissionHelpGameObjectPair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionHelpViewController_MissionHelpGameObjectPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub missionHelp: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpSO>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+MergedRestriction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindingRestrictions_MergedRestriction {
     __cordl_parent: crate::System::Dynamic::BindingRestrictions,
     pub Left: quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,

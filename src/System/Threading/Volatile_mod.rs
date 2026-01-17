@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Volatile")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Volatile {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -211,7 +211,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Volatile {
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileBoolean")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Volatile_VolatileBoolean {
     pub Value: bool,
@@ -307,7 +310,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "System+Threading+Volatile+VolatileBoolean")]
 impl crate::System::Threading::Volatile_VolatileBoolean {}
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileInt32")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Volatile_VolatileInt32 {
     pub Value: i32,
@@ -401,7 +407,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
 impl crate::System::Threading::Volatile_VolatileInt32 {}
 #[cfg(feature = "cordl_class_System+Threading+Volatile+VolatileObject")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Volatile_VolatileObject {
     pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

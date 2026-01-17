@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression2_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression2_1<TDelegate: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Expressions::Expression_1<TDelegate>,
     pub _par0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

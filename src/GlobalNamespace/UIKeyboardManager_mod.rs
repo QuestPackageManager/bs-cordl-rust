@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UIKeyboardManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIKeyboardManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _uiKeyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,

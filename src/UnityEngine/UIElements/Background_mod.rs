@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Background")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Background {
     pub m_Texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -643,7 +646,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Backgroun
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Background+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Background_PropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::UIElements::Background,
@@ -736,7 +739,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Backg
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Background+PropertyBag+RenderTextureProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Background_RenderTextureProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Background,
@@ -931,7 +934,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Background+PropertyBag+SpriteProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Background_SpriteProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Background,
@@ -1121,7 +1124,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Background+PropertyBag+TextureProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Background_TextureProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Background,
@@ -1312,7 +1315,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Background+PropertyBag+VectorImageProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Background_VectorImageProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Background,

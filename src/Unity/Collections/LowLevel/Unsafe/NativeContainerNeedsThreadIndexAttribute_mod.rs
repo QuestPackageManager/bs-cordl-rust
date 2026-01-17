@@ -2,7 +2,7 @@
     feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NativeContainerNeedsThreadIndexAttribute {
     __cordl_parent: crate::System::Attribute,
 }

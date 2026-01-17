@@ -2,7 +2,7 @@
     feature = "cordl_class_BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<

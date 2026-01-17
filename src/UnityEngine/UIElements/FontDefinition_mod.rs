@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FontDefinition")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FontDefinition {
     pub m_Font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
@@ -463,7 +466,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::FontDefin
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FontDefinition+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FontDefinition_PropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::UIElements::FontDefinition,
@@ -554,7 +557,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FontDefinition+PropertyBag+FontAssetProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_FontDefinition_FontAssetProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::FontDefinition,
@@ -754,7 +757,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FontDefinition+PropertyBag+FontProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_FontDefinition_FontProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::FontDefinition,

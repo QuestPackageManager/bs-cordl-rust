@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+QualifiedAce")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QualifiedAce {
     __cordl_parent: crate::System::Security::AccessControl::KnownAce,
     pub opaque: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

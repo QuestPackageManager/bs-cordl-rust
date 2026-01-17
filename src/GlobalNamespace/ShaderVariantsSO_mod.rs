@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant+Variant")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderVariant_ShaderVariantsSO_Variant {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _passType: crate::UnityEngine::Rendering::PassType,
@@ -144,7 +144,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_ShaderVariantsSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderVariantsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _shaderVariants: quest_hook::libil2cpp::Gc<
@@ -299,7 +299,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ShaderVariant
 }
 #[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderVariantsSO_ShaderVariant {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _variants: quest_hook::libil2cpp::Gc<

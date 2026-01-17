@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DeferredPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeferredPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_DeferredLights: quest_hook::libil2cpp::Gc<
@@ -236,7 +236,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DeferredPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeferredPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cameraData:

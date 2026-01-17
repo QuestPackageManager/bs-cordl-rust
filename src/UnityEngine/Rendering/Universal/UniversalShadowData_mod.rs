@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalShadowData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalShadowData {
     __cordl_parent: crate::UnityEngine::Rendering::ContextItem,
     pub supportsMainLightShadows: bool,

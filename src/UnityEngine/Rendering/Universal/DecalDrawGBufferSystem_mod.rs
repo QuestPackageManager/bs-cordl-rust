@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalDrawGBufferSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalDrawGBufferSystem {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::DecalDrawSystem,
 }

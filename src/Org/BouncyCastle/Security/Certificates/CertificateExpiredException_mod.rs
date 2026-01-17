@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateExpiredException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CertificateExpiredException {
     __cordl_parent: crate::Org::BouncyCastle::Security::Certificates::CertificateException,
 }

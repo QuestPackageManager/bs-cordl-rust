@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ConditionalMove")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalMove {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _offset: crate::UnityEngine::Vector3,

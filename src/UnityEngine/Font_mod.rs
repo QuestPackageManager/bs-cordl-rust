@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Font")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Font {
     __cordl_parent: crate::UnityEngine::Object,
     pub m_FontTextureRebuildCallback:
@@ -1578,7 +1578,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Font {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Font+FontTextureRebuildCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Font_FontTextureRebuildCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassRenderDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassRenderDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassRenderDataSO_Data>,
@@ -81,7 +81,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassR
 }
 #[cfg(feature = "cordl_class_BloomPrePassRenderDataSO+Data")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassRenderDataSO_Data {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bloomPrePassRenderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,

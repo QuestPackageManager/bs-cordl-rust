@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AsyncComputeOperation_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncComputeOperation_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::AsyncComputeOperation,
     pub _tcs: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::TaskCompletionSource_1<T>>,

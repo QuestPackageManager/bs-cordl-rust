@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+SortedList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keys: quest_hook::libil2cpp::Gc<
@@ -1000,7 +1000,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::SortedList
 }
 #[cfg(feature = "cordl_class_System+Collections+SortedList+KeyList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_KeyList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
@@ -1516,7 +1516,7 @@ impl AsMut<crate::System::Collections::IList> for crate::System::Collections::So
 }
 #[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListDebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_SortedListDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1570,7 +1570,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_SortedListEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
@@ -1893,7 +1893,7 @@ impl AsMut<crate::System::ICloneable>
 }
 #[cfg(feature = "cordl_class_System+Collections+SortedList+ValueList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_ValueList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortedList: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,

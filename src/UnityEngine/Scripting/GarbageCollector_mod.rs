@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GarbageCollector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -126,10 +126,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Scripting::Garbag
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+GarbageCollector+Mode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GarbageCollector_Mode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Disabled = 0i32,
     Enabled = 1i32,
     Manual = 2i32,

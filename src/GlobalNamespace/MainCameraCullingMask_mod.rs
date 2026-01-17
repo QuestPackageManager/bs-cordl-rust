@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainCameraCullingMask")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainCameraCullingMask {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -103,7 +103,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainCameraCul
 }
 #[cfg(feature = "cordl_class_MainCameraCullingMask+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainCameraCullingMask_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub showDebris: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_SubMesh")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_SubMesh {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+ProcessModuleCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProcessModuleCollection {
     __cordl_parent: crate::System::Collections::ReadOnlyCollectionBase,
 }

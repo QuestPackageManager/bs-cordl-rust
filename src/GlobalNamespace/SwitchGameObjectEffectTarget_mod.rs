@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SwitchGameObjectEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SwitchGameObjectEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _gameObject01: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

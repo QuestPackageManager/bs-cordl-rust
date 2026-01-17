@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightmapLightWithIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightmapLightWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _bakeId: crate::GlobalNamespace::LightConstants_BakeId,
@@ -438,7 +438,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightmapLight
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIds+LightIntensitiesWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightmapLightWithIds_LightIntensitiesWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIds_LightWithId,
     pub _intensity: f32,

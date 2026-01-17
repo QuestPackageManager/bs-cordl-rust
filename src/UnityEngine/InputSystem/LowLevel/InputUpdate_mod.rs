@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputUpdate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -206,7 +206,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::LowL
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputUpdate_SerializedState {
     pub lastUpdateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
@@ -312,7 +315,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+SerializedState")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputUpdate_UpdateStepCount {
     pub m_WasUpdated: bool,

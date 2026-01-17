@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Cursor")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Cursor {
     pub _texture_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -375,7 +378,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor>>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Cursor+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Cursor_PropertyBag {
     __cordl_parent:
         crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::UIElements::Cursor>,
@@ -462,7 +465,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Curso
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Cursor+PropertyBag+DefaultCursorIdProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Cursor_DefaultCursorIdProperty {
     __cordl_parent:
         crate::Unity::Properties::Property_2<crate::UnityEngine::UIElements::Cursor, i32>,
@@ -650,7 +653,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Cursor+PropertyBag+HotspotProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Cursor_HotspotProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Cursor,
@@ -840,7 +843,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Cursor+PropertyBag+TextureProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Cursor_TextureProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Cursor,

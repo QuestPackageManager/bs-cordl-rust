@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+GUIWordWrapSizer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUIWordWrapSizer {
     __cordl_parent: crate::UnityEngine::GUILayoutEntry,
     pub m_Content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,

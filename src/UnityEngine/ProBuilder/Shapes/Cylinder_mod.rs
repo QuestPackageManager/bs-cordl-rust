@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Cylinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Cylinder {
     __cordl_parent: crate::UnityEngine::ProBuilder::Shapes::Shape,
     pub m_AxisDivisions: i32,

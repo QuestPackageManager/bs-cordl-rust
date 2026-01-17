@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Image")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Image {
     __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
     pub m_Sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -1887,10 +1887,15 @@ impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::I
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Image+FillMethod")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Image_FillMethod {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 0i32,
     Radial180 = 3i32,
     Radial360 = 4i32,
@@ -1972,10 +1977,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Fill
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin180")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Image_Origin180 {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bottom = 0i32,
     Left = 1i32,
     Right = 3i32,
@@ -2056,10 +2066,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Orig
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin360")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Image_Origin360 {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bottom = 0i32,
     Left = 3i32,
     Right = 1i32,
@@ -2140,10 +2155,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Orig
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Image+Origin90")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Image_Origin90 {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BottomLeft = 0i32,
     BottomRight = 3i32,
     TopLeft = 1i32,
@@ -2224,10 +2244,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Orig
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginHorizontal")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Image_OriginHorizontal {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Left = 0i32,
     Right = 1i32,
 }
@@ -2306,10 +2331,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Orig
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Image+OriginVertical")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Image_OriginVertical {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bottom = 0i32,
     Top = 1i32,
 }
@@ -2388,10 +2418,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Orig
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Image+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Image_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Filled = 3i32,
     Simple = 0i32,
     Sliced = 1i32,

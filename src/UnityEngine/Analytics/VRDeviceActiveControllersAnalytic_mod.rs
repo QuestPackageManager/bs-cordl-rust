@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+VRDeviceActiveControllersAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRDeviceActiveControllersAnalytic {
     __cordl_parent: crate::UnityEngine::Analytics::VRDeviceAnalyticBase,
     pub vr_active_controllers: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONLazyCreator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JSONLazyCreator {
     __cordl_parent: crate::OVRSimpleJSON::JSONNode,
     pub m_Node: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,

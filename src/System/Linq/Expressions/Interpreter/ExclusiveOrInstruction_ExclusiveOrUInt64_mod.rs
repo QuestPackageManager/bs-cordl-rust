@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+ExclusiveOrInstruction+ExclusiveOrUInt64"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExclusiveOrInstruction_ExclusiveOrUInt64 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ExclusiveOrInstruction,
 }

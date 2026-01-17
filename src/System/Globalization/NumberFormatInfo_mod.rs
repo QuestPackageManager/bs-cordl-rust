@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+NumberFormatInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NumberFormatInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub numberGroupSizes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

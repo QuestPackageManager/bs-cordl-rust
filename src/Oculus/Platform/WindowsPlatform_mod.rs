@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WindowsPlatform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -193,7 +193,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::WindowsPlatf
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+WindowsPlatform+UnityLogDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WindowsPlatform_UnityLogDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

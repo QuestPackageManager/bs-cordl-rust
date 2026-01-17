@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tweening+Vector2Tween")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector2Tween {
     __cordl_parent: crate::Tweening::Tween_1<crate::UnityEngine::Vector2>,
 }

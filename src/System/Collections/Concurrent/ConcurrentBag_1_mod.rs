@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentBag_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConcurrentBag_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _locals: quest_hook::libil2cpp::Gc<
@@ -927,7 +927,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerab
 }
 #[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentBag_1+Enumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConcurrentBag_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -1236,7 +1236,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentBag_1+WorkStealingQueue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConcurrentBag_1_WorkStealingQueue<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _headIndex: i32,

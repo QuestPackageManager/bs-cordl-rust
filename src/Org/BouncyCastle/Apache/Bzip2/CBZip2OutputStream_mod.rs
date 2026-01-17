@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CBZip2OutputStream {
     __cordl_parent: crate::System::IO::Stream,
     pub finished: bool,
@@ -1092,7 +1092,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CBZip2OutputStream_StackElem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ll: i32,

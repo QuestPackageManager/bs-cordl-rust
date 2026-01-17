@@ -2,7 +2,7 @@
     feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeParallelHashSetDebuggerTypeProxy_1"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeParallelHashSetDebuggerTypeProxy_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Data: crate::Unity::Collections::LowLevel::Unsafe::UnsafeParallelHashSet_1<T>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FakeMirrorSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FakeMirrorSettings {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _fakeMirrorTransparency: f32,

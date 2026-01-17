@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Runtime+Serialization+XmlFormatGetOnlyCollectionReaderDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlFormatGetOnlyCollectionReaderDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

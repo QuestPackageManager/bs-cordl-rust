@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+InternalRenderGraphContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InternalRenderGraphContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub renderContext: crate::UnityEngine::Rendering::ScriptableRenderContext,

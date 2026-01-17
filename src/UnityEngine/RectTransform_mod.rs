@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+RectTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectTransform {
     __cordl_parent: crate::UnityEngine::Transform,
 }
@@ -1260,10 +1260,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::RectTransform {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+RectTransform+Axis")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RectTransform_Axis {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 0i32,
     Vertical = 1i32,
 }
@@ -1342,10 +1347,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RectTransform_
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+RectTransform+Edge")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RectTransform_Edge {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bottom = 3i32,
     Left = 0i32,
     Right = 1i32,
@@ -1427,7 +1437,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RectTransform_
 }
 #[cfg(feature = "cordl_class_UnityEngine+RectTransform+ReapplyDrivenProperties")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectTransform_ReapplyDrivenProperties {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JArray")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JArray {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
     pub _values: quest_hook::libil2cpp::Gc<

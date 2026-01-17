@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AutoCompletePathVisitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_VisitContext: quest_hook::libil2cpp::Gc<
@@ -404,7 +404,10 @@ impl AsMut<crate::Unity::Properties::ITypeVisitor>
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+InspectedTypeScope_1"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AutoCompletePathVisitor_InspectedTypeScope_1<TContainer: quest_hook::libil2cpp::Type> {
     pub m_VisitContext: quest_hook::libil2cpp::Gc<
@@ -637,7 +640,7 @@ impl<TContainer: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AutoCompletePathVisitor_VisitContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _propertyPathInfos_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -931,7 +934,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Internal+AutoCompletePathVisitor+VisitedPropertyScope"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AutoCompletePathVisitor_VisitedPropertyScope {
     pub m_VisitContext: quest_hook::libil2cpp::Gc<

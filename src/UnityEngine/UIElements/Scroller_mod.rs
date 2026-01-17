@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Scroller {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub valueChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
@@ -589,7 +589,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+ScrollerSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Scroller_ScrollerSlider {
     __cordl_parent: crate::UnityEngine::UIElements::Slider,
 }
@@ -711,7 +711,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Scroller_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller>,
@@ -795,7 +795,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Scroller_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_LowValue:

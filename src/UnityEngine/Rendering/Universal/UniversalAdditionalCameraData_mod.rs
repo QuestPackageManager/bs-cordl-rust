@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalAdditionalCameraData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalAdditionalCameraData {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_RenderShadows: bool,

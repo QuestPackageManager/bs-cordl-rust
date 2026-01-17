@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+Icon")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Icon {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Controller,
     pub _image: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RawImage>,

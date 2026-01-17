@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioPlayableAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioPlayableAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,

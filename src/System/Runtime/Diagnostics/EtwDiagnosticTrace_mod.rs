@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Diagnostics+EtwDiagnosticTrace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EtwDiagnosticTrace {
     __cordl_parent: crate::System::Runtime::Diagnostics::DiagnosticTraceBase,
     pub etwProvider: quest_hook::libil2cpp::Gc<crate::System::Runtime::Diagnostics::EtwProvider>,
@@ -946,7 +946,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Diagnostics::
 }
 #[cfg(feature = "cordl_class_System+Runtime+Diagnostics+EtwDiagnosticTrace+StringBuilderPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EtwDiagnosticTrace_StringBuilderPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

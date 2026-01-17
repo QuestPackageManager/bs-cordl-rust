@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarVisualController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarVisualController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _avatarController:

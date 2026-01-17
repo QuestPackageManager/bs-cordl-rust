@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SR")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SR {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -39,7 +39,38 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SR {
 }
 #[cfg(feature = "SR")]
 impl crate::GlobalNamespace::SR {
-    pub fn Format(
+    pub fn Format_Il2CppObject1(
+        resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        p2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    ), quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, 3usize>(
+                        "Format",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "Format",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString> =
+            unsafe { cordl_method_info.invoke_unchecked((), (resourceFormat, p1, p2))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_Il2CppString_Il2CppObject0(
         resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>>

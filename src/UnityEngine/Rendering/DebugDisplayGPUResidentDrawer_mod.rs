@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplayGPUResidentDrawer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplayGPUResidentDrawer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub occluderDebugViewEnable: bool,
@@ -781,7 +781,7 @@ impl AsMut<crate::UnityEngine::Rendering::IDebugDisplaySettingsQuery>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplayGPUResidentDrawer+SettingsPanel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplayGPUResidentDrawer_SettingsPanel {
     __cordl_parent: crate::UnityEngine::Rendering::DebugDisplaySettingsPanel,
 }
@@ -986,7 +986,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplayGPUResidentDrawer+Strings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplayGPUResidentDrawer_Strings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

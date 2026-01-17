@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetStringGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BerOctetStringGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::BerGenerator,
 }
@@ -210,7 +210,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::BerOc
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+BerOctetStringGenerator+BufferedBerOctetStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BerOctetStringGenerator_BufferedBerOctetStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub _buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+BezierShape")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BezierShape {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub points: quest_hook::libil2cpp::Gc<

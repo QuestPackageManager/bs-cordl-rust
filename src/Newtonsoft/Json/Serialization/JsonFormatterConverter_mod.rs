@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonFormatterConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonFormatterConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _reader: quest_hook::libil2cpp::Gc<

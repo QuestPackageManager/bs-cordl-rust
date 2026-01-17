@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+X509+X509Crl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509Crl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub issuer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -404,7 +404,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::X509Crl 
 }
 #[cfg(feature = "cordl_class_Mono+Security+X509+X509Crl+X509CrlEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509Crl_X509CrlEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

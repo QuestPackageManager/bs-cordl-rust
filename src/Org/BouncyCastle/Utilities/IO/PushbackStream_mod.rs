@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+PushbackStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PushbackStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::FilterStream,
     pub buf: i32,

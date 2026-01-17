@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetBundleProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
 }

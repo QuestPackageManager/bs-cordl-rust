@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONNumber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JSONNumber {
     __cordl_parent: crate::OVRSimpleJSON::JSONNode,
     pub m_Data: f64,

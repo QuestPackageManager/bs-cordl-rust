@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorsOverrideSettingsPanelController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorsOverrideSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _overrideColorsToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

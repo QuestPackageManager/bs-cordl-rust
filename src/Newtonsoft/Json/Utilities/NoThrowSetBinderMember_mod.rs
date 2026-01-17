@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowSetBinderMember")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoThrowSetBinderMember {
     __cordl_parent: crate::System::Dynamic::SetMemberBinder,
     pub _innerBinder: quest_hook::libil2cpp::Gc<crate::System::Dynamic::SetMemberBinder>,

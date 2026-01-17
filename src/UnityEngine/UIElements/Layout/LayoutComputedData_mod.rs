@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutComputedData {
     pub Position: crate::UnityEngine::UIElements::Layout::LayoutComputedData__Position_e__FixedBuffer,
@@ -240,7 +243,10 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData {
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Border_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutComputedData__Border_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -358,7 +364,10 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Border_e__Fixed
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Dimensions_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutComputedData__Dimensions_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -476,7 +485,10 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Dimensions_e__F
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Margin_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutComputedData__Margin_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -594,7 +606,10 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Margin_e__Fixed
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_MeasuredDimensions_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutComputedData__MeasuredDimensions_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -713,7 +728,10 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__MeasuredDimensi
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Padding_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutComputedData__Padding_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -831,7 +849,10 @@ impl crate::UnityEngine::UIElements::Layout::LayoutComputedData__Padding_e__Fixe
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutComputedData+_Position_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutComputedData__Position_e__FixedBuffer {
     pub FixedElementField: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_TextUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -720,7 +720,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_TextUtilities {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_TextUtilities+LineSegment")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TMP_TextUtilities_LineSegment {
     pub Point1: crate::UnityEngine::Vector3,

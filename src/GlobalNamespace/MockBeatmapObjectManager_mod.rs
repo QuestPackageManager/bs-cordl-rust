@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockBeatmapObjectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
 }

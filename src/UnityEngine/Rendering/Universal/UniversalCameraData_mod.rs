@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalCameraData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalCameraData {
     __cordl_parent: crate::UnityEngine::Rendering::ContextItem,
     pub m_ViewMatrix: crate::UnityEngine::Matrix4x4,

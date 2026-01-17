@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InitiateUserAccountPairingCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
@@ -202,10 +205,15 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InitiateUserAccountPairingCommand_Result {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ErrorAlreadyInProgress = -2i32,
     ErrorNotSupported = -1i32,
     SuccessfullyInitiated = 1i32,

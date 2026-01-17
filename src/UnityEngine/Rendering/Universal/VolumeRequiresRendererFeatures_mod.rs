@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+VolumeRequiresRendererFeatures")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VolumeRequiresRendererFeatures {
     __cordl_parent: crate::System::Attribute,
     pub TargetFeatureTypes: quest_hook::libil2cpp::Gc<

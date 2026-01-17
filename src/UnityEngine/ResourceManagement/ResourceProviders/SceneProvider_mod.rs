@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -419,7 +419,7 @@ impl AsMut<crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProv
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneProvider_SceneOp {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
@@ -980,7 +980,7 @@ impl AsMut<crate::UnityEngine::ResourceManagement::IUpdateReceiver>
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneProvider_UnloadSceneOp {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,

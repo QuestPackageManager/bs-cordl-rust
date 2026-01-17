@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+FEATURES")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u64)]
 pub enum FEATURES {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BACKGROUND_DEPTH_RENDER = 8u64,
     BACKGROUND_RENDER = 1u64,
     COMPLEX_CLIP_PLANE = 4u64,

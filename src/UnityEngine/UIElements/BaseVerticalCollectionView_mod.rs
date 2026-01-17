@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseVerticalCollectionView {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub itemsChosen: quest_hook::libil2cpp::Gc<
@@ -2649,7 +2649,7 @@ impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+Selection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseVerticalCollectionView_Selection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_IndexLookup:
@@ -3173,7 +3173,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseVerticalCollectionView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
     pub m_VirtualizationMethod: quest_hook::libil2cpp::Gc<

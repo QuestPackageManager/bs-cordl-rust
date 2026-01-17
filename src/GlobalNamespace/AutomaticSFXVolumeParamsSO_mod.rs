@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AutomaticSFXVolumeParamsSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AutomaticSFXVolumeParamsSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _musicVolumeMultiplier: f32,

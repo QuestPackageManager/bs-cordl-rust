@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+SHA1CryptoServiceProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SHA1CryptoServiceProvider {
     __cordl_parent: crate::System::Security::Cryptography::SHA1,
     pub sha: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::SHA1Internal>,

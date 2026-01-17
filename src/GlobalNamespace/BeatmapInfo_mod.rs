@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _characteristic_k__BackingField:

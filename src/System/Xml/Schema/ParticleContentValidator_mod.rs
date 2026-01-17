@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+ParticleContentValidator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
     pub symbols: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SymbolsDictionary>,

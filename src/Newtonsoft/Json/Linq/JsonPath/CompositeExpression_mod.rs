@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CompositeExpression {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
     pub _Expressions_k__BackingField: quest_hook::libil2cpp::Gc<

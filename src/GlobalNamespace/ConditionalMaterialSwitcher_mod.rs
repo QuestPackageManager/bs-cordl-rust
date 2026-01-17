@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ConditionalMaterialSwitcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalMaterialSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _material0: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

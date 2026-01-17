@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SelectLevelPackDestination")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectLevelPackDestination {
     __cordl_parent: crate::GlobalNamespace::MenuDestination,
     pub beatmapLevelPack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,

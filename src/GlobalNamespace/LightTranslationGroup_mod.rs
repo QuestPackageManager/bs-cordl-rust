@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightTranslationGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightTranslationGroup {
     __cordl_parent: crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupTranslationXTransform>,

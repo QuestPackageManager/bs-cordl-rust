@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ScreenModeController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenModeController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _curvedCanvases: quest_hook::libil2cpp::Gc<

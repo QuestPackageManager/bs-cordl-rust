@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolume")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeVolume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub mode: crate::UnityEngine::Rendering::ProbeVolume_Mode,
@@ -115,10 +115,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::ProbeV
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolume+Mode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProbeVolume_Mode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Global = 0i32,
     Local = 2i32,
     Scene = 1i32,
@@ -198,10 +203,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::Pro
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolume+Version")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProbeVolume_Version {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = 3i32,
     Initial = 0i32,
     InvertOverrideLevels = 2i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventDispatcher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ClickDetector: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ClickDetector>,
@@ -354,7 +354,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Event
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+DispatchContext")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct EventDispatcher_DispatchContext {
     pub m_GateCount: u32,
@@ -463,7 +466,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
 impl crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct EventDispatcher_EventRecord {
     pub m_Event: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,

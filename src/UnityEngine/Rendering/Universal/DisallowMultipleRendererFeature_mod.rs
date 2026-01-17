@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DisallowMultipleRendererFeature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisallowMultipleRendererFeature {
     __cordl_parent: crate::System::Attribute,
     pub _customTitle_k__BackingField:

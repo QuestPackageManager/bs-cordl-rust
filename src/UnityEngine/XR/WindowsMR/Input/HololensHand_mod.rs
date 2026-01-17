@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+HololensHand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HololensHand {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
     pub _deviceVelocity_k__BackingField:

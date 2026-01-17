@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+InputTracking")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputTracking {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -300,10 +300,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::InputTracking
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+InputTracking+TrackingStateEventType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputTracking_TrackingStateEventType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     NodeAdded = 0i32,
     NodeRemoved = 1i32,
     TrackingAcquired = 2i32,

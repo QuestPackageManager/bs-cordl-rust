@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultipliedColorSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultipliedColorSO {
     __cordl_parent: crate::GlobalNamespace::ColorSO,
     pub _baseColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SimpleColorSO>,

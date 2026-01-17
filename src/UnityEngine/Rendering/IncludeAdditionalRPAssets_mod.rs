@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IncludeAdditionalRPAssets")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IncludeAdditionalRPAssets {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_version: crate::UnityEngine::Rendering::IncludeAdditionalRPAssets_Version,
@@ -266,10 +266,15 @@ impl AsMut<crate::UnityEngine::Rendering::IRenderPipelineGraphicsSettings>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IncludeAdditionalRPAssets+Version")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum IncludeAdditionalRPAssets_Version {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = 1i32,
     Initial = 0i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectsMovementRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _poseObjects: quest_hook::libil2cpp::Gc<
@@ -175,10 +175,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ObjectsMoveme
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+CameraView")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ObjectsMovementRecorder_CameraView {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FirstPerson = 0i32,
     ThirdPerson = 1i32,
 }
@@ -268,7 +273,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectsMovementRecorder_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
@@ -455,10 +460,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_ObjectsMovementRecorder+Mode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ObjectsMovementRecorder_Mode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Off = 2i32,
     Playback = 1i32,
     Record = 0i32,

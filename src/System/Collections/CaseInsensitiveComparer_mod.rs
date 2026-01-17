@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CaseInsensitiveComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _compareInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,

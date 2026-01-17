@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Properties+PropertyCollection_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PropertyCollection_1<TContainer: quest_hook::libil2cpp::Type> {
     pub m_Type: crate::Unity::Properties::PropertyCollection_1_EnumeratorType<TContainer>,
@@ -443,7 +446,10 @@ impl<TContainer: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+PropertyCollection_1+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PropertyCollection_1_Enumerator<TContainer: quest_hook::libil2cpp::Type> {
     pub m_Type: crate::Unity::Properties::PropertyCollection_1_EnumeratorType<TContainer>,
@@ -927,10 +933,15 @@ impl<TContainer: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+PropertyCollection_1+EnumeratorType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PropertyCollection_1_EnumeratorType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Empty = 0i32,
     Enumerable = 1i32,
     IndexedCollectionPropertyBag = 3i32,

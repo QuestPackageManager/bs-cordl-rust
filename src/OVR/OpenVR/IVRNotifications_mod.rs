@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRNotifications {
     pub CreateNotification:
@@ -100,7 +103,7 @@ impl crate::OVR::OpenVR::IVRNotifications {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_CreateNotification")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRNotifications__CreateNotification {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -331,7 +334,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRNotifications__RemoveNotification {
     __cordl_parent: crate::System::MulticastDelegate,
 }

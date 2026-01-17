@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayoutAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputControlLayoutAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _stateType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+SerializableHashSetBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializableHashSetBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -83,7 +83,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGLib::UnityExtension::Seriali
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+SerializableHashSetBase+HashSet_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializableHashSetBase_HashSet_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Collections::Generic::HashSet_1<TValue>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -298,7 +298,7 @@ impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+SerializableHashSetBase+Storage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializableHashSetBase_Storage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

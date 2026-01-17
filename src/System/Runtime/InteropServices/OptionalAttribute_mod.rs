@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+OptionalAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OptionalAttribute {
     __cordl_parent: crate::System::Attribute,
 }

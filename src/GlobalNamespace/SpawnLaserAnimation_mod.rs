@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SpawnLaserAnimation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpawnLaserAnimation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _centerThresholdTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

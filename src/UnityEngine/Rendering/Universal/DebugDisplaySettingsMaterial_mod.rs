@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsMaterial")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsMaterial {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AlbedoDebugValidationPresetData: quest_hook::libil2cpp::Gc<
@@ -917,10 +917,15 @@ impl AsMut<crate::UnityEngine::Rendering::IDebugDisplaySettingsQuery>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsMaterial+AlbedoDebugValidationPreset"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DebugDisplaySettingsMaterial_AlbedoDebugValidationPreset {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BlackAcrylicPaint = 1i32,
     BlueSky = 12i32,
     Custom = 14i32,
@@ -1034,7 +1039,10 @@ for crate::UnityEngine::Rendering::Universal::DebugDisplaySettingsMaterial_Albed
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsMaterial+AlbedoDebugValidationPresetData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DebugDisplaySettingsMaterial_AlbedoDebugValidationPresetData {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1157,7 +1165,7 @@ impl crate::UnityEngine::Rendering::Universal::DebugDisplaySettingsMaterial_Albe
     feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsMaterial+SettingsPanel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsMaterial_SettingsPanel {
     __cordl_parent: crate::UnityEngine::Rendering::DebugDisplaySettingsPanel_1<
         quest_hook::libil2cpp::Gc<
@@ -1266,7 +1274,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsMaterial+Strings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsMaterial_Strings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1331,7 +1339,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+DebugDisplaySettingsMaterial+WidgetFactory"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsMaterial_WidgetFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

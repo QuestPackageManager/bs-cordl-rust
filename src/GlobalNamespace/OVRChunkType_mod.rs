@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_OVRChunkType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRChunkType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BIN = 5130562i32,
     JSON = 1313821514i32,
 }

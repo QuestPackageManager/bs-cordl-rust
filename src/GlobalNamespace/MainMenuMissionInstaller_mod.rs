@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainMenuMissionInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainMenuMissionInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _missionNodesManager:

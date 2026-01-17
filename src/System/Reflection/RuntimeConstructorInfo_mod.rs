@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+RuntimeConstructorInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeConstructorInfo {
     __cordl_parent: crate::System::Reflection::ConstructorInfo,
     pub mhandle: crate::System::IntPtr,

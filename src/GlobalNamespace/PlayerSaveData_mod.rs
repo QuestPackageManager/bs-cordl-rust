@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_PlayerSaveData_EnabledObstacleType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 0i32,
     FullHeightOnly = 1i32,
     None = 2i32,
@@ -92,10 +97,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+EnergyType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_PlayerSaveData_EnergyType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bar = 0i32,
     Battery = 1i32,
 }
@@ -184,10 +194,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers+SongSpeed")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_PlayerSaveData_SongSpeed {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Faster = 1i32,
     Normal = 0i32,
     Slower = 2i32,
@@ -278,7 +293,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_PlayerSaveData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData {
     __cordl_parent: crate::GlobalNamespace::VersionSaveData,
     pub localPlayers: quest_hook::libil2cpp::Gc<
@@ -407,10 +422,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+ColorOverrideType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlayerSaveData_ColorOverrideType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 0i32,
     NotesOnly = 1i32,
 }
@@ -500,7 +520,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+ColorScheme")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_ColorScheme {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -638,7 +658,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+ColorSchemesSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_ColorSchemesSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub overrideDefaultColors: bool,
@@ -774,7 +794,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+GameplayModifiers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_GameplayModifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub energyType: crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType,
@@ -879,7 +899,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+GuestPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_GuestPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -958,7 +978,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+LocalPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_LocalPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1097,7 +1117,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+MultiplayerModeSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_MultiplayerModeSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub createServerNumberOfPlayers: i32,
@@ -1185,7 +1205,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+OverrideEnvironmentSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_OverrideEnvironmentSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub overrideEnvironments: bool,
@@ -1271,7 +1291,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PlayerAgreementsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_PlayerAgreementsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub eulaVersion: i32,
@@ -1358,7 +1378,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PlayerAllOverallStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_PlayerAllOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub campaignOverallStatsData:
@@ -1531,7 +1551,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PlayerLevelStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_PlayerLevelStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1622,7 +1642,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PlayerMissionStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_PlayerMissionStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1706,7 +1726,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PlayerOverallStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_PlayerOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub goodCutsCount: i32,
@@ -1883,10 +1903,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PlayerSensitivityFlagSaveData")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlayerSaveData_PlayerSensitivityFlagSaveData {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Explicit = 3i32,
     Safe = 1i32,
     Themes = 2i32,
@@ -1978,7 +2003,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_PlayerSpecificSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub staticLights: bool,
@@ -2088,7 +2113,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PracticeSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_PracticeSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startSongTime: f32,
@@ -2170,7 +2195,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PromoCounterData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveData_PromoCounterData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2251,10 +2276,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+UserAgeCategorySaveData")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlayerSaveData_UserAgeCategorySaveData {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Adult = 3i32,
     Child = 1i32,
     Teen = 2i32,
@@ -2345,10 +2375,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 3i32,
     Low = 1i32,
     None = 0i32,
@@ -2442,10 +2477,15 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllEffects = 0i32,
     NoEffects = 10i32,
     StrobeFilter = 1i32,
@@ -2547,10 +2587,15 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
 #[cfg(
     feature = "cordl_class_PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Dynamic = 0i32,
     Static = 1i32,
 }

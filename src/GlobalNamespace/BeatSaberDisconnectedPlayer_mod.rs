@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaberDisconnectedPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatSaberDisconnectedPlayer {
     __cordl_parent: crate::GlobalNamespace::DisconnectedPlayer,
     pub _multiplayerAvatarsData_k__BackingField: crate::GlobalNamespace::MultiplayerAvatarsData,

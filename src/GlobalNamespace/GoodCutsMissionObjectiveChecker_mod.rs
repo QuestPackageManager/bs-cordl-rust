@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GoodCutsMissionObjectiveChecker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GoodCutsMissionObjectiveChecker {
     __cordl_parent: crate::GlobalNamespace::SimpleValueMissionObjectiveChecker,
     pub _beatmapObjectManager:

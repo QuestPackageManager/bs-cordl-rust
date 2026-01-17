@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationReader {
     __cordl_parent: crate::System::Xml::Serialization::XmlSerializationGeneratedCode,
     pub document: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -1498,7 +1498,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+CollectionFixup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationReader_CollectionFixup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub callback: quest_hook::libil2cpp::Gc<
@@ -1747,7 +1747,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationReader_CollectionItemFixup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -1918,7 +1918,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+Fixup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationReader_Fixup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2115,7 +2115,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationReader_WriteCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,

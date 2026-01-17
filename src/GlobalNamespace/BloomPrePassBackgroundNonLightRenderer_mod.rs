@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassBackgroundNonLightRenderer {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,

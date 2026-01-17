@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CertificateData {
     pub RawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -303,7 +306,10 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
     }
 }
 #[cfg(feature = "cordl_class_Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CertificateData_AlgorithmIdentifier {
     pub AlgorithmId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

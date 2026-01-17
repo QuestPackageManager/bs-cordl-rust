@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRGeneralSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRGeneralSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_LoaderManagerInstance:

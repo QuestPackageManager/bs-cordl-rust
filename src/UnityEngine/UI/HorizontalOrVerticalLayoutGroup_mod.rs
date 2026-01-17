@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+HorizontalOrVerticalLayoutGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HorizontalOrVerticalLayoutGroup {
     __cordl_parent: crate::UnityEngine::UI::LayoutGroup,
     pub m_Spacing: f32,

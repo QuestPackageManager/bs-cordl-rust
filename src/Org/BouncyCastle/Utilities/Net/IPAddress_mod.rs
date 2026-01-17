@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Net+IPAddress")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IPAddress {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

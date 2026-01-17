@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Saber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Saber {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,

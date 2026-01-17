@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TubeLightTrack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TubeLightTrack {
     __cordl_parent: crate::UnityEngine::Timeline::TrackAsset,
 }

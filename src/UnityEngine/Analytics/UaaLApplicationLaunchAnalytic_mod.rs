@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+UaaLApplicationLaunchAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UaaLApplicationLaunchAnalytic {
     __cordl_parent: crate::UnityEngine::Analytics::AnalyticsEventBase,
     pub launch_type: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BufferedLightColorGroupEffectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BufferedLightColorGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightGroups: quest_hook::libil2cpp::Gc<

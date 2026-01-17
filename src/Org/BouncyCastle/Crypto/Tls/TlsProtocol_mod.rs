@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsProtocol")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsProtocol {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mApplicationDataQueue:
@@ -1870,7 +1870,7 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCloseable>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsProtocol+HandshakeMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsProtocol_HandshakeMessage {
     __cordl_parent: crate::System::IO::MemoryStream,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+BindIPEndPoint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindIPEndPoint {
     __cordl_parent: crate::System::MulticastDelegate,
 }

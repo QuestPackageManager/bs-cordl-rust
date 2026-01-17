@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRUIControls+ButtonState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,

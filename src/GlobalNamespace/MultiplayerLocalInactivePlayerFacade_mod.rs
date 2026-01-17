@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalInactivePlayerFacade {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _inactivePlayerSongSyncController: quest_hook::libil2cpp::Gc<
@@ -499,7 +499,7 @@ impl AsMut<crate::GlobalNamespace::IStartSeekSongControllerProvider>
 }
 #[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerFacade+Factory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalInactivePlayerFacade_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_2<
         crate::GlobalNamespace::MultiplayerPlayerStartState,

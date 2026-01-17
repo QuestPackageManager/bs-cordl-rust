@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rigidbody2D")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Rigidbody2D {
     __cordl_parent: crate::UnityEngine::Component,
 }

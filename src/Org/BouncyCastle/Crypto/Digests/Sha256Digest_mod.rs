@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+Sha256Digest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Sha256Digest {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::GeneralDigest,
     pub H1: u32,

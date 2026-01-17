@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JTokenWriter {
     __cordl_parent: crate::Newtonsoft::Json::JsonWriter,
     pub _token: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JContainer>,

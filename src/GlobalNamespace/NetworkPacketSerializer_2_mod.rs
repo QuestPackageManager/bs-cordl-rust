@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NetworkPacketSerializer_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkPacketSerializer_2<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,

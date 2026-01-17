@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSceneVolume")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneVolume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Width_k__BackingField: f32,

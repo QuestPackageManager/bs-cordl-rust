@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DiagnosticsTraceWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiagnosticsTraceWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _LevelFilter_k__BackingField: crate::System::Diagnostics::TraceLevel,

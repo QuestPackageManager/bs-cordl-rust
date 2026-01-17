@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Main+Leaderboards+BeatLeaderboards")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatLeaderboards {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
@@ -497,7 +497,7 @@ impl AsMut<crate::Zenject::ITickable> for crate::BeatSaber::Main::Leaderboards::
     feature = "cordl_class_BeatSaber+Main+Leaderboards+BeatLeaderboards+FetchLeaderboardTypeFunction"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatLeaderboards_FetchLeaderboardTypeFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

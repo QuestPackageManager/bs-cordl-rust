@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineDebugDisplayStats"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineDebugDisplayStats {
     __cordl_parent: crate::UnityEngine::Rendering::DebugDisplayStats_1<
         crate::UnityEngine::Rendering::Universal::URPProfileId,

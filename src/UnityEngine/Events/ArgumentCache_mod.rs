@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Events+ArgumentCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArgumentCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ObjectArgument: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,

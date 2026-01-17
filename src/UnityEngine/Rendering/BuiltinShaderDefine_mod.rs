@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BuiltinShaderDefine")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BuiltinShaderDefine {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     SHADER_API_DESKTOP = 18i32,
     SHADER_API_GLES30 = 31i32,
     SHADER_API_MOBILE = 17i32,

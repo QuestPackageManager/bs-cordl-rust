@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Target {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub targetName: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::GeneralName>,
@@ -264,10 +264,15 @@ impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Target+Choice")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Target_Choice {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Group = 1i32,
     Name = 0i32,
 }

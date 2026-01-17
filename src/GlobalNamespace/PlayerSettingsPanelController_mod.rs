@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerSettingsPanelController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSettingsPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftHandedToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
@@ -1025,10 +1025,15 @@ impl AsMut<crate::GlobalNamespace::IRefreshable>
     }
 }
 #[cfg(feature = "cordl_class_PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlayerSettingsPanelController_PlayerSettingsPanelLayout {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 0i32,
     Multiplayer = 2i32,
     Singleplayer = 1i32,

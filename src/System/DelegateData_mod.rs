@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+DelegateData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DelegateData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub target_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+ConstraintConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConstraintConverter {
     __cordl_parent: crate::System::ComponentModel::ExpandableObjectConverter,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BTSCharacterDataModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BTSCharacterDataModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _prefabsWithIds: quest_hook::libil2cpp::Gc<
@@ -177,7 +177,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BTSCharacterD
 }
 #[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BTSCharacterDataModel_AnimationClipWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: i32,
@@ -311,7 +311,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BTSCharacterDataModel_PrefabWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: i32,

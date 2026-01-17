@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentQueue_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConcurrentQueue_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _crossSegmentLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -924,7 +924,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerab
 }
 #[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentQueue_1+Segment")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConcurrentQueue_1_Segment<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _slots: quest_hook::libil2cpp::Gc<
@@ -1220,7 +1220,10 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentQueue_1+Segment+Slot")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Segment_ConcurrentQueue_1_Slot<T: quest_hook::libil2cpp::Type> {
     pub Item: T,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Dynamic+BinaryOperationBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BinaryOperationBinder {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
     pub _Operation_k__BackingField: crate::System::Linq::Expressions::ExpressionType,

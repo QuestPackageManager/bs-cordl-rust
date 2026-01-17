@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixBuilderParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PkixBuilderParameters {
     __cordl_parent: crate::Org::BouncyCastle::Pkix::PkixParameters,
     pub maxPathLength: i32,

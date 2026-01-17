@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+SpriteGlyph")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpriteGlyph {
     __cordl_parent: crate::UnityEngine::TextCore::Glyph,
     pub sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

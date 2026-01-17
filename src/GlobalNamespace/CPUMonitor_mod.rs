@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CPUMonitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CPUMonitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _utilization: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RollingAverage>,

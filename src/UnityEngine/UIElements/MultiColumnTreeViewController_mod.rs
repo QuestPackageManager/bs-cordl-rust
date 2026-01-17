@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnTreeViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnTreeViewController {
     __cordl_parent: crate::UnityEngine::UIElements::BaseTreeViewController,
     pub m_ColumnController:

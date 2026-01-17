@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusBeatmapDataAssetFileModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusBeatmapDataAssetFileModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelDataAssetDownloadUpdateEvent: quest_hook::libil2cpp::Gc<
@@ -650,7 +650,7 @@ impl AsMut<crate::Zenject::ITickable> for crate::GlobalNamespace::OculusBeatmapD
 }
 #[cfg(feature = "cordl_class_OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assetId: u64,

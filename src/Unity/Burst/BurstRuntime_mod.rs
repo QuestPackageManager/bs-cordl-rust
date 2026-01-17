@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstRuntime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -386,7 +386,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstRuntime {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode32_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BurstRuntime_HashCode32_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -501,7 +504,10 @@ unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Burst+BurstRuntime+HashCode32_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {}
 #[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+HashCode64_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BurstRuntime_HashCode64_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -617,7 +623,7 @@ unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {}
 #[cfg(feature = "cordl_class_Unity+Burst+BurstRuntime+PreserveAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstRuntime_PreserveAttribute {
     __cordl_parent: crate::System::Attribute,
 }

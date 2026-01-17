@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextAsset {
     __cordl_parent: crate::UnityEngine::Object,
 }
@@ -700,10 +700,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextAsset {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextAsset+CreateOptions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TextAsset_CreateOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CreateNativeObject = 1i32,
     None = 0i32,
 }
@@ -783,7 +788,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextAsset_Crea
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextAsset+EncodingUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextAsset_EncodingUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

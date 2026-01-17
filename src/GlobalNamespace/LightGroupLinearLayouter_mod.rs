@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightGroupLinearLayouter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightGroupLinearLayouter {
     __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _movementStep: crate::UnityEngine::Vector3,

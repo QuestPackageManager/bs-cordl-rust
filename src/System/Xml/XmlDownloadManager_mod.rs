@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlDownloadManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDownloadManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connections: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,

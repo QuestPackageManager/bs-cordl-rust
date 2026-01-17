@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataRelationPropertyDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataRelationPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub _Relation_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,

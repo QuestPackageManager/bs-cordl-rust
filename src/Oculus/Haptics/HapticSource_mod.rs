@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Haptics+HapticSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HapticSource {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _player: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::HapticClipPlayer>,

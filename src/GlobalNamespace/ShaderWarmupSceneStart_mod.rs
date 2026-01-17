@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ShaderWarmupSceneStart")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderWarmupSceneStart {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _sceneSetupData:

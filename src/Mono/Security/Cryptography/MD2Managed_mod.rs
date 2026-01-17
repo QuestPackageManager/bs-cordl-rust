@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+MD2Managed")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MD2Managed {
     __cordl_parent: crate::Mono::Security::Cryptography::MD2,
     pub state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_KnucklesUnityXRHapticsHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KnucklesUnityXRHapticsHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _coroutineRunner: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,

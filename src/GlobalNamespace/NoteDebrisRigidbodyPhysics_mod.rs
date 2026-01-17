@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteDebrisRigidbodyPhysics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteDebrisRigidbodyPhysics {
     __cordl_parent: crate::GlobalNamespace::NoteDebrisPhysics,
     pub _rigidbody: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rigidbody>,

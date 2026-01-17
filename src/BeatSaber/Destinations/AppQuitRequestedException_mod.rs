@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Destinations+AppQuitRequestedException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AppQuitRequestedException {
     __cordl_parent: crate::BeatSaber::Destinations::InitialDestinationException,
 }

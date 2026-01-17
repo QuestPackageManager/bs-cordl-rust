@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SemaphoreSlim {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_currentCount: i32,
@@ -618,7 +618,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::SemaphoreSl
 }
 #[cfg(feature = "cordl_class_System+Threading+SemaphoreSlim+TaskNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SemaphoreSlim_TaskNode {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<bool>,
     pub Prev: quest_hook::libil2cpp::Gc<crate::System::Threading::SemaphoreSlim_TaskNode>,

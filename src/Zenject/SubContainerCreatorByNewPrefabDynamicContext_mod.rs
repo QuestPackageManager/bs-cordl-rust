@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubContainerCreatorByNewPrefabDynamicContext {
     __cordl_parent: crate::Zenject::SubContainerCreatorDynamicContext,
     pub _prefabProvider: quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabProvider>,

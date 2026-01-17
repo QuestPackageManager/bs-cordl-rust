@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRModeParms")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRModeParms {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub resetButton: crate::GlobalNamespace::OVRInput_RawButton,

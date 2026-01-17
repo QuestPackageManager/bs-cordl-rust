@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpRequestHeaders")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpRequestHeaders {
     __cordl_parent: crate::System::Net::Http::Headers::HttpHeaders,
     pub expectContinue: crate::System::Nullable_1<bool>,

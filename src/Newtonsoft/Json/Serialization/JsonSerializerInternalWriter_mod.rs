@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonSerializerInternalWriter {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase,
     pub _rootType: quest_hook::libil2cpp::Gc<crate::System::Type>,

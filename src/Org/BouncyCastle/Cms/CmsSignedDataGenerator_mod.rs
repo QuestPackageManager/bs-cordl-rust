@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsSignedDataGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
     pub signerInfs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -932,7 +932,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Cms::CmsSig
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataGenerator+SignerInf")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsSignedDataGenerator_SignerInf {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedGenerator>,

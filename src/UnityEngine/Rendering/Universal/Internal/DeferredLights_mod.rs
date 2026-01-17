@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DeferredLights")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeferredLights {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _RenderingLayerMaskSize_k__BackingField:
@@ -2751,7 +2751,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DeferredLights+InitParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DeferredLights_InitParams {
     pub stencilDeferredMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -2860,7 +2863,7 @@ impl crate::UnityEngine::Rendering::Universal::Internal::DeferredLights_InitPara
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DeferredLights+SetupLightPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeferredLights_SetupLightPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cameraData:
@@ -2960,7 +2963,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DeferredLights+ShaderConstants"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeferredLights_ShaderConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3023,10 +3026,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DeferredLights+StencilDeferredPasses"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DeferredLights_StencilDeferredPasses {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ClearStencilPartial = 5i32,
     DirectionalLit = 3i32,
     DirectionalSimpleLit = 4i32,

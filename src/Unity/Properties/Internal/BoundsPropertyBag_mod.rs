@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsPropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::Bounds>,
 }
@@ -83,7 +83,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::Internal::B
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsPropertyBag_CenterProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::Bounds,
@@ -269,7 +269,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsPropertyBag_ExtentsProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::Bounds,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataExpression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _originalExpression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

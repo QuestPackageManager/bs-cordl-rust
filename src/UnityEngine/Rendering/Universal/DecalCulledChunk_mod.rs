@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalCulledChunk")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalCulledChunk {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::DecalChunk,
     pub cameraPosition: crate::UnityEngine::Vector3,

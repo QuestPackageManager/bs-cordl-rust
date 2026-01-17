@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+ContainedPacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContainedPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::Packet,
 }

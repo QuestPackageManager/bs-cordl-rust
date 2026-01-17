@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteCutSoundEffectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteCutSoundEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSamplesBeatAlignOffset: f32,
@@ -385,7 +385,7 @@ impl AsMut<crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent>
 }
 #[cfg(feature = "cordl_class_NoteCutSoundEffectManager+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteCutSoundEffectManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useTestAudioClips: bool,

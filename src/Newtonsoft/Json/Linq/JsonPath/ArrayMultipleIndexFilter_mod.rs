@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ArrayMultipleIndexFilter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayMultipleIndexFilter {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
     pub Indexes: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector3PropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::Vector3>,
 }
@@ -84,7 +84,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::Internal::V
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+XProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector3PropertyBag_XProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Vector3, f32>,
 }
@@ -263,7 +263,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+YProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector3PropertyBag_YProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Vector3, f32>,
 }
@@ -442,7 +442,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+ZProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector3PropertyBag_ZProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Vector3, f32>,
 }

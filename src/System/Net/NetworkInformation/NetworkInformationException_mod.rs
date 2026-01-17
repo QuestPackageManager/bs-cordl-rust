@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInformationException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkInformationException {
     __cordl_parent: crate::System::ComponentModel::Win32Exception,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeLightWithLightGroupIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _lightGroupList: quest_hook::libil2cpp::Gc<
@@ -228,7 +228,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RuntimeLightW
 }
 #[cfg(feature = "cordl_class_RuntimeLightWithLightGroupIds+LightIntensitiesWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeLightWithLightGroupIds_LightIntensitiesWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIds_LightWithId,
     pub _intensity: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FriendsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FriendsViewController {
     __cordl_parent: crate::GlobalNamespace::NetworkPlayersViewController,
     pub _enableOpenPartyToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

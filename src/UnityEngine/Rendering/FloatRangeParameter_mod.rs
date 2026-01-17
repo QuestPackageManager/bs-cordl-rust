@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FloatRangeParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatRangeParameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<crate::UnityEngine::Vector2>,
     pub min: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaComplexType {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaType,
     pub block: crate::System::Xml::Schema::XmlSchemaDerivationMethod,

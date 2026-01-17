@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub PeerConnectedEvent:
@@ -1004,7 +1004,7 @@ impl AsMut<crate::LiteNetLib::INetEventListener> for crate::LiteNetLib::EventBas
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener+OnConnectionRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener_OnConnectionRequest {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1181,7 +1181,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener+OnDeliveryEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener_OnDeliveryEvent {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1360,7 +1360,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener+OnNetworkError")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener_OnNetworkError {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1537,7 +1537,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::EventBasedNetListe
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener+OnNetworkLatencyUpdate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener_OnNetworkLatencyUpdate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1715,7 +1715,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener+OnNetworkReceive")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener_OnNetworkReceive {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1899,7 +1899,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener+OnNetworkReceiveUnconnected")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener_OnNetworkReceiveUnconnected {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2086,7 +2086,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener+OnPeerConnected")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener_OnPeerConnected {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2261,7 +2261,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNetListener+OnPeerDisconnected")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNetListener_OnPeerDisconnected {
     __cordl_parent: crate::System::MulticastDelegate,
 }

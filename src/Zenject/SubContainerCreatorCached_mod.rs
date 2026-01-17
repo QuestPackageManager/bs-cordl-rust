@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SubContainerCreatorCached")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubContainerCreatorCached {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _subCreator: quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,

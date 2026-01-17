@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SkeinEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub threefish:
@@ -716,7 +716,7 @@ impl AsMut<crate::Org::BouncyCastle::Utilities::IMemoable>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SkeinEngine_Configuration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -833,7 +833,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SkeinEngine_Parameter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: i32,
@@ -975,7 +975,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SkeinEngine_UBI {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tweak:
@@ -1210,7 +1210,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SkeinEngine_UbiTweak {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tweak: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,

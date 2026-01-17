@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NamedIntListSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamedIntListSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _textValuePairs: quest_hook::libil2cpp::Gc<
@@ -242,7 +242,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NamedIntListS
 }
 #[cfg(feature = "cordl_class_NamedIntListSettingsController+TextValuePair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamedIntListSettingsController_TextValuePair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerScoreRingItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerScoreRingItem {
     __cordl_parent: crate::GlobalNamespace::MultiplayerScoreItem,
 }
@@ -80,7 +80,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerSc
 }
 #[cfg(feature = "cordl_class_MultiplayerScoreRingItem+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerScoreRingItem_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerScoreRingItem>,

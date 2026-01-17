@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+TrackedDevice")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackedDevice {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
     pub _trackingState_k__BackingField:

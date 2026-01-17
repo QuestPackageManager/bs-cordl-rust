@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBoolean")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BsonBoolean {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonValue,
 }

@@ -1,10 +1,15 @@
 #[cfg(
     feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodySection"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Back = 9i32,
     Head = 11i32,
     Hips = 8i32,
@@ -115,10 +120,15 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
 #[cfg(
     feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodyTrackingBoneId"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodyTrackingBoneId {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Body_Chest = 5i32,
     Body_End = 70i32,
     Body_Head = 7i32,
@@ -290,10 +300,15 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
 #[cfg(
     feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+FullBodyTrackingBoneId"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_FullBodyTrackingBoneId {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FullBody_Chest = 5i32,
     FullBody_End = 84i32,
     FullBody_Head = 7i32,
@@ -478,7 +493,7 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
 }
 #[cfg(feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata+BoneData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub OriginalJoint: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -615,7 +630,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRUnityHumanoidSkeletonRetargeter {
     __cordl_parent: crate::GlobalNamespace::OVRSkeleton,
     pub _sourceSkeletonData: quest_hook::libil2cpp::Gc<
@@ -1707,7 +1722,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter+JointAdjustment")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Joint: crate::UnityEngine::HumanBodyBones,
@@ -1878,7 +1893,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2266,7 +2281,7 @@ impl AsMut<crate::GlobalNamespace::OVRHumanBodyBonesMappingsInterface>
 }
 #[cfg(feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _BodyToBoneData_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -3013,10 +3028,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRUnityHumanoidSkeletonRetargeter+UpdateType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRUnityHumanoidSkeletonRetargeter_UpdateType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FixedUpdateAndUpdate = 2i32,
     FixedUpdateOnly = 0i32,
     UpdateOnly = 1i32,

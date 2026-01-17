@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableDirector")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayableDirector {
     __cordl_parent: crate::UnityEngine::Behaviour,
     pub played: quest_hook::libil2cpp::Gc<

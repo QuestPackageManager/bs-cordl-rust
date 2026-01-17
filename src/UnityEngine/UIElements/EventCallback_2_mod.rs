@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventCallback_2<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RepeatButton {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement,
     pub m_Clickable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Clickable>,
@@ -202,7 +202,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Repea
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RepeatButton_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RepeatButton>,
@@ -290,7 +290,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RepeatButton_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement_UxmlTraits,
     pub m_Delay:

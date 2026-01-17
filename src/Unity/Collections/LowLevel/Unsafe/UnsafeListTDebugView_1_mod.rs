@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeListTDebugView_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeListTDebugView_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Data: crate::Unity::Collections::LowLevel::Unsafe::UnsafeList_1<T>,

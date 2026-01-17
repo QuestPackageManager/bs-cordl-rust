@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONBool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JSONBool {
     __cordl_parent: crate::OVRSimpleJSON::JSONNode,
     pub m_Data: bool,

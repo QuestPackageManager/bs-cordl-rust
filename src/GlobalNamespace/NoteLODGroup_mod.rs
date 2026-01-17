@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteLODGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteLODGroup {
     __cordl_parent: crate::GlobalNamespace::CustomLODGroup,
     pub _postProcessEnabled: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BoolSO>,

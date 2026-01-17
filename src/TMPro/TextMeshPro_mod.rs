@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TextMeshPro")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextMeshPro {
     __cordl_parent: crate::TMPro::TMP_Text,
     pub _SortingLayer: i32,

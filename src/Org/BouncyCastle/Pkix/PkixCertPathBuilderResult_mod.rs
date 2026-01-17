@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPathBuilderResult")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PkixCertPathBuilderResult {
     __cordl_parent: crate::Org::BouncyCastle::Pkix::PkixCertPathValidatorResult,
     pub certPath: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::PkixCertPath>,

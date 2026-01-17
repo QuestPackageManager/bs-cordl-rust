@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncResult")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SocketAsyncResult {
     __cordl_parent: crate::System::IOAsyncResult,
     pub socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,

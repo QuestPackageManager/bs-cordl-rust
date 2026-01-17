@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ReflectEventDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectEventDescriptor {
     __cordl_parent: crate::System::ComponentModel::EventDescriptor,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,

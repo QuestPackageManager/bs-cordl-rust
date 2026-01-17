@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+TweakManagerForAddon")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TweakManagerForAddon {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::Manager::SubManagerForAddon,
 }

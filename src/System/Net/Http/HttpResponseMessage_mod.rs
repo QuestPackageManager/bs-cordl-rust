@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+HttpResponseMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpResponseMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub headers: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::HttpResponseHeaders>,

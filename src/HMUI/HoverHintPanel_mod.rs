@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+HoverHintPanel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HoverHintPanel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

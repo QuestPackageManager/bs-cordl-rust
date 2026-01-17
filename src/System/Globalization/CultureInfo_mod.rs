@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+CultureInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CultureInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_isReadOnly: bool,
@@ -2025,7 +2025,10 @@ impl AsMut<crate::System::IFormatProvider> for crate::System::Globalization::Cul
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+CultureInfo+Data")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CultureInfo_Data {
     pub ansi: i32,
@@ -2123,7 +2126,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Globalization
 impl crate::System::Globalization::CultureInfo_Data {}
 #[cfg(feature = "cordl_class_System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CultureInfo_OnCultureInfoChangedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

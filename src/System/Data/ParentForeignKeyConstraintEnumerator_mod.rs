@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+ParentForeignKeyConstraintEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParentForeignKeyConstraintEnumerator {
     __cordl_parent: crate::System::Data::ForeignKeyConstraintEnumerator,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,

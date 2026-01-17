@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchema")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchema {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaObject,
     pub attributeFormDefault: crate::System::Xml::Schema::XmlSchemaForm,

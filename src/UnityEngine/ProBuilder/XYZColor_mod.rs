@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+XYZColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XYZColor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub x: f32,

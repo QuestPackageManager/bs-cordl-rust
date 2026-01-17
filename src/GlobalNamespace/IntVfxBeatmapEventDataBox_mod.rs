@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IntVfxBeatmapEventDataBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntVfxBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _vfxBaseDataList: quest_hook::libil2cpp::Gc<

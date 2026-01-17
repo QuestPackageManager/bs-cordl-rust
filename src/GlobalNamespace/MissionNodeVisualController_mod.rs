@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionNodeVisualController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionNodeVisualController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionToggle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,

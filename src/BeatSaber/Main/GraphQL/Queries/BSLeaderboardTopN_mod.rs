@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Queries+BSLeaderboardTopN")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BSLeaderboardTopN {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLQueryOperation,
 }

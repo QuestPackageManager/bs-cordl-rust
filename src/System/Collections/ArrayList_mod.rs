@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+ArrayList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _items: quest_hook::libil2cpp::Gc<
@@ -1021,7 +1021,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::ArrayList 
 }
 #[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListDebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayList_ArrayListDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1075,7 +1075,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Collections+ArrayList+ArrayListEnumeratorSimple")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayList_ArrayListEnumeratorSimple {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Net+Security+MonoSslServerAuthenticationOptions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoSslServerAuthenticationOptions {
     __cordl_parent: crate::Mono::Net::Security::MonoSslAuthenticationOptions,
     pub _Options_k__BackingField:

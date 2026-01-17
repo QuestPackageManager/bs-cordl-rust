@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+StaticMemoryPool_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StaticMemoryPool_2<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

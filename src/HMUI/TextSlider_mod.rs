@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+TextSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextSlider {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub _valueText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

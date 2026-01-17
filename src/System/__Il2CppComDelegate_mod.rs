@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+__Il2CppComDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct __Il2CppComDelegate {
     __cordl_parent: crate::System::__Il2CppComObject,
 }

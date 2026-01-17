@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+DotnetExtension+EnvironmentVariableHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentVariableHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

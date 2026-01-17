@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TouchScreenKeyboard {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -1009,7 +1009,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TouchScreenKeyboa
 }
 #[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TouchScreenKeyboard_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1090,10 +1090,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+InputFieldAppearance")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TouchScreenKeyboard_InputFieldAppearance {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AlwaysHidden = 2i32,
     AlwaysVisible = 1i32,
     Customizable = 0i32,
@@ -1183,10 +1188,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TouchScreenKeyboard+Status")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TouchScreenKeyboard_Status {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Canceled = 2i32,
     Done = 1i32,
     LostFocus = 3i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Vector2Parameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector2Parameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<crate::UnityEngine::Vector2>,
 }

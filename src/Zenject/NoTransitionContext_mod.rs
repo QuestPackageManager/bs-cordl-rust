@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+NoTransitionContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoTransitionContext {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _noScenesTransitionInstaller:

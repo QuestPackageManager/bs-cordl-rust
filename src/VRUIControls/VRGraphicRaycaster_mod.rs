@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRGraphicRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub _blockingMask: crate::UnityEngine::LayerMask,
@@ -216,7 +216,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::VRGraphicRaycast
     }
 }
 #[cfg(feature = "cordl_class_VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VRGraphicRaycaster_VRGraphicRaycastResult {
     pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,

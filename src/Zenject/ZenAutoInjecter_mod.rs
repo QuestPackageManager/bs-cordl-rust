@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ZenAutoInjecter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ZenAutoInjecter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _containerSource: crate::Zenject::ZenAutoInjecter_ContainerSources,
@@ -280,10 +280,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenAutoInjecter {
     }
 }
 #[cfg(feature = "cordl_class_Zenject+ZenAutoInjecter+ContainerSources")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ZenAutoInjecter_ContainerSources {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ProjectContext = 1i32,
     SceneContext = 0i32,
     SearchHierarchy = 2i32,

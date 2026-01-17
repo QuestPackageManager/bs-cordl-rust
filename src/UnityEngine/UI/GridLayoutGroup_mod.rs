@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+GridLayoutGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GridLayoutGroup {
     __cordl_parent: crate::UnityEngine::UI::LayoutGroup,
     pub m_StartCorner: crate::UnityEngine::UI::GridLayoutGroup_Corner,
@@ -490,10 +490,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::GridLayoutGro
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+GridLayoutGroup+Axis")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GridLayoutGroup_Axis {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 0i32,
     Vertical = 1i32,
 }
@@ -572,10 +577,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::GridLayout
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+GridLayoutGroup+Constraint")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GridLayoutGroup_Constraint {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FixedColumnCount = 1i32,
     FixedRowCount = 2i32,
     Flexible = 0i32,
@@ -657,10 +667,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::GridLayout
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+GridLayoutGroup+Corner")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GridLayoutGroup_Corner {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LowerLeft = 2i32,
     LowerRight = 3i32,
     UpperLeft = 0i32,

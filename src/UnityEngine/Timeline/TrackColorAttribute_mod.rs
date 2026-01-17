@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackColorAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackColorAttribute {
     __cordl_parent: crate::System::Attribute,
     pub m_Color: crate::UnityEngine::Color,

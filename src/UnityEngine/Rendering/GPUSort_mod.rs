@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUSort")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUSort {
     pub m_Keywords: quest_hook::libil2cpp::Gc<
@@ -238,7 +241,10 @@ impl crate::UnityEngine::Rendering::GPUSort {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUSort+Args")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUSort_Args {
     pub count: u32,
@@ -335,7 +341,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Renderin
 #[cfg(feature = "UnityEngine+Rendering+GPUSort+Args")]
 impl crate::UnityEngine::Rendering::GPUSort_Args {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUSort+RenderGraphResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUSort_RenderGraphResources {
     pub sortBufferKeys: crate::UnityEngine::Rendering::RenderGraphModule::BufferHandle,
@@ -476,10 +485,15 @@ impl crate::UnityEngine::Rendering::GPUSort_RenderGraphResources {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUSort+Stage")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GPUSort_Stage {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BigDisperse = 3i32,
     BigFlip = 2i32,
     LocalBMS = 0i32,
@@ -560,7 +574,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::GPU
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUSort+SupportResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUSort_SupportResources {
     pub sortBufferKeys: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
@@ -712,7 +729,10 @@ impl crate::UnityEngine::Rendering::GPUSort_SupportResources {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUSort+SystemResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUSort_SystemResources {
     pub computeAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteData {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
     pub _gameplayType_k__BackingField: crate::GlobalNamespace::NoteData_GameplayType,
@@ -1465,10 +1465,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteData {
     }
 }
 #[cfg(feature = "cordl_class_NoteData+GameplayType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NoteData_GameplayType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bomb = 1i32,
     BurstSliderElement = 3i32,
     BurstSliderHead = 2i32,
@@ -1549,10 +1554,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteData_G
     }
 }
 #[cfg(feature = "cordl_class_NoteData+ScoringType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NoteData_ScoringType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ArcHead = 2i32,
     ArcHeadArcTail = 6i32,
     ArcTail = 3i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightGroupTranslationXTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightGroupTranslationXTransform {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

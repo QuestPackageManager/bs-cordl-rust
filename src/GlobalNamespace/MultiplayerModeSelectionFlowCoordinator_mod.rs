@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerModeSelectionFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerModeSelectionFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _ambienceAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,

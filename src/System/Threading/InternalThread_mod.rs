@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+InternalThread")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InternalThread {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
     pub lock_thread_id: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedList_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_2<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
@@ -2098,7 +2098,10 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedList_2+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SortedList_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
@@ -2637,7 +2640,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedList_2+KeyList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_2_KeyList<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3422,7 +3425,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedList_2+SortedListKeyEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_2_SortedListKeyEnumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3778,7 +3781,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedList_2+SortedListValueEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_2_SortedListValueEnumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -4134,7 +4137,7 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedList_2+ValueList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_2_ValueList<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

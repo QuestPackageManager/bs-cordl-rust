@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainPolicy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509ChainPolicy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub apps: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::OidCollection>,

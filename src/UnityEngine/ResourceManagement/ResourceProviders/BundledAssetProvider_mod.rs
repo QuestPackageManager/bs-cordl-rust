@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BundledAssetProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
 }
@@ -125,7 +125,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BundledAssetProvider_InternalOp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AssetBundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,

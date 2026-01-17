@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlMapping")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlMapping {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub map: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::ObjectMap>,

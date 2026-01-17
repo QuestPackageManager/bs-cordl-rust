@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerPositionDisplay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerPositionDisplay {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,

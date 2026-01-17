@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MenuEnvironmentManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuEnvironmentManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _data: quest_hook::libil2cpp::Gc<
@@ -139,7 +139,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuEnvironme
 }
 #[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentObjects")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuEnvironmentManager_MenuEnvironmentObjects {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _menuEnvironmentType: crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType,
@@ -275,10 +275,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_MenuEnvironmentManager+MenuEnvironmentType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MenuEnvironmentManager_MenuEnvironmentType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Default = 1i32,
     Lobby = 2i32,
     None = 0i32,

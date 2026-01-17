@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CPUInstanceData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CPUInstanceData {
     pub m_StructData: crate::Unity::Collections::NativeArray_1<i32>,
@@ -1053,7 +1056,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::CPUIns
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CPUInstanceData+ReadOnly")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CPUInstanceData_ReadOnly {
     pub instanceIndices: crate::Unity::Collections::NativeArray_1_ReadOnly<i32>,

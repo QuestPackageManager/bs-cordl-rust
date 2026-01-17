@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+UnmanagedMemoryStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnmanagedMemoryStream {
     __cordl_parent: crate::System::IO::Stream,
     pub _buffer: quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::SafeBuffer>,

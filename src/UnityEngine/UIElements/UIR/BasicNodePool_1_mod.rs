@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BasicNodePool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicNodePool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPool_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::BasicNode_1<T>>,

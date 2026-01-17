@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+MD4Digest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MD4Digest {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::GeneralDigest,
     pub H1: i32,

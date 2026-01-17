@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+BurstDiscardAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstDiscardAttribute {
     __cordl_parent: crate::System::Attribute,
 }

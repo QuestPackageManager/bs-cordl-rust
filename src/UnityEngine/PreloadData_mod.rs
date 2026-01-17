@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+PreloadData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PreloadData {
     __cordl_parent: crate::UnityEngine::Object,
 }

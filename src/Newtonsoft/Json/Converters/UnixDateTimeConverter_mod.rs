@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+UnixDateTimeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnixDateTimeConverter {
     __cordl_parent: crate::Newtonsoft::Json::Converters::DateTimeConverterBase,
     pub _AllowPreEpoch_k__BackingField: bool,

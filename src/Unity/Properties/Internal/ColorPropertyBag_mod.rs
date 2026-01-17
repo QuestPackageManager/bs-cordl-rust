@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+ColorPropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorPropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::Color>,
 }
@@ -86,7 +86,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::Internal::C
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+ColorPropertyBag+AProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorPropertyBag_AProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
 }
@@ -265,7 +265,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+ColorPropertyBag+BProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorPropertyBag_BProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
 }
@@ -444,7 +444,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+ColorPropertyBag+GProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorPropertyBag_GProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
 }
@@ -623,7 +623,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+ColorPropertyBag+RProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorPropertyBag_RProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>,
 }

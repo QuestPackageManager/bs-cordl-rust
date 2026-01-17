@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DoubleControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<f64>,
 }

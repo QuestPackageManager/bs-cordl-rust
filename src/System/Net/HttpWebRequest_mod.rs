@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+HttpWebRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpWebRequest {
     __cordl_parent: crate::System::Net::WebRequest,
     pub requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -2774,7 +2774,10 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
     }
 }
 #[cfg(feature = "cordl_class_System+Net+HttpWebRequest+AuthorizationState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HttpWebRequest_AuthorizationState {
     pub request: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebRequest>,
@@ -3042,10 +3045,15 @@ impl crate::System::Net::HttpWebRequest_AuthorizationState {
     }
 }
 #[cfg(feature = "cordl_class_System+Net+HttpWebRequest+NtlmAuthState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HttpWebRequest_NtlmAuthState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Challenge = 1i32,
     None = 0i32,
     Response = 2i32,
@@ -3125,7 +3133,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::HttpWebRequest
     }
 }
 #[cfg(feature = "cordl_class_System+Net+HttpWebRequest+__GetRewriteHandler_b__271_0_d")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HttpWebRequest___GetRewriteHandler_b__271_0_d {
     pub __1__state: i32,

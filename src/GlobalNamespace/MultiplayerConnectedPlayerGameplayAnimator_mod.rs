@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameplayAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerGameplayAnimator {
     __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
     pub _bigAvatarAnimator:

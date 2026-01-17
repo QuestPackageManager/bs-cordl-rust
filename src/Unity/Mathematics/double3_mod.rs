@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Mathematics+double3")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct double3 {
     pub x: f64,
@@ -4716,7 +4719,7 @@ impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::double3 {
 }
 #[cfg(feature = "cordl_class_Unity+Mathematics+double3+DebuggerProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct double3_DebuggerProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub x: f64,

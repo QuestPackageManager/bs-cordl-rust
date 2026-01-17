@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CuttingManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CuttingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,

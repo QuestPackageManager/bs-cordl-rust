@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+X509+X509ExtensionCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509ExtensionCollection {
     __cordl_parent: crate::System::Collections::CollectionBase,
     pub readOnly: bool,

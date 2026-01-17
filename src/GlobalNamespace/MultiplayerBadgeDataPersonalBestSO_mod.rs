@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerBadgeDataPersonalBestSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerBadgeDataPersonalBestSO {
     __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataSO,
     pub _weight: f32,

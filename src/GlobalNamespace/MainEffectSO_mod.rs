@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainEffectSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainEffectSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
 }

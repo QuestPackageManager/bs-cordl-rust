@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MenuRpcManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager:
@@ -5365,7 +5365,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::MenuRpcManage
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+CancelCountdownRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_CancelCountdownRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -5447,7 +5447,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+CancelLevelStartRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_CancelLevelStartRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -5529,7 +5529,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+CancelStartGameTimeRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_CancelStartGameTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -5611,7 +5611,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedBeatmapRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_ClearRecommendedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -5693,7 +5693,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -5779,7 +5779,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedBeatmapRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_ClearSelectedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -5861,7 +5861,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_ClearSelectedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -5945,7 +5945,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetCountdownEndTimeRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetCountdownEndTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6027,7 +6027,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetIsEntitledToLevelRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetIsEntitledToLevelRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6113,7 +6113,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetIsInLobbyRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetIsInLobbyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6191,7 +6191,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuRpcManage
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetIsReadyRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetIsReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6269,7 +6269,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuRpcManage
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetIsStartButtonEnabledRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetIsStartButtonEnabledRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6351,7 +6351,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetMultiplayerGameStateRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetMultiplayerGameStateRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6433,7 +6433,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetOwnedSongPacksRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetOwnedSongPacksRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6515,7 +6515,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetPlayersPermissionConfigurationRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6601,7 +6601,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedBeatmapRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetRecommendedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6683,7 +6683,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetRecommendedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6767,7 +6767,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedBeatmapRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetSelectedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6849,7 +6849,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetSelectedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -6931,7 +6931,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+GetStartedLevelRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_GetStartedLevelRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -7013,7 +7013,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
 }
@@ -7099,7 +7099,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadErrorRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_LevelLoadErrorRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7185,7 +7185,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+LevelLoadSuccessRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_LevelLoadSuccessRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7271,7 +7271,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+RecommendBeatmapRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_RecommendBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
@@ -7357,7 +7357,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+RecommendGameplayModifiersRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_RecommendGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
@@ -7443,7 +7443,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+RequestKickPlayerRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_RequestKickPlayerRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7528,10 +7528,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+RpcType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum MenuRpcManager_RpcType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CancelCountdown = 30u8,
     CancelLevelStart = 19u8,
     CancelStartGameTime = 25u8,
@@ -7649,7 +7654,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::MenuRpcMan
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SelectLevelPackRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SelectLevelPackRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7735,7 +7740,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetCountdownEndTimeRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetCountdownEndTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<i64>,
 }
@@ -7817,7 +7822,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetIsEntitledToLevelRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetIsEntitledToLevelRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7905,7 +7910,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetIsInLobbyRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetIsInLobbyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<bool>,
 }
@@ -7983,7 +7988,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuRpcManage
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetIsReadyRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetIsReadyRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<bool>,
 }
@@ -8061,7 +8066,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuRpcManage
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetIsStartButtonEnabledRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetIsStartButtonEnabledRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         crate::GlobalNamespace::CannotStartGameReason,
@@ -8147,7 +8152,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetMultiplayerGameStateRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetMultiplayerGameStateRpc {
     __cordl_parent:
         crate::GlobalNamespace::RemoteProcedureCall_1<crate::GlobalNamespace::MultiplayerGameState>,
@@ -8231,7 +8236,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetOwnedSongPacksRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetOwnedSongPacksRpc {
     __cordl_parent:
         crate::GlobalNamespace::RemoteProcedureCall_1<crate::GlobalNamespace::SongPackMask>,
@@ -8315,7 +8320,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<
@@ -8409,7 +8414,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetPlayersPermissionConfigurationRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<
@@ -8503,7 +8508,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedBeatmapRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetSelectedBeatmapRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
@@ -8589,7 +8594,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetSelectedGameplayModifiersRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
@@ -8675,7 +8680,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+SetStartGameTimeRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_SetStartGameTimeRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_1<i64>,
 }
@@ -8757,7 +8762,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MenuRpcManager+StartLevelRpc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuRpcManager_StartLevelRpc {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+HttpPollingTransport")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpPollingTransport {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Endpoint_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

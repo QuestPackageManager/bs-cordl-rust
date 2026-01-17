@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Accelerometer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Accelerometer {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
     pub _acceleration_k__BackingField:

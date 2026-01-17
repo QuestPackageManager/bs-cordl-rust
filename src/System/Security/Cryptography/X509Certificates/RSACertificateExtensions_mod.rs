@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RSACertificateExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

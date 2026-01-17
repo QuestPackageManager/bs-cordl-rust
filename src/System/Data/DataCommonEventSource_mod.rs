@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataCommonEventSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataCommonEventSource {
     __cordl_parent: crate::System::Diagnostics::Tracing::EventSource,
 }

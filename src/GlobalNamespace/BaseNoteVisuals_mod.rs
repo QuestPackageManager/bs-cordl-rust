@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BaseNoteVisuals")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseNoteVisuals {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _cutoutAnimateEffect:

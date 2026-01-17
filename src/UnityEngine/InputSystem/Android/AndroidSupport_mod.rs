@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidSupport")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidSupport {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiscriminatedUnionConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }
@@ -234,7 +234,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiscriminatedUnionConverter_Union {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub TagReader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpFunction>,
@@ -357,7 +357,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiscriminatedUnionConverter_UnionCase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Tag: i32,

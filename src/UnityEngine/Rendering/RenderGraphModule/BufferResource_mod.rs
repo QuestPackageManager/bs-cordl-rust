@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+BufferResource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BufferResource {
     __cordl_parent: crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphResource_2<
         crate::UnityEngine::Rendering::RenderGraphModule::BufferDesc,

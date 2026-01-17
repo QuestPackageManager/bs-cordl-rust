@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StandardLevelAnalytics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelAnalytics {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _standardLevelScenesTransitionSetupData:

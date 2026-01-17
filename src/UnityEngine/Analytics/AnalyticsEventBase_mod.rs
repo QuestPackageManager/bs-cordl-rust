@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+AnalyticsEventBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnalyticsEventBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub eventName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

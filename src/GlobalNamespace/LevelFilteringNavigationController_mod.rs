@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelFilteringNavigationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelFilteringNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
     pub _emptyFavoritesListInfoPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -452,7 +452,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+BasicEventConverter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataLoader_BasicEventConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _specialEventsFilter: quest_hook::libil2cpp::Gc<
@@ -618,7 +618,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+ColorNoteConverter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataLoader_ColorNoteConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
 }
@@ -757,7 +757,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+ObstacleConverter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataLoader_ObstacleConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
 }
@@ -941,7 +941,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+SliderConverter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataLoader_SliderConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
 }
@@ -1076,7 +1076,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+SpecialEventsFilter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataLoader_SpecialEventsFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventTypesToFilter: quest_hook::libil2cpp::Gc<
@@ -1221,7 +1221,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+WaypointConverter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataLoader_WaypointConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeAndRotationConverter,
 }

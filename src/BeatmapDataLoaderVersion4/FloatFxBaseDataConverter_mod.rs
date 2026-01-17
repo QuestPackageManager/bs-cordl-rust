@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxBaseDataConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

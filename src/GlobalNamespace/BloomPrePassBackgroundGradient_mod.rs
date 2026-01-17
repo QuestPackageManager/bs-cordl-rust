@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassBackgroundGradient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassBackgroundGradient {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient,
     pub _gradient: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,

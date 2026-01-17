@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonSchemaGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _UndefinedSchemaIdHandling_k__BackingField:
@@ -712,7 +712,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Schema::Json
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonSchemaGenerator_TypeSchema {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,

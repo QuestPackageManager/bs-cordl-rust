@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RasterRenderGraphPass_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RasterRenderGraphPass_1<PassData: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::RenderGraphModule::BaseRenderGraphPass_2<
         PassData,

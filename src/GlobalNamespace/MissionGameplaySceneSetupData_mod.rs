@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionGameplaySceneSetupData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionGameplaySceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub missionObjectives: quest_hook::libil2cpp::Gc<

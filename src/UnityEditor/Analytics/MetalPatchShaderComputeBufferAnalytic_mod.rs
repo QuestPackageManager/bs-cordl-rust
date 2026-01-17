@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEditor+Analytics+MetalPatchShaderComputeBufferAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MetalPatchShaderComputeBufferAnalytic {
     __cordl_parent: crate::UnityEngine::Analytics::AnalyticsEventBase,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialSwapGraphicViewStateTransition")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialSwapGraphicViewStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,

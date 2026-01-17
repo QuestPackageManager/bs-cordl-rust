@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+VerticalScrollController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VerticalScrollController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub updateScrollPositionEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,

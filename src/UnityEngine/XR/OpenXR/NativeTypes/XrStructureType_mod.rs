@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrStructureType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum XrStructureType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     XR_TYPE_COMPOSITION_LAYER_CUBE_KHR = 1000006000u32,
     XR_TYPE_COMPOSITION_LAYER_CYLINDER_KHR = 1000017000u32,
     XR_TYPE_COMPOSITION_LAYER_EQUIRECT2_KHR = 1000091000u32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PointOnEdgeException {
     __cordl_parent: crate::System::NotImplementedException,
     pub A: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint>,

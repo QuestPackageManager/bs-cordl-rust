@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVR+Input+UIButtonSquishHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIButtonSquishHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _originalScale: crate::UnityEngine::Vector3,

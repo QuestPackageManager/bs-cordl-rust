@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ToggleWithLabel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ToggleWithLabel {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ButtonWithLabel,
     pub _state: bool,

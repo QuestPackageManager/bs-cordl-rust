@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RegexCharClass {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rangelist: quest_hook::libil2cpp::Gc<
@@ -1087,7 +1087,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::RegularExpressio
     }
 }
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RegexCharClass_LowerCaseMapping {
     pub ChMin: char,
@@ -1223,7 +1226,10 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     }
 }
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRange")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RegexCharClass_SingleRange {
     pub First: char,
@@ -1354,7 +1360,7 @@ impl crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
 }
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RegexCharClass_SingleRangeComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

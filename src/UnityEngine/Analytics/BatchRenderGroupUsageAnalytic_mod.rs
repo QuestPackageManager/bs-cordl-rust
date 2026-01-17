@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+BatchRenderGroupUsageAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BatchRenderGroupUsageAnalytic {
     __cordl_parent: crate::UnityEngine::Analytics::AnalyticsEventBase,
     pub maxBRGInstance: i32,

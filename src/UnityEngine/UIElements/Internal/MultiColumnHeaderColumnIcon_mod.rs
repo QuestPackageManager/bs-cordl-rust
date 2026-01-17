@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnIcon")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnHeaderColumnIcon {
     __cordl_parent: crate::UnityEngine::UIElements::Image,
     pub _isImageInline_k__BackingField: bool,

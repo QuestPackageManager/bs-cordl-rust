@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderShaderWarmup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderShaderWarmup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _sliderMeshController:

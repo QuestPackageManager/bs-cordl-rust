@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRNotifications")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVRNotifications {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRNotifications,

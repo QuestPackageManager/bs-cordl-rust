@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+AggregateException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AggregateException {
     __cordl_parent: crate::System::Exception,
     pub m_innerExceptions: quest_hook::libil2cpp::Gc<

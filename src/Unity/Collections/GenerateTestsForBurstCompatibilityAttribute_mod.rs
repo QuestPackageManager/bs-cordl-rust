@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+GenerateTestsForBurstCompatibilityAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenerateTestsForBurstCompatibilityAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _GenericTypeArguments_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -158,10 +158,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_Unity+Collections+GenerateTestsForBurstCompatibilityAttribute+BurstCompatibleCompileTarget"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GenerateTestsForBurstCompatibilityAttribute_BurstCompatibleCompileTarget {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Editor = 1i32,
     Player = 0i32,
     PlayerAndEditor = 2i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+OriginatorID")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OriginatorID {
     __cordl_parent: crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
 }

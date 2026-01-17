@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRendererData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRendererData {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRendererData,
     pub xrSystemData:

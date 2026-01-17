@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ArrayConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayConverter {
     __cordl_parent: crate::System::ComponentModel::CollectionConverter,
 }
@@ -184,7 +184,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::ArrayC
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayConverter_ArrayPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor,
     pub _index: i32,

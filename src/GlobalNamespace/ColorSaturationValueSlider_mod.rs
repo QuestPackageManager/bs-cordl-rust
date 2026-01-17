@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorSaturationValueSlider {
     __cordl_parent: crate::HMUI::Slider2D,
     pub _hue: f32,

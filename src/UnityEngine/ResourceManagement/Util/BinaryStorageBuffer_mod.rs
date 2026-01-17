@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BinaryStorageBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -249,7 +249,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BinaryStorageBuffer_BuiltinTypesSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -668,7 +668,10 @@ impl
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BinaryStorageBuffer_DynamicString {
     pub stringId: u32,
@@ -787,7 +790,7 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicSt
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter"
 )]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct BinaryStorageBuffer_ISerializationAdapter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -971,7 +974,7 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ISerializationAdapter_1"
 )]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct BinaryStorageBuffer_ISerializationAdapter_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1080,7 +1083,10 @@ impl<T: quest_hook::libil2cpp::Type>
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BinaryStorageBuffer_ObjectTypeData {
     pub typeId: u32,
@@ -1198,7 +1204,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {}
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BinaryStorageBuffer_Reader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -2152,7 +2158,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BinaryStorageBuffer_TypeSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2415,7 +2421,7 @@ impl
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BinaryStorageBuffer_Writer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub totalBytes: u32,
@@ -3246,7 +3252,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
     pub stringId: u32,
@@ -3366,7 +3375,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_Binary
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Reader_BinaryStorageBuffer_StringCreationState {
     pub id: u32,
@@ -3488,7 +3500,10 @@ impl crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_St
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TypeSerializer_BinaryStorageBuffer_Data {
     pub assemblyId: u32,
@@ -3606,7 +3621,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {}
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+Chunk")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Writer_BinaryStorageBuffer_Chunk {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub position: u32,
@@ -3695,7 +3710,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Writer_BinaryStorageBuffer_StringParts {
     pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

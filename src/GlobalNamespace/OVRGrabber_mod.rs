@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRGrabber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRGrabber {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub grabBegin: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+LiteralDataPacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiteralDataPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
     pub format: i32,

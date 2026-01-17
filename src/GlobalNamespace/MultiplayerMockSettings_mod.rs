@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerMockSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerMockSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _localPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,

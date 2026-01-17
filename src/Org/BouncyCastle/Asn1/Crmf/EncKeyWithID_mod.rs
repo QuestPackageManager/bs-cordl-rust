@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Crmf+EncKeyWithID")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EncKeyWithID {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub privKeyInfo:

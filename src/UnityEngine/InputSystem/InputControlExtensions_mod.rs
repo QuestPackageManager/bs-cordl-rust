@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputControlExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1492,7 +1492,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+ControlBuilder")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlExtensions_ControlBuilder {
     pub _control_k__BackingField:
@@ -2174,7 +2177,10 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+DeviceBuilder")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlExtensions_DeviceBuilder {
     pub _device_k__BackingField:
@@ -2689,10 +2695,15 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputControlExtensions_Enumerate {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     IgnoreControlsInCurrentState = 2i32,
     IgnoreControlsInDefaultState = 1i32,
     IncludeNoisyControls = 8i32,
@@ -2786,7 +2797,10 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlCollection"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlExtensions_InputEventControlCollection {
     pub m_Device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
@@ -3082,7 +3096,10 @@ impl AsMut<crate::System::Collections::IEnumerable>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlExtensions_InputEventControlEnumerator {
     pub m_Flags: crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate,

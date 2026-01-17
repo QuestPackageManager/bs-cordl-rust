@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DropdownDialogPromptViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DropdownDialogPromptViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -337,7 +337,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_DropdownDialogPromptViewController+ButtonAndLabel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DropdownDialogPromptViewController_ButtonAndLabel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _component: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

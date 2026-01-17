@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+ZeroOpNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ZeroOpNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
     pub _op: i32,

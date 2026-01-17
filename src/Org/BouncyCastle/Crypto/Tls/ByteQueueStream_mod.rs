@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+ByteQueueStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ByteQueueStream {
     __cordl_parent: crate::System::IO::Stream,
     pub buffer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::ByteQueue>,

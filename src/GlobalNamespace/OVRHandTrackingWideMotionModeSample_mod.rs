@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRHandTrackingWideMotionModeSample")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHandTrackingWideMotionModeSample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub fusionToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

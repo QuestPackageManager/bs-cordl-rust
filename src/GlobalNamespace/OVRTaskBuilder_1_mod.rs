@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRTaskBuilder_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTaskBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub _pooledStateMachine:
@@ -425,7 +428,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTaskBuilder_1<T>
 }
 #[cfg(feature = "cordl_class_OVRTaskBuilder_1+PooledStateMachine")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTaskBuilder_1_PooledStateMachine<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Task: crate::System::Nullable_1<crate::GlobalNamespace::OVRTask_1<T>>,
@@ -581,7 +584,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_OVRTaskBuilder_1+PooledStateMachine_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTaskBuilder_1_PooledStateMachine_1<
     T: quest_hook::libil2cpp::Type,
     TStateMachine: quest_hook::libil2cpp::Type,

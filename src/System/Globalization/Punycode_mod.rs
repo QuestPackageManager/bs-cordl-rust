@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+Punycode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Punycode {
     __cordl_parent: crate::System::Globalization::Bootstring,
 }

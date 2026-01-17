@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+NoTransitionsToggle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoTransitionsToggle {
     __cordl_parent: crate::UnityEngine::UI::Toggle,
     pub selectionStateDidChangeEvent:

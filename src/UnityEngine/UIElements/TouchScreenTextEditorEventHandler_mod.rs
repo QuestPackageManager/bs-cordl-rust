@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TouchScreenTextEditorEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TouchScreenTextEditorEventHandler {
     __cordl_parent: crate::UnityEngine::UIElements::TextEditorEventHandler,
     pub m_TouchKeyboardPoller:

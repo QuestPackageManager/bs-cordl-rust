@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Pool+CollectionPool_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionPool_2<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,

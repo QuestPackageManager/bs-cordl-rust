@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassBackgroundTextureGradient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassBackgroundTextureGradient {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
     pub _tintColor: crate::UnityEngine::Color,

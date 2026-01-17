@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimpleCollator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub textInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::TextInfo>,
@@ -1767,7 +1767,10 @@ impl AsMut<crate::System::Globalization::ISimpleCollator>
     }
 }
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Context")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SimpleCollator_Context {
     pub Option: crate::System::Globalization::CompareOptions,
@@ -1924,7 +1927,10 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     }
 }
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+Escape")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SimpleCollator_Escape {
     pub Source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2032,10 +2038,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
 impl crate::Mono::Globalization::Unicode::SimpleCollator_Escape {}
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SimpleCollator_ExtenderType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Buggy = 4i32,
     Conditional = 3i32,
     None = 0i32,
@@ -2127,7 +2138,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SimpleCollator_PreviousInfo {
     pub Code: i32,

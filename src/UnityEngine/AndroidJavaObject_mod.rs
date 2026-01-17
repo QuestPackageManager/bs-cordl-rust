@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AndroidJavaObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidJavaObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_jobject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GlobalJavaObjectRef>,

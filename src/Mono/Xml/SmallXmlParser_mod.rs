@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SmallXmlParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub handler: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IContentHandler>,
@@ -581,7 +581,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Xml::SmallXmlParser {
 }
 #[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+AttrListImpl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SmallXmlParser_AttrListImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub attrNames: quest_hook::libil2cpp::Gc<
@@ -901,7 +901,7 @@ impl AsMut<crate::Mono::Xml::SmallXmlParser_IAttrList>
     }
 }
 #[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+IAttrList")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct SmallXmlParser_IAttrList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1125,7 +1125,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Xml::SmallXmlParser_IAtt
     }
 }
 #[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+IContentHandler")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct SmallXmlParser_IContentHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

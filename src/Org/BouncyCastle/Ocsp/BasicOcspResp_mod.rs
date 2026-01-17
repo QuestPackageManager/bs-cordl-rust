@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+BasicOcspResp")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicOcspResp {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
     pub resp: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::BasicOcspResponse>,

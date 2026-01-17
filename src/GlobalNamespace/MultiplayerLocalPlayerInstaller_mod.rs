@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalPlayerInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalPlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _levelSceneSetupData:

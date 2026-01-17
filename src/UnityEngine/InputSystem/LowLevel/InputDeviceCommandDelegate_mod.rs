@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceCommandDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputDeviceCommandDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

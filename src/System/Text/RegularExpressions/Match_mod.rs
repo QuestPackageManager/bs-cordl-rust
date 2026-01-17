@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+Match")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Match {
     __cordl_parent: crate::System::Text::RegularExpressions::Group,
     pub _groupcoll:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_WaypointsTestGameplayManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaypointsTestGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outerCapsuleStart: crate::UnityEngine::Vector3,

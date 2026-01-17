@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AudioSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioSource {
     __cordl_parent: crate::UnityEngine::AudioBehaviour,
 }

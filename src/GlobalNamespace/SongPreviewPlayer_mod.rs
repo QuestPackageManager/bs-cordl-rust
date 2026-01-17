@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongPreviewPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongPreviewPlayer {
     __cordl_parent: crate::GlobalNamespace::AudioPlayerBase,
     pub _channelsCount: i32,
@@ -551,7 +551,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPreviewPl
 }
 #[cfg(feature = "cordl_class_SongPreviewPlayer+AudioSourceParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongPreviewPlayer_AudioSourceParams {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _position: crate::UnityEngine::Vector3,
@@ -714,7 +714,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_SongPreviewPlayer+AudioSourceVolumeController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongPreviewPlayer_AudioSourceVolumeController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
@@ -891,7 +891,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_SongPreviewPlayer+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongPreviewPlayer_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ambientVolumeScale: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Animations+NotKeyableAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NotKeyableAttribute {
     __cordl_parent: crate::System::Attribute,
 }

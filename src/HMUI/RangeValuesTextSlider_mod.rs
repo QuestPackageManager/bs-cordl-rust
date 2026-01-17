@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+RangeValuesTextSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RangeValuesTextSlider {
     __cordl_parent: crate::HMUI::TextSlider,
     pub _minValue: f32,

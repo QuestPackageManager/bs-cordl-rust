@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderPathCompatibleAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderPathCompatibleAttribute {
     __cordl_parent: crate::System::Attribute,
     pub renderPath: crate::UnityEngine::Rendering::Universal::RenderPathCompatibility,

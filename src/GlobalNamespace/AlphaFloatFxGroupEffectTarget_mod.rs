@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AlphaFloatFxGroupEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AlphaFloatFxGroupEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _staticColor: crate::UnityEngine::Color,

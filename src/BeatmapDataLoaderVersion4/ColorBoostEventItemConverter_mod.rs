@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorBoostEventItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _colorBoostEvents: quest_hook::libil2cpp::Gc<

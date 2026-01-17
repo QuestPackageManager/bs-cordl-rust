@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+Internal+ReflectionTypeInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionTypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -215,7 +215,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::Internal::ReflectionT
 }
 #[cfg(feature = "cordl_class_Zenject+Internal+ReflectionTypeInfo+InjectConstructorInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionTypeInfo_InjectConstructorInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ConstructorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
@@ -338,7 +338,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionTypeInfo_InjectFieldInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FieldInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
@@ -432,7 +432,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Zenject+Internal+ReflectionTypeInfo+InjectMethodInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionTypeInfo_InjectMethodInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub MethodInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -555,7 +555,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Zenject+Internal+ReflectionTypeInfo+InjectParameterInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionTypeInfo_InjectParameterInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ParameterInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
@@ -649,7 +649,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Zenject+Internal+ReflectionTypeInfo+InjectPropertyInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionTypeInfo_InjectPropertyInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub PropertyInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrueOverdraw {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _overdrawType_k__BackingField: crate::TrueOverdraw::TrueOverdraw_OverdrawType,
@@ -425,10 +425,15 @@ impl AsMut<crate::System::IDisposable> for crate::TrueOverdraw::TrueOverdraw {
     }
 }
 #[cfg(feature = "cordl_class_TrueOverdraw+TrueOverdraw+OverdrawType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TrueOverdraw_OverdrawType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Everything = 3i32,
     None = 0i32,
     Opaque = 2i32,

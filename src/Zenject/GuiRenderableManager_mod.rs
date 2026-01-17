@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+GuiRenderableManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GuiRenderableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _renderables: quest_hook::libil2cpp::Gc<
@@ -212,7 +212,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::GuiRenderableManager 
 }
 #[cfg(feature = "cordl_class_Zenject+GuiRenderableManager+RenderableInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GuiRenderableManager_RenderableInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Renderable: quest_hook::libil2cpp::Gc<crate::Zenject::IGuiRenderable>,

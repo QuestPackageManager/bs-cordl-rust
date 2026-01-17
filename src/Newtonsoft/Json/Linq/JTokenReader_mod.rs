@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JTokenReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JTokenReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,

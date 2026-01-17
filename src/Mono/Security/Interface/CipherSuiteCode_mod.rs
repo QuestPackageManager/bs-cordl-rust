@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_Mono+Security+Interface+CipherSuiteCode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u16)]
 pub enum CipherSuiteCode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA = 17u16,
     TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA = 19u16,
     TLS_DHE_DSS_WITH_AES_128_CBC_SHA = 50u16,

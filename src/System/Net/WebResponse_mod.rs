@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebResponse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebResponse {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub m_IsFromCache: bool,

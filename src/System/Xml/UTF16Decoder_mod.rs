@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+UTF16Decoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF16Decoder {
     __cordl_parent: crate::System::Text::Decoder,
     pub bigEndian: bool,

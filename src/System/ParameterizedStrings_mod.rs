@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ParameterizedStrings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParameterizedStrings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -373,7 +373,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ParameterizedStrings {
     }
 }
 #[cfg(feature = "cordl_class_System+ParameterizedStrings+FormatParam")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ParameterizedStrings_FormatParam {
     pub _int32: i32,
@@ -616,7 +619,7 @@ impl crate::System::ParameterizedStrings_FormatParam {
 }
 #[cfg(feature = "cordl_class_System+ParameterizedStrings+LowLevelStack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParameterizedStrings_LowLevelStack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _arr: quest_hook::libil2cpp::Gc<

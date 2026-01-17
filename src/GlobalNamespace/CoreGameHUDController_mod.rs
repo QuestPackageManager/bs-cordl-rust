@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CoreGameHUDController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CoreGameHUDController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _songProgressPanelGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -237,7 +237,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CoreGameHUDCo
 }
 #[cfg(feature = "cordl_class_CoreGameHUDController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CoreGameHUDController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hide: bool,

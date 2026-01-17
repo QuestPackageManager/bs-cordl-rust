@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_ColorGradient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_ColorGradient {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub colorMode: crate::TMPro::ColorMode,

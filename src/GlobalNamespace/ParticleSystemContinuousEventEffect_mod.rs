@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ParticleSystemContinuousEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemContinuousEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,

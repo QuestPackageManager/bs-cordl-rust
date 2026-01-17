@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+FactoryArgumentsToChoiceBinder_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FactoryArgumentsToChoiceBinder_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::FactoryToChoiceBinder_1<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,

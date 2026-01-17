@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Event {
     padding: quest_hook::libil2cpp::ValueTypePadding<112usize>,
@@ -650,7 +653,7 @@ impl AsMut<crate::UnityEngine::InputForUI::IEventProperties>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event+IMapFn_1")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct Event_IMapFn_1<TOutputType: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -760,7 +763,10 @@ impl<TOutputType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event+MapAsEventModifiers")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Event_MapAsEventModifiers {}
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event+MapAsEventModifiers")]
@@ -926,7 +932,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event+MapAsEventSource")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Event_MapAsEventSource {}
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event+MapAsEventSource")]
@@ -1085,7 +1094,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event+MapAsObject")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Event_MapAsObject {}
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event+MapAsObject")]
@@ -1246,10 +1258,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+Event+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Event_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CommandEvent = 5i32,
     IMECompositionEvent = 4i32,
     Invalid = 0i32,

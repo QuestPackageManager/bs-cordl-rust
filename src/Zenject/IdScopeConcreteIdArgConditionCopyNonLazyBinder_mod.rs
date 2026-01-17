@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+IdScopeConcreteIdArgConditionCopyNonLazyBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IdScopeConcreteIdArgConditionCopyNonLazyBinder {
     __cordl_parent: crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
 }

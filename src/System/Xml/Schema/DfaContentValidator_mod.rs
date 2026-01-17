@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+DfaContentValidator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DfaContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
     pub transitionTable: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+RtFieldInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RtFieldInfo {
     __cordl_parent: crate::System::Reflection::FieldInfo,
 }

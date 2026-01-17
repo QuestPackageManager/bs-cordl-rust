@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMPro_ExtensionMethods")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMPro_ExtensionMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

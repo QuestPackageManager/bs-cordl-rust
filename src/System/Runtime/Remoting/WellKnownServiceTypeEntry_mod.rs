@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+WellKnownServiceTypeEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WellKnownServiceTypeEntry {
     __cordl_parent: crate::System::Runtime::Remoting::TypeEntry,
     pub obj_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

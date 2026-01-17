@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Video+VideoPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoPlayer {
     __cordl_parent: crate::UnityEngine::Behaviour,
     pub prepareCompleted:
@@ -4903,7 +4903,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Video::VideoPlaye
 }
 #[cfg(feature = "cordl_class_UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoPlayer_ErrorEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5022,7 +5022,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Video+VideoPlayer+EventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoPlayer_EventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5138,7 +5138,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Video::VideoPlaye
 }
 #[cfg(feature = "cordl_class_UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoPlayer_FrameReadyEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5257,7 +5257,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Video+VideoPlayer+TimeEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoPlayer_TimeEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }

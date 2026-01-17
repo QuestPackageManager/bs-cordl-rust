@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct STP {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -465,7 +465,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::STP {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+Config")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct STP_Config {
     pub noiseTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -584,7 +587,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Renderin
 impl crate::UnityEngine::Rendering::STP_Config {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+HistoryContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct STP_HistoryContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_textures: quest_hook::libil2cpp::Gc<
@@ -785,10 +788,15 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::STP_Hi
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+HistoryTextureType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum STP_HistoryTextureType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Convergence = 2i32,
     Count = 4i32,
     DepthMotion = 0i32,
@@ -878,7 +886,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+HistoryUpdateInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct STP_HistoryUpdateInfo {
     pub preUpscaleSize: crate::UnityEngine::Vector2Int,
@@ -981,7 +992,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+STP+HistoryUpdateInfo")]
 impl crate::UnityEngine::Rendering::STP_HistoryUpdateInfo {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+PerViewConfig")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct STP_PerViewConfig {
     pub currentProj: crate::UnityEngine::Matrix4x4,
@@ -1081,7 +1095,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::Rendering::STP_PerViewConfig {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+PreTaaData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct STP_PreTaaData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
@@ -1168,10 +1182,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::STP_Pr
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+ProfileId")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum STP_ProfileId {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     StpPreTaa = 1i32,
     StpSetup = 0i32,
     StpTaa = 2i32,
@@ -1252,7 +1271,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::STP
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+RuntimeResources")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct STP_RuntimeResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_setupCS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
@@ -1540,7 +1559,7 @@ impl AsMut<crate::UnityEngine::Rendering::IRenderPipelineResources>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+SetupData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct STP_SetupData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
@@ -1637,7 +1656,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::STP_Se
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+ShaderKeywords")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct STP_ShaderKeywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1687,7 +1706,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::STP_Sh
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+ShaderResources")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct STP_ShaderResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1736,7 +1755,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::STP_Sh
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+StpConstantBufferData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct STP_StpConstantBufferData {
     pub _StpCommonConstant: crate::UnityEngine::Vector4,
@@ -1857,10 +1879,15 @@ impl crate::UnityEngine::Rendering::STP_StpConstantBufferData {
     pub type __StpSetupPerViewConstants_e__FixedBuffer = crate::UnityEngine::Rendering::StpConstantBufferData_STP___StpSetupPerViewConstants_e__FixedBuffer;
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+StpSetupPerViewConstants")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum STP_StpSetupPerViewConstants {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = 8i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+StpSetupPerViewConstants")]
@@ -1949,7 +1976,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+STP+TaaData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct STP_TaaData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
@@ -2041,7 +2068,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::STP_Ta
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+STP+StpConstantBufferData+__StpSetupPerViewConstants_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StpConstantBufferData_STP___StpSetupPerViewConstants_e__FixedBuffer {
     pub FixedElementField: f32,

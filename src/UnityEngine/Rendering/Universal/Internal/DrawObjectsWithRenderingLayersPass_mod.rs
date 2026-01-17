@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DrawObjectsWithRenderingLayersPass"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DrawObjectsWithRenderingLayersPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::Internal::DrawObjectsPass,
     pub m_ColorTargetIndentifiers: quest_hook::libil2cpp::Gc<
@@ -302,7 +302,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+DrawObjectsWithRenderingLayersPass+RenderingLayersPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DrawObjectsWithRenderingLayersPass_RenderingLayersPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub basePassData: quest_hook::libil2cpp::Gc<

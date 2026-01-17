@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Values: quest_hook::libil2cpp::Gc<
@@ -1560,7 +1560,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyReader_GetCursorIdFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

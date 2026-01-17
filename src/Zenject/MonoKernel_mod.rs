@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MonoKernel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoKernel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tickableManager: quest_hook::libil2cpp::Gc<crate::Zenject::TickableManager>,

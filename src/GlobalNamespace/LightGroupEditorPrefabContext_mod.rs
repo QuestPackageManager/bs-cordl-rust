@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightGroupEditorPrefabContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightGroupEditorPrefabContext {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub lightGroups: quest_hook::libil2cpp::Gc<

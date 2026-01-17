@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsAuthEnvelopedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recipientInfoStore:
@@ -174,7 +174,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Cms::CmsAut
     feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsAuthEnvelopedData_AuthEnvelopedSecureReadable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parent: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData>,

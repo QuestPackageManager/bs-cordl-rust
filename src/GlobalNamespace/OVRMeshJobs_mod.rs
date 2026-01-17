@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRMeshJobs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRMeshJobs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -85,7 +85,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMeshJobs {
     }
 }
 #[cfg(feature = "cordl_class_OVRMeshJobs+NativeArrayHelper_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRMeshJobs_NativeArrayHelper_1<T: quest_hook::libil2cpp::Type> {
     pub UnityNativeArray: crate::Unity::Collections::NativeArray_1<T>,
@@ -278,7 +281,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRMeshJobs+TransformToUnitySpaceJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRMeshJobs_TransformToUnitySpaceJob {
     pub Vertices: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
@@ -435,7 +441,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
     }
 }
 #[cfg(feature = "cordl_class_OVRMeshJobs+TransformTrianglesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRMeshJobs_TransformTrianglesJob {
     pub Triangles: crate::Unity::Collections::NativeArray_1<u32>,

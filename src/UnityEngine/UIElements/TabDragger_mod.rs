@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TabDragger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TabDragger {
     __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
     pub m_StartPos: f32,

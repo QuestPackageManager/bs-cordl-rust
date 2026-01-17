@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaElementDecl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SchemaElementDecl {
     __cordl_parent: crate::System::Xml::Schema::SchemaDeclBase,
     pub attdefs: quest_hook::libil2cpp::Gc<

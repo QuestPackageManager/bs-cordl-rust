@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+DecoderNLS")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecoderNLS {
     __cordl_parent: crate::System::Text::Decoder,
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,

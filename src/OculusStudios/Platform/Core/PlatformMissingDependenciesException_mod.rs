@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+PlatformMissingDependenciesException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformMissingDependenciesException {
     __cordl_parent: crate::System::Exception,
 }

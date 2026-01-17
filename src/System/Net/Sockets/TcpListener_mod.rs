@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Sockets+TcpListener")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TcpListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ServerSocketEP: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,

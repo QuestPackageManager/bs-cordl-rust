@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SearchFilterParamsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SearchFilterParamsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _filterByOwnedToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

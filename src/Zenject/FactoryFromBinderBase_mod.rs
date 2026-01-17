@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+FactoryFromBinderBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FactoryFromBinderBase {
     __cordl_parent: crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     pub _BindContainer_k__BackingField: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

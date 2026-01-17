@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidLinearAccelerationSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::LinearAccelerationSensor,
 }

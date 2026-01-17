@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsAuthenticatedGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
 }

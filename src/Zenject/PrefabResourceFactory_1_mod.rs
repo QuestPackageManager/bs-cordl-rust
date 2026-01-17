@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrefabResourceFactory_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

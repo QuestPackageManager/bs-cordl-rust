@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+ClassMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClassMap {
     __cordl_parent: crate::System::Xml::Serialization::ObjectMap,
     pub _elements: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NotifyCollectionChangedEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,

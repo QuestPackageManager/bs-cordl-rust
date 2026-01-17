@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstanceDataSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_InstanceAllocators: crate::UnityEngine::Rendering::InstanceAllocators,
@@ -1549,7 +1549,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::Instan
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+CalculateInterpolatedLightAndOcclusionProbesBatchJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_CalculateInterpolatedLightAndOcclusionProbesBatchJob {
     pub probesCount: i32,
@@ -1718,7 +1721,10 @@ for crate::UnityEngine::Rendering::InstanceDataSystem_CalculateInterpolatedLight
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+CollectInstancesLODGroupsAndMasksJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_CollectInstancesLODGroupsAndMasksJob {
     pub instances:
@@ -1881,7 +1887,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+ComputeInstancesOffsetAndResizeInstancesArrayJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_ComputeInstancesOffsetAndResizeInstancesArrayJob {
     pub instancesCount: crate::Unity::Collections::NativeArray_1<i32>,
@@ -2041,7 +2050,10 @@ for crate::UnityEngine::Rendering::InstanceDataSystem_ComputeInstancesOffsetAndR
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+FreeInstancesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_FreeInstancesJob {
     pub instances:
@@ -2192,7 +2204,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+FreeRendererGroupInstancesJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_FreeRendererGroupInstancesJob {
     pub rendererGroupsID: crate::Unity::Collections::NativeArray_1<i32>,
@@ -2354,7 +2369,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+GetVisibleNonProcessedTreeInstancesJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_GetVisibleNonProcessedTreeInstancesJob {
     pub instanceData: crate::UnityEngine::Rendering::CPUInstanceData,
@@ -2522,7 +2540,7 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+InstanceTransformUpdateIDs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstanceDataSystem_InstanceTransformUpdateIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2580,7 +2598,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+InstanceWindDataUpdateIDs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstanceDataSystem_InstanceWindDataUpdateIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2637,7 +2655,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+MotionUpdateJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_MotionUpdateJob {
     pub queueWriteBase: i32,
@@ -2786,7 +2807,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+ProbesUpdateJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_ProbesUpdateJob {
     pub instances:
@@ -2942,7 +2966,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+QueryRendererGroupInstancesCountJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_QueryRendererGroupInstancesCountJob {
     pub instanceData: crate::UnityEngine::Rendering::CPUInstanceData,
@@ -3109,7 +3136,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+QueryRendererGroupInstancesJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_QueryRendererGroupInstancesJob {
     pub rendererGroupInstanceMultiHash: crate::Unity::Collections::NativeParallelMultiHashMap_2<
@@ -3277,7 +3307,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+QueryRendererGroupInstancesMultiJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_QueryRendererGroupInstancesMultiJob {
     pub rendererGroupInstanceMultiHash: crate::Unity::Collections::NativeParallelMultiHashMap_2<
@@ -3447,7 +3480,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+QuerySortedMeshInstancesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_QuerySortedMeshInstancesJob {
     pub instanceData: crate::UnityEngine::Rendering::CPUInstanceData,
@@ -3597,7 +3633,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+ReallocateInstancesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_ReallocateInstancesJob {
     pub implicitInstanceIndices: bool,
@@ -3755,7 +3794,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+ScatterTetrahedronCacheIndicesJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_ScatterTetrahedronCacheIndicesJob {
     pub probeInstances:
@@ -3915,7 +3957,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+TransformUpdateJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_TransformUpdateJob {
     pub initialize: bool,
@@ -4081,7 +4126,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+UpdateCompactedInstanceVisibilityJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_UpdateCompactedInstanceVisibilityJob {
     pub compactedVisibilityMasks: crate::UnityEngine::Rendering::ParallelBitArray,
@@ -4240,7 +4288,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+InstanceDataSystem+UpdateRendererInstancesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstanceDataSystem_UpdateRendererInstancesJob {
     pub implicitInstanceIndices: bool,

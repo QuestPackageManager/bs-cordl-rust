@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassBloomTextureEffectSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassBloomTextureEffectSO {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassEffectSO,
     pub _radius: f32,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BackgroundRepeat {
     pub x: crate::UnityEngine::UIElements::Repeat,
@@ -316,7 +319,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Backgroun
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BackgroundRepeat_PropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::UIElements::BackgroundRepeat,
@@ -406,7 +409,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat+PropertyBag+XProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_BackgroundRepeat_XProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::BackgroundRepeat,
@@ -601,7 +604,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundRepeat+PropertyBag+YProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_BackgroundRepeat_YProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::BackgroundRepeat,

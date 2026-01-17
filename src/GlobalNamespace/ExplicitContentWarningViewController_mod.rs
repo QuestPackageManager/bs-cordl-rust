@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ExplicitContentWarningViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExplicitContentWarningViewController {
     __cordl_parent: crate::GlobalNamespace::CompletableViewController_1<
         crate::GlobalNamespace::PlayerSensitivityFlag,

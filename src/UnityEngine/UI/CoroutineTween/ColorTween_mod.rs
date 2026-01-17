@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ColorTween {
     pub m_Target: quest_hook::libil2cpp::Gc<
@@ -465,7 +468,7 @@ impl AsMut<crate::UnityEngine::UI::CoroutineTween::ITweenValue>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorTween_ColorTweenCallback {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Color>,
 }
@@ -546,10 +549,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ColorTween_ColorTweenMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 0i32,
     Alpha = 2i32,
     RGB = 1i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimplePriorityQueue_2<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -1258,7 +1258,7 @@ impl<TItem: quest_hook::libil2cpp::Type, TPriority: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_2+SimpleNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimplePriorityQueue_2_SimpleNode<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

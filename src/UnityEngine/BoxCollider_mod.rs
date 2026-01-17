@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+BoxCollider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoxCollider {
     __cordl_parent: crate::UnityEngine::Collider,
 }

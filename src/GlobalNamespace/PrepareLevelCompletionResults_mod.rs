@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PrepareLevelCompletionResults")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrepareLevelCompletionResults {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _gameplayModifiersModelSO:

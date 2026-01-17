@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JoiningLobbyViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JoiningLobbyViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _cancelJoiningButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

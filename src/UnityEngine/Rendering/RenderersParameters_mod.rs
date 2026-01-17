@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderersParameters")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderersParameters {
     pub lightmapScale: crate::UnityEngine::Rendering::RenderersParameters_ParamInfo,
@@ -224,10 +227,15 @@ impl crate::UnityEngine::Rendering::RenderersParameters {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderersParameters+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RenderersParameters_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     UseBoundingSphereParameter = 1i32,
 }
@@ -316,7 +324,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderersParameters+ParamInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderersParameters_ParamInfo {
     pub index: i32,
@@ -443,7 +454,7 @@ impl crate::UnityEngine::Rendering::RenderersParameters_ParamInfo {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderersParameters+ParamNames")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderersParameters_ParamNames {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

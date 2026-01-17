@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameLiftPlayerSessionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _udpPingEndpoints: quest_hook::libil2cpp::Gc<

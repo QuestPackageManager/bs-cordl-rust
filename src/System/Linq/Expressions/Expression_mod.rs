@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -8578,7 +8578,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::Exp
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_BinaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -8632,7 +8632,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+BlockExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_BlockExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -8686,7 +8686,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+CatchBlockProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_CatchBlockProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -8740,7 +8740,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_ConditionalExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -8796,7 +8796,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ConstantExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_ConstantExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -8850,7 +8850,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_DebugInfoExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -8904,7 +8904,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_DefaultExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -8958,7 +8958,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ExtensionInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_ExtensionInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NodeType: crate::System::Linq::Expressions::ExpressionType,
@@ -9014,7 +9014,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+GotoExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_GotoExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9068,7 +9068,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+IndexExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_IndexExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9122,7 +9122,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+InvocationExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_InvocationExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9176,7 +9176,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LabelExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_LabelExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9230,7 +9230,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_LambdaExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9284,7 +9284,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ListInitExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_ListInitExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9338,7 +9338,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+LoopExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_LoopExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9392,7 +9392,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+MemberExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_MemberExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9446,7 +9446,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_MemberInitExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9500,7 +9500,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_MethodCallExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9554,7 +9554,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_NewArrayExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9608,7 +9608,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+NewExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_NewExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9662,7 +9662,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+ParameterExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_ParameterExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9716,7 +9716,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_RuntimeVariablesExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9774,7 +9774,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchCaseProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_SwitchCaseProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9828,7 +9828,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_SwitchExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9882,7 +9882,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+TryExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_TryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9936,7 +9936,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_TypeBinaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -9990,7 +9990,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Expression_UnaryExpressionProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

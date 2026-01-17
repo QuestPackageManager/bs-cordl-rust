@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OpenXRRuntimeBasedActionBindingComposite")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRRuntimeBasedActionBindingComposite {
     __cordl_parent: crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>,
     pub oculusRuntime: i32,

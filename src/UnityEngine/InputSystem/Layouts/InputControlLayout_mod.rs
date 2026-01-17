@@ -1,7 +1,10 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Builder_InputControlLayout_ControlBuilder {
     pub builder: quest_hook::libil2cpp::Gc<
@@ -703,7 +706,10 @@ impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Contro
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Collection_InputControlLayout_LayoutMatcher {
     pub layoutName: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -822,7 +828,10 @@ impl crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Lay
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Collection_InputControlLayout_PrecompiledLayout {
     pub factoryMethod: quest_hook::libil2cpp::Gc<
@@ -943,10 +952,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout")]
 impl crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ControlItem_InputControlLayout_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DontReset = 16i32,
     IsFirstDefinedInThisLayout = 8i32,
     IsNoisy = 2i32,
@@ -1039,7 +1053,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputControlLayout {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Name: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2527,7 +2541,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputControlLayout_Builder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _name_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3289,7 +3303,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlLayout_Cache {
     pub table: quest_hook::libil2cpp::Gc<
@@ -3451,7 +3468,10 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlLayout_CacheRefInstance {
     pub valid: bool,
@@ -3592,7 +3612,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlLayout_Collection {
     pub layoutTypes: quest_hook::libil2cpp::Gc<
@@ -4223,7 +4246,10 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlLayout_ControlItem {
     pub _name_k__BackingField: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5586,7 +5612,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputControlLayout_ControlItemJson {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -5781,10 +5807,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputControlLayout_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CanRunInBackground = 8i32,
     CanRunInBackgroundIsSet = 16i32,
     HideInUI = 2i32,
@@ -5877,7 +5908,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlLayout_LayoutJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6069,7 +6103,10 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlLayout_LayoutJsonNameAndDescriptorOnly {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6197,7 +6234,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonName
     feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputControlLayout_LayoutNotFoundException {
     __cordl_parent: crate::System::Exception,
     pub _layout_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

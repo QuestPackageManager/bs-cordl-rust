@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ContextCallback_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContextCallback_1<TState: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,

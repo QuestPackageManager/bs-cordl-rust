@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JProperty {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
     pub _content: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JProperty_JPropertyList>,
@@ -1010,7 +1010,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Linq::JPrope
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JProperty+JPropertyList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JProperty_JPropertyList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _token: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,

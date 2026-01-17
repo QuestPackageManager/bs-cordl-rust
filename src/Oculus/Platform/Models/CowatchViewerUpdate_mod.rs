@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+CowatchViewerUpdate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CowatchViewerUpdate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub DataList: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::CowatchViewerList>,

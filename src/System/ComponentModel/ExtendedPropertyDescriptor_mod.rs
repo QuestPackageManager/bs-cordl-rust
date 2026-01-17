@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ExtendedPropertyDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExtendedPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub _extenderInfo:

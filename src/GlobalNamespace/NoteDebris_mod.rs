@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteDebris")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteDebris {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _meshTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -242,7 +242,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteDebris {
 }
 #[cfg(feature = "cordl_class_NoteDebris+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteDebris_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,

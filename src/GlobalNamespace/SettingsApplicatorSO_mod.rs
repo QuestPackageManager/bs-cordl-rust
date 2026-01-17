@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SettingsApplicatorSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SettingsApplicatorSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _mirrorRendererGraphicsSettingsPresets:

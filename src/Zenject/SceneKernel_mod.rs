@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SceneKernel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneKernel {
     __cordl_parent: crate::Zenject::MonoKernel,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MenuScenesTransitionSetupDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimplePriorityQueue_1<TItem: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Priority_Queue::SimplePriorityQueue_2<TItem, f32>,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,

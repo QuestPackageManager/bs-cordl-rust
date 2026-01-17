@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FirstPersonFlyingControllerEnableHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FirstPersonFlyingControllerEnableHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _flyingController:

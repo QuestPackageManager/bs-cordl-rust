@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Clipping")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Clipping {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

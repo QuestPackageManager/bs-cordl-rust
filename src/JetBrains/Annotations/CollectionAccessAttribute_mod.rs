@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+CollectionAccessAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionAccessAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _CollectionAccessType_k__BackingField: crate::JetBrains::Annotations::CollectionAccessType,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+MonoIO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoIO {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

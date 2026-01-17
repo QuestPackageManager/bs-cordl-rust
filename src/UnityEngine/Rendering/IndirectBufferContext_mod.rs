@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IndirectBufferContext")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IndirectBufferContext {
     pub cullingJobHandle: crate::Unity::Jobs::JobHandle,
@@ -161,10 +164,15 @@ impl crate::UnityEngine::Rendering::IndirectBufferContext {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+IndirectBufferContext+BufferState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum IndirectBufferContext_BufferState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllInstancesOcclusionTested = 3i32,
     NoOcclusionTest = 2i32,
     OccludedInstancesReTested = 4i32,

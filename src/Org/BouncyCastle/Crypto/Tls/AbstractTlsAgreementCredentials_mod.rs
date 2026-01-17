@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+AbstractTlsAgreementCredentials")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AbstractTlsAgreementCredentials {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCredentials,
 }

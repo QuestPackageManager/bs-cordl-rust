@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ConstantBufferSingleton_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConstantBufferSingleton_1<CBType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::ConstantBuffer_1<CBType>,
     __cordl_phantom_CBType: std::marker::PhantomData<CBType>,

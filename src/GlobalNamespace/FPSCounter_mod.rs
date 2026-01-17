@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FPSCounter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FPSCounter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _currentFPS_k__BackingField: i32,

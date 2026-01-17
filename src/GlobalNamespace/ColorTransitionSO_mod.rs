@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorTransitionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorTransitionSO {
     __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
     pub _normalColor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,

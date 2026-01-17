@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphyManager {
     __cordl_parent: crate::Tayx::Graphy::Utils::G_Singleton_1<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
@@ -2088,10 +2088,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::GraphyManager {
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+LookForAudioListener")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyManager_LookForAudioListener {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ALWAYS = 0i32,
     NEVER = 2i32,
     ON_SCENE_LOAD = 1i32,
@@ -2181,10 +2186,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+Mode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyManager_Mode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FULL = 0i32,
     LIGHT = 1i32,
 }
@@ -2263,10 +2273,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Tayx::Graphy::GraphyManager
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePosition")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyManager_ModulePosition {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BOTTOM_LEFT = 3i32,
     BOTTOM_RIGHT = 2i32,
     FREE = 4i32,
@@ -2348,10 +2363,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Tayx::Graphy::GraphyManager
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModulePreset")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyManager_ModulePreset {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FPS_BASIC = 0i32,
     FPS_BASIC_ADVANCED_FULL = 11i32,
     FPS_FULL = 2i32,
@@ -2440,10 +2460,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Tayx::Graphy::GraphyManager
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyManager_ModuleState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BACKGROUND = 3i32,
     BASIC = 2i32,
     FULL = 0i32,
@@ -2525,10 +2550,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Tayx::Graphy::GraphyManager
     }
 }
 #[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager+ModuleType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphyManager_ModuleType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ADVANCED = 3i32,
     AUDIO = 2i32,
     FPS = 0i32,

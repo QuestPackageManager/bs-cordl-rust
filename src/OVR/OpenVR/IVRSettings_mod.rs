@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRSettings {
     pub GetSettingsErrorNameFromEnum:
@@ -131,7 +134,7 @@ impl crate::OVR::OpenVR::IVRSettings {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_GetBool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__GetBool {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -315,7 +318,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__GetB
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_GetFloat")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__GetFloat {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -499,7 +502,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__GetF
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_GetInt32")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__GetInt32 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -683,7 +686,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__GetI
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_GetSettingsErrorNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__GetSettingsErrorNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -858,7 +861,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_GetString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__GetString {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1061,7 +1064,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__GetS
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_RemoveKeyInSection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__RemoveKeyInSection {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1245,7 +1248,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__Remo
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_RemoveSection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__RemoveSection {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1421,7 +1424,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__Remo
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_SetBool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__SetBool {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1617,7 +1620,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__SetB
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_SetFloat")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__SetFloat {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1813,7 +1816,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__SetF
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_SetInt32")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__SetInt32 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2009,7 +2012,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__SetI
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_SetString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__SetString {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2205,7 +2208,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRSettings__SetS
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSettings+_Sync")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSettings__Sync {
     __cordl_parent: crate::System::MulticastDelegate,
 }

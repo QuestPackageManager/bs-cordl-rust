@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NtlmAuthLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LM_and_NTLM = 0i32,
     LM_and_NTLM_and_try_NTLMv2_Session = 1i32,
     NTLM_only = 2i32,

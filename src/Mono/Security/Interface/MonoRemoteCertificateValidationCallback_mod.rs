@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoRemoteCertificateValidationCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoRemoteCertificateValidationCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

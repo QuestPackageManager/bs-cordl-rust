@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PanelSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub themeUss: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ThemeStyleSheet>,
@@ -1643,7 +1643,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Panel
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PanelSettings_RuntimePanelAccess {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Settings: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PanelSettings>,

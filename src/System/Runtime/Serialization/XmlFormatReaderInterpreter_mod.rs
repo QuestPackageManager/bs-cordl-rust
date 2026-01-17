@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlFormatReaderInterpreter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlFormatReaderInterpreter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub is_get_only_collection: bool,

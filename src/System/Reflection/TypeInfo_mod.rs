@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+TypeInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeInfo {
     __cordl_parent: crate::System::Type,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Entity")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Entity {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_EntityType: crate::UnityEngine::ProBuilder::EntityType,

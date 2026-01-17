@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettingsStats_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsStats_1<TProfileId: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _debugDisplayStats_k__BackingField:
@@ -260,7 +260,7 @@ impl<TProfileId: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettingsStats_1+StatsPanel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettingsStats_1_StatsPanel<TProfileId: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::DebugDisplaySettingsPanel,
     pub m_Data: quest_hook::libil2cpp::Gc<

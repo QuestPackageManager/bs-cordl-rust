@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GroundShadow")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GroundShadow {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataBindingManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_BindingDataLocalPool: quest_hook::libil2cpp::Gc<
@@ -1106,7 +1106,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::DataB
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataBindingManager_BindingData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: i64,
@@ -1295,7 +1295,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingDataCollection")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DataBindingManager_BindingDataCollection {
     pub m_BindingPerId: quest_hook::libil2cpp::Gc<
@@ -1623,7 +1626,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+BindingRequest")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DataBindingManager_BindingRequest {
     pub bindingId: crate::UnityEngine::UIElements::BindingId,
@@ -1787,7 +1793,10 @@ impl crate::UnityEngine::UIElements::DataBindingManager_BindingRequest {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+ChangesFromUI")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DataBindingManager_ChangesFromUI {
     pub version: i64,
@@ -1942,7 +1951,7 @@ impl crate::UnityEngine::UIElements::DataBindingManager_ChangesFromUI {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataBindingManager_HierarchyBindingTracker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Panel: quest_hook::libil2cpp::Gc<
@@ -2418,7 +2427,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataBindingManager_HierarchyDataSourceTracker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_SourceInfosPool: quest_hook::libil2cpp::Gc<
@@ -3179,7 +3188,7 @@ impl AsMut<crate::System::IDisposable>
     feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyBindingTracker+HierarchicalBindingsSorter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyBindingTracker_DataBindingManager_HierarchicalBindingsSorter {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
     pub _boundElements_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -3467,7 +3476,7 @@ for crate::UnityEngine::UIElements::HierarchyBindingTracker_DataBindingManager_H
     feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+InvalidateDataSourcesTraversal"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyDataSourceTracker_DataBindingManager_InvalidateDataSourcesTraversal {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
     pub m_DataSourceTracker: quest_hook::libil2cpp::Gc<
@@ -3667,7 +3676,7 @@ for crate::UnityEngine::UIElements::HierarchyDataSourceTracker_DataBindingManage
     feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+ObjectComparer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyDataSourceTracker_DataBindingManager_ObjectComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3859,7 +3868,7 @@ impl
     feature = "cordl_class_UnityEngine+UIElements+DataBindingManager+HierarchyDataSourceTracker+SourceInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyDataSourceTracker_DataBindingManager_SourceInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DetectedChanges: quest_hook::libil2cpp::Gc<

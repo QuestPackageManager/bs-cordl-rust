@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+InspectorPanel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InspectorPanel {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::DebugPanel,
     pub _scrollView: quest_hook::libil2cpp::Gc<

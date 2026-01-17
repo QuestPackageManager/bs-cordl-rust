@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputStateHistory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _onRecordAdded_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -1309,7 +1309,10 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputStateHistory_Enumerator {
     pub m_History:
@@ -1619,7 +1622,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputStateHistory_Record {
     pub m_Owner:
@@ -2318,7 +2324,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputStateHistory_RecordHeader {
     padding: quest_hook::libil2cpp::ValueTypePadding<17usize>,
@@ -2487,7 +2496,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -2606,7 +2618,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
     pub FixedElementField: u8,

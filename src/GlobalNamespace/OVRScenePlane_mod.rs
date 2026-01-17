@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRScenePlane")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRScenePlane {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Width_k__BackingField: f32,
@@ -584,7 +584,10 @@ impl AsMut<crate::GlobalNamespace::IOVRSceneComponent> for crate::GlobalNamespac
     }
 }
 #[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRScenePlane_GetBoundaryJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
@@ -765,7 +768,10 @@ impl AsMut<crate::Unity::Jobs::IJob> for crate::GlobalNamespace::OVRScenePlane_G
     }
 }
 #[cfg(feature = "cordl_class_OVRScenePlane+GetBoundaryLengthJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRScenePlane_GetBoundaryLengthJob {
     pub Space: crate::GlobalNamespace::OVRSpace,

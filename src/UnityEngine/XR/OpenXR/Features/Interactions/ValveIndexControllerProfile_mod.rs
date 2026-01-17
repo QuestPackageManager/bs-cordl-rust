@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+ValveIndexControllerProfile"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ValveIndexControllerProfile {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature,
 }
@@ -217,7 +217,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+ValveIndexControllerProfile+ValveIndexController"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ValveIndexControllerProfile_ValveIndexController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     pub _system_k__BackingField:

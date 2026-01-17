@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebException {
     __cordl_parent: crate::System::InvalidOperationException,
     pub m_Status: crate::System::Net::WebExceptionStatus,

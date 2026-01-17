@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DirectionalLightWithIdsGroupEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _directionalLightWithIds:
@@ -219,7 +219,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+GroupLightData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DirectionalLightWithIdsGroupEntry_GroupLightData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
@@ -361,7 +361,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_DirectionalLightWithIdsGroupEntry+LightIntensitiesWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lightId: i32,

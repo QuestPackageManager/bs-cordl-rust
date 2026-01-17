@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlTextWriterBase64Encoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextWriterBase64Encoder {
     __cordl_parent: crate::System::Xml::Base64Encoder,
     pub xmlTextEncoder: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextEncoder>,

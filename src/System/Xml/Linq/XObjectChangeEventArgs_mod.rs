@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChangeEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XObjectChangeEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _objectChange: crate::System::Xml::Linq::XObjectChange,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SignalListener")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalListener {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+LeafRangeNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeafRangeNode {
     __cordl_parent: crate::System::Xml::Schema::LeafNode,
     pub min: crate::System::Decimal,

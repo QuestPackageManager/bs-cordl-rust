@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLayoutProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLayoutProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _layout_k__BackingField: crate::GlobalNamespace::MultiplayerPlayerLayout,

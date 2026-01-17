@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
@@ -506,7 +506,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetSerializ
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_BoolSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, bool>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -751,7 +751,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_ByteSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u8>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -996,7 +996,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_CharSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<T, char>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -1175,7 +1175,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_ClassInfo_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _serializers: quest_hook::libil2cpp::Gc<
@@ -1379,7 +1379,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+CustomType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_CustomType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1492,7 +1492,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetSerializ
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_CustomTypeClass_1<TProperty: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_CustomType,
     pub _constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
@@ -1655,7 +1655,7 @@ impl<TProperty: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_CustomTypeStatic_1<TProperty: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_CustomType,
     pub _writer: quest_hook::libil2cpp::Gc<
@@ -1861,7 +1861,7 @@ impl<TProperty: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_CustomTypeStruct_1<TProperty: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_CustomType,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
@@ -2015,7 +2015,7 @@ impl<TProperty: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_DoubleSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, f64>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -2260,7 +2260,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_EnumByteSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
     pub Property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
@@ -2453,7 +2453,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_EnumIntSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -2644,7 +2644,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+FastCallClass_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_FastCallClass_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
@@ -2930,7 +2930,7 @@ impl<TClass: quest_hook::libil2cpp::Type, TProperty: quest_hook::libil2cpp::Type
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+FastCallSpecificAuto_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_FastCallSpecificAuto_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
@@ -3281,7 +3281,7 @@ impl<TClass: quest_hook::libil2cpp::Type, TProperty: quest_hook::libil2cpp::Type
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+FastCallSpecific_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_FastCallSpecific_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
@@ -3555,7 +3555,7 @@ impl<TClass: quest_hook::libil2cpp::Type, TProperty: quest_hook::libil2cpp::Type
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+FastCallStatic_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_FastCallStatic_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
@@ -3884,7 +3884,7 @@ impl<TClass: quest_hook::libil2cpp::Type, TProperty: quest_hook::libil2cpp::Type
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+FastCallStruct_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_FastCallStruct_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
@@ -4162,7 +4162,7 @@ impl<TClass: quest_hook::libil2cpp::Type, TProperty: quest_hook::libil2cpp::Type
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+FastCall_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_FastCall_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub IsArray: bool,
@@ -4440,7 +4440,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_FloatSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, f32>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -4685,7 +4685,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_IPEndPointSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<
         T,
@@ -4880,7 +4880,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_IntSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i32>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -5125,7 +5125,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_LongSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i64>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -5370,7 +5370,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_SByteSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i8>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -5615,7 +5615,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_ShortSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i16>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -5860,7 +5860,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+StringSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_StringSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
         T,
@@ -6115,7 +6115,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_UIntSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u32>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -6360,7 +6360,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_ULongSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u64>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -6605,7 +6605,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSerializer_UShortSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u16>,
     __cordl_phantom_T: std::marker::PhantomData<T>,

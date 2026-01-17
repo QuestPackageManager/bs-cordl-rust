@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+IntDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::PrimitiveDataContract,
 }

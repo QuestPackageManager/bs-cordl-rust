@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+AxisElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AxisElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub curNode: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,

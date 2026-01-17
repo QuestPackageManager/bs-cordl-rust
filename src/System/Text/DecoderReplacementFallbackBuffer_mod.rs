@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+DecoderReplacementFallbackBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecoderReplacementFallbackBuffer {
     __cordl_parent: crate::System::Text::DecoderFallbackBuffer,
     pub _strDefault: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

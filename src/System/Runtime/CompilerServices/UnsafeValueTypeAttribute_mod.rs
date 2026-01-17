@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+UnsafeValueTypeAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeValueTypeAttribute {
     __cordl_parent: crate::System::Attribute,
 }

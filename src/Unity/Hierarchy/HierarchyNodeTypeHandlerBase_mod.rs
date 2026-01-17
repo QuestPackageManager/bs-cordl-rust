@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeTypeHandlerBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyNodeTypeHandlerBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -789,7 +789,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Hierarchy::HierarchyNod
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeTypeHandlerBase+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyNodeTypeHandlerBase_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -869,7 +869,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeTypeHandlerBase+ConstructorScope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HierarchyNodeTypeHandlerBase_ConstructorScope {}
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeTypeHandlerBase+ConstructorScope")]

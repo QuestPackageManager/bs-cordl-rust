@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+ConstrainedPointSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConstrainedPointSet {
     __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::PointSet,
     pub _EdgeIndex_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+InstanceRestriction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindingRestrictions_InstanceRestriction {
     __cordl_parent: crate::System::Dynamic::BindingRestrictions,
     pub _expression: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,

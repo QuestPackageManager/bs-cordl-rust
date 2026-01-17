@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

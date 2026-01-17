@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ImageWithHintItemsList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImageWithHintItemsList {
     __cordl_parent:
         crate::HMUI::UIItemsList_1<quest_hook::libil2cpp::Gc<crate::HMUI::ImageWithHint>>,

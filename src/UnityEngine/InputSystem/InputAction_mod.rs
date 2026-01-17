@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputAction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputAction {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1550,10 +1550,15 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::InputSystem::Inpu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputAction+ActionFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputAction_ActionFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     WantsInitialStateCheck = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputAction+ActionFlags")]
@@ -1641,7 +1646,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputAction+CallbackContext")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputAction_CallbackContext {
     pub m_State: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionState>,

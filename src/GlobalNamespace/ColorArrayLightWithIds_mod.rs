@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorArrayLightWithIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorArrayLightWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _colorArrayLightWithIds: quest_hook::libil2cpp::Gc<
@@ -323,7 +323,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorArrayLig
 }
 #[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorArrayLightWithIds_ColorArrayLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIds_LightWithId,
     pub _index: i32,

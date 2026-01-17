@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+InfiniteRuntimeClip")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InfiniteRuntimeClip {
     __cordl_parent: crate::UnityEngine::Timeline::RuntimeElement,
     pub m_Playable: crate::UnityEngine::Playables::Playable,

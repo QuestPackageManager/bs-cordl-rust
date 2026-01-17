@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRMetricsToolSDK")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRMetricsToolSDK {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
@@ -486,7 +486,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMetricsToo
     }
 }
 #[cfg(feature = "cordl_class_OVRMetricsToolSDK+MetricsSnapshot")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRMetricsToolSDK_MetricsSnapshot {
     pub _cordl_time: i64,

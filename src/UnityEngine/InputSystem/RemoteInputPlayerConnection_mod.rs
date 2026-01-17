@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemoteInputPlayerConnection {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Connection: quest_hook::libil2cpp::Gc<
@@ -554,7 +554,7 @@ impl AsMut<crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemo
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemoteInputPlayerConnection_Subscriber {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub owner:

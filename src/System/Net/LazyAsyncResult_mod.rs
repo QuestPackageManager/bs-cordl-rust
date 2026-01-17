@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+LazyAsyncResult")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LazyAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AsyncObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -572,7 +572,7 @@ impl AsMut<crate::System::IAsyncResult> for crate::System::Net::LazyAsyncResult 
 }
 #[cfg(feature = "cordl_class_System+Net+LazyAsyncResult+ThreadContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LazyAsyncResult_ThreadContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_NestedIOCount: i32,

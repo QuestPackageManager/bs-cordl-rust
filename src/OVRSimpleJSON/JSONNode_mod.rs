@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONNode+Enumerator+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Enumerator_JSONNode_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Array = 1i32,
     None = 0i32,
     Object = 2i32,
@@ -83,7 +88,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::OVRSimpleJSON::Enumerator_J
 }
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JSONNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2934,7 +2939,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVRSimpleJSON::JSONNode {
     }
 }
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONNode+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JSONNode_Enumerator {
     pub _cordl_type: crate::OVRSimpleJSON::Enumerator_JSONNode_Type,
@@ -3162,7 +3170,10 @@ impl crate::OVRSimpleJSON::JSONNode_Enumerator {
     }
 }
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONNode+KeyEnumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JSONNode_KeyEnumerator {
     pub m_Enumerator: crate::OVRSimpleJSON::JSONNode_Enumerator,
@@ -3407,7 +3418,7 @@ impl crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
 }
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONNode+LinqEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JSONNode_LinqEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Node: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
@@ -3816,7 +3827,10 @@ impl AsMut<crate::System::IDisposable> for crate::OVRSimpleJSON::JSONNode_LinqEn
     }
 }
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONNode+ValueEnumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JSONNode_ValueEnumerator {
     pub m_Enumerator: crate::OVRSimpleJSON::JSONNode_Enumerator,

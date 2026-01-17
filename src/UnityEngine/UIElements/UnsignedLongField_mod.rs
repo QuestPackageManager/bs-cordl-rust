@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedLongField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsignedLongField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<u64>,
 }
@@ -259,7 +259,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Unsig
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsignedLongField_UnsignedLongInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<u64>,
 }
@@ -504,7 +504,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsignedLongField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UnsignedLongField>,
@@ -592,7 +592,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsignedLongField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         u64,

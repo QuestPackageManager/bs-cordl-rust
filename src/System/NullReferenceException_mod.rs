@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+NullReferenceException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NullReferenceException {
     __cordl_parent: crate::System::SystemException,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomFogEnvironmentParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomFogEnvironmentParams {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub attenuation: f32,

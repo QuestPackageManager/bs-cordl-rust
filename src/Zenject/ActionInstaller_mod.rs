@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ActionInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ActionInstaller {
     __cordl_parent:
         crate::Zenject::Installer_1<quest_hook::libil2cpp::Gc<crate::Zenject::ActionInstaller>>,

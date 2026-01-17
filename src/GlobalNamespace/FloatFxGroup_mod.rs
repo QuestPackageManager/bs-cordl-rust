@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatFxGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxGroup {
     __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _isTriggerOnly: bool,

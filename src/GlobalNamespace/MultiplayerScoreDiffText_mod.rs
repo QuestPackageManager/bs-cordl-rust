@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerScoreDiffText")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerScoreDiffText {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _activeTextColor: crate::UnityEngine::Color,
@@ -325,10 +325,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerSc
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerScoreDiffText+HorizontalPosition")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MultiplayerScoreDiffText_HorizontalPosition {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Left = 0i32,
     Right = 1i32,
 }
@@ -417,10 +422,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerScoreDiffText+State")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MultiplayerScoreDiffText_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AnimatingDisplay = 2i32,
     AnimatingHide = 3i32,
     Displayed = 1i32,

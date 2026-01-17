@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Principal+GenericPrincipal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericPrincipal {
     __cordl_parent: crate::System::Security::Claims::ClaimsPrincipal,
     pub m_identity: quest_hook::libil2cpp::Gc<crate::System::Security::Principal::IIdentity>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+SecureStringHasher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecureStringHasher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hashCodeRandomizer: i32,
@@ -218,7 +218,7 @@ impl
 }
 #[cfg(feature = "cordl_class_System+Xml+SecureStringHasher+HashCodeOfStringDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecureStringHasher_HashCodeOfStringDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

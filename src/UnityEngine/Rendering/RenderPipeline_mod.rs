@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipeline")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderPipeline {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed_k__BackingField: bool,
@@ -528,7 +528,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Render
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipeline+StandardRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderPipeline_StandardRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destination: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DisappearingArrowController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisappearingArrowController {
     __cordl_parent: crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,

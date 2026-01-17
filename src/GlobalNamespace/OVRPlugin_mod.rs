@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Annotation_Qpl_OVRPlugin_Builder {
     pub _entries: quest_hook::libil2cpp::Gc<
@@ -558,7 +561,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder+Entry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Builder_Annotation_Qpl_OVRPlugin_Entry {
     pub Key: crate::System::IntPtr,
@@ -663,10 +669,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+Qpl+Annotation+Builder+Entry")]
 impl crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry {}
 #[cfg(feature = "cordl_class_OVRPlugin+Media+InputVideoBufferType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Media_OVRPlugin_InputVideoBufferType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EnumSize = 2147483647i32,
     Memory = 0i32,
     TextureHandle = 1i32,
@@ -756,10 +767,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Media+MrcActivationMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Media_OVRPlugin_MrcActivationMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Automatic = 0i32,
     Disabled = 1i32,
     EnumSize = 2147483647i32,
@@ -849,10 +865,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Media+PlatformCameraMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Media_OVRPlugin_PlatformCameraMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Disabled = -1i32,
     EnumSize = 2147483647i32,
     Initialized = 0i32,
@@ -950,7 +971,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRPlugin")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -10594,10 +10615,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+ActionTypes")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_ActionTypes {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Boolean = 1i32,
     Float = 2i32,
     Pose = 4i32,
@@ -10679,7 +10705,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+AppPerfFrameStats")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_AppPerfFrameStats {
     pub HmdVsyncIndex: i32,
@@ -10792,7 +10821,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+AppPerfFrameStats")]
 impl crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats {}
 #[cfg(feature = "cordl_class_OVRPlugin+AppPerfStats")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_AppPerfStats {
     pub FrameStats: quest_hook::libil2cpp::Gc<
@@ -10889,10 +10921,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+AppPerfStats")]
 impl crate::GlobalNamespace::OVRPlugin_AppPerfStats {}
 #[cfg(feature = "cordl_class_OVRPlugin+BatteryStatus")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_BatteryStatus {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Charging = 0i32,
     Discharging = 1i32,
     Full = 2i32,
@@ -10974,10 +11011,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BlendFactor")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_BlendFactor {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DstAlpha = 4i32,
     One = 1i32,
     OneMinusDstAlpha = 5i32,
@@ -11060,7 +11102,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BodyJointLocation")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_BodyJointLocation {
     pub LocationFlags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
@@ -11238,10 +11283,15 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BodyJointSet")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_BodyJointSet {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FullBody = 1i32,
     None = -1i32,
     UpperBody = 0i32,
@@ -11321,7 +11371,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BodyState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_BodyState {
     pub JointLocations: quest_hook::libil2cpp::Gc<
@@ -11421,7 +11474,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+BodyState")]
 impl crate::GlobalNamespace::OVRPlugin_BodyState {}
 #[cfg(feature = "cordl_class_OVRPlugin+BodyState4Internal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_BodyState4Internal {
     pub IsActive: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -11610,7 +11666,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+BodyState4Internal")]
 impl crate::GlobalNamespace::OVRPlugin_BodyState4Internal {}
 #[cfg(feature = "cordl_class_OVRPlugin+BodyStateInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_BodyStateInternal {
     pub IsActive: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -11783,7 +11842,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+BodyStateInternal")]
 impl crate::GlobalNamespace::OVRPlugin_BodyStateInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_BodyTrackingCalibrationInfo {
     pub BodyHeight: f32,
@@ -11887,10 +11949,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+BodyTrackingCalibrationInfo")]
 impl crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_BodyTrackingCalibrationState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Calibrating = 2i32,
     Invalid = 3i32,
     Valid = 1i32,
@@ -11980,10 +12047,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingFidelity2")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_BodyTrackingFidelity2 {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 2i32,
     Low = 1i32,
 }
@@ -12072,7 +12144,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Bone")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Bone {
     pub Id: crate::GlobalNamespace::OVRPlugin_BoneId,
@@ -12166,7 +12241,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Bone")]
 impl crate::GlobalNamespace::OVRPlugin_Bone {}
 #[cfg(feature = "cordl_class_OVRPlugin+BoneCapsule")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_BoneCapsule {
     pub BoneIndex: i16,
@@ -12261,10 +12339,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+BoneCapsule")]
 impl crate::GlobalNamespace::OVRPlugin_BoneCapsule {}
 #[cfg(feature = "cordl_class_OVRPlugin+BoneId")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_BoneId {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Body_Chest = 5i32,
     Body_End = 70i32,
     Body_Head = 7i32,
@@ -12428,10 +12511,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Bool")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Bool {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     False = 0i32,
     True = 1i32,
 }
@@ -12510,7 +12598,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BoundaryGeometry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_BoundaryGeometry {
     pub BoundaryType: crate::GlobalNamespace::OVRPlugin_BoundaryType,
@@ -12610,7 +12701,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+BoundaryGeometry")]
 impl crate::GlobalNamespace::OVRPlugin_BoundaryGeometry {}
 #[cfg(feature = "cordl_class_OVRPlugin+BoundaryTestResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_BoundaryTestResult {
     pub IsTriggering: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -12713,10 +12807,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+BoundaryTestResult")]
 impl crate::GlobalNamespace::OVRPlugin_BoundaryTestResult {}
 #[cfg(feature = "cordl_class_OVRPlugin+BoundaryType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_BoundaryType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     OuterBoundary = 1i32,
     PlayArea = 256i32,
 }
@@ -12795,10 +12894,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BoundaryVisibility")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_BoundaryVisibility {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     NotSuppressed = 1i32,
     Suppressed = 2i32,
 }
@@ -12883,7 +12987,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Boundsf")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Boundsf {
     pub Pos: crate::GlobalNamespace::OVRPlugin_Vector3f,
@@ -12976,10 +13083,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Boundsf")]
 impl crate::GlobalNamespace::OVRPlugin_Boundsf {}
 #[cfg(feature = "cordl_class_OVRPlugin+CameraAnchorType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_CameraAnchorType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CameraAnchorType_Count = 2i32,
     CameraAnchorType_Custom = 1i32,
     CameraAnchorType_EnumSize = 2147483647i32,
@@ -13062,10 +13174,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+CameraDevice")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_CameraDevice {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     WebCamera0 = 100i32,
     WebCamera1 = 101i32,
@@ -13146,10 +13263,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+CameraDeviceDepthQuality")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_CameraDeviceDepthQuality {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,
@@ -13239,10 +13361,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+CameraDeviceDepthSensingMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_CameraDeviceDepthSensingMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Fill = 1i32,
     Standard = 0i32,
 }
@@ -13331,7 +13458,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+CameraDeviceIntrinsicsParameters")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_CameraDeviceIntrinsicsParameters {
     pub fx: f32,
@@ -13448,7 +13578,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+CameraDeviceIntrinsicsParameters")]
 impl crate::GlobalNamespace::OVRPlugin_CameraDeviceIntrinsicsParameters {}
 #[cfg(feature = "cordl_class_OVRPlugin+CameraExtrinsics")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_CameraExtrinsics {
     pub IsValid: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -13548,7 +13681,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+CameraExtrinsics")]
 impl crate::GlobalNamespace::OVRPlugin_CameraExtrinsics {}
 #[cfg(feature = "cordl_class_OVRPlugin+CameraIntrinsics")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_CameraIntrinsics {
     pub IsValid: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -13649,10 +13785,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+CameraIntrinsics")]
 impl crate::GlobalNamespace::OVRPlugin_CameraIntrinsics {}
 #[cfg(feature = "cordl_class_OVRPlugin+CameraStatus")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_CameraStatus {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CameraStatus_Calibrated = 4i32,
     CameraStatus_Calibrating = 2i32,
     CameraStatus_CalibrationFailed = 3i32,
@@ -13736,7 +13877,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+ColocationSessionStartAdvertisementInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ColocationSessionStartAdvertisementInfo {
     pub PeerMetadataCount: u32,
@@ -13841,10 +13985,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+ColocationSessionStartAdvertisementInfo")]
 impl crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+ColorSpace")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_ColorSpace {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Adobe_RGB = 8i32,
     P3 = 7i32,
     Quest = 6i32,
@@ -13930,7 +14079,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Colorf")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Colorf {
     pub r: f32,
@@ -14052,10 +14204,15 @@ impl crate::GlobalNamespace::OVRPlugin_Colorf {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Controller")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Controller {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Active = -2147483648i32,
     All = -1i32,
     Gamepad = 16i32,
@@ -14143,7 +14300,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+ControllerState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ControllerState {
     pub ConnectedControllers: u32,
@@ -14246,7 +14406,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+ControllerState")]
 impl crate::GlobalNamespace::OVRPlugin_ControllerState {}
 #[cfg(feature = "cordl_class_OVRPlugin+ControllerState2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ControllerState2 {
     pub ConnectedControllers: u32,
@@ -14380,7 +14543,10 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState2 {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+ControllerState4")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ControllerState4 {
     pub ConnectedControllers: u32,
@@ -14546,7 +14712,10 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState4 {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+ControllerState5")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ControllerState5 {
     pub ConnectedControllers: u32,
@@ -14692,7 +14861,10 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState5 {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+ControllerState6")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ControllerState6 {
     pub ConnectedControllers: u32,
@@ -14840,10 +15012,15 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState6 {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectClass")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_DynamicObjectClass {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Keyboard = 1000587000i32,
     None = 0i32,
 }
@@ -14928,7 +15105,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_DynamicObjectData {
     pub ClassType: crate::GlobalNamespace::OVRPlugin_DynamicObjectClass,
@@ -15028,7 +15208,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+DynamicObjectData")]
 impl crate::GlobalNamespace::OVRPlugin_DynamicObjectData {}
 #[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_DynamicObjectTrackedClassesSetInfo {
     pub Classes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -15133,7 +15316,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
 impl crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+EventDataBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_EventDataBuffer {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -15228,10 +15414,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+EventDataBuffer")]
 impl crate::GlobalNamespace::OVRPlugin_EventDataBuffer {}
 #[cfg(feature = "cordl_class_OVRPlugin+EventType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_EventType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BoundaryVisibilityChanged = 510i32,
     ColocationSessionAdvertisementComplete = 371i32,
     ColocationSessionDiscoveryComplete = 375i32,
@@ -15340,10 +15531,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Eye")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Eye {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = 2i32,
     Left = 0i32,
     None = -1i32,
@@ -15424,7 +15620,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+EyeGazeState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_EyeGazeState {
     pub Pose: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -15538,7 +15737,10 @@ impl crate::GlobalNamespace::OVRPlugin_EyeGazeState {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+EyeGazesState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_EyeGazesState {
     pub EyeGazes: quest_hook::libil2cpp::Gc<
@@ -15635,7 +15837,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+EyeGazesState")]
 impl crate::GlobalNamespace::OVRPlugin_EyeGazesState {}
 #[cfg(feature = "cordl_class_OVRPlugin+EyeGazesStateInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_EyeGazesStateInternal {
     pub EyeGazes_0: crate::GlobalNamespace::OVRPlugin_EyeGazeState,
@@ -15741,10 +15946,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+EyeGazesStateInternal")]
 impl crate::GlobalNamespace::OVRPlugin_EyeGazesStateInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+EyeTextureFormat")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_EyeTextureFormat {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     B8G8R8A8 = 5i32,
     B8G8R8A8_sRGB = 4i32,
     Default = 0i32,
@@ -15831,10 +16041,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceConstants")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FaceConstants {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FaceVisemesCount = 15i32,
     MaxFaceExpressions = 63i32,
     MaxFaceExpressions2 = 70i32,
@@ -15915,10 +16130,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceExpression")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FaceExpression {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Brow_Lowerer_L = 0i32,
     Brow_Lowerer_R = 1i32,
     Cheek_Puff_L = 2i32,
@@ -16060,10 +16280,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceExpression2")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FaceExpression2 {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Brow_Lowerer_L = 0i32,
     Brow_Lowerer_R = 1i32,
     Cheek_Puff_L = 2i32,
@@ -16212,7 +16437,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceExpressionStatus")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_FaceExpressionStatus {
     pub IsValid: bool,
@@ -16315,7 +16543,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+FaceExpressionStatus")]
 impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus {}
 #[cfg(feature = "cordl_class_OVRPlugin+FaceExpressionStatusInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_FaceExpressionStatusInternal {
     pub IsValid: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -16446,10 +16677,15 @@ impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceRegionConfidence")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FaceRegionConfidence {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Lower = 0i32,
     Max = 2i32,
     Upper = 1i32,
@@ -16537,7 +16773,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_FaceState {
     pub ExpressionWeights: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -16634,7 +16873,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+FaceState")]
 impl crate::GlobalNamespace::OVRPlugin_FaceState {}
 #[cfg(feature = "cordl_class_OVRPlugin+FaceState2Internal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_FaceState2Internal {
     pub ExpressionWeights_0: f32,
@@ -16808,7 +17050,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+FaceState2Internal")]
 impl crate::GlobalNamespace::OVRPlugin_FaceState2Internal {}
 #[cfg(feature = "cordl_class_OVRPlugin+FaceStateInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_FaceStateInternal {
     pub ExpressionWeights_0: f32,
@@ -16974,10 +17219,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+FaceStateInternal")]
 impl crate::GlobalNamespace::OVRPlugin_FaceStateInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+FaceTrackingDataSource")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FaceTrackingDataSource {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Audio = 1i32,
     Count = 2i32,
     Visual = 0i32,
@@ -17067,10 +17317,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceViseme")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FaceViseme {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AA = 10i32,
     CH = 6i32,
     Count = 15i32,
@@ -17164,7 +17419,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_FaceVisemesState {
     pub IsValid: bool,
@@ -17262,7 +17520,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+FaceVisemesState")]
 impl crate::GlobalNamespace::OVRPlugin_FaceVisemesState {}
 #[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesStateInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_FaceVisemesStateInternal {
     pub IsValid: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -17382,10 +17643,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+FaceVisemesStateInternal")]
 impl crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+FeatureType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FeatureType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BodyTracking = 4i32,
     Count = 7i32,
     EnumSize = 2147483647i32,
@@ -17471,10 +17737,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FixedFoveatedRenderingLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FixedFoveatedRenderingLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EnumSize = 2147483647i32,
     High = 3i32,
     HighTop = 4i32,
@@ -17567,10 +17838,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FoveatedRenderingLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FoveatedRenderingLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EnumSize = 2147483647i32,
     High = 3i32,
     HighTop = 4i32,
@@ -17663,7 +17939,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Fovf")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Fovf {
     pub UpTan: f32,
@@ -17758,7 +18037,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Fovf")]
 impl crate::GlobalNamespace::OVRPlugin_Fovf {}
 #[cfg(feature = "cordl_class_OVRPlugin+FovfPair")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_FovfPair {
     pub Fov0: crate::GlobalNamespace::OVRPlugin_Fovf,
@@ -17904,7 +18186,10 @@ impl crate::GlobalNamespace::OVRPlugin_FovfPair {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Frustumf")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Frustumf {
     pub zNear: f32,
@@ -17999,7 +18284,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Frustumf")]
 impl crate::GlobalNamespace::OVRPlugin_Frustumf {}
 #[cfg(feature = "cordl_class_OVRPlugin+Frustumf2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Frustumf2 {
     pub zNear: f32,
@@ -18093,10 +18381,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Frustumf2")]
 impl crate::GlobalNamespace::OVRPlugin_Frustumf2 {}
 #[cfg(feature = "cordl_class_OVRPlugin+FutureState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_FutureState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Pending = 1i32,
     Ready = 2i32,
 }
@@ -18176,7 +18469,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
 }
 #[cfg(feature = "cordl_class_OVRPlugin+GUID")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_GUID {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub a: i32,
@@ -18265,7 +18558,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_GUI
 }
 #[cfg(feature = "cordl_class_OVRPlugin+GetBoneSkeleton2Delegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_GetBoneSkeleton2Delegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -18434,7 +18727,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRPlugin+GetBoneSkeleton3Delegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_GetBoneSkeleton3Delegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -18602,10 +18895,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Hand")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Hand {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
@@ -18685,10 +18983,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+HandFinger")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_HandFinger {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Index = 1i32,
     Max = 5i32,
     Middle = 2i32,
@@ -18771,10 +19074,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+HandFingerPinch")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_HandFingerPinch {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Index = 2i32,
     Middle = 4i32,
     Pinky = 16i32,
@@ -18856,7 +19164,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+HandState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HandState {
     pub Status: crate::GlobalNamespace::OVRPlugin_HandStatus,
@@ -18965,7 +19276,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+HandState")]
 impl crate::GlobalNamespace::OVRPlugin_HandState {}
 #[cfg(feature = "cordl_class_OVRPlugin+HandState3Internal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HandState3Internal {
     pub Status: crate::GlobalNamespace::OVRPlugin_HandStatus,
@@ -19108,7 +19422,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+HandState3Internal")]
 impl crate::GlobalNamespace::OVRPlugin_HandState3Internal {}
 #[cfg(feature = "cordl_class_OVRPlugin+HandStateInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HandStateInternal {
     pub Status: crate::GlobalNamespace::OVRPlugin_HandStatus,
@@ -19249,10 +19566,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+HandStateInternal")]
 impl crate::GlobalNamespace::OVRPlugin_HandStateInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+HandStatus")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_HandStatus {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DominantHand = 128i32,
     HandTracked = 1i32,
     InputStateValid = 2i32,
@@ -19334,7 +19656,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+HandTrackingState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HandTrackingState {
     pub Microgesture: crate::GlobalNamespace::OVRPlugin_MicrogestureType,
@@ -19434,7 +19759,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+HandTrackingState")]
 impl crate::GlobalNamespace::OVRPlugin_HandTrackingState {}
 #[cfg(feature = "cordl_class_OVRPlugin+HandTrackingStateInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HandTrackingStateInternal {
     pub Microgesture: crate::GlobalNamespace::OVRPlugin_MicrogestureType,
@@ -19538,10 +19866,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+HandTrackingStateInternal")]
 impl crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+Handedness")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Handedness {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LeftHanded = 1i32,
     RightHanded = 2i32,
     Unsupported = 0i32,
@@ -19621,7 +19954,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+HapticsAmplitudeEnvelopeVibration")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HapticsAmplitudeEnvelopeVibration {
     pub Duration: f32,
@@ -19727,7 +20063,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+HapticsAmplitudeEnvelopeVibration")]
 impl crate::GlobalNamespace::OVRPlugin_HapticsAmplitudeEnvelopeVibration {}
 #[cfg(feature = "cordl_class_OVRPlugin+HapticsBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HapticsBuffer {
     pub Samples: crate::System::IntPtr,
@@ -19822,10 +20161,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+HapticsBuffer")]
 impl crate::GlobalNamespace::OVRPlugin_HapticsBuffer {}
 #[cfg(feature = "cordl_class_OVRPlugin+HapticsConstants")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_HapticsConstants {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MaxSamples = 4000i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+HapticsConstants")]
@@ -19905,7 +20249,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+HapticsDesc")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HapticsDesc {
     pub SampleRateHz: i32,
@@ -20002,10 +20349,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+HapticsDesc")]
 impl crate::GlobalNamespace::OVRPlugin_HapticsDesc {}
 #[cfg(feature = "cordl_class_OVRPlugin+HapticsLocation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_HapticsLocation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Hand = 1i32,
     Index = 4i32,
     None = 0i32,
@@ -20086,7 +20438,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+HapticsPcmVibration")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HapticsPcmVibration {
     pub BufferSize: u32,
@@ -20192,7 +20547,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+HapticsPcmVibration")]
 impl crate::GlobalNamespace::OVRPlugin_HapticsPcmVibration {}
 #[cfg(feature = "cordl_class_OVRPlugin+HapticsState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_HapticsState {
     pub SamplesAvailable: i32,
@@ -20285,10 +20643,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+HapticsState")]
 impl crate::GlobalNamespace::OVRPlugin_HapticsState {}
 #[cfg(feature = "cordl_class_OVRPlugin+InsightPassthroughColorMapType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_InsightPassthroughColorMapType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BrightnessContrastSaturation = 4i32,
     ColorLut = 6i32,
     InterpolatedColorLut = 7i32,
@@ -20381,7 +20744,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+InsightPassthroughKeyboardHandsIntensity")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_InsightPassthroughKeyboardHandsIntensity {
     pub LeftHandIntensity: f32,
@@ -20486,7 +20852,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+InsightPassthroughKeyboardHandsIntensity")]
 impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughKeyboardHandsIntensity {}
 #[cfg(feature = "cordl_class_OVRPlugin+InsightPassthroughStyle")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_InsightPassthroughStyle {
     pub Flags: crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyleFlags,
@@ -20595,7 +20964,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+InsightPassthroughStyle")]
 impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle {}
 #[cfg(feature = "cordl_class_OVRPlugin+InsightPassthroughStyle2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_InsightPassthroughStyle2 {
     pub Flags: crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyleFlags,
@@ -20735,10 +21107,15 @@ impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2 {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+InsightPassthroughStyleFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_InsightPassthroughStyleFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HasEdgeColor = 2i32,
     HasTextureColorMap = 4i32,
     HasTextureOpacityFactor = 1i32,
@@ -20828,10 +21205,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+InteractionProfile")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_InteractionProfile {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     Touch = 1i32,
     TouchPlus = 4i32,
@@ -20918,7 +21300,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+KeyboardDescription")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_KeyboardDescription {
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -21025,10 +21410,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+KeyboardDescription")]
 impl crate::GlobalNamespace::OVRPlugin_KeyboardDescription {}
 #[cfg(feature = "cordl_class_OVRPlugin+KeyboardDescriptionConstants")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_KeyboardDescriptionConstants {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     NameMaxLength = 128i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+KeyboardDescriptionConstants")]
@@ -21116,7 +21506,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+KeyboardState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_KeyboardState {
     pub IsActive: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21217,7 +21610,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::GlobalNamespace::OVRPlugin_KeyboardState {}
 #[cfg(feature = "cordl_class_OVRPlugin+Ktx")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_Ktx {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -21460,7 +21853,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Ktx
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+LayerDesc")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_LayerDesc {
     pub Shape: crate::GlobalNamespace::OVRPlugin_OverlayShape,
@@ -21592,10 +21988,15 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+LayerFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_LayerFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AndroidSurfaceSwapChain = 128i32,
     BicubicFiltering = 16384i32,
     ChromaticAberrationCorrection = 16i32,
@@ -21681,10 +22082,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+LayerLayout")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_LayerLayout {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Array = 3i32,
     DoubleWide = 2i32,
     EnumSize = 15i32,
@@ -21766,10 +22172,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+LayerSharpenType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_LayerSharpenType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Automatic = 262144i32,
     None = 0i32,
     Normal = 8192i32,
@@ -21852,7 +22263,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+LayerSubmit")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_LayerSubmit {
     pub LayerId: i32,
@@ -21948,10 +22362,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+LayerSubmit")]
 impl crate::GlobalNamespace::OVRPlugin_LayerSubmit {}
 #[cfg(feature = "cordl_class_OVRPlugin+LayerSuperSamplingType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_LayerSuperSamplingType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     Normal = 4096i32,
     Quality = 256i32,
@@ -22042,7 +22461,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRPlugin+LogCallback2DelegateType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_LogCallback2DelegateType {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -22225,10 +22644,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+LogLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_LogLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Debug = 0i32,
     Error = 2i32,
     Info = 1i32,
@@ -22309,7 +22733,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Media")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_Media {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -23004,7 +23428,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Med
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Mesh")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_Mesh {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::GlobalNamespace::OVRPlugin_MeshType,
@@ -23100,10 +23524,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Mes
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+MeshConstants")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_MeshConstants {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MaxIndices = 18000i32,
     MaxVertices = 3000i32,
 }
@@ -23182,10 +23611,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+MeshType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_MeshType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
@@ -23267,10 +23701,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+MicrogestureType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_MicrogestureType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Invalid = -1i32,
     NoGesture = 0i32,
     SwipeBackward = 4i32,
@@ -23356,10 +23795,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Node")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Node {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ControllerLeft = 12i32,
     ControllerRight = 13i32,
     Count = 14i32,
@@ -23453,7 +23897,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_0_1_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_0_1_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -23529,7 +23973,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_0_1_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_0_1_1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -23618,7 +24062,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_0_1_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_0_1_2 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -23722,7 +24166,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_0_1_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_0_1_3 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -23823,7 +24267,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_0_5_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_0_5_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -23873,7 +24317,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_0_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_0_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -24020,7 +24464,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_100_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_100_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -24162,7 +24606,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_101_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_101_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -24212,7 +24656,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_102_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_102_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -24262,7 +24706,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_103_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_103_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -24599,7 +25043,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_104_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_104_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -24929,7 +25373,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_105_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_105_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25024,7 +25468,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_106_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_106_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25441,7 +25885,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_107_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_107_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25491,7 +25935,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_108_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_108_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25541,7 +25985,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_109_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_109_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25591,7 +26035,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_10_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_10_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25641,7 +26085,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_110_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_110_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25691,7 +26135,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_111_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_111_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25741,7 +26185,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_112_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_112_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25791,7 +26235,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_113_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_113_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25841,7 +26285,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_114_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_114_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25891,7 +26335,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_115_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_115_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25941,7 +26385,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_116_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_116_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -25991,7 +26435,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_117_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_117_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26041,7 +26485,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_118_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_118_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26091,7 +26535,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_119_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_119_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26141,7 +26585,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_11_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_11_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26241,7 +26685,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_120_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_120_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26291,7 +26735,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_121_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_121_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26341,7 +26785,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_122_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_122_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26391,7 +26835,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_123_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_123_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26441,7 +26885,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_124_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_124_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26491,7 +26935,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_125_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_125_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26541,7 +26985,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_126_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_126_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26591,7 +27035,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_127_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_127_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26641,7 +27085,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_128_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_128_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26691,7 +27135,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_129_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_129_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26741,7 +27185,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_12_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_12_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -26864,7 +27308,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_15_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_15_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -27400,7 +27844,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_16_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_16_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -27720,7 +28164,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_17_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_17_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -27770,7 +28214,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_18_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_18_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -27897,7 +28341,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_19_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_19_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -27947,7 +28391,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_1_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_1_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -29079,7 +29523,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_21_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_21_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -29366,7 +29810,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_28_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_28_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -29504,7 +29948,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_29_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_29_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -29680,7 +30124,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_2_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_2_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -29778,7 +30222,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_30_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_30_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -30001,7 +30445,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_31_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_31_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -30108,7 +30552,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_32_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_32_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -30187,7 +30631,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_34_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_34_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -30310,7 +30754,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_35_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_35_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -30360,7 +30804,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_36_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_36_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -30410,7 +30854,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_37_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_37_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -30460,7 +30904,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_38_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_38_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -31185,7 +31629,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_39_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_39_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -31235,7 +31679,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_3_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_3_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -31357,7 +31801,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_40_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_40_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -31407,7 +31851,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_41_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_41_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -31457,7 +31901,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_42_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_42_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -31533,7 +31977,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_43_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_43_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -31583,7 +32027,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_44_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_44_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -31961,7 +32405,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_45_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_45_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -32063,7 +32507,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_46_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_46_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -32166,7 +32610,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_47_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_47_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -32216,7 +32660,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_48_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_48_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -32307,7 +32751,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_49_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_49_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -32855,7 +33299,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_50_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_50_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -32905,7 +33349,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_51_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_51_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -32955,7 +33399,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_52_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_52_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33005,7 +33449,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_53_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_53_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33055,7 +33499,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_54_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_54_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33129,7 +33573,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_55_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_55_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33295,7 +33739,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_55_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_55_1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33376,7 +33820,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_56_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_56_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33426,7 +33870,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_57_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_57_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33607,7 +34051,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_58_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_58_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33657,7 +34101,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_59_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_59_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33707,7 +34151,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_5_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_5_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33782,7 +34226,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_60_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_60_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33832,7 +34276,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_61_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_61_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33882,7 +34326,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_62_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_62_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -33932,7 +34376,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_63_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_63_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -34238,7 +34682,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_64_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_64_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -34319,7 +34763,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_65_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_65_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -34581,7 +35025,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_66_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_66_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -34682,7 +35126,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_67_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_67_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -34732,7 +35176,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_68_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_68_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -35021,7 +35465,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_69_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_69_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -35104,7 +35548,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_6_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_6_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -35386,7 +35830,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_70_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_70_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -35465,7 +35909,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_71_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_71_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -35917,7 +36361,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_72_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_72_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -36510,7 +36954,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_73_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_73_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -36560,7 +37004,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_74_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_74_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -36854,7 +37298,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_75_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_75_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -36904,7 +37348,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_76_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_76_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -36990,7 +37434,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_78_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_78_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -37823,7 +38267,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_79_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_79_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -38084,7 +38528,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_7_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_7_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -38183,7 +38627,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_81_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_81_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -38233,7 +38677,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_82_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_82_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -38316,7 +38760,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_83_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_83_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -38516,7 +38960,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_84_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_84_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -38954,7 +39398,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_85_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_85_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -39056,7 +39500,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_86_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_86_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -39306,7 +39750,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_87_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_87_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -39463,7 +39907,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_88_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_88_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -39539,7 +39983,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_89_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_89_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -39589,7 +40033,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_8_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_8_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -39923,7 +40367,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_90_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_90_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -39973,7 +40417,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_91_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_91_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -40023,7 +40467,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_92_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_92_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -40416,7 +40860,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_93_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_93_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -40519,7 +40963,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_94_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_94_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -40569,7 +41013,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_95_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_95_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -40729,7 +41173,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_96_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_96_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -40865,7 +41309,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_97_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_97_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -41044,7 +41488,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_98_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_98_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -41148,7 +41592,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_99_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_99_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -41253,7 +41697,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_9_0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_OVRP_1_9_0 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -41450,10 +41894,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OptionalBool")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_OptionalBool {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     False = 0i32,
     True = 1i32,
     Unknown = 2i32,
@@ -41533,10 +41982,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OverlayFlag")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_OverlayFlag {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AutoFiltering = 1024i32,
     BicubicFiltering = 64i32,
     EfficientSharpen = 32i32,
@@ -41627,10 +42081,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+OverlayShape")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_OverlayShape {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Cubemap = 2i32,
     Cylinder = 1i32,
     Equirect = 5i32,
@@ -41717,7 +42176,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughCapabilities")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_PassthroughCapabilities {
     pub Fields: crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFields,
@@ -41823,10 +42285,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+PassthroughCapabilities")]
 impl crate::GlobalNamespace::OVRPlugin_PassthroughCapabilities {}
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughCapabilityFields")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_PassthroughCapabilityFields {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Flags = 1i32,
     MaxColorLutResolution = 2i32,
 }
@@ -41915,10 +42382,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughCapabilityFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_PassthroughCapabilityFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Color = 2i32,
     Depth = 4i32,
     Passthrough = 1i32,
@@ -42008,10 +42480,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughColorLutChannels")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_PassthroughColorLutChannels {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Rgb = 1i32,
     Rgba = 2i32,
 }
@@ -42100,7 +42577,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughColorLutData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_PassthroughColorLutData {
     pub BufferSize: u32,
@@ -42205,10 +42685,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+PassthroughColorLutData")]
 impl crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData {}
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughPreferenceFields")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_PassthroughPreferenceFields {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Flags = 1i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughPreferenceFields")]
@@ -42296,10 +42781,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughPreferenceFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i64)]
 pub enum OVRPlugin_PassthroughPreferenceFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DefaultToActive = 1i64,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughPreferenceFlags")]
@@ -42387,7 +42877,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PassthroughPreferences")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_PassthroughPreferences {
     pub Fields: crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFields,
@@ -42492,10 +42985,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+PassthroughPreferences")]
 impl crate::GlobalNamespace::OVRPlugin_PassthroughPreferences {}
 #[cfg(feature = "cordl_class_OVRPlugin+PerfMetrics")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_PerfMetrics {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     App_CpuTime_Float = 0i32,
     App_GpuTime_Float = 1i32,
     Compositor_CpuTime_Float = 3i32,
@@ -42595,7 +43093,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PinnedArray_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_PinnedArray_1<T: quest_hook::libil2cpp::Type> {
     pub _handle: crate::System::Runtime::InteropServices::GCHandle,
@@ -42819,10 +43320,15 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PlatformUI")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_PlatformUI {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ConfirmQuit = 1i32,
     GlobalMenuTutorial = 2i32,
     None = -1i32,
@@ -42902,7 +43408,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+PolygonalBoundary2DInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_PolygonalBoundary2DInternal {
     pub vertexCapacityInput: i32,
@@ -43008,7 +43517,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+PolygonalBoundary2DInternal")]
 impl crate::GlobalNamespace::OVRPlugin_PolygonalBoundary2DInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+PoseStatef")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_PoseStatef {
     pub Pose: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -43105,7 +43617,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+PoseStatef")]
 impl crate::GlobalNamespace::OVRPlugin_PoseStatef {}
 #[cfg(feature = "cordl_class_OVRPlugin+Posef")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Posef {
     pub Orientation: crate::GlobalNamespace::OVRPlugin_Quatf,
@@ -43225,10 +43740,15 @@ impl crate::GlobalNamespace::OVRPlugin_Posef {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+ProcessorPerformanceLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_ProcessorPerformanceLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Boost = 3i32,
     EnumSize = 2147483647i32,
     PowerSavings = 0i32,
@@ -43321,7 +43841,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_Qpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -43729,7 +44249,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Qpl
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Quatf")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Quatf {
     pub x: f32,
@@ -43879,10 +44402,15 @@ impl crate::GlobalNamespace::OVRPlugin_Quatf {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+RecenterFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_RecenterFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = -2147483647i32,
     Default = 0i32,
     IgnoreAll = -2147483648i32,
@@ -43962,7 +44490,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Rectf")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Rectf {
     pub Pos: crate::GlobalNamespace::OVRPlugin_Vector2f,
@@ -44055,7 +44586,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Rectf")]
 impl crate::GlobalNamespace::OVRPlugin_Rectf {}
 #[cfg(feature = "cordl_class_OVRPlugin+RectfPair")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_RectfPair {
     pub Rect0: crate::GlobalNamespace::OVRPlugin_Rectf,
@@ -44201,7 +44735,10 @@ impl crate::GlobalNamespace::OVRPlugin_RectfPair {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Recti")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Recti {
     pub Pos: crate::GlobalNamespace::OVRPlugin_Vector2i,
@@ -44294,7 +44831,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Recti")]
 impl crate::GlobalNamespace::OVRPlugin_Recti {}
 #[cfg(feature = "cordl_class_OVRPlugin+RectiPair")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_RectiPair {
     pub Rect0: crate::GlobalNamespace::OVRPlugin_Recti,
@@ -44440,10 +44980,15 @@ impl crate::GlobalNamespace::OVRPlugin_RectiPair {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+RenderModelFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_RenderModelFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     SupportsGltf20Subset1 = 1i32,
     SupportsGltf20Subset2 = 2i32,
 }
@@ -44524,7 +45069,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+RenderModelProperties")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_RenderModelProperties {
     pub ModelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -44631,7 +45179,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+RenderModelProperties")]
 impl crate::GlobalNamespace::OVRPlugin_RenderModelProperties {}
 #[cfg(feature = "cordl_class_OVRPlugin+RenderModelPropertiesInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_RenderModelPropertiesInternal {
     pub ModelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -44738,10 +45289,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+RenderModelPropertiesInternal")]
 impl crate::GlobalNamespace::OVRPlugin_RenderModelPropertiesInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+Result")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Result {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failure = -1000i32,
     Failure_ColocationSessionNetworkFailed = -3002i32,
     Failure_ColocationSessionNoDiscoveryMethodAvailable = -3003i32,
@@ -44859,7 +45415,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+RoomLayout")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_RoomLayout {
     pub floorUuid: crate::System::Guid,
@@ -44954,7 +45513,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+RoomLayout")]
 impl crate::GlobalNamespace::OVRPlugin_RoomLayout {}
 #[cfg(feature = "cordl_class_OVRPlugin+RoomLayoutInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_RoomLayoutInternal {
     pub floorUuid: crate::System::Guid,
@@ -45058,7 +45620,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+RoomLayoutInternal")]
 impl crate::GlobalNamespace::OVRPlugin_RoomLayoutInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+SceneCaptureRequestInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SceneCaptureRequestInternal {
     pub requestByteCount: i32,
@@ -45163,7 +45728,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SceneCaptureRequestInternal")]
 impl crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesGroupRecipientInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ShareSpacesGroupRecipientInfo {
     pub GroupCount: u32,
@@ -45268,7 +45836,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+ShareSpacesGroupRecipientInfo")]
 impl crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ShareSpacesInfo {
     pub RecipientType: crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientType,
@@ -45365,7 +45936,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+ShareSpacesInfo")]
 impl crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_ShareSpacesRecipientInfoBase {}
 #[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
@@ -45467,10 +46041,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+ShareSpacesRecipientInfoBase")]
 impl crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase {}
 #[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_ShareSpacesRecipientType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Group = 1i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientType")]
@@ -45558,7 +46137,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Size3f")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Size3f {
     pub w: f32,
@@ -45652,7 +46234,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Size3f")]
 impl crate::GlobalNamespace::OVRPlugin_Size3f {}
 #[cfg(feature = "cordl_class_OVRPlugin+Sizef")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Sizef {
     pub w: f32,
@@ -45745,7 +46330,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Sizef")]
 impl crate::GlobalNamespace::OVRPlugin_Sizef {}
 #[cfg(feature = "cordl_class_OVRPlugin+Sizei")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Sizei {
     pub w: i32,
@@ -45925,7 +46513,10 @@ impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei>>
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Skeleton")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Skeleton {
     pub Type: crate::GlobalNamespace::OVRPlugin_SkeletonType,
@@ -46025,7 +46616,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Skeleton")]
 impl crate::GlobalNamespace::OVRPlugin_Skeleton {}
 #[cfg(feature = "cordl_class_OVRPlugin+Skeleton2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Skeleton2 {
     pub Type: crate::GlobalNamespace::OVRPlugin_SkeletonType,
@@ -46125,7 +46719,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Skeleton2")]
 impl crate::GlobalNamespace::OVRPlugin_Skeleton2 {}
 #[cfg(feature = "cordl_class_OVRPlugin+Skeleton2Internal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Skeleton2Internal {
     pub Type: crate::GlobalNamespace::OVRPlugin_SkeletonType,
@@ -46316,7 +46913,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+Skeleton2Internal")]
 impl crate::GlobalNamespace::OVRPlugin_Skeleton2Internal {}
 #[cfg(feature = "cordl_class_OVRPlugin+Skeleton3Internal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Skeleton3Internal {
     pub Type: crate::GlobalNamespace::OVRPlugin_SkeletonType,
@@ -46521,10 +47121,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+Skeleton3Internal")]
 impl crate::GlobalNamespace::OVRPlugin_Skeleton3Internal {}
 #[cfg(feature = "cordl_class_OVRPlugin+SkeletonConstants")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SkeletonConstants {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MaxBodyBones = 70i32,
     MaxBoneCapsules = 19i32,
     MaxBones = 84i32,
@@ -46612,10 +47217,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SkeletonType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SkeletonType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Body = 2i32,
     FullBody = 3i32,
     HandLeft = 0i32,
@@ -46699,10 +47309,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceComponentType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SpaceComponentType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bounded2D = 3i32,
     Bounded3D = 4i32,
     DynamicObject = 1000288007i32,
@@ -46795,7 +47410,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceContainerInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceContainerInternal {
     pub uuidCapacityInput: i32,
@@ -46901,7 +47519,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceContainerInternal")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceDiscoveryFilterInfoComponents {
     pub Type: crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType,
@@ -47006,7 +47627,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceDiscoveryFilterInfoHeader {
     pub Type: crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType,
@@ -47110,7 +47734,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoIds")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceDiscoveryFilterInfoIds {
     pub Type: crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType,
@@ -47216,10 +47843,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoIds")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SpaceDiscoveryFilterType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Component = 3i32,
     Ids = 2i32,
     None = 0i32,
@@ -47309,7 +47941,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceDiscoveryInfo {
     pub NumFilters: u32,
@@ -47410,7 +48045,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceDiscoveryInfo")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceDiscoveryResult {
     pub Space: u64,
@@ -47513,7 +48151,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceDiscoveryResult")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResults")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceDiscoveryResults {
     pub ResultCapacityInput: u32,
@@ -47619,7 +48260,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceDiscoveryResults")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceFilterInfoComponents")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceFilterInfoComponents {
     pub Components: quest_hook::libil2cpp::Gc<
@@ -47726,7 +48370,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceFilterInfoComponents")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoComponents {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceFilterInfoIds")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceFilterInfoIds {
     pub Ids: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>>,
@@ -47827,10 +48474,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceFilterInfoIds")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SpaceFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllowRecentering = 1i32,
     None = 0i32,
 }
@@ -47909,10 +48561,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceLocationFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u64)]
 pub enum OVRPlugin_SpaceLocationFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     OrientationTracked = 4u64,
     OrientationValid = 1u64,
     PositionTracked = 8u64,
@@ -47999,7 +48656,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceLocationf")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceLocationf {
     pub locationFlags: crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags,
@@ -48094,10 +48754,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceLocationf")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceLocationf {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryActionType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SpaceQueryActionType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Load = 0i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryActionType")]
@@ -48183,10 +48848,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryFilterType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SpaceQueryFilterType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Components = 2i32,
     Group = 3i32,
     Ids = 1i32,
@@ -48275,7 +48945,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceQueryInfo {
     pub QueryType: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
@@ -48376,7 +49049,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceQueryInfo")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceQueryInfo2 {
     pub QueryType: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
@@ -48478,7 +49154,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceQueryInfo2")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2 {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceQueryResult {
     pub space: u64,
@@ -48575,10 +49254,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceQueryResult")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceQueryResult {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SpaceQueryType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Action = 0i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryType")]
@@ -48656,7 +49340,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceSemanticLabelInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpaceSemanticLabelInternal {
     pub byteCapacityInput: i32,
@@ -48762,10 +49449,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpaceSemanticLabelInternal")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceSemanticLabelInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceStorageLocation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SpaceStorageLocation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Cloud = 2i32,
     Invalid = 0i32,
     Local = 1i32,
@@ -48853,10 +49545,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceStoragePersistenceMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SpaceStoragePersistenceMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Indefinite = 1i32,
     Invalid = 0i32,
 }
@@ -48945,7 +49642,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SpatialAnchorCreateInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_SpatialAnchorCreateInfo {
     pub BaseTracking: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
@@ -49051,10 +49751,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+SpatialAnchorCreateInfo")]
 impl crate::GlobalNamespace::OVRPlugin_SpatialAnchorCreateInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+Step")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Step {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Physics = 0i32,
     Render = -1i32,
 }
@@ -49133,10 +49838,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SystemHeadset")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SystemHeadset {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Meta_Link_Quest_3 = 4104i32,
     Meta_Link_Quest_3S = 4105i32,
     Meta_Link_Quest_Pro = 4103i32,
@@ -49245,10 +49955,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SystemRegion")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_SystemRegion {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     China = 2i32,
     Japan = 1i32,
     Unspecified = 0i32,
@@ -49328,7 +50043,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+TextureRectMatrixf")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_TextureRectMatrixf {
     pub leftRect: crate::UnityEngine::Rect,
@@ -49458,10 +50176,15 @@ impl crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+TiledMultiResLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_TiledMultiResLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EnumSize = 2147483647i32,
     LMSHigh = 3i32,
     LMSHighTop = 4i32,
@@ -49550,10 +50273,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+TrackedKeyboardFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_TrackedKeyboardFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Connected = 8i32,
     Exists = 1i32,
     Local = 2i32,
@@ -49642,10 +50370,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+TrackedKeyboardPresentationStyles")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_TrackedKeyboardPresentationStyles {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MR = 2i32,
     Opaque = 1i32,
     Unknown = 0i32,
@@ -49735,10 +50468,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+TrackedKeyboardQueryFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_TrackedKeyboardQueryFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Local = 2i32,
     Remote = 4i32,
 }
@@ -49827,10 +50565,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Tracker")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_Tracker {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = 4i32,
     None = -1i32,
     One = 1i32,
@@ -49913,10 +50656,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+TrackingConfidence")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_TrackingConfidence {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 1065353216i32,
     Low = 0i32,
 }
@@ -50001,10 +50749,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+TrackingOrigin")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_TrackingOrigin {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = 5i32,
     EyeLevel = 0i32,
     FloorLevel = 1i32,
@@ -50086,7 +50839,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+TriangleMeshInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_TriangleMeshInternal {
     pub vertexCapacityInput: i32,
@@ -50194,7 +50950,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::GlobalNamespace::OVRPlugin_TriangleMeshInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+UnifiedConsent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_UnifiedConsent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -50498,7 +51254,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Uni
 }
 #[cfg(feature = "cordl_class_OVRPlugin+UnityOpenXR")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_UnityOpenXR {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -50858,7 +51614,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Uni
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Vector2f")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Vector2f {
     pub x: f32,
@@ -50951,7 +51710,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Vector2f")]
 impl crate::GlobalNamespace::OVRPlugin_Vector2f {}
 #[cfg(feature = "cordl_class_OVRPlugin+Vector2i")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Vector2i {
     pub x: i32,
@@ -51044,7 +51806,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRP
 #[cfg(feature = "OVRPlugin+Vector2i")]
 impl crate::GlobalNamespace::OVRPlugin_Vector2i {}
 #[cfg(feature = "cordl_class_OVRPlugin+Vector3f")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Vector3f {
     pub x: f32,
@@ -51165,7 +51930,10 @@ impl crate::GlobalNamespace::OVRPlugin_Vector3f {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Vector4f")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Vector4f {
     pub x: f32,
@@ -51287,7 +52055,10 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4f {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Vector4s")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_Vector4s {
     pub x: i16,
@@ -51409,7 +52180,10 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4s {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardCreateInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardCreateInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardCreateInfo")]
@@ -51511,7 +52285,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardCreateInfo")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardInputInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardInputInfo {
     pub inputSource: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputSource,
@@ -51618,10 +52395,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardInputInfo")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardInputSource")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_VirtualKeyboardInputSource {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ControllerDirectLeft = 5i32,
     ControllerDirectRight = 6i32,
     ControllerRayLeft = 1i32,
@@ -51718,10 +52500,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardInputStateFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u64)]
 pub enum OVRPlugin_VirtualKeyboardInputStateFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     IsPressed = 1u64,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardInputStateFlags")]
@@ -51809,7 +52596,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardLocationInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardLocationInfo {
     pub locationType: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType,
@@ -51916,10 +52706,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardLocationInfo")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardLocationType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_VirtualKeyboardLocationType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Custom = 0i32,
     Direct = 2i32,
     Far = 1i32,
@@ -52009,7 +52804,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardModelAnimationState {
     pub AnimationIndex: i32,
@@ -52115,7 +52913,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStateBufferProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -52296,7 +53094,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStateHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlugin_VirtualKeyboardModelAnimationStateHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -52484,7 +53282,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStates")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardModelAnimationStates {
     pub States: quest_hook::libil2cpp::Gc<
@@ -52592,7 +53393,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStates")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStatesInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardModelAnimationStatesInternal {
     pub StateCapacityInput: u32,
@@ -52698,7 +53502,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStatesInternal")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStatesInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelVisibility")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardModelVisibility {
     pub _visible: crate::GlobalNamespace::OVRPlugin_Bool,
@@ -52845,7 +53652,10 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardSpaceCreateInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardSpaceCreateInfo {
     pub locationType: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType,
@@ -52951,7 +53761,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardSpaceCreateInfo")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardSpaceCreateInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardTextureData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardTextureData {
     pub TextureWidth: u32,
@@ -53059,7 +53872,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureData")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureData {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardTextureIds")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardTextureIds {
     pub TextureIds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -53163,7 +53979,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIds")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIds {}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardTextureIdsInternal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPlugin_VirtualKeyboardTextureIdsInternal {
     pub TextureIdCapacityInput: u32,
@@ -53269,10 +54088,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPlugin+VirtualKeyboardTextureIdsInternal")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIdsInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+XrApi")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPlugin_XrApi {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CAPI = 1i32,
     EnumSize = 2147483647i32,
     OpenXR = 3i32,
@@ -53354,7 +54178,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Qpl_OVRPlugin_Annotation {
     pub Key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -53505,10 +54332,15 @@ impl crate::GlobalNamespace::Qpl_OVRPlugin_Annotation {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl+ResultType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i16)]
 pub enum Qpl_OVRPlugin_ResultType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Cancel = 4i16,
     Fail = 3i16,
     Success = 2i16,
@@ -53588,7 +54420,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Qpl_OVRPlu
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl+Variant")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Qpl_OVRPlugin_Variant {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
@@ -53893,10 +54728,15 @@ impl crate::GlobalNamespace::Qpl_OVRPlugin_Variant {
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl+VariantType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Qpl_OVRPlugin_VariantType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bool = 4i32,
     BoolArray = 8i32,
     Double = 3i32,

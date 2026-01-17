@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+KekRecipientInformation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KekRecipientInformation {
     __cordl_parent: crate::Org::BouncyCastle::Cms::RecipientInformation,
     pub info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::KekRecipientInfo>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MoveAndRotateWithMainCamera")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MoveAndRotateWithMainCamera {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _mainCamera: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainCamera>,

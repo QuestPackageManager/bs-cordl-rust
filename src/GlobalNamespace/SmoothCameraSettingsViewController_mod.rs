@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SmoothCameraSettingsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SmoothCameraSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _enabledToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

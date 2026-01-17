@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+EnvironmentDepthManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentDepthManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _occlusionShadersMode: crate::Meta::XR::EnvironmentDepth::OcclusionShadersMode,
@@ -770,7 +770,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Meta+XR+EnvironmentDepth+EnvironmentDepthManager+Mask")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentDepthManager_Mask {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _maskMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

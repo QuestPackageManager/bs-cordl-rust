@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_Descriptor: crate::UnityEngine::RenderTextureDescriptor,
@@ -2969,7 +2969,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+BloomMaterialParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PostProcessPass_BloomMaterialParams {
     pub parameters: crate::UnityEngine::Vector4,
@@ -3106,7 +3109,7 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPass_BloomMaterialPara
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+BloomPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_BloomPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mipCount: i32,
@@ -3206,7 +3209,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+DoFBokehPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_DoFBokehPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bokehKernel:
@@ -3307,7 +3310,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+DoFGaussianPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_DoFGaussianPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub downsample: i32,
@@ -3408,7 +3411,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+FinalBlitSettings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PostProcessPass_FinalBlitSettings {
     pub isFxaaEnabled: bool,
@@ -3546,7 +3552,7 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPass_FinalBlitSettings
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+LensFlarePassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_LensFlarePassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -3645,7 +3651,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+LensFlareScreenSpacePassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_LensFlareScreenSpacePassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -3748,7 +3754,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+MaterialLibrary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_MaterialLibrary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stopNaN: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -3905,7 +3911,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+MotionBlurPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_MotionBlurPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -4003,7 +4009,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+PaniniProjectionPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_PaniniProjectionPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -4099,7 +4105,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+PostFXSetupPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_PostFXSetupPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -4187,7 +4193,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+PostProcessingFinalBlitPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_PostProcessingFinalBlitPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -4285,7 +4291,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+PostProcessingFinalFSRScalePassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_PostProcessingFinalFSRScalePassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -4382,7 +4388,7 @@ for crate::UnityEngine::Rendering::Universal::PostProcessPass_PostProcessingFina
     feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+PostProcessingFinalSetupPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_PostProcessingFinalSetupPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -4477,7 +4483,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+SMAAPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_SMAAPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -4564,7 +4570,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+SMAASetupPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_SMAASetupPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub metrics: crate::UnityEngine::Vector4,
@@ -4657,7 +4663,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+ShaderConstants")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_ShaderConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -4713,7 +4719,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+StopNaNsPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_StopNaNsPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stopNaNTarget: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -4802,7 +4808,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+UberPostPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_UberPostPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destinationTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -4904,7 +4910,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+UberSetupBloomPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_UberSetupBloomPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bloomParams: crate::UnityEngine::Vector4,
@@ -5003,7 +5009,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessPass+UpdateCameraResolutionPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessPass_UpdateCameraResolutionPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub newCameraTargetSize: crate::UnityEngine::Vector2Int,

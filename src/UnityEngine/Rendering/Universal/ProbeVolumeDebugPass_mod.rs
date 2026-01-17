@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ProbeVolumeDebugPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeVolumeDebugPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_ComputeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
@@ -195,7 +195,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ProbeVolumeDebugPass+WriteApvData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeVolumeDebugPass_WriteApvData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub computeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,

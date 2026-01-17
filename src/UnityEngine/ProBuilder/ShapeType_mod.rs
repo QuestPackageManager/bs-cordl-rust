@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ShapeType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ShapeType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Arch = 10i32,
     Cone = 8i32,
     Cube = 0i32,

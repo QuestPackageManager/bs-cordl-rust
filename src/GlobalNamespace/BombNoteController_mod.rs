@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BombNoteController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BombNoteController {
     __cordl_parent: crate::GlobalNamespace::NoteController,
     pub _cuttableBySaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CuttableBySaber>,
@@ -301,7 +301,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombNoteContr
 }
 #[cfg(feature = "cordl_class_BombNoteController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BombNoteController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombNoteController>,

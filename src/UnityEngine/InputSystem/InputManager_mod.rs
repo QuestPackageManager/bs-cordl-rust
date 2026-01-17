@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_LayoutRegistrationVersion: i32,
@@ -4340,7 +4340,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+AvailableDevice")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputManager_AvailableDevice {
     pub description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
@@ -4447,10 +4450,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+AvailableDevice")]
 impl crate::UnityEngine::InputSystem::InputManager_AvailableDevice {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputManager_DeviceDisableScope {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Everywhere = 0i32,
     InFrontendOnly = 1i32,
     TemporaryWhilePlayerIsInBackground = 2i32,
@@ -4540,7 +4548,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputManager_StateChangeMonitorListener {
     pub control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
@@ -4649,7 +4660,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorListener")]
 impl crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputManager_StateChangeMonitorTimeout {
     pub control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
@@ -4759,7 +4773,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorTimeout")]
 impl crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputManager_StateChangeMonitorsForDevice {
     pub memoryRegions: quest_hook::libil2cpp::Gc<

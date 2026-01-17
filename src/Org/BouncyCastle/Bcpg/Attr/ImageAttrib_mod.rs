@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+Attr+ImageAttrib")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImageAttrib {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::UserAttributeSubpacket,
     pub hdrLength: i32,
@@ -264,10 +264,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Bcpg::Attr:
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+Attr+ImageAttrib+Format")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum ImageAttrib_Format {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Jpeg = 1u8,
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+Attr+ImageAttrib+Format")]

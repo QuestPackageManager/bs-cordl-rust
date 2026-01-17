@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HeaderInfo+HeaderTypeInfo_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HeaderInfo_HeaderTypeInfo_2<
     T: quest_hook::libil2cpp::Type,
     U: quest_hook::libil2cpp::Type,

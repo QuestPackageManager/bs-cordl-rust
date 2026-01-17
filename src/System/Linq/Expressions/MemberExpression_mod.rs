@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+MemberExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MemberExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Expression_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TestInvitePlatformHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TestInvitePlatformHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

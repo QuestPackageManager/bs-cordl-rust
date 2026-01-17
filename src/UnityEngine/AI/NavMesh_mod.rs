@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AI+NavMesh")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NavMesh {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -75,7 +75,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AI::NavMesh {
 }
 #[cfg(feature = "cordl_class_UnityEngine+AI+NavMesh+OnNavMeshPreUpdate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NavMesh_OnNavMeshPreUpdate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

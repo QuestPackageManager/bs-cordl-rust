@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapEventDataBoxGroupList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEventDataBoxGroupList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub updateBeatmapDataOnInsert: bool,

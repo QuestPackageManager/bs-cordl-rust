@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+MonoAsyncCall")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoAsyncCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

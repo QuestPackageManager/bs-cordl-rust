@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexRunnerFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RegexRunnerFactory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

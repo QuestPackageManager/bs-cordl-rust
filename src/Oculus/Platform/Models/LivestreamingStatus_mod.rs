@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+LivestreamingStatus")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LivestreamingStatus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub CommentsVisible: bool,

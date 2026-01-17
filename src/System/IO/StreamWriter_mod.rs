@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+StreamWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StreamWriter {
     __cordl_parent: crate::System::IO::TextWriter,
     pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

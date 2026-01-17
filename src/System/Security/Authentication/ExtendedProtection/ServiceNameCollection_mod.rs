@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServiceNameCollection {
     __cordl_parent: crate::System::Collections::ReadOnlyCollectionBase,
 }

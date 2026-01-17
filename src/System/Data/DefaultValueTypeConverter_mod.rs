@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DefaultValueTypeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultValueTypeConverter {
     __cordl_parent: crate::System::ComponentModel::StringConverter,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+LocalDataStoreHolder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalDataStoreHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Store: quest_hook::libil2cpp::Gc<crate::System::LocalDataStore>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Input+OpenXRHmd")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRHmd {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRHMD,
     pub _userPresence_k__BackingField:

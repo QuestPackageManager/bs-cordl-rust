@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteJumpStartScaleUp")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteJumpStartScaleUp {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _fullScaleJumpPart: f32,

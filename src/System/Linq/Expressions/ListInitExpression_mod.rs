@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+ListInitExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListInitExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _NewExpression_k__BackingField:

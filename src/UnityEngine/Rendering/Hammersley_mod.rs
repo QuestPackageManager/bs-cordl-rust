@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Hammersley")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hammersley {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -106,7 +106,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Hammer
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Hammersley+Hammersley2dSeq16+_hammersley2dSeq16_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hammersley2dSeq16_Hammersley__hammersley2dSeq16_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -225,7 +228,10 @@ impl crate::UnityEngine::Rendering::Hammersley2dSeq16_Hammersley__hammersley2dSe
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Hammersley+Hammersley2dSeq256+_hammersley2dSeq256_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hammersley2dSeq256_Hammersley__hammersley2dSeq256_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -347,7 +353,10 @@ impl
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Hammersley+Hammersley2dSeq32+_hammersley2dSeq32_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hammersley2dSeq32_Hammersley__hammersley2dSeq32_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -466,7 +475,10 @@ impl crate::UnityEngine::Rendering::Hammersley2dSeq32_Hammersley__hammersley2dSe
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Hammersley+Hammersley2dSeq64+_hammersley2dSeq64_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hammersley2dSeq64_Hammersley__hammersley2dSeq64_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -583,7 +595,10 @@ for crate::UnityEngine::Rendering::Hammersley2dSeq64_Hammersley__hammersley2dSeq
 )]
 impl crate::UnityEngine::Rendering::Hammersley2dSeq64_Hammersley__hammersley2dSeq64_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Hammersley+Hammersley2dSeq16")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hammersley_Hammersley2dSeq16 {
     pub hammersley2dSeq16: crate::UnityEngine::Rendering::Hammersley2dSeq16_Hammersley__hammersley2dSeq16_e__FixedBuffer,
@@ -692,7 +707,10 @@ impl crate::UnityEngine::Rendering::Hammersley_Hammersley2dSeq16 {
     pub type _hammersley2dSeq16_e__FixedBuffer = crate::UnityEngine::Rendering::Hammersley2dSeq16_Hammersley__hammersley2dSeq16_e__FixedBuffer;
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Hammersley+Hammersley2dSeq256")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hammersley_Hammersley2dSeq256 {
     pub hammersley2dSeq256: crate::UnityEngine::Rendering::Hammersley2dSeq256_Hammersley__hammersley2dSeq256_e__FixedBuffer,
@@ -801,7 +819,10 @@ impl crate::UnityEngine::Rendering::Hammersley_Hammersley2dSeq256 {
     pub type _hammersley2dSeq256_e__FixedBuffer = crate::UnityEngine::Rendering::Hammersley2dSeq256_Hammersley__hammersley2dSeq256_e__FixedBuffer;
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Hammersley+Hammersley2dSeq32")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hammersley_Hammersley2dSeq32 {
     pub hammersley2dSeq32: crate::UnityEngine::Rendering::Hammersley2dSeq32_Hammersley__hammersley2dSeq32_e__FixedBuffer,
@@ -910,7 +931,10 @@ impl crate::UnityEngine::Rendering::Hammersley_Hammersley2dSeq32 {
     pub type _hammersley2dSeq32_e__FixedBuffer = crate::UnityEngine::Rendering::Hammersley2dSeq32_Hammersley__hammersley2dSeq32_e__FixedBuffer;
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Hammersley+Hammersley2dSeq64")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hammersley_Hammersley2dSeq64 {
     pub hammersley2dSeq64: crate::UnityEngine::Rendering::Hammersley2dSeq64_Hammersley__hammersley2dSeq64_e__FixedBuffer,

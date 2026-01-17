@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CastInstruction_CastInstructionT_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::CastInstruction,
     __cordl_phantom_T: std::marker::PhantomData<T>,

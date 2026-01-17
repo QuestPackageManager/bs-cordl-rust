@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUnsafeUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CoreUnsafeUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -963,7 +963,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::CoreUn
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUnsafeUtils+DefaultKeyGetter_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CoreUnsafeUtils_DefaultKeyGetter_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -1127,7 +1130,10 @@ impl<T: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUnsafeUtils+FixedBufferStringQueue")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CoreUnsafeUtils_FixedBufferStringQueue {
     pub m_ReadCursor: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1377,7 +1383,7 @@ impl crate::UnityEngine::Rendering::CoreUnsafeUtils_FixedBufferStringQueue {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUnsafeUtils+IKeyGetter_2")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct CoreUnsafeUtils_IKeyGetter_2<
     TValue: quest_hook::libil2cpp::Type,
@@ -1494,7 +1500,10 @@ impl<TValue: quest_hook::libil2cpp::Type, TKey: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUnsafeUtils+UintKeyGetter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CoreUnsafeUtils_UintKeyGetter {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUnsafeUtils+UintKeyGetter")]
@@ -1637,7 +1646,10 @@ impl AsMut<crate::UnityEngine::Rendering::CoreUnsafeUtils_IKeyGetter_2<u32, u32>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUnsafeUtils+UlongKeyGetter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CoreUnsafeUtils_UlongKeyGetter {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUnsafeUtils+UlongKeyGetter")]

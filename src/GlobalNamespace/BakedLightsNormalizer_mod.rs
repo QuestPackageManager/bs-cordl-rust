@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BakedLightsNormalizer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BakedLightsNormalizer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _maxTotalIntensity: f32,

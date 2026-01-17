@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_IMultiplayerSessionManager_1")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IMultiplayerSessionManager_1<TConnectedPlayer: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1409,7 +1409,7 @@ impl<TConnectedPlayer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Objec
     }
 }
 #[cfg(feature = "cordl_class_IMultiplayerSessionManager_1+IMultiplayerSessionInitializer")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IMultiplayerSessionManager_1_IMultiplayerSessionInitializer<
     TConnectedPlayer: quest_hook::libil2cpp::Type,

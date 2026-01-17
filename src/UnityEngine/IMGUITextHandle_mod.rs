@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+IMGUITextHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IMGUITextHandle {
     __cordl_parent: crate::UnityEngine::TextCore::Text::TextHandle,
     pub tuple: quest_hook::libil2cpp::Gc<
@@ -372,7 +372,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::IMGUITextHandle {
 }
 #[cfg(feature = "cordl_class_UnityEngine+IMGUITextHandle+TextHandleTuple")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IMGUITextHandle_TextHandleTuple {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lastTimeUsed: f32,

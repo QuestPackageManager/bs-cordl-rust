@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OculusQuestSupport+OculusQuestFeature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusQuestFeature {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRFeature,
     pub targetQuest: bool,

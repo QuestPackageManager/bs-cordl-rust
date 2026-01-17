@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AppInitSetupInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AppInitSetupInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
 }

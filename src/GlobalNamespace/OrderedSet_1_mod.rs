@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OrderedSet_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OrderedSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _comparison: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
@@ -684,7 +684,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerab
 }
 #[cfg(feature = "cordl_class_OrderedSet_1+Node")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OrderedSet_1_Node<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: T,
@@ -805,10 +805,15 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OrderedSet_1+ProcessOrder")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OrderedSet_1_ProcessOrder {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DontCare = 2i32,
     Fifo = 1i32,
     Lifo = 0i32,

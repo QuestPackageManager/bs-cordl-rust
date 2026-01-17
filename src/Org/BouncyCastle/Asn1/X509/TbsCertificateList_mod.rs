@@ -2,7 +2,7 @@
     feature = "cordl_class_Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration+RevokedCertificatesEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RevokedCertificatesEnumeration_TbsCertificateList_RevokedCertificatesEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub e: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -187,7 +187,7 @@ for crate::Org::BouncyCastle::Asn1::X509::RevokedCertificatesEnumeration_TbsCert
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+TbsCertificateList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TbsCertificateList {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
@@ -643,7 +643,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+X509+TbsCertificateList+RevokedCertificatesEnumeration"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TbsCertificateList_RevokedCertificatesEnumeration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub en: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,

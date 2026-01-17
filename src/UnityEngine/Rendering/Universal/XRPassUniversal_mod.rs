@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+XRPassUniversal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRPassUniversal {
     __cordl_parent: crate::UnityEngine::Experimental::Rendering::XRPass,
     pub _isLateLatchEnabled_k__BackingField: bool,

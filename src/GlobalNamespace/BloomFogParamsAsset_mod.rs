@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomFogParamsAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomFogParamsAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub _template: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomFogParamsBehaviour>,

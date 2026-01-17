@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightColorGroupEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightColorGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
@@ -330,7 +330,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightColorGro
 }
 #[cfg(feature = "cordl_class_LightColorGroupEffect+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightColorGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServerCertValidationCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ValidationCallback: quest_hook::libil2cpp::Gc<
@@ -196,7 +196,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ServerCertValidat
 }
 #[cfg(feature = "cordl_class_System+Net+ServerCertValidationCallback+CallbackContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServerCertValidationCallback_CallbackContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub request: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

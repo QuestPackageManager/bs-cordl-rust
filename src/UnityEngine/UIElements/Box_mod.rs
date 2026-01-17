@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Box")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Box {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
 }
@@ -80,7 +80,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Box {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Box+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Box_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Box>,

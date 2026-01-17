@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRTelemetryMarker")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTelemetryMarker {
     pub _State_k__BackingField: crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState,
@@ -1059,7 +1062,10 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetryM
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryMarker+OVRTelemetryMarkerState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTelemetryMarker_OVRTelemetryMarkerState {
     pub _Sent_k__BackingField: bool,

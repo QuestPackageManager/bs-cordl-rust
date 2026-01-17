@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_LIV+SDK+Unity+RENDERING_PIPELINE")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum RENDERING_PIPELINE {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DEFERRED = 2u32,
     FORWARD = 1u32,
     HIGH_DEFINITION = 5u32,

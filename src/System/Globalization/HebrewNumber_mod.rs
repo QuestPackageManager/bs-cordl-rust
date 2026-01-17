@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HebrewNumber {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -133,10 +133,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::HebrewN
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HS")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i8)]
 pub enum HebrewNumber_HS {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     END = 100i8,
     S400 = 1i8,
     S400_400 = 2i8,
@@ -232,10 +237,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Globalization::Hebr
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewToken")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i16)]
 pub enum HebrewNumber_HebrewToken {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Digit1 = 4i16,
     Digit10 = 3i16,
     Digit100 = 2i16,
@@ -331,7 +341,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+HebrewNumber+HebrewValue")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HebrewNumber_HebrewValue {
     pub token: crate::System::Globalization::HebrewNumber_HebrewToken,

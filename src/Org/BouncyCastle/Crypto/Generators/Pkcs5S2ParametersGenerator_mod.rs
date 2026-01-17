@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Pkcs5S2ParametersGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pkcs5S2ParametersGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
     pub hMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,

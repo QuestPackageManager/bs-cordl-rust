@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTls {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -165,10 +165,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTls {
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_ciphersuite")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum UnityTls_unitytls_ciphersuite {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     UNITYTLS_CIPHERSUITE_INVALID = 16777215u32,
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_ciphersuite")]
@@ -246,10 +251,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Unity::UnityTls_unity
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_error_code")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum UnityTls_unitytls_error_code {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     UNITYTLS_BUFFER_OVERFLOW = 5u32,
     UNITYTLS_DER_PARSE_ERROR = 11u32,
     UNITYTLS_ENTROPY_SOURCE_FAILED = 9u32,
@@ -350,7 +360,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Unity::UnityTls_unity
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_errorstate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_errorstate {
     pub magic: u32,
@@ -447,7 +460,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::Mono::Unity::UnityTls_unitytls_errorstate {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTls_unitytls_interface_struct {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub UNITYTLS_INVALID_HANDLE: u64,
@@ -746,7 +759,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTls_unitytls
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_key {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key")]
@@ -836,7 +852,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::Unity::UnityTls
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 impl crate::Mono::Unity::UnityTls_unitytls_key {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_key_ref")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_key_ref {
     pub handle: u64,
@@ -928,10 +947,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::Unity::UnityTls
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 impl crate::Mono::Unity::UnityTls_unitytls_key_ref {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_log_level")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum UnityTls_unitytls_log_level {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     UNITYTLS_LOGLEVEL_DEBUG = 4u32,
     UNITYTLS_LOGLEVEL_ERROR = 1u32,
     UNITYTLS_LOGLEVEL_FATAL = 0u32,
@@ -1014,10 +1038,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Unity::UnityTls_unity
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_protocol")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum UnityTls_unitytls_protocol {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     UNITYTLS_PROTOCOL_INVALID = 3u32,
     UNITYTLS_PROTOCOL_TLS_1_0 = 0u32,
     UNITYTLS_PROTOCOL_TLS_1_1 = 1u32,
@@ -1098,7 +1127,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Unity::UnityTls_unity
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_tlsctx {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx")]
@@ -1188,7 +1220,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::Unity::UnityTls
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_tlsctx_callbacks {
     pub read: quest_hook::libil2cpp::Gc<crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback>,
@@ -1294,7 +1329,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTls_unitytls_tlsctx_certificate_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1432,7 +1467,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_tlsctx_protocolrange {
     pub min: crate::Mono::Unity::UnityTls_unitytls_protocol,
@@ -1538,7 +1576,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTls_unitytls_tlsctx_read_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1662,7 +1700,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTls_unitytls_tlsctx_trace_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1787,7 +1825,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTls_unitytls_tlsctx_write_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1911,7 +1949,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTls_unitytls_tlsctx_x509verify_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2034,7 +2072,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509_ref")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_x509_ref {
     pub handle: u64,
@@ -2126,7 +2167,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::Unity::UnityTls
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 impl crate::Mono::Unity::UnityTls_unitytls_x509_ref {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_x509list {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list")]
@@ -2216,7 +2260,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::Unity::UnityTls
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 impl crate::Mono::Unity::UnityTls_unitytls_x509list {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509list_ref")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_x509list_ref {
     pub handle: u64,
@@ -2312,7 +2359,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 impl crate::Mono::Unity::UnityTls_unitytls_x509list_ref {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnityTls_unitytls_x509name {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509name")]
@@ -2403,7 +2453,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::Unity::UnityTls
 impl crate::Mono::Unity::UnityTls_unitytls_x509name {}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTls_unitytls_x509verify_callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2529,10 +2579,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_result")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum UnityTls_unitytls_x509verify_result {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     UNITYTLS_X509VERIFY_FATAL_ERROR = 4294967295u32,
     UNITYTLS_X509VERIFY_FLAG_BADCERT_BAD_KEY = 65536u32,
     UNITYTLS_X509VERIFY_FLAG_BADCERT_BAD_MD = 16384u32,
@@ -2650,7 +2705,7 @@ unsafe impl quest_hook::libil2cpp::Return
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2777,7 +2832,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2905,7 +2960,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3027,7 +3082,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3154,7 +3209,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3294,7 +3349,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3434,7 +3489,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3566,7 +3621,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3707,7 +3762,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3854,7 +3909,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3978,7 +4033,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4110,7 +4165,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4242,7 +4297,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4372,7 +4427,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4509,7 +4564,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4639,7 +4694,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t
 {
     __cordl_parent: crate::System::MulticastDelegate,
@@ -4785,7 +4840,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4937,7 +4992,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5091,7 +5146,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5233,7 +5288,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_level_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5363,7 +5418,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5503,7 +5558,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5637,7 +5692,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5772,7 +5827,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5907,7 +5962,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6039,7 +6094,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6169,7 +6224,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6297,7 +6352,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6429,7 +6484,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6563,7 +6618,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6708,7 +6763,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6855,7 +6910,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_result_to_string_t"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t {
     __cordl_parent: crate::System::MulticastDelegate,
 }

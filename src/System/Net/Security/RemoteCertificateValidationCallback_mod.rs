@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Security+RemoteCertificateValidationCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemoteCertificateValidationCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

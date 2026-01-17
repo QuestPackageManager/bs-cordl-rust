@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PackDefinitionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackDefinitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _beatmapLevelPack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPackSO>,
@@ -607,7 +607,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackDefinitio
 }
 #[cfg(feature = "cordl_class_PackDefinitionSO+Credits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackDefinitionSO_Credits {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub order: i32,
@@ -688,7 +688,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackDefinitio
 }
 #[cfg(feature = "cordl_class_PackDefinitionSO+LeaderboardIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackDefinitionSO_LeaderboardIds {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _riftLeaderboardIds: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
@@ -942,7 +942,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackDefinitio
 }
 #[cfg(feature = "cordl_class_PackDefinitionSO+LevelProductPacks")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackDefinitionSO_LevelProductPacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _steamLevelProductPacks:
@@ -1143,10 +1143,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_PackDefinitionSO+Tags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PackDefinitionSO_Tags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BuiltIn = 1i32,
     DLC = 2i32,
     Hidden = 0i32,

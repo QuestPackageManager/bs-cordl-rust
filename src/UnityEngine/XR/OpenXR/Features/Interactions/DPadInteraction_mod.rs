@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+DPadInteraction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DPadInteraction {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRInteractionFeature,
     pub forceThresholdLeft: f32,
@@ -293,7 +293,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Interactions+DPadInteraction+DPad")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DPadInteraction_DPad {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
     pub _thumbstickDpadUp_k__BackingField:

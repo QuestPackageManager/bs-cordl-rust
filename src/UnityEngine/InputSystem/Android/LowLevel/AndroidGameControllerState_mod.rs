@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AndroidGameControllerState {
     pub buttons: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState__buttons_e__FixedBuffer,
@@ -228,7 +231,7 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
     feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidGameControllerState_Variants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -323,7 +326,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_axis_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AndroidGameControllerState__axis_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -442,7 +448,10 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSt
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+_buttons_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AndroidGameControllerState__buttons_e__FixedBuffer {
     pub FixedElementField: u32,

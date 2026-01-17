@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonConverterAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonConverterAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _converterType: quest_hook::libil2cpp::Gc<crate::System::Type>,

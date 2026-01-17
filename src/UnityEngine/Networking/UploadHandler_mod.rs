@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Networking+UploadHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UploadHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -180,7 +180,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Networking::Uploa
 }
 #[cfg(feature = "cordl_class_UnityEngine+Networking+UploadHandler+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UploadHandler_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

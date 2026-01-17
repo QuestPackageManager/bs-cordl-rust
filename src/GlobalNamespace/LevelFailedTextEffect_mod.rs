@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelFailedTextEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelFailedTextEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,

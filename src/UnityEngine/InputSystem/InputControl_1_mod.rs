@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputControl_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl,
     pub m_ProcessorStack: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<

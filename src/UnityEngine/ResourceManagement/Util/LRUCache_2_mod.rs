@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LRUCache_2<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type> {
     pub requestHits: i32,
@@ -239,7 +242,10 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+LRUCache_2+Entry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LRUCache_2_Entry<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
 {

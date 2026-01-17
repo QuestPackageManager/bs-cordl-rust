@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+TreeSet_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TreeSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Collections::Generic::SortedSet_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,

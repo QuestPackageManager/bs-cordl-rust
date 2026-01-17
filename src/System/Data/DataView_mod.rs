@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataView {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
     pub _dataViewManager: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewManager>,
@@ -2317,7 +2317,7 @@ impl AsMut<crate::System::ComponentModel::ITypedList> for crate::System::Data::D
 }
 #[cfg(feature = "cordl_class_System+Data+DataView+DataRowReferenceComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataView_DataRowReferenceComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

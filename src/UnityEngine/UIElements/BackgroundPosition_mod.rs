@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BackgroundPosition {
     pub keyword: crate::UnityEngine::UIElements::BackgroundPositionKeyword,
@@ -344,7 +347,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Backgroun
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BackgroundPosition_PropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::UIElements::BackgroundPosition,
@@ -438,7 +441,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition+PropertyBag+KeywordProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_BackgroundPosition_KeywordProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::BackgroundPosition,
@@ -642,7 +645,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BackgroundPosition+PropertyBag+OffsetProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_BackgroundPosition_OffsetProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::BackgroundPosition,

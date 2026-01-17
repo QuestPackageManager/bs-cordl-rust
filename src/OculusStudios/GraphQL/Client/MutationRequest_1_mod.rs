@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+MutationRequest_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MutationRequest_1<TInputModel: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::MutationRequest,
     __cordl_phantom_TInputModel: std::marker::PhantomData<TInputModel>,

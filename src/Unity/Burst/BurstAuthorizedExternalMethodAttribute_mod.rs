@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+BurstAuthorizedExternalMethodAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstAuthorizedExternalMethodAttribute {
     __cordl_parent: crate::System::Attribute,
 }

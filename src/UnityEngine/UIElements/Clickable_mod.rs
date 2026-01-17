@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Clickable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Clickable {
     __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
     pub clickedWithEventInfo: quest_hook::libil2cpp::Gc<

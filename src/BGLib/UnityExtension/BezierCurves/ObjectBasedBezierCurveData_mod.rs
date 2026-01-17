@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurveData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectBasedBezierCurveData {
     __cordl_parent: crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurveData,
     pub _startPointTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameplayModifiersModelSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayModifiersModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _batteryEnergy: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
@@ -530,7 +530,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayModif
 }
 #[cfg(feature = "cordl_class_GameplayModifiersModelSO+GameplayModifierBoolGetter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayModifiersModelSO_GameplayModifierBoolGetter {
     __cordl_parent: crate::System::MulticastDelegate,
 }

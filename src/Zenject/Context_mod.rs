@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+Context")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Context {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scriptableObjectInstallers: quest_hook::libil2cpp::Gc<

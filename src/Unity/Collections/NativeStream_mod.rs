@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+NativeStream")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeStream {
     pub m_Stream: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
@@ -520,7 +523,10 @@ impl AsMut<crate::Unity::Collections::INativeDisposable>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeStream+ConstructJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeStream_ConstructJob {
     pub Container: crate::Unity::Collections::NativeStream,
@@ -654,7 +660,10 @@ impl AsMut<crate::Unity::Jobs::IJob> for crate::Unity::Collections::NativeStream
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeStream+ConstructJobList")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeStream_ConstructJobList {
     pub Container: crate::Unity::Collections::NativeStream,
@@ -792,7 +801,10 @@ impl AsMut<crate::Unity::Jobs::IJob> for crate::Unity::Collections::NativeStream
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeStream+Reader")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeStream_Reader {
     pub m_Reader: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader,
@@ -1203,7 +1215,10 @@ impl crate::Unity::Collections::NativeStream_Reader {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeStream+Writer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeStream_Writer {
     pub m_Writer: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Writer,

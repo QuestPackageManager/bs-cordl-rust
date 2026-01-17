@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerBase+VirtualAxis1DMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRControllerBase_OVRInput_VirtualAxis1DMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawAxis1D,
@@ -123,7 +123,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerBase+VirtualAxis2DMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRControllerBase_OVRInput_VirtualAxis2DMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawAxis2D,
@@ -236,7 +236,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerBase+VirtualButtonMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRControllerBase_OVRInput_VirtualButtonMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawButton,
@@ -377,7 +377,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerBase+VirtualNearTouchMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRControllerBase_OVRInput_VirtualNearTouchMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawNearTouch,
@@ -490,7 +490,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerBase+VirtualTouchMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRControllerBase_OVRInput_VirtualTouchMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub None: crate::GlobalNamespace::OVRInput_RawTouch,
@@ -611,7 +611,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2683,10 +2683,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput {
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+Axis1D")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_Axis1D {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = -1i32,
     None = 0i32,
     PrimaryHandTrigger = 4i32,
@@ -2779,10 +2784,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_A
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+Axis2D")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_Axis2D {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = -1i32,
     None = 0i32,
     PrimaryThumbstick = 1i32,
@@ -2865,10 +2875,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_A
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+Button")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_Button {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = -1i32,
     Back = 512i32,
     Down = 536870912i32,
@@ -2979,10 +2994,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_B
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+Controller")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_Controller {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Active = -2147483648i32,
     All = -1i32,
     Gamepad = 16i32,
@@ -3070,10 +3090,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_C
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+ControllerInHandState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_ControllerInHandState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ControllerInHand = 1i32,
     ControllerNotInHand = 2i32,
     NoHand = 0i32,
@@ -3161,10 +3186,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+Hand")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_Hand {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
@@ -3244,10 +3274,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_H
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+Handedness")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_Handedness {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LeftHanded = 1i32,
     RightHanded = 2i32,
     Unsupported = 0i32,
@@ -3328,7 +3363,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_H
 }
 #[cfg(feature = "cordl_class_OVRInput+HapticInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_HapticInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playingHaptics: bool,
@@ -3410,7 +3445,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_Hapt
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+HapticsAmplitudeEnvelopeVibration")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRInput_HapticsAmplitudeEnvelopeVibration {
     pub SamplesCount: i32,
@@ -3516,10 +3554,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
 impl crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {}
 #[cfg(feature = "cordl_class_OVRInput+HapticsLocation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_HapticsLocation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Hand = 1i32,
     Index = 4i32,
     None = 0i32,
@@ -3600,7 +3643,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_H
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+HapticsPcmVibration")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRInput_HapticsPcmVibration {
     pub SamplesCount: i32,
@@ -3703,10 +3749,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRInput+HapticsPcmVibration")]
 impl crate::GlobalNamespace::OVRInput_HapticsPcmVibration {}
 #[cfg(feature = "cordl_class_OVRInput+InputDeviceShowState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_InputDeviceShowState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Always = 0i32,
     ControllerInHand = 2i32,
     ControllerInHandOrNoHand = 1i32,
@@ -3796,10 +3847,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+InteractionProfile")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_InteractionProfile {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     Touch = 1i32,
     TouchPlus = 4i32,
@@ -3886,10 +3942,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_I
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+NearTouch")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_NearTouch {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = -1i32,
     None = 0i32,
     PrimaryIndexTrigger = 1i32,
@@ -3973,7 +4034,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_N
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub controllerType: crate::GlobalNamespace::OVRInput_Controller,
@@ -4518,7 +4579,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerGamepadAndroid")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerGamepadAndroid {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -4710,7 +4771,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerGamepadPC")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerGamepadPC {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -4900,7 +4961,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerHands")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerHands {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -5107,7 +5168,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerLHand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerLHand {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -5314,7 +5375,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerLTouch")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerLTouch {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -5521,7 +5582,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerRHand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerRHand {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -5728,7 +5789,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerRTouch")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerRTouch {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -5935,7 +5996,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerRemote")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerRemote {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -6123,7 +6184,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
 }
 #[cfg(feature = "cordl_class_OVRInput+OVRControllerTouch")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRInput_OVRControllerTouch {
     __cordl_parent: crate::GlobalNamespace::OVRInput_OVRControllerBase,
 }
@@ -6329,10 +6390,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput_OVRC
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+OpenVRButton")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u64)]
 pub enum OVRInput_OpenVRButton {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Grip = 4u64,
     None = 0u64,
     Thumbstick = 4294967296u64,
@@ -6413,10 +6479,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_O
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+OpenVRController")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u64)]
 pub enum OVRInput_OpenVRController {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     OculusTouch = 1u64,
     Unknown = 0u64,
     ViveController = 2u64,
@@ -6497,7 +6568,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_O
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+OpenVRControllerDetails")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRInput_OpenVRControllerDetails {
     pub state: crate::OVR::OpenVR::VRControllerState_t,
@@ -6605,10 +6679,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRInput+OpenVRControllerDetails")]
 impl crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {}
 #[cfg(feature = "cordl_class_OVRInput+RawAxis1D")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_RawAxis1D {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = -1i32,
     LHandTrigger = 4i32,
     LIndexTrigger = 1i32,
@@ -6701,10 +6780,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_R
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+RawAxis2D")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_RawAxis2D {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = -1i32,
     LThumbstick = 1i32,
     LTouchpad = 4i32,
@@ -6787,10 +6871,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_R
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+RawButton")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_RawButton {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     A = 1i32,
     Any = -1i32,
     B = 2i32,
@@ -6897,10 +6986,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_R
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+RawNearTouch")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_RawNearTouch {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = -1i32,
     LIndexTrigger = 1i32,
     LThumbButtons = 2i32,
@@ -6983,10 +7077,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_R
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+RawTouch")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_RawTouch {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     A = 1i32,
     Any = -1i32,
     B = 2i32,
@@ -7077,10 +7176,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_R
     }
 }
 #[cfg(feature = "cordl_class_OVRInput+Touch")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRInput_Touch {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = -1i32,
     Four = 8i32,
     None = 0i32,

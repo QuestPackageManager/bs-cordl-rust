@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+CancellationCallbackInfo+WithSyncContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CancellationCallbackInfo_WithSyncContext {
     __cordl_parent: crate::System::Threading::CancellationCallbackInfo,
     pub TargetSyncContext:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccess {
     __cordl_parent: crate::UnityEngine::UIElements::StyleValueCollection,
     pub m_ValuesManaged: quest_hook::libil2cpp::Gc<
@@ -5640,7 +5640,10 @@ impl AsMut<crate::UnityEngine::UIElements::IStyle>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccess+InlineRule")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InlineStyleAccess_InlineRule {
     pub sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,

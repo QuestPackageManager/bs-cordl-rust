@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnvironmentLightSimpleController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentLightSimpleController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _color: crate::UnityEngine::Color,

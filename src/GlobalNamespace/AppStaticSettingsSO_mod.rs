@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AppStaticSettingsSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AppStaticSettingsSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub requirePrivacyPolicy: bool,

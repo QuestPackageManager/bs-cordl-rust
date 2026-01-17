@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_anySimpleType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Datatype_anySimpleType {
     __cordl_parent: crate::System::Xml::Schema::DatatypeImplementation,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlTruncateException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SqlTruncateException {
     __cordl_parent: crate::System::Data::SqlTypes::SqlTypeException,
 }

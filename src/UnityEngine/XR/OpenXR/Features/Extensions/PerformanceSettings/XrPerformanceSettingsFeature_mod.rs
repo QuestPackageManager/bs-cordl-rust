@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Extensions+PerformanceSettings+XrPerformanceSettingsFeature+NativeApi+XrPerformanceNotificationDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NativeApi_XrPerformanceSettingsFeature_XrPerformanceNotificationDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -198,7 +198,7 @@ for crate::UnityEngine::XR::OpenXR::Features::Extensions::PerformanceSettings::N
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Extensions+PerformanceSettings+XrPerformanceSettingsFeature"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XrPerformanceSettingsFeature {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRFeature,
 }
@@ -440,7 +440,7 @@ for crate::UnityEngine::XR::OpenXR::Features::Extensions::PerformanceSettings::X
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Extensions+PerformanceSettings+XrPerformanceSettingsFeature+NativeApi"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XrPerformanceSettingsFeature_NativeApi {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

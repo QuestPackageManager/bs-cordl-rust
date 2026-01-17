@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusChangeTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElementFocusChangeTarget {
     __cordl_parent: crate::UnityEngine::UIElements::FocusChangeDirection,
     pub _target_k__BackingField:

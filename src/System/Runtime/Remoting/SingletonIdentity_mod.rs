@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+SingletonIdentity")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SingletonIdentity {
     __cordl_parent: crate::System::Runtime::Remoting::ServerIdentity,
 }

@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+TransferFunction")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TransferFunction {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BT1886 = 1i32,
     Gamma22 = 4i32,
     Linear = 3i32,

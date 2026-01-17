@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ReferenceConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReferenceConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -299,7 +299,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::Refere
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+ReferenceConverter+ReferenceComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReferenceConverter_ReferenceComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _converter: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ReferenceConverter>,

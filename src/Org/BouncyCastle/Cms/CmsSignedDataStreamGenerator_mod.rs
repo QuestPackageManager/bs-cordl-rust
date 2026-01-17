@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsSignedDataStreamGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsSignedGenerator,
     pub _signerInfs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -1220,7 +1220,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+CmsSignedDataOutputStream"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub outer:
@@ -1473,7 +1473,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+DigestAndSignerInfoGeneratorHolder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub signerInf: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::ISignerInfoGenerator>,
@@ -1609,7 +1609,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerI
     feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator+SignerInfoGeneratorImpl"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer:

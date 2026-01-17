@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+TypeConverter_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeConverter_2<
     TSource: quest_hook::libil2cpp::Type,
     TDestination: quest_hook::libil2cpp::Type,

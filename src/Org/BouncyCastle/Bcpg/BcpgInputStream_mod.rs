@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BcpgInputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
     pub m_in: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -329,7 +329,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Bcpg::BcpgI
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+BcpgInputStream+PartialInputStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BcpgInputStream_PartialInputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
     pub m_in: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgInputStream>,

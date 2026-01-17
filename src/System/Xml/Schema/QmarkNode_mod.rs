@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+QmarkNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QmarkNode {
     __cordl_parent: crate::System::Xml::Schema::InteriorNode,
 }

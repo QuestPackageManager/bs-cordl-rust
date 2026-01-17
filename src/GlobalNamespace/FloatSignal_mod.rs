@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatSignal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatSignal {
     __cordl_parent: crate::GlobalNamespace::GenericSignal_1<f32>,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalCachedChunk")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalCachedChunk {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::DecalChunk,
     pub propertyBlock: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRTriangleMesh")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTriangleMesh {
     pub _Handle_k__BackingField: u64,
@@ -606,7 +609,10 @@ impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh>>
     }
 }
 #[cfg(feature = "cordl_class_OVRTriangleMesh+FlipTriangleWindingJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTriangleMesh_FlipTriangleWindingJob {
     pub Triangles:
@@ -751,7 +757,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
     }
 }
 #[cfg(feature = "cordl_class_OVRTriangleMesh+GetMeshJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTriangleMesh_GetMeshJob {
     pub Space: u64,
@@ -882,7 +891,10 @@ impl AsMut<crate::Unity::Jobs::IJob> for crate::GlobalNamespace::OVRTriangleMesh
     }
 }
 #[cfg(feature = "cordl_class_OVRTriangleMesh+NegateXJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTriangleMesh_NegateXJob {
     pub Positions: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
@@ -1018,7 +1030,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
     }
 }
 #[cfg(feature = "cordl_class_OVRTriangleMesh+Triangle")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTriangleMesh_Triangle {
     pub A: i32,

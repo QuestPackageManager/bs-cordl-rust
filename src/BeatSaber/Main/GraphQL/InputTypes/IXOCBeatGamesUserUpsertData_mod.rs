@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+InputTypes+IXOCBeatGamesUserUpsertData")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IXOCBeatGamesUserUpsertData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

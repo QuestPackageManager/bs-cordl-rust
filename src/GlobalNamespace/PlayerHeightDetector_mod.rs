@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerHeightDetector")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerHeightDetector {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerTransforms: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerTransforms>,
@@ -252,7 +252,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerHeightD
 }
 #[cfg(feature = "cordl_class_PlayerHeightDetector+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerHeightDetector_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub headPosToPlayerHeightOffset: f32,

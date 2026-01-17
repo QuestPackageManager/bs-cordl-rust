@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+MonoWebRequestHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoWebRequestHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub allowAutoRedirect: bool,

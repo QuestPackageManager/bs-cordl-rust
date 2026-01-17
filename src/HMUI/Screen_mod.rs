@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+Screen")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Screen {
     __cordl_parent: crate::HMUI::ScreenBase,
     pub _rootViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,

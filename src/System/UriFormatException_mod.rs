@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+UriFormatException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UriFormatException {
     __cordl_parent: crate::System::FormatException,
 }

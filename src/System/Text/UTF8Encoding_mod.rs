@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+UTF8Encoding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF8Encoding {
     __cordl_parent: crate::System::Text::Encoding,
     pub _emitUTF8Identifier: bool,
@@ -999,7 +999,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF8Encoding {
 }
 #[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Decoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF8Encoding_UTF8Decoder {
     __cordl_parent: crate::System::Text::DecoderNLS,
     pub bits: i32,
@@ -1125,7 +1125,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF8Encoding_UTF
 }
 #[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Encoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF8Encoding_UTF8Encoder {
     __cordl_parent: crate::System::Text::EncoderNLS,
     pub surrogateChar: i32,

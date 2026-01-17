@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightWithIdMonoBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightWithIdMonoBehaviour {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _ID: i32,

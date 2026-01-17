@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlSerializableWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializableWriter {
     __cordl_parent: crate::System::Xml::XmlWriter,
     pub xmlWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,

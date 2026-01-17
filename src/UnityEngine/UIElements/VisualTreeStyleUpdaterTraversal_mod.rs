@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualTreeStyleUpdaterTraversal {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
     pub m_ProcessVarContext:

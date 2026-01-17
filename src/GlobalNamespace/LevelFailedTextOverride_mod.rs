@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelFailedTextOverride")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelFailedTextOverride {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _perLanguageOverrides: quest_hook::libil2cpp::Gc<
@@ -127,7 +127,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelFailedTe
 }
 #[cfg(feature = "cordl_class_LevelFailedTextOverride+LanguageOverride")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelFailedTextOverride_LanguageOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _language: crate::BGLib::Polyglot::LocalizationLanguage,

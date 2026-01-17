@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+RuntimeParameterInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeParameterInfo {
     __cordl_parent: crate::System::Reflection::ParameterInfo,
     pub marshalAs:

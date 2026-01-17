@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DropdownSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DropdownSettingsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _dropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,

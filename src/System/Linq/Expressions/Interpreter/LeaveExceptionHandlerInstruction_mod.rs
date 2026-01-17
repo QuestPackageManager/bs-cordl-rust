@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LeaveExceptionHandlerInstruction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaveExceptionHandlerInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction,
     pub _hasValue: bool,

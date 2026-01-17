@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRRenderModels {
     pub LoadRenderModel_Async:
@@ -176,7 +179,7 @@ impl crate::OVR::OpenVR::IVRRenderModels {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_FreeRenderModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__FreeRenderModel {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -346,7 +349,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRRenderModels__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_FreeTexture")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__FreeTexture {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -516,7 +519,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRRenderModels__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_FreeTextureD3D11")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__FreeTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -687,7 +690,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRRenderModels__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetComponentButtonMask")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetComponentButtonMask {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -869,7 +872,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetComponentCount")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetComponentCount {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1040,7 +1043,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRRenderModels__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetComponentName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetComponentName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1241,7 +1244,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRRenderModels__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetComponentRenderModelName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetComponentRenderModelName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1446,7 +1449,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetComponentState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetComponentState {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1685,7 +1688,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRRenderModels__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetComponentStateForDevicePath")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetComponentStateForDevicePath {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1924,7 +1927,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetRenderModelCount")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetRenderModelCount {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2089,7 +2092,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetRenderModelErrorNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetRenderModelErrorNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2264,7 +2267,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetRenderModelName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetRenderModelName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2457,7 +2460,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRRenderModels__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetRenderModelOriginalPath")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetRenderModelOriginalPath {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2664,7 +2667,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_GetRenderModelThumbnailURL")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__GetRenderModelThumbnailURL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2871,7 +2874,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_LoadIntoTextureD3D11_Async")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__LoadIntoTextureD3D11_Async {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3050,7 +3053,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_LoadRenderModel_Async")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__LoadRenderModel_Async {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3234,7 +3237,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_LoadTextureD3D11_Async")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__LoadTextureD3D11_Async {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3424,7 +3427,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_LoadTexture_Async")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__LoadTexture_Async {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3602,7 +3605,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRRenderModels__
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRRenderModels+_RenderModelHasComponent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRRenderModels__RenderModelHasComponent {
     __cordl_parent: crate::System::MulticastDelegate,
 }

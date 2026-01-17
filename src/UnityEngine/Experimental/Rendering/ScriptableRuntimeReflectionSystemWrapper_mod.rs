@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemWrapper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRuntimeReflectionSystemWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _implementation_k__BackingField: quest_hook::libil2cpp::Gc<

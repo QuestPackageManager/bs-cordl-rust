@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Hierarchy+SceneItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneItem {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::Hierarchy::ItemWithChildren_3<
         crate::UnityEngine::SceneManagement::Scene,

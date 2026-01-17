@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Gamepad")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Gamepad {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
     pub _buttonWest_k__BackingField:

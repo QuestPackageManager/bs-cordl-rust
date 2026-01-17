@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RoomAdjustSettingsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RoomAdjustSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _xStepValuePicker: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StepValuePicker>,

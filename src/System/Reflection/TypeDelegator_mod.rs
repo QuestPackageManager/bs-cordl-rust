@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+TypeDelegator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeDelegator {
     __cordl_parent: crate::System::Reflection::TypeInfo,
     pub typeImpl: quest_hook::libil2cpp::Gc<crate::System::Type>,

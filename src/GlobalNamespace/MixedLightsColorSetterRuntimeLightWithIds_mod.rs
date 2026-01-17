@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MixedLightsColorSetterRuntimeLightWithIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MixedLightsColorSetterRuntimeLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _materialPropertyBlockColorSetter:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
     pub _firstBasicNoteTime: crate::System::Nullable_1<f32>,
@@ -621,7 +621,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectManager+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerBeatmapObjectManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub disappearingArrows: bool,

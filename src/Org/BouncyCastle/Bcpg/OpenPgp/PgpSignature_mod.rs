@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpSignature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpSignature {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sigPck: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignaturePacket>,

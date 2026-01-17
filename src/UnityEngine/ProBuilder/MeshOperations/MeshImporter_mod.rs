@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshImporter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MeshImporter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_SourceMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+IDictionaryDebugView_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IDictionaryDebugView_2<K: quest_hook::libil2cpp::Type, V: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_K: std::marker::PhantomData<K>,

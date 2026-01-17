@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+FloatParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatParameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<f32>,
 }

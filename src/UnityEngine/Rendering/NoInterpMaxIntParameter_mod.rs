@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+NoInterpMaxIntParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoInterpMaxIntParameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<i32>,
     pub max: i32,

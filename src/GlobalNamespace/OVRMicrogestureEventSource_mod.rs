@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRMicrogestureEventSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRMicrogestureEventSource {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _hand: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,

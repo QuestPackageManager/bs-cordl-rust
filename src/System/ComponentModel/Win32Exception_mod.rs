@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+Win32Exception")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Win32Exception {
     __cordl_parent: crate::System::Runtime::InteropServices::ExternalException,
     pub nativeErrorCode: i32,

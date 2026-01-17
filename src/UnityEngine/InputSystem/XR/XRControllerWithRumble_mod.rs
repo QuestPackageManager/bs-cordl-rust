@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRControllerWithRumble")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRControllerWithRumble {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
 }

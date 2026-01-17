@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PoseObjectIdSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PoseObjectIdSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _serializedId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

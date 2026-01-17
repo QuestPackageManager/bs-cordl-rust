@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Angle {
     pub m_Value: f32,
@@ -467,7 +470,7 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle>>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+PropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Angle_PropertyBag {
     __cordl_parent:
         crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::UIElements::Angle>,
@@ -550,10 +553,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Angle
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+Unit")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Angle_Unit {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Degree = 0i32,
     Gradian = 1i32,
     None = 4i32,
@@ -636,7 +644,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::An
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+PropertyBag+UnitProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Angle_UnitProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::UIElements::Angle,
@@ -826,7 +834,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Angle+PropertyBag+ValueProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_Angle_ValueProperty {
     __cordl_parent:
         crate::Unity::Properties::Property_2<crate::UnityEngine::UIElements::Angle, f32>,

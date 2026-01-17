@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeSerializationSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTypeSerializationSource {
     __cordl_parent: crate::System::Xml::Serialization::SerializationSource,
     pub attributeOverridesHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

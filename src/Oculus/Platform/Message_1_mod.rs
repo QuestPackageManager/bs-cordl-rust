@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Message_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Message_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Oculus::Platform::Message,
     pub data: T,
@@ -169,7 +169,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Message_1+Callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Message_1_Callback<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,

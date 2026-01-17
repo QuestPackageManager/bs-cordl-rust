@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _time_k__BackingField: f32,
@@ -369,10 +369,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataItem+BeatmapDataItemType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BeatmapDataItem_BeatmapDataItemType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BeatmapEvent = 1i32,
     BeatmapObject = 0i32,
 }

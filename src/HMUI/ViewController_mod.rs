@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ViewController {
     __cordl_parent: crate::HMUI::ViewControllerBase,
     pub _buttonBinder_k__BackingField: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
@@ -981,10 +981,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewController {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+ViewController+AnimationDirection")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ViewController_AnimationDirection {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 0i32,
     Vertical = 1i32,
 }
@@ -1063,10 +1068,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ViewController_Animat
     }
 }
 #[cfg(feature = "cordl_class_HMUI+ViewController+AnimationType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ViewController_AnimationType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     In = 1i32,
     None = 0i32,
     Out = 2i32,

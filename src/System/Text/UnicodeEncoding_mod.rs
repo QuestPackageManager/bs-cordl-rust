@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+UnicodeEncoding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnicodeEncoding {
     __cordl_parent: crate::System::Text::Encoding,
     pub isThrowException: bool,
@@ -825,7 +825,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UnicodeEncoding 
 }
 #[cfg(feature = "cordl_class_System+Text+UnicodeEncoding+Decoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnicodeEncoding_Decoder {
     __cordl_parent: crate::System::Text::DecoderNLS,
     pub lastByte: i32,

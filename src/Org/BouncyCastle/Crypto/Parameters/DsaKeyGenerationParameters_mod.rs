@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+DsaKeyGenerationParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DsaKeyGenerationParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
     pub parameters:

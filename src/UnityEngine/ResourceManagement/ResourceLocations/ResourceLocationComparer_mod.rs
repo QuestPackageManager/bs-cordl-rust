@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ResourceLocationComparer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceLocationComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

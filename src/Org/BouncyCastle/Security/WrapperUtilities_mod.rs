@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WrapperUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -171,7 +171,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Security::W
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WrapperUtilities_BufferedCipherWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBufferedCipher>,
@@ -405,10 +405,15 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::IWrapper>
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum WrapperUtilities_WrapAlgorithm {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AESRFC3211WRAP = 6i32,
     AESWRAP = 0i32,
     CAMELLIARFC3211WRAP = 7i32,

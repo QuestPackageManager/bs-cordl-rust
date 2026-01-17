@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+ChaCha7539Engine")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ChaCha7539Engine {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::Salsa20Engine,
 }

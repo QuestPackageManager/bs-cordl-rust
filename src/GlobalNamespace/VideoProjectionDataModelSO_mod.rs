@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VideoProjectionDataModelSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoProjectionDataModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _videoClipsWithId: quest_hook::libil2cpp::Gc<
@@ -128,7 +128,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VideoProjecti
 }
 #[cfg(feature = "cordl_class_VideoProjectionDataModelSO+VideoClipWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoProjectionDataModelSO_VideoClipWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id: i32,

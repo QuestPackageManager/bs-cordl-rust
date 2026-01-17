@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ScreenModeData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenModeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub position: crate::UnityEngine::Vector3,

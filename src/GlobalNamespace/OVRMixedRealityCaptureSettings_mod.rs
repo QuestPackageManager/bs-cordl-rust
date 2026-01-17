@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRMixedRealityCaptureSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRMixedRealityCaptureSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub enableMixedReality: bool,

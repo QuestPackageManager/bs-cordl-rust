@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusRemote")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusRemote {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
     pub _back_k__BackingField:

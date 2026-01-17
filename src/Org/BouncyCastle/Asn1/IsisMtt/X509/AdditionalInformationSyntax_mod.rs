@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AdditionalInformationSyntax {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub information:

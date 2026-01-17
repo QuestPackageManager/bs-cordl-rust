@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRTrackedCamera {
     pub GetCameraErrorNameFromEnum:
@@ -150,7 +153,7 @@ impl crate::OVR::OpenVR::IVRTrackedCamera {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__AcquireVideoStreamingService {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -332,7 +335,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__GetCameraErrorNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -507,7 +510,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__GetCameraFrameSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -730,7 +733,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__GetCameraIntrinsics {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -936,7 +939,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__GetCameraProjection {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1147,7 +1150,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__GetVideoStreamFrameBuffer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1382,7 +1385,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__GetVideoStreamTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1621,7 +1624,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__GetVideoStreamTextureGL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1853,7 +1856,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__GetVideoStreamTextureSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2069,7 +2072,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__HasCamera {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2248,7 +2251,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRTrackedCamera_
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__ReleaseVideoStreamTextureGL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2427,7 +2430,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRTrackedCamera__ReleaseVideoStreamingService {
     __cordl_parent: crate::System::MulticastDelegate,
 }

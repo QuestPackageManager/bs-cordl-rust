@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumMap {
     __cordl_parent: crate::System::Xml::Serialization::ObjectMap,
     pub _members: quest_hook::libil2cpp::Gc<
@@ -299,7 +299,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Serialization::En
 }
 #[cfg(feature = "cordl_class_System+Xml+Serialization+EnumMap+EnumMapMember")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumMap_EnumMapMember {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _xmlName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

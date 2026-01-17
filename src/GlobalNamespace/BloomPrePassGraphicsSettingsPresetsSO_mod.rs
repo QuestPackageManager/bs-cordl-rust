@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassGraphicsSettingsPresetsSO {
     __cordl_parent: crate::GlobalNamespace::NamedPresetsSO,
     pub _presets: quest_hook::libil2cpp::Gc<
@@ -170,7 +170,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BloomPrePassGraphicsSettingsPresetsSO+Preset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassGraphicsSettingsPresetsSO_Preset {
     __cordl_parent: crate::GlobalNamespace::NamedPreset,
     pub bloomPrePassEffect: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassEffectSO>,

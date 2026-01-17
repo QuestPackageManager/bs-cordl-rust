@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+VolumeComponent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VolumeComponent {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub active: bool,
@@ -435,7 +435,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Volume
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+VolumeComponent+Indent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VolumeComponent_Indent {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub relativeAmount: i32,

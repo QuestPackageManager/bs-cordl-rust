@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+HttpListenerRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpListenerRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub accept_types: quest_hook::libil2cpp::Gc<

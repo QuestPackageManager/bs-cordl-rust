@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+VolumeProfile")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VolumeProfile {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub components: quest_hook::libil2cpp::Gc<

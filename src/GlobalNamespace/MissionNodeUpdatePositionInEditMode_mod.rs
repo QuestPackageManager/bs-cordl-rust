@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionNodeUpdatePositionInEditMode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionNodeUpdatePositionInEditMode {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionNodeConnection:

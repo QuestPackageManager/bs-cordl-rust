@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_System+Net+TimerThread+TimerNode+TimerState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimerNode_TimerThread_TimerState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Cancelled = 2i32,
     Fired = 1i32,
     Ready = 0i32,
@@ -90,7 +95,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::TimerNode_Time
 }
 #[cfg(feature = "cordl_class_System+Net+TimerThread")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerThread {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -321,7 +326,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread {
 }
 #[cfg(feature = "cordl_class_System+Net+TimerThread+Callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerThread_Callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -438,7 +443,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Callb
 }
 #[cfg(feature = "cordl_class_System+Net+TimerThread+InfiniteTimer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerThread_InfiniteTimer {
     __cordl_parent: crate::System::Net::TimerThread_Timer,
     pub cancelled: i32,
@@ -555,7 +560,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Infin
 }
 #[cfg(feature = "cordl_class_System+Net+TimerThread+InfiniteTimerQueue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerThread_InfiniteTimerQueue {
     __cordl_parent: crate::System::Net::TimerThread_Queue,
 }
@@ -664,7 +669,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Infin
 }
 #[cfg(feature = "cordl_class_System+Net+TimerThread+Queue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerThread_Queue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DurationMilliseconds: i32,
@@ -798,7 +803,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Queue
 }
 #[cfg(feature = "cordl_class_System+Net+TimerThread+Timer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerThread_Timer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StartTimeMilliseconds: i32,
@@ -991,7 +996,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::TimerThread_Timer
 }
 #[cfg(feature = "cordl_class_System+Net+TimerThread+TimerNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerThread_TimerNode {
     __cordl_parent: crate::System::Net::TimerThread_Timer,
     pub m_TimerState: crate::System::Net::TimerNode_TimerThread_TimerState,
@@ -1295,7 +1300,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Timer
 }
 #[cfg(feature = "cordl_class_System+Net+TimerThread+TimerQueue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerThread_TimerQueue {
     __cordl_parent: crate::System::Net::TimerThread_Queue,
     pub m_ThisHandle: crate::System::IntPtr,

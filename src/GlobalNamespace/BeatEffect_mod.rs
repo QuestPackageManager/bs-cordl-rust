@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
@@ -186,7 +186,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatEffect {
 }
 #[cfg(feature = "cordl_class_BeatEffect+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatEffect_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,

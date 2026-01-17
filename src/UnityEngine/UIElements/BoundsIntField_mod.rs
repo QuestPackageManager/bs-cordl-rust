@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsIntField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<crate::UnityEngine::BoundsInt>,
     pub m_PositionField: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vector3IntField>,
@@ -227,7 +227,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Bound
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsIntField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BoundsIntField>,
@@ -315,7 +315,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsIntField_UxmlTraits {
     __cordl_parent:
         crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<crate::UnityEngine::BoundsInt>,

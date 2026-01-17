@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionConnectionsGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionConnectionsGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionNodesManager:

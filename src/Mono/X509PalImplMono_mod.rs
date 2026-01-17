@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+X509PalImplMono")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509PalImplMono {
     __cordl_parent: crate::Mono::X509PalImpl,
 }

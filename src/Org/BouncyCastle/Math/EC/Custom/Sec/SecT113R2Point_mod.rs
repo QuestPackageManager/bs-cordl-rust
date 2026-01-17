@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT113R2Point")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecT113R2Point {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
 }

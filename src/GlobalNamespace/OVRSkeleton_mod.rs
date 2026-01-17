@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSkeleton")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSkeleton {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
@@ -1045,10 +1045,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeleton {
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeleton+BoneId")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSkeleton_BoneId {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Body_Chest = 5i32,
     Body_End = 70i32,
     Body_Head = 7i32,
@@ -1211,7 +1216,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRSkeleto
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeleton+IOVRSkeletonDataProvider")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRSkeleton_IOVRSkeletonDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1337,7 +1342,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeleton+SkeletonPoseData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSkeleton_SkeletonPoseData {
     pub _RootPose_k__BackingField: crate::GlobalNamespace::OVRPlugin_Posef,
@@ -1788,10 +1796,15 @@ impl crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeleton+SkeletonType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSkeleton_SkeletonType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Body = 2i32,
     FullBody = 3i32,
     HandLeft = 0i32,

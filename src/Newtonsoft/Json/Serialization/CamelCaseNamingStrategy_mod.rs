@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+CamelCaseNamingStrategy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CamelCaseNamingStrategy {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::NamingStrategy,
 }

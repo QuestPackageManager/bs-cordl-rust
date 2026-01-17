@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+WaitUntil")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaitUntil {
     __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
     pub m_Predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,

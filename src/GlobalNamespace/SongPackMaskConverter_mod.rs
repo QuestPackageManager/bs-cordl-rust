@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongPackMaskConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongPackMaskConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }

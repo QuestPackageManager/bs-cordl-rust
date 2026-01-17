@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ScrollToTopOnEnable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScrollToTopOnEnable {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,

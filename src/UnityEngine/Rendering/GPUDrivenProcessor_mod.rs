@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUDrivenProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -931,7 +931,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::GPUDri
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenProcessor+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUDrivenProcessor_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

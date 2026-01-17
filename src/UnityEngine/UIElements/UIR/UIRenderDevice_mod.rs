@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIRenderDevice {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MockDevice: bool,
@@ -1522,7 +1522,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::UIR::
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UIRenderDevice_AllocToFree {
     pub alloc: crate::UnityEngine::UIElements::UIR::Alloc,
@@ -1628,7 +1631,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UIRenderDevice_AllocToUpdate {
     pub id: u32,
@@ -1738,7 +1744,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UIRenderDevice_DeviceToFree {
     pub handle: u32,
@@ -1873,7 +1882,10 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UIRenderDevice_DrawStatistics {
     pub currentFrameIndex: i32,
@@ -1987,7 +1999,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
 impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UIRenderDevice_EvaluationState {
     pub activeCommandList:

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InstructionArray {
     pub MaxStackDepth: i32,
@@ -219,7 +222,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionArray+DebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstructionArray_DebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: crate::System::Linq::Expressions::Interpreter::InstructionArray,

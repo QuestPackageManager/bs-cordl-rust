@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Authentication+AuthenticationException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AuthenticationException {
     __cordl_parent: crate::System::SystemException,
 }

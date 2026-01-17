@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+OpAssignMethodConversionBinaryExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpAssignMethodConversionBinaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::MethodBinaryExpression,
     pub _conversion: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LambdaExpression>,

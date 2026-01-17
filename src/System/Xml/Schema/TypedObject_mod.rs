@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+TypedObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypedObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub dstruct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::TypedObject_DecimalStruct>,
@@ -338,7 +338,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::TypedObje
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+TypedObject+DecimalStruct")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypedObject_DecimalStruct {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isDecimal: bool,

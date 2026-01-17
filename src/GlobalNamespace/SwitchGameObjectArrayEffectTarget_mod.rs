@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SwitchGameObjectArrayEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SwitchGameObjectArrayEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub gameObjects: quest_hook::libil2cpp::Gc<
@@ -164,7 +164,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_SwitchGameObjectArrayEffectTarget+GameObjectActivation")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SwitchGameObjectArrayEffectTarget_GameObjectActivation {
     pub threshold: f32,

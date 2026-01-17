@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DebugActions: quest_hook::libil2cpp::Gc<
@@ -1545,10 +1545,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::DebugM
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugManager+UIMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DebugManager_UIMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EditorMode = 0i32,
     RuntimeMode = 1i32,
 }
@@ -1630,7 +1635,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::Deb
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugManager+UIState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugManager_UIState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mode: crate::UnityEngine::Rendering::DebugManager_UIMode,

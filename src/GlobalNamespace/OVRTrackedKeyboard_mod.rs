@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRTrackedKeyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTrackedKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _CurrentKeyboardAngleFromUp_k__BackingField: f32,
@@ -1246,10 +1246,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTrackedKey
     }
 }
 #[cfg(feature = "cordl_class_OVRTrackedKeyboard+KeyboardPresentation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRTrackedKeyboard_KeyboardPresentation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     PreferMR = 1i32,
     PreferOpaque = 0i32,
 }
@@ -1338,7 +1343,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     pub IsEnabled: bool,
@@ -1466,10 +1474,15 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     }
 }
 #[cfg(feature = "cordl_class_OVRTrackedKeyboard+TrackedKeyboardState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRTrackedKeyboard_TrackedKeyboardState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Error = 6i32,
     ErrorExtensionFailed = 7i32,
     NoTrackableKeyboard = 1i32,
@@ -1564,7 +1577,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
     pub ActiveKeyboardName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

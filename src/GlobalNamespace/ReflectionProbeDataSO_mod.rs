@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ReflectionProbeDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionProbeDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _reflectionProbeCubemap1: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRSpace")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpace {
     pub _Handle_k__BackingField: u64,
@@ -385,10 +388,15 @@ impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace>>
     }
 }
 #[cfg(feature = "cordl_class_OVRSpace+StorageLocation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSpace_StorageLocation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Cloud = 1i32,
     Local = 0i32,
 }

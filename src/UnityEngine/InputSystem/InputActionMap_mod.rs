@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputActionMap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1819,7 +1819,10 @@ impl AsMut<crate::UnityEngine::InputSystem::IInputActionCollection2>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+BindingJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_BindingJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1984,7 +1987,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_BindingOverrideJson {
     pub action: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2175,7 +2181,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_BindingOverrideListJson {
     pub bindings: quest_hook::libil2cpp::Gc<
@@ -2283,7 +2292,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
 impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+DeviceArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_DeviceArray {
     pub m_HaveValue: bool,
@@ -2513,10 +2525,15 @@ impl crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputActionMap_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BindingResolutionNeedsFullReResolve = 2i32,
     BindingsForEachActionInitialized = 8i32,
     ControlsForEachActionInitialized = 4i32,
@@ -2605,7 +2622,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_ReadActionJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2753,7 +2773,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+ReadFileJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_ReadFileJson {
     pub actions: quest_hook::libil2cpp::Gc<
@@ -2904,7 +2927,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_ReadMapJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3019,7 +3045,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
 impl crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_WriteActionJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3159,7 +3188,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_WriteFileJson {
     pub maps: quest_hook::libil2cpp::Gc<
@@ -3331,7 +3363,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionMap_WriteMapJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

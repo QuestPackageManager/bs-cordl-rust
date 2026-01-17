@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion4+EventBoxGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBoxGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub t: crate::BeatmapSaveDataVersion4::EventBoxGroupType,

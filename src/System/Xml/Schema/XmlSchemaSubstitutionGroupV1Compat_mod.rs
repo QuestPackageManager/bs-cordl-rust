@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSubstitutionGroupV1Compat")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaSubstitutionGroupV1Compat {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaSubstitutionGroup,
     pub choice: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaChoice>,

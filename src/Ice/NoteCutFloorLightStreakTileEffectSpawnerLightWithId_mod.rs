@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _noteCutFloorLightStreakTileEffectSpawner:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Ice+FloorLightTilesGrid")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloorLightTilesGrid {
     __cordl_parent: crate::GlobalNamespace::AbstractPoolContainer,
     pub _floorLightTileMemoryPool: quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile_Pool>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_StyleSheet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_StyleSheet {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_StyleList: quest_hook::libil2cpp::Gc<

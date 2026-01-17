@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlDeclaration")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDeclaration {
     __cordl_parent: crate::System::Xml::XmlLinkedNode,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

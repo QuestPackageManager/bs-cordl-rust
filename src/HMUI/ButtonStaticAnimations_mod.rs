@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ButtonStaticAnimations")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonStaticAnimations {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _button: quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton>,

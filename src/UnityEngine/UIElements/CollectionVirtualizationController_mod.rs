@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionVirtualizationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionVirtualizationController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ScrollView: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,

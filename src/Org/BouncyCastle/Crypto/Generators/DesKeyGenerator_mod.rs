@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+DesKeyGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesKeyGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColliderEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColliderEventEffect {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _effectCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,

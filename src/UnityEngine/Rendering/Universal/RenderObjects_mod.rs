@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderObjects")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderObjects {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRendererFeature,
     pub settings: quest_hook::libil2cpp::Gc<
@@ -169,10 +169,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Univer
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+RenderObjects+RenderObjectsSettings+OverrideMaterialMode"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RenderObjectsSettings_RenderObjects_OverrideMaterialMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Material = 1i32,
     None = 0i32,
     Shader = 2i32,
@@ -273,7 +278,7 @@ for crate::UnityEngine::Rendering::Universal::RenderObjectsSettings_RenderObject
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderObjects+CustomCameraSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderObjects_CustomCameraSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub overrideCamera: bool,
@@ -363,7 +368,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderObjects+FilterSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderObjects_FilterSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub RenderQueueType: crate::UnityEngine::Rendering::Universal::RenderQueueType,
@@ -452,7 +457,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderObjects+RenderObjectsSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderObjects_RenderObjectsSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub passTag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

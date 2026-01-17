@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+BeatAvatarSelectionView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatAvatarSelectionView {
     __cordl_parent: crate::BeatSaber::AvatarCore::AvatarSelectionView,
     pub _avatarContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

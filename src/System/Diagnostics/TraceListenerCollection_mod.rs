@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+TraceListenerCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TraceListenerCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

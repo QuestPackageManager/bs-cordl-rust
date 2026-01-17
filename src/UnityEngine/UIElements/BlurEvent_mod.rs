@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BlurEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BlurEvent {
     __cordl_parent: crate::UnityEngine::UIElements::FocusEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BlurEvent>,

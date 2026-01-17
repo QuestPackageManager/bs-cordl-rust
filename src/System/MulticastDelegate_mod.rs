@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+MulticastDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MulticastDelegate {
     __cordl_parent: crate::System::Delegate,
     pub delegates: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+DefaultBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultBinder {
     __cordl_parent: crate::System::Reflection::Binder,
 }
@@ -1033,7 +1033,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder {
 }
 #[cfg(feature = "cordl_class_System+DefaultBinder+BinderState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultBinder_BinderState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_argsMap: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -1127,10 +1127,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder_BinderSt
     }
 }
 #[cfg(feature = "cordl_class_System+DefaultBinder+Primitives")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DefaultBinder_Primitives {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Boolean = 8i32,
     Byte = 64i32,
     Char = 16i32,

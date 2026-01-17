@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+BaseInputOverride")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseInputOverride {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseInput,
     pub _compositionString_k__BackingField:

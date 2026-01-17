@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LeaderboardUploadData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardUploadData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

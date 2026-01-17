@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+IgnoreAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoreAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _DoesNotContributeToSize_k__BackingField: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+InteractableTextMeshPro")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InteractableTextMeshPro {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub _interactionAlpha: f32,

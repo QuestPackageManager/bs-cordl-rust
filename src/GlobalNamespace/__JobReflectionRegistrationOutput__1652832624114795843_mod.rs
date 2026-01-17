@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class___JobReflectionRegistrationOutput__1652832624114795843")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct __JobReflectionRegistrationOutput__1652832624114795843 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

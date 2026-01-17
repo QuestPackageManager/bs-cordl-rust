@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnterPlayerGuestNameViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _playerNameWasEnteredSignal:
@@ -205,7 +205,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController+FinishDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnterPlayerGuestNameViewController_FinishDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

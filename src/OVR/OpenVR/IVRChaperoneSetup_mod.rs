@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRChaperoneSetup {
     pub CommitWorkingCopy:
@@ -199,7 +202,7 @@ impl crate::OVR::OpenVR::IVRChaperoneSetup {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__CommitWorkingCopy {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -371,7 +374,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__ExportLiveToBuffer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -551,7 +554,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -748,7 +751,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -937,7 +940,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1134,7 +1137,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1329,7 +1332,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1526,7 +1529,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetWorkingPlayAreaRect {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1701,7 +1704,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetWorkingPlayAreaSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1885,7 +1888,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2086,7 +2089,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2286,7 +2289,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__ImportFromBufferToWorking {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2464,7 +2467,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__ReloadFromDisk {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2635,7 +2638,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRChaperoneSetup
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__RevertWorkingCopy {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2802,7 +2805,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2998,7 +3001,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3187,7 +3190,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3382,7 +3385,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__SetWorkingPlayAreaSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3559,7 +3562,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3760,7 +3763,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }

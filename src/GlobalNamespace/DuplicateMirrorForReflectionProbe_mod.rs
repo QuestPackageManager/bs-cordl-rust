@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DuplicateMirrorForReflectionProbe")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DuplicateMirrorForReflectionProbe {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

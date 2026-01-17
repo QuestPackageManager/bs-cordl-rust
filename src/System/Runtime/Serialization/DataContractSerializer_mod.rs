@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DataContractSerializer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataContractSerializer {
     __cordl_parent: crate::System::Runtime::Serialization::XmlObjectSerializer,
     pub rootType: quest_hook::libil2cpp::Gc<crate::System::Type>,

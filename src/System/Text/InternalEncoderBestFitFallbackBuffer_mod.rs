@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+InternalEncoderBestFitFallbackBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InternalEncoderBestFitFallbackBuffer {
     __cordl_parent: crate::System::Text::EncoderFallbackBuffer,
     pub _cBestFit: char,

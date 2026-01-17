@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Thread")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Thread {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
     pub internal_thread: quest_hook::libil2cpp::Gc<crate::System::Threading::InternalThread>,

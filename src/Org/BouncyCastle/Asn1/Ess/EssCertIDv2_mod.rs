@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Ess+EssCertIDv2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EssCertIDv2 {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub hashAlgorithm:

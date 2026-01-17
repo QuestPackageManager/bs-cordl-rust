@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Utilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pkcs12Utilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

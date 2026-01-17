@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+ColocationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColocationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub ColocationReadyCallbacks: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,

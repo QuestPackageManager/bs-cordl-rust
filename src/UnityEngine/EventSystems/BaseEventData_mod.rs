@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseEventData {
     __cordl_parent: crate::UnityEngine::EventSystems::AbstractEventData,
     pub m_EventSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::EventSystem>,

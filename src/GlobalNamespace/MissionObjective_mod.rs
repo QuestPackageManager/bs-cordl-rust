@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionObjective")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionObjective {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _type: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveTypeSO>,
@@ -253,10 +253,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionObject
     }
 }
 #[cfg(feature = "cordl_class_MissionObjective+ReferenceValueComparisonType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MissionObjective_ReferenceValueComparisonType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Equal = 1i32,
     Max = 2i32,
     Min = 3i32,

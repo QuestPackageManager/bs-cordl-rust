@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatEffectSpawner")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatEffectSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _effectDuration: f32,
@@ -253,7 +253,7 @@ impl AsMut<crate::GlobalNamespace::IBeatEffectDidFinishEvent>
 }
 #[cfg(feature = "cordl_class_BeatEffectSpawner+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatEffectSpawner_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hideNoteSpawnEffect: bool,

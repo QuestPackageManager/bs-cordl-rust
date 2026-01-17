@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerConnection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerConnection {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_PlayerEditorConnectionEvents: quest_hook::libil2cpp::Gc<

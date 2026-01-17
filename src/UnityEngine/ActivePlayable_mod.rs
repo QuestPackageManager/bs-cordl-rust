@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+ActivePlayable")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ActivePlayable {
     pub _settings_k__BackingField: crate::UnityEngine::PlayableSettings,

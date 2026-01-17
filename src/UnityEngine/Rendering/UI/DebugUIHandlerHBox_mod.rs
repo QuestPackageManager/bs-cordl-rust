@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerHBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUIHandlerHBox {
     __cordl_parent: crate::UnityEngine::Rendering::UI::DebugUIHandlerWidget,
     pub m_Container:

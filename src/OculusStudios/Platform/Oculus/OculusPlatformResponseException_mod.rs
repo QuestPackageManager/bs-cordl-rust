@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Oculus+OculusPlatformResponseException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusPlatformResponseException {
     __cordl_parent: crate::System::Exception,
     pub error: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Error>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerAudioClip")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DownloadHandlerAudioClip {
     __cordl_parent: crate::UnityEngine::Networking::DownloadHandler,
     pub m_NativeData: crate::Unity::Collections::NativeArray_1<u8>,
@@ -384,7 +384,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerAudioClip+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DownloadHandlerAudioClip_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

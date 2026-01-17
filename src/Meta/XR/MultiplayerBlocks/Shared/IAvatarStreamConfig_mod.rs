@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+IAvatarStreamConfig")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IAvatarStreamConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

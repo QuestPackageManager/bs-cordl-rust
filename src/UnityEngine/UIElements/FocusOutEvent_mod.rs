@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusOutEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FocusOutEvent {
     __cordl_parent: crate::UnityEngine::UIElements::FocusEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusOutEvent>,

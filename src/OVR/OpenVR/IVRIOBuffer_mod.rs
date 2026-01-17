@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRIOBuffer {
     pub Open: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVRIOBuffer__Open>,
@@ -108,7 +111,7 @@ impl crate::OVR::OpenVR::IVRIOBuffer {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Close")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRIOBuffer__Close {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -276,7 +279,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Clos
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Open")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRIOBuffer__Open {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -477,7 +480,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Open
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_PropertyContainer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRIOBuffer__PropertyContainer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -640,7 +643,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Prop
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Read")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRIOBuffer__Read {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -826,7 +829,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRIOBuffer__Read
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRIOBuffer+_Write")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRIOBuffer__Write {
     __cordl_parent: crate::System::MulticastDelegate,
 }

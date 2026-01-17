@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataRowCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataRowCollection {
     __cordl_parent: crate::System::Data::InternalDataCollectionBase,
     pub _table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -439,7 +439,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataRowCollectio
 }
 #[cfg(feature = "cordl_class_System+Data+DataRowCollection+DataRowTree")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataRowCollection_DataRowTree {
     __cordl_parent:
         crate::System::Data::RBTree_1<quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>>,

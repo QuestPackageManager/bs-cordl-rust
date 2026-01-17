@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResourceManagerRuntimeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_buildTarget: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct QualitySettings {
     pub renderViewportScale: f32,
@@ -115,10 +118,15 @@ impl crate::BeatSaber::Settings::QualitySettings {
     pub type ObstacleQuality = crate::BeatSaber::Settings::QualitySettings_ObstacleQuality;
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+BloomQuality")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum QualitySettings_BloomQuality {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Game = 0i32,
     LightBaking = 1i32,
 }
@@ -207,10 +215,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MainEffectOption")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum QualitySettings_MainEffectOption {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Game = 1i32,
     LightBaking = 2i32,
     Off = 0i32,
@@ -300,10 +313,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+MirrorQuality")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum QualitySettings_MirrorQuality {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 3i32,
     Low = 1i32,
     Medium = 2i32,
@@ -394,10 +412,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QualitySettings+ObstacleQuality")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum QualitySettings_ObstacleQuality {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,

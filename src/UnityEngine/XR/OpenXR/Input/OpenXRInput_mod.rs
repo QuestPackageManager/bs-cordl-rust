@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Input+OpenXRInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1521,7 +1521,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::OpenXR::Input
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Input+OpenXRInput+GetInternalDeviceIdCommand")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OpenXRInput_GetInternalDeviceIdCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<12usize>,
@@ -1720,10 +1723,15 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Input+OpenXRInput+InputSourceNameFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRInput_InputSourceNameFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 7i32,
     Component = 4i32,
     InteractionProfile = 2i32,
@@ -1814,7 +1822,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Input+OpenXRInput+SerializedBinding")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OpenXRInput_SerializedBinding {
     pub actionId: u64,
@@ -1919,7 +1930,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+XR+OpenXR+Input+OpenXRInput+SerializedBinding")]
 impl crate::UnityEngine::XR::OpenXR::Input::OpenXRInput_SerializedBinding {}
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Input+OpenXRInput+SerializedGuid")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OpenXRInput_SerializedGuid {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,

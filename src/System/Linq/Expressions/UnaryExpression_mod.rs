@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+UnaryExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataTextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataTextWriter {
     __cordl_parent: crate::System::Xml::XmlWriter,
     pub _xmltextWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,

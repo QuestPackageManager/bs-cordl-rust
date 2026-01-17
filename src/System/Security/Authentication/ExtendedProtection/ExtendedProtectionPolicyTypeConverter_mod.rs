@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicyTypeConverter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExtendedProtectionPolicyTypeConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }

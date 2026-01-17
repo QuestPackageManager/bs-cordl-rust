@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PhysicsRaycasterWithCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cachedRaycasts: quest_hook::libil2cpp::Gc<
@@ -117,7 +117,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::VRUIControls::PhysicsRaycaster
     }
 }
 #[cfg(feature = "cordl_class_VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PhysicsRaycasterWithCache_CachedRaycast {
     pub wasHit: bool,

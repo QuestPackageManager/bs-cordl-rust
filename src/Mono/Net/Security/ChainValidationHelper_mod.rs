@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Net+Security+ChainValidationHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ChainValidationHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub owner: quest_hook::libil2cpp::Gc<

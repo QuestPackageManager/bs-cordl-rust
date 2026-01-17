@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MonoMethodMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoMethodMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub method: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,

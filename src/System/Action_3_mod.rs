@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Action_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Action_3<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

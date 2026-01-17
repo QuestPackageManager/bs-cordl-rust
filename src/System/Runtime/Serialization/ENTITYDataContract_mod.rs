@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+ENTITYDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ENTITYDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::StringDataContract,
 }

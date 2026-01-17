@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GoodCutScoringElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GoodCutScoringElement {
     __cordl_parent: crate::GlobalNamespace::ScoringElement,
     pub _cutScoreBuffer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CutScoreBuffer>,
@@ -297,7 +297,7 @@ impl AsMut<crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver>
 }
 #[cfg(feature = "cordl_class_GoodCutScoringElement+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GoodCutScoringElement_Pool {
     __cordl_parent: crate::GlobalNamespace::ScoringElement_Pool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GoodCutScoringElement>,

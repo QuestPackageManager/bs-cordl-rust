@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Main+Leaderboards+QueryLeaderboardHealth")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QueryLeaderboardHealth {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::QueryRequest,
 }

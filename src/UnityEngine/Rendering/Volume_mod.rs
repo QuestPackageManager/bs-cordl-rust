@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Volume")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Volume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_IsGlobal: bool,

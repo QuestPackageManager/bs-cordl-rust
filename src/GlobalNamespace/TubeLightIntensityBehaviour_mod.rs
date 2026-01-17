@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TubeLightIntensityBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TubeLightIntensityBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub _noPredefinedStartValue: bool,

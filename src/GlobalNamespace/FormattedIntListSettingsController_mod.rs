@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FormattedIntListSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FormattedIntListSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _minValue: i32,

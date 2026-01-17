@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaResolver")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonSchemaResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _LoadedSchemas_k__BackingField: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SystemVersionPropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -98,7 +98,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SystemVersionPropertyBag_BuildProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -292,7 +292,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SystemVersionPropertyBag_MajorProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -486,7 +486,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SystemVersionPropertyBag_MinorProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -680,7 +680,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SystemVersionPropertyBag_RevisionProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         quest_hook::libil2cpp::Gc<crate::System::Version>,

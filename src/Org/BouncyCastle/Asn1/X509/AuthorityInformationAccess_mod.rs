@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+AuthorityInformationAccess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AuthorityInformationAccess {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub descriptions: quest_hook::libil2cpp::Gc<

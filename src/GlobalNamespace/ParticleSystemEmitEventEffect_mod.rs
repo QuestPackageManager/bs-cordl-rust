@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ParticleSystemEmitEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemEmitEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEvent: crate::GlobalNamespace::BasicBeatmapEventType,
@@ -136,7 +136,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ParticleSyste
     feature = "cordl_class_ParticleSystemEmitEventEffect+BeatmapEditorParticleSystemEmitBehavior"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemEmitEventEffect_BeatmapEditorParticleSystemEmitBehavior {
     __cordl_parent:
         crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior,
@@ -336,7 +336,7 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticleS
 }
 #[cfg(feature = "cordl_class_ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemEmitEventEffect_GameplayParticleSystemEmitBehavior {
     __cordl_parent:
         crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior,
@@ -589,7 +589,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,

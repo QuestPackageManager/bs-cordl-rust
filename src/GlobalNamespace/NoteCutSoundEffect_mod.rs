@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteCutSoundEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteCutSoundEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
@@ -457,7 +457,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutSoundE
 }
 #[cfg(feature = "cordl_class_NoteCutSoundEffect+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteCutSoundEffect_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutSoundEffect>,

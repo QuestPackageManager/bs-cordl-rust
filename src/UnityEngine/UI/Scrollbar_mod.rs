@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Scrollbar")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Scrollbar {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_HandleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -1256,10 +1256,15 @@ impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::S
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Scrollbar+Axis")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Scrollbar_Axis {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 0i32,
     Vertical = 1i32,
 }
@@ -1338,10 +1343,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Scrollbar_
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Scrollbar+Direction")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Scrollbar_Direction {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BottomToTop = 2i32,
     LeftToRight = 0i32,
     RightToLeft = 1i32,
@@ -1423,7 +1433,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Scrollbar_
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Scrollbar+ScrollEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Scrollbar_ScrollEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
 }

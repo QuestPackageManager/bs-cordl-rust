@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Internal+ExcludeFromDocsAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExcludeFromDocsAttribute {
     __cordl_parent: crate::System::Attribute,
 }

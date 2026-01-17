@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlUntypedConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlUntypedConverter {
     __cordl_parent: crate::System::Xml::Schema::XmlListConverter,
     pub allowListToList: bool,

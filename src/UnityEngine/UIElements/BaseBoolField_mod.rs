@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseBoolField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseBoolField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<bool>,
     pub m_Label: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,

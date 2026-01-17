@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Tab")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tab {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub selected: quest_hook::libil2cpp::Gc<
@@ -714,7 +714,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Tab {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Tab+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tab_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Tab>,
@@ -798,7 +798,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Tab_U
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Tab+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tab_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_Label:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_Sprite")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_Sprite {
     __cordl_parent: crate::TMPro::TMP_TextElement_Legacy,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

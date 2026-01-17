@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+SignatureHasElementType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignatureHasElementType {
     __cordl_parent: crate::System::Reflection::SignatureType,
     pub _elementType: quest_hook::libil2cpp::Gc<crate::System::Reflection::SignatureType>,

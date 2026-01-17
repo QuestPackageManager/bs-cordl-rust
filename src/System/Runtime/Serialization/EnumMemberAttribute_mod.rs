@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+EnumMemberAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumMemberAttribute {
     __cordl_parent: crate::System::Attribute,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

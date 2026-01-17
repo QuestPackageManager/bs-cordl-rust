@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AnimatorOverrideController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimatorOverrideController {
     __cordl_parent: crate::UnityEngine::RuntimeAnimatorController,
     pub OnOverrideControllerDirty: quest_hook::libil2cpp::Gc<
@@ -323,7 +323,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AnimatorOverrideC
     feature = "cordl_class_UnityEngine+AnimatorOverrideController+OnOverrideControllerDirtyCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimatorOverrideController_OnOverrideControllerDirtyCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

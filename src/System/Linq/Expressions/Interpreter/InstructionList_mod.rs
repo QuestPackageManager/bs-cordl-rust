@@ -1,7 +1,10 @@
 #[cfg(
     feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DebugView_InstructionList_InstructionView {
     pub _index: i32,
@@ -191,7 +194,7 @@ impl crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_In
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstructionList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _instructions: quest_hook::libil2cpp::Gc<
@@ -3283,7 +3286,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstructionList_DebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

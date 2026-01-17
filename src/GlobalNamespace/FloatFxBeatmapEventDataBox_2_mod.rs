@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatFxBeatmapEventDataBox_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxBeatmapEventDataBox_2<
     TIn: quest_hook::libil2cpp::Type,
     TOut: quest_hook::libil2cpp::Type,

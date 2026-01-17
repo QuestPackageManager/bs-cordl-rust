@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+SHA256")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SHA256 {
     __cordl_parent: crate::System::Security::Cryptography::HashAlgorithm,
 }

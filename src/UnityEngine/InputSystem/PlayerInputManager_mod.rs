@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerInputManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_NotificationBehavior: crate::UnityEngine::InputSystem::PlayerNotifications,
@@ -1204,7 +1204,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Play
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerInputManager_PlayerJoinedEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
@@ -1290,7 +1290,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerInputManager_PlayerLeftEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,

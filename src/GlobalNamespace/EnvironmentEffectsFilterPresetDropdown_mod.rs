@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnvironmentEffectsFilterPresetDropdown")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentEffectsFilterPresetDropdown {
     __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::EnvironmentEffectsFilterPreset,

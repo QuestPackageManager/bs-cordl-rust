@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS8 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -56,7 +56,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::
 }
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+EncryptedPrivateKeyInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS8_EncryptedPrivateKeyInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -310,7 +310,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS8+PrivateKeyInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PKCS8_PrivateKeyInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: i32,

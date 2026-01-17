@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Text")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Text {
     __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
     pub m_FontData: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::FontData>,

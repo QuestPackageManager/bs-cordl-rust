@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ShadowSplitData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ShadowSplitData {
     pub m_CullingPlaneCount: i32,
@@ -281,7 +284,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::ShadowSpli
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ShadowSplitData+_m_CullingPlanes_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ShadowSplitData__m_CullingPlanes_e__FixedBuffer {
     pub FixedElementField: u8,

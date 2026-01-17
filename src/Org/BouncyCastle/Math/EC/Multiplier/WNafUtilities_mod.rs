@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WNafUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -682,7 +682,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+ConfigureBasepointCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WNafUtilities_ConfigureBasepointCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
@@ -832,7 +832,7 @@ impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WNafUtilities_MapPointCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_infoP:
@@ -989,7 +989,7 @@ impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WNafUtilities_PrecomputeCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
@@ -1215,7 +1215,7 @@ impl AsMut<crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback>
     feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WNafUtilities_PrecomputeWithPointMapCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,

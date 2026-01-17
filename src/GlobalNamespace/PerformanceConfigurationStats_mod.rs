@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PerformanceConfigurationStats")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PerformanceConfigurationStats {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub processorFrequency: crate::GlobalNamespace::PerformanceConfigurationStats_IntStats,
@@ -171,7 +171,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerformanceCo
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationStats+BoolStats")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationStats_BoolStats {
     pub off: i32,
@@ -326,7 +329,10 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationStats+EnumStats_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationStats_EnumStats_1<T: quest_hook::libil2cpp::Type> {
     pub flags: i32,
@@ -508,7 +514,10 @@ impl<T: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationStats+FloatStats")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationStats_FloatStats {
     pub min: f32,
@@ -663,7 +672,10 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationStats+IntStats")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationStats_IntStats {
     pub min: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntegerField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<i32>,
 }
@@ -256,7 +256,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Integ
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+IntegerInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntegerField_IntegerInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i32>,
 }
@@ -476,7 +476,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntegerField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IntegerField>,
@@ -564,7 +564,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntegerField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         i32,

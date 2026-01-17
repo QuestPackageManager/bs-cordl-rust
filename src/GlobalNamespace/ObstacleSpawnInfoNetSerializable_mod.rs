@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObstacleSpawnInfoNetSerializable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleSpawnInfoNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _cordl_time: f32,

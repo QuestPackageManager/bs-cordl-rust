@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerMetricsFilters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncReadManagerMetricsFilters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub TypeIDs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,

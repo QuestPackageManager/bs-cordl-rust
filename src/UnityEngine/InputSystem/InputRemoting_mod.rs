@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ChangeUsageMsg_InputRemoting_Data {
     pub deviceId: i32,
@@ -109,7 +112,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Flags: crate::UnityEngine::InputSystem::InputRemoting_Flags,
@@ -929,7 +932,7 @@ impl AsMut<crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemo
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_ChangeUsageMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1039,7 +1042,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_ConnectMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1121,7 +1124,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_DisconnectMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1201,10 +1204,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputRemoting_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Sending = 1i32,
     StartSendingOnConnect = 2i32,
 }
@@ -1289,7 +1297,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::I
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Message")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputRemoting_Message {
     pub participantId: i32,
@@ -1393,10 +1404,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 impl crate::UnityEngine::InputSystem::InputRemoting_Message {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+MessageType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputRemoting_MessageType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ChangeUsages = 7i32,
     Connect = 0i32,
     Disconnect = 1i32,
@@ -1494,7 +1510,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_NewDeviceMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1604,7 +1620,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_NewEventsMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1768,7 +1784,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_NewLayoutMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1881,7 +1897,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputRemoting_RemoteInputDevice {
     pub remoteId: i32,
@@ -1987,7 +2006,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 impl crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoteSender")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputRemoting_RemoteSender {
     pub senderId: i32,
@@ -2102,7 +2124,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_RemoveDeviceMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2210,7 +2232,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_StartSendingMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2292,7 +2314,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_StopSendingMsg {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2374,7 +2396,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Subscriber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputRemoting_Subscriber {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
@@ -2495,7 +2517,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NewDeviceMsg_InputRemoting_Data {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2607,7 +2632,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 impl crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NewLayoutMsg_InputRemoting_Data {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Math+Prime+PrimalityTests")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrimalityTests {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ScrollView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScrollView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _viewport: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -902,10 +902,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ScrollView {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollDirection")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScrollView_ScrollDirection {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Down = 2i32,
     Left = 3i32,
     None = 0i32,
@@ -987,10 +992,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ScrollView_ScrollDire
     }
 }
 #[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScrollView_ScrollType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FixedCellSize = 1i32,
     FocusItems = 2i32,
     PageSize = 0i32,
@@ -1070,10 +1080,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ScrollView_ScrollType
     }
 }
 #[cfg(feature = "cordl_class_HMUI+ScrollView+ScrollViewDirection")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScrollView_ScrollViewDirection {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 1i32,
     Vertical = 0i32,
 }

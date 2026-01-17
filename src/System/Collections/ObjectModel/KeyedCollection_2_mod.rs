@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+ObjectModel+KeyedCollection_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KeyedCollection_2<TKey: quest_hook::libil2cpp::Type, TItem: quest_hook::libil2cpp::Type>
 {
     __cordl_parent: crate::System::Collections::ObjectModel::Collection_1<TItem>,

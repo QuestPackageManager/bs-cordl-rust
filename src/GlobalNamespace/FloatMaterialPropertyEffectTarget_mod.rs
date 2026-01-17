@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatMaterialPropertyEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatMaterialPropertyEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _materialPropertyBlockController:

@@ -1,7 +1,10 @@
 #[cfg(
     feature = "cordl_class_OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData {
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -119,7 +122,7 @@ for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_I
 impl crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData {}
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub CommitText: quest_hook::libil2cpp::Gc<
@@ -1670,7 +1673,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVirtualKey
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+AbstractTextHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_AbstractTextHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
@@ -1978,7 +1981,7 @@ impl AsMut<crate::GlobalNamespace::OVRVirtualKeyboard_ITextHandler>
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+BaseInputSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_BaseInputSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _operatingWithoutOVRCameraRig: bool,
@@ -2183,7 +2186,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+CommitTextUnityEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_CommitTextUnityEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2269,7 +2272,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+ControllerInputSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_ControllerInputSource {
     __cordl_parent: crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource,
     pub _rootTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -2433,7 +2436,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+HandInputSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_HandInputSource {
     __cordl_parent: crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource,
     pub _hand: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHand>,
@@ -2552,7 +2555,7 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+IInputSource")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRVirtualKeyboard_IInputSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -2640,7 +2643,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRVirtualKey
     }
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+ITextHandler")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRVirtualKeyboard_ITextHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -2906,10 +2909,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVirtualKey
     }
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+InputSource")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRVirtualKeyboard_InputSource {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ControllerLeft = 0i32,
     ControllerRight = 1i32,
     HandLeft = 2i32,
@@ -2999,7 +3007,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+InteractorRootTransformOverride")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_InteractorRootTransformOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub applyQueue: quest_hook::libil2cpp::Gc<
@@ -3228,7 +3236,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+KeyboardEventListener")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_KeyboardEventListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyboard_: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,
@@ -3362,10 +3370,15 @@ impl AsMut<crate::GlobalNamespace::OVRManager_EventListener>
     }
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+KeyboardPosition")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRVirtualKeyboard_KeyboardPosition {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Custom = 2i32,
     Direct = 1i32,
     Far = 0i32,
@@ -3456,7 +3469,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+TextHandlerScope")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_TextHandlerScope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _textHandler:
@@ -3828,7 +3841,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+VirtualKeyboardTextureInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRVirtualKeyboard_VirtualKeyboardTextureInfo {
     pub buffer: crate::System::IntPtr,
@@ -3941,7 +3957,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::GlobalNamespace::OVRVirtualKeyboard_VirtualKeyboardTextureInfo {}
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+WaitUntilKeyboardVisible")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboard_WaitUntilKeyboardVisible {
     __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
     pub _keyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,

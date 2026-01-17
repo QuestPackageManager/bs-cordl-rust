@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FlyingScoreSpawner")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlyingScoreSpawner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _flyingScoreEffectPool:
@@ -216,7 +216,7 @@ impl AsMut<crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent>
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlyingScoreSpawner_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub spawnPosition: crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition,
@@ -302,10 +302,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingScoreSp
     }
 }
 #[cfg(feature = "cordl_class_FlyingScoreSpawner+SpawnPosition")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FlyingScoreSpawner_SpawnPosition {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AboveGround = 1i32,
     Underground = 0i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteBigCuttableColliderSize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteBigCuttableColliderSize {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,

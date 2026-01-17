@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+GUIScrollGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUIScrollGroup {
     __cordl_parent: crate::UnityEngine::GUILayoutGroup,
     pub calcMinWidth: f32,

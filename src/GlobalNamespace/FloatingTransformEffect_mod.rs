@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatingTransformEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatingTransformEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,

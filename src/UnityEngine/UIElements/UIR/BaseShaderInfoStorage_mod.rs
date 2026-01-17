@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BaseShaderInfoStorage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseShaderInfoStorage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed_k__BackingField: bool,

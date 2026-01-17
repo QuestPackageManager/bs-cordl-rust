@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphResourcePool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphResourcePool_1<Type: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::RenderGraphModule::IRenderGraphResourcePool,
     pub m_ResourcePool: quest_hook::libil2cpp::Gc<
@@ -539,7 +539,10 @@ impl<Type: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphResourcePool_1+ResourceLogInfo"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderGraphResourcePool_1_ResourceLogInfo<Type: quest_hook::libil2cpp::Type> {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

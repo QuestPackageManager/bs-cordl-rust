@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ListLogger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListLogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _messages: quest_hook::libil2cpp::Gc<
@@ -348,7 +348,7 @@ impl AsMut<crate::GlobalNamespace::IBeatSaberLogger> for crate::GlobalNamespace:
 }
 #[cfg(feature = "cordl_class_ListLogger+LogMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListLogger_LogMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::GlobalNamespace::ListLogger_LogType,
@@ -467,10 +467,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ListLogger_Lo
     }
 }
 #[cfg(feature = "cordl_class_ListLogger+LogType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ListLogger_LogType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Error = 2i32,
     Exception = 3i32,
     Info = 0i32,

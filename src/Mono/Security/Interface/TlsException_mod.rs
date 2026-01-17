@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Interface+TlsException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsException {
     __cordl_parent: crate::System::Exception,
     pub alert: quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::Alert>,

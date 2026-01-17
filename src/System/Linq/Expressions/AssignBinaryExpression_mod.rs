@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+AssignBinaryExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssignBinaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::BinaryExpression,
 }

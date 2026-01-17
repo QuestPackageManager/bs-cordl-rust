@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObstacleSaberSparkleEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleSaberSparkleEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _sparkleParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDifficultySegmentedControlController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDifficultySegmentedControlController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _difficultySegmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControl>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureOutEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MouseCaptureOutEvent {
     __cordl_parent: crate::UnityEngine::UIElements::MouseCaptureEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseCaptureOutEvent>,

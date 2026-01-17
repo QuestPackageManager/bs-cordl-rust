@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Tuple_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tuple_3<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LightSensor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
     pub _lightLevel_k__BackingField:

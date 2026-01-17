@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ArrayByRefUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayByRefUpdater {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ByRefUpdater,
     pub _array: crate::System::Linq::Expressions::Interpreter::LocalDefinition,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemoteProviderException {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Exceptions::ProviderException,
     pub _WebRequestResult_k__BackingField: quest_hook::libil2cpp::Gc<

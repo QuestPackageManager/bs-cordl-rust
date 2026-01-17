@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenStick")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OnScreenStick {
     __cordl_parent: crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
     pub m_MovementRange: f32,
@@ -804,10 +804,15 @@ impl AsMut<crate::UnityEngine::EventSystems::IPointerUpHandler>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OnScreenStick_Behaviour {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ExactPositionWithDynamicOrigin = 2i32,
     ExactPositionWithStaticOrigin = 1i32,
     RelativePositionWithStaticOrigin = 0i32,

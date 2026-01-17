@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebCompletionSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebCompletionSource {
     __cordl_parent: crate::System::Net::WebCompletionSource_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

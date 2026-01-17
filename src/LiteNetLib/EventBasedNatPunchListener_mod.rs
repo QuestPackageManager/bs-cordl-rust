@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNatPunchListener")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNatPunchListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NatIntroductionRequest: quest_hook::libil2cpp::Gc<
@@ -282,7 +282,7 @@ impl AsMut<crate::LiteNetLib::INatPunchListener> for crate::LiteNetLib::EventBas
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNatPunchListener_OnNatIntroductionRequest {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -469,7 +469,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionSuccess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventBasedNatPunchListener_OnNatIntroductionSuccess {
     __cordl_parent: crate::System::MulticastDelegate,
 }

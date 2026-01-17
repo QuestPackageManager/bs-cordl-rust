@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceAmbientOcclusionSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub AOMethod: crate::UnityEngine::Rendering::Universal::ScreenSpaceAmbientOcclusionSettings_AOMethodOptions,
@@ -121,10 +121,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionSettings+AOMethodOptions"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenSpaceAmbientOcclusionSettings_AOMethodOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BlueNoise = 0i32,
     InterleavedGradient = 1i32,
 }
@@ -225,10 +230,15 @@ for crate::UnityEngine::Rendering::Universal::ScreenSpaceAmbientOcclusionSetting
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionSettings+AOSampleOption"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenSpaceAmbientOcclusionSettings_AOSampleOption {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 0i32,
     Low = 2i32,
     Medium = 1i32,
@@ -330,10 +340,15 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionSettings+BlurQualityOptions"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenSpaceAmbientOcclusionSettings_BlurQualityOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 0i32,
     Low = 2i32,
     Medium = 1i32,
@@ -435,10 +450,15 @@ for crate::UnityEngine::Rendering::Universal::ScreenSpaceAmbientOcclusionSetting
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionSettings+DepthSource"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenSpaceAmbientOcclusionSettings_DepthSource {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Depth = 0i32,
     DepthNormals = 1i32,
 }
@@ -539,10 +559,15 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionSettings+NormalQuality"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenSpaceAmbientOcclusionSettings_NormalQuality {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,

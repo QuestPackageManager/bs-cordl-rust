@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JConstructor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JConstructor {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelCollectionTableView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelCollectionTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,

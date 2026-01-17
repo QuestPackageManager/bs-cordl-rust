@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectMethod")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubContainerCreatorByNewGameObjectMethod {
     __cordl_parent: crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext,
     pub _installerMethod: quest_hook::libil2cpp::Gc<

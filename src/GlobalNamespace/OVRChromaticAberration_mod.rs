@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRChromaticAberration")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRChromaticAberration {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub toggleButton: crate::GlobalNamespace::OVRInput_RawButton,

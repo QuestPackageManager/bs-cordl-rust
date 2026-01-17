@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+AnnotationType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BB_OVRTelemetryConstants_AnnotationType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -65,7 +65,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BB_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -130,7 +130,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB+Origins")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BB_OVRTelemetryConstants_Origins {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -184,7 +184,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Editor_OVRTelemetryConstants_AnnotationType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -242,10 +242,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+AnnotationVariant")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Editor_OVRTelemetryConstants_AnnotationVariant {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Optional = 1i32,
     Required = 0i32,
 }
@@ -335,7 +340,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Editor_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -394,7 +399,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback+AnnotationType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Feedback_OVRTelemetryConstants_AnnotationType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -450,7 +455,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Feedback_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -506,7 +511,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup+AnnotationType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GuidedSetup_OVRTelemetryConstants_AnnotationType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -565,7 +570,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GuidedSetup_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -621,7 +626,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+AnnotationTypes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRManager_OVRTelemetryConstants_AnnotationTypes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -682,10 +687,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+ConsentOrigins")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_OVRTelemetryConstants_ConsentOrigins {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Legacy = 2i32,
     Popup = 0i32,
     Settings = 1i32,
@@ -776,7 +786,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRManager_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -833,7 +843,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -902,7 +912,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryC
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+BB")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_BB {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -959,7 +969,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryC
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Editor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_Editor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1017,7 +1027,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryC
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Feedback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_Feedback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1072,7 +1082,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryC
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+GuidedSetup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_GuidedSetup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1132,7 +1142,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+OVRManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_OVRManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1195,7 +1205,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_ProjectSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1272,7 +1282,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_Scene {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1327,7 +1337,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryC
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_Utils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1382,7 +1392,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryC
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetryConstants_XRSim {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1437,7 +1447,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetryC
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+AnnotationType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProjectSettings_OVRTelemetryConstants_AnnotationType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1498,10 +1508,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+DepthSubmissionMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_DepthSubmissionMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Depth16Bit = 2i32,
     Depth24Bit = 3i32,
     None = 1i32,
@@ -1592,10 +1607,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingAPI")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_FoveatedRenderingAPI {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Legacy = 1i32,
     SRP = 2i32,
     Unknown = 0i32,
@@ -1685,10 +1705,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+FoveatedRenderingMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_FoveatedRenderingMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EyeTrackedFoveatedRendering = 2i32,
     FixedFoveatedRendering = 1i32,
     Unknown = 0i32,
@@ -1779,7 +1804,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProjectSettings_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1836,10 +1861,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderThreadingMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_RenderThreadingMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LegacyGraphicsJobs = 2i32,
     Multithreaded = 1i32,
     NativeGraphicsJobs = 3i32,
@@ -1930,10 +1960,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+RenderingPath")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_RenderingPath {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Deferred = 3i32,
     Forward = 1i32,
     ForwardPlus = 2i32,
@@ -2024,10 +2059,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+ProjectSettings+XrPlugin")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProjectSettings_OVRTelemetryConstants_XrPlugin {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Oculus = 1i32,
     OpenXR = 2i32,
     Unknown = 0i32,
@@ -2118,7 +2158,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene+AnnotationType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Scene_OVRTelemetryConstants_AnnotationType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2181,7 +2221,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Scene+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Scene_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2240,7 +2280,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils+AnnotationType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Utils_OVRTelemetryConstants_AnnotationType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2298,7 +2338,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+Utils+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Utils_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2354,7 +2394,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim+AnnotationType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRSim_OVRTelemetryConstants_AnnotationType {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2413,7 +2453,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetryConstants+XRSim+MarkerId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRSim_OVRTelemetryConstants_MarkerId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

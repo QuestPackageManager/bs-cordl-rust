@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataTextReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataTextReader {
     __cordl_parent: crate::System::Xml::XmlReader,
     pub _xmlreader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,

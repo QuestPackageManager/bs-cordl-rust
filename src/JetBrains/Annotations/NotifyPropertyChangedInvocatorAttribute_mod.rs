@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+NotifyPropertyChangedInvocatorAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NotifyPropertyChangedInvocatorAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ParameterName_k__BackingField:

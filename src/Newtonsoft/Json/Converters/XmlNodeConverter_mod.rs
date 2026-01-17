@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XmlNodeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlNodeConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
     pub _DeserializeRootElementName_k__BackingField:

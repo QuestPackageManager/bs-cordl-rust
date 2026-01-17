@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+Polygon")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Polygon {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _points: quest_hook::libil2cpp::Gc<

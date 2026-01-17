@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+NetEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::LiteNetLib::NetEvent_EType,
@@ -97,10 +97,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetEvent {
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NetEvent+EType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum NetEvent_EType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Broadcast = 6i32,
     Connect = 0i32,
     ConnectionLatencyUpdated = 5i32,

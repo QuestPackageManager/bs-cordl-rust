@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+QueryExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QueryExpression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Operator: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,

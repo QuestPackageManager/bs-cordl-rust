@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressedDataPacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CompressedDataPacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
     pub algorithm: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag,

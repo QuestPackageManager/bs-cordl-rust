@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_QuestSettingsApplicatorSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuestSettingsApplicatorSO {
     __cordl_parent: crate::GlobalNamespace::SettingsApplicatorSO,
 }

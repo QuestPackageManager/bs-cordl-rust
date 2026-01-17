@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Numerics+BigInteger")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BigInteger {
     pub _sign: i32,
@@ -1918,10 +1921,15 @@ impl AsMut<crate::System::IFormattable> for crate::System::Numerics::BigInteger 
     }
 }
 #[cfg(feature = "cordl_class_System+Numerics+BigInteger+GetBytesMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BigInteger_GetBytesMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllocateArray = 0i32,
     Count = 1i32,
     Span = 2i32,

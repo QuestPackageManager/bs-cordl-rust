@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapLevelsPromoDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelsPromoDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _promo: quest_hook::libil2cpp::Gc<
@@ -140,7 +140,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevels
 }
 #[cfg(feature = "cordl_class_BeatmapLevelsPromoDataSO+BeatmapLevelsPromo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelsPromoDataSO_BeatmapLevelsPromo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _promotedBeatmapLevelPacks: quest_hook::libil2cpp::Gc<

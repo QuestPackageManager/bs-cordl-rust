@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+HierarchyIcons+HierarchyIconAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyIconAttribute {
     __cordl_parent: crate::System::Attribute,
     pub gameObjectTooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+SharedSpatialAnchorCore")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SharedSpatialAnchorCore {
     __cordl_parent: crate::Meta::XR::BuildingBlocks::SpatialAnchorCoreBuildingBlock,
     pub _onSpatialAnchorsShareCompleted: quest_hook::libil2cpp::Gc<

@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2ImplMono"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509Certificate2ImplMono {
     __cordl_parent:
         crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplUnix,

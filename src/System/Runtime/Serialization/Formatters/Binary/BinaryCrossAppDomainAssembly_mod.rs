@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainAssembly"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BinaryCrossAppDomainAssembly {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assemId: i32,

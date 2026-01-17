@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509ChainElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certificate: quest_hook::libil2cpp::Gc<

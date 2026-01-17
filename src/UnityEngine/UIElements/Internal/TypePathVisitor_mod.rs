@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+TypePathVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypePathVisitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Path_k__BackingField: crate::Unity::Properties::PropertyPath,

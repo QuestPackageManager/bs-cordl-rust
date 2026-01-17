@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AudioClipAsyncLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioClipAsyncLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cache: quest_hook::libil2cpp::Gc<
@@ -704,7 +704,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioClipAsyn
 }
 #[cfg(feature = "cordl_class_AudioClipAsyncLoader+LoadMethodDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioClipAsyncLoader_LoadMethodDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReliableChannel {
     __cordl_parent: crate::LiteNetLib::BaseChannel,
     pub _outgoingAcks: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
@@ -183,7 +183,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::ReliableChannel {
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+ReliableChannel+PendingPacket")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ReliableChannel_PendingPacket {
     pub _packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,

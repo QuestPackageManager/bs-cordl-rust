@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScreenDisplacementEffectRendererFeature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenDisplacementEffectRendererFeature {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRendererFeature,
     pub effectLayerMask: crate::UnityEngine::LayerMask,

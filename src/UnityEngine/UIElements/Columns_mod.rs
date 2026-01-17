@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Columns {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Columns: quest_hook::libil2cpp::Gc<
@@ -1624,10 +1624,15 @@ impl AsMut<crate::UnityEngine::UIElements::INotifyBindablePropertyChanged>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+StretchMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Columns_StretchMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Grow = 0i32,
     GrowAndFill = 1i32,
 }
@@ -1713,7 +1718,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Co
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Columns_UxmlObjectFactory {
     __cordl_parent: crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
@@ -1799,7 +1804,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Columns_UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectFactory_2<
         T,
@@ -1920,7 +1925,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Columns_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>,
     pub m_PrimaryColumnName:

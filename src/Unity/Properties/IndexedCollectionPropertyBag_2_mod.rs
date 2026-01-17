@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IndexedCollectionPropertyBag_2<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -812,7 +812,7 @@ impl<TList: quest_hook::libil2cpp::Type, TElement: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_Unity+Properties+IndexedCollectionPropertyBag_2+ListElementProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IndexedCollectionPropertyBag_2_ListElementProperty<
     TList: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

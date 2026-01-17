@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+FixedList128BytesDebugView_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FixedList128BytesDebugView_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_List: crate::Unity::Collections::FixedList128Bytes_1<T>,

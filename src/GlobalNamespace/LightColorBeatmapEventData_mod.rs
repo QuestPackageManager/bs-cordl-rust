@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightColorBeatmapEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightColorBeatmapEventData {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub _groupId_k__BackingField: i32,

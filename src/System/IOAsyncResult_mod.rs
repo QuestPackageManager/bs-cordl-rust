@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IOAsyncResult")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IOAsyncResult {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub async_callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,

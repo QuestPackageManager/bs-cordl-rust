@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+Profiling+RenderBlock"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Profiling_ScriptableRenderer_RenderBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -68,7 +68,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+Profiling+RenderPass"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Profiling_ScriptableRenderer_RenderPass {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -133,7 +133,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+RenderBlocks+BlockRange"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderBlocks_ScriptableRenderer_BlockRange {
     pub m_Current: i32,
@@ -378,7 +381,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_LastBeginSubpassPassIndex: i32,
@@ -4383,7 +4386,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+BeginXRPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_BeginXRPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cameraData:
@@ -4473,7 +4476,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+DrawGizmosPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_DrawGizmosPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub gizmoRenderList: crate::UnityEngine::Rendering::RenderGraphModule::RendererListHandle,
@@ -4566,7 +4569,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+DrawWireOverlayPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_DrawWireOverlayPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub wireOverlayList: crate::UnityEngine::Rendering::RenderGraphModule::RendererListHandle,
@@ -4657,7 +4660,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+DummyData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_DummyData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -4739,7 +4742,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+EndXRPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_EndXRPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cameraData:
@@ -4827,7 +4830,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub renderer:
@@ -4915,7 +4918,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+Profiling")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_Profiling {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -4976,7 +4979,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+RenderBlocks")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScriptableRenderer_RenderBlocks {
     pub m_BlockEventLimits: crate::Unity::Collections::NativeArray_1<
@@ -5243,7 +5249,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+RenderPassBlock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_RenderPassBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -5302,7 +5308,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+RenderPassDescriptor"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScriptableRenderer_RenderPassDescriptor {
     pub w: i32,
@@ -5452,7 +5461,7 @@ impl crate::UnityEngine::Rendering::Universal::ScriptableRenderer_RenderPassDesc
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+RenderingFeatures")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_RenderingFeatures {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cameraStacking_k__BackingField: bool,
@@ -5628,7 +5637,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRenderer+VFXProcessCameraPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRenderer_VFXProcessCameraPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub renderingData:

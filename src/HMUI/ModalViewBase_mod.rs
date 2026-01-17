@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ModalViewBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ModalViewBase {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

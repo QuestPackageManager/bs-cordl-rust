@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackedPoseDriverDataDescription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -86,7 +86,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription+PoseData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TrackedPoseDriverDataDescription_PoseData {
     pub PoseNames: quest_hook::libil2cpp::Gc<

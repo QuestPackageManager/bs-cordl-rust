@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+ForeignKeyConstraint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ForeignKeyConstraint {
     __cordl_parent: crate::System::Data::Constraint,
     pub _deleteRule: crate::System::Data::Rule,

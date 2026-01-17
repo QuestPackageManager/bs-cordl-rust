@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+WaitForSecondsRealtime")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaitForSecondsRealtime {
     __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
     pub _waitTime_k__BackingField: f32,

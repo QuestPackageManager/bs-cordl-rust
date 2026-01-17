@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ActivationControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -261,10 +261,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Activat
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ActivationControlPlayable_InitialState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Active = 1i32,
     Inactive = 2i32,
     Unset = 0i32,
@@ -354,10 +359,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ActivationControlPlayable_PostPlaybackState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Active = 0i32,
     Inactive = 1i32,
     Revert = 2i32,

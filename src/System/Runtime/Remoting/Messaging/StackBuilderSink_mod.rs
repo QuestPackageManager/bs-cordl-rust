@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+StackBuilderSink")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StackBuilderSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _target: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,

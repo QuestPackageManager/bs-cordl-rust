@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PemWriter {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter,
 }

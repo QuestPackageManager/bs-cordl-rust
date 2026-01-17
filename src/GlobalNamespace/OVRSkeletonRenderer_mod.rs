@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSkeletonRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _dataProvider: quest_hook::libil2cpp::Gc<
@@ -419,7 +419,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeletonRe
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+BoneVisualization")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSkeletonRenderer_BoneVisualization {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub BoneGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -578,7 +578,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+CapsuleVisualization")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSkeletonRenderer_CapsuleVisualization {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub CapsuleGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -733,10 +733,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+ConfidenceBehavior")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSkeletonRenderer_ConfidenceBehavior {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     ToggleRenderer = 1i32,
 }
@@ -825,7 +830,7 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+IOVRSkeletonRendererDataProvider")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -914,7 +919,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SkeletonRendererData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSkeletonRenderer_SkeletonRendererData {
     pub _RootScale_k__BackingField: f32,
@@ -1194,10 +1202,15 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     }
 }
 #[cfg(feature = "cordl_class_OVRSkeletonRenderer+SystemGestureBehavior")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSkeletonRenderer_SystemGestureBehavior {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     SwapMaterial = 1i32,
 }

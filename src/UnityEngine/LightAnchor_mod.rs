@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+LightAnchor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightAnchor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Distance: f32,
@@ -607,7 +607,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::LightAnchor {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+LightAnchor+Axes")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LightAnchor_Axes {
     pub up: crate::UnityEngine::Vector3,
@@ -701,10 +704,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::LightAnc
 #[cfg(feature = "UnityEngine+LightAnchor+Axes")]
 impl crate::UnityEngine::LightAnchor_Axes {}
 #[cfg(feature = "cordl_class_UnityEngine+LightAnchor+UpDirection")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LightAnchor_UpDirection {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Local = 1i32,
     World = 0i32,
 }

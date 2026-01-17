@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<f32>,
 }
@@ -259,7 +259,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Float
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+FloatInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatField_FloatInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f32>,
 }
@@ -475,7 +475,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Float
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField>,
@@ -559,7 +559,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Float
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FloatField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         f32,

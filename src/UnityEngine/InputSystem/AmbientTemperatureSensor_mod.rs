@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+AmbientTemperatureSensor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AmbientTemperatureSensor {
     __cordl_parent: crate::UnityEngine::InputSystem::Sensor,
     pub _ambientTemperature_k__BackingField:

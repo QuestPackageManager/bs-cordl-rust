@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Root")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Root {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
 }

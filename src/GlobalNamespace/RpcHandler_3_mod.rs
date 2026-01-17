@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RpcHandler_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RpcHandler_3<
     TMessageType: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

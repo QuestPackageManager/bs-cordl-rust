@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HIDParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -150,7 +150,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::HID:
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HIDParser_HIDItemStateGlobal {
     pub usagePage: crate::System::Nullable_1<i32>,
@@ -335,7 +338,10 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HIDParser_HIDItemStateLocal {
     pub usage: crate::System::Nullable_1<i32>,
@@ -517,10 +523,15 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HIDParser_HIDItemTypeAndTag {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Collection = 160i32,
     Delimiter = 168i32,
     DesignatorIndex = 56i32,
@@ -634,7 +645,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HIDParser_HIDReportData {
     pub reportId: i32,

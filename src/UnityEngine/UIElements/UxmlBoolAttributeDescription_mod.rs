@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlBoolAttributeDescription")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UxmlBoolAttributeDescription {
     __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<bool>,
 }

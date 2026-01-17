@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerSyncStateManager_5")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerSyncStateManager_5<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataStore")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutDataStore {
     pub m_Allocator: crate::Unity::Collections::Allocator,
@@ -531,7 +534,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::Layou
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataStore+Chunk")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutDataStore_Chunk {
     pub Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -635,7 +641,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+Layout+LayoutDataStore+Chunk")]
 impl crate::UnityEngine::UIElements::Layout::LayoutDataStore_Chunk {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataStore+ComponentDataStore")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutDataStore_ComponentDataStore {
     pub Allocator: crate::Unity::Collections::Allocator,
@@ -857,7 +866,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutDataStore+Data")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutDataStore_Data {
     pub Capacity: i32,

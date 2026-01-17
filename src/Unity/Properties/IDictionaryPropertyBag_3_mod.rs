@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Unity+Properties+IDictionaryPropertyBag_3")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IDictionaryPropertyBag_3<
     TDictionary: quest_hook::libil2cpp::Type,

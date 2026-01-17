@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameObjectSwitchEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameObjectSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _deactivateOnBoostObjects: quest_hook::libil2cpp::Gc<

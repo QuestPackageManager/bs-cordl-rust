@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+RangeHeaderValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RangeHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ranges: quest_hook::libil2cpp::Gc<

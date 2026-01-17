@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameScenesManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameScenesManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _zenjectSceneLoader: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSceneLoader>,
@@ -1863,10 +1863,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameScenesMan
     }
 }
 #[cfg(feature = "cordl_class_GameScenesManager+SceneDismissType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameScenesManager_SceneDismissType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Deactivate = 2i32,
     DoNotUnload = 0i32,
     Unload = 1i32,
@@ -1956,10 +1961,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_GameScenesManager+ScenePresentType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameScenesManager_ScenePresentType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Activate = 3i32,
     DoNotLoad = 0i32,
     Load = 1i32,
@@ -2050,10 +2060,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_GameScenesManager+SceneTransitionType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameScenesManager_SceneTransitionType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Activate = 6i32,
     Append = 5i32,
     ClearAndOpen = 4i32,
@@ -2150,7 +2165,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_GameScenesManager+ScenesStackData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameScenesManager_ScenesStackData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sceneNames: quest_hook::libil2cpp::Gc<

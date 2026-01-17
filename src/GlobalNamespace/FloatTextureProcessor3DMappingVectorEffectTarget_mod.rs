@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatTextureProcessor3DMappingVectorEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatTextureProcessor3DMappingVectorEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -174,10 +174,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_FloatTextureProcessor3DMappingVectorEffectTarget+TextureProcessor3DChannel"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FloatTextureProcessor3DMappingVectorEffectTarget_TextureProcessor3DChannel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     A = 0i32,
     B = 1i32,
     C = 2i32,
@@ -280,10 +285,15 @@ for crate::GlobalNamespace::FloatTextureProcessor3DMappingVectorEffectTarget_Tex
 #[cfg(
     feature = "cordl_class_FloatTextureProcessor3DMappingVectorEffectTarget+TextureProcessor3DMapping"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FloatTextureProcessor3DMappingVectorEffectTarget_TextureProcessor3DMapping {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Emissive = 6i32,
     RadialDisplacement = 3i32,
     Rotation = 5i32,

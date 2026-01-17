@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Ucs4Encoding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ucs4Encoding {
     __cordl_parent: crate::System::Text::Encoding,
     pub ucs4Decoder: quest_hook::libil2cpp::Gc<crate::System::Xml::Ucs4Decoder>,

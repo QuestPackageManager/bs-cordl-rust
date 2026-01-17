@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDraggerAnimated")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListViewDraggerAnimated {
     __cordl_parent: crate::UnityEngine::UIElements::ListViewDragger,
     pub m_DragStartIndex: i32,

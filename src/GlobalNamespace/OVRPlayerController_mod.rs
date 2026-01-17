@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRPlayerController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPlayerController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub Acceleration: f32,

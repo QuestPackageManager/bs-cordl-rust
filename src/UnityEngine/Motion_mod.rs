@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Motion")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Motion {
     __cordl_parent: crate::UnityEngine::Object,
     pub _isAnimatorMotion_k__BackingField: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tweening+Tween_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tween_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Tweening::Tween,
     pub fromValue: T,

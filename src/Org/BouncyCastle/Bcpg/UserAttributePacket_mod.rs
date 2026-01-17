@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+UserAttributePacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UserAttributePacket {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ContainedPacket,
     pub subpackets: quest_hook::libil2cpp::Gc<

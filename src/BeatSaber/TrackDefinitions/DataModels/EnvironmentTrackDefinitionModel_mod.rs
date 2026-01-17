@@ -2,7 +2,7 @@
     feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentTrackDefinitionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _trackDefinition: quest_hook::libil2cpp::Gc<
@@ -730,7 +730,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTrack"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
@@ -881,7 +881,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     feature = "cordl_class_BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,

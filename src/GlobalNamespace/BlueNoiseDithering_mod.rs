@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BlueNoiseDithering")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BlueNoiseDithering {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _noiseTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,

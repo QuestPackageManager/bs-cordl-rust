@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _connectedPlayerAudioTimeSyncControllerPrefab: quest_hook::libil2cpp::Gc<

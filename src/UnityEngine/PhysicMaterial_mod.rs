@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+PhysicMaterial")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PhysicMaterial {
     __cordl_parent: crate::UnityEngine::Object,
     pub _bounciness_k__BackingField: f32,

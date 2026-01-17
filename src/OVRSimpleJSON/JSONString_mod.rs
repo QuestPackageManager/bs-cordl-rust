@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSimpleJSON+JSONString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JSONString {
     __cordl_parent: crate::OVRSimpleJSON::JSONNode,
     pub m_Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+SupportsChildTracksAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SupportsChildTracksAttribute {
     __cordl_parent: crate::System::Attribute,
     pub childType: quest_hook::libil2cpp::Gc<crate::System::Type>,

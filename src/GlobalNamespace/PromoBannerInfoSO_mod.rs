@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PromoBannerInfoSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PromoBannerInfoSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _bannerImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

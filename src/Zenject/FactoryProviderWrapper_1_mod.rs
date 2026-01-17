@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+FactoryProviderWrapper_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FactoryProviderWrapper_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,

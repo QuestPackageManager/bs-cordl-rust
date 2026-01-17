@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SpriteLightWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpriteLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _spriteRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
@@ -136,10 +136,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpriteLightWi
     }
 }
 #[cfg(feature = "cordl_class_SpriteLightWithId+MultiplyColorByAlphaType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SpriteLightWithId_MultiplyColorByAlphaType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AfterApplyingMinAlpha = 2i32,
     BeforeApplyingMinAlpha = 1i32,
     None = 0i32,

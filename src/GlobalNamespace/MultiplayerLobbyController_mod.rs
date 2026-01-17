@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLobbyController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLobbyController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _innerCircleRadius: f32,

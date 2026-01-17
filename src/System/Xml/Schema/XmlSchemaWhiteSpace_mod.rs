@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaWhiteSpace")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlSchemaWhiteSpace {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Collapse = 2i32,
     Preserve = 0i32,
     Replace = 1i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpEncryptedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub encData: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::InputStreamPacket>,
@@ -163,7 +163,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpEncryptedData+TruncatedStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpEncryptedData_TruncatedStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseInputStream,
     pub inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

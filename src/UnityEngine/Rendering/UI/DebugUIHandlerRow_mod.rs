@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerRow")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUIHandlerRow {
     __cordl_parent: crate::UnityEngine::Rendering::UI::DebugUIHandlerFoldout,
     pub m_Timer: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+GraphQLResponse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphQLResponse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

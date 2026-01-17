@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsAuthenticatedDataStreamGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator,
     pub _bufferSize: i32,
@@ -315,7 +315,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub macStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

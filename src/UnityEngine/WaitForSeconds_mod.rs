@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+WaitForSeconds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaitForSeconds {
     __cordl_parent: crate::UnityEngine::YieldInstruction,
     pub m_Seconds: f32,

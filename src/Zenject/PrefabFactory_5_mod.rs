@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+PrefabFactory_5")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrefabFactory_5<
     P1: quest_hook::libil2cpp::Type,
     P2: quest_hook::libil2cpp::Type,

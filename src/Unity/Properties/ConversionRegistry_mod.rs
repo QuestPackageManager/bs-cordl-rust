@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Properties+ConversionRegistry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ConversionRegistry {
     pub m_Converters: quest_hook::libil2cpp::Gc<
@@ -330,7 +333,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+ConversionRegistry+ConverterKey")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ConversionRegistry_ConverterKey {
     pub SourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -464,7 +470,7 @@ impl crate::Unity::Properties::ConversionRegistry_ConverterKey {
 }
 #[cfg(feature = "cordl_class_Unity+Properties+ConversionRegistry+ConverterKeyComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConversionRegistry_ConverterKeyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

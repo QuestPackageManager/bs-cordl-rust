@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpandoObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub LockObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1270,7 +1270,7 @@ impl AsMut<crate::System::Dynamic::IDynamicMetaObjectProvider>
 }
 #[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ExpandoData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpandoObject_ExpandoData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Class: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoClass>,
@@ -1551,7 +1551,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::ExpandoObject
 }
 #[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+KeyCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpandoObject_KeyCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
@@ -1976,7 +1976,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpandoObject_KeyCollectionDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2030,7 +2030,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+MetaExpando")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpandoObject_MetaExpando {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObject,
 }
@@ -2537,7 +2537,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::ExpandoObject
 }
 #[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ValueCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpandoObject_ValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
@@ -2962,7 +2962,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpandoObject_ValueCollectionDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

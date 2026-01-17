@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JPropertyKeyedCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JPropertyKeyedCollection {
     __cordl_parent: crate::System::Collections::ObjectModel::Collection_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,

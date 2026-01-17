@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Sockets+NetworkStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkStream {
     __cordl_parent: crate::System::IO::Stream,
     pub _streamSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,

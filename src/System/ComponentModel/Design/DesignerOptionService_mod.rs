@@ -2,7 +2,7 @@
     feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection+WrappedPropertyDescriptor"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -354,7 +354,7 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
     feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter+OptionPropertyDescriptor"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub _option: quest_hook::libil2cpp::Gc<
@@ -669,7 +669,7 @@ for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptio
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesignerOptionService {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -762,7 +762,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionCollection"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesignerOptionService_DesignerOptionCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _service:
@@ -1053,7 +1053,7 @@ impl AsMut<crate::System::Collections::ICollection>
     feature = "cordl_class_System+ComponentModel+Design+DesignerOptionService+DesignerOptionConverter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesignerOptionService_DesignerOptionConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }

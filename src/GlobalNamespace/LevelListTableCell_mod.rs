@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelListTableCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelListTableCell {
     __cordl_parent: crate::HMUI::TableCell,
     pub _backgroundImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,

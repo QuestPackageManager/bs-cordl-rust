@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimationPlayableAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
@@ -994,7 +994,7 @@ impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
     feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1082,10 +1082,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum AnimationPlayableAsset_LoopMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Off = 2i32,
     On = 1i32,
     UseSourceAsset = 0i32,
@@ -1175,10 +1180,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum AnimationPlayableAsset_Versions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Initial = 0i32,
     RotationAsEuler = 1i32,
 }

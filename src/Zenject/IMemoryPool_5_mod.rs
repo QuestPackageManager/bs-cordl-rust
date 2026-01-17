@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Zenject+IMemoryPool_5")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IMemoryPool_5<
     TParam1: quest_hook::libil2cpp::Type,

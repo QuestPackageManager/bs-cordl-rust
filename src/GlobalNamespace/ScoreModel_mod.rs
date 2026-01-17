@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScoreModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoreModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -197,7 +197,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreModel {
 }
 #[cfg(feature = "cordl_class_ScoreModel+MaxScoreCounterElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoreModel_MaxScoreCounterElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub noteScoreDefinition:
@@ -348,7 +348,7 @@ impl
 }
 #[cfg(feature = "cordl_class_ScoreModel+NoteScoreDefinition")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoreModel_NoteScoreDefinition {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maxCenterDistanceCutScore: i32,

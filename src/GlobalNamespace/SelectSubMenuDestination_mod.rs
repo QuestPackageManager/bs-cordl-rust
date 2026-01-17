@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SelectSubMenuDestination")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectSubMenuDestination {
     __cordl_parent: crate::GlobalNamespace::MenuDestination,
     pub menuDestination: crate::GlobalNamespace::SelectSubMenuDestination_Destination,
@@ -88,10 +88,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SelectSubMenu
     }
 }
 #[cfg(feature = "cordl_class_SelectSubMenuDestination+Destination")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SelectSubMenuDestination_Destination {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Campaign = 1i32,
     MainMenu = 0i32,
     Multiplayer = 6i32,

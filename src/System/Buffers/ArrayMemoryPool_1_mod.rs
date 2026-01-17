@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Buffers+ArrayMemoryPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayMemoryPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Buffers::MemoryPool_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -178,7 +178,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Buffers+ArrayMemoryPool_1+ArrayMemoryPoolBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayMemoryPool_1_ArrayMemoryPoolBuffer<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+FeatureAsyncPreloader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FeatureAsyncPreloader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncPreloader,
 }

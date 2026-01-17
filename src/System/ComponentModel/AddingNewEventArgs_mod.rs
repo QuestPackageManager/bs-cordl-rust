@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+AddingNewEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddingNewEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _NewObject_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

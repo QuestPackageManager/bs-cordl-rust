@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRendererData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRendererData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub debugShaders: quest_hook::libil2cpp::Gc<
@@ -378,7 +378,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRendererData+DebugShaderResources"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRendererData_DebugShaderResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub debugReplacementPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -472,7 +472,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRendererData+ProbeVolumeResources"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRendererData_ProbeVolumeResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub probeVolumeDebugShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+AbstractF2mCurve")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AbstractF2mCurve {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::ECCurve,
     pub si: quest_hook::libil2cpp::Gc<

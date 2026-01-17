@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Scripting+RequiredMemberAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RequiredMemberAttribute {
     __cordl_parent: crate::System::Attribute,
 }

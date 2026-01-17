@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ProvidePropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProvidePropertyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _PropertyName_k__BackingField:

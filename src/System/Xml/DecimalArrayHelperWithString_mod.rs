@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+DecimalArrayHelperWithString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecimalArrayHelperWithString {
     __cordl_parent: crate::System::Xml::ArrayHelper_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftInt32"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RightShiftInstruction_RightShiftInt32 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::RightShiftInstruction,
 }

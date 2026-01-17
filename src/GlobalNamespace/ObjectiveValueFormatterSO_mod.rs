@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObjectiveValueFormatterSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectiveValueFormatterSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
 }

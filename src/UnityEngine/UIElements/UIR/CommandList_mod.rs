@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+CommandList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CommandList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassBackgroundColorsGradientElementWithLightId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _bloomPrePassBackgroundColorsGradient: quest_hook::libil2cpp::Gc<
@@ -125,7 +125,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientElementWithLightId+Elements")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub elementNumber: i32,

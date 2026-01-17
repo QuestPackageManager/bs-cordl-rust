@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SpawnRotationChevronManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpawnRotationChevronManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _fadeInTime: f32,
@@ -259,7 +259,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpawnRotation
 }
 #[cfg(feature = "cordl_class_SpawnRotationChevronManager+DirectionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpawnRotationChevronManager_DirectionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub chevron: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SpawnRotationChevron>,
@@ -344,7 +344,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_SpawnRotationChevronManager+QueuedDirectionData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SpawnRotationChevronManager_QueuedDirectionData {
     pub _cordl_time: f32,

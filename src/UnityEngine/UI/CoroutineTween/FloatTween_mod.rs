@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FloatTween {
     pub m_Target: quest_hook::libil2cpp::Gc<
@@ -400,7 +403,7 @@ impl AsMut<crate::UnityEngine::UI::CoroutineTween::ITweenValue>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatTween_FloatTweenCallback {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
 }

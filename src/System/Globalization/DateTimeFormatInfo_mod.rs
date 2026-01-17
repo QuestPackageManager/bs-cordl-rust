@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DateTimeFormatInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cultureData: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureData>,
@@ -3142,7 +3142,7 @@ impl AsMut<crate::System::IFormatProvider> for crate::System::Globalization::Dat
 }
 #[cfg(feature = "cordl_class_System+Globalization+DateTimeFormatInfo+TokenHashValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DateTimeFormatInfo_TokenHashValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tokenString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

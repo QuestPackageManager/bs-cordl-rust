@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ConstantBuffer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConstantBuffer_1<CBType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::ConstantBufferBase,
     pub m_GlobalBindings:

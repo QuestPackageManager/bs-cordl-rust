@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObstacleMaterialSetter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleMaterialSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lwCoreMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

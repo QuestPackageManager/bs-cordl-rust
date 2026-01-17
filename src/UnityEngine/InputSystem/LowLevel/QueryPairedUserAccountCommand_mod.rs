@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct QueryPairedUserAccountCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<1040usize>,
@@ -315,10 +318,15 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+Result"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i64)]
 pub enum QueryPairedUserAccountCommand_Result {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DevicePairedToUserAccount = 2i64,
     UserAccountSelectionCanceled = 16i64,
     UserAccountSelectionComplete = 8i64,
@@ -421,7 +429,10 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_idBuffer_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct QueryPairedUserAccountCommand__idBuffer_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -540,7 +551,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand__i
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+_nameBuffer_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct QueryPairedUserAccountCommand__nameBuffer_e__FixedBuffer {
     pub FixedElementField: u8,

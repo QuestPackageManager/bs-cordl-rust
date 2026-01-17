@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Callback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -256,7 +256,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Callback {
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Callback+RequestCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Callback_RequestCallback {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub messageCallback: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_Callback>,
@@ -398,7 +398,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Callback_Req
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Callback+RequestCallback_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Callback_RequestCallback_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Oculus::Platform::Callback_RequestCallback,
     pub callback: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1_Callback<T>>,

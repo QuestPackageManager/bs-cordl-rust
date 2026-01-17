@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LensFlareDataSRP")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LensFlareDataSRP {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub elements: quest_hook::libil2cpp::Gc<

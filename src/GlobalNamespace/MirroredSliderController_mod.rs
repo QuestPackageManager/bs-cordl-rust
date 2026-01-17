@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MirroredSliderController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredSliderController {
     __cordl_parent: crate::GlobalNamespace::SliderControllerBase,
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -315,7 +315,7 @@ impl AsMut<crate::GlobalNamespace::ISliderDidStartDissolvingEvent>
 }
 #[cfg(feature = "cordl_class_MirroredSliderController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredSliderController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredSliderController>,

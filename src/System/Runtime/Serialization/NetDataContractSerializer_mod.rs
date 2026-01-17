@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+NetDataContractSerializer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetDataContractSerializer {
     __cordl_parent: crate::System::Runtime::Serialization::XmlObjectSerializer,
     pub context: crate::System::Runtime::Serialization::StreamingContext,

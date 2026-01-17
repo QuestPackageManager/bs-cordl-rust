@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+DebugInfoExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugInfoExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Document_k__BackingField:

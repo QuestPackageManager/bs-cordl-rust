@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+GraphicsBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphicsBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -1244,7 +1244,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::GraphicsBuffer {
 }
 #[cfg(feature = "cordl_class_UnityEngine+GraphicsBuffer+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphicsBuffer_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1345,10 +1345,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GraphicsBuffer_Bi
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+GraphicsBuffer+Target")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphicsBuffer_Target {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Append = 64i32,
     Constant = 512i32,
     CopyDestination = 8i32,
@@ -1435,10 +1440,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::GraphicsBuffer
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+GraphicsBuffer+UsageFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphicsBuffer_UsageFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LockBufferForWrite = 1i32,
     None = 0i32,
 }

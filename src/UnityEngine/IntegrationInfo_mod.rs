@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+IntegrationInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IntegrationInfo {
     padding: quest_hook::libil2cpp::ValueTypePadding<256usize>,
@@ -158,10 +161,15 @@ impl crate::UnityEngine::IntegrationInfo {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+IntegrationInfo+SupportedUnityFeatures")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum IntegrationInfo_SupportedUnityFeatures {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ArticulationSupport = 8i32,
     CharacterControllerSupport = 64i32,
     DynamicsSupport = 2i32,
@@ -255,7 +263,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+IntegrationInfo+_IntegrationVersion_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IntegrationInfo__IntegrationVersion_e__FixedBuffer {
     pub FixedElementField: u16,
@@ -359,7 +370,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+IntegrationInfo+_IntegrationVersion_e__FixedBuffer")]
 impl crate::UnityEngine::IntegrationInfo__IntegrationVersion_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_UnityEngine+IntegrationInfo+_SdkVersion_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IntegrationInfo__SdkVersion_e__FixedBuffer {
     pub FixedElementField: u16,
@@ -463,7 +477,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+IntegrationInfo+_SdkVersion_e__FixedBuffer")]
 impl crate::UnityEngine::IntegrationInfo__SdkVersion_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_UnityEngine+IntegrationInfo+_m_Desc_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IntegrationInfo__m_Desc_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -567,7 +584,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+IntegrationInfo+_m_Desc_e__FixedBuffer")]
 impl crate::UnityEngine::IntegrationInfo__m_Desc_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_UnityEngine+IntegrationInfo+_m_Name_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IntegrationInfo__m_Name_e__FixedBuffer {
     pub FixedElementField: u8,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SecureRandomProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecureRandomProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -156,7 +156,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SecureRandomP
 }
 #[cfg(feature = "cordl_class_SecureRandomProvider+SecureRandomState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecureRandomProvider_SecureRandomState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _random:

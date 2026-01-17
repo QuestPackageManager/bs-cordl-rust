@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+InlinedArray_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InlinedArray_1<TValue: quest_hook::libil2cpp::Type> {
     pub length: i32,
@@ -963,7 +966,10 @@ impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+InlinedArray_1+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InlinedArray_1_Enumerator<TValue: quest_hook::libil2cpp::Type> {
     pub array: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue>,

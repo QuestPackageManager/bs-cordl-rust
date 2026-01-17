@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstaller_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableObjectInstaller_3<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

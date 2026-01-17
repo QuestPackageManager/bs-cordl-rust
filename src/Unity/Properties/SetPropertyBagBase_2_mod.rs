@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SetPropertyBagBase_2<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -517,7 +517,7 @@ impl<TSet: quest_hook::libil2cpp::Type, TElement: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SetPropertyBagBase_2_SetElementProperty<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

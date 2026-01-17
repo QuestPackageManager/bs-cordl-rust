@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Assertions+AssertionException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssertionException {
     __cordl_parent: crate::System::Exception,
     pub m_UserMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

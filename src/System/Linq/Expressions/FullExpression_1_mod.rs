@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+FullExpression_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FullExpression_1<TDelegate: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionN_1<TDelegate>,
     pub _NameCore_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

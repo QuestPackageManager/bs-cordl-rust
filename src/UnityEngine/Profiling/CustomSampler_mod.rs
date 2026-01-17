@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Profiling+CustomSampler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomSampler {
     __cordl_parent: crate::UnityEngine::Profiling::Sampler,
 }
@@ -149,7 +149,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Profiling::Custom
 }
 #[cfg(feature = "cordl_class_UnityEngine+Profiling+CustomSampler+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomSampler_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

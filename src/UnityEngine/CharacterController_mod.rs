@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+CharacterController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CharacterController {
     __cordl_parent: crate::UnityEngine::Collider,
 }

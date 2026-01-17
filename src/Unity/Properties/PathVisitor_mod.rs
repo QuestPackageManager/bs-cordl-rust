@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+PathVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PathVisitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_PathIndex: i32,
@@ -442,7 +442,10 @@ impl AsMut<crate::Unity::Properties::IPropertyVisitor> for crate::Unity::Propert
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+PathVisitor+PropertyScope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PathVisitor_PropertyScope {
     pub m_Visitor: quest_hook::libil2cpp::Gc<crate::Unity::Properties::PathVisitor>,

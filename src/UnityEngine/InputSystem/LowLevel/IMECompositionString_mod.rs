@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IMECompositionString {
     padding: quest_hook::libil2cpp::ValueTypePadding<132usize>,
@@ -288,7 +291,10 @@ impl AsMut<crate::System::Collections::IEnumerable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IMECompositionString_Enumerator {
     pub m_CompositionString: crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
@@ -575,7 +581,10 @@ impl AsMut<crate::System::IDisposable>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IMECompositionString+_buffer_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IMECompositionString__buffer_e__FixedBuffer {
     pub FixedElementField: char,

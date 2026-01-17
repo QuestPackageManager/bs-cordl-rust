@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+FtpWebResponse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FtpWebResponse {
     __cordl_parent: crate::System::Net::WebResponse,
     pub _responseStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -335,7 +335,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::FtpWebResponse {
 }
 #[cfg(feature = "cordl_class_System+Net+FtpWebResponse+EmptyStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FtpWebResponse_EmptyStream {
     __cordl_parent: crate::System::IO::MemoryStream,
 }

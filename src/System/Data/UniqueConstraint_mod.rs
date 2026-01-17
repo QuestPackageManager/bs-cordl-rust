@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+UniqueConstraint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniqueConstraint {
     __cordl_parent: crate::System::Data::Constraint,
     pub _key: crate::System::Data::DataKey,

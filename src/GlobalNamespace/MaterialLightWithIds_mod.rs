@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialLightWithIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,

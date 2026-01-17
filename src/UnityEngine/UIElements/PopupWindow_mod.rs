@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PopupWindow {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement,
     pub m_ContentContainer:
@@ -113,7 +113,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Popup
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PopupWindow_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PopupWindow>,
@@ -199,7 +199,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Popup
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PopupWindow_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement_UxmlTraits,
 }

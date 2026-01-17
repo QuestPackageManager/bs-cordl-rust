@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+FileStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileStream {
     __cordl_parent: crate::System::IO::Stream,
     pub buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1509,7 +1509,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::FileStream {
 }
 #[cfg(feature = "cordl_class_System+IO+FileStream+ReadDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileStream_ReadDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1687,7 +1687,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::FileStream_ReadDel
 }
 #[cfg(feature = "cordl_class_System+IO+FileStream+WriteDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileStream_WriteDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

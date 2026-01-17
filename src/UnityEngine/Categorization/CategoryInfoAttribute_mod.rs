@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Categorization+CategoryInfoAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CategoryInfoAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Order_k__BackingField: i32,

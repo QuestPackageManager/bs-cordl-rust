@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+PublicKey")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PublicKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyValue: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::AsnEncodedData>,

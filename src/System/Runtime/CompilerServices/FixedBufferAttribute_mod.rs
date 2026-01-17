@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+FixedBufferAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FixedBufferAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ElementType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,

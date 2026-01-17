@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+InstantiateCallbackConditionCopyNonLazyBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstantiateCallbackConditionCopyNonLazyBinder {
     __cordl_parent: crate::Zenject::ConditionCopyNonLazyBinder,
 }

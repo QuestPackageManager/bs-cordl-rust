@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LimitAvatarPoseRestriction {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _parameters: quest_hook::libil2cpp::Gc<
@@ -179,7 +179,7 @@ impl AsMut<crate::BeatSaber::AvatarCore::IAvatarPoseRestriction>
 }
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LimitAvatarPoseRestriction_Parameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maxHeadSquareDistanceFromCenter: f32,

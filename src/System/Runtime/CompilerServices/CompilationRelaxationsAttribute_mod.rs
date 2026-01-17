@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CompilationRelaxationsAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CompilationRelaxationsAttribute {
     __cordl_parent: crate::System::Attribute,
     pub m_relaxations: i32,

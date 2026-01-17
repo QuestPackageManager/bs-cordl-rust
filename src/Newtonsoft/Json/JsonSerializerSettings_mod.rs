@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonSerializerSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonSerializerSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _formatting: crate::System::Nullable_1<crate::Newtonsoft::Json::Formatting>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+ContentDecodeStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContentDecodeStream {
     __cordl_parent: crate::System::Net::WebReadStream,
     pub _OriginalInnerStream_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -222,10 +222,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ContentDecodeStre
     }
 }
 #[cfg(feature = "cordl_class_System+Net+ContentDecodeStream+Mode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ContentDecodeStream_Mode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Deflate = 1i32,
     GZip = 0i32,
 }

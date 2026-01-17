@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ArticulationBody")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArticulationBody {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }

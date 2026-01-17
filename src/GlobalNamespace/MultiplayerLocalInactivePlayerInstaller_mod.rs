@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalInactivePlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,

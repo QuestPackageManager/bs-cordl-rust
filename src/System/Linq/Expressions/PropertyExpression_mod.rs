@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+PropertyExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyExpression {
     __cordl_parent: crate::System::Linq::Expressions::MemberExpression,
     pub _property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,

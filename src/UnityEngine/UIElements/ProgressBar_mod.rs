@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProgressBar {
     __cordl_parent: crate::UnityEngine::UIElements::AbstractProgressBar,
 }
@@ -80,7 +80,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Progr
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ProgressBar+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProgressBar_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ProgressBar>,

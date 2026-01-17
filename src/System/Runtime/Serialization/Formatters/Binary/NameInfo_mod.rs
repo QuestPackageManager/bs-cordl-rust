@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+NameInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NameInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NIFullName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

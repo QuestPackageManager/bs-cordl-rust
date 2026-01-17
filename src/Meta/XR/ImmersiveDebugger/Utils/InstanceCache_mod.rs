@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Utils+InstanceCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstanceCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub CacheData: quest_hook::libil2cpp::Gc<

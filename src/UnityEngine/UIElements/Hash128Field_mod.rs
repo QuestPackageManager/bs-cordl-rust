@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hash128Field {
     __cordl_parent:
         crate::UnityEngine::UIElements::TextInputBaseField_1<crate::UnityEngine::Hash128>,
@@ -320,7 +320,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Hash1
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+Hash128Input")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hash128Field_Hash128Input {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
         crate::UnityEngine::Hash128,
@@ -502,7 +502,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hash128Field_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Hash128Field>,
@@ -590,7 +590,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hash128Field_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         crate::UnityEngine::Hash128,

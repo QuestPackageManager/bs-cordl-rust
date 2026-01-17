@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalForwardEmissivePass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalForwardEmissivePass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_FilteringSettings: crate::UnityEngine::Rendering::FilteringSettings,
@@ -282,7 +282,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalForwardEmissivePass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalForwardEmissivePass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub drawSystem: quest_hook::libil2cpp::Gc<

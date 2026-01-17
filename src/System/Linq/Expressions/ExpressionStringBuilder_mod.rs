@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+ExpressionStringBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExpressionStringBuilder {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
     pub _out: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,

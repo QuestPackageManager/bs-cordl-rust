@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatFxBaseData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxBaseData {
     __cordl_parent: crate::GlobalNamespace::FxBaseData,
     pub value: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleSaberSparkleEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _obstacleSaberSparkleEffectPrefab:
@@ -423,7 +423,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager+BoxSideRotations")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObstacleSaberSparkleEffectManager_BoxSideRotations {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

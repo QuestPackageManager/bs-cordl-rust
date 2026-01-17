@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+MonitoringDescriptionAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonitoringDescriptionAttribute {
     __cordl_parent: crate::System::ComponentModel::DescriptionAttribute,
 }

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DynamicResolutionHandler+ScalerContainer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DynamicResolutionHandler_ScalerContainer {
     pub _cordl_type: crate::UnityEngine::Rendering::DynamicResScalePolicyType,
@@ -104,10 +107,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+DynamicResolutionHandler+ScalerContainer")]
 impl crate::UnityEngine::Rendering::DynamicResolutionHandler_ScalerContainer {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DynamicResolutionHandler+UpsamplerScheduleType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DynamicResolutionHandler_UpsamplerScheduleType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AfterDepthOfField = 1i32,
     AfterPost = 2i32,
     BeforePost = 0i32,

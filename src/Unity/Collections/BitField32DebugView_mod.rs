@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Collections+BitField32DebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BitField32DebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub BitField: crate::Unity::Collections::BitField32,

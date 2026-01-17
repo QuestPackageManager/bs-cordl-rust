@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlDictionaryString")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDictionaryString {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub dictionary: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlDictionary>,
@@ -278,7 +278,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlDictionaryStri
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlDictionaryString+EmptyStringDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDictionaryString_EmptyStringDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub empty: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,

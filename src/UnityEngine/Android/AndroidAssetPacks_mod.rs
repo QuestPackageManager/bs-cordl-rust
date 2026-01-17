@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidAssetPacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -88,7 +88,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Android::AndroidA
     feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
     pub m_Callback: quest_hook::libil2cpp::Gc<
@@ -273,7 +273,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerMobileDataConfirmationCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
     pub m_Callback: quest_hook::libil2cpp::Gc<
@@ -424,7 +424,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
     feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
     pub m_Callback: quest_hook::libil2cpp::Gc<

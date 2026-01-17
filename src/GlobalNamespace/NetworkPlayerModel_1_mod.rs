@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NetworkPlayerModel_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkPlayerModel_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel,
     pub _platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,
@@ -1680,7 +1680,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::INetworkPlaye
 }
 #[cfg(feature = "cordl_class_NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
     pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1829,7 +1829,7 @@ impl<T: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkPlayerModel_1_NetworkPlayer<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NetworkPlayerModel_1<T>>,
@@ -2705,7 +2705,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::INetworkPlaye
 }
 #[cfg(feature = "cordl_class_NetworkPlayerModel_1+NetworkServer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkPlayerModel_1_NetworkServer<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NetworkPlayerModel_1<T>>,
@@ -3677,7 +3677,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::INetworkPlaye
 }
 #[cfg(feature = "cordl_class_NetworkPlayerModel_1+StartClientPartyConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetworkPlayerModel_1_StartClientPartyConfig<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
     __cordl_phantom_T: std::marker::PhantomData<T>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByMethod")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubContainerCreatorByMethod {
     __cordl_parent: crate::Zenject::SubContainerCreatorByMethodBase,
     pub _installMethod: quest_hook::libil2cpp::Gc<

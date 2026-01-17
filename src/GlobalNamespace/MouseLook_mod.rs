@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MouseLook")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MouseLook {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _xSensitivity: f32,

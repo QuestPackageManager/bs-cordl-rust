@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataCallbackWrapper_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataCallbackWrapper_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _callback: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallback_1<T>>,

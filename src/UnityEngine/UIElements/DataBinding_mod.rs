@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DataBinding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataBinding {
     __cordl_parent: crate::UnityEngine::UIElements::Binding,
     pub m_BindingMode: crate::UnityEngine::UIElements::BindingMode,

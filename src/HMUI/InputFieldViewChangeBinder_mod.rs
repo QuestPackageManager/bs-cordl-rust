@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+InputFieldViewChangeBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputFieldViewChangeBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindings: quest_hook::libil2cpp::Gc<

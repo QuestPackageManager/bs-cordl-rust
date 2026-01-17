@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+RevokedStatus")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RevokedStatus {
     __cordl_parent: crate::Org::BouncyCastle::Ocsp::CertificateStatus,
     pub info: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::RevokedInfo>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Mono+MonoAssemblyName")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MonoAssemblyName {
     pub name: crate::System::IntPtr,
@@ -107,7 +110,10 @@ impl crate::Mono::MonoAssemblyName {
         crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer;
 }
 #[cfg(feature = "cordl_class_Mono+MonoAssemblyName+_public_key_token_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MonoAssemblyName__public_key_token_e__FixedBuffer {
     pub FixedElementField: u8,

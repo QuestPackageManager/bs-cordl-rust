@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+LocatedActiveAxis")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocatedActiveAxis {
     __cordl_parent: crate::System::Xml::Schema::ActiveAxis,
     pub column: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DataMember")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataMember {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub helper:
@@ -601,7 +601,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Serialization
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+DataMember+CriticalHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataMember_CriticalHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub memberTypeContract:

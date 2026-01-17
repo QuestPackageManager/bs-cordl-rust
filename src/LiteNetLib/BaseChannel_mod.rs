@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+BaseChannel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseChannel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Next: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,

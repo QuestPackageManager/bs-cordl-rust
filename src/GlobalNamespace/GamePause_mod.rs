@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GamePause")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GamePause {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didPauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,

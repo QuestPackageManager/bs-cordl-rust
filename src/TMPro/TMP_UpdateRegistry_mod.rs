@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_UpdateRegistry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_UpdateRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_LayoutRebuildQueue: quest_hook::libil2cpp::Gc<

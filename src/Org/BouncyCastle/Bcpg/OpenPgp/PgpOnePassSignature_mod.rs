@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpOnePassSignature {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sigPack: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OnePassSignaturePacket>,

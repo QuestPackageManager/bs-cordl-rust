@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TableViewWithDetailCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TableViewWithDetailCell {
     __cordl_parent: crate::HMUI::TableView,
     pub didSelectContentCellEvent: quest_hook::libil2cpp::Gc<
@@ -441,7 +441,7 @@ impl AsMut<crate::HMUI::TableView_IDataSource> for crate::GlobalNamespace::Table
     }
 }
 #[cfg(feature = "cordl_class_TableViewWithDetailCell+IDataSource")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct TableViewWithDetailCell_IDataSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AchievementIdsModelSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AchievementIdsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _achievementsIds: quest_hook::libil2cpp::Gc<

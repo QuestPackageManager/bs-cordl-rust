@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+OriginatorInfoGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OriginatorInfoGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub origCerts: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,

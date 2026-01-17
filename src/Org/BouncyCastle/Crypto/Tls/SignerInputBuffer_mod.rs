@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignerInputBuffer {
     __cordl_parent: crate::System::IO::MemoryStream,
 }
@@ -112,7 +112,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SignerInputBuffer+SigStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignerInputBuffer_SigStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatTransitionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatTransitionSO {
     __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
     pub _normalState: f32,

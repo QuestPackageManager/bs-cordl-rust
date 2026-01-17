@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SetSaberGlowColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SetSaberGlowColor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _saberTypeObject: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberTypeObject>,
@@ -160,7 +160,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SetSaberGlowC
 }
 #[cfg(feature = "cordl_class_SetSaberGlowColor+PropertyTintColorPair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SetSaberGlowColor_PropertyTintColorPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tintColor: crate::UnityEngine::Color,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BTSCharacterSpawnController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BTSCharacterSpawnController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _characterSpawnAnimationController:

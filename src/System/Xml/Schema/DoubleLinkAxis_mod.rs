@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+DoubleLinkAxis")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DoubleLinkAxis {
     __cordl_parent: crate::MS::Internal::Xml::XPath::Axis,
     pub next: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,

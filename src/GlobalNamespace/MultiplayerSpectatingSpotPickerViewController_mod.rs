@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerSpectatingSpotPickerViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerSpectatingSpotPickerViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _stepValuePicker: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StepValuePicker>,

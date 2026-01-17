@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectTypeDescriptionProvider {
     __cordl_parent: crate::System::ComponentModel::TypeDescriptionProvider,
     pub _typeData: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -1385,7 +1385,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectTypeDescriptionProvider_ReflectedTypeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,

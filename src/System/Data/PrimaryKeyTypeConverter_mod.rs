@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+PrimaryKeyTypeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrimaryKeyTypeConverter {
     __cordl_parent: crate::System::ComponentModel::ReferenceConverter,
 }

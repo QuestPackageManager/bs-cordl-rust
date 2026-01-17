@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Graphic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Graphic {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_Material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstaller_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableObjectInstaller_1<TDerived: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
     __cordl_phantom_TDerived: std::marker::PhantomData<TDerived>,

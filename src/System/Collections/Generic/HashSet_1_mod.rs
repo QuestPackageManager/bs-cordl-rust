@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+HashSet_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HashSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -1936,7 +1936,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Runtime::Serialization
     }
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+HashSet_1+ElementCount")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HashSet_1_ElementCount<T: quest_hook::libil2cpp::Type> {
     pub uniqueCount: i32,
@@ -2059,7 +2062,10 @@ impl<T: quest_hook::libil2cpp::Type>
 {
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+HashSet_1+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HashSet_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _set: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,
@@ -2401,7 +2407,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+HashSet_1+Slot")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HashSet_1_Slot<T: quest_hook::libil2cpp::Type> {
     pub hashCode: i32,

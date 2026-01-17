@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+RequireComponent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RequireComponent {
     __cordl_parent: crate::System::Attribute,
     pub m_Type0: quest_hook::libil2cpp::Gc<crate::System::Type>,

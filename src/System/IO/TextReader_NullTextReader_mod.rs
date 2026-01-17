@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+TextReader+NullTextReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextReader_NullTextReader {
     __cordl_parent: crate::System::IO::TextReader,
 }

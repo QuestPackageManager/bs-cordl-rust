@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GenericLogger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericLogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -165,7 +165,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GenericLogger
 }
 #[cfg(feature = "cordl_class_GenericLogger+ScopedStopwatch")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericLogger_ScopedStopwatch {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _processName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

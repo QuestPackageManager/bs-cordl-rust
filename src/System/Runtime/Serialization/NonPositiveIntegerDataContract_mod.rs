@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+NonPositiveIntegerDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NonPositiveIntegerDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::LongDataContract,
 }

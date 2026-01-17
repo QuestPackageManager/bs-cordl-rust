@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialPropertyBlockVectorAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyBlockVectorAnimator {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _vector: crate::UnityEngine::Vector4,

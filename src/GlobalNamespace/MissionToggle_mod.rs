@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionToggle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionToggle {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub _missionToggleWasPressedSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,

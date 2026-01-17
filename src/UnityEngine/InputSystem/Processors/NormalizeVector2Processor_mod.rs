@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+NormalizeVector2Processor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NormalizeVector2Processor {
     __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<crate::UnityEngine::Vector2>,
 }

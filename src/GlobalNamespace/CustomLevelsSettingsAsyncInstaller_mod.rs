@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CustomLevelsSettingsAsyncInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomLevelsSettingsAsyncInstaller {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
     pub _customLevelsEnabled: bool,

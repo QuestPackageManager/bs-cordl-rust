@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRUIControls+VRPointer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRPointer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftVRController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,

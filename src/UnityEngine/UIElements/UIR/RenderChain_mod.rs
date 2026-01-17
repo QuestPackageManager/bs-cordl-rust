@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderChain {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_FirstCommand:
@@ -1784,7 +1784,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::UIR::
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+DepthOrderedDirtyTracking")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderChain_DepthOrderedDirtyTracking {
     pub heads: quest_hook::libil2cpp::Gc<
@@ -2001,7 +2004,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking 
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+VisualChangesProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderChain_VisualChangesProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RenderChain: quest_hook::libil2cpp::Gc<
@@ -2488,7 +2491,10 @@ impl AsMut<crate::System::IDisposable>
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+VisualChangesProcessor+EntryProcessingInfo"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VisualChangesProcessor_RenderChain_EntryProcessingInfo {
     pub visualElement: quest_hook::libil2cpp::Gc<
@@ -2612,10 +2618,15 @@ impl crate::UnityEngine::UIElements::UIR::VisualChangesProcessor_RenderChain_Ent
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChain+VisualChangesProcessor+VisualsProcessingType"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum VisualChangesProcessor_RenderChain_VisualsProcessingType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Head = 0i32,
     Tail = 1i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteJump")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteJump {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rotatedObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

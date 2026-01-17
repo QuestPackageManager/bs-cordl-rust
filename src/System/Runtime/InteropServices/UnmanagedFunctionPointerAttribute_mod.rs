@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnmanagedFunctionPointerAttribute {
     __cordl_parent: crate::System::Attribute,
     pub m_callingConvention: crate::System::Runtime::InteropServices::CallingConvention,

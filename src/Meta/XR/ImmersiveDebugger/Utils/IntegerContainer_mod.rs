@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Utils+IntegerContainer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntegerContainer {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::Utils::ValueContainer_1<i32>,
 }

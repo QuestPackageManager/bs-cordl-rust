@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapEventDataBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEventDataBox {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _indexFilter_k__BackingField:
@@ -434,10 +434,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapEventD
     }
 }
 #[cfg(feature = "cordl_class_BeatmapEventDataBox+DistributionParamType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BeatmapEventDataBox_DistributionParamType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Step = 2i32,
     Wave = 1i32,
 }

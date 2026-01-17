@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedAxisEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExtendedAxisEventData {
     __cordl_parent: crate::UnityEngine::EventSystems::AxisEventData,
 }

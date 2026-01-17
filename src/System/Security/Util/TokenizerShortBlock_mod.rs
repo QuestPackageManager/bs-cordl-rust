@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Util+TokenizerShortBlock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TokenizerShortBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,

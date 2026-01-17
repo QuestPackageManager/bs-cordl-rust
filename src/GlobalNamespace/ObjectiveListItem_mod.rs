@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ObjectiveListItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectiveListItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _titleText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

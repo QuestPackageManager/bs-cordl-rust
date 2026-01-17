@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Smime+SmimeCapability")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SmimeCapability {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub capabilityID:

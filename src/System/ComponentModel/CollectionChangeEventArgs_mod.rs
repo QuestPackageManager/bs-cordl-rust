@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+CollectionChangeEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionChangeEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _Action_k__BackingField: crate::System::ComponentModel::CollectionChangeAction,

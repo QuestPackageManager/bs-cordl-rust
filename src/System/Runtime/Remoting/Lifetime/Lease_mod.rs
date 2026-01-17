@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Lease {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _leaseExpireTime: crate::System::DateTime,
@@ -316,7 +316,7 @@ impl AsMut<crate::System::Runtime::Remoting::Lifetime::ILease>
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Lease_RenewalDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

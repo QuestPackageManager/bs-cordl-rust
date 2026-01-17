@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LocalServerConnectionManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalServerConnectionManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub onInitializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -1494,10 +1494,15 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::LocalServerCo
     }
 }
 #[cfg(feature = "cordl_class_LocalServerConnectionManager+ConnectionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LocalServerConnectionManager_ConnectionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Connected = 2i32,
     Connecting = 1i32,
     Disconnecting = 3i32,
@@ -1591,7 +1596,7 @@ unsafe impl quest_hook::libil2cpp::Return
     feature = "cordl_class_LocalServerConnectionManager+LocalServerConnectionManagerConnectToServerParams"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalServerConnectionManager_LocalServerConnectionManagerConnectToServerParams {
     __cordl_parent:
         crate::GlobalNamespace::LocalServerConnectionManager_LocalServerConnectionManagerParamsBase,
@@ -1681,7 +1686,7 @@ for crate::GlobalNamespace::LocalServerConnectionManager_LocalServerConnectionMa
 }
 #[cfg(feature = "cordl_class_LocalServerConnectionManager+LocalServerConnectionManagerParamsBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalServerConnectionManager_LocalServerConnectionManagerParamsBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -1811,7 +1816,7 @@ impl
     feature = "cordl_class_LocalServerConnectionManager+LocalServerConnectionManagerStartClientParams"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalServerConnectionManager_LocalServerConnectionManagerStartClientParams {
     __cordl_parent:
         crate::GlobalNamespace::LocalServerConnectionManager_LocalServerConnectionManagerParamsBase,

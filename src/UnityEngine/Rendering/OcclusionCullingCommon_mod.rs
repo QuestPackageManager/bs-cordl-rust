@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OcclusionCullingCommon {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DebugOcclusionTestMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -853,7 +853,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::Occlus
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OcclusionCullingCommon_DebugOccluderViewData {
     pub passIndex: i32,
@@ -959,7 +962,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+OcclusionCullingCommon+DebugOccluderViewData")]
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_DebugOccluderViewData {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderContextSlot")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OcclusionCullingCommon_OccluderContextSlot {
     pub valid: bool,
@@ -1066,7 +1072,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::Rendering::OcclusionCullingCommon_OccluderContextSlot {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OccluderOverlayPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OcclusionCullingCommon_OccluderOverlayPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub debugMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -1159,7 +1165,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlayPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OcclusionCullingCommon_OcclusionTestOverlayPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub debugPyramid: crate::UnityEngine::Rendering::RenderGraphModule::BufferHandle,
@@ -1252,7 +1258,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+OcclusionTestOverlaySetupPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OcclusionCullingCommon_OcclusionTestOverlaySetupPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cb: crate::UnityEngine::Rendering::OcclusionCullingDebugShaderVariables,
@@ -1343,7 +1349,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+ShaderIDs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OcclusionCullingCommon_ShaderIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1397,7 +1403,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+OcclusionCullingCommon+UpdateOccludersPassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OcclusionCullingCommon_UpdateOccludersPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub occluderParams: crate::UnityEngine::Rendering::OccluderParameters,

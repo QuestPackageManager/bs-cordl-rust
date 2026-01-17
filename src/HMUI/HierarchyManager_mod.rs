@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+HierarchyManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _screenSystem: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenSystem>,

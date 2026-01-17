@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataStrobeFilterTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataStrobeFilterTransform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -148,7 +148,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatmapDataStrobeFilterTransform+StrobeStreakData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataStrobeFilterTransform_StrobeStreakData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isActive: bool,

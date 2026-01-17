@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+ColorNoteData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorNoteData {
     __cordl_parent: crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem,
     pub x: i32,

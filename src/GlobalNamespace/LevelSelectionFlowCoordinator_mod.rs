@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelSelectionFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
@@ -1082,7 +1082,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelSelectio
 }
 #[cfg(feature = "cordl_class_LevelSelectionFlowCoordinator+State")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelSelectionFlowCoordinator_State {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelCategory: crate::System::Nullable_1<

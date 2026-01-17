@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+FreeBSDNetworkInterfaceAPI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FreeBSDNetworkInterfaceAPI {
     __cordl_parent: crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_WaypointData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaypointData {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
     pub _offsetDirection_k__BackingField: crate::GlobalNamespace::OffsetDirection,

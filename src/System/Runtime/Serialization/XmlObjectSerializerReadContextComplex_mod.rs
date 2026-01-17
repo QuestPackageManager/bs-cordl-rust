@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlObjectSerializerReadContextComplex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlObjectSerializerReadContextComplex {
     __cordl_parent: crate::System::Runtime::Serialization::XmlObjectSerializerReadContext,
     pub preserveObjectReferences: bool,
@@ -764,7 +764,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+Serialization+XmlObjectSerializerReadContextComplex+TopLevelAssemblyTypeResolver"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlObjectSerializerReadContextComplex_TopLevelAssemblyTypeResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub topLevelAssembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
@@ -903,7 +903,7 @@ for crate::System::Runtime::Serialization::XmlObjectSerializerReadContextComplex
     feature = "cordl_class_System+Runtime+Serialization+XmlObjectSerializerReadContextComplex+XmlObjectDataContractTypeInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlObjectSerializerReadContextComplex_XmlObjectDataContractTypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
@@ -1065,7 +1065,7 @@ for crate::System::Runtime::Serialization::XmlObjectSerializerReadContextComplex
     feature = "cordl_class_System+Runtime+Serialization+XmlObjectSerializerReadContextComplex+XmlObjectDataContractTypeKey"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlObjectSerializerReadContextComplex_XmlObjectDataContractTypeKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

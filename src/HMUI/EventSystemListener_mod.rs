@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+EventSystemListener")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventSystemListener {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub pointerDidEnterEvent: quest_hook::libil2cpp::Gc<

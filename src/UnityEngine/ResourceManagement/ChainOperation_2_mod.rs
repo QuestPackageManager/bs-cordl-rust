@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperation_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ChainOperation_2<
     TObject: quest_hook::libil2cpp::Type,
     TObjectDependency: quest_hook::libil2cpp::Type,

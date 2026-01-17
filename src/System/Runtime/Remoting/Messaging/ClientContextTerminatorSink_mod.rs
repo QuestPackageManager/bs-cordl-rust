@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+ClientContextTerminatorSink")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ClientContextTerminatorSink {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _context: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,

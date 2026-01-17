@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DisableIfNotPlatform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisableIfNotPlatform {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _whitelistPlatforms: quest_hook::libil2cpp::Gc<

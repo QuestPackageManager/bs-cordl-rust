@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+DataLengthException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataLengthException {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::CryptoException,
 }

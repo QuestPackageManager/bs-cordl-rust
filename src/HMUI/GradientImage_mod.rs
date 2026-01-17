@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+GradientImage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GradientImage {
     __cordl_parent: crate::UnityEngine::UI::Image,
     pub _color0: crate::UnityEngine::Color,

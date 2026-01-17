@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RandomAnimationStartTime")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RandomAnimationStartTime {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _animation: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animation>,

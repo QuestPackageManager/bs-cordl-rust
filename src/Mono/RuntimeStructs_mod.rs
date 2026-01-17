@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+RuntimeStructs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeStructs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -58,7 +58,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::RuntimeStructs {
     }
 }
 #[cfg(feature = "cordl_class_Mono+RuntimeStructs+GPtrArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RuntimeStructs_GPtrArray {
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -151,7 +154,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::RuntimeStructs_
 #[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 impl crate::Mono::RuntimeStructs_GPtrArray {}
 #[cfg(feature = "cordl_class_Mono+RuntimeStructs+GenericParamInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RuntimeStructs_GenericParamInfo {
     pub pklass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -247,7 +253,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::RuntimeStructs_
 #[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 impl crate::Mono::RuntimeStructs_GenericParamInfo {}
 #[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RuntimeStructs_MonoClass {}
 #[cfg(feature = "cordl_class_Mono+RuntimeStructs+MonoClass")]
@@ -337,7 +346,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::RuntimeStructs_
 #[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 impl crate::Mono::RuntimeStructs_MonoClass {}
 #[cfg(feature = "cordl_class_Mono+RuntimeStructs+RemoteClass")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RuntimeStructs_RemoteClass {
     pub default_vtable: crate::System::IntPtr,

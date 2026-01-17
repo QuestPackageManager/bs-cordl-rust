@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+AssemblyConfigurationAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssemblyConfigurationAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Configuration_k__BackingField:

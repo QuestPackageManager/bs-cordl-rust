@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+SharedStatic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SharedStatic {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -129,7 +129,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::SharedStatic {
 }
 #[cfg(feature = "cordl_class_Unity+Burst+SharedStatic+PreserveAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SharedStatic_PreserveAttribute {
     __cordl_parent: crate::System::Attribute,
 }

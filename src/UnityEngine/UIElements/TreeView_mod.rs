@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TreeView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseTreeView,
     pub m_MakeItem: quest_hook::libil2cpp::Gc<
@@ -601,7 +601,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TreeV
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TreeView_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TreeView>,
@@ -685,7 +685,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TreeV
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TreeView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseTreeView_UxmlTraits,
     pub m_ItemTemplate: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaCompilationSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaCompilationSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enableUpaCheck: bool,

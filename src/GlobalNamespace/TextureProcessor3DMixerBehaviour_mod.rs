@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TextureProcessor3DMixerBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextureProcessor3DMixerBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub _trackBinding: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TextureProcessor3D>,

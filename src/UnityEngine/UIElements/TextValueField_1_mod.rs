@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextValueField_1<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType>,
     pub m_Dragger: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseFieldMouseDragger>,
@@ -676,7 +676,7 @@ impl<TValueType: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextValueField_1_TextValueInput<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<TValueType>,
     pub _formatString_k__BackingField:

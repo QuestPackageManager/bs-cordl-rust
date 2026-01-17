@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+RequestState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RequestState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Complete = 6i32,
     Converting = 4i32,
     Enqueueing = 2i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVRSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRSystem,
@@ -1428,7 +1428,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRSystem {
     }
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CVRSystem_GetControllerStateUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
@@ -1530,7 +1533,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 impl crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {}
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CVRSystem_GetControllerStateWithPoseUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
@@ -1634,7 +1640,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 impl crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {}
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+PollNextEventUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CVRSystem_PollNextEventUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
@@ -1729,7 +1738,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {}
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVRSystem__GetControllerStatePacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1940,7 +1949,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVRSystem__GetCon
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVRSystem__GetControllerStateWithPosePacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2175,7 +2184,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVRSystem__PollNextEventPacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }

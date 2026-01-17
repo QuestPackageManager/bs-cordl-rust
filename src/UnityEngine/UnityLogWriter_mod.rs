@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UnityLogWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityLogWriter {
     __cordl_parent: crate::System::IO::TextWriter,
 }

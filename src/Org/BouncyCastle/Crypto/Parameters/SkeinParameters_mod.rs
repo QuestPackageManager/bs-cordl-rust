@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SkeinParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -320,7 +320,7 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::ICipherParameters>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SkeinParameters_Builder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parameters: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,

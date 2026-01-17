@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Endo+GlvTypeAEndomorphism")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GlvTypeAEndomorphism {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_parameters:

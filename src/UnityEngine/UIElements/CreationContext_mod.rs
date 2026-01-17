@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CreationContext")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CreationContext {
     pub _target_k__BackingField:
@@ -972,7 +975,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::CreationC
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CreationContext+AttributeOverrideRange")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CreationContext_AttributeOverrideRange {
     pub sourceAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset>,
@@ -1117,7 +1123,10 @@ impl crate::UnityEngine::UIElements::CreationContext_AttributeOverrideRange {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CreationContext+SerializedDataOverrideRange")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CreationContext_SerializedDataOverrideRange {
     pub sourceAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset>,

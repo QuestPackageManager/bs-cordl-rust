@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+IgnoreDataMemberAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoreDataMemberAttribute {
     __cordl_parent: crate::System::Attribute,
 }

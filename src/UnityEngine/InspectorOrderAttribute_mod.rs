@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InspectorOrderAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InspectorOrderAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub _m_inspectorSort_k__BackingField: crate::UnityEngine::InspectorSort,

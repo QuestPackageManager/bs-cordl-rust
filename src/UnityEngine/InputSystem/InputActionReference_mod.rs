@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionReference")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputActionReference {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionAsset>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _node: crate::UnityEngine::XR::XRNode,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRConfigurationDataAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRConfigurationDataAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _displayName_k__BackingField:

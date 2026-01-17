@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SequentialSearchPrimeGeneratorBase {
     __cordl_parent: crate::Mono::Math::Prime::Generator::PrimeGeneratorBase,
 }

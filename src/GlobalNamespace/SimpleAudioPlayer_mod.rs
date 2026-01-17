@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SimpleAudioPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimpleAudioPlayer {
     __cordl_parent: crate::GlobalNamespace::AudioPlayerBase,
     pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,

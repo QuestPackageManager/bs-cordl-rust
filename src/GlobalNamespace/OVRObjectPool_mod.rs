@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRObjectPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRObjectPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -423,7 +423,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRObjectPool
     }
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+DictionaryScope_2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRObjectPool_DictionaryScope_2<
     TKey: quest_hook::libil2cpp::Type,
@@ -642,7 +645,10 @@ impl<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+HashSetScope_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRObjectPool_HashSetScope_1<T: quest_hook::libil2cpp::Type> {
     pub _set: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,
@@ -836,7 +842,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+IPoolObject")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRObjectPool_IPoolObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -930,7 +936,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRObjectPool
     }
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+ItemScope_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRObjectPool_ItemScope_1<T: quest_hook::libil2cpp::Type> {
     pub _item: T,
@@ -1121,7 +1130,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+ListScope_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRObjectPool_ListScope_1<T: quest_hook::libil2cpp::Type> {
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
@@ -1354,7 +1366,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+QueueScope_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRObjectPool_QueueScope_1<T: quest_hook::libil2cpp::Type> {
     pub _queue: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<T>>,
@@ -1546,7 +1561,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+StackScope_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRObjectPool_StackScope_1<T: quest_hook::libil2cpp::Type> {
     pub _stack: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Stack_1<T>>,
@@ -1739,7 +1757,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+Storage_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRObjectPool_Storage_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -1884,7 +1902,10 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRObjectPool+TaskScope_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRObjectPool_TaskScope_1<T: quest_hook::libil2cpp::Type> {
     pub _tasks:

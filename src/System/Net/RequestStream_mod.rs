@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+RequestStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RequestStream {
     __cordl_parent: crate::System::IO::Stream,
     pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

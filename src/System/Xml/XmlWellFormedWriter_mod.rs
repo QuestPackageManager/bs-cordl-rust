@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+AttributeValueCache+BufferChunk")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AttributeValueCache_XmlWellFormedWriter_BufferChunk {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -100,7 +100,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+AttributeValueCache+Item")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AttributeValueCache_XmlWellFormedWriter_Item {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
@@ -210,10 +210,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+AttributeValueCache+ItemType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum AttributeValueCache_XmlWellFormedWriter_ItemType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CharEntity = 1i32,
     EntityRef = 0i32,
     Raw = 6i32,
@@ -310,7 +315,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlWellFormedWriter {
     __cordl_parent: crate::System::Xml::XmlWriter,
     pub writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -2022,7 +2027,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlWellFormedWrit
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+AttrName")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlWellFormedWriter_AttrName {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2179,7 +2187,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+AttributeValueCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlWellFormedWriter_AttributeValueCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stringValue: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -2655,7 +2663,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+ElementScope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlWellFormedWriter_ElementScope {
     pub prevNSTop: i32,
@@ -2846,7 +2857,10 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+Namespace")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlWellFormedWriter_Namespace {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3000,10 +3014,15 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+NamespaceKind")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlWellFormedWriter_NamespaceKind {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Implied = 2i32,
     NeedToWrite = 1i32,
     Special = 3i32,
@@ -3093,7 +3112,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlWellFormedWriter_NamespaceResolverProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub wfWriter: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWellFormedWriter>,
@@ -3302,10 +3321,15 @@ impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+SpecialAttribute")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlWellFormedWriter_SpecialAttribute {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DefaultXmlns = 1i32,
     No = 0i32,
     PrefixedXmlns = 2i32,
@@ -3397,10 +3421,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+State")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlWellFormedWriter_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AfterRootEle = 7i32,
     AfterRootLevelAttr = 14i32,
     Attribute = 8i32,
@@ -3510,10 +3539,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlWellFormedW
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlWellFormedWriter+Token")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlWellFormedWriter_Token {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AtomicValue = 11i32,
     Base64 = 12i32,
     CData = 10i32,

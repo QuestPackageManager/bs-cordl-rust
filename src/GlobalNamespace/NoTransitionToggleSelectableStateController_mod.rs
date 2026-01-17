@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoTransitionToggleSelectableStateController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoTransitionToggleSelectableStateController {
     __cordl_parent: crate::GlobalNamespace::SelectableStateController_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsToggle>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+TooBigPacketException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TooBigPacketException {
     __cordl_parent: crate::LiteNetLib::InvalidPacketException,
 }

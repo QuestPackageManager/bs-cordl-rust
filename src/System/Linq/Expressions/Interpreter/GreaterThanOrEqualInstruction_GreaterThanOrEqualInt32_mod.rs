@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanOrEqualInstruction+GreaterThanOrEqualInt32"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GreaterThanOrEqualInstruction_GreaterThanOrEqualInt32 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::GreaterThanOrEqualInstruction,
 }

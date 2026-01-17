@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapLevelSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _version: i32,
@@ -970,7 +970,7 @@ impl AsMut<crate::GlobalNamespace::IAssetSongPreviewAudioClipProvider>
 }
 #[cfg(feature = "cordl_class_BeatmapLevelSO+ColorScheme")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelSO_ColorScheme {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1338,7 +1338,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapLevelS
 }
 #[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelSO_PreviewDifficultyBeatmap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _difficulty: crate::GlobalNamespace::BeatmapDifficulty,
@@ -1662,7 +1662,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelSO_PreviewDifficultyBeatmapSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapCharacteristic:

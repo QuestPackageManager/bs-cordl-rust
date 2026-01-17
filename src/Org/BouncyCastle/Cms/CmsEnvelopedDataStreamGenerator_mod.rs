@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsEnvelopedDataStreamGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
     pub _originatorInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -351,7 +351,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator+CmsEnvelopedDataOutputStream"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub _outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator>,

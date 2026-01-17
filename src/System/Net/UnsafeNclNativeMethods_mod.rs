@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+UnsafeNclNativeMethods+HttpApi+HTTP_REQUEST_HEADER_ID")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -83,7 +83,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Net+UnsafeNclNativeMethods")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeNclNativeMethods {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -138,7 +138,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::UnsafeNclNativeMe
 }
 #[cfg(feature = "cordl_class_System+Net+UnsafeNclNativeMethods+HttpApi")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeNclNativeMethods_HttpApi {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -192,7 +192,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::UnsafeNclNativeMe
 }
 #[cfg(feature = "cordl_class_System+Net+UnsafeNclNativeMethods+SecureStringHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsafeNclNativeMethods_SecureStringHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

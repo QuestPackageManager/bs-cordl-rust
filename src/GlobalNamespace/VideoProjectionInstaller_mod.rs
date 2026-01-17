@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VideoProjectionInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoProjectionInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _sceneSetupData:

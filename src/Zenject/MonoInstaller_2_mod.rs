@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MonoInstaller_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoInstaller_2<
     TParam1: quest_hook::libil2cpp::Type,
     TDerived: quest_hook::libil2cpp::Type,

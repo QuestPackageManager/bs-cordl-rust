@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BpmTimeProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BpmTimeProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bpmChangeDataList: quest_hook::libil2cpp::Gc<
@@ -282,7 +282,10 @@ impl AsMut<crate::GlobalNamespace::IBeatToTimeConverter>
     }
 }
 #[cfg(feature = "cordl_class_BpmTimeProcessor+BpmChangeData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BpmTimeProcessor_BpmChangeData {
     pub bpmChangeStartTime: f32,

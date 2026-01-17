@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalActiveClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalActiveClient {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerTransforms: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerTransforms>,

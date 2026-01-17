@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+EmptyBoxGraphic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EmptyBoxGraphic {
     __cordl_parent: crate::UnityEngine::UI::Graphic,
     pub _depth: f32,

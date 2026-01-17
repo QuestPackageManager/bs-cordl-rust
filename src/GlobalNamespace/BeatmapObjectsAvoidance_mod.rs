@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapObjectsAvoidance")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectsAvoidance {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _zOffset: f32,

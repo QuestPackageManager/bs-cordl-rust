@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultipleSortedBeatmapObjectsListsEnumerator_1<
     T: quest_hook::libil2cpp::Type,
 > {
@@ -251,7 +251,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerab
 }
 #[cfg(feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1+BeatmapObjectListNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     T: quest_hook::libil2cpp::Type,
 > {

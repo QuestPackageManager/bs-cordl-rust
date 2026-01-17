@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+TeaEngine")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeaEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _a: u32,

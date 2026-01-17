@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PacketEncryptionLayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PacketEncryptionLayer {
     __cordl_parent: crate::LiteNetLib::Layers::PacketLayerBase,
     pub statistics: quest_hook::libil2cpp::Gc<
@@ -818,7 +818,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PacketEncrypt
 }
 #[cfg(feature = "cordl_class_PacketEncryptionLayer+EncryptionStatistics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PacketEncryptionLayer_EncryptionStatistics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _packetsReceivedPlaintext: i64,
@@ -1254,7 +1254,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PacketEncryptionLayer+PendingEncryptionStateList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PacketEncryptionLayer_PendingEncryptionStateList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pendingStatesByPort: quest_hook::libil2cpp::Gc<

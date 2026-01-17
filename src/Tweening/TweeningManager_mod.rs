@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tweening+TweeningManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TweeningManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _activeTweens: quest_hook::libil2cpp::Gc<

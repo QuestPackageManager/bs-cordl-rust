@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XPathParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _scanner: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathScanner>,
@@ -995,7 +995,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::XPat
 }
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XPathParser_ParamInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+Arm")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Arm {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -53,7 +53,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::Arm 
 }
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+Arm+Neon")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Arm_Neon {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

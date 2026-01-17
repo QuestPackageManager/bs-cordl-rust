@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorSchemeSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorSchemeSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,

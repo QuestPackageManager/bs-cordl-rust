@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEventDataLightsExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -194,7 +194,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

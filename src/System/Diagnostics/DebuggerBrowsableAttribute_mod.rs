@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+DebuggerBrowsableAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebuggerBrowsableAttribute {
     __cordl_parent: crate::System::Attribute,
     pub state: crate::System::Diagnostics::DebuggerBrowsableState,

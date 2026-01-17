@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+StringWithQualityHeaderValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StringWithQualityHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Quality_k__BackingField: crate::System::Nullable_1<f64>,

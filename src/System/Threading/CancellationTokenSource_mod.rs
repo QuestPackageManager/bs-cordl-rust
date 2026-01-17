@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+CancellationTokenSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CancellationTokenSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _kernelEvent: quest_hook::libil2cpp::Gc<crate::System::Threading::ManualResetEvent>,

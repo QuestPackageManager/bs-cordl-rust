@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ResultObjectiveListItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResultObjectiveListItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,

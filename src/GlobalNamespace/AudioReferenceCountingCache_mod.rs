@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AudioReferenceCountingCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioReferenceCountingCache {
     __cordl_parent: crate::GlobalNamespace::ReferenceCountingCache_2<
         i32,

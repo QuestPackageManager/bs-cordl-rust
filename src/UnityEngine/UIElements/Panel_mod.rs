@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Panel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Panel {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualElementPanel,
     pub m_RootContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

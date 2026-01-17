@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+Stream+NullStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Stream_NullStream {
     __cordl_parent: crate::System::IO::Stream,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationReaderInterpreter {
     __cordl_parent: crate::System::Xml::Serialization::XmlSerializationReader,
     pub _typeMap: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlMapping>,
@@ -1219,7 +1219,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationReaderInterpreter_FixupCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _sri: quest_hook::libil2cpp::Gc<
@@ -1361,7 +1361,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSerializationReaderInterpreter_ReaderCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _sri: quest_hook::libil2cpp::Gc<

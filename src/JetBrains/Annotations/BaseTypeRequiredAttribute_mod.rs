@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+BaseTypeRequiredAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseTypeRequiredAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _BaseType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,

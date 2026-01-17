@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseField_1<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub m_LabelWidthRatio: f32,
@@ -1265,7 +1265,7 @@ impl<TValueType: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
     pub m_Label:

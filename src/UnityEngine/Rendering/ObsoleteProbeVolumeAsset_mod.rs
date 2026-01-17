@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ObsoleteProbeVolumeAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObsoleteProbeVolumeAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
 }

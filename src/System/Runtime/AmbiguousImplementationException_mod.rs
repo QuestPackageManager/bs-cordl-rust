@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+AmbiguousImplementationException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AmbiguousImplementationException {
     __cordl_parent: crate::System::Exception,
 }

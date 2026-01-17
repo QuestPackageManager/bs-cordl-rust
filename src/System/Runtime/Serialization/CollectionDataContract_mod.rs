@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+CollectionDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract,
     pub collectionItemName: quest_hook::libil2cpp::Gc<
@@ -2009,7 +2009,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+Serialization+CollectionDataContract+CollectionDataContractCriticalHelper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionDataContract_CollectionDataContractCriticalHelper {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract_DataContractCriticalHelper,
     pub itemType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -3371,7 +3371,7 @@ for crate::System::Runtime::Serialization::CollectionDataContract_CollectionData
     feature = "cordl_class_System+Runtime+Serialization+CollectionDataContract+DictionaryEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionDataContract_DictionaryEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionaryEnumerator>,
@@ -3667,7 +3667,7 @@ impl AsMut<crate::System::IDisposable>
     feature = "cordl_class_System+Runtime+Serialization+CollectionDataContract+GenericDictionaryEnumerator_2"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CollectionDataContract_GenericDictionaryEnumerator_2<
     K: quest_hook::libil2cpp::Type,
     V: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReloadAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReloadAttribute {
     __cordl_parent: crate::System::Attribute,
 }
@@ -182,10 +182,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Reload
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReloadAttribute+Package")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ReloadAttribute_Package {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Builtin = 0i32,
     BuiltinExtra = 2i32,
     Root = 1i32,

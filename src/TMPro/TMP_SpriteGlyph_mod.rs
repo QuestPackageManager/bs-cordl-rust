@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_SpriteGlyph")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_SpriteGlyph {
     __cordl_parent: crate::UnityEngine::TextCore::Glyph,
     pub sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

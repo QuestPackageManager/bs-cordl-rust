@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+MultipartContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultipartContent {
     __cordl_parent: crate::System::Net::Http::HttpContent,
     pub nested_content: quest_hook::libil2cpp::Gc<

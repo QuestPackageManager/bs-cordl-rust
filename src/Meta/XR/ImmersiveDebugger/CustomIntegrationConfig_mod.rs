@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+CustomIntegrationConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomIntegrationConfig {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -200,7 +200,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+CustomIntegrationConfig+GetCameraDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomIntegrationConfig_GetCameraDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -378,7 +378,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Meta+XR+ImmersiveDebugger+CustomIntegrationConfig+GetLeftControllerTransformDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomIntegrationConfig_GetLeftControllerTransformDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -565,7 +565,7 @@ for crate::Meta::XR::ImmersiveDebugger::CustomIntegrationConfig_GetLeftControlle
     feature = "cordl_class_Meta+XR+ImmersiveDebugger+CustomIntegrationConfig+GetRightControllerTransformDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomIntegrationConfig_GetRightControllerTransformDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

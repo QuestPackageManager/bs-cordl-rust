@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+RangeConditionHeaderValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RangeConditionHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Date_k__BackingField: crate::System::Nullable_1<crate::System::DateTimeOffset>,

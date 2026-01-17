@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerSpectatingSpotManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerSpectatingSpotManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _spectatingSpots: quest_hook::libil2cpp::Gc<

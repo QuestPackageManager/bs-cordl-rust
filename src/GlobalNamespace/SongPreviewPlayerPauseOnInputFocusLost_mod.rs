@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongPreviewPlayerPauseOnInputFocusLost")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongPreviewPlayerPauseOnInputFocusLost {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _songPreviewPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioPlayerBase>,

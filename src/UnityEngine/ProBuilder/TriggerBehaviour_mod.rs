@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+TriggerBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TriggerBehaviour {
     __cordl_parent: crate::UnityEngine::ProBuilder::EntityBehaviour,
 }

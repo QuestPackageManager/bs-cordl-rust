@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IteratorStateMachineAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IteratorStateMachineAttribute {
     __cordl_parent: crate::System::Runtime::CompilerServices::StateMachineAttribute,
 }

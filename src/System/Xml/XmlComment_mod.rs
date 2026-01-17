@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlComment")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlComment {
     __cordl_parent: crate::System::Xml::XmlCharacterData,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ForDeviceEventObservable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Source: quest_hook::libil2cpp::Gc<
@@ -164,7 +164,7 @@ impl AsMut<crate::System::IObservable_1<crate::UnityEngine::InputSystem::LowLeve
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ForDeviceEventObservable_ForDevice {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Observer: quest_hook::libil2cpp::Gc<

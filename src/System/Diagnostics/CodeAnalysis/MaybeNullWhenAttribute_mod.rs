@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+MaybeNullWhenAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaybeNullWhenAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ReturnValue_k__BackingField: bool,

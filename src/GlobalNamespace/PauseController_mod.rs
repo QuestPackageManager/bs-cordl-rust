@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PauseController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PauseController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _pauseMenuManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PauseMenuManager>,
@@ -816,7 +816,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseControll
 }
 #[cfg(feature = "cordl_class_PauseController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PauseController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startPaused: bool,
@@ -899,10 +899,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseControll
     }
 }
 #[cfg(feature = "cordl_class_PauseController+PauseState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PauseController_PauseState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Paused = 0i32,
     Playing = 2i32,
     Resuming = 1i32,

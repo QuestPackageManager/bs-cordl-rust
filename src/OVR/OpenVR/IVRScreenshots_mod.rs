@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRScreenshots")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRScreenshots {
     pub RequestScreenshot:
@@ -124,7 +127,7 @@ impl crate::OVR::OpenVR::IVRScreenshots {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyFilename")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRScreenshots__GetScreenshotPropertyFilename {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -337,7 +340,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRScreenshots__GetScreenshotPropertyType {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -520,7 +523,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRScreenshots__HookScreenshot {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -716,7 +719,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRScreenshots__H
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRScreenshots+_RequestScreenshot")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRScreenshots__RequestScreenshot {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -921,7 +924,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRScreenshots__R
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRScreenshots__SubmitScreenshot {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1123,7 +1126,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRScreenshots__S
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRScreenshots+_TakeStereoScreenshot")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRScreenshots__TakeStereoScreenshot {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1322,7 +1325,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRScreenshots__UpdateScreenshotProgress {
     __cordl_parent: crate::System::MulticastDelegate,
 }

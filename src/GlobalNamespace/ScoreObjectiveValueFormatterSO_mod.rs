@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScoreObjectiveValueFormatterSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoreObjectiveValueFormatterSO {
     __cordl_parent: crate::GlobalNamespace::ObjectiveValueFormatterSO,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+Util+FeatureAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FeatureAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Feature_k__BackingField: crate::Meta::XR::Util::Feature,

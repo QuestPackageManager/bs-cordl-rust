@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+CameraMetadataCache+CameraMetadataCacheEntry"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CameraMetadataCache_UniversalRenderPipeline_CameraMetadataCacheEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -98,7 +98,7 @@ for crate::UnityEngine::Rendering::Universal::CameraMetadataCache_UniversalRende
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+Profiling+Pipeline+Context"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pipeline_Profiling_UniversalRenderPipeline_Context {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -170,7 +170,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+Profiling+Pipeline+Renderer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pipeline_Profiling_UniversalRenderPipeline_Renderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -237,7 +237,7 @@ for crate::UnityEngine::Rendering::Universal::Pipeline_Profiling_UniversalRender
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+Profiling+Pipeline"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Profiling_UniversalRenderPipeline_Pipeline {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -309,7 +309,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipeline {
     __cordl_parent: crate::UnityEngine::Rendering::RenderPipeline,
     pub m_DebugDisplaySettingsUI:
@@ -2833,7 +2833,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+CameraMetadataCache"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipeline_CameraMetadataCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2933,7 +2933,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+CameraRenderingScope"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UniversalRenderPipeline_CameraRenderingScope {
     pub m_Context: crate::UnityEngine::Rendering::ScriptableRenderContext,
@@ -3116,7 +3119,10 @@ impl AsMut<crate::System::IDisposable>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+ContextRenderingScope"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UniversalRenderPipeline_ContextRenderingScope {
     pub m_Context: crate::UnityEngine::Rendering::ScriptableRenderContext,
@@ -3310,7 +3316,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+Profiling")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipeline_Profiling {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3374,7 +3380,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipeline+SingleCameraRequest"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipeline_SingleCameraRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub destination: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,

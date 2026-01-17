@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RemoteProcedureCall_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemoteProcedureCall_1<T0: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::RemoteProcedureCall,
     pub _value0:

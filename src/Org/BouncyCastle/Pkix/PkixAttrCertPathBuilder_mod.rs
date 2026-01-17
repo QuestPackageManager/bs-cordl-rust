@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixAttrCertPathBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PkixAttrCertPathBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certPathException: quest_hook::libil2cpp::Gc<crate::System::Exception>,

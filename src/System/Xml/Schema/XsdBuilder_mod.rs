@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XsdBuilder {
     __cordl_parent: crate::System::Xml::Schema::SchemaBuilder,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
@@ -3880,7 +3880,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XsdBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+BuilderNamespaceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XsdBuilder_BuilderNamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
     pub nsMgr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
@@ -4000,10 +4000,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+State")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XsdBuilder_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 12i32,
     Annotation = 2i32,
     Any = 15i32,
@@ -4129,7 +4134,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Schema::XsdBui
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdAttributeEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XsdBuilder_XsdAttributeEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Attribute: crate::System::Xml::Schema::SchemaNames_Token,
@@ -4226,7 +4231,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdBuildFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XsdBuilder_XsdBuildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4343,7 +4348,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XsdBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEndChildFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XsdBuilder_XsdEndChildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4463,7 +4468,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XsdBuilder_XsdEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Name: crate::System::Xml::Schema::SchemaNames_Token,
@@ -4612,7 +4617,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XsdBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdBuilder+XsdInitFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XsdBuilder_XsdInitFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

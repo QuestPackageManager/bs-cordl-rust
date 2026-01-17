@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_InputField {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub m_SoftKeyboard: quest_hook::libil2cpp::Gc<crate::UnityEngine::TouchScreenKeyboard>,
@@ -5960,10 +5960,15 @@ impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TMP_InputFi
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+CharacterValidation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TMP_InputField_CharacterValidation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Alphanumeric = 4i32,
     CustomValidator = 8i32,
     Decimal = 3i32,
@@ -6049,10 +6054,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_Chara
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+ContentType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TMP_InputField_ContentType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Alphanumeric = 4i32,
     Autocorrected = 1i32,
     Custom = 9i32,
@@ -6139,10 +6149,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_Conte
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+EditState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TMP_InputField_EditState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Continue = 0i32,
     Finish = 1i32,
 }
@@ -6221,10 +6236,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_EditS
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+InputType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TMP_InputField_InputType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AutoCorrect = 1i32,
     Password = 2i32,
     Standard = 0i32,
@@ -6304,10 +6324,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_Input
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+LineType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TMP_InputField_LineType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MultiLineNewline = 2i32,
     MultiLineSubmit = 1i32,
     SingleLine = 0i32,
@@ -6388,7 +6413,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_LineT
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnChangeEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_InputField_OnChangeEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6470,7 +6495,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnChange
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnValidateInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_InputField_OnValidateInput {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6649,7 +6674,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnValida
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+SelectionEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_InputField_SelectionEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6731,7 +6756,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_Selectio
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+SubmitEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_InputField_SubmitEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6813,7 +6838,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_SubmitEv
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+TextSelectionEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_InputField_TextSelectionEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_3<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6899,7 +6924,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_TextSele
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_InputField_TouchScreenKeyboardEvent {
     __cordl_parent:
         crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::TouchScreenKeyboard_Status>,

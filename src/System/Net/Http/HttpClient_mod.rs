@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+HttpClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpClient {
     __cordl_parent: crate::System::Net::Http::HttpMessageInvoker,
     pub base_address: quest_hook::libil2cpp::Gc<crate::System::Uri>,

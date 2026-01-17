@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LocalLeaderboardViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalLeaderboardViewController {
     __cordl_parent: crate::GlobalNamespace::LeaderboardViewController,
     pub _maxNumberOfCells: i32,

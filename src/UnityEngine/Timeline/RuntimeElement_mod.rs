@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+RuntimeElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _intervalBit_k__BackingField: i32,

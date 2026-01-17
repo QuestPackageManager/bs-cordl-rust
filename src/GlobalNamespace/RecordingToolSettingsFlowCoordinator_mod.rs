@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingToolSettingsFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _recordingToolConfigViewController:

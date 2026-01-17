@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Microsoft+CSharp+CSharpCodeProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CSharpCodeProvider {
     __cordl_parent: crate::Microsoft::CSharp::CodeDomProvider,
 }

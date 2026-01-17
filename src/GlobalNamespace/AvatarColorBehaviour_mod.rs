@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AvatarColorBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarColorBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub _startColor: crate::UnityEngine::Color,

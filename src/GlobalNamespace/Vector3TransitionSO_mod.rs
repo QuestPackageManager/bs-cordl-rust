@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Vector3TransitionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector3TransitionSO {
     __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
     pub _normalState: crate::UnityEngine::Vector3,

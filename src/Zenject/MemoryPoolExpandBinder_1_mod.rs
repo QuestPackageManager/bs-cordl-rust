@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MemoryPoolExpandBinder_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MemoryPoolExpandBinder_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
     pub _MemoryPoolBindInfo_k__BackingField:

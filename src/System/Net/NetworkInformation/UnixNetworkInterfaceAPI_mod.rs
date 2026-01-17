@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnixNetworkInterfaceAPI {
     __cordl_parent: crate::System::Net::NetworkInformation::NetworkInterfaceFactory,
 }

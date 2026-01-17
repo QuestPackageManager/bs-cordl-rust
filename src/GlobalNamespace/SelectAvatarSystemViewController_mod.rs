@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SelectAvatarSystemViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectAvatarSystemViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,

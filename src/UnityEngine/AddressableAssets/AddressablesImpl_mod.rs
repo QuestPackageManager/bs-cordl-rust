@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddressablesImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ResourceManager:
@@ -4920,7 +4920,7 @@ impl
     feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddressablesImpl_LoadResourceLocationKeyOp {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<
@@ -5135,7 +5135,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddressablesImpl_LoadResourceLocationKeysOp {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<

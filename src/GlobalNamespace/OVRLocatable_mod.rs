@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRLocatable")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRLocatable {
     pub _Handle_k__BackingField: u64,
@@ -712,7 +715,10 @@ impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRLocatable>>
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+CopyPosesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRLocatable_CopyPosesJob {
     pub PosesIn: crate::Unity::Collections::NativeArray_1<
@@ -847,7 +853,10 @@ impl AsMut<crate::Unity::Jobs::IJobFor> for crate::GlobalNamespace::OVRLocatable
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSceneAnchorPosesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRLocatable_GetSceneAnchorPosesJob {
     pub Locatables: crate::Unity::Collections::NativeArray_1<crate::GlobalNamespace::OVRLocatable>,
@@ -996,7 +1005,10 @@ impl AsMut<crate::Unity::Jobs::IJobFor>
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+GetSpatialAnchorPosesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRLocatable_GetSpatialAnchorPosesJob {
     pub Locatables: crate::Unity::Collections::NativeArray_1<crate::GlobalNamespace::OVRLocatable>,
@@ -1145,7 +1157,10 @@ impl AsMut<crate::Unity::Jobs::IJobFor>
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetLocalSpaceTransformsJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRLocatable_SetLocalSpaceTransformsJob {
     pub Poses: crate::Unity::Collections::NativeArray_1<
@@ -1295,7 +1310,10 @@ impl AsMut<crate::UnityEngine::Jobs::IJobParallelForTransform>
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+SetWorldSpaceTransformsJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRLocatable_SetWorldSpaceTransformsJob {
     pub Poses: crate::Unity::Collections::NativeArray_1<
@@ -1445,7 +1463,10 @@ impl AsMut<crate::UnityEngine::Jobs::IJobParallelForTransform>
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TrackingSpacePose")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRLocatable_TrackingSpacePose {
     pub _Position_k__BackingField: crate::System::Nullable_1<crate::UnityEngine::Vector3>,
@@ -1781,7 +1802,10 @@ impl crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     }
 }
 #[cfg(feature = "cordl_class_OVRLocatable+TransformPosesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRLocatable_TransformPosesJob {
     pub Poses: crate::Unity::Collections::NativeArray_1<

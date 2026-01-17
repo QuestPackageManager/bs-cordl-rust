@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasePopupField_2<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -734,7 +734,7 @@ impl<TValueType: quest_hook::libil2cpp::Type, TValueChoice: quest_hook::libil2cp
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasePopupField_2_PopupTextElement<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,

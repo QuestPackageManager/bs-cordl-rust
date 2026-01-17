@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_IMultiplayerSessionManager_4")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IMultiplayerSessionManager_4<
     TConnectedPlayerManager: quest_hook::libil2cpp::Type,

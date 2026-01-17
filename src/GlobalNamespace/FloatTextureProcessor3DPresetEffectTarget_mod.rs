@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatTextureProcessor3DPresetEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatTextureProcessor3DPresetEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _textureProcessor3D: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TextureProcessor3D>,

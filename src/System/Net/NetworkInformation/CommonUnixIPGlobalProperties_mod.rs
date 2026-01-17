@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+CommonUnixIPGlobalProperties")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CommonUnixIPGlobalProperties {
     __cordl_parent: crate::System::Net::NetworkInformation::IPGlobalProperties,
 }

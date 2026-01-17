@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelSearchViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelSearchViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _searchButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

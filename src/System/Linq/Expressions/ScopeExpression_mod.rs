@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+ScopeExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScopeExpression {
     __cordl_parent: crate::System::Linq::Expressions::BlockExpression,
     pub _variables: quest_hook::libil2cpp::Gc<

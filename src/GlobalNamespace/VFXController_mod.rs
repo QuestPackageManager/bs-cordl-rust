@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VFXController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VFXController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particleSystems: quest_hook::libil2cpp::Gc<

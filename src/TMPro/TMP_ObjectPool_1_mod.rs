@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_ObjectPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Stack: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Stack_1<T>>,

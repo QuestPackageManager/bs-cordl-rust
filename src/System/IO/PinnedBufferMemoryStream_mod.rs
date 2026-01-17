@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+PinnedBufferMemoryStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PinnedBufferMemoryStream {
     __cordl_parent: crate::System::IO::UnmanagedMemoryStream,
     pub _array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

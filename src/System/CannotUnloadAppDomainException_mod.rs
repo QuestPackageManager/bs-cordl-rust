@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+CannotUnloadAppDomainException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CannotUnloadAppDomainException {
     __cordl_parent: crate::System::SystemException,
 }

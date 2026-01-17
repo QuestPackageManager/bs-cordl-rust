@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Unity+Properties+IKeyedProperties_2")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IKeyedProperties_2<
     TContainer: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicEventItemConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _basicEvents: quest_hook::libil2cpp::Gc<

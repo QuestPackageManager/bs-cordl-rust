@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tweening+TimeTweeningManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeTweeningManager {
     __cordl_parent: crate::Tweening::TweeningManager,
 }

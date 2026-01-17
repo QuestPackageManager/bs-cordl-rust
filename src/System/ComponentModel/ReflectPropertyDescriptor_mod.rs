@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+ReflectPropertyDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectPropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub state: crate::System::Collections::Specialized::BitVector32,

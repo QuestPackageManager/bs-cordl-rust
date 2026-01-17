@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+ObjectHolder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

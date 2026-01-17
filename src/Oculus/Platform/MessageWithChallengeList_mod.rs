@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+MessageWithChallengeList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MessageWithChallengeList {
     __cordl_parent: crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,

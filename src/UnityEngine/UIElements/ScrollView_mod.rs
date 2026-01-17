@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScrollView {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_FirstLayoutPass: i32,
@@ -2106,10 +2106,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScrollView_NestedInteractionKind {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Default = 0i32,
     ForwardScrolling = 2i32,
     StopScrolling = 1i32,
@@ -2199,10 +2204,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScrollView_TouchScrollBehavior {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Clamped = 2i32,
     Elastic = 1i32,
     Unrestricted = 0i32,
@@ -2292,10 +2302,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScrollView_TouchScrollingResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Apply = 0i32,
     Block = 2i32,
     Forward = 1i32,
@@ -2386,7 +2401,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScrollView_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
@@ -2470,7 +2485,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScrollView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_ScrollViewMode: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+LoopExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LoopExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Body_k__BackingField:

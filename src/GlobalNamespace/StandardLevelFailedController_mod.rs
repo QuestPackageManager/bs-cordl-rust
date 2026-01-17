@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StandardLevelFailedController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelFailedController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _levelFailedTextEffect:
@@ -187,7 +187,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::StandardLevel
 }
 #[cfg(feature = "cordl_class_StandardLevelFailedController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelFailedController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub autoRestart: bool,

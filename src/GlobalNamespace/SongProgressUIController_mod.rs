@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongProgressUIController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongProgressUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _slider: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Slider>,

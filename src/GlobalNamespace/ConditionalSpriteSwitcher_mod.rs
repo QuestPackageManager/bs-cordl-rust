@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ConditionalSpriteSwitcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConditionalSpriteSwitcher {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _sprite0: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Dynamic+SetIndexBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SetIndexBinder {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
 }

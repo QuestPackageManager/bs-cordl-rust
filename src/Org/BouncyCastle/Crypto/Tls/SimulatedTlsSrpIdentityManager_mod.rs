@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimulatedTlsSrpIdentityManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mGroup: quest_hook::libil2cpp::Gc<

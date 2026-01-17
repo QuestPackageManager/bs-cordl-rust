@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Fx")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Fx {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -200,7 +200,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Fx {
 }
 #[cfg(feature = "cordl_class_System+Runtime+Fx+FatalInternalException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Fx_FatalInternalException {
     __cordl_parent: crate::System::Runtime::Fx_InternalException,
 }
@@ -290,7 +290,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Fx_FatalInter
 }
 #[cfg(feature = "cordl_class_System+Runtime+Fx+InternalException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Fx_InternalException {
     __cordl_parent: crate::System::SystemException,
 }

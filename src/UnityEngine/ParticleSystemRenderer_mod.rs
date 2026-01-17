@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
 }
@@ -3778,7 +3778,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ParticleSystemRen
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ParticleSystemRenderer_BakeTextureOutput {
     pub vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,

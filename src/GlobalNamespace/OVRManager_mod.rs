@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub disabledCameras: quest_hook::libil2cpp::Gc<
@@ -6565,10 +6565,15 @@ impl AsMut<crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration>
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+CameraDevice")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_CameraDevice {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     WebCamera0 = 0i32,
     WebCamera1 = 1i32,
     ZEDCamera = 2i32,
@@ -6648,10 +6653,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+ColorSpace")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_ColorSpace {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Adobe_RGB = 8i32,
     P3 = 7i32,
     Quest = 6i32,
@@ -6737,10 +6747,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+CompositionMethod")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_CompositionMethod {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Direct = 1i32,
     External = 0i32,
 }
@@ -6825,10 +6840,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+ControllerDrivenHandPosesType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_ControllerDrivenHandPosesType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ConformingToController = 1i32,
     Natural = 2i32,
     None = 0i32,
@@ -6918,10 +6938,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+DepthQuality")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_DepthQuality {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,
@@ -7001,7 +7026,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+EventListener")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRManager_EventListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -7081,10 +7106,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRManager_Ev
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+EyeTextureFormat")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_EyeTextureFormat {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Default = 0i32,
     R11G11B10_FP = 3i32,
     R16G16B16A16_FP = 2i32,
@@ -7170,10 +7200,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+FixedFoveatedRenderingLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_FixedFoveatedRenderingLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 3i32,
     HighTop = 4i32,
     Low = 1i32,
@@ -7265,10 +7300,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+FoveatedRenderingLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_FoveatedRenderingLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 3i32,
     HighTop = 4i32,
     Low = 1i32,
@@ -7361,7 +7401,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRManager+InstantiateMrcCameraDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRManager_InstantiateMrcCameraDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7545,10 +7585,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+MrcActivationMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_MrcActivationMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Automatic = 0i32,
     Disabled = 1i32,
 }
@@ -7633,10 +7678,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+MrcCameraType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_MrcCameraType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Background = 2i32,
     Foreground = 1i32,
     Normal = 0i32,
@@ -7717,7 +7767,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
 }
 #[cfg(feature = "cordl_class_OVRManager+Observable_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRManager_Observable_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _value: T,
@@ -7974,7 +8024,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRManager+PassthroughCapabilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRManager_PassthroughCapabilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _SupportsPassthrough_k__BackingField: bool,
@@ -8138,10 +8188,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+PassthroughInitializationState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_PassthroughInitializationState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failed = 3i32,
     Initialized = 2i32,
     Pending = 1i32,
@@ -8232,10 +8287,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+ProcessorPerformanceLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_ProcessorPerformanceLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Boost = 3i32,
     PowerSavings = 0i32,
     SustainedHigh = 2i32,
@@ -8326,10 +8386,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+SystemHeadsetTheme")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_SystemHeadsetTheme {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Dark = 0i32,
     Light = 1i32,
 }
@@ -8416,10 +8481,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+SystemHeadsetType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_SystemHeadsetType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Meta_Link_Quest_3 = 4104i32,
     Meta_Link_Quest_3S = 4105i32,
     Meta_Link_Quest_Pro = 4103i32,
@@ -8534,10 +8604,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+TiledMultiResLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_TiledMultiResLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LMSHigh = 3i32,
     LMSHighTop = 4i32,
     LMSLow = 1i32,
@@ -8627,10 +8702,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+TrackingOrigin")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_TrackingOrigin {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EyeLevel = 0i32,
     FloorLevel = 1i32,
     Stage = 2i32,
@@ -8710,10 +8790,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+VirtualGreenScreenType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_VirtualGreenScreenType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Off = 0i32,
     OuterBoundary = 1i32,
     PlayArea = 2i32,
@@ -8803,10 +8888,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+XRDevice")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_XRDevice {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Oculus = 1i32,
     OpenVR = 2i32,
     Unknown = 0i32,
@@ -8886,10 +8976,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager
     }
 }
 #[cfg(feature = "cordl_class_OVRManager+XrApi")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRManager_XrApi {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CAPI = 1i32,
     OpenXR = 3i32,
     Unknown = 0i32,

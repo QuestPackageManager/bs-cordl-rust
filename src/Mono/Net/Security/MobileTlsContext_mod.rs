@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileTlsContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MobileTlsContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certificateValidator:

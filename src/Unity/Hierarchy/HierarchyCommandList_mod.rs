@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyCommandList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyCommandList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -242,7 +242,7 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Hierarchy::HierarchyCom
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyCommandList+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HierarchyCommandList_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

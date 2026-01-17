@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugGizmos {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _points: quest_hook::libil2cpp::Gc<
@@ -625,7 +625,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Meta::XR::ImmersiveDebugger::G
     }
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Gizmo+DebugGizmos+ColorScope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DebugGizmos_ColorScope {
     pub _savedColor: crate::UnityEngine::Color,

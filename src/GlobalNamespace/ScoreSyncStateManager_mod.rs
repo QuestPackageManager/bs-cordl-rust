@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScoreSyncStateManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoreSyncStateManager {
     __cordl_parent: crate::GlobalNamespace::MultiplayerSyncStateManager_5<
         crate::GlobalNamespace::StandardScoreSyncState,

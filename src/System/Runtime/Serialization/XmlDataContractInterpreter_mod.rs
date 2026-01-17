@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlDataContractInterpreter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDataContractInterpreter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub contract: quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::XmlDataContract>,

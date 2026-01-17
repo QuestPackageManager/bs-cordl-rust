@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBinaryWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BsonBinaryWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _writer: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract,
     pub helper: quest_hook::libil2cpp::Gc<
@@ -491,7 +491,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Serialization
     feature = "cordl_class_System+Runtime+Serialization+XmlDataContract+XmlDataContractCriticalHelper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDataContract_XmlDataContractCriticalHelper {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract_DataContractCriticalHelper,
     pub knownDataContracts: quest_hook::libil2cpp::Gc<

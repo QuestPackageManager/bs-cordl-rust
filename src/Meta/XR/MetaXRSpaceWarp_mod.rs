@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MetaXRSpaceWarp")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MetaXRSpaceWarp {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRFeature,
 }

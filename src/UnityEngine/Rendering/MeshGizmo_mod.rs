@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+MeshGizmo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MeshGizmo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,

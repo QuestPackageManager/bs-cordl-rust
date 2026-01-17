@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NatPunchModule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
@@ -413,7 +413,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NatPunchModule {
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NatPunchModule_NatIntroduceRequestPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Internal_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -601,7 +601,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NatPunchModule_NatIntroduceResponsePacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Internal_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -842,7 +842,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatPunchPacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NatPunchModule_NatPunchPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Token_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1015,7 +1015,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NatPunchModule_Nat
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+RequestEventData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NatPunchModule_RequestEventData {
     pub LocalEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -1113,7 +1116,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 impl crate::LiteNetLib::NatPunchModule_RequestEventData {}
 #[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+SuccessEventData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NatPunchModule_SuccessEventData {
     pub TargetEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,

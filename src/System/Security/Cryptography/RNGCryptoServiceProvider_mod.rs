@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+RNGCryptoServiceProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RNGCryptoServiceProvider {
     __cordl_parent: crate::System::Security::Cryptography::RandomNumberGenerator,
     pub _handle: crate::System::IntPtr,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tweening+IntTween")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntTween {
     __cordl_parent: crate::Tweening::Tween_1<i32>,
     pub _roundingType: crate::Tweening::IntTween_RoundingType,
@@ -173,10 +173,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tweening::IntTween {
     }
 }
 #[cfg(feature = "cordl_class_Tweening+IntTween+RoundingType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum IntTween_RoundingType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Ceil = 2i32,
     Floor = 0i32,
     Round = 1i32,

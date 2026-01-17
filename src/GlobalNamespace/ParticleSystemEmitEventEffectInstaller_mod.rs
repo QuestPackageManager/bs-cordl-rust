@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ParticleSystemEmitEventEffectInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemEmitEventEffectInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _particleSystemEventControllerPrefab:

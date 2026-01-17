@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+OrderedEnumerable_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OrderedEnumerable_2<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SampleTelemetryEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -60,7 +60,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SampleTelemetryEvents_AnnotationTypes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -125,7 +125,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SampleTelemetryEvents_EventTypes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

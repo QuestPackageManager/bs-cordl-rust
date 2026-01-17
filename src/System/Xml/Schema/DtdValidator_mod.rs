@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtdValidator {
     __cordl_parent: crate::System::Xml::Schema::BaseValidator,
     pub validationStack: quest_hook::libil2cpp::Gc<crate::System::Xml::HWStack>,
@@ -651,7 +651,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::DtdValida
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator+NamespaceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtdValidator_NamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
 }

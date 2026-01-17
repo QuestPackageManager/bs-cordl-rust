@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalEmitter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalEmitter {
     __cordl_parent: crate::UnityEngine::Timeline::Marker,
     pub m_Retroactive: bool,

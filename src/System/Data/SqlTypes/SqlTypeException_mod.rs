@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlTypeException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SqlTypeException {
     __cordl_parent: crate::System::SystemException,
 }

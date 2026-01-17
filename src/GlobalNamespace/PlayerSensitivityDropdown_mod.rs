@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerSensitivityDropdown")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSensitivityDropdown {
     __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::PlayerSensitivityFlag,

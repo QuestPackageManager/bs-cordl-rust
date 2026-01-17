@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TabView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TabView {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_HeaderContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -540,7 +540,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TabVi
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TabView+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TabView_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TabView>,
@@ -624,7 +624,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TabVi
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TabView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TabView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_Reorderable:
@@ -733,7 +733,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TabVi
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TabView+ViewState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TabView_ViewState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_HasPersistedData: bool,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeVolumeBakingProcessSettings {
     pub m_Version: crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings_SettingsVersion,
@@ -204,10 +207,15 @@ impl crate::UnityEngine::Rendering::ProbeVolumeBakingProcessSettings {
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeBakingProcessSettings+SettingsVersion"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProbeVolumeBakingProcessSettings_SettingsVersion {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Current = 1i32,
     Initial = 0i32,
     Max = 2i32,

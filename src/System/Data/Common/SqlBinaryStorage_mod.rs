@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+Common+SqlBinaryStorage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SqlBinaryStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
     pub _values: quest_hook::libil2cpp::Gc<

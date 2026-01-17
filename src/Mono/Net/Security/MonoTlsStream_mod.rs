@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Net+Security+MonoTlsStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoTlsStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub provider: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsProvider>,

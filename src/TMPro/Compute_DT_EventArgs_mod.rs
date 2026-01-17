@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Compute_DT_EventArgs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub EventType: crate::TMPro::Compute_DistanceTransform_EventTypes,

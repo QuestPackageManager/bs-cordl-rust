@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+AxisEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AxisEventData {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseEventData,
     pub _moveVector_k__BackingField: crate::UnityEngine::Vector2,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+WindowsMR+Input+WMRHMD")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WMRHMD {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRHMD,
     pub _userPresence_k__BackingField:

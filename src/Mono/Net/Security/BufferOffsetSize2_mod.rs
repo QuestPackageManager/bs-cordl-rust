@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Net+Security+BufferOffsetSize2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BufferOffsetSize2 {
     __cordl_parent: crate::Mono::Net::Security::BufferOffsetSize,
     pub InitialSize: i32,

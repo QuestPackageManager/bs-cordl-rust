@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+ButtonControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonControl {
     __cordl_parent: crate::UnityEngine::InputSystem::Controls::AxisControl,
     pub m_NeedsToCheckFramePress: bool,

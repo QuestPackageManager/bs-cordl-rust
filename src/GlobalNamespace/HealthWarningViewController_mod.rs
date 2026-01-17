@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HealthWarningViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HealthWarningViewController {
     __cordl_parent: crate::GlobalNamespace::CompletableViewController,
     pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

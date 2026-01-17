@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExtendedPointerEventData {
     __cordl_parent: crate::UnityEngine::EventSystems::PointerEventData,
     pub _control_k__BackingField:

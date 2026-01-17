@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScreenCaptureAfterDelay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenCaptureAfterDelay {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _mainEffectController:
@@ -162,7 +162,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenCapture
 }
 #[cfg(feature = "cordl_class_ScreenCaptureAfterDelay+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenCaptureAfterDelay_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub screenshotType: crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType,

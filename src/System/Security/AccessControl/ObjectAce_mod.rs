@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+ObjectAce")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectAce {
     __cordl_parent: crate::System::Security::AccessControl::QualifiedAce,
     pub object_ace_type: crate::System::Guid,

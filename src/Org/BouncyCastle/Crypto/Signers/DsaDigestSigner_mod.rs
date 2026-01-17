@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+DsaDigestSigner")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DsaDigestSigner {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub dsa: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDsa>,

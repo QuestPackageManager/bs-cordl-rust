@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Allocator2D {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MinSize: crate::UnityEngine::Vector2Int,
@@ -283,7 +283,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Alloc2D")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Allocator2D_Alloc2D {
     pub rect: crate::UnityEngine::RectInt,
@@ -424,7 +427,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Allocator2D_Area {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rect: crate::UnityEngine::RectInt,
@@ -512,7 +515,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Allocator2D_Row {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,

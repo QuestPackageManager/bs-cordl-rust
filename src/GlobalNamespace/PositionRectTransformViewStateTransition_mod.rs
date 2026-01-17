@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PositionRectTransformViewStateTransition")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PositionRectTransformViewStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,

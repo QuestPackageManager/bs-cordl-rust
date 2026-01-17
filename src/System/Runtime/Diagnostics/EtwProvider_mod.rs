@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Diagnostics+EtwProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EtwProvider {
     __cordl_parent: crate::System::Runtime::Diagnostics::DiagnosticsEventProvider,
     pub invokeControllerCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,

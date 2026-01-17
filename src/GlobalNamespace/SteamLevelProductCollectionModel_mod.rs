@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SteamLevelProductCollectionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelIdToProductData: quest_hook::libil2cpp::Gc<
@@ -300,7 +300,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelDepotData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SteamLevelProductCollectionModel_LevelDepotData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub checkDepots: bool,
@@ -386,7 +386,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackProductData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SteamLevelProductCollectionModel_LevelPackProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -647,7 +647,7 @@ impl
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelPackRedirectionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SteamLevelProductCollectionModel_LevelPackRedirectionData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _targetLevelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -834,7 +834,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_SteamLevelProductCollectionModel+LevelProductData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SteamLevelProductCollectionModel_LevelProductData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

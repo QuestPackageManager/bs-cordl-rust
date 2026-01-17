@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DistanceObjectiveValueFormatterSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DistanceObjectiveValueFormatterSO {
     __cordl_parent: crate::GlobalNamespace::ObjectiveValueFormatterSO,
 }

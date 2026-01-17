@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SortedList_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedList_2<T: quest_hook::libil2cpp::Type, TBase: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _items: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::LinkedList_1<TBase>>,

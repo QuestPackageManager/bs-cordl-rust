@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputControlPath {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1063,10 +1063,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputControlPath_HumanReadableStringOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     OmitDevice = 2i32,
     UseShortNames = 4i32,
@@ -1156,7 +1161,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlPath_ParsedPathComponent {
     pub m_Layout: crate::UnityEngine::InputSystem::Utilities::Substring,
@@ -1559,10 +1567,15 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathComponentType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputControlPath_PathComponentType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DisplayName = 1i32,
     Layout = 3i32,
     Name = 0i32,
@@ -1653,7 +1666,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControlPath+PathParser")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputControlPath_PathParser {
     pub path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IntFxBaseData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntFxBaseData {
     __cordl_parent: crate::GlobalNamespace::FxBaseData,
     pub value: i32,

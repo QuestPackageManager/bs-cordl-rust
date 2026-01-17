@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Collision")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Collision {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Header: crate::UnityEngine::ContactPairHeader,

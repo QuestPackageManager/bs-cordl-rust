@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+TextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextWriter {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub CoreNewLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,

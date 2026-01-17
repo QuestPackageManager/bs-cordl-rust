@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListView,
     pub m_MakeItem: quest_hook::libil2cpp::Gc<
@@ -533,7 +533,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ListV
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListView_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ListView>,
@@ -617,7 +617,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ListV
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ListView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
     pub m_ItemTemplate: quest_hook::libil2cpp::Gc<

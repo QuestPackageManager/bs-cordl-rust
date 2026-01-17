@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagerSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRManagerSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_InitializationComplete: bool,

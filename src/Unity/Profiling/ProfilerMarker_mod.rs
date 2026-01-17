@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarker")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProfilerMarker {
     pub m_Ptr: crate::System::IntPtr,
@@ -191,7 +194,10 @@ impl crate::Unity::Profiling::ProfilerMarker {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarker+AutoScope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProfilerMarker_AutoScope {
     pub m_Ptr: crate::System::IntPtr,

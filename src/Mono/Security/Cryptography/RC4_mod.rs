@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+RC4")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RC4 {
     __cordl_parent: crate::System::Security::Cryptography::SymmetricAlgorithm,
 }

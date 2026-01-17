@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRFaceExpressions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRFaceExpressions {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _ValidExpressions_k__BackingField: bool,
@@ -901,10 +901,15 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::GlobalNamespace::
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpression")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRFaceExpressions_FaceExpression {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BrowLowererL = 0i32,
     BrowLowererR = 1i32,
     CheekPuffL = 2i32,
@@ -1063,7 +1068,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceExpressionsEnumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRFaceExpressions_FaceExpressionsEnumerator {
     pub _faceExpressions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -1350,10 +1358,15 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceRegionConfidence")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRFaceExpressions_FaceRegionConfidence {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Lower = 0i32,
     Max = 2i32,
     Upper = 1i32,
@@ -1443,10 +1456,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceTrackingDataSource")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRFaceExpressions_FaceTrackingDataSource {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Audio = 1i32,
     Count = 2i32,
     Visual = 0i32,
@@ -1536,10 +1554,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+FaceViseme")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRFaceExpressions_FaceViseme {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AA = 10i32,
     CH = 6i32,
     Count = 15i32,
@@ -1641,7 +1664,7 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions+WeightProvider")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRFaceExpressions_WeightProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

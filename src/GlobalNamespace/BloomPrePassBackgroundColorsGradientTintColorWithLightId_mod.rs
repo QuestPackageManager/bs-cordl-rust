@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientTintColorWithLightId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassBackgroundColorsGradientTintColorWithLightId {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _bloomPrePassBackgroundColorsGradient:

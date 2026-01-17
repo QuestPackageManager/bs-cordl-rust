@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+NameTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NameTable {
     __cordl_parent: crate::System::Xml::XmlNameTable,
     pub entries: quest_hook::libil2cpp::Gc<
@@ -286,7 +286,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::NameTable {
 }
 #[cfg(feature = "cordl_class_System+Xml+NameTable+Entry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NameTable_Entry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

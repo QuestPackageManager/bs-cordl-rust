@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+LiftGammaGain")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LiftGammaGain {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub lift: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Vector4Parameter>,

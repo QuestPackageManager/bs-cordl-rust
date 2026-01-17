@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+RaycastHit")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RaycastHit {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub distance: f32,

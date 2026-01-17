@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SelectObservable_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectObservable_2<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -198,7 +198,7 @@ impl<TSource: quest_hook::libil2cpp::Type, TResult: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SelectObservable_2+Select")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectObservable_2_Select<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

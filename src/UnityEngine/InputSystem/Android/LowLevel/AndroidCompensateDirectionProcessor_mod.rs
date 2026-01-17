@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateDirectionProcessor"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidCompensateDirectionProcessor {
     __cordl_parent: crate::UnityEngine::InputSystem::Processors::CompensateDirectionProcessor,
 }

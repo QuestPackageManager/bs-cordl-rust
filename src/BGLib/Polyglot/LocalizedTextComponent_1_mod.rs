@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedTextComponent_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalizedTextComponent_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub localizedComponent: T,

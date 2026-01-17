@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AsyncComputeManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncComputeManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _asyncComputeRequests: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RequestedCertificate {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub cert:
@@ -339,10 +339,15 @@ impl AsMut<crate::Org::BouncyCastle::Asn1::IAsn1Choice>
     }
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RequestedCertificate_Choice {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AttributeCertificate = 1i32,
     Certificate = -1i32,
     PublicKeyCertificate = 0i32,

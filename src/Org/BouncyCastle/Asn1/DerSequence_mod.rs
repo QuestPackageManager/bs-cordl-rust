@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerSequence")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DerSequence {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Sequence,
 }

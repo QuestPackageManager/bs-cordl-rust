@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SurfaceDataAttributes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SurfaceDataAttributes {
     __cordl_parent: crate::System::Attribute,
     pub displayNames: quest_hook::libil2cpp::Gc<

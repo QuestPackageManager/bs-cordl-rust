@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+xxHash3+StreamingState+StreamingStateData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StreamingState_xxHash3_StreamingStateData {
     padding: quest_hook::libil2cpp::ValueTypePadding<541usize>,
@@ -104,7 +107,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::Unity::Collections::StreamingState_xxHash3_StreamingStateData {}
 #[cfg(feature = "cordl_class_Unity+Collections+xxHash3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct xxHash3 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1736,7 +1739,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Collections::xxHash3 {
 }
 #[cfg(feature = "cordl_class_Unity+Collections+xxHash3+Hash128Long_00000A7A_BurstDirectCall")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct xxHash3_Hash128Long_00000A7A_BurstDirectCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1872,7 +1875,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Collections+xxHash3+Hash128Long_00000A7A_PostfixBurstDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct xxHash3_Hash128Long_00000A7A_PostfixBurstDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2098,7 +2101,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Collections+xxHash3+Hash64Long_00000A73_BurstDirectCall")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct xxHash3_Hash64Long_00000A73_BurstDirectCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2229,7 +2232,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Collections+xxHash3+Hash64Long_00000A73_PostfixBurstDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct xxHash3_Hash64Long_00000A73_PostfixBurstDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2448,7 +2451,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+xxHash3+StreamingState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct xxHash3_StreamingState {
     pub State: crate::Unity::Collections::StreamingState_xxHash3_StreamingStateData,
@@ -2865,7 +2871,10 @@ impl crate::Unity::Collections::xxHash3_StreamingState {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+xxHash3+ulong2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct xxHash3_ulong2 {
     pub x: u64,

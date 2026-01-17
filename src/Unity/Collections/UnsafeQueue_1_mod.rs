@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueue_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeQueue_1<T: quest_hook::libil2cpp::Type> {
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -742,7 +745,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Unity::Collections::INativeDis
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueue_1+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeQueue_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub m_FirstBlock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1046,7 +1052,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueue_1+ParallelWriter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeQueue_1_ParallelWriter<T: quest_hook::libil2cpp::Type> {
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1227,7 +1236,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::UnsafeQueue_1_Pa
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+UnsafeQueue_1+ReadOnly")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeQueue_1_ReadOnly<T: quest_hook::libil2cpp::Type> {
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

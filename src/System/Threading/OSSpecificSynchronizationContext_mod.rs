@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OSSpecificSynchronizationContext {
     __cordl_parent: crate::System::Threading::SynchronizationContext,
     pub m_OSSynchronizationContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -285,7 +285,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext+InvocationContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OSSpecificSynchronizationContext_InvocationContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Delegate: quest_hook::libil2cpp::Gc<crate::System::Threading::SendOrPostCallback>,
@@ -405,7 +405,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OSSpecificSynchronizationContext_InvocationEntryDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

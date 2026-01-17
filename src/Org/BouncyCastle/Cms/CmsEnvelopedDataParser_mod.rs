@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsEnvelopedDataParser {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsContentInfoParser,
     pub recipientInfoStore:

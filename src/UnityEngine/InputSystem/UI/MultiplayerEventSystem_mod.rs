@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+MultiplayerEventSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerEventSystem {
     __cordl_parent: crate::UnityEngine::EventSystems::EventSystem,
     pub m_PlayerRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

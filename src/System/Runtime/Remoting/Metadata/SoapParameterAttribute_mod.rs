@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapParameterAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SoapParameterAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultEventSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_FocusedPanel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
@@ -708,7 +708,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Defau
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DefaultEventSystem_FocusBasedEventSequenceContext {
     pub es: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DefaultEventSystem>,
@@ -890,7 +893,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+InputForUIProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultEventSystem_InputForUIProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_EventSystem:
@@ -1222,7 +1225,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+LegacyInputProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultEventSystem_LegacyInputProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_SendingTouchEvents: bool,
@@ -1624,10 +1627,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DefaultEventSystem_UpdateMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Always = 0i32,
     IgnoreIfAppNotFocused = 1i32,
 }
@@ -1718,7 +1726,7 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+LegacyInputProcessor+IInput"
 )]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct LegacyInputProcessor_DefaultEventSystem_IInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -2080,7 +2088,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+LegacyInputProcessor+Input")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacyInputProcessor_DefaultEventSystem_Input {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2483,7 +2491,7 @@ impl AsMut<crate::UnityEngine::UIElements::LegacyInputProcessor_DefaultEventSyst
     feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+LegacyInputProcessor+NoInput"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacyInputProcessor_DefaultEventSystem_NoInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

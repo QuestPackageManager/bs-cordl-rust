@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Video+VideoClip")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoClip {
     __cordl_parent: crate::UnityEngine::Object,
 }

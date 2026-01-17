@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+AttributeTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AttributeTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,

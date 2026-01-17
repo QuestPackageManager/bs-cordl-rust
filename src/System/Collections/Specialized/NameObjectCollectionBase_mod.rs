@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NameObjectCollectionBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _readOnly: bool,
@@ -782,7 +782,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
     feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NameObjectCollectionBase_NameObjectEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -886,7 +886,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NameObjectCollectionBase_NameObjectKeysEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pos: i32,

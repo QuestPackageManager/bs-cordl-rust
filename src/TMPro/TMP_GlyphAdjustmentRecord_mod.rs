@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_GlyphAdjustmentRecord")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TMP_GlyphAdjustmentRecord {
     pub m_GlyphIndex: u32,

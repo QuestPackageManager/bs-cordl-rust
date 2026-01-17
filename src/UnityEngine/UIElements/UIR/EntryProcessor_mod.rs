@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+EntryProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EntryProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_PreProcessor:
@@ -760,7 +760,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+EntryProcessor+MaskMesh")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct EntryProcessor_MaskMesh {
     pub vertices: crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::UIElements::Vertex>,

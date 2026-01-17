@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceAmbientOcclusionPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_SupportsR8RenderTextureFormat: bool,
@@ -679,10 +679,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionPass+BlurTypes"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenSpaceAmbientOcclusionPass_BlurTypes {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bilateral = 0i32,
     Gaussian = 1i32,
     Kawase = 2i32,
@@ -784,7 +789,10 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionPass+SSAOMaterialParams"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScreenSpaceAmbientOcclusionPass_SSAOMaterialParams {
     pub orthographicCamera: bool,
@@ -983,7 +991,7 @@ impl crate::UnityEngine::Rendering::Universal::ScreenSpaceAmbientOcclusionPass_S
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionPass+SSAOPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceAmbientOcclusionPass_SSAOPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub afterOpaque: bool,
@@ -1083,10 +1091,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusionPass+ShaderPasses"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenSpaceAmbientOcclusionPass_ShaderPasses {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AmbientOcclusion = 0i32,
     BilateralAfterOpaque = 4i32,
     BilateralBlurFinal = 3i32,

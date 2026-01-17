@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IgnoranceConnectionManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoranceConnectionManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub onInitializedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -1770,7 +1770,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::IgnoranceConn
 }
 #[cfg(feature = "cordl_class_IgnoranceConnectionManager+ConnectToServerParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoranceConnectionManager_ConnectToServerParams {
     __cordl_parent:
         crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase,
@@ -1861,10 +1861,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_IgnoranceConnectionManager+ConnectionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum IgnoranceConnectionManager_ConnectionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Connected = 1i32,
     Connecting = 0i32,
     Disconnected = 3i32,
@@ -1957,7 +1962,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_IgnoranceConnectionManager+IgnoranceConnection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoranceConnectionManager_IgnoranceConnection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _connectionManager:
@@ -2358,7 +2363,7 @@ impl AsMut<crate::GlobalNamespace::IConnection>
 }
 #[cfg(feature = "cordl_class_IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectionRequestHandler:
@@ -2483,7 +2488,7 @@ impl
 }
 #[cfg(feature = "cordl_class_IgnoranceConnectionManager+StartServerParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoranceConnectionManager_StartServerParams {
     __cordl_parent:
         crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameplayModifiers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameplayModifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _energyType: crate::GlobalNamespace::GameplayModifiers_EnergyType,
@@ -877,10 +877,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnabledObstacleType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_EnabledObstacleType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 0i32,
     FullHeightOnly = 1i32,
     NoObstacles = 2i32,
@@ -970,10 +975,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+EnergyType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_EnergyType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bar = 0i32,
     Battery = 1i32,
 }
@@ -1058,10 +1068,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::GameplayMo
     }
 }
 #[cfg(feature = "cordl_class_GameplayModifiers+SongSpeed")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_SongSpeed {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Faster = 1i32,
     Normal = 0i32,
     Slower = 2i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub head: quest_hook::libil2cpp::Gc<
@@ -579,7 +579,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary+DictionaryNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListDictionary_DictionaryNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -666,7 +666,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListDictionary_NodeEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Specialized::ListDictionary>,
@@ -934,7 +934,7 @@ impl AsMut<crate::System::Collections::IEnumerator>
 }
 #[cfg(feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListDictionary_NodeKeyValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Specialized::ListDictionary>,
@@ -1198,7 +1198,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
     feature = "cordl_class_System+Collections+Specialized+ListDictionary+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NodeKeyValueCollection_ListDictionary_NodeKeyValueEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Specialized::ListDictionary>,

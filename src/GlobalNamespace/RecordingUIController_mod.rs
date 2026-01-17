@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RecordingUIController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _circle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -125,7 +125,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RecordingUICo
 }
 #[cfg(feature = "cordl_class_RecordingUIController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingUIController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recordingEnabled: bool,

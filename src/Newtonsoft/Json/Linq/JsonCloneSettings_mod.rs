@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonCloneSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonCloneSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _CopyAnnotations_k__BackingField: bool,

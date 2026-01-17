@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

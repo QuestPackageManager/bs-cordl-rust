@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenVR {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -975,7 +975,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::OpenVR {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+OpenVR+COpenVRContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenVR_COpenVRContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_pVRSystem: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSystem>,

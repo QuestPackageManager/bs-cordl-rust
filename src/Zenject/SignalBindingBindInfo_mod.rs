@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SignalBindingBindInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalBindingBindInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Identifier_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

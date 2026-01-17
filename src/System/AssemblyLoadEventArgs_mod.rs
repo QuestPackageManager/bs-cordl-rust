@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+AssemblyLoadEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssemblyLoadEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _LoadedAssembly_k__BackingField:

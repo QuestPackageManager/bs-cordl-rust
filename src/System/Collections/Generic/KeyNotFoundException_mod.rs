@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+KeyNotFoundException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KeyNotFoundException {
     __cordl_parent: crate::System::SystemException,
 }

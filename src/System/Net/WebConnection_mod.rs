@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebConnection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebConnection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ntlm_credentials: quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,

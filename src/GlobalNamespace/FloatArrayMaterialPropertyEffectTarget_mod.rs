@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatArrayMaterialPropertyEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _materialPropertyBlockControllers: quest_hook::libil2cpp::Gc<

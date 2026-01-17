@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+TouchInputModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TouchInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::PointerInputModule,
     pub m_LastMousePosition: crate::UnityEngine::Vector2,

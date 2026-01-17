@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatFxGroupEffectCollectionTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxGroupEffectCollectionTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _floatFxGroupEffectTargets: quest_hook::libil2cpp::Gc<

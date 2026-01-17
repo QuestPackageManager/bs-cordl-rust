@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalLightData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalLightData {
     __cordl_parent: crate::UnityEngine::Rendering::ContextItem,
     pub mainLightIndex: i32,

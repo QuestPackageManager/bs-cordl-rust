@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+SpriteAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpriteAsset {
     __cordl_parent: crate::UnityEngine::TextCore::Text::TextAsset,
     pub m_NameLookup:

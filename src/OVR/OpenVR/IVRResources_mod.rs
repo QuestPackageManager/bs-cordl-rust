@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRResources {
     pub LoadSharedResource:
@@ -100,7 +103,7 @@ impl crate::OVR::OpenVR::IVRResources {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRResources__GetResourceFullPath {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -301,7 +304,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRResources__Get
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_LoadSharedResource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRResources__LoadSharedResource {
     __cordl_parent: crate::System::MulticastDelegate,
 }

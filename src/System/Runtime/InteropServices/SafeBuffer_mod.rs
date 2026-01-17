@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SafeBuffer {
     __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid,
     pub _numBytes: crate::System::UIntPtr,

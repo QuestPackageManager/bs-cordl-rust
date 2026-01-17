@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_QuickPlaySetupModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySetupModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
@@ -267,7 +267,7 @@ impl AsMut<crate::GlobalNamespace::IQuickPlaySetupModel>
 }
 #[cfg(feature = "cordl_class_QuickPlaySetupModel+QuickPlaySetupDataFB")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub data: quest_hook::libil2cpp::Gc<

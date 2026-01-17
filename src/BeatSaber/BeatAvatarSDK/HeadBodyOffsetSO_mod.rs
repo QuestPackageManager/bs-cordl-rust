@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+HeadBodyOffsetSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HeadBodyOffsetSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _headNeckOffset: crate::UnityEngine::Vector3,

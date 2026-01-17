@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+TextSegmentedControlCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextSegmentedControlCell {
     __cordl_parent: crate::HMUI::SegmentedControlCell,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

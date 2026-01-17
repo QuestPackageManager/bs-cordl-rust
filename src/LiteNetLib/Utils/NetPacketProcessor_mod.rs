@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetPacketProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _netSerializer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer>,
@@ -1007,7 +1007,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetPacketPr
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetPacketProcessor_HashCache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -1080,7 +1080,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetPacketProcessor_SubscribeDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

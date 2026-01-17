@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ConcreteBinderGeneric_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConcreteBinderGeneric_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::FromBinderGeneric_1<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,

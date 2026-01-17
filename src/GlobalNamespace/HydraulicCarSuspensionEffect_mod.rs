@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HydraulicCarSuspensionEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HydraulicCarSuspensionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _contractEvent: crate::GlobalNamespace::BasicBeatmapEventType,

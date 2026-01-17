@@ -2,7 +2,7 @@
     feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NaccacheSternKeyGenerationParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::KeyGenerationParameters,
     pub certainty: i32,

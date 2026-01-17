@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+RangeContentValidator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RangeContentValidator {
     __cordl_parent: crate::System::Xml::Schema::ContentValidator,
     pub firstpos: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,

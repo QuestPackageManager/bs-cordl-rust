@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Toggle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Toggle {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub toggleTransition: crate::UnityEngine::UI::Toggle_ToggleTransition,
@@ -610,7 +610,7 @@ impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::T
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Toggle_ToggleEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<bool>,
 }
@@ -687,10 +687,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Toggle_Toggle
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleTransition")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Toggle_ToggleTransition {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Fade = 1i32,
     None = 0i32,
 }

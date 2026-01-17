@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSceneManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub PlanePrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
@@ -1341,7 +1341,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneManag
 }
 #[cfg(feature = "cordl_class_OVRSceneManager+Classification")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneManager_Classification {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1475,7 +1475,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneManag
 }
 #[cfg(feature = "cordl_class_OVRSceneManager+Development")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneManager_Development {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1609,10 +1609,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneManag
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneManager+LoadSceneModelResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSceneManager_LoadSceneModelResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FailureScenePermissionNotGranted = -1i32,
     FailureUnexpectedError = -2i32,
     NoSceneModelToLoad = 1i32,
@@ -1703,7 +1708,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneManager+LogForwarder")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneManager_LogForwarder {}
 #[cfg(feature = "cordl_class_OVRSceneManager+LogForwarder")]
@@ -1889,7 +1897,10 @@ impl crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneManager+Metrics")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneManager_Metrics {
     pub TotalRoomCount: i32,
@@ -2018,7 +2029,7 @@ impl crate::GlobalNamespace::OVRSceneManager_Metrics {
 }
 #[cfg(feature = "cordl_class_OVRSceneManager+RoomLayoutInformation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneManager_RoomLayoutInformation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Floor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
@@ -2106,7 +2117,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneManager+RoomLayoutUuids")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneManager_RoomLayoutUuids {
     pub Floor: crate::System::Guid,
@@ -2212,7 +2226,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRSceneManager+RoomLayoutUuids")]
 impl crate::GlobalNamespace::OVRSceneManager_RoomLayoutUuids {}
 #[cfg(feature = "cordl_class_OVRSceneManager+__LoadSceneModel_g__AwaitTask_40_0_d")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneManager___LoadSceneModel_g__AwaitTask_40_0_d {
     pub __1__state: i32,

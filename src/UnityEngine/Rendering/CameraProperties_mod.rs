@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CameraProperties {
     pub screenRect: crate::UnityEngine::Rect,
@@ -280,7 +283,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CameraProp
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CameraProperties__layerCullDistances_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -398,7 +404,10 @@ impl crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixe
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_CameraCullPlanes_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CameraProperties__m_CameraCullPlanes_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -516,7 +525,10 @@ impl crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixe
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+CameraProperties+_m_ShadowCullPlanes_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CameraProperties__m_ShadowCullPlanes_e__FixedBuffer {
     pub FixedElementField: u8,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+HttpContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpContent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buffer: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent_FixedMemoryStream>,
@@ -619,7 +619,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::Http::HttpContent
 }
 #[cfg(feature = "cordl_class_System+Net+Http+HttpContent+FixedMemoryStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpContent_FixedMemoryStream {
     __cordl_parent: crate::System::IO::MemoryStream,
     pub maxSize: i64,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+ThreadSafeAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadSafeAttribute {
     __cordl_parent: crate::UnityEngine::Bindings::NativeMethodAttribute,
 }

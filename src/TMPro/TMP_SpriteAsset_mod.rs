@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_SpriteAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_SpriteAsset {
     __cordl_parent: crate::TMPro::TMP_Asset,
     pub m_NameLookup:

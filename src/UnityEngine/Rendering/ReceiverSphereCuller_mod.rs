@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ReceiverSphereCuller {
     pub splitInfos: crate::Unity::Collections::NativeList_1<
@@ -284,7 +287,10 @@ impl crate::UnityEngine::Rendering::ReceiverSphereCuller {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ReceiverSphereCuller+SplitInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ReceiverSphereCuller_SplitInfo {
     pub receiverSphereLightSpace: crate::Unity::Mathematics::float4,

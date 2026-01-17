@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRTextEntryController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRTextEntryController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _uiKeyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UIKeyboard>,

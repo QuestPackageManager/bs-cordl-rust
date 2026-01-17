@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HID {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
     pub m_HaveParsedHIDDescriptor: bool,
@@ -341,10 +341,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::HID:
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Button")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HID_Button {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Primary = 1i32,
     Secondary = 2i32,
     Tertiary = 3i32,
@@ -425,10 +430,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::H
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+GenericDesktop")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HID_GenericDesktop {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ApplicationBreak = 165i32,
     ApplicationDebuggerBreak = 166i32,
     AssistiveControl = 10i32,
@@ -586,7 +596,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HID_HIDCollectionDescriptor {
     pub _cordl_type: crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType,
@@ -695,10 +708,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionDescriptor")]
 impl crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HID_HIDCollectionType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Application = 1i32,
     Logical = 2i32,
     NamedArray = 4i32,
@@ -792,7 +810,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HID_HIDDeviceDescriptor {
     pub vendorId: i32,
@@ -965,7 +986,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptorBuilder")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HID_HIDDeviceDescriptorBuilder {
     pub usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
@@ -1312,7 +1336,10 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementDescriptor")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HID_HIDElementDescriptor {
     pub usage: i32,
@@ -1955,10 +1982,15 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HID_HIDElementFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BufferedBytes = 256i32,
     Constant = 1i32,
     NoPreferred = 32i32,
@@ -2055,7 +2087,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HID_HIDLayoutBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2167,10 +2199,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+HIDReportType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HID_HIDReportType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Feature = 3i32,
     Input = 1i32,
     Output = 2i32,
@@ -2261,10 +2298,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+Simulation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HID_Simulation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Accelerator = 196i32,
     Aileron = 176i32,
     AileronTrim = 177i32,
@@ -2399,10 +2441,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::H
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HID+UsagePage")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HID_UsagePage {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AlphanumericDisplay = 20i32,
     Arcade = 145i32,
     BarCodeScanner = 140i32,

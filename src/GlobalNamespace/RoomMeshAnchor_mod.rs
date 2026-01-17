@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RoomMeshAnchor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RoomMeshAnchor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _IsCompleted_k__BackingField: bool,
@@ -346,7 +346,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RoomMeshAncho
     }
 }
 #[cfg(feature = "cordl_class_RoomMeshAnchor+BakeMeshJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RoomMeshAnchor_BakeMeshJob {
     pub MeshID: i32,
@@ -476,7 +479,10 @@ impl AsMut<crate::Unity::Jobs::IJob> for crate::GlobalNamespace::RoomMeshAnchor_
     }
 }
 #[cfg(feature = "cordl_class_RoomMeshAnchor+GetTriangleMeshCountsJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RoomMeshAnchor_GetTriangleMeshCountsJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
@@ -618,7 +624,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_RoomMeshAnchor+GetTriangleMeshJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RoomMeshAnchor_GetTriangleMeshJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
@@ -757,7 +766,10 @@ impl AsMut<crate::Unity::Jobs::IJob> for crate::GlobalNamespace::RoomMeshAnchor_
     }
 }
 #[cfg(feature = "cordl_class_RoomMeshAnchor+PopulateMeshDataJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RoomMeshAnchor_PopulateMeshDataJob {
     pub Vertices: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,

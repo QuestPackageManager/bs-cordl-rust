@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SpawnRotationChevron")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpawnRotationChevron {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _lights: quest_hook::libil2cpp::Gc<
@@ -156,7 +156,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpawnRotation
 }
 #[cfg(feature = "cordl_class_SpawnRotationChevron+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpawnRotationChevron_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SpawnRotationChevron>,

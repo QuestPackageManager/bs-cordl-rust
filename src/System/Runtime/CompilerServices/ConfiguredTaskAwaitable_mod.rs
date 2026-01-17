@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ConfiguredTaskAwaitable {
     pub m_configuredTaskAwaiter:
@@ -167,7 +170,10 @@ impl crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
 #[cfg(
     feature = "cordl_class_System+Runtime+CompilerServices+ConfiguredTaskAwaitable+ConfiguredTaskAwaiter"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ConfiguredTaskAwaitable_ConfiguredTaskAwaiter {
     pub m_task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

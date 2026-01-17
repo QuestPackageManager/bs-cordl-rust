@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlNodeEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlNodeEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

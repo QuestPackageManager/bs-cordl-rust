@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RTHandleResourcePool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RTHandleResourcePool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ResourcePool: quest_hook::libil2cpp::Gc<

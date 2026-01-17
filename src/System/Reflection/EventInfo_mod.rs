@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+EventInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventInfo {
     __cordl_parent: crate::System::Reflection::MemberInfo,
     pub cached_add_event:
@@ -420,7 +420,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::EventInfo 
 }
 #[cfg(feature = "cordl_class_System+Reflection+EventInfo+AddEventAdapter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventInfo_AddEventAdapter {
     __cordl_parent: crate::System::MulticastDelegate,
 }

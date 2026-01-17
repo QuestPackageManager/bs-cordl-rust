@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatLocalScaleEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatLocalScaleEffect {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _transforms: quest_hook::libil2cpp::Gc<

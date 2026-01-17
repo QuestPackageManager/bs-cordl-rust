@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Ref"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CastInstructionNoT_CastInstruction_Ref {
     __cordl_parent: crate::GlobalNamespace::CastInstruction_CastInstructionNoT,
 }

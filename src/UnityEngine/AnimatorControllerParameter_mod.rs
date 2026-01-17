@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AnimatorControllerParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimatorControllerParameter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

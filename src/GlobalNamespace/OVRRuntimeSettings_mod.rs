@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRRuntimeSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRRuntimeSettings {
     __cordl_parent: crate::GlobalNamespace::OVRRuntimeAssetsBase,
     pub handSkeletonVersion: crate::GlobalNamespace::OVRHandSkeletonVersion,

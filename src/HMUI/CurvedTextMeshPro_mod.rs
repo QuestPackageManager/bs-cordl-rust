@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CurvedTextMeshPro {
     __cordl_parent: crate::TMPro::TextMeshProUGUI,
     pub _useScriptableObjectColors: bool,
@@ -346,7 +346,10 @@ impl AsMut<crate::GlobalNamespace::IComponentRefresher> for crate::HMUI::CurvedT
     }
 }
 #[cfg(feature = "cordl_class_HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CurvedTextMeshPro_CurvedMeshInfo {
     pub uvs3:

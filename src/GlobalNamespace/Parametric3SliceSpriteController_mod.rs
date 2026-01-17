@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Parametric3SliceSpriteController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parametric3SliceSpriteController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _widthMultiplier: f32,

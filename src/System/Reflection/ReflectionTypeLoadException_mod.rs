@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+ReflectionTypeLoadException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionTypeLoadException {
     __cordl_parent: crate::System::SystemException,
     pub _Types_k__BackingField: quest_hook::libil2cpp::Gc<

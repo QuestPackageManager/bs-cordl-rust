@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack: quest_hook::libil2cpp::Gc<
@@ -5476,10 +5476,15 @@ impl AsMut<crate::System::IDisposable> for crate::Newtonsoft::Json::JsonWriter {
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonWriter+State")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum JsonWriter_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Array = 5i32,
     ArrayStart = 4i32,
     Closed = 8i32,
@@ -5568,7 +5573,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::JsonWrite
 #[cfg(
     feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     pub __1__state: i32,
@@ -5757,7 +5765,10 @@ impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
 #[cfg(
     feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
     pub __1__state: i32,
@@ -5947,7 +5958,10 @@ impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
 #[cfg(
     feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
     pub __1__state: i32,
@@ -6137,7 +6151,10 @@ impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
 #[cfg(
     feature = "cordl_class_Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
     pub __1__state: i32,

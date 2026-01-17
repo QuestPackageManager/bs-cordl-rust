@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerManipulator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PointerManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::MouseManipulator,
     pub m_CurrentPointerId: i32,

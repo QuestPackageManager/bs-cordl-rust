@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+Sha3Digest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Sha3Digest {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::KeccakDigest,
 }

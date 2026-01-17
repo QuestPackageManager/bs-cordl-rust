@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FacetsChecker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -611,7 +611,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::FacetsChe
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FacetsChecker_FacetsCompiler {
     pub datatype: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DatatypeImplementation>,
@@ -1370,7 +1373,10 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FacetsCompiler_FacetsChecker_Map {
     pub _cordl_match: char,

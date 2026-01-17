@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnResizeHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnHeaderColumnResizeHandle {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub _dragArea_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataSortedListForTypeAndIds_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataSortedListForTypeAndIds_1<TBase: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _items: quest_hook::libil2cpp::Gc<

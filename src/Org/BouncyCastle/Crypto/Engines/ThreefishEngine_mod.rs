@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreefishEngine {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub blocksizeBytes: i32,
@@ -484,7 +484,7 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::IBlockCipher>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreefishEngine_Threefish1024Cipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
@@ -698,7 +698,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreefishEngine_Threefish256Cipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
@@ -864,7 +864,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreefishEngine_Threefish512Cipher {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher,
 }
@@ -1046,7 +1046,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreefishEngine_ThreefishCipher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub t: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,

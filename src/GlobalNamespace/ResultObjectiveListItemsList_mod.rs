@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ResultObjectiveListItemsList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResultObjectiveListItemsList {
     __cordl_parent: crate::HMUI::UIItemsList_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultObjectiveListItem>,

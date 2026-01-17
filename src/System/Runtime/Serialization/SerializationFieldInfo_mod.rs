@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationFieldInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializationFieldInfo {
     __cordl_parent: crate::System::Reflection::FieldInfo,
     pub m_field: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeFieldInfo>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DefaultDependencyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultDependencyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub loadHint: crate::System::Runtime::CompilerServices::LoadHint,

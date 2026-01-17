@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+UnaryNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnaryNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
     pub _op: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ZenjectBinding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ZenjectBinding {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _components: quest_hook::libil2cpp::Gc<
@@ -307,10 +307,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectBinding {
     }
 }
 #[cfg(feature = "cordl_class_Zenject+ZenjectBinding+BindTypes")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ZenjectBinding_BindTypes {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllInterfaces = 1i32,
     AllInterfacesAndSelf = 2i32,
     BaseType = 3i32,

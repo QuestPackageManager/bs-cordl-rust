@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtlsClientProtocol {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol,
 }
@@ -731,7 +731,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DtlsClientProtocol+ClientHandshakeState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtlsClientProtocol_ClientHandshakeState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub client: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsClient>,

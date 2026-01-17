@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBinding")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputBinding {
     pub m_Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1306,10 +1309,15 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputBin
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputBinding_DisplayStringOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DontIncludeInteractions = 4i32,
     DontOmitDevice = 2i32,
     DontUseShortDisplayNames = 1i32,
@@ -1400,10 +1408,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBinding+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputBinding_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Composite = 4i32,
     None = 0i32,
     PartOfComposite = 8i32,
@@ -1489,10 +1502,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::I
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBinding+MatchOptions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputBinding_MatchOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EmptyGroupMatchesAny = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBinding+MatchOptions")]

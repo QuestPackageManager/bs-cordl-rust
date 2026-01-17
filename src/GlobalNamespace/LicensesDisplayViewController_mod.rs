@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LicensesDisplayViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LicensesDisplayViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,

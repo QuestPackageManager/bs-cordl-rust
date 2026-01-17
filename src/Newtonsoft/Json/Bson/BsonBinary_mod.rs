@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonBinary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BsonBinary {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonValue,
     pub _BinaryType_k__BackingField: crate::Newtonsoft::Json::Bson::BsonBinaryType,

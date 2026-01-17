@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextElement {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub _uitkTextHandle_k__BackingField:
@@ -3912,7 +3912,7 @@ impl AsMut<crate::UnityEngine::UIElements::ITextSelection>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextElement_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
@@ -3998,7 +3998,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextE
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextElement+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextElement_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
     pub m_Text:

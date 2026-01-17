@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+RuntimeCompatibilityAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeCompatibilityAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _WrapNonExceptionThrows_k__BackingField: bool,

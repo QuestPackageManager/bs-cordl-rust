@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapCharacteristicTableCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCharacteristicTableCell {
     __cordl_parent: crate::HMUI::TableCell,
     pub _nameText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

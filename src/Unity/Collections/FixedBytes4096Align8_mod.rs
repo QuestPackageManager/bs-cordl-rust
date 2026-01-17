@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+FixedBytes4096Align8")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedBytes4096Align8 {
     padding: quest_hook::libil2cpp::ValueTypePadding<4096usize>,

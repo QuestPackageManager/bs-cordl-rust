@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+XRDepthMotionPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRDepthMotionPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_PassData: quest_hook::libil2cpp::Gc<
@@ -368,7 +368,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+XRDepthMotionPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRDepthMotionPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objMotionRendererList: crate::UnityEngine::Rendering::RenderGraphModule::RendererListHandle,

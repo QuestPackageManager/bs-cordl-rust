@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BombExplosionEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BombExplosionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _debrisPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,

@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -184,7 +184,7 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_CurrentTimeMs: i64,
@@ -1441,7 +1441,10 @@ impl AsMut<crate::UnityEngine::UIElements::IStylePropertyAnimationSystem>
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StylePropertyAnimationSystem_AnimationDataSet_2<
     TTimingData: quest_hook::libil2cpp::Type,
@@ -2028,7 +2031,10 @@ impl<TTimingData: quest_hook::libil2cpp::Type, TStyleData: quest_hook::libil2cpp
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StylePropertyAnimationSystem_ElementPropertyPair {
     pub element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -2177,10 +2183,15 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropert
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum StylePropertyAnimationSystem_TransitionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Canceled = 8i32,
     Ended = 4i32,
     None = 0i32,
@@ -2273,7 +2284,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_Values {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2584,7 +2595,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesBackground {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::Background,
@@ -2723,7 +2734,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundPosition"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesBackgroundPosition {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::BackgroundPosition,
@@ -2866,7 +2877,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundRepeat"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesBackgroundRepeat {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::BackgroundRepeat,
@@ -3009,7 +3020,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundSize"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesBackgroundSize {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::BackgroundSize,
@@ -3308,7 +3319,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesColor {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::Color,
@@ -3551,7 +3562,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesDiscrete_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T>,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>>,
@@ -3774,7 +3785,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesFloat {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<f32>,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Func_3<f32, f32, bool>>,
@@ -3991,7 +4002,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesFont {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
@@ -4128,7 +4139,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFontDefinition"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesFontDefinition {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::FontDefinition,
@@ -4269,7 +4280,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesInt {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<i32>,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Func_3<i32, i32, bool>>,
@@ -4484,7 +4495,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesLength {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Length,
@@ -4771,7 +4782,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesRotate {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Rotate,
@@ -5027,7 +5038,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesScale {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Scale,
@@ -5283,7 +5294,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesTextShadow {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TextShadow,
@@ -5545,7 +5556,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTransformOrigin"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesTransformOrigin {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TransformOrigin,
@@ -5844,7 +5855,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_ValuesTranslate {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Translate,
@@ -6133,7 +6144,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyAnimationSystem_Values_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
     pub m_CurrentTimeMs: i64,
@@ -7096,7 +7107,10 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Values_1_StylePropertyAnimationSystem_EmptyData<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -7231,7 +7245,10 @@ impl<T: quest_hook::libil2cpp::Type>
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Values_1_StylePropertyAnimationSystem_StyleData<T: quest_hook::libil2cpp::Type> {
     pub startValue: T,
@@ -7370,7 +7387,10 @@ impl<T: quest_hook::libil2cpp::Type>
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Values_1_StylePropertyAnimationSystem_TimingData<T: quest_hook::libil2cpp::Type> {
     pub startTimeMs: i64,
@@ -7513,7 +7533,7 @@ impl<T: quest_hook::libil2cpp::Type>
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
     T: quest_hook::libil2cpp::Type,
 > {

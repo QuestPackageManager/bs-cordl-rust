@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RecordingToolInstallerSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingToolInstallerSO {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
 }

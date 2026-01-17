@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnobservedTaskExceptionEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub m_exception: quest_hook::libil2cpp::Gc<crate::System::AggregateException>,

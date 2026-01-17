@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+NoSuchStoreException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoSuchStoreException {
     __cordl_parent: crate::Org::BouncyCastle::X509::Store::X509StoreException,
 }

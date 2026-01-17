@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionSelectionMapViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionSelectionMapViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _mapScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,

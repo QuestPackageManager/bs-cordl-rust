@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Activation+RemoteActivationAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemoteActivationAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _contextProperties: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,

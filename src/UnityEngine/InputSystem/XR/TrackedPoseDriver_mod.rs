@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackedPoseDriver {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_TrackingType: crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType,
@@ -1183,10 +1183,15 @@ impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TrackedPoseDriver_TrackingStates {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     Position = 1i32,
     Rotation = 2i32,
@@ -1276,10 +1281,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TrackedPoseDriver_TrackingType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     PositionOnly = 2i32,
     RotationAndPosition = 0i32,
     RotationOnly = 1i32,
@@ -1369,10 +1379,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TrackedPoseDriver_UpdateType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BeforeRender = 2i32,
     Update = 1i32,
     UpdateAndBeforeRender = 0i32,

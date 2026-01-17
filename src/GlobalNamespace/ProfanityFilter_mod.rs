@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ProfanityFilter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProfanityFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _trie: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfanityFilter_TrieNode>,
@@ -169,7 +169,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfanityFilt
 }
 #[cfg(feature = "cordl_class_ProfanityFilter+TrieNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProfanityFilter_TrieNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _children: quest_hook::libil2cpp::Gc<

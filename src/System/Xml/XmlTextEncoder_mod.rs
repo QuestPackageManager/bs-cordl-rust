@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlTextEncoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextEncoder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,

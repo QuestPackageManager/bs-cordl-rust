@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+SequencedChannel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SequencedChannel {
     __cordl_parent: crate::LiteNetLib::BaseChannel,
     pub _localSequence: i32,

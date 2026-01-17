@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Func_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Func_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,

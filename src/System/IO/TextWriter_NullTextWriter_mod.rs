@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+TextWriter+NullTextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextWriter_NullTextWriter {
     __cordl_parent: crate::System::IO::TextWriter,
 }

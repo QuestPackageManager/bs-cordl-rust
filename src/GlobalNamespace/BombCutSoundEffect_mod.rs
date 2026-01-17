@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BombCutSoundEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BombCutSoundEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
@@ -224,7 +224,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombCutSoundE
 }
 #[cfg(feature = "cordl_class_BombCutSoundEffect+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BombCutSoundEffect_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,

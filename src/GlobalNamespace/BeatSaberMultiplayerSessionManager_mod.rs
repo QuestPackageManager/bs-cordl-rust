@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaberMultiplayerSessionManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatSaberMultiplayerSessionManager {
     __cordl_parent: crate::GlobalNamespace::MultiplayerSessionManager_5<
         crate::GlobalNamespace::NetworkMessageType,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StartMiddleEndButtonBackgroundController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StartMiddleEndButtonBackgroundController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _startSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

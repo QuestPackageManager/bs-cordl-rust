@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TextureProcessor3D")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextureProcessor3D {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _textureGenCompute: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
@@ -2118,7 +2118,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextureProces
     }
 }
 #[cfg(feature = "cordl_class_TextureProcessor3D+ChannelParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TextureProcessor3D_ChannelParams {
     pub _computeKernel: crate::GlobalNamespace::TextureProcessor3D_ComputeKernel,
@@ -2229,7 +2232,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "TextureProcessor3D+ChannelParams")]
 impl crate::GlobalNamespace::TextureProcessor3D_ChannelParams {}
 #[cfg(feature = "cordl_class_TextureProcessor3D+ChannelParamsChangeIntention")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TextureProcessor3D_ChannelParamsChangeIntention {
     pub _computeKernel:
@@ -2341,10 +2347,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "TextureProcessor3D+ChannelParamsChangeIntention")]
 impl crate::GlobalNamespace::TextureProcessor3D_ChannelParamsChangeIntention {}
 #[cfg(feature = "cordl_class_TextureProcessor3D+ComputeKernel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TextureProcessor3D_ComputeKernel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Constant = 0i32,
     CylindricalWave = 3i32,
     PerlinNoise3D = 5i32,
@@ -2443,7 +2454,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_TextureProcessor3D+MotionPreset")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TextureProcessor3D_MotionPreset {
     pub channelA: crate::GlobalNamespace::TextureProcessor3D_ChannelParams,
@@ -2550,7 +2564,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "TextureProcessor3D+MotionPreset")]
 impl crate::GlobalNamespace::TextureProcessor3D_MotionPreset {}
 #[cfg(feature = "cordl_class_TextureProcessor3D+MotionPresetChangeIntention")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TextureProcessor3D_MotionPresetChangeIntention {
     pub channelA: crate::GlobalNamespace::TextureProcessor3D_ChannelParamsChangeIntention,

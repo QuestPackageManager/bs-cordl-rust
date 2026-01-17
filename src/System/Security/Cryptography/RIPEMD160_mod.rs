@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+RIPEMD160")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RIPEMD160 {
     __cordl_parent: crate::System::Security::Cryptography::HashAlgorithm,
 }

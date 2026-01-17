@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Hierarchy+Manager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Manager {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::Manager::DebugManagerAddon_1<
         quest_hook::libil2cpp::Gc<crate::Meta::XR::ImmersiveDebugger::Hierarchy::Manager>,

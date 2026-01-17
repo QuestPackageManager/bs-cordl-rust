@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarTweenController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _avatarTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

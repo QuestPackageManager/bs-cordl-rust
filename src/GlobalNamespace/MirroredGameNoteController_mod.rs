@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MirroredGameNoteController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredGameNoteController {
     __cordl_parent: crate::GlobalNamespace::MirroredNoteController_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable>,
@@ -305,7 +305,7 @@ impl AsMut<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
 }
 #[cfg(feature = "cordl_class_MirroredGameNoteController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredGameNoteController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,

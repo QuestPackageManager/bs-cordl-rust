@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListViewDragger {
     __cordl_parent: crate::UnityEngine::UIElements::DragEventsProcessor,
     pub m_LastDragPosition: crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
@@ -798,7 +798,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::ListV
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewDragger+DragPosition")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ListViewDragger_DragPosition {
     pub insertAtIndex: i32,

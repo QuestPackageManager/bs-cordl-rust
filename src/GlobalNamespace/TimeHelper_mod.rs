@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TimeHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _DeltaTime_k__BackingField: f32,

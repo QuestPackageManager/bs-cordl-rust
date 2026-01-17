@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputBindingCompositeContext {
     pub m_State: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionState>,
@@ -406,7 +409,10 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputBindingCompositeContext_DefaultComparer_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -582,7 +588,10 @@ impl<TValue: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingCompositeContext+PartBinding")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputBindingCompositeContext_PartBinding {
     pub _part_k__BackingField: i32,

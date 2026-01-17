@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEditor+Analytics+PackageManagerRemovePackageAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackageManagerRemovePackageAnalytic {
     __cordl_parent: crate::UnityEditor::Analytics::PackageManagerBaseAnalytic,
 }

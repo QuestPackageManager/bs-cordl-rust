@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BidirectionalDictionary_2<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,

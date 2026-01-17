@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+LobbyAvatarInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LobbyAvatarInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _connectedPlayer:

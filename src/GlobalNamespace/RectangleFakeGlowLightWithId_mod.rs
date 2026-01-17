@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RectangleFakeGlowLightWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectangleFakeGlowLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _minAlpha: f32,

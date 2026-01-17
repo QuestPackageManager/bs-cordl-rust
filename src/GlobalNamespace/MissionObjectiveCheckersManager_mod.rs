@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionObjectiveCheckersManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionObjectiveCheckersManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionObjectiveCheckers: quest_hook::libil2cpp::Gc<
@@ -497,7 +497,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionObject
 }
 #[cfg(feature = "cordl_class_MissionObjectiveCheckersManager+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionObjectiveCheckersManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub missionObjectives: quest_hook::libil2cpp::Gc<

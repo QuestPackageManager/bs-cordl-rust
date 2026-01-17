@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PrivacyPolicyDisplayViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrivacyPolicyDisplayViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _textPageScrollView: quest_hook::libil2cpp::Gc<crate::HMUI::TextPageScrollView>,

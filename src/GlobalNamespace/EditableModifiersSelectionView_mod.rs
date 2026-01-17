@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EditableModifiersSelectionView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EditableModifiersSelectionView {
     __cordl_parent: crate::GlobalNamespace::ModifiersSelectionView,
     pub _editButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

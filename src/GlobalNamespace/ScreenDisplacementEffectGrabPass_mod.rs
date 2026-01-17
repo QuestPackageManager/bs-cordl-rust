@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScreenDisplacementEffectGrabPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenDisplacementEffectGrabPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub _blitMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -191,7 +191,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_ScreenDisplacementEffectGrabPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenDisplacementEffectGrabPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub activeColorTexture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,

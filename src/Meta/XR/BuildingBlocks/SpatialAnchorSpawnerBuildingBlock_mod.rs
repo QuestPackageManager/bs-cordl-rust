@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+SpatialAnchorSpawnerBuildingBlock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SpatialAnchorSpawnerBuildingBlock {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _anchorPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

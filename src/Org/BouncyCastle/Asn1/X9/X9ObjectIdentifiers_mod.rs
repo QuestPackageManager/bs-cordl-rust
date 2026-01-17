@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X9+X9ObjectIdentifiers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X9ObjectIdentifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

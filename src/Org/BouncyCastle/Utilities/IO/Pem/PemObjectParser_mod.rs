@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemObjectParser")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct PemObjectParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

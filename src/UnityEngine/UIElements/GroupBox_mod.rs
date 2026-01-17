@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+GroupBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GroupBox {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub m_TitleLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
@@ -238,7 +238,7 @@ impl AsMut<crate::UnityEngine::UIElements::IGroupBox> for crate::UnityEngine::UI
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+GroupBox+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GroupBox_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox>,
@@ -322,7 +322,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Group
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+GroupBox+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GroupBox_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
     pub m_Text:

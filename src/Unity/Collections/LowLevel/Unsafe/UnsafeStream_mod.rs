@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeStream {
     pub m_BlockData: crate::Unity::Collections::AllocatorManager_Block,
@@ -533,7 +536,10 @@ impl AsMut<crate::Unity::Collections::INativeDisposable>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeStream_ConstructJob {
     pub Container: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
@@ -675,7 +681,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+ConstructJobList")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeStream_ConstructJobList {
     pub Container: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
@@ -817,7 +826,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+DisposeJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeStream_DisposeJob {
     pub Container: crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream,
@@ -958,7 +970,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Reader")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeStream_Reader {
     pub m_BlockData: crate::Unity::Collections::AllocatorManager_Block,
@@ -1270,7 +1285,10 @@ impl crate::Unity::Collections::LowLevel::Unsafe::UnsafeStream_Reader {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+UnsafeStream+Writer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnsafeStream_Writer {
     pub m_BlockData: crate::Unity::Collections::AllocatorManager_Block,

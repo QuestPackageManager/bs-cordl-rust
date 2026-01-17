@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalUpdateCachedSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalUpdateCachedSystem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_EntityManager:
@@ -158,7 +158,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+DecalUpdateCachedSystem+UpdateTransformsJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DecalUpdateCachedSystem_UpdateTransformsJob {
     pub positions: crate::Unity::Collections::NativeArray_1<crate::Unity::Mathematics::float3>,

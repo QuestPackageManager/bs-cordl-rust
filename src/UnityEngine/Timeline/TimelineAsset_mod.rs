@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimelineAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Version: i32,
@@ -1365,10 +1365,15 @@ impl AsMut<crate::UnityEngine::Timeline::ITimelineClipAsset>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+DurationMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimelineAsset_DurationMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BasedOnClips = 0i32,
     FixedLength = 1i32,
 }
@@ -1458,7 +1463,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+EditorSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimelineAsset_EditorSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Framerate: f64,
@@ -1693,10 +1698,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+MediaType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimelineAsset_MediaType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Animation = 0i32,
     Audio = 1i32,
     Group = 5i32,
@@ -1788,7 +1798,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimelineAsset_TimelineAssetUpgrade {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1841,10 +1851,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+Versions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TimelineAsset_Versions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Initial = 0i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineAsset+Versions")]

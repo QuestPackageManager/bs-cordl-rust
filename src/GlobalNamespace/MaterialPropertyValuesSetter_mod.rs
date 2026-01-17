@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialPropertyValuesSetter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyValuesSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockController:
@@ -205,7 +205,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MaterialPrope
 }
 #[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyValuesSetter_PropertyNameColorValuePair {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase,
     pub color: crate::UnityEngine::Color,
@@ -292,7 +292,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase,
     pub value: f32,
@@ -379,7 +379,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyValuesSetter_PropertyNameIntValuePair {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase,
     pub value: i32,
@@ -466,7 +466,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase,
     pub vector: crate::UnityEngine::Vector4,
@@ -553,7 +553,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyValuePairBase")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyValuesSetter_PropertyValuePairBase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

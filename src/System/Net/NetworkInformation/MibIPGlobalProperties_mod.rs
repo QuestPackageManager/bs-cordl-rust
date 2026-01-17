@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+MibIPGlobalProperties")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MibIPGlobalProperties {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixIPGlobalProperties,
     pub StatisticsFile: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

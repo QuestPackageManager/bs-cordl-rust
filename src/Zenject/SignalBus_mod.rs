@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SignalBus")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalBus {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _subscriptionPool: quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription_Pool>,

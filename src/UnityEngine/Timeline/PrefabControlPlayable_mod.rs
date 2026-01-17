@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+PrefabControlPlayable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrefabControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub m_Instance: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

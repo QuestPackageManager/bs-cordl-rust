@@ -2,7 +2,7 @@
     feature = "cordl_class_Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
     __cordl_parent: crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
 }

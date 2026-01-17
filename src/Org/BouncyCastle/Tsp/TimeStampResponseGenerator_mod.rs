@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeStampResponseGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub status: crate::Org::BouncyCastle::Asn1::Cmp::PkiStatus,
@@ -431,7 +431,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeStampResponseGenerator_FailInfo {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerBitString,
 }

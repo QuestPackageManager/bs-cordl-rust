@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+LabelExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LabelExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Target_k__BackingField:

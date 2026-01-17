@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SaberActivityCounter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaberActivityCounter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _averageWindowDuration: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteMissInfoNetSerializable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteMissInfoNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _colorType_k__BackingField: crate::GlobalNamespace::ColorType,

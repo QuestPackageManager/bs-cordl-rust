@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509CertificateCollection {
     __cordl_parent: crate::System::Collections::CollectionBase,
 }
@@ -250,7 +250,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509CertificateCollection_X509CertificateEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pkcs12Store {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keys:
@@ -951,7 +951,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Pkcs::Pkcs1
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pkcs12Store_CertId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1147,7 +1147,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Pkcs::Pkcs1
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pkcs12Store_IgnoresCaseHashtable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub orig: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,

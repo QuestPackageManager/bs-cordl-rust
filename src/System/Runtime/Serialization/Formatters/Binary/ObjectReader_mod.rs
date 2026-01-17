@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1144,7 +1144,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TopLevelAssemblyTypeResolver"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectReader_TopLevelAssemblyTypeResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_topLevelAssembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
@@ -1283,7 +1283,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopL
     feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectReader_TypeNAssembly {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

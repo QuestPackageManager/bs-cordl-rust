@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InitializeLocalInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
 }

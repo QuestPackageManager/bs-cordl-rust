@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+KeyControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KeyControl {
     __cordl_parent: crate::UnityEngine::InputSystem::Controls::ButtonControl,
     pub _keyCode_k__BackingField: crate::UnityEngine::InputSystem::Key,

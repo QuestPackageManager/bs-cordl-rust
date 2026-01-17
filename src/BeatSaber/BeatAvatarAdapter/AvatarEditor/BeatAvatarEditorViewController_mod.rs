@@ -2,7 +2,7 @@
     feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatAvatarEditorViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _skinColorValuePicker:

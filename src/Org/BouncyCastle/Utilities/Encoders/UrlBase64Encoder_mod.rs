@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Encoders+UrlBase64Encoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UrlBase64Encoder {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Encoders::Base64Encoder,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2InputStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CBZip2InputStream {
     __cordl_parent: crate::System::IO::Stream,
     pub last: i32,

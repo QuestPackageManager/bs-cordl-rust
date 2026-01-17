@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+String")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct String {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stringLength: i32,
@@ -6410,7 +6410,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct String_ProbabilisticMap {}
 #[cfg(feature = "cordl_class_System+String+ProbabilisticMap")]
@@ -6500,10 +6503,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::String_Probab
 #[cfg(feature = "System+String+ProbabilisticMap")]
 impl crate::System::String_ProbabilisticMap {}
 #[cfg(feature = "cordl_class_System+String+TrimType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum String_TrimType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Both = 2i32,
     Head = 0i32,
     Tail = 1i32,

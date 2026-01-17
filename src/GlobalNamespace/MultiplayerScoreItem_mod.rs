@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerScoreItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerScoreItem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

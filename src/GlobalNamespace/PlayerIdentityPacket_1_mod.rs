@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerIdentityPacket_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerIdentityPacket_1<TGameSpecificIdentityData: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerState: crate::GlobalNamespace::PlayerStateHash,

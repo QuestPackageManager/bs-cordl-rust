@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightmapLightWithIdsGroupEntry {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightmapLightWithIds:
@@ -243,7 +243,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightmapLight
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+GroupLightData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightmapLightWithIdsGroupEntry_GroupLightData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupSO>,
@@ -422,7 +422,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lightId: i32,

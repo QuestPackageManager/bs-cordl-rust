@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Xml+SecurityParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecurityParser {
     __cordl_parent: crate::Mono::Xml::SmallXmlParser,
     pub root: quest_hook::libil2cpp::Gc<crate::System::Security::SecurityElement>,

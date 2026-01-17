@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LanguageSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LanguageSettingsController {
     __cordl_parent: crate::GlobalNamespace::DropdownSettingsController,
     pub _settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,

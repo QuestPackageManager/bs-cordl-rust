@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerBadgeDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerBadgeDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _titleLocalizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

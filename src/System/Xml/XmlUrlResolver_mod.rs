@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlUrlResolver")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlUrlResolver {
     __cordl_parent: crate::System::Xml::XmlResolver,
     pub _credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,

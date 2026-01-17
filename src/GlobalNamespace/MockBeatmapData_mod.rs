@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockBeatmapData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockBeatmapData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _numberOfLines_k__BackingField: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+IesWithCipherParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IesWithCipherParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::IesParameters,
     pub cipherKeySize: i32,

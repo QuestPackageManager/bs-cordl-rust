@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XsDurationDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XsDurationDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::TimeSpanDataContract,
 }

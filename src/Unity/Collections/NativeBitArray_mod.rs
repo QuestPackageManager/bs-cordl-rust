@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+NativeBitArray")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeBitArray {
     pub m_BitArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -776,7 +779,10 @@ impl AsMut<crate::Unity::Collections::INativeDisposable>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeBitArray+ReadOnly")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeBitArray_ReadOnly {
     pub m_BitArray: crate::Unity::Collections::LowLevel::Unsafe::UnsafeBitArray_ReadOnly,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLeaderboardPanelController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLeaderboardPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _items: quest_hook::libil2cpp::Gc<

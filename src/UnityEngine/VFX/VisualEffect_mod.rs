@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+VFX+VisualEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualEffect {
     __cordl_parent: crate::UnityEngine::Behaviour,
     pub m_cachedEventAttribute:

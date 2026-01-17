@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRTask")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1230,7 +1230,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTask {
     }
 }
 #[cfg(feature = "cordl_class_OVRTask+Builder")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTask_Builder {
     pub _synchronousResult: crate::GlobalNamespace::OVRPlugin_Result,
@@ -1533,7 +1536,7 @@ impl crate::GlobalNamespace::OVRTask_Builder {
 }
 #[cfg(feature = "cordl_class_OVRTask+MultiTaskData_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_MultiTaskData_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub CombinedTask: crate::GlobalNamespace::OVRTask_1<T>,
@@ -1786,7 +1789,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::OVRObjectPool
 }
 #[cfg(feature = "cordl_class_OVRTask+MultiTaskData_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_MultiTaskData_2<T1: quest_hook::libil2cpp::Type, T2: quest_hook::libil2cpp::Type>
 {
     __cordl_parent:
@@ -1953,7 +1956,7 @@ impl<T1: quest_hook::libil2cpp::Type, T2: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_OVRTask+MultiTaskData_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_MultiTaskData_3<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -2155,7 +2158,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_OVRTask+MultiTaskData_4")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_MultiTaskData_4<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -2381,7 +2384,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_OVRTask+MultiTaskData_5")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_MultiTaskData_5<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -2625,7 +2628,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_OVRTask+MultiTaskData_6")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_MultiTaskData_6<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -2893,7 +2896,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_OVRTask+MultiTaskData_7")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_MultiTaskData_7<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -3184,7 +3187,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_OVRTask+MultiTaskData_8")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTask_MultiTaskData_8<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

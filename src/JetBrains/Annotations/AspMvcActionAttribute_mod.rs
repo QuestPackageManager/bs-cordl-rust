@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcActionAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AspMvcActionAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _AnonymousProperty_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Socket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cachedTaskEventArgs:
@@ -4970,7 +4970,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Net::Sockets::Socket {
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Socket_AwaitableSocketAsyncEventArgs {
     __cordl_parent: crate::System::Net::Sockets::SocketAsyncEventArgs,
     pub _continuation: quest_hook::libil2cpp::Gc<
@@ -5499,7 +5499,7 @@ impl AsMut<crate::System::Threading::Tasks::Sources::IValueTaskSource_1<i32>>
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+CachedEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Socket_CachedEventArgs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub TaskAccept: quest_hook::libil2cpp::Gc<
@@ -5594,7 +5594,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Sockets::Socket_C
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+Int32TaskSocketAsyncEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Socket_Int32TaskSocketAsyncEventArgs {
     __cordl_parent: crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<i32>,
     pub _wrapExceptionsInIOExceptions: bool,
@@ -5677,7 +5677,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+TaskSocketAsyncEventArgs_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Socket_TaskSocketAsyncEventArgs_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Net::Sockets::SocketAsyncEventArgs,
     pub _builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<TResult>,
@@ -5830,7 +5830,10 @@ impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Net+Sockets+Socket+WSABUF")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Socket_WSABUF {
     pub len: i32,

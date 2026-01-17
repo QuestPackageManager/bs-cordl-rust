@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509EnhancedKeyUsageExtension"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509EnhancedKeyUsageExtension {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Extension,
     pub _enhKeyUsage:

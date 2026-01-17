@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTime")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XsdDateTime {
     pub dt: crate::System::DateTime,
@@ -723,10 +726,15 @@ impl crate::System::Xml::Schema::XsdDateTime {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTime+DateTimeTypeCode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XsdDateTime_DateTimeTypeCode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Date = 2i32,
     DateTime = 0i32,
     GDay = 6i32,
@@ -822,7 +830,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTime+Parser")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XsdDateTime_Parser {
     pub typeCode: crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode,
@@ -1150,10 +1161,15 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XsdDateTime_XsdDateTimeKind {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LocalEastOfZulu = 3i32,
     LocalWestOfZulu = 2i32,
     Unspecified = 0i32,

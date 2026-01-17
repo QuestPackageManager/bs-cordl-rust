@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GenerateHLSL")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenerateHLSL {
     __cordl_parent: crate::System::Attribute,
     pub packingRules: crate::UnityEngine::Rendering::PackingRules,

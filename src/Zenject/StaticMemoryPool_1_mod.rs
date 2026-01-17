@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+StaticMemoryPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StaticMemoryPool_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::StaticMemoryPoolBase_1<TValue>,
     pub _onSpawnMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,

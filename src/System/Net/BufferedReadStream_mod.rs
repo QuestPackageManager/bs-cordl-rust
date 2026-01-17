@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+BufferedReadStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BufferedReadStream {
     __cordl_parent: crate::System::Net::WebReadStream,
     pub readBuffer: quest_hook::libil2cpp::Gc<crate::System::Net::BufferOffsetSize>,

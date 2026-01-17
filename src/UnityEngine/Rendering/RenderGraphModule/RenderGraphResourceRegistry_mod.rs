@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphResourceRegistry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphResourceRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RenderGraphResources: quest_hook::libil2cpp::Gc<
@@ -2899,7 +2899,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphResourceRegistry+RenderGraphResourcesData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphResourceRegistry_RenderGraphResourcesData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub resourceArray: quest_hook::libil2cpp::Gc<
@@ -3115,7 +3115,7 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphResourceRegistr
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphResourceRegistry+ResourceCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphResourceRegistry_ResourceCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3329,7 +3329,7 @@ for crate::UnityEngine::Rendering::RenderGraphModule::RenderGraphResourceRegistr
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphResourceRegistry+ResourceCreateCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphResourceRegistry_ResourceCreateCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

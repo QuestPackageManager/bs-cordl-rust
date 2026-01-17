@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+ArrayHelper_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayHelper_2<
     TArgument: quest_hook::libil2cpp::Type,
     TArray: quest_hook::libil2cpp::Type,

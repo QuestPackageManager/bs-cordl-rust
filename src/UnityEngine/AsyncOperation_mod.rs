@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AsyncOperation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncOperation {
     __cordl_parent: crate::UnityEngine::YieldInstruction,
     pub m_Ptr: crate::System::IntPtr,
@@ -497,7 +497,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AsyncOperation {
 }
 #[cfg(feature = "cordl_class_UnityEngine+AsyncOperation+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncOperation_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SelectRegionViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectRegionViewController {
     __cordl_parent: crate::GlobalNamespace::CompletableViewController_1<
         crate::GlobalNamespace::SelectRegionViewController_Region,
@@ -195,10 +195,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SelectRegionV
     }
 }
 #[cfg(feature = "cordl_class_SelectRegionViewController+Region")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SelectRegionViewController_Region {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Europe = 2i32,
     Japan = 4i32,
     None = 0i32,
@@ -291,7 +296,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_SelectRegionViewController+RegionToLocalizationKeyPair")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SelectRegionViewController_RegionToLocalizationKeyPair {
     pub region: crate::GlobalNamespace::SelectRegionViewController_Region,

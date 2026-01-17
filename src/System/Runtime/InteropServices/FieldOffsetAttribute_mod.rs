@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+FieldOffsetAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FieldOffsetAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _val: i32,

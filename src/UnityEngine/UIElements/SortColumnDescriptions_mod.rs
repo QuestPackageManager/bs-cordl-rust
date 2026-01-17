@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+SortColumnDescriptions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortColumnDescriptions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Descriptions: quest_hook::libil2cpp::Gc<
@@ -515,7 +515,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortColumnDescriptions_UxmlObjectFactory {
     __cordl_parent: crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SortColumnDescriptions>,
@@ -603,7 +603,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortColumnDescriptions_UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectFactory_2<
         T,
@@ -728,7 +728,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectTraits_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortColumnDescriptions_UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>,
     pub m_SortColumnDescriptions: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_WindowResolutionSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WindowResolutionSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,

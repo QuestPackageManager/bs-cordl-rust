@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalActivePlayerGameplayAnimator {
     __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
     pub _coreGameHUDController:

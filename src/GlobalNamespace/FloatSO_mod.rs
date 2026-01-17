@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatSO {
     __cordl_parent: crate::GlobalNamespace::ObservableVariableSO_1<f32>,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BTSCharacter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BTSCharacter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _characterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

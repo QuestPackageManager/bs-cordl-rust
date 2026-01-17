@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Mathematics+DoNotNormalizeAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DoNotNormalizeAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }

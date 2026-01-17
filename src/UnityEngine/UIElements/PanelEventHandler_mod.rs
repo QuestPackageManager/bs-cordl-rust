@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PanelEventHandler {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_Panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
@@ -1266,7 +1266,7 @@ impl AsMut<crate::UnityEngine::UIElements::IRuntimePanelComponent>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PanelEventHandler_PointerEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pointerId_k__BackingField: i32,
@@ -2458,10 +2458,15 @@ impl AsMut<crate::UnityEngine::UIElements::IPointerEvent>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PanelEventHandler_PointerEventType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Default = 0i32,
     Down = 1i32,
     Up = 2i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs10CertificationRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pkcs10CertificationRequest {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequest,
 }

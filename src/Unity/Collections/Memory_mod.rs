@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+Memory")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Memory {}
 #[cfg(feature = "cordl_class_Unity+Collections+Memory")]
@@ -119,7 +122,10 @@ impl crate::Unity::Collections::Memory {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+Memory+Array")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Memory_Array {}
 #[cfg(feature = "cordl_class_Unity+Collections+Memory+Array")]
@@ -307,7 +313,10 @@ impl crate::Unity::Collections::Memory_Array {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+Memory+Unmanaged")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Memory_Unmanaged {}
 #[cfg(feature = "cordl_class_Unity+Collections+Memory+Unmanaged")]
@@ -518,7 +527,10 @@ impl crate::Unity::Collections::Memory_Unmanaged {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+Memory+Unmanaged+Array")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Unmanaged_Memory_Array {}
 #[cfg(feature = "cordl_class_Unity+Collections+Memory+Unmanaged+Array")]

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRExtendedDisplay {
     pub GetWindowBounds:
@@ -104,7 +107,7 @@ impl crate::OVR::OpenVR::IVRExtendedDisplay {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRExtendedDisplay__GetDXGIOutputInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -292,7 +295,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRExtendedDisplay__GetEyeOutputViewport {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -493,7 +496,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRExtendedDisplay__GetWindowBounds {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeSpanParse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -640,10 +640,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+ParseFailureKind")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum TimeSpanParse_ParseFailureKind {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ArgumentNull = 1u8,
     Format = 2u8,
     FormatWithParameter = 3u8,
@@ -735,7 +740,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+StringParser")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeSpanParse_StringParser {
     pub _str: crate::System::ReadOnlySpan_1<char>,
@@ -997,10 +1005,15 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TTT")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum TimeSpanParse_TTT {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     End = 1u8,
     None = 0u8,
     Num = 2u8,
@@ -1082,7 +1095,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Globalization::Time
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanRawInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeSpanParse_TimeSpanRawInfo {
     pub _lastSeenTTT: crate::System::Globalization::TimeSpanParse_TTT,
@@ -1658,7 +1674,10 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeSpanParse_TimeSpanResult {
     pub parsedTimeSpan: crate::System::TimeSpan,
@@ -1820,10 +1839,15 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum TimeSpanParse_TimeSpanStandardStyles {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = 3u8,
     Invariant = 1u8,
     Localized = 2u8,
@@ -1915,7 +1939,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanToken")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeSpanParse_TimeSpanToken {
     pub _ttt: crate::System::Globalization::TimeSpanParse_TTT,
@@ -2148,7 +2175,10 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     }
 }
 #[cfg(feature = "cordl_class_System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeSpanParse_TimeSpanTokenizer {
     pub _value: crate::System::ReadOnlySpan_1<char>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+ValidationEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ValidationEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _ex: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaException>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockComboController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockComboController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub comboDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,

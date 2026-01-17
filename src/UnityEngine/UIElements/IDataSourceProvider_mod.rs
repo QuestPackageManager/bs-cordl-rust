@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IDataSourceProvider")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IDataSourceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

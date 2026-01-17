@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceAmbientOcclusion")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceAmbientOcclusion {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRendererFeature,
     pub m_Settings: quest_hook::libil2cpp::Gc<

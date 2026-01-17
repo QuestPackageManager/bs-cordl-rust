@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+Compression+DeflateStreamNative")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeflateStreamNative {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub feeder: quest_hook::libil2cpp::Gc<
@@ -532,7 +532,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Compression::Defla
 }
 #[cfg(feature = "cordl_class_System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeflateStreamNative_SafeDeflateStreamHandle {
     __cordl_parent: crate::System::Runtime::InteropServices::SafeHandle,
 }
@@ -656,7 +656,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeflateStreamNative_UnmanagedReadOrWrite {
     __cordl_parent: crate::System::MulticastDelegate,
 }

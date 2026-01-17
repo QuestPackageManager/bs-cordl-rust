@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+Util+RenderGraphUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -393,10 +393,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+Util+RenderGraphUtils+BlitFilterMode"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RenderGraphUtils_BlitFilterMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ClampBilinear = 1i32,
     ClampNearest = 0i32,
 }
@@ -497,7 +502,10 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+Util+RenderGraphUtils+BlitMaterialParameters"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderGraphUtils_BlitMaterialParameters {
     pub source: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -1004,7 +1012,7 @@ impl
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+Util+RenderGraphUtils+BlitMaterialPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphUtils_BlitMaterialPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sourceTexturePropertyID: i32,
@@ -1117,7 +1125,7 @@ for crate::UnityEngine::Rendering::RenderGraphModule::Util::RenderGraphUtils_Bli
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+Util+RenderGraphUtils+BlitPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphUtils_BlitPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub source: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -1221,7 +1229,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+Util+RenderGraphUtils+CopyPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphUtils_CopyPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isMSAA: bool,
@@ -1313,10 +1321,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+Util+RenderGraphUtils+FullScreenGeometryType"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RenderGraphUtils_FullScreenGeometryType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Mesh = 0i32,
     ProceduralQuad = 2i32,
     ProceduralTriangle = 1i32,

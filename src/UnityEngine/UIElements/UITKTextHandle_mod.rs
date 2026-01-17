@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UITKTextHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UITKTextHandle {
     __cordl_parent: crate::UnityEngine::TextCore::Text::TextHandle,
     pub m_ATGTextEventHandler:

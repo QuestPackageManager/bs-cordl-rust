@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SaberTypeObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaberTypeObject {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _saberType: crate::GlobalNamespace::SaberType,

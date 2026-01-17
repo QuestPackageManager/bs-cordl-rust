@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRTelemetry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -262,7 +262,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry 
     }
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkerPoint")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTelemetry_MarkerPoint {
     pub _NameHandle_k__BackingField: i32,
@@ -435,7 +438,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRTelemetry_
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+MarkersAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetry_MarkersAttribute {
     __cordl_parent: crate::System::Attribute,
 }
@@ -513,7 +516,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry_
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+NullTelemetryClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetry_NullTelemetryClient {
     __cordl_parent: crate::GlobalNamespace::OVRTelemetry_TelemetryClient,
 }
@@ -882,7 +885,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+QPLTelemetryClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetry_QPLTelemetryClient {
     __cordl_parent: crate::GlobalNamespace::OVRTelemetry_TelemetryClient,
 }
@@ -1249,7 +1252,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry_
 }
 #[cfg(feature = "cordl_class_OVRTelemetry+TelemetryClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTelemetry_TelemetryClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

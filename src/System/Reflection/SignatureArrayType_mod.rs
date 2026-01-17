@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+SignatureArrayType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignatureArrayType {
     __cordl_parent: crate::System::Reflection::SignatureHasElementType,
     pub _rank: i32,

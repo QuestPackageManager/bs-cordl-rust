@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Message")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Message {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::Oculus::Platform::Message_MessageType,
@@ -2267,7 +2267,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Message {
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Message+Callback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Message_Callback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2438,7 +2438,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Message_Call
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Message+ExtraMessageTypesHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Message_ExtraMessageTypesHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2621,10 +2621,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Message+MessageType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum Message_MessageType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AbuseReport_ReportRequestHandled = 1267661958u32,
     Achievements_AddCount = 65495601u32,
     Achievements_AddFields = 346693929u32,

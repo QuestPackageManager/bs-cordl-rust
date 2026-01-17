@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PyramidBloomRendererSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -262,7 +262,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PyramidBloomR
     }
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Level")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PyramidBloomRendererSO_Level {
     pub down: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -363,10 +366,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "PyramidBloomRendererSO+Level")]
 impl crate::GlobalNamespace::PyramidBloomRendererSO_Level {}
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO+Pass")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PyramidBloomRendererSO_Pass {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bilinear = 9i32,
     BilinearGamma = 10i32,
     Downsample13 = 2i32,

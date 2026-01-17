@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TouchHistory {
     pub m_History: quest_hook::libil2cpp::Gc<
@@ -398,7 +401,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TouchHistory_Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Owner: crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+X509NameTokenizer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509NameTokenizer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

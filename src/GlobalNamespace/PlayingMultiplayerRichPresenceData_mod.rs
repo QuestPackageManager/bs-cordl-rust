@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayingMultiplayerRichPresenceData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayingMultiplayerRichPresenceData {
     __cordl_parent: crate::GlobalNamespace::InMultiplayerRichPresenceData,
 }

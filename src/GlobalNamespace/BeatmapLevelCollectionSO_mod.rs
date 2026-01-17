@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapLevelCollectionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelCollectionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _beatmapLevels: quest_hook::libil2cpp::Gc<

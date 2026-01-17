@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ReusableListViewItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReusableListViewItem {
     __cordl_parent: crate::UnityEngine::UIElements::ReusableCollectionItem,
     pub m_Container: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

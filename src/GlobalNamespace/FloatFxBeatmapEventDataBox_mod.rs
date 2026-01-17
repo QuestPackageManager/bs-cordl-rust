@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatFxBeatmapEventDataBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatFxBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::FloatFxBeatmapEventDataBox_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,

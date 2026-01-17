@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerWidget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUIHandlerWidget {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub colorDefault: crate::UnityEngine::Color,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+HttpRequestManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpRequestManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sessionConfig_: crate::OculusStudios::GraphQL::Client::HttpRequestManager_SessionConfig,
@@ -789,7 +789,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_OculusStudios+GraphQL+Client+HttpRequestManager+ByteArrayResultCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpRequestManager_ByteArrayResultCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -995,7 +995,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+HttpRequestManager+GlobalConfig")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HttpRequestManager_GlobalConfig {
     pub connectionLimit: i32,
@@ -1101,7 +1104,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OculusStudios+GraphQL+Client+HttpRequestManager+GlobalConfig")]
 impl crate::OculusStudios::GraphQL::Client::HttpRequestManager_GlobalConfig {}
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+HttpRequestManager+SessionConfig")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HttpRequestManager_SessionConfig {
     pub baseAddress: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -1206,10 +1212,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OculusStudios+GraphQL+Client+HttpRequestManager+SessionConfig")]
 impl crate::OculusStudios::GraphQL::Client::HttpRequestManager_SessionConfig {}
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+HttpRequestManager+fastFallbackState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum HttpRequestManager_fastFallbackState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CHECKING = 1i32,
     ERROR_DNS = 7i32,
     IPV4 = 6i32,

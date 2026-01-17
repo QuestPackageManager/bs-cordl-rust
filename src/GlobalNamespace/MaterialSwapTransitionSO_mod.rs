@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialSwapTransitionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialSwapTransitionSO {
     __cordl_parent: crate::GlobalNamespace::BaseTransitionSO,
     pub _normalMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

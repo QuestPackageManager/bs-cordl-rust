@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+InputManagerProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputManagerProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _inputEventPartialProvider:
@@ -827,7 +827,10 @@ impl AsMut<crate::UnityEngine::InputForUI::IEventProviderImpl>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+InputManagerProvider+ButtonEventsIterator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputManagerProvider_ButtonEventsIterator {
     pub _mask: u32,
@@ -1063,7 +1066,10 @@ impl AsMut<crate::System::Collections::IEnumerator>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+InputManagerProvider+Configuration")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputManagerProvider_Configuration {
     pub HorizontalAxis: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1200,7 +1206,7 @@ impl crate::UnityEngine::InputForUI::InputManagerProvider_Configuration {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+InputManagerProvider+IInput")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct InputManagerProvider_IInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1561,7 +1567,7 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+InputManagerProvider+ITime")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct InputManagerProvider_ITime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1644,7 +1650,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+InputManagerProvider+Input")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputManagerProvider_Input {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2045,7 +2051,7 @@ impl AsMut<crate::UnityEngine::InputForUI::InputManagerProvider_IInput>
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+InputManagerProvider+Time")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputManagerProvider_Time {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

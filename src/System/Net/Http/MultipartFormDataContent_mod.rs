@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+MultipartFormDataContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultipartFormDataContent {
     __cordl_parent: crate::System::Net::Http::MultipartContent,
 }

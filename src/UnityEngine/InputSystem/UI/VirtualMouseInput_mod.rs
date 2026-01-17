@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+VirtualMouseInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VirtualMouseInput {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_CursorMode: crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode,
@@ -943,10 +943,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::UI::
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum VirtualMouseInput_CursorMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HardwareCursorIfAvailable = 1i32,
     SoftwareCursor = 0i32,
 }

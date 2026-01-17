@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ServerPasswordEntryViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ServerPasswordEntryViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _passwordInput: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+ByteEqualityComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ByteEqualityComparer {
     __cordl_parent: crate::System::Collections::Generic::EqualityComparer_1<u8>,
 }

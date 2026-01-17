@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderInteractionManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderInteractionManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _colorType: crate::GlobalNamespace::ColorType,

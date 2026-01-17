@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HologramRays")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HologramRays {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _bloomLight: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TubeBloomPrePassLight>,

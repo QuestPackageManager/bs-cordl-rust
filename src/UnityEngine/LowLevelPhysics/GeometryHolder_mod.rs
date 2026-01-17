@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+LowLevelPhysics+GeometryHolder")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GeometryHolder {
     pub m_Type: i32,
@@ -131,7 +134,10 @@ impl crate::UnityEngine::LowLevelPhysics::GeometryHolder {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+LowLevelPhysics+GeometryHolder+_m_Blob_e__FixedBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GeometryHolder__m_Blob_e__FixedBuffer {
     pub FixedElementField: u32,

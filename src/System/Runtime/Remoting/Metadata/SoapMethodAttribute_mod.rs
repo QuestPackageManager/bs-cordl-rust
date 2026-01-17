@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SoapMethodAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
     pub _responseElement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

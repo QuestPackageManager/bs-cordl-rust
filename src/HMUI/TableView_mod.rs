@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+TableView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scrollView: quest_hook::libil2cpp::Gc<crate::HMUI::ScrollView>,
@@ -1652,7 +1652,7 @@ impl AsMut<crate::HMUI::ITableCellOwner> for crate::HMUI::TableView {
 }
 #[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TableView_CellsGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _reuseIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1796,7 +1796,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_CellsGroup {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+TableView+IDataSource")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct TableView_IDataSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1915,10 +1915,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_IDataSource {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+TableView+ScrollPositionType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TableView_ScrollPositionType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Beginning = 0i32,
     Center = 1i32,
     End = 2i32,
@@ -1998,10 +2003,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::TableView_ScrollPosit
     }
 }
 #[cfg(feature = "cordl_class_HMUI+TableView+TableType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TableView_TableType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Horizontal = 1i32,
     Vertical = 0i32,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+RC2Transform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RC2Transform {
     __cordl_parent: crate::Mono::Security::Cryptography::SymmetricTransform,
     pub R0: u16,

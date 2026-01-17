@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+StpHistory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StpHistory {
     __cordl_parent: crate::UnityEngine::Rendering::CameraHistoryItem,
     pub m_historyContexts: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mirror")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Mirror {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _mirrorRenderer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirrorRendererSO>,

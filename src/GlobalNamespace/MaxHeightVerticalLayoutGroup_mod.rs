@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaxHeightVerticalLayoutGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaxHeightVerticalLayoutGroup {
     __cordl_parent: crate::UnityEngine::UI::HorizontalOrVerticalLayoutGroup,
     pub _useMaxHeight: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlaybackRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlaybackRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub texturesReadyEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -440,7 +440,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlaybackRende
 }
 #[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlaybackRenderer_PlaybackScreenshot {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -746,10 +746,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_PlaybackRenderer+PlaybackScreenshot+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PlaybackScreenshot_PlaybackRenderer_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Background = 2i32,
     Foreground = 1i32,
 }

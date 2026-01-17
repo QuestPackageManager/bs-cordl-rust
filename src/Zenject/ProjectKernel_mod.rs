@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ProjectKernel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProjectKernel {
     __cordl_parent: crate::Zenject::MonoKernel,
     pub _settings: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,

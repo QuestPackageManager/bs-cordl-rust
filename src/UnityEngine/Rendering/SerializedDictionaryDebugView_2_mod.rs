@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SerializedDictionaryDebugView_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializedDictionaryDebugView_2<
     K: quest_hook::libil2cpp::Type,
     V: quest_hook::libil2cpp::Type,

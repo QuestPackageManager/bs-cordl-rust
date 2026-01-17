@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+GUILayoutGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUILayoutGroup {
     __cordl_parent: crate::UnityEngine::GUILayoutEntry,
     pub entries: quest_hook::libil2cpp::Gc<

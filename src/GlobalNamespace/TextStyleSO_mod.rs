@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TextStyleSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextStyleSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _textStyle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TextStyle>,

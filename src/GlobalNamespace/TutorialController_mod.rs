@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TutorialController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tutorialSongController:

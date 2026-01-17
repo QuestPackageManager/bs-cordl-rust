@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberExpandable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTypeMapMemberExpandable {
     __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapMemberElement,
     pub _flatArrayIndex: i32,

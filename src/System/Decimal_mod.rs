@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf12")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DecCalc_Decimal_Buf12 {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
@@ -176,7 +179,10 @@ impl crate::System::DecCalc_Decimal_Buf12 {
     }
 }
 #[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf16")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DecCalc_Decimal_Buf16 {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
@@ -353,7 +359,10 @@ impl crate::System::DecCalc_Decimal_Buf16 {
     }
 }
 #[cfg(feature = "cordl_class_System+Decimal+DecCalc+Buf24")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DecCalc_Decimal_Buf24 {
     padding: quest_hook::libil2cpp::ValueTypePadding<24usize>,
@@ -534,7 +543,10 @@ impl crate::System::DecCalc_Decimal_Buf24 {
     }
 }
 #[cfg(feature = "cordl_class_System+Decimal+DecCalc+PowerOvfl")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DecCalc_Decimal_PowerOvfl {
     pub Hi: u32,
@@ -653,10 +665,15 @@ impl crate::System::DecCalc_Decimal_PowerOvfl {
     }
 }
 #[cfg(feature = "cordl_class_System+Decimal+DecCalc+RoundingMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DecCalc_Decimal_RoundingMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AwayFromZero = 1i32,
     Ceiling = 4i32,
     Floor = 3i32,
@@ -738,7 +755,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DecCalc_Decimal_Rou
     }
 }
 #[cfg(feature = "cordl_class_System+Decimal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Decimal {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
@@ -3232,7 +3252,10 @@ impl AsMut<crate::System::Runtime::Serialization::IDeserializationCallback>
     }
 }
 #[cfg(feature = "cordl_class_System+Decimal+DecCalc")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Decimal_DecCalc {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,

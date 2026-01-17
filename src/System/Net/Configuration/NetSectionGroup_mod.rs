@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Configuration+NetSectionGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetSectionGroup {
     __cordl_parent: crate::System::Configuration::ConfigurationSectionGroup,
 }

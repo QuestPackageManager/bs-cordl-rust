@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TimelinePauseReceiver")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimelinePauseReceiver {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub timelinePauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,

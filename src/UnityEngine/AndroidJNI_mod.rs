@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AndroidJNI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidJNI {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -7256,7 +7256,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AndroidJNI {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+AndroidJNI+JStringBinding")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AndroidJNI_JStringBinding {
     pub javaString: crate::System::IntPtr,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightRotationEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightRotationEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _event: crate::GlobalNamespace::BasicBeatmapEventType,

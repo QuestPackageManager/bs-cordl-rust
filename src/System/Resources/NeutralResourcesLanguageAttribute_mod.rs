@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Resources+NeutralResourcesLanguageAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NeutralResourcesLanguageAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _CultureName_k__BackingField:

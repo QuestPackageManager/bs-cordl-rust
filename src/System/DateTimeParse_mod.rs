@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+DateTimeParse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DateTimeParse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2410,10 +2410,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DateTimeParse {
     }
 }
 #[cfg(feature = "cordl_class_System+DateTimeParse+DS")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DateTimeParse_DS {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BEGIN = 0i32,
     DX_DS = 26i32,
     DX_DSN = 27i32,
@@ -2529,10 +2534,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_DS {
     }
 }
 #[cfg(feature = "cordl_class_System+DateTimeParse+DTT")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DateTimeParse_DTT {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DayOfWeek = 11i32,
     End = 0i32,
     Era = 16i32,
@@ -2631,7 +2641,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_DTT {
 }
 #[cfg(feature = "cordl_class_System+DateTimeParse+MatchNumberDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DateTimeParse_MatchNumberDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2747,10 +2757,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DateTimeParse_MatchNum
     }
 }
 #[cfg(feature = "cordl_class_System+DateTimeParse+TM")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DateTimeParse_TM {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AM = 0i32,
     NotSet = -1i32,
     PM = 1i32,

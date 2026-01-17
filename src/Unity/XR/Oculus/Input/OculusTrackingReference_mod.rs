@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusTrackingReference")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusTrackingReference {
     __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
     pub _trackingState_k__BackingField:

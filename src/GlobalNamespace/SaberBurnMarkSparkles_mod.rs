@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SaberBurnMarkSparkles")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaberBurnMarkSparkles {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub kRenderOffset: crate::UnityEngine::Vector3,

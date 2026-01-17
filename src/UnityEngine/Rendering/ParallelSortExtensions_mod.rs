@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ParallelSortExtensions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParallelSortExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -123,7 +123,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Parall
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ParallelSortExtensions+RadixSortBatchPrefixSumJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ParallelSortExtensions_RadixSortBatchPrefixSumJob {
     pub radix: i32,
@@ -328,7 +331,10 @@ impl AsMut<crate::Unity::Jobs::IJobFor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ParallelSortExtensions+RadixSortBucketCountJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ParallelSortExtensions_RadixSortBucketCountJob {
     pub radix: i32,
@@ -476,7 +482,10 @@ impl AsMut<crate::Unity::Jobs::IJobFor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ParallelSortExtensions+RadixSortBucketSortJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ParallelSortExtensions_RadixSortBucketSortJob {
     pub radix: i32,
@@ -624,7 +633,10 @@ impl AsMut<crate::Unity::Jobs::IJobFor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ParallelSortExtensions+RadixSortPrefixSumJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ParallelSortExtensions_RadixSortPrefixSumJob {
     pub jobsCount: i32,

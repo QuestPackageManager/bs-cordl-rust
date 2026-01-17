@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+AnimatorInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimatorInstaller {
     __cordl_parent: crate::Zenject::Installer_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+ReaderPositionInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReaderPositionInfo {
     __cordl_parent: crate::System::Xml::PositionInfo,
     pub lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,

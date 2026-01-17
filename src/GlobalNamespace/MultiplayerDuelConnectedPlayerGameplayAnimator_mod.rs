@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerDuelConnectedPlayerGameplayAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerDuelConnectedPlayerGameplayAnimator {
     __cordl_parent: crate::GlobalNamespace::MultiplayerGameplayAnimator,
     pub _avatarScaleAnimator: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScaleAnimator>,

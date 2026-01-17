@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+X509+X509KeyUsage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509KeyUsage {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub usage: i32,

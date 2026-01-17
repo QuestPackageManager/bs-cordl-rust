@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _parametric3SliceSpriteController:

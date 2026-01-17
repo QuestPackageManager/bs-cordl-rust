@@ -2,7 +2,7 @@
     feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpUserAttributeSubpacketVectorGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,

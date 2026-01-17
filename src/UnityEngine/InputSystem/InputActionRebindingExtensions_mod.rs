@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputActionRebindingExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1607,7 +1607,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputActionRebindingExtensions_DeferBindingResolutionWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1755,7 +1755,10 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionRebindingExtensions_Parameter {
     pub instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1863,7 +1866,10 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionRebindingExtensions_ParameterEnumerable {
     pub m_State: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionState>,
@@ -2165,7 +2171,10 @@ impl AsMut<crate::System::Collections::IEnumerable>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionRebindingExtensions_ParameterEnumerator {
     pub m_State: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionState>,
@@ -2592,7 +2601,10 @@ impl AsMut<crate::System::IDisposable>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionRebindingExtensions_ParameterOverride {
     pub objectRegistrationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2968,7 +2980,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
     feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputActionRebindingExtensions_RebindingOperation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ActionToRebind: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
@@ -4847,10 +4859,15 @@ impl AsMut<crate::System::IDisposable>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RebindingOperation_InputActionRebindingExtensions_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AddNewBinding = 256i32,
     Canceled = 4i32,
     Completed = 2i32,

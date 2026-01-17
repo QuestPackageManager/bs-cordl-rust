@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+CookieContainer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CookieContainer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_domainTable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,

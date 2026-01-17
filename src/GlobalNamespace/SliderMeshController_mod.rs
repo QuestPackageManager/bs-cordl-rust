@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderMeshController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderMeshController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _numberOfFixedVertexPathSegments: i32,

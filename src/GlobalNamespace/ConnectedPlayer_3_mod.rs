@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ConnectedPlayer_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConnectedPlayer_3<
     TConnectedPlayer: quest_hook::libil2cpp::Type,
     TConnectedPlayerImpl: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlValidatingReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlValidatingReader {
     __cordl_parent: crate::System::Xml::XmlReader,
     pub _cordl_impl: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlValidatingReaderImpl>,

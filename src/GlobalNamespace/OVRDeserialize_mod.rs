@@ -1,7 +1,10 @@
 #[cfg(
     feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData+_AdvertisementMetadata_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ColocationSessionDiscoveryResultData_OVRDeserialize__AdvertisementMetadata_e__FixedBuffer
 {
@@ -120,7 +123,7 @@ for crate::GlobalNamespace::ColocationSessionDiscoveryResultData_OVRDeserialize_
 impl crate::GlobalNamespace::ColocationSessionDiscoveryResultData_OVRDeserialize__AdvertisementMetadata_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_OVRDeserialize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRDeserialize {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -303,7 +306,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDeserializ
     }
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+BoundaryVisibilityChangedData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_BoundaryVisibilityChangedData {
     pub BoundaryVisibility: crate::GlobalNamespace::OVRPlugin_BoundaryVisibility,
@@ -407,7 +413,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+BoundaryVisibilityChangedData")]
 impl crate::GlobalNamespace::OVRDeserialize_BoundaryVisibilityChangedData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_ColocationSessionAdvertisementCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -513,7 +522,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+ColocationSessionAdvertisementCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_ColocationSessionAdvertisementCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_ColocationSessionDiscoveryCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -619,7 +631,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+ColocationSessionDiscoveryCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+ColocationSessionDiscoveryResultData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_ColocationSessionDiscoveryResultData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -732,7 +747,10 @@ impl crate::GlobalNamespace::OVRDeserialize_ColocationSessionDiscoveryResultData
     pub type _AdvertisementMetadata_e__FixedBuffer = crate::GlobalNamespace::ColocationSessionDiscoveryResultData_OVRDeserialize__AdvertisementMetadata_e__FixedBuffer;
 }
 #[cfg(feature = "cordl_class_OVRDeserialize+CreateDynamicObjectTrackerResultData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_CreateDynamicObjectTrackerResultData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -838,7 +856,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+CreateDynamicObjectTrackerResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_CreateDynamicObjectTrackerResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+DisplayRefreshRateChangedData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_DisplayRefreshRateChangedData {
     pub FromRefreshRate: f32,
@@ -943,7 +964,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
 impl crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+PassthroughLayerResumedData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_PassthroughLayerResumedData {
     pub LayerId: i32,
@@ -1047,7 +1071,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+PassthroughLayerResumedData")]
 impl crate::GlobalNamespace::OVRDeserialize_PassthroughLayerResumedData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SceneCaptureCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SceneCaptureCompleteData {
     pub RequestId: u64,
@@ -1152,7 +1179,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SetDynamicObjectTrackedClassesResultData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -1258,7 +1288,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SetDynamicObjectTrackedClassesResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SetDynamicObjectTrackedClassesResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+ShareSpacesToGroupsCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_ShareSpacesToGroupsCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -1364,7 +1397,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+ShareSpacesToGroupsCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_ShareSpacesToGroupsCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceDiscoveryCompleteData {
     pub RequestId: u64,
@@ -1469,7 +1505,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceDiscoveryCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceDiscoveryResultsData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceDiscoveryResultsData {
     pub RequestId: u64,
@@ -1573,7 +1612,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceDiscoveryResultsData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceDiscoveryResultsData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceEraseCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceEraseCompleteData {
     pub RequestId: u64,
@@ -1680,7 +1722,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceListSaveResultData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceListSaveResultData {
     pub RequestId: u64,
@@ -1785,7 +1830,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceQueryCompleteData {
     pub RequestId: u64,
@@ -1890,7 +1938,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceQueryResultsData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceQueryResultsData {
     pub RequestId: u64,
@@ -1994,7 +2045,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSaveCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceSaveCompleteData {
     pub RequestId: u64,
@@ -2101,7 +2155,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceSetComponentStatusCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceSetComponentStatusCompleteData {
     pub RequestId: u64,
@@ -2210,7 +2267,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpaceShareResultData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpaceShareResultData {
     pub RequestId: u64,
@@ -2315,7 +2375,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesEraseResultData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpacesEraseResultData {
     pub RequestId: u64,
@@ -2420,7 +2483,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpacesEraseResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpacesEraseResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpacesSaveResultData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpacesSaveResultData {
     pub RequestId: u64,
@@ -2525,7 +2591,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpacesSaveResultData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpacesSaveResultData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+SpatialAnchorCreateCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_SpatialAnchorCreateCompleteData {
     pub RequestId: u64,
@@ -2632,7 +2701,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_StartColocationSessionAdvertisementCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -2740,7 +2812,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+StartColocationSessionAdvertisementCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_StartColocationSessionAdvertisementCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_StartColocationSessionDiscoveryCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -2846,7 +2921,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+StartColocationSessionDiscoveryCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_StartColocationSessionDiscoveryCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_StopColocationSessionAdvertisementCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,
@@ -2953,7 +3031,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDeserialize+StopColocationSessionAdvertisementCompleteData")]
 impl crate::GlobalNamespace::OVRDeserialize_StopColocationSessionAdvertisementCompleteData {}
 #[cfg(feature = "cordl_class_OVRDeserialize+StopColocationSessionDiscoveryCompleteData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDeserialize_StopColocationSessionDiscoveryCompleteData {
     pub EventType: crate::GlobalNamespace::OVRPlugin_EventType,

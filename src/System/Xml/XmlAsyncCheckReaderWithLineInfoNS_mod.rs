@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfoNS")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlAsyncCheckReaderWithLineInfoNS {
     __cordl_parent: crate::System::Xml::XmlAsyncCheckReaderWithLineInfo,
     pub readerAsIXmlNamespaceResolver:

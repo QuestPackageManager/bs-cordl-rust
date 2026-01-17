@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaAny")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaAny {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaParticle,
     pub ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UxmlObjectAsset {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlAsset,
     pub m_IsField: bool,

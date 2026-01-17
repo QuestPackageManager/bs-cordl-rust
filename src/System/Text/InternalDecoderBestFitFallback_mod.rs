@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+InternalDecoderBestFitFallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InternalDecoderBestFitFallback {
     __cordl_parent: crate::System::Text::DecoderFallback,
     pub _encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,

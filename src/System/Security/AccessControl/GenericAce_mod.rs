@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+GenericAce")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericAce {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ace_flags: crate::System::Security::AccessControl::AceFlags,

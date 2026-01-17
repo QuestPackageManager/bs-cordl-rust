@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRDisplay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRDisplay {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub needsConfigureTexture: bool,
@@ -478,7 +478,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDisplay {
     }
 }
 #[cfg(feature = "cordl_class_OVRDisplay+EyeFov")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDisplay_EyeFov {
     pub UpFov: f32,
@@ -573,7 +576,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRD
 #[cfg(feature = "OVRDisplay+EyeFov")]
 impl crate::GlobalNamespace::OVRDisplay_EyeFov {}
 #[cfg(feature = "cordl_class_OVRDisplay+EyeRenderDesc")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDisplay_EyeRenderDesc {
     pub resolution: crate::UnityEngine::Vector2,
@@ -669,7 +675,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRDisplay+EyeRenderDesc")]
 impl crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {}
 #[cfg(feature = "cordl_class_OVRDisplay+LatencyData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRDisplay_LatencyData {
     pub render: f32,

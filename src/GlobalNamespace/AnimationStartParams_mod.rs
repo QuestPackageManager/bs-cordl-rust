@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AnimationStartParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimationStartParams {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _timeOffset: f32,

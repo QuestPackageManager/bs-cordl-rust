@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ImageEffectController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImageEffectController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _renderImageCallback: quest_hook::libil2cpp::Gc<
@@ -138,7 +138,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ImageEffectCo
 }
 #[cfg(feature = "cordl_class_ImageEffectController+RenderImageCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImageEffectController_RenderImageCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

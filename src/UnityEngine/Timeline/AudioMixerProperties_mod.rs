@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioMixerProperties")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioMixerProperties {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub volume: f32,

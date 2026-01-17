@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+UInt32Converter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UInt32Converter {
     __cordl_parent: crate::System::ComponentModel::BaseNumberConverter,
 }

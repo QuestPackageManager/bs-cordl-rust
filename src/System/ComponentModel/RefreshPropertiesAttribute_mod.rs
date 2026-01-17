@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+RefreshPropertiesAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RefreshPropertiesAttribute {
     __cordl_parent: crate::System::Attribute,
     pub refresh: crate::System::ComponentModel::RefreshProperties,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ffi {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1003,10 +1003,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi {
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Controller")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Ffi_Controller {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Both = 2i32,
     Left = 0i32,
     Right = 1i32,
@@ -1087,7 +1092,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_Contro
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+HapticsSdkPlayCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ffi_HapticsSdkPlayCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1274,7 +1279,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi_HapticsSd
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ffi_LogCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1448,10 +1453,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi_LogCallba
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+LogLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Ffi_LogLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Debug = 1i32,
     Error = 4i32,
     Info = 2i32,
@@ -1533,7 +1543,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_LogLev
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+NullBackendStatistics")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Ffi_NullBackendStatistics {
     pub stream_count: i64,
@@ -1628,10 +1641,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Oculus+Haptics+Ffi+NullBackendStatistics")]
 impl crate::Oculus::Haptics::Ffi_NullBackendStatistics {}
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+Result")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Ffi_Result {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ClipIdInvalid = -9i32,
     CreatePlayerFailed = -8i32,
     Error = -1i32,
@@ -1725,7 +1743,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Haptics::Ffi_Result
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Haptics+Ffi+SdkVersion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Ffi_SdkVersion {
     pub major: u16,

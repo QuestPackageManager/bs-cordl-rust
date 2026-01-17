@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+InvocationExpression0")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InvocationExpression0 {
     __cordl_parent: crate::System::Linq::Expressions::InvocationExpression,
 }

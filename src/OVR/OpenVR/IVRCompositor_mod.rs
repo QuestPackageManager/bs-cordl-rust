@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRCompositor {
     pub SetTrackingSpace:
@@ -274,7 +277,7 @@ impl crate::OVR::OpenVR::IVRCompositor {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CanRenderScene")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__CanRenderScene {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -435,7 +438,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ca
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearLastSubmittedFrame")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__ClearLastSubmittedFrame {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -602,7 +605,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ClearSkyboxOverride")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__ClearSkyboxOverride {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -765,7 +768,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Cl
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorBringToFront")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__CompositorBringToFront {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -932,7 +935,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorDumpImages")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__CompositorDumpImages {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1097,7 +1100,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Co
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorGoToBack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__CompositorGoToBack {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1260,7 +1263,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Co
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_CompositorQuit")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__CompositorQuit {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1423,7 +1426,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Co
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeGrid")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__FadeGrid {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1595,7 +1598,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Fa
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_FadeToColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__FadeToColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1796,7 +1799,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Fa
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceInterleavedReprojectionOn")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__ForceInterleavedReprojectionOn {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1968,7 +1971,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ForceReconnectProcess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__ForceReconnectProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2135,7 +2138,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCumulativeStats")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetCumulativeStats {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2318,7 +2321,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentFadeColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetCurrentFadeColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2486,7 +2489,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentGridAlpha")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetCurrentGridAlpha {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2647,7 +2650,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetCurrentSceneFocusProcess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetCurrentSceneFocusProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2812,7 +2815,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimeRemaining")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetFrameTimeRemaining {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2977,7 +2980,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTiming")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetFrameTiming {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3153,7 +3156,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetFrameTimings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetFrameTimings {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3329,7 +3332,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastFrameRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetLastFrameRenderer {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3492,7 +3495,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoseForTrackedDeviceIndex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetLastPoseForTrackedDeviceIndex {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3692,7 +3695,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetLastPoses")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetLastPoses {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3934,7 +3937,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureD3D11")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetMirrorTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4134,7 +4137,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetMirrorTextureGL")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetMirrorTextureGL {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4321,7 +4324,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetTrackingSpace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetTrackingSpace {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4488,7 +4491,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Ge
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanDeviceExtensionsRequired")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetVulkanDeviceExtensionsRequired {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4674,7 +4677,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_GetVulkanInstanceExtensionsRequired")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__GetVulkanInstanceExtensionsRequired {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4852,7 +4855,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_HideMirrorWindow")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__HideMirrorWindow {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5015,7 +5018,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Hi
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsFullscreen")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__IsFullscreen {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5176,7 +5179,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Is
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_IsMirrorWindowVisible")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__IsMirrorWindowVisible {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5341,7 +5344,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_LockGLSharedTextureForAccess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__LockGLSharedTextureForAccess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5516,7 +5519,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_PostPresentHandoff")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__PostPresentHandoff {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5679,7 +5682,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Po
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseMirrorTextureD3D11")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__ReleaseMirrorTextureD3D11 {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5855,7 +5858,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ReleaseSharedGLTexture")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__ReleaseSharedGLTexture {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6032,7 +6035,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetExplicitTimingMode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__SetExplicitTimingMode {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6207,7 +6210,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetSkyboxOverride")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__SetSkyboxOverride {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6399,7 +6402,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Se
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SetTrackingSpace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__SetTrackingSpace {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6570,7 +6573,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Se
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShouldAppRenderWithLowResources")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__ShouldAppRenderWithLowResources {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6735,7 +6738,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_ShowMirrorWindow")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__ShowMirrorWindow {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6898,7 +6901,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Sh
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_Submit")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__Submit {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7090,7 +7093,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Su
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SubmitExplicitTimingData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__SubmitExplicitTimingData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7259,7 +7262,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_SuspendRendering")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__SuspendRendering {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7427,7 +7430,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRCompositor__Su
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_UnlockGLSharedTextureForAccess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__UnlockGLSharedTextureForAccess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7602,7 +7605,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRCompositor+_WaitGetPoses")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRCompositor__WaitGetPoses {
     __cordl_parent: crate::System::MulticastDelegate,
 }

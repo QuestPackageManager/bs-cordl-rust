@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockPlayerGamePoseGeneratorAI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockPlayerGamePoseGeneratorAI {
     __cordl_parent: crate::GlobalNamespace::MockPlayerGamePoseGenerator,
     pub _scoreCalculator:

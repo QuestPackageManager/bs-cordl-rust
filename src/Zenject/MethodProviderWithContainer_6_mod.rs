@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MethodProviderWithContainer_6")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MethodProviderWithContainer_6<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

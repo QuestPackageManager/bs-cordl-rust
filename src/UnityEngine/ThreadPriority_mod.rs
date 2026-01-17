@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+ThreadPriority")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ThreadPriority {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BelowNormal = 1i32,
     High = 4i32,
     Low = 0i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GMNamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -358,7 +358,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::GM::G
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GMNamedCurves_SM2P256V1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -470,7 +470,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GMNamedCurves_WapiP192V1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }

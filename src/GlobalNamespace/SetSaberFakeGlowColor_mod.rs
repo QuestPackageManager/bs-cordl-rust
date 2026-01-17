@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SetSaberFakeGlowColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SetSaberFakeGlowColor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tintColor: crate::UnityEngine::Color,

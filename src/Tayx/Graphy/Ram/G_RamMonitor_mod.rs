@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tayx+Graphy+Ram+G_RamMonitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct G_RamMonitor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _AllocatedRam_k__BackingField: f32,

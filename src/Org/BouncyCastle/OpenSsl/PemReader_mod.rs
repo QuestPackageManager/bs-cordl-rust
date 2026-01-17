@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+OpenSsl+PemReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PemReader {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::Pem::PemReader,
     pub pFinder: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::OpenSsl::IPasswordFinder>,

@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ICameraHistoryReadAccess")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct ICameraHistoryReadAccess {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -145,7 +145,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::ICamer
     feature = "cordl_class_UnityEngine+Rendering+ICameraHistoryReadAccess+HistoryRequestDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ICameraHistoryReadAccess_HistoryRequestDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

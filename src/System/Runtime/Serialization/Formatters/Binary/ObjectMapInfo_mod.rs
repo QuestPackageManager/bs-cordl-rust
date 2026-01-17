@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectMapInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectMapInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objectId: i32,

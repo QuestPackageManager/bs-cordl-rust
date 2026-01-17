@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingToolConfigurationProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _commandLineParserResult:
@@ -518,7 +518,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor+ColorSaveData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingToolConfigurationProcessor_ColorSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub r: f32,
@@ -605,7 +605,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor+PlaybackScreenshot")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingToolConfigurationProcessor_PlaybackScreenshot {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -706,7 +706,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor+RecordingConfiguration")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingToolConfigurationProcessor_RecordingConfiguration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -821,7 +821,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor+RecordingToolConfiguration")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordingToolConfigurationProcessor_RecordingToolConfiguration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recordingConfigurations: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameEnergyCounter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameEnergyCounter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _batteryLives: i32,
@@ -696,7 +696,7 @@ impl AsMut<crate::GlobalNamespace::IGameEnergyCounter>
 }
 #[cfg(feature = "cordl_class_GameEnergyCounter+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameEnergyCounter_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub energyType: crate::GlobalNamespace::GameplayModifiers_EnergyType,

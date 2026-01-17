@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+HttpClientHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpClientHandler {
     __cordl_parent: crate::System::Net::Http::HttpMessageHandler,
     pub _delegatingHandler:

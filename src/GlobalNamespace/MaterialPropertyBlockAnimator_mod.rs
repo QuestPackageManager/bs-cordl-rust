@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialPropertyBlockAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyBlockAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _property: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PerformanceConfigurationChecks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub appConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig,
@@ -243,7 +243,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerformanceCo
     }
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+AppConfig")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationChecks_AppConfig {
     pub targetFrameRate: i32,
@@ -350,7 +353,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "PerformanceConfigurationChecks+AppConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {}
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+LevelConfig")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationChecks_LevelConfig {
     pub modifiers: crate::GlobalNamespace::GameplayModifierMask,
@@ -454,7 +460,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "PerformanceConfigurationChecks+LevelConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {}
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+Mismatch")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationChecks_Mismatch {
     pub message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -559,7 +568,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {}
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+PlayerConfig")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationChecks_PlayerConfig {
     pub leftHanded: bool,
@@ -684,7 +696,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "PerformanceConfigurationChecks+PlayerConfig")]
 impl crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {}
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks+XRConfig")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PerformanceConfigurationChecks_XRConfig {
     pub enabled: bool,

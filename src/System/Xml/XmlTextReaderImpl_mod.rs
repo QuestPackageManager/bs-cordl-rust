@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextReaderImpl {
     __cordl_parent: crate::System::Xml::XmlReader,
     pub useAsync: bool,
@@ -7595,7 +7595,7 @@ impl AsMut<crate::System::Xml::IXmlNamespaceResolver> for crate::System::Xml::Xm
     feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -7776,7 +7776,7 @@ impl
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextReaderImpl_DtdParserProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl>,
@@ -8685,10 +8685,15 @@ impl AsMut<crate::System::Xml::IDtdParserAdapterWithValidation>
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityExpandType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextReaderImpl_EntityExpandType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 0i32,
     OnlyCharacter = 2i32,
     OnlyGeneral = 1i32,
@@ -8776,10 +8781,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+EntityType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextReaderImpl_EntityType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CharacterDec = 0i32,
     CharacterHex = 1i32,
     CharacterNamed = 2i32,
@@ -8864,10 +8874,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextReaderI
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+IncrementalReadState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextReaderImpl_IncrementalReadState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AttributeValue = 6i32,
     Attributes = 5i32,
     CDATA = 3i32,
@@ -8969,10 +8984,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+InitInputType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextReaderImpl_InitInputType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Invalid = 3i32,
     Stream = 1i32,
     TextReader = 2i32,
@@ -9060,7 +9080,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextReaderI
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+LaterInitParam")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextReaderImpl_LaterInitParam {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useAsync: bool,
@@ -9148,7 +9168,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextReaderImpl
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextReaderImpl_NoNamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
 }
@@ -9478,7 +9498,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+NodeData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextReaderImpl_NodeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::System::Xml::XmlNodeType,
@@ -10293,7 +10313,7 @@ impl AsMut<crate::System::IComparable> for crate::System::Xml::XmlTextReaderImpl
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -10411,10 +10431,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingFunction")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextReaderImpl_ParsingFunction {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AfterResolveEmptyEntityInContent = 18i32,
     AfterResolveEntityInContent = 17i32,
     DocumentContent = 5i32,
@@ -10525,10 +10550,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextReaderImpl_ParsingMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Full = 0i32,
     SkipContent = 2i32,
     SkipNode = 1i32,
@@ -10608,7 +10638,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextReaderI
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+ParsingState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlTextReaderImpl_ParsingState {
     pub chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -10807,7 +10840,7 @@ impl crate::System::Xml::XmlTextReaderImpl_ParsingState {
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextReaderImpl+XmlContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextReaderImpl_XmlContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub xmlSpace: crate::System::Xml::XmlSpace,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnitySynchronizationContext {
     __cordl_parent: crate::System::Threading::SynchronizationContext,
     pub m_AsyncWorkQueue: quest_hook::libil2cpp::Gc<
@@ -394,7 +394,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UnitySynchronizat
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext+WorkRequest")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct UnitySynchronizationContext_WorkRequest {
     pub m_DelagateCallback: quest_hook::libil2cpp::Gc<crate::System::Threading::SendOrPostCallback>,

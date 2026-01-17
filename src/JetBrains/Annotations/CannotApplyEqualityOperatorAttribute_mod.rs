@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+CannotApplyEqualityOperatorAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CannotApplyEqualityOperatorAttribute {
     __cordl_parent: crate::System::Attribute,
 }

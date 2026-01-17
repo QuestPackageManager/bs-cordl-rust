@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoranceClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ConnectAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,7 +220,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::IgnoranceCore::IgnoranceClient
     }
 }
 #[cfg(feature = "cordl_class_IgnoranceCore+IgnoranceClient+ThreadParamInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IgnoranceClient_ThreadParamInfo {
     pub Channels: i32,

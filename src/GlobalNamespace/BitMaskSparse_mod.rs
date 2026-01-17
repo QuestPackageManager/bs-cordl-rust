@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BitMaskSparse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BitMaskSparse {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bitCount_k__BackingField: i32,

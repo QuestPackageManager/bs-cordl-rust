@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+PathList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PathList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_list: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
@@ -257,7 +257,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::PathList {
 }
 #[cfg(feature = "cordl_class_System+Net+PathList+PathListComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PathList_PathListComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

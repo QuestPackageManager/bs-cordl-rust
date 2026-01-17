@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Application")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Application {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1684,7 +1684,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Application+LogCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Application_LogCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1802,7 +1802,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application_LogCa
 }
 #[cfg(feature = "cordl_class_UnityEngine+Application+LowMemoryCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Application_LowMemoryCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1910,7 +1910,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application_LowMe
 }
 #[cfg(feature = "cordl_class_UnityEngine+Application+MemoryUsageChangedCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Application_MemoryUsageChangedCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

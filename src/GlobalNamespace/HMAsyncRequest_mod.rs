@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMAsyncRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HMAsyncRequest {
     __cordl_parent: crate::GlobalNamespace::HMAutoincrementedRequestId,
     pub _cancelled: bool,
@@ -180,7 +180,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HMAsyncReques
 }
 #[cfg(feature = "cordl_class_HMAsyncRequest+CancelHander")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HMAsyncRequest_CancelHander {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+EVREventType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum EVREventType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     VREvent_ActionBindingReloaded = 409i32,
     VREvent_ApplicationListUpdated = 1303i32,
     VREvent_ApplicationMimeTypeLoad = 1304i32,

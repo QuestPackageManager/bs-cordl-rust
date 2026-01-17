@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SaberClashEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaberClashEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _sparkleParticleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,

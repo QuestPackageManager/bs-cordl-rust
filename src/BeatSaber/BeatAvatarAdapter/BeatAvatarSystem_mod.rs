@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatAvatarSystem {
     __cordl_parent: crate::BeatSaber::AvatarCore::AvatarSystem,
     pub _avatarDataModel:

@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+IReadOnlyDictionary_2")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IReadOnlyDictionary_2<
     TKey: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PreferenceDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PreferenceDictionary {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Bool: quest_hook::libil2cpp::Gc<

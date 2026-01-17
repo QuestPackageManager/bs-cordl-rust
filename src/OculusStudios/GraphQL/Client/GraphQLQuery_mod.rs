@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+GraphQLQuery")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphQLQuery {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLRequest,
 }

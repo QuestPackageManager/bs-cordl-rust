@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+AchievementDefinition")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AchievementDefinition {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::Oculus::Platform::AchievementType,

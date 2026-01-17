@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PersistentScriptableObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PersistentScriptableObject {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
 }

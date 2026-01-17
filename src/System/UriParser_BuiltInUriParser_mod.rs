@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+UriParser+BuiltInUriParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UriParser_BuiltInUriParser {
     __cordl_parent: crate::System::UriParser,
 }

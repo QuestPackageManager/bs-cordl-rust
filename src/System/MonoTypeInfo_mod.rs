@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+MonoTypeInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoTypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub full_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

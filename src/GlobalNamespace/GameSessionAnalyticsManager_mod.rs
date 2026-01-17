@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameSessionAnalyticsManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameSessionAnalyticsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _analyticsModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAnalyticsModel>,

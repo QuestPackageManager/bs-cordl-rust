@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaSimpleType {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaType,
     pub content: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleTypeContent>,

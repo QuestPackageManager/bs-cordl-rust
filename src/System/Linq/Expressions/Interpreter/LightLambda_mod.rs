@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightLambda")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightLambda {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _closure: quest_hook::libil2cpp::Gc<
@@ -4070,7 +4070,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightLambda_DebugViewPrinter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _interpreter:

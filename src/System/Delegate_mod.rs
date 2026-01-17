@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Delegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Delegate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub method_ptr: crate::System::IntPtr,

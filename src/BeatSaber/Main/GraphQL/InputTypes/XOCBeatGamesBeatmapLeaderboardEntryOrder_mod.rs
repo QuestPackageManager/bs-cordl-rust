@@ -2,7 +2,7 @@
     feature = "cordl_class_BeatSaber+Main+GraphQL+InputTypes+XOCBeatGamesBeatmapLeaderboardEntryOrder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XOCBeatGamesBeatmapLeaderboardEntryOrder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _params: quest_hook::libil2cpp::Gc<

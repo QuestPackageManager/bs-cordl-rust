@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+UriTypeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UriTypeConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }

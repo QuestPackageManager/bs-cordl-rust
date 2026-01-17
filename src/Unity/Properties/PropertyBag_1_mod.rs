@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+PropertyBag_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyBag_1<TContainer: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _InstantiationKind_k__BackingField: crate::Unity::Properties::InstantiationKind,

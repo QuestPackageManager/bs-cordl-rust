@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualTreeAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_ImportedWithErrors: bool,
@@ -1691,7 +1691,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Visua
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VisualTreeAsset_AssetEntry {
     pub m_Path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1906,7 +1909,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VisualTreeAsset_SlotDefinition {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2011,7 +2017,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VisualTreeAsset_SlotUsageEntry {
     pub slotName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2116,7 +2125,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VisualTreeAsset_UsingEntry {
     pub alias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2251,7 +2263,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualTreeAsset_UsingEntryComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2390,7 +2402,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct VisualTreeAsset_UxmlObjectEntry {
     pub parentId: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnableOnVisible")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnableOnVisible {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub VisibilityChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,

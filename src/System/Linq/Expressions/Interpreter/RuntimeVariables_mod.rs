@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeVariables")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeVariables {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _boxes: quest_hook::libil2cpp::Gc<

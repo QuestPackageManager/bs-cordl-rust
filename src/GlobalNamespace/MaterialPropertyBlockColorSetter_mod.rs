@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialPropertyBlockColorSetter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyBlockColorSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _useTestColor: bool,

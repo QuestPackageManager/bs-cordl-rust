@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ShaderInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShaderInput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -54,7 +54,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Univer
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ShaderInput+LightData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ShaderInput_LightData {
     pub position: crate::UnityEngine::Vector4,
@@ -163,7 +166,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+Universal+ShaderInput+LightData")]
 impl crate::UnityEngine::Rendering::Universal::ShaderInput_LightData {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ShaderInput+ShadowData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ShaderInput_ShadowData {
     pub worldToShadowMatrix: crate::UnityEngine::Matrix4x4,

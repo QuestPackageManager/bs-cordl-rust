@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+UnreferencedObjectEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnreferencedObjectEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }

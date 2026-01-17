@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SelectableStateController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectableStateController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::TimeTweeningManager>,
@@ -261,10 +261,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SelectableSta
     }
 }
 #[cfg(feature = "cordl_class_SelectableStateController+ViewState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SelectableStateController_ViewState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Disabled = 3i32,
     Highlighted = 1i32,
     Normal = 0i32,

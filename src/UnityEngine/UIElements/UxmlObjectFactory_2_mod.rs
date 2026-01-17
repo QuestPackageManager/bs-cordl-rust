@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlObjectFactory_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UxmlObjectFactory_2<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,

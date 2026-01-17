@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+Sources+IValueTaskSource_1")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IValueTaskSource_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

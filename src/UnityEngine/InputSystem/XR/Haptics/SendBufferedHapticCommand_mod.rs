@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+Haptics+SendBufferedHapticCommand")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SendBufferedHapticCommand {
     padding: quest_hook::libil2cpp::ValueTypePadding<1040usize>,
@@ -207,7 +210,10 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+XR+Haptics+SendBufferedHapticCommand+_buffer_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SendBufferedHapticCommand__buffer_e__FixedBuffer {
     pub FixedElementField: u8,

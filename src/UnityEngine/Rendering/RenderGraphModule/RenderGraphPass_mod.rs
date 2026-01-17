@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphPass {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _name_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -1855,7 +1855,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphPass+RandomWriteResourceInfo"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RenderGraphPass_RandomWriteResourceInfo {
     pub h: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,

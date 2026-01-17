@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+OptionalAvatarDataPacket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OptionalAvatarDataPacket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub dataType: u32,

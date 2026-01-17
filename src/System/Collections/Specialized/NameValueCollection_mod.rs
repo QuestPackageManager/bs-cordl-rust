@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Specialized+NameValueCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NameValueCollection {
     __cordl_parent: crate::System::Collections::Specialized::NameObjectCollectionBase,
     pub _all: quest_hook::libil2cpp::Gc<

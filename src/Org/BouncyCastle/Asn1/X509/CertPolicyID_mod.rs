@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+CertPolicyID")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CertPolicyID {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
 }

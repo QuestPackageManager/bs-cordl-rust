@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+FixedString4096Bytes")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedString4096Bytes {
     pub utf8LengthInBytes: u16,
@@ -2023,7 +2026,10 @@ impl AsMut<crate::Unity::Collections::IUTF8Bytes>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedString4096Bytes+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedString4096Bytes_Enumerator {
     pub target: crate::Unity::Collections::FixedString4096Bytes,

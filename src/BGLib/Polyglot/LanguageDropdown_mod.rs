@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+Polyglot+LanguageDropdown")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LanguageDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown>,

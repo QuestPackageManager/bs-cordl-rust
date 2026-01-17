@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SafeHandle {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
     pub handle: crate::System::IntPtr,

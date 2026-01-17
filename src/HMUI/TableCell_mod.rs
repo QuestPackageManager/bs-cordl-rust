@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+TableCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TableCell {
     __cordl_parent: crate::HMUI::SelectableCell,
     pub _idx_k__BackingField: i32,

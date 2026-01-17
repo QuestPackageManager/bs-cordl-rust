@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpContentHeaders")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpContentHeaders {
     __cordl_parent: crate::System::Net::Http::Headers::HttpHeaders,
     pub content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,

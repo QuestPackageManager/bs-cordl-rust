@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CountingBloomFilter {
     pub m_Counters: crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer,
@@ -251,7 +254,10 @@ impl crate::UnityEngine::UIElements::CountingBloomFilter {
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CountingBloomFilter__m_Counters_e__FixedBuffer {
     pub FixedElementField: u8,

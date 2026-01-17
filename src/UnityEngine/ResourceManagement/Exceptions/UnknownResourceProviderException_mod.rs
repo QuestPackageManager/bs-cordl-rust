@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnknownResourceProviderException {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException,
     pub _Location_k__BackingField: quest_hook::libil2cpp::Gc<

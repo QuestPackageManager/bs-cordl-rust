@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BlocksBlade")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BlocksBlade {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _elementMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -248,7 +248,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BlocksBlade {
 }
 #[cfg(feature = "cordl_class_BlocksBlade+Element")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BlocksBlade_Element {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub idx: i32,

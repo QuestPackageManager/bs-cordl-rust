@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BoolSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoolSO {
     __cordl_parent: crate::GlobalNamespace::ObservableVariableSO_1<bool>,
 }

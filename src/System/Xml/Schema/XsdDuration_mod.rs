@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XsdDuration {
     pub years: i32,
@@ -653,10 +656,15 @@ impl crate::System::Xml::Schema::XsdDuration {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+DurationType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XsdDuration_DurationType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DayTimeDuration = 2i32,
     Duration = 0i32,
     YearMonthDuration = 1i32,
@@ -742,10 +750,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Schema::XsdDur
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XsdDuration+Parts")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XsdDuration_Parts {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HasDays = 4i32,
     HasHours = 8i32,
     HasMinutes = 16i32,

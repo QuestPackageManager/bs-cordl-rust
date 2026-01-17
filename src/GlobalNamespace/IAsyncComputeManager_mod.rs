@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_IAsyncComputeManager")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IAsyncComputeManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

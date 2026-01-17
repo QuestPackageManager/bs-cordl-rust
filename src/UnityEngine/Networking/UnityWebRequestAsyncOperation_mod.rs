@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequestAsyncOperation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityWebRequestAsyncOperation {
     __cordl_parent: crate::UnityEngine::AsyncOperation,
     pub _webRequest_k__BackingField:
@@ -154,7 +154,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Networking+UnityWebRequestAsyncOperation+BindingsMarshaller"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityWebRequestAsyncOperation_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

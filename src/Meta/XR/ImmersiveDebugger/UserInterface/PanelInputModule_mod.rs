@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PanelInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::OVRInputModule,
     pub _debugInterface: quest_hook::libil2cpp::Gc<
@@ -412,7 +412,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+PanelInputModule+RaycastComparer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PanelInputModule_RaycastComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

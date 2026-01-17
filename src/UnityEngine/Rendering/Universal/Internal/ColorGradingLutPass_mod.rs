@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+ColorGradingLutPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorGradingLutPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_LutBuilderLdr: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -379,7 +379,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+ColorGradingLutPass+PassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorGradingLutPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cameraData:
@@ -480,7 +480,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+ColorGradingLutPass+ShaderConstants"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorGradingLutPass_ShaderConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

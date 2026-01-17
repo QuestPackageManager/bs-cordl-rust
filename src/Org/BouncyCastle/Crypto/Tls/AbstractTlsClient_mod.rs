@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+AbstractTlsClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AbstractTlsClient {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsPeer,
     pub mCipherFactory:

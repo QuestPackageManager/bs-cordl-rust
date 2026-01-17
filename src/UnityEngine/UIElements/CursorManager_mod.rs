@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CursorManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CursorManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _isCursorOverriden_k__BackingField: bool,

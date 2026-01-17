@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DrawSkyboxPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DrawSkyboxPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
 }
@@ -325,7 +325,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DrawSkyboxPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DrawSkyboxPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub xr: quest_hook::libil2cpp::Gc<crate::UnityEngine::Experimental::Rendering::XRPass>,

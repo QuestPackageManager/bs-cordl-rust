@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Unity+Properties+IDictionaryElementProperty")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IDictionaryElementProperty {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

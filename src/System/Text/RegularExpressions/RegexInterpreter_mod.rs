@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexInterpreter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RegexInterpreter {
     __cordl_parent: crate::System::Text::RegularExpressions::RegexRunner,
     pub _code: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexCode>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+X509Pal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509Pal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

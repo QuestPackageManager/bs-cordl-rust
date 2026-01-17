@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+DecoderExceptionFallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecoderExceptionFallback {
     __cordl_parent: crate::System::Text::DecoderFallback,
 }

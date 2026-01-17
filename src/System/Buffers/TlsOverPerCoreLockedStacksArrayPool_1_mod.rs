@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsOverPerCoreLockedStacksArrayPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Buffers::ArrayPool_1<T>,
     pub _bucketArraySizes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -382,7 +382,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _arrays: quest_hook::libil2cpp::Gc<
@@ -612,10 +612,15 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,
@@ -708,7 +713,7 @@ unsafe impl quest_hook::libil2cpp::Return
     feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<T: quest_hook::libil2cpp::Type>
 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

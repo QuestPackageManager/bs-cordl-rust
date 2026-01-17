@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TrackLaneRingsManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackLaneRingsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _trackLaneRingPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrackLaneRing>,

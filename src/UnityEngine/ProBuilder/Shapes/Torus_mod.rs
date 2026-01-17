@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Torus")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Torus {
     __cordl_parent: crate::UnityEngine::ProBuilder::Shapes::Shape,
     pub m_Rows: i32,

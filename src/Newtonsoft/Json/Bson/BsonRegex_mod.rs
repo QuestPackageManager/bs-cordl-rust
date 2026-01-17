@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonRegex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BsonRegex {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonToken,
     pub _Pattern_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JToken")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JToken {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _parent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JContainer>,
@@ -4755,7 +4755,7 @@ impl AsMut<crate::System::ICloneable> for crate::Newtonsoft::Json::Linq::JToken 
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JToken+LineInfoAnnotation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JToken_LineInfoAnnotation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub LineNumber: i32,

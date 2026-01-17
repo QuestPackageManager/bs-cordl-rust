@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIRAtlasAllocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _maxAtlasSize_k__BackingField: i32,
@@ -536,7 +536,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::UIRAt
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIRAtlasAllocator_AreaNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rect: crate::UnityEngine::RectInt,
@@ -718,7 +718,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIRAtlasAllocator_Row {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _offsetX_k__BackingField: i32,

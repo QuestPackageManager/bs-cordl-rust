@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Texture2DParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Texture2DParameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,

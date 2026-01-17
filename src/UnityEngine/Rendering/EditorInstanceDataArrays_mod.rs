@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+EditorInstanceDataArrays")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct EditorInstanceDataArrays {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+EditorInstanceDataArrays")]
@@ -233,7 +236,10 @@ impl AsMut<crate::UnityEngine::Rendering::IDataArrays>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+EditorInstanceDataArrays+ReadOnly")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct EditorInstanceDataArrays_ReadOnly {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+EditorInstanceDataArrays+ReadOnly")]

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ColorAdjustments")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorAdjustments {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub postExposure: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::FloatParameter>,

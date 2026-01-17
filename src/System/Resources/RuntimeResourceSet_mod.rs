@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Resources+RuntimeResourceSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeResourceSet {
     __cordl_parent: crate::System::Resources::ResourceSet,
     pub _resCache: quest_hook::libil2cpp::Gc<

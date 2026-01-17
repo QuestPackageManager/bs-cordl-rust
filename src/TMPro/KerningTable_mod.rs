@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+KerningTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KerningTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub kerningPairs: quest_hook::libil2cpp::Gc<

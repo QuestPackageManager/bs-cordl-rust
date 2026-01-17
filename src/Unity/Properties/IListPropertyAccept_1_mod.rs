@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Unity+Properties+IListPropertyAccept_1")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IListPropertyAccept_1<TList: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

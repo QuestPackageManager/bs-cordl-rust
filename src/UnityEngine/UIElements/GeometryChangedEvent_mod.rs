@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+GeometryChangedEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GeometryChangedEvent {
     __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GeometryChangedEvent>,

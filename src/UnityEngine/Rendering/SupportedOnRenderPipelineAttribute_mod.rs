@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SupportedOnRenderPipelineAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SupportedOnRenderPipelineAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _renderPipelineTypes_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -263,10 +263,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+SupportedOnRenderPipelineAttribute+SupportedMode"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SupportedOnRenderPipelineAttribute_SupportedMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Supported = 1i32,
     SupportedByBaseClass = 2i32,
     Unsupported = 0i32,

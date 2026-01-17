@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Jobs+IJobFilterExtensions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IJobFilterExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -372,7 +372,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Jobs::IJobFilterExtensi
     }
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+IJobFilterExtensions+JobFilterProducer_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IJobFilterExtensions_JobFilterProducer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -660,7 +663,7 @@ impl<T: quest_hook::libil2cpp::Type>
     feature = "cordl_class_Unity+Jobs+IJobFilterExtensions+JobFilterProducer_1+ExecuteJobFunction"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JobFilterProducer_1_IJobFilterExtensions_ExecuteJobFunction<
     T: quest_hook::libil2cpp::Type,
 > {
@@ -955,7 +958,10 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+IJobFilterExtensions+JobFilterProducer_1+JobWrapper")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JobFilterProducer_1_IJobFilterExtensions_JobWrapper<T: quest_hook::libil2cpp::Type> {
     pub outputIndices: crate::Unity::Collections::NativeList_1<i32>,

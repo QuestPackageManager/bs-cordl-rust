@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+SliderData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderData {
     __cordl_parent: crate::BeatmapSaveDataVersion3::BaseSliderData,
     pub mu: f32,

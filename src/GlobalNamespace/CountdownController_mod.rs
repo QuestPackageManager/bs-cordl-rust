@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CountdownController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CountdownController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,

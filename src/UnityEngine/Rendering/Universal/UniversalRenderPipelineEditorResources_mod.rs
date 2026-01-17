@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineEditorResources"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineEditorResources {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub shaders: quest_hook::libil2cpp::Gc<
@@ -108,7 +108,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineEditorResources+MaterialResources"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineEditorResources_MaterialResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lit: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -206,7 +206,7 @@ for crate::UnityEngine::Rendering::Universal::UniversalRenderPipelineEditorResou
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineEditorResources+ShaderResources"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineEditorResources_ShaderResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub autodeskInteractivePS: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,

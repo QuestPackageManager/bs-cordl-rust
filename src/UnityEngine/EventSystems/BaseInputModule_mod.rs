@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+BaseInputModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_RaycastResultCache: quest_hook::libil2cpp::Gc<

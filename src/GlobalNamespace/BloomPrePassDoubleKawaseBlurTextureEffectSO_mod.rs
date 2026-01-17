@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassDoubleKawaseBlurTextureEffectSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassDoubleKawaseBlurTextureEffectSO {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassEffectSO,
     pub _bloom1KernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,

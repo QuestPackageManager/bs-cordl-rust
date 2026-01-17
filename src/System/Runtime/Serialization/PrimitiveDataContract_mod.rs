@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+PrimitiveDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrimitiveDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract,
     pub helper: quest_hook::libil2cpp::Gc<
@@ -522,7 +522,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_System+Runtime+Serialization+PrimitiveDataContract+PrimitiveDataContractCriticalHelper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrimitiveDataContract_PrimitiveDataContractCriticalHelper {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract_DataContractCriticalHelper,
     pub xmlFormatWriterMethod: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,

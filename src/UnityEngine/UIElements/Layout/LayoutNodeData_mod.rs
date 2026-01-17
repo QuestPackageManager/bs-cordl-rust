@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNodeData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LayoutNodeData {
     pub ResolvedDimensions: crate::UnityEngine::UIElements::Layout::FixedBuffer2_1<
@@ -202,10 +205,15 @@ impl crate::UnityEngine::UIElements::Layout::LayoutNodeData {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Layout+LayoutNodeData+FlexStatus")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LayoutNodeData_FlexStatus {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DependsOnParentSize = 64i32,
     Fixed = 8i32,
     HasNewLayout = 4i32,

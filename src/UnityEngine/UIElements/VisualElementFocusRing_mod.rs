@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElementFocusRing {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -540,10 +540,15 @@ impl AsMut<crate::UnityEngine::UIElements::IFocusRing>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum VisualElementFocusRing_DefaultFocusOrder {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ChildOrder = 0i32,
     PositionXY = 1i32,
     PositionYX = 2i32,
@@ -634,7 +639,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualElementFocusRing_FocusRingRecord {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AutoIndex: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Hashtable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hashtable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: quest_hook::libil2cpp::Gc<
@@ -1433,7 +1433,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 }
 #[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableDebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hashtable_HashtableDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1487,7 +1487,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hashtable_HashtableEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -1801,7 +1801,7 @@ impl AsMut<crate::System::ICloneable>
 }
 #[cfg(feature = "cordl_class_System+Collections+Hashtable+KeyCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hashtable_KeyCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -2042,7 +2042,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_System+Collections+Hashtable+ValueCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Hashtable_ValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -2282,7 +2282,10 @@ impl AsMut<crate::System::Collections::IEnumerable>
     }
 }
 #[cfg(feature = "cordl_class_System+Collections+Hashtable+bucket")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Hashtable_bucket {
     pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

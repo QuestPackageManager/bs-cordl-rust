@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberFlatList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTypeMapMemberFlatList {
     __cordl_parent: crate::System::Xml::Serialization::XmlTypeMapMemberExpandable,
     pub _listMap: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::ListMap>,

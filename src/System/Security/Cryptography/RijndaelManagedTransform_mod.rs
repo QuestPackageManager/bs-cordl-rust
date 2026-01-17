@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+RijndaelManagedTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RijndaelManagedTransform {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_cipherMode: crate::System::Security::Cryptography::CipherMode,

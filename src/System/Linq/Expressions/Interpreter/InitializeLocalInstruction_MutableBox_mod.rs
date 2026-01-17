@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableBox"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InitializeLocalInstruction_MutableBox {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,

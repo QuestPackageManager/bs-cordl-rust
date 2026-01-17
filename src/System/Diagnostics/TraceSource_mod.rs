@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+TraceSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TraceSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub internalSwitch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::SourceSwitch>,

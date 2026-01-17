@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MonoBehaviourCallbackHooks")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoBehaviourCallbackHooks {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MonoBehaviourCallbackHooks>,

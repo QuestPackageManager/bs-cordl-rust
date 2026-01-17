@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnSortIndicator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnHeaderColumnSortIndicator {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_IndexLabel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,

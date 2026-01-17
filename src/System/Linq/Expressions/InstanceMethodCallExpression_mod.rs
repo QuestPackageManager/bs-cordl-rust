@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+InstanceMethodCallExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InstanceMethodCallExpression {
     __cordl_parent: crate::System::Linq::Expressions::MethodCallExpression,
     pub _instance: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,

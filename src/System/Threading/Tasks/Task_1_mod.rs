@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+Task_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Task_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Threading::Tasks::Task,
     pub m_result: TResult,
@@ -1324,7 +1324,7 @@ impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Task_1_TaskWhenAnyCast<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,

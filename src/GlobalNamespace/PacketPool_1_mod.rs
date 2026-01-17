@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PacketPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PacketPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bag: quest_hook::libil2cpp::Gc<crate::System::Collections::Concurrent::ConcurrentBag_1<T>>,

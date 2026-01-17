@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllerProfileInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ControllerProfileInstaller {
     __cordl_parent: crate::Zenject::Installer_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfileInstaller>,

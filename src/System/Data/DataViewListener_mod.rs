@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataViewListener")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataViewListener {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dvWeak: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,

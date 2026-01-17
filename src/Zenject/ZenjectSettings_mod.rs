@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ZenjectSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ZenjectSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ensureDeterministicDestructionOrderOnApplicationQuit: bool,
@@ -270,7 +270,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectSettings {
 }
 #[cfg(feature = "cordl_class_Zenject+ZenjectSettings+SignalSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ZenjectSettings_SignalSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _defaultSyncMode: crate::Zenject::SignalDefaultSyncModes,

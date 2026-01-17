@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPathBuilderException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PkixCertPathBuilderException {
     __cordl_parent: crate::Org::BouncyCastle::Security::GeneralSecurityException,
 }

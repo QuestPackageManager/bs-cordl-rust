@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Interop")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Interop {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -262,10 +262,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Error")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Interop_Error {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     _cordl_E2BIG = 65537i32,
     _cordl_EACCES = 65538i32,
     _cordl_EADDRINUSE = 65539i32,
@@ -421,7 +426,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_Er
     }
 }
 #[cfg(feature = "cordl_class_Interop+ErrorInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Interop_ErrorInfo {
     pub _error: crate::GlobalNamespace::Interop_Error,
@@ -658,7 +666,7 @@ impl crate::GlobalNamespace::Interop_ErrorInfo {
 }
 #[cfg(feature = "cordl_class_Interop+Sys")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Interop_Sys {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1457,7 +1465,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+DirectoryEntry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Sys_Interop_DirectoryEntry {
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1582,7 +1593,10 @@ impl crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatus")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Sys_Interop_FileStatus {
     pub Flags: crate::GlobalNamespace::Sys_Interop_FileStatusFlags,
@@ -1689,10 +1703,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::Sys_
 #[cfg(feature = "Interop+Sys+FileStatus")]
 impl crate::GlobalNamespace::Sys_Interop_FileStatus {}
 #[cfg(feature = "cordl_class_Interop+Sys+FileStatusFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Sys_Interop_FileStatusFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HasBirthTime = 1i32,
     None = 0i32,
 }
@@ -1777,10 +1796,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Sys_Intero
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+NodeType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Sys_Interop_NodeType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DT_BLK = 6i32,
     DT_CHR = 2i32,
     DT_DIR = 4i32,
@@ -1866,10 +1890,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Sys_Intero
     }
 }
 #[cfg(feature = "cordl_class_Interop+Sys+Permissions")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Sys_Interop_Permissions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Mask = 511i32,
     S_IRGRP = 32i32,
     S_IROTH = 4i32,

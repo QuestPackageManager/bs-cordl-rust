@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerResultsPyramidView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerResultsPyramidView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _multiplayerOffsetByLocalPlayerPosition: quest_hook::libil2cpp::Gc<

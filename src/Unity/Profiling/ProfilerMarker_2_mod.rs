@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarker_2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProfilerMarker_2<TP1: quest_hook::libil2cpp::Type, TP2: quest_hook::libil2cpp::Type> {
     __cordl_phantom_TP1: std::marker::PhantomData<TP1>,
@@ -302,7 +305,10 @@ impl<TP1: quest_hook::libil2cpp::Type, TP2: quest_hook::libil2cpp::Type>
     }
 }
 #[cfg(feature = "cordl_class_Unity+Profiling+ProfilerMarker_2+AutoScope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProfilerMarker_2_AutoScope<
     TP1: quest_hook::libil2cpp::Type,

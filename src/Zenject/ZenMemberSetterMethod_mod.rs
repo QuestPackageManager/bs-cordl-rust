@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+ZenMemberSetterMethod")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ZenMemberSetterMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }

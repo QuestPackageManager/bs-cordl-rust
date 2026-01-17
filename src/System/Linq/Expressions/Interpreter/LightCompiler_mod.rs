@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightCompiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _instructions:
@@ -2765,7 +2765,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightCompiler_QuoteVisitor {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
     pub _definedParameters: quest_hook::libil2cpp::Gc<

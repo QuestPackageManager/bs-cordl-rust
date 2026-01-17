@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JsonParser {
     pub m_Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -538,7 +541,10 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JsonParser_JsonString {
     pub text: crate::UnityEngine::InputSystem::Utilities::Substring,
@@ -848,7 +854,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct JsonParser_JsonValue {
     pub _cordl_type: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType,
@@ -1460,10 +1469,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum JsonParser_JsonValueType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Any = 7i32,
     Array = 5i32,
     Bool = 1i32,

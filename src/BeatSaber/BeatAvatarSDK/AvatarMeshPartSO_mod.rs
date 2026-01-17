@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarMeshPartSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarMeshPartSO {
     __cordl_parent: crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,

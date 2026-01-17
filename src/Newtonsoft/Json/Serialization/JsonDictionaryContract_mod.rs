@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonDictionaryContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonDictionaryContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
     pub _DictionaryKeyResolver_k__BackingField: quest_hook::libil2cpp::Gc<

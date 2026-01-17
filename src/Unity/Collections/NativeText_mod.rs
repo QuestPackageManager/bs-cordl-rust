@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+NativeText")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeText {
     pub m_Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2170,7 +2173,10 @@ impl AsMut<crate::Unity::Collections::IUTF8Bytes> for crate::Unity::Collections:
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeText+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeText_Enumerator {
     pub target: crate::Unity::Collections::NativeText_ReadOnly,
@@ -2483,7 +2489,10 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Collections::NativeText
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+NativeText+ReadOnly")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NativeText_ReadOnly {
     pub m_Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

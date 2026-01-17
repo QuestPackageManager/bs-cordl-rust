@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DoubleField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<f64>,
 }
@@ -256,7 +256,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Doubl
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+DoubleInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DoubleField_DoubleInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f64>,
 }
@@ -474,7 +474,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Doubl
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DoubleField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField>,
@@ -560,7 +560,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Doubl
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DoubleField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DoubleField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         f64,

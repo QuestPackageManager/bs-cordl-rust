@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Primes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -506,7 +506,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::Prime
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+MROutput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Primes_MROutput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mProvablyComposite: bool,
@@ -751,7 +751,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::Prime
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+Primes+STOutput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Primes_STOutput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mPrime: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,

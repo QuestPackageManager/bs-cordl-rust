@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionLevelNoTransitionInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionLevelNoTransitionInstaller {
     __cordl_parent: crate::Zenject::NoTransitionInstaller,
     pub _beatmapLevelSo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,

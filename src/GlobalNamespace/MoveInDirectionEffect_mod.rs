@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MoveInDirectionEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MoveInDirectionEffect {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

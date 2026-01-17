@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+TriangulationConstraint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TriangulationConstraint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub P: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint>,

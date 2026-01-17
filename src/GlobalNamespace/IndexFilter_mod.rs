@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IndexFilter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IndexFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _random: crate::GlobalNamespace::IndexFilter_IndexFilterRandomType,
@@ -497,10 +497,15 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::GlobalNamespace::
     }
 }
 #[cfg(feature = "cordl_class_IndexFilter+IndexFilterLimitAlsoAffectType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum IndexFilter_IndexFilterLimitAlsoAffectType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Distribution = 2i32,
     Duration = 1i32,
     None = 0i32,
@@ -590,10 +595,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_IndexFilter+IndexFilterRandomType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum IndexFilter_IndexFilterRandomType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     KeepOrder = 1i32,
     NoRandom = 0i32,
     RandomElements = 2i32,

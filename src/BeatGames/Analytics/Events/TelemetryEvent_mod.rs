@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatGames+Analytics+Events+TelemetryEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TelemetryEvent {
     __cordl_parent: crate::OSCE::Analytics::BaseAnalyticsEvent,
     pub event: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

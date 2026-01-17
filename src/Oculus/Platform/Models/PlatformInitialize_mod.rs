@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+PlatformInitialize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformInitialize {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Result: crate::Oculus::Platform::PlatformInitializeResult,

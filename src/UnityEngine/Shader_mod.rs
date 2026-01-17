@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Shader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Shader {
     __cordl_parent: crate::UnityEngine::Object,
 }

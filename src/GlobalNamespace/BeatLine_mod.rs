@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatLine")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatLine {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _tubeBloomPrePassLight:
@@ -229,7 +229,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLine {
 }
 #[cfg(feature = "cordl_class_BeatLine+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatLine_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine>,

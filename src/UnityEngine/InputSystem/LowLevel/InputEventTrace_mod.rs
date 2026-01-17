@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputEventTrace {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ChangeCounter: i32,
@@ -1300,7 +1300,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputEventTrace_DeviceInfo {
     pub m_DeviceId: i32,
@@ -1598,7 +1601,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputEventTrace_Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Trace:
@@ -1869,10 +1872,15 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputEventTrace_FileFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FixedUpdate = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
@@ -1961,7 +1969,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputEventTrace_ReplayController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _finished_k__BackingField: bool,

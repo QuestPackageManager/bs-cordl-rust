@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+BpmEventConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BpmEventConverter {
     __cordl_parent: crate::GlobalNamespace::BeatToTimeConverter,
     pub _songFrequency: i32,

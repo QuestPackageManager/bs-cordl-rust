@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+CAPI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CAPI {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -24315,7 +24315,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::CAPI {
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+CAPI+FilterCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CAPI_FilterCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -24517,7 +24517,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::CAPI_FilterC
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+CAPI+OculusInitParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CAPI_OculusInitParams {
     pub sType: i32,
@@ -24613,7 +24616,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Oculus::Platform::CAP
 #[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
 impl crate::Oculus::Platform::CAPI_OculusInitParams {}
 #[cfg(feature = "cordl_class_Oculus+Platform+CAPI+ovrKeyValuePair")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CAPI_ovrKeyValuePair {
     pub key_: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -24791,7 +24797,10 @@ impl crate::Oculus::Platform::CAPI_ovrKeyValuePair {
     }
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+CAPI+ovrNetSyncVec3")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CAPI_ovrNetSyncVec3 {
     pub x: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tweening+FloatTween")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatTween {
     __cordl_parent: crate::Tweening::Tween_1<f32>,
 }

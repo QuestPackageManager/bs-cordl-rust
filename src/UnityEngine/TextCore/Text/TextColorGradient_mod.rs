@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextColorGradient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextColorGradient {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub colorMode: crate::UnityEngine::TextCore::Text::ColorGradientMode,

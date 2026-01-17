@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SimpleTextTableCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimpleTextTableCell {
     __cordl_parent: crate::HMUI::TableCell,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

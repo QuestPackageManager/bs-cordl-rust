@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Policy+Evidence")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Evidence {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _locked: bool,
@@ -227,7 +227,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::System::Security:
 }
 #[cfg(feature = "cordl_class_System+Security+Policy+Evidence+EvidenceEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Evidence_EvidenceEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub currentEnum: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,

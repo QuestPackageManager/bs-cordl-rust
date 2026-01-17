@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionObjectivesGameUIController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionObjectivesGameUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionObjectiveGameUIViewPrefab:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScreenBackButtonAnimationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenBackButtonAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _animator: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
@@ -137,10 +137,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_ScreenBackButtonAnimationController+AnimationType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenBackButtonAnimationController_AnimationType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FadeIn = 0i32,
     FadeOut = 1i32,
     MoveIn = 2i32,

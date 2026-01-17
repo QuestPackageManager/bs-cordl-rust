@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ErrorEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ErrorEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _CurrentObject_k__BackingField:

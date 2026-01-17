@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+ValidationEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ValidationEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub ex: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaException>,

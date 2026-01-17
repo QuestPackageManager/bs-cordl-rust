@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+Installer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Installer {
     __cordl_parent: crate::Zenject::InstallerBase,
 }

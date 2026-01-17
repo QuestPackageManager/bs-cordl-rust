@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettings_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettings_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Settings: quest_hook::libil2cpp::Gc<
@@ -403,7 +403,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::Rendering::IDebug
     feature = "cordl_class_UnityEngine+Rendering+DebugDisplaySettings_1+IDebugDisplaySettingsDataComparer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugDisplaySettings_1_IDebugDisplaySettingsDataComparer<T: quest_hook::libil2cpp::Type>
 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

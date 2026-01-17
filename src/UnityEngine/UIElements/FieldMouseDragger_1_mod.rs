@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FieldMouseDragger_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FieldMouseDragger_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseFieldMouseDragger,
     pub m_DrivenField: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IValueField_1<T>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+Internal+LookupId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LookupId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,

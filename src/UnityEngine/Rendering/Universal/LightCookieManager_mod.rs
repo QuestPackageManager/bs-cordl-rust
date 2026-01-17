@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightCookieManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AdditionalLightsCookieAtlas:
@@ -877,7 +877,10 @@ impl AsMut<crate::System::IDisposable>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager+LightCookieMapping"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LightCookieManager_LightCookieMapping {
     pub visibleLightIndex: u16,
@@ -998,7 +1001,7 @@ impl crate::UnityEngine::Rendering::Universal::LightCookieManager_LightCookieMap
     feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager+LightCookieShaderData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightCookieManager_LightCookieShaderData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Size: i32,
@@ -1378,10 +1381,15 @@ impl AsMut<crate::System::IDisposable>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager+LightCookieShaderFormat"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LightCookieManager_LightCookieShaderFormat {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Alpha = 1i32,
     None = -1i32,
     RGB = 0i32,
@@ -1482,7 +1490,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager+Settings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LightCookieManager_Settings {
     pub atlas: crate::UnityEngine::Rendering::Universal::Settings_LightCookieManager_AtlasSettings,
@@ -1619,7 +1630,7 @@ impl crate::UnityEngine::Rendering::Universal::LightCookieManager_Settings {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager+ShaderProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightCookieManager_ShaderProperty {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1677,7 +1688,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager+WorkMemory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightCookieManager_WorkMemory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightMappings: quest_hook::libil2cpp::Gc<
@@ -1790,7 +1801,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager+WorkSlice_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LightCookieManager_WorkSlice_1<T: quest_hook::libil2cpp::Type> {
     pub m_Data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -2121,7 +2135,10 @@ impl<T: quest_hook::libil2cpp::Type>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+LightCookieManager+Settings+AtlasSettings"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Settings_LightCookieManager_AtlasSettings {
     pub resolution: crate::UnityEngine::Vector2Int,

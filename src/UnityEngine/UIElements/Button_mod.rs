@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Button")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Button {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement,
     pub m_Clickable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Clickable>,
@@ -422,7 +422,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Butto
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Button+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Button_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Button>,
@@ -506,7 +506,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Butto
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Button+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Button_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement_UxmlTraits,
     pub m_IconImage:

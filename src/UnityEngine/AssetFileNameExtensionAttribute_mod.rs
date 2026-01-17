@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AssetFileNameExtensionAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssetFileNameExtensionAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _preferredExtension_k__BackingField:

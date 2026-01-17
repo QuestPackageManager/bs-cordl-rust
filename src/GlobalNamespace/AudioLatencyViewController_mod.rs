@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AudioLatencyViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioLatencyViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _setupCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,

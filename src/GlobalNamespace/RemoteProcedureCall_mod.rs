@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RemoteProcedureCall")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemoteProcedureCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _syncTime_k__BackingField: i64,
@@ -332,7 +332,7 @@ impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
 }
 #[cfg(feature = "cordl_class_RemoteProcedureCall+TypeWrapper_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RemoteProcedureCall_TypeWrapper_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _v: T,

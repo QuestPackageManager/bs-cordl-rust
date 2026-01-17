@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConnectFaceRebuildData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub faceRebuildData: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,

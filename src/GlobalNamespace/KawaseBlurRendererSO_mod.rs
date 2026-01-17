@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KawaseBlurRendererSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _kawaseBlurShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -487,7 +487,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::KawaseBlurRen
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+BloomKernel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KawaseBlurRendererSO_BloomKernel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub kernelSize: crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize,
@@ -570,10 +570,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+KernelSize")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum KawaseBlurRendererSO_KernelSize {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Kernel127 = 5i32,
     Kernel135 = 6i32,
     Kernel143 = 7i32,
@@ -668,10 +673,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+Pass")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum KawaseBlurRendererSO_Pass {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AlphaAndDepthWeights = 4i32,
     AlphaWeights = 0i32,
     Blur = 1i32,
@@ -755,10 +765,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::KawaseBlur
     }
 }
 #[cfg(feature = "cordl_class_KawaseBlurRendererSO+WeightsType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum KawaseBlurRendererSO_WeightsType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AlphaAndDepthWeights = 2i32,
     AlphaWeights = 1i32,
     None = 0i32,

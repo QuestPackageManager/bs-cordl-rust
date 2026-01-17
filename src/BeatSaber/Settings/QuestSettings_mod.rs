@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct QuestSettings {
     pub cpuLevel: crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel,
@@ -103,10 +106,15 @@ impl crate::BeatSaber::Settings::QuestSettings {
         crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel;
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum QuestSettings_FoveatedRenderingLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 3i32,
     HighTop = 4i32,
     Low = 1i32,
@@ -198,10 +206,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum QuestSettings_SuggestedPerformanceLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Boost = 4i32,
     Default = 0i32,
     PowerSavings = 1i32,

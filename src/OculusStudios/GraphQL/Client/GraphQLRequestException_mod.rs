@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+GraphQLRequestException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphQLRequestException {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLException,
     pub graphErrorCode: crate::OculusStudios::GraphQL::ClientInterface::GraphErrorCode,

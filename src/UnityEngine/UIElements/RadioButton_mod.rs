@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RadioButton {
     __cordl_parent: crate::UnityEngine::UIElements::BaseBoolField,
     pub m_CheckmarkBackground:
@@ -368,7 +368,7 @@ impl AsMut<crate::UnityEngine::UIElements::IGroupBoxOption>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RadioButton_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton>,
@@ -454,7 +454,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Radio
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButton+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RadioButton_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
         bool,

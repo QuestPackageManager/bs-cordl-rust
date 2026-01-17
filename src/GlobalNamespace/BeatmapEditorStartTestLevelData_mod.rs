@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapEditorStartTestLevelData {
     pub fpfc: crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData,
@@ -112,7 +115,10 @@ impl crate::GlobalNamespace::BeatmapEditorStartTestLevelData {
     pub type RecordingData = crate::GlobalNamespace::BeatmapEditorStartTestLevelData_RecordingData;
 }
 #[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+FpfcData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapEditorStartTestLevelData_FpfcData {
     pub enabled: bool,
@@ -217,7 +223,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "BeatmapEditorStartTestLevelData+FpfcData")]
 impl crate::GlobalNamespace::BeatmapEditorStartTestLevelData_FpfcData {}
 #[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+OverdrawData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapEditorStartTestLevelData_OverdrawData {
     pub enabled: bool,
@@ -324,7 +333,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "BeatmapEditorStartTestLevelData+OverdrawData")]
 impl crate::GlobalNamespace::BeatmapEditorStartTestLevelData_OverdrawData {}
 #[cfg(feature = "cordl_class_BeatmapEditorStartTestLevelData+RecordingData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapEditorStartTestLevelData_RecordingData {
     pub recorderMode: crate::GlobalNamespace::VRControllersRecorder_Mode,

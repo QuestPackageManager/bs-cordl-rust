@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ObjectWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_objectQueue: quest_hook::libil2cpp::Gc<crate::System::Collections::Queue>,

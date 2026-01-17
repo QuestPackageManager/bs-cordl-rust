@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScreenDisplacementEffectDrawPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenDisplacementEffectDrawPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub _layerMask: crate::UnityEngine::LayerMask,
@@ -191,7 +191,7 @@ impl AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_ScreenDisplacementEffectDrawPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenDisplacementEffectDrawPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rendererListHandle: crate::UnityEngine::Rendering::RenderGraphModule::RendererListHandle,

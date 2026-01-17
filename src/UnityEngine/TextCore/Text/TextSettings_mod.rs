@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1466,7 +1466,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextCore::Text::T
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings+FontReferenceMap")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TextSettings_FontReferenceMap {
     pub font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,

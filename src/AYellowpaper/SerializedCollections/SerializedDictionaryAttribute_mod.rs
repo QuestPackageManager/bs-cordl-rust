@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AYellowpaper+SerializedCollections+SerializedDictionaryAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializedDictionaryAttribute {
     __cordl_parent: crate::System::Attribute,
     pub KeyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

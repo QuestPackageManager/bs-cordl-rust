@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseCompositeField_3<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -424,7 +424,10 @@ impl<
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BaseCompositeField_3_FieldDescription<
     TValueType: quest_hook::libil2cpp::Type,
@@ -693,7 +696,7 @@ impl<
     feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FieldDescription_BaseCompositeField_3_WriteDelegate<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,

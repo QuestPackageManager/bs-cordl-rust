@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScoringElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoringElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _noteData_k__BackingField: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
@@ -499,7 +499,7 @@ impl
 }
 #[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoringElement_Pool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::MemoryPool_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,

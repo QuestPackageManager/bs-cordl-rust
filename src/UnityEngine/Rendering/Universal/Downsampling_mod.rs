@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Downsampling")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Downsampling {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     _2xBilinear = 1i32,
     _4xBilinear = 3i32,

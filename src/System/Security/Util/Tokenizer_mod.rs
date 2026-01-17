@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Util+Tokenizer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tokenizer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub LineNo: i32,
@@ -241,7 +241,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::Util::Tokeni
     }
 }
 #[cfg(feature = "cordl_class_System+Security+Util+Tokenizer+ITokenReader")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct Tokenizer_ITokenReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -315,7 +315,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::Util::Tokeni
 }
 #[cfg(feature = "cordl_class_System+Security+Util+Tokenizer+StreamTokenReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tokenizer_StreamTokenReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _in: quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>,
@@ -461,7 +461,7 @@ impl AsMut<crate::System::Security::Util::Tokenizer_ITokenReader>
 }
 #[cfg(feature = "cordl_class_System+Security+Util+Tokenizer+StringMaker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tokenizer_StringMaker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub aStrings: quest_hook::libil2cpp::Gc<
@@ -651,10 +651,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::Util::Tokeni
     }
 }
 #[cfg(feature = "cordl_class_System+Security+Util+Tokenizer+TokenSource")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Tokenizer_TokenSource {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ASCIIByteArray = 2i32,
     CharArray = 3i32,
     NestedStrings = 5i32,

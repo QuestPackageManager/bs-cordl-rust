@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InfoBoxAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -91,10 +91,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGLib::UnityExtension::InfoBox
     }
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InfoBoxAttribute_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Error = 3i32,
     Info = 1i32,
     None = 0i32,

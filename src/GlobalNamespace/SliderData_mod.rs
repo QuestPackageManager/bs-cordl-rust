@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SliderData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SliderData {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectData,
     pub _colorType_k__BackingField: crate::GlobalNamespace::ColorType,
@@ -1609,10 +1609,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SliderData {
     }
 }
 #[cfg(feature = "cordl_class_SliderData+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SliderData_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Burst = 1i32,
     Normal = 0i32,
 }

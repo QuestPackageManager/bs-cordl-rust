@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVROverlay {
     pub FindOverlay: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::IVROverlay__FindOverlay>,
@@ -433,7 +436,7 @@ impl crate::OVR::OpenVR::IVROverlay {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_ClearOverlayTexture")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__ClearOverlayTexture {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -602,7 +605,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__Clear
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_CloseMessageOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__CloseMessageOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -765,7 +768,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__Close
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_ComputeOverlayIntersection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__ComputeOverlayIntersection {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -971,7 +974,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_CreateDashboardOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__CreateDashboardOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1177,7 +1180,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__Creat
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_CreateOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__CreateOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1368,7 +1371,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__Creat
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_DestroyOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__DestroyOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1537,7 +1540,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__Destr
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_FindOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__FindOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1714,7 +1717,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__FindO
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetDashboardOverlaySceneProcess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetDashboardOverlaySceneProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1895,7 +1898,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetGamepadFocusOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetGamepadFocusOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2056,7 +2059,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetGa
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetHighQualityOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetHighQualityOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2217,7 +2220,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetHi
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetKeyboardText")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetKeyboardText {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2391,7 +2394,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetKe
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayAlpha")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayAlpha {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2568,7 +2571,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayAutoCurveDistanceRangeInMeters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2775,7 +2778,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2967,7 +2970,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayDualAnalogTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayDualAnalogTransform {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3161,7 +3164,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayErrorNameFromEnum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayErrorNameFromEnum {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3336,7 +3339,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayFlag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayFlag {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3520,7 +3523,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayFlags")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayFlags {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3696,7 +3699,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayImageData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayImageData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3901,7 +3904,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayInputMethod")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayInputMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4078,7 +4081,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayKey")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayKey {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4274,7 +4277,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayMouseScale")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayMouseScale {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4451,7 +4454,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4647,7 +4650,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayRenderModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayRenderModel {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -4852,7 +4855,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayRenderingPid")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayRenderingPid {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5017,7 +5020,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlaySortOrder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlaySortOrder {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5194,7 +5197,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTexelAspect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTexelAspect {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5371,7 +5374,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTexture")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTexture {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5629,7 +5632,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTextureBounds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTextureBounds {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -5817,7 +5820,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTextureColorSpace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTextureColorSpace {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6001,7 +6004,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTextureSize")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTextureSize {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6185,7 +6188,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTransformAbsolute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTransformAbsolute {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6414,7 +6417,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTransformOverlayRelative")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTransformOverlayRelative {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6631,7 +6634,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceComponent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTransformTrackedDeviceComponent {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -6840,7 +6843,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTransformTrackedDeviceRelative")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTransformTrackedDeviceRelative {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7059,7 +7062,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayTransformType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayTransformType {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7245,7 +7248,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetOverlayWidthInMeters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetOverlayWidthInMeters {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7425,7 +7428,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__GetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetPrimaryDashboardDevice")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetPrimaryDashboardDevice {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7590,7 +7593,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_GetTransformForOverlayCoordinates")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__GetTransformForOverlayCoordinates {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7797,7 +7800,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_HideKeyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__HideKeyboard {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -7960,7 +7963,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__HideK
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_HideOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__HideOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8129,7 +8132,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__HideO
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_IsActiveDashboardOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__IsActiveDashboardOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8298,7 +8301,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_IsDashboardVisible")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__IsDashboardVisible {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8459,7 +8462,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__IsDas
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_IsHoverTargetOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__IsHoverTargetOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8624,7 +8627,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__IsHov
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_IsOverlayVisible")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__IsOverlayVisible {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8789,7 +8792,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__IsOve
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_MoveGamepadFocusToNeighbor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__MoveGamepadFocusToNeighbor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -8968,7 +8971,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_PollNextOverlayEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__PollNextOverlayEvent {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -9152,7 +9155,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__PollN
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_ReleaseNativeOverlayHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__ReleaseNativeOverlayHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -9335,7 +9338,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetDashboardOverlaySceneProcess")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetDashboardOverlaySceneProcess {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -9514,7 +9517,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetGamepadFocusOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetGamepadFocusOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -9683,7 +9686,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetGa
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetHighQualityOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetHighQualityOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -9852,7 +9855,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetHi
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetKeyboardPositionForOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetKeyboardPositionForOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -10032,7 +10035,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetKeyboardTransformAbsolute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetKeyboardTransformAbsolute {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -10232,7 +10235,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayAlpha")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayAlpha {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -10406,7 +10409,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayAutoCurveDistanceRangeInMeters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -10602,7 +10605,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayColor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -10787,7 +10790,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayDualAnalogTransform")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayDualAnalogTransform {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -10978,7 +10981,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayFlag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayFlag {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -11160,7 +11163,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayFromFile")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayFromFile {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -11336,7 +11339,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayInputMethod")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayInputMethod {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -11512,7 +11515,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayIntersectionMask")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayIntersectionMask {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -11731,7 +11734,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayMouseScale")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayMouseScale {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -11908,7 +11911,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -12084,7 +12087,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayNeighbor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayNeighbor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -12263,7 +12266,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayRaw")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayRaw {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -12462,7 +12465,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayRenderModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayRenderModel {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -12646,7 +12649,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayRenderingPid")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayRenderingPid {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -12820,7 +12823,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlaySortOrder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlaySortOrder {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -12995,7 +12998,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayTexelAspect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayTexelAspect {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -13170,7 +13173,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayTexture")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayTexture {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -13347,7 +13350,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayTextureBounds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayTextureBounds {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -13535,7 +13538,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayTextureColorSpace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayTextureColorSpace {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -13718,7 +13721,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayTransformAbsolute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayTransformAbsolute {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -13927,7 +13930,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayTransformOverlayRelative")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayTransformOverlayRelative {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -14136,7 +14139,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceComponent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayTransformTrackedDeviceComponent {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -14332,7 +14335,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayTransformTrackedDeviceRelative")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayTransformTrackedDeviceRelative {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -14543,7 +14546,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_SetOverlayWidthInMeters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__SetOverlayWidthInMeters {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -14720,7 +14723,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__SetOv
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_ShowDashboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__ShowDashboard {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -14892,7 +14895,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__ShowD
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_ShowKeyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__ShowKeyboard {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -15112,7 +15115,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__ShowK
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_ShowKeyboardForOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__ShowKeyboardForOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -15338,7 +15341,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__ShowK
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_ShowMessageOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__ShowMessageOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -15554,7 +15557,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVROverlay__ShowM
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVROverlay+_ShowOverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVROverlay__ShowOverlay {
     __cordl_parent: crate::System::MulticastDelegate,
 }

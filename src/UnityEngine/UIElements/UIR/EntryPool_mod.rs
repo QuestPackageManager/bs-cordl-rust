@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+EntryPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EntryPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ThreadEntries: quest_hook::libil2cpp::Gc<

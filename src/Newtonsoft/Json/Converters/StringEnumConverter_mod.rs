@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+StringEnumConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StringEnumConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
     pub _NamingStrategy_k__BackingField:

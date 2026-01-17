@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+Common+ByteStorage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ByteStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
     pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

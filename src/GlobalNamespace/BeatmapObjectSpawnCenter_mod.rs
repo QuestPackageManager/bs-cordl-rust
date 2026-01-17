@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapObjectSpawnCenter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectSpawnCenter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _distances: quest_hook::libil2cpp::Gc<
@@ -230,7 +230,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapObject
 }
 #[cfg(feature = "cordl_class_BeatmapObjectSpawnCenter+PlayerCountToDistance")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectSpawnCenter_PlayerCountToDistance {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerCount: i32,

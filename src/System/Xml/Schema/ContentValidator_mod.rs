@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+ContentValidator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContentValidator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub contentType: crate::System::Xml::Schema::XmlSchemaContentType,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerBadgeDataMinMaxFloatSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerBadgeDataMinMaxFloatSO {
     __cordl_parent: crate::GlobalNamespace::MultiplayerBadgeDataSO,
     pub _minMax: crate::GlobalNamespace::MultiplayerBadgeMinMax,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PosesRecorder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PosesRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioTimeSyncController:

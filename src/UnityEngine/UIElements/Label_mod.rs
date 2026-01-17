@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Label")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Label {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement,
 }
@@ -117,7 +117,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Label
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Label+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Label_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
@@ -201,7 +201,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Label
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Label+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Label_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextElement_UxmlTraits,
 }

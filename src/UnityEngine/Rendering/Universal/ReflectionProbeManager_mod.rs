@@ -1,7 +1,10 @@
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe+_dataIndices_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CachedProbe_ReflectionProbeManager__dataIndices_e__FixedBuffer {
     pub FixedElementField: i32,
@@ -120,7 +123,10 @@ impl crate::UnityEngine::Rendering::Universal::CachedProbe_ReflectionProbeManage
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe+_levels_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CachedProbe_ReflectionProbeManager__levels_e__FixedBuffer {
     pub FixedElementField: i32,
@@ -237,7 +243,10 @@ for crate::UnityEngine::Rendering::Universal::CachedProbe_ReflectionProbeManager
 )]
 impl crate::UnityEngine::Rendering::Universal::CachedProbe_ReflectionProbeManager__levels_e__FixedBuffer {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ReflectionProbeManager {
     pub m_Resolution: crate::Unity::Mathematics::int2,
@@ -567,7 +576,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+CachedProbe")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ReflectionProbeManager_CachedProbe {
     pub updateCount: u32,
@@ -691,7 +703,7 @@ impl crate::UnityEngine::Rendering::Universal::ReflectionProbeManager_CachedProb
     feature = "cordl_class_UnityEngine+Rendering+Universal+ReflectionProbeManager+ShaderProperties"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionProbeManager_ShaderProperties {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

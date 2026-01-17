@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PackPromoInfoSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackPromoInfoSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _promoBannerInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PromoBannerInfoSO>,
@@ -171,7 +171,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackPromoInfo
 }
 #[cfg(feature = "cordl_class_PackPromoInfoSO+LevelPromoInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackPromoInfoSO_LevelPromoInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

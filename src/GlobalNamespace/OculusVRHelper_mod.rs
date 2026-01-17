@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusVRHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusVRHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub inputFocusWasCapturedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Serialization+TypeData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

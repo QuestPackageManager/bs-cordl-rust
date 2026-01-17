@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FadeInOnSceneTransitionFinished")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FadeInOnSceneTransitionFinished {
     __cordl_parent: crate::GlobalNamespace::ZenjectSafeBehaviour,
     pub _fadeInOut: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FadeInOutController>,

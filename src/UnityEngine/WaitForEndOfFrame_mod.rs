@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+WaitForEndOfFrame")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaitForEndOfFrame {
     __cordl_parent: crate::UnityEngine::YieldInstruction,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TutorialBeatmapObjectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
     pub _tutorialNotePoolContainer: quest_hook::libil2cpp::Gc<
@@ -368,7 +368,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TutorialBeatm
 }
 #[cfg(feature = "cordl_class_TutorialBeatmapObjectManager+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialBeatmapObjectManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cutAngleTolerance: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+CachedOpenTypeProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CachedOpenTypeProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _creator: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,

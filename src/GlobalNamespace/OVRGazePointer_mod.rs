@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRGazePointer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRGazePointer {
     __cordl_parent: crate::GlobalNamespace::OVRCursor,
     pub gazeIcon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerToggleHistory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUIHandlerToggleHistory {
     __cordl_parent: crate::UnityEngine::Rendering::UI::DebugUIHandlerToggle,
     pub historyToggles: quest_hook::libil2cpp::Gc<

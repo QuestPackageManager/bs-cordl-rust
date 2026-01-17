@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightTransformGroup_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightTransformGroup_3<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,

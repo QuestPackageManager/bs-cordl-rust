@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+BeatmapSaveData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

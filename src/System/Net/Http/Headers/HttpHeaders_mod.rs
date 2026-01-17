@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpHeaders")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpHeaders {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub headers: quest_hook::libil2cpp::Gc<
@@ -904,7 +904,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+HttpHeaders+HeaderBucket")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HttpHeaders_HeaderBucket {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Parsed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

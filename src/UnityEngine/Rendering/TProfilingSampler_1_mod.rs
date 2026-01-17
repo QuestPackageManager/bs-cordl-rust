@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+TProfilingSampler_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TProfilingSampler_1<TEnum: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Rendering::ProfilingSampler,
     __cordl_phantom_TEnum: std::marker::PhantomData<TEnum>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRHand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHand {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub HandType: crate::GlobalNamespace::OVRHand_Hand,
@@ -1227,10 +1227,15 @@ impl AsMut<crate::UnityEngine::EventSystems::OVRInputModule_InputSource>
     }
 }
 #[cfg(feature = "cordl_class_OVRHand+Hand")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRHand_Hand {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
@@ -1310,10 +1315,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRHand_Ha
     }
 }
 #[cfg(feature = "cordl_class_OVRHand+HandFinger")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRHand_HandFinger {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Index = 1i32,
     Max = 5i32,
     Middle = 2i32,
@@ -1396,10 +1406,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRHand_Ha
     }
 }
 #[cfg(feature = "cordl_class_OVRHand+MicrogestureType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRHand_MicrogestureType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Invalid = -1i32,
     NoGesture = 0i32,
     SwipeBackward = 4i32,
@@ -1483,10 +1498,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRHand_Mi
     }
 }
 #[cfg(feature = "cordl_class_OVRHand+TrackingConfidence")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRHand_TrackingConfidence {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 1065353216i32,
     Low = 0i32,
 }

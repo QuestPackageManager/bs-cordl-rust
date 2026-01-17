@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PhysicsPositionsMovementEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PhysicsPositionsMovementEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _event: crate::GlobalNamespace::BasicBeatmapEventType,

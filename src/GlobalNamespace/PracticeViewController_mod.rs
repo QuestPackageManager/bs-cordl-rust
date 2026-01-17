@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PracticeViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PracticeViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,

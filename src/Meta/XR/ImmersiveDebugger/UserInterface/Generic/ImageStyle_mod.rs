@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ImageStyle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ImageStyle {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Style,
     pub enabled: bool,

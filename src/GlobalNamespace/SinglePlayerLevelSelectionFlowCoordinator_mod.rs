@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SinglePlayerLevelSelectionFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SinglePlayerLevelSelectionFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
     pub _degree360BeatmapCharacteristic:

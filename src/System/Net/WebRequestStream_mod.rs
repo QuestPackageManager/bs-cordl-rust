@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebRequestStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebRequestStream {
     __cordl_parent: crate::System::Net::WebConnectionStream,
     pub writeBuffer: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,

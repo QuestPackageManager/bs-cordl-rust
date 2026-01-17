@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Ucs4Encoding2143")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Ucs4Encoding2143 {
     __cordl_parent: crate::System::Xml::Ucs4Encoding,
 }

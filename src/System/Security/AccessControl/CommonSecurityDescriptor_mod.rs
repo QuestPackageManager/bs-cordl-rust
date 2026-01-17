@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+CommonSecurityDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CommonSecurityDescriptor {
     __cordl_parent: crate::System::Security::AccessControl::GenericSecurityDescriptor,
     pub is_container: bool,

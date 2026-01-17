@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StylePropertyValueMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher,
     pub m_Values: quest_hook::libil2cpp::Gc<

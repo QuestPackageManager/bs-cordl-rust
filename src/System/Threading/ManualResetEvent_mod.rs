@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ManualResetEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ManualResetEvent {
     __cordl_parent: crate::System::Threading::EventWaitHandle,
 }

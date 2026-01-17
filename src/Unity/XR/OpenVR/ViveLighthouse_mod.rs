@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+OpenVR+ViveLighthouse")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ViveLighthouse {
     __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
 }

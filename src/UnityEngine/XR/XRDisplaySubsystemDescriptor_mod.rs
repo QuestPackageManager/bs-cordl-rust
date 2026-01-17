@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystemDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRDisplaySubsystemDescriptor {
     __cordl_parent: crate::UnityEngine::IntegratedSubsystemDescriptor_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

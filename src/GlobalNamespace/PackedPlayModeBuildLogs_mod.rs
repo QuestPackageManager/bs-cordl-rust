@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackedPlayModeBuildLogs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RuntimeBuildLogs: quest_hook::libil2cpp::Gc<
@@ -152,7 +152,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackedPlayMod
     }
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs+RuntimeBuildLog")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PackedPlayModeBuildLogs_RuntimeBuildLog {
     pub Type: crate::UnityEngine::LogType,

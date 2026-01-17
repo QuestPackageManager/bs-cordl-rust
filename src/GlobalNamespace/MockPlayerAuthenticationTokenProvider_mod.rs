@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockPlayerAuthenticationTokenProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockPlayerAuthenticationTokenProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

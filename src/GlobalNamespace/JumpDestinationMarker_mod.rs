@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JumpDestinationMarker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JumpDestinationMarker {
     __cordl_parent: crate::UnityEngine::Timeline::Marker,
 }

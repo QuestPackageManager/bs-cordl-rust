@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+TraceListener")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TraceListener {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub indentLevel: i32,

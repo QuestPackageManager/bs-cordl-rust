@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+Assembly")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Assembly {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1570,7 +1570,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 }
 #[cfg(feature = "cordl_class_System+Reflection+Assembly+ResolveEventHolder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Assembly_ResolveEventHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

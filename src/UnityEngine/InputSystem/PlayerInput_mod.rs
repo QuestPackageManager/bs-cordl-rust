@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerInput {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_AllMapsHashCode: i32,
@@ -2290,7 +2290,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Play
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+ActionEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerInput_ActionEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::InputSystem::InputAction_CallbackContext,
@@ -2504,7 +2504,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerInput_ControlsChangedEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
@@ -2590,7 +2590,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerInput_DeviceLostEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
@@ -2676,7 +2676,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerInput_DeviceRegainedEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,

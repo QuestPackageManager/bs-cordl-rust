@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsECDsaSigner")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsECDsaSigner {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Tls::TlsDsaSigner,
 }

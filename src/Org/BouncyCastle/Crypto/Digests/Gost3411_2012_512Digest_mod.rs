@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+Gost3411_2012_512Digest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Gost3411_2012_512Digest {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1198,7 +1198,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::TypeCo
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeConverter_SimplePropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::PropertyDescriptor,
     pub componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1492,7 +1492,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+TypeConverter+StandardValuesCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeConverter_StandardValuesCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub values: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,

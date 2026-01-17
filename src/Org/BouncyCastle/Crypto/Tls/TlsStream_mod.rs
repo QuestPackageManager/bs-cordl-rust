@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsStream {
     __cordl_parent: crate::System::IO::Stream,
     pub handler: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol>,

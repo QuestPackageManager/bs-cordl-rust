@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+KnownTypeDataContractResolver")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KnownTypeDataContractResolver {
     __cordl_parent: crate::System::Runtime::Serialization::DataContractResolver,
     pub context: quest_hook::libil2cpp::Gc<

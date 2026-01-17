@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayAudioOnGameEventController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayAudioOnGameEventController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioClipQueue: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioClipQueue>,
@@ -129,7 +129,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayAudioOnGa
 }
 #[cfg(feature = "cordl_class_PlayAudioOnGameEventController+EventAudioBinding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayAudioOnGameEventController_EventAudioBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,

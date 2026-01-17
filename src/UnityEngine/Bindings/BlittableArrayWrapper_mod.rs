@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BlittableArrayWrapper")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BlittableArrayWrapper {
     pub data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -163,10 +166,15 @@ impl crate::UnityEngine::Bindings::BlittableArrayWrapper {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Bindings+BlittableArrayWrapper+UpdateFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BlittableArrayWrapper_UpdateFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DataIsEmpty = 4i32,
     DataIsNativeOwnedMemory = 3i32,
     DataIsNativePointer = 2i32,

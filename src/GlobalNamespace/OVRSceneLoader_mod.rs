@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSceneLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub sceneCheckIntervalSeconds: f32,
@@ -337,7 +337,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoade
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneLoader+SceneInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneLoader_SceneInfo {
     pub scenes: quest_hook::libil2cpp::Gc<

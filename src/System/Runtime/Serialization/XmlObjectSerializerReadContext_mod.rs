@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlObjectSerializerReadContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlObjectSerializerReadContext {
     __cordl_parent: crate::System::Runtime::Serialization::XmlObjectSerializerContext,
     pub attributes: quest_hook::libil2cpp::Gc<crate::System::Runtime::Serialization::Attributes>,

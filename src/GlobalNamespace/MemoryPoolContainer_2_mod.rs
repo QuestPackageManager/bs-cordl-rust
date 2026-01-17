@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MemoryPoolContainer_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MemoryPoolContainer_2<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _activeItems: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LazyCopyHashSet_1<T1>>,

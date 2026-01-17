@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AlphabetScrollInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AlphabetScrollInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -80,7 +80,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AlphabetScrol
 }
 #[cfg(feature = "cordl_class_AlphabetScrollInfo+Data")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AlphabetScrollInfo_Data {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub character: char,

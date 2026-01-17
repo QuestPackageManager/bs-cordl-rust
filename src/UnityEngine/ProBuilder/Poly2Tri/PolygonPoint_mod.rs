@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PolygonPoint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PolygonPoint {
     __cordl_parent: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
     pub _Next_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AxisControl {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<f32>,
     pub clamp: crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp,
@@ -297,10 +297,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Cont
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum AxisControl_Clamp {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AfterNormalize = 2i32,
     BeforeNormalize = 1i32,
     None = 0i32,

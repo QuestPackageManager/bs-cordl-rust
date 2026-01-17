@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DownloadHandlerTexture {
     __cordl_parent: crate::UnityEngine::Networking::DownloadHandler,
     pub m_NativeData: crate::Unity::Collections::NativeArray_1<u8>,
@@ -319,7 +319,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Networking::Downl
 }
 #[cfg(feature = "cordl_class_UnityEngine+Networking+DownloadHandlerTexture+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DownloadHandlerTexture_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

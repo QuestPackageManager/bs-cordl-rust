@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalActivePlayerGameplayManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _gameSongController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameSongController>,
@@ -401,7 +401,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalActivePlayerGameplayManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub continueGameplayWith0Energy: bool,

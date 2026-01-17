@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+AssemblyDefaultAliasAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssemblyDefaultAliasAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _DefaultAlias_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+Type1Message")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Type1Message {
     __cordl_parent: crate::Mono::Security::Protocol::Ntlm::MessageBase,
     pub _host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

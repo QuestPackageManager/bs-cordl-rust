@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+TaskUpdater_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskUpdater_1<TTask: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tasks: quest_hook::libil2cpp::Gc<
@@ -537,7 +537,7 @@ impl<TTask: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Zenject+TaskUpdater_1+TaskInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskUpdater_1_TaskInfo<TTask: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Task: TTask,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_WhiteColorOrAlphaGroupEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WhiteColorOrAlphaGroupEffect {
     __cordl_parent: crate::GlobalNamespace::LightColorGroupEffect,
     pub _defaultColor: crate::UnityEngine::Color,

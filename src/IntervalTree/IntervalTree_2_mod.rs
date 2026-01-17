@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IntervalTree+IntervalTree_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntervalTree_2<TKey: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub root: quest_hook::libil2cpp::Gc<crate::IntervalTree::IntervalTreeNode_2<TKey, TValue>>,

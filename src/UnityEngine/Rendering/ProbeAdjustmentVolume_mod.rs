@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeAdjustmentVolume")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeAdjustmentVolume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub shape: crate::UnityEngine::Rendering::ProbeAdjustmentVolume_Shape,
@@ -195,10 +195,15 @@ impl AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeAdjustmentVolume+Mode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProbeAdjustmentVolume_Mode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ApplyVirtualOffset = 2i32,
     IntensityScale = 99i32,
     InvalidateProbes = 0i32,
@@ -295,10 +300,15 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ProbeAdjustmentVolume+RenderingLayerMaskOperation"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProbeAdjustmentVolume_RenderingLayerMaskOperation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Add = 1i32,
     Override = 0i32,
     Remove = 2i32,
@@ -398,10 +408,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeAdjustmentVolume+Shape")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProbeAdjustmentVolume_Shape {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Box = 0i32,
     Sphere = 1i32,
 }
@@ -490,10 +505,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeAdjustmentVolume+Version")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ProbeAdjustmentVolume_Version {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Count = 2i32,
     Initial = 0i32,
     Mode = 1i32,

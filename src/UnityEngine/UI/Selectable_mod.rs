@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+Selectable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Selectable {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_EnableCalled: bool,
@@ -1717,10 +1717,15 @@ impl AsMut<crate::UnityEngine::EventSystems::ISelectHandler>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+SelectionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Selectable_SelectionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Disabled = 4i32,
     Highlighted = 1i32,
     Normal = 0i32,
@@ -1802,10 +1807,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Selectable
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Selectable+Transition")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Selectable_Transition {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Animation = 3i32,
     ColorTint = 1i32,
     None = 0i32,

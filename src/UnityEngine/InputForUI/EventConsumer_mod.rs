@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+EventConsumer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventConsumer {
     __cordl_parent: crate::System::MulticastDelegate,
 }

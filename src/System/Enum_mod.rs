@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Enum")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enum {
     __cordl_parent: crate::System::ValueType,
 }
@@ -1811,7 +1811,10 @@ impl AsMut<crate::System::IFormattable> for crate::System::Enum {
     }
 }
 #[cfg(feature = "cordl_class_System+Enum+EnumResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Enum_EnumResult {
     pub parsedEnum: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2047,7 +2050,7 @@ impl crate::System::Enum_EnumResult {
 }
 #[cfg(feature = "cordl_class_System+Enum+ValuesAndNames")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enum_ValuesAndNames {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUPrefixSum {
     pub resources: crate::UnityEngine::Rendering::GPUPrefixSum_SystemResources,
@@ -266,7 +269,10 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUPrefixSum_DirectArgs {
     pub exclusive: bool,
@@ -371,7 +377,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+DirectArgs")]
 impl crate::UnityEngine::Rendering::GPUPrefixSum_DirectArgs {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUPrefixSum_IndirectDirectArgs {
     pub exclusive: bool,
@@ -479,7 +488,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+IndirectDirectArgs")]
 impl crate::UnityEngine::Rendering::GPUPrefixSum_IndirectDirectArgs {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUPrefixSum_LevelOffsets {
     pub count: u32,
@@ -585,7 +597,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+GPUPrefixSum+LevelOffsets")]
 impl crate::UnityEngine::Rendering::GPUPrefixSum_LevelOffsets {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+RenderGraphResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUPrefixSum_RenderGraphResources {
     pub alignedElementCount: i32,
@@ -803,7 +818,7 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_RenderGraphResources {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+ShaderDefs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUPrefixSum_ShaderDefs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -927,7 +942,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::GPUPre
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+ShaderIDs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUPrefixSum_ShaderIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -976,7 +991,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::GPUPre
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SupportResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUPrefixSum_SupportResources {
     pub ownsResources: bool,
@@ -1261,7 +1279,10 @@ impl crate::UnityEngine::Rendering::GPUPrefixSum_SupportResources {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUPrefixSum+SystemResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUPrefixSum_SystemResources {
     pub computeAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+StringFormatMethodAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StringFormatMethodAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _FormatParameterName_k__BackingField:

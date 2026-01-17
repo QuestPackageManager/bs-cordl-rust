@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ScheduledItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScheduledItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub timerUpdateStopCondition: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,

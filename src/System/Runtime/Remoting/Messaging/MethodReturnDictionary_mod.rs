@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MethodReturnDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MethodReturnDictionary {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::MessageDictionary,
 }

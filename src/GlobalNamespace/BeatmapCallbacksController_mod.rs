@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapCallbacksController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCallbacksController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub willStartProcessingCallbacksThisFrameEvent:
@@ -702,7 +702,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::BeatmapCallba
 }
 #[cfg(feature = "cordl_class_BeatmapCallbacksController+CallCallbacksBehavior")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCallbacksController_CallCallbacksBehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -865,7 +865,7 @@ impl AsMut<crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBeha
 }
 #[cfg(feature = "cordl_class_BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _replayState: quest_hook::libil2cpp::Gc<
@@ -1036,7 +1036,7 @@ impl AsMut<crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBeha
     }
 }
 #[cfg(feature = "cordl_class_BeatmapCallbacksController+ICallCallbacksBehavior")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct BeatmapCallbacksController_ICallCallbacksBehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1158,7 +1158,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatmapCallbacksController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCallbacksController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Notepad+NotepadComponent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NotepadComponent {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub note: quest_hook::libil2cpp::Gc<crate::Notepad::NoteSO>,

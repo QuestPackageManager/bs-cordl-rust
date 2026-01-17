@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonSerializerProxy {
     __cordl_parent: crate::Newtonsoft::Json::JsonSerializer,
     pub _serializerReader: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SmoothCamera")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SmoothCamera {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,

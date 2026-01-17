@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalResourceData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalResourceData {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::UniversalResourceDataBase,
     pub _activeColorID_k__BackingField:

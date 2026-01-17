@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Camera")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Camera {
     __cordl_parent: crate::UnityEngine::Behaviour,
     pub m_NonSerializedVersion: u32,
@@ -10501,7 +10501,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Camera {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+CameraCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Camera_CameraCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -10614,10 +10614,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Camera_CameraCall
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Camera_GateFitMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Fill = 3i32,
     Horizontal = 2i32,
     None = 0i32,
@@ -10699,7 +10704,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_GateFit
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+GateFitParameters")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Camera_GateFitParameters {
     pub _mode_k__BackingField: crate::UnityEngine::Camera_GateFitMode,
@@ -10834,10 +10842,15 @@ impl crate::UnityEngine::Camera_GateFitParameters {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+MonoOrStereoscopicEye")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Camera_MonoOrStereoscopicEye {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Left = 0i32,
     Mono = 2i32,
     Right = 1i32,
@@ -10917,10 +10930,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_MonoOrS
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+ProjectionMatrixMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Camera_ProjectionMatrixMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Explicit = 0i32,
     Implicit = 1i32,
     PhysicalPropertiesBased = 2i32,
@@ -11000,7 +11018,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_Project
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequest")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Camera_RenderRequest {
     pub m_CameraRenderMode: crate::UnityEngine::Camera_RenderRequestMode,
@@ -11094,10 +11115,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Camera_R
 #[cfg(feature = "UnityEngine+Camera+RenderRequest")]
 impl crate::UnityEngine::Camera_RenderRequest {}
 #[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Camera_RenderRequestMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BaseColor = 6i32,
     Depth = 2i32,
     DiffuseColor = 13i32,
@@ -11188,10 +11214,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_RenderR
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+RenderRequestOutputSpace")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Camera_RenderRequestOutputSpace {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ScreenSpace = -1i32,
     UV0 = 0i32,
     UV1 = 1i32,
@@ -11284,10 +11315,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_RenderR
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+SceneViewFilterMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Camera_SceneViewFilterMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Off = 0i32,
     ShowFiltered = 1i32,
 }
@@ -11366,10 +11402,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Camera_SceneVi
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Camera+StereoscopicEye")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Camera_StereoscopicEye {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Left = 0i32,
     Right = 1i32,
 }

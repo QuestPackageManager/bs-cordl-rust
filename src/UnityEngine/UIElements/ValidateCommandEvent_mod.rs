@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ValidateCommandEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ValidateCommandEvent {
     __cordl_parent: crate::UnityEngine::UIElements::CommandEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ValidateCommandEvent>,

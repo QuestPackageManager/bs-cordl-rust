@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BadCutScoringElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BadCutScoringElement {
     __cordl_parent: crate::GlobalNamespace::ScoringElement,
     pub _multiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
@@ -202,7 +202,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BadCutScoring
 }
 #[cfg(feature = "cordl_class_BadCutScoringElement+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BadCutScoringElement_Pool {
     __cordl_parent: crate::GlobalNamespace::ScoringElement_Pool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BadCutScoringElement>,

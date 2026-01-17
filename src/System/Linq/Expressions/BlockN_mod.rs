@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+BlockN")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BlockN {
     __cordl_parent: crate::System::Linq::Expressions::BlockExpression,
     pub _expressions: quest_hook::libil2cpp::Gc<

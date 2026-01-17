@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+TypeUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -644,7 +644,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+Cache_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TypeUtility_Cache_1<T: quest_hook::libil2cpp::Type> {
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -759,7 +762,7 @@ unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "Unity+Properties+TypeUtility+Cache_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Properties::TypeUtility_Cache_1<T> {}
 #[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct TypeUtility_ITypeConstructor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -858,7 +861,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility
     }
 }
 #[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+ITypeConstructor_1")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct TypeUtility_ITypeConstructor_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1009,7 +1012,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Unity::Properties::TypeUtility
 }
 #[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+NonConstructable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeUtility_NonConstructable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1152,7 +1155,7 @@ impl AsMut<crate::Unity::Properties::TypeUtility_ITypeConstructor>
 }
 #[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeUtility_TypeConstructorVisitor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub TypeConstructor:
@@ -1279,7 +1282,7 @@ impl AsMut<crate::Unity::Properties::ITypeVisitor>
 }
 #[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructor_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeUtility_TypeConstructor_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ExplicitConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadLocal_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
@@ -590,7 +590,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+FinalizationHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadLocal_1_FinalizationHelper<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub SlotArray: quest_hook::libil2cpp::Gc<
@@ -757,7 +757,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadLocal_1_IdManager<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_nextIdToTry: i32,
@@ -923,7 +923,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlot")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadLocal_1_LinkedSlot<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Next: quest_hook::libil2cpp::Gc<crate::System::Threading::ThreadLocal_1_LinkedSlot<T>>,
@@ -1057,7 +1057,10 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ThreadLocal_1_LinkedSlotVolatile<T: quest_hook::libil2cpp::Type> {
     pub Value: quest_hook::libil2cpp::Gc<crate::System::Threading::ThreadLocal_1_LinkedSlot<T>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+InputEventPartialProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputEventPartialProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ev: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,

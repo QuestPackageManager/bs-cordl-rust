@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+GoogleVr+DaydreamController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DaydreamController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRController,
     pub _touchpad_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+MinIntParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MinIntParameter {
     __cordl_parent: crate::UnityEngine::Rendering::IntParameter,
     pub min: i32,

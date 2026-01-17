@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ProviderException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProviderException {
     __cordl_parent: crate::UnityEngine::ResourceManagement::Exceptions::OperationException,
     pub _Location_k__BackingField: quest_hook::libil2cpp::Gc<

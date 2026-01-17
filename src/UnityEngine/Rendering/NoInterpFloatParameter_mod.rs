@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+NoInterpFloatParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoInterpFloatParameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<f32>,
 }

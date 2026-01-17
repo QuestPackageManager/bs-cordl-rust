@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightGroupGridLayouter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightGroupGridLayouter {
     __cordl_parent: crate::GlobalNamespace::LightGroupSubsystem,
     pub _columns: i32,

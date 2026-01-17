@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderPipelineGlobalSettings_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderPipelineGlobalSettings_2<
     TGlobalRenderPipelineSettings: quest_hook::libil2cpp::Type,
     TRenderPipeline: quest_hook::libil2cpp::Type,

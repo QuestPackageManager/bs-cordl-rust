@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Queue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Queue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: quest_hook::libil2cpp::Gc<
@@ -506,7 +506,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::Queue {
 }
 #[cfg(feature = "cordl_class_System+Collections+Queue+QueueDebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Queue_QueueDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -556,7 +556,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Queue_Que
 }
 #[cfg(feature = "cordl_class_System+Collections+Queue+QueueEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Queue_QueueEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _q: quest_hook::libil2cpp::Gc<crate::System::Collections::Queue>,

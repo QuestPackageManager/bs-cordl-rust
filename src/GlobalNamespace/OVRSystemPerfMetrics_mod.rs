@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSystemPerfMetrics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSystemPerfMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -87,7 +87,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSystemPerf
 }
 #[cfg(feature = "cordl_class_OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub tcpServer:
@@ -263,7 +263,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRSystemPerfMetrics+PerfMetrics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSystemPerfMetrics_PerfMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub frameCount: i32,

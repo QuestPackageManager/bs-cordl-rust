@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+GUISkin")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUISkin {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
@@ -1662,7 +1662,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUISkin {
 }
 #[cfg(feature = "cordl_class_UnityEngine+GUISkin+SkinChangedDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUISkin_SkinChangedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

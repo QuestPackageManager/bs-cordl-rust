@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AudioSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -450,7 +450,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AudioSettings {
 }
 #[cfg(feature = "cordl_class_UnityEngine+AudioSettings+AudioConfigurationChangeHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioSettings_AudioConfigurationChangeHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -565,7 +565,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+AudioSettings+Mobile")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioSettings_Mobile {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

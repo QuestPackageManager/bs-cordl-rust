@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FlyingTextEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlyingTextEffect {
     __cordl_parent: crate::GlobalNamespace::FlyingObjectEffect,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
@@ -147,7 +147,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FlyingTextEff
 }
 #[cfg(feature = "cordl_class_FlyingTextEffect+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlyingTextEffect_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingTextEffect>,

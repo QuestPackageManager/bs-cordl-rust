@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+ASCIIEncoding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ASCIIEncoding {
     __cordl_parent: crate::System::Text::Encoding,
 }

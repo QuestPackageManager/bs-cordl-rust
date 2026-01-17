@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+ObjRef")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjRef {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub channel_info: quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::IChannelInfo>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainSettingsAsyncLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainSettingsAsyncLoader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
     pub _networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NetworkConfigSO>,

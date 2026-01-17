@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MirroredNoteController_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MirroredNoteController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::NoteControllerBase,
     pub _noteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

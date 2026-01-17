@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataTableNewRowEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataTableNewRowEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub _Row_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,

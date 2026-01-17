@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SessionParameters {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mCipherSuite: i32,
@@ -401,7 +401,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SessionParameters_Builder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mCipherSuite: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+GizmoManagerForAddon")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GizmoManagerForAddon {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::Manager::SubManagerForAddon,
     pub _memberToGizmoRendererManagerDict: quest_hook::libil2cpp::Gc<

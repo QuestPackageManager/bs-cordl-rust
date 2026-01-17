@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+AccessViolationException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AccessViolationException {
     __cordl_parent: crate::System::SystemException,
 }

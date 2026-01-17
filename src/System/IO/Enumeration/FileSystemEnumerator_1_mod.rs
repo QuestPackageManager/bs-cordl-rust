@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerator_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileSystemEnumerator_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
     pub _originalRootDirectory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

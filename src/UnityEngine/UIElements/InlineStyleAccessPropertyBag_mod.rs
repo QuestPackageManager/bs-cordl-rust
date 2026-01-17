@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag {
     __cordl_parent: crate::Unity::Properties::PropertyBag_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::InlineStyleAccess>,
@@ -670,7 +670,7 @@ impl
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+AlignContentProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_AlignContentProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -908,7 +908,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+AlignItemsProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_AlignItemsProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -1146,7 +1146,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+AlignSelfProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_AlignSelfProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -1384,7 +1384,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BackgroundColorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BackgroundColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleColorProperty,
@@ -1613,7 +1613,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BackgroundImageProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BackgroundImageProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleBackgroundProperty,
@@ -1842,7 +1842,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BackgroundPositionXProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BackgroundPositionXProperty {
     __cordl_parent: crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleBackgroundPositionProperty,
 }
@@ -2070,7 +2070,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BackgroundPositionYProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BackgroundPositionYProperty {
     __cordl_parent: crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleBackgroundPositionProperty,
 }
@@ -2298,7 +2298,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BackgroundRepeatProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BackgroundRepeatProperty {
     __cordl_parent: crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleBackgroundRepeatProperty,
 }
@@ -2525,7 +2525,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BackgroundSizeProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BackgroundSizeProperty {
     __cordl_parent: crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleBackgroundSizeProperty,
 }
@@ -2752,7 +2752,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderBottomColorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderBottomColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleColorProperty,
@@ -2981,7 +2981,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderBottomLeftRadiusProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderBottomLeftRadiusProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -3216,7 +3216,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderBottomRightRadiusProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderBottomRightRadiusProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -3451,7 +3451,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderBottomWidthProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderBottomWidthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -3680,7 +3680,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderLeftColorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderLeftColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleColorProperty,
@@ -3909,7 +3909,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderLeftWidthProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderLeftWidthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -4138,7 +4138,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderRightColorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderRightColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleColorProperty,
@@ -4367,7 +4367,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderRightWidthProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderRightWidthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -4596,7 +4596,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderTopColorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderTopColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleColorProperty,
@@ -4825,7 +4825,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderTopLeftRadiusProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderTopLeftRadiusProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -5054,7 +5054,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderTopRightRadiusProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderTopRightRadiusProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -5283,7 +5283,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BorderTopWidthProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BorderTopWidthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -5510,7 +5510,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+BottomProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_BottomProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -5733,7 +5733,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+ColorProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_ColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleColorProperty,
@@ -5956,7 +5956,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+CursorProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_CursorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleCursorProperty,
@@ -6179,7 +6179,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+DisplayProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_DisplayProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -6415,7 +6415,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+FlexBasisProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_FlexBasisProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -6644,7 +6644,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+FlexDirectionProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_FlexDirectionProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -6882,7 +6882,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+FlexGrowProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_FlexGrowProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -7107,7 +7107,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+FlexShrinkProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_FlexShrinkProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -7334,7 +7334,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+FlexWrapProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_FlexWrapProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -7566,7 +7566,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+FontSizeProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_FontSizeProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -7789,7 +7789,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+HeightProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_HeightProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -8014,7 +8014,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleBackgroundPositionProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleBackgroundPositionProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -8115,7 +8115,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleBack
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleBackgroundProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleBackgroundProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -8221,7 +8221,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleBackgroundRepeatProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleBackgroundRepeatProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -8323,7 +8323,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleBack
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleBackgroundSizeProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleBackgroundSizeProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -8425,7 +8425,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleBack
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleColorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -8525,7 +8525,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleCursorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleCursorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -8625,7 +8625,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleEnumProperty_1"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
     TValue: quest_hook::libil2cpp::Type,
 > {
@@ -8764,7 +8764,7 @@ impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleFloatProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleFloatProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -8864,7 +8864,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleFontDefinitionProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleFontDefinitionProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -8966,7 +8966,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFont
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleFontProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleFontProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -9066,7 +9066,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleIntProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleIntProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -9166,7 +9166,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleLengthProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleLengthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -9266,7 +9266,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleListProperty_1"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleListProperty_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -9395,7 +9395,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleProperty_2"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleProperty_2<
     TStyleValue: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -9587,7 +9587,7 @@ impl<TStyleValue: quest_hook::libil2cpp::Type, TValue: quest_hook::libil2cpp::Ty
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleRotateProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleRotateProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -9687,7 +9687,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleScaleProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleScaleProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -9787,7 +9787,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleTextShadowProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleTextShadowProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -9893,7 +9893,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleTransformOriginProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleTransformOriginProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -9995,7 +9995,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleTran
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+InlineStyleTranslateProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_InlineStyleTranslateProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleProperty_2<
@@ -10095,7 +10095,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+JustifyContentProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_JustifyContentProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -10331,7 +10331,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+LeftProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_LeftProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -10554,7 +10554,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+LetterSpacingProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_LetterSpacingProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -10783,7 +10783,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+MarginBottomProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_MarginBottomProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -11012,7 +11012,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+MarginLeftProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_MarginLeftProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -11241,7 +11241,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+MarginRightProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_MarginRightProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -11470,7 +11470,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+MarginTopProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_MarginTopProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -11699,7 +11699,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+MaxHeightProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_MaxHeightProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -11926,7 +11926,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+MaxWidthProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_MaxWidthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -12151,7 +12151,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+MinHeightProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_MinHeightProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -12378,7 +12378,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+MinWidthProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_MinWidthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -12601,7 +12601,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+OpacityProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_OpacityProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -12824,7 +12824,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+OverflowProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_OverflowProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -13060,7 +13060,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+PaddingBottomProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_PaddingBottomProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -13289,7 +13289,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+PaddingLeftProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_PaddingLeftProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -13518,7 +13518,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+PaddingRightProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_PaddingRightProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -13747,7 +13747,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+PaddingTopProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_PaddingTopProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -13974,7 +13974,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+PositionProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_PositionProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -14208,7 +14208,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+RightProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_RightProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -14431,7 +14431,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+RotateProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_RotateProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleRotateProperty,
@@ -14654,7 +14654,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+ScaleProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_ScaleProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleScaleProperty,
@@ -14879,7 +14879,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TextOverflowProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TextOverflowProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -15119,7 +15119,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TextShadowProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TextShadowProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleTextShadowProperty,
@@ -15346,7 +15346,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TopProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TopProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -15569,7 +15569,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TransformOriginProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TransformOriginProperty {
     __cordl_parent: crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleTransformOriginProperty,
 }
@@ -15796,7 +15796,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TransitionDelayProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TransitionDelayProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleListProperty_1<
@@ -16036,7 +16036,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TransitionDurationProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TransitionDurationProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleListProperty_1<
@@ -16276,7 +16276,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TransitionPropertyProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TransitionPropertyProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleListProperty_1<
@@ -16518,7 +16518,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TransitionTimingFunctionProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TransitionTimingFunctionProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleListProperty_1<
@@ -16758,7 +16758,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_TransitionTimin
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+TranslateProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_TranslateProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleTranslateProperty,
@@ -16987,7 +16987,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityBackgroundImageTintColorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityBackgroundImageTintColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleColorProperty,
@@ -17221,7 +17221,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_UnityBackground
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityEditorTextRenderingModeProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityEditorTextRenderingModeProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -17469,7 +17469,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_UnityEditorText
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityFontDefinitionProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityFontDefinitionProperty {
     __cordl_parent: crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFontDefinitionProperty,
 }
@@ -17696,7 +17696,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityFontProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityFontProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFontProperty,
@@ -17925,7 +17925,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityFontStyleAndWeightProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityFontStyleAndWeightProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -18170,7 +18170,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityOverflowClipBoxProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityOverflowClipBoxProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -18412,7 +18412,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityParagraphSpacingProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityParagraphSpacingProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -18647,7 +18647,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnitySliceBottomProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnitySliceBottomProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleIntProperty,
@@ -18876,7 +18876,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnitySliceLeftProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnitySliceLeftProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleIntProperty,
@@ -19105,7 +19105,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnitySliceRightProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnitySliceRightProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleIntProperty,
@@ -19334,7 +19334,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnitySliceScaleProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnitySliceScaleProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -19563,7 +19563,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnitySliceTopProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnitySliceTopProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleIntProperty,
@@ -19792,7 +19792,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityTextAlignProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityTextAlignProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -20031,7 +20031,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityTextGeneratorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityTextGeneratorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -20269,7 +20269,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityTextOutlineColorProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityTextOutlineColorProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleColorProperty,
@@ -20504,7 +20504,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityTextOutlineWidthProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityTextOutlineWidthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleFloatProperty,
@@ -20739,7 +20739,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+UnityTextOverflowPositionProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_UnityTextOverflowPositionProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -20983,7 +20983,7 @@ for crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_UnityTextOverfl
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+VisibilityProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_VisibilityProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -21223,7 +21223,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+WhiteSpaceProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_WhiteSpaceProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleEnumProperty_1<
@@ -21461,7 +21461,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+WidthProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_WidthProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,
@@ -21686,7 +21686,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+InlineStyleAccessPropertyBag+WordSpacingProperty"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InlineStyleAccessPropertyBag_WordSpacingProperty {
     __cordl_parent:
         crate::UnityEngine::UIElements::InlineStyleAccessPropertyBag_InlineStyleLengthProperty,

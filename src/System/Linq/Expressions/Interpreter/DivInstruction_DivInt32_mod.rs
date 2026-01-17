@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+DivInstruction+DivInt32")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DivInstruction_DivInt32 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::DivInstruction,
 }

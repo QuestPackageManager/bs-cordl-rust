@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StyledUITemplates+OverridableSprite")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OverridableSprite {
     __cordl_parent: crate::StyledUITemplates::OverridableData_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SP800SecureRandomBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRandom: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
@@ -375,7 +375,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SP800SecureRandomBuilder_CtrDrbgProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mBlockCipher: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
@@ -558,7 +558,7 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
     feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SP800SecureRandomBuilder_HMacDrbgProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mHMac: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
@@ -723,7 +723,7 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::Prng::IDrbgProvider>
     feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SP800SecureRandomBuilder_HashDrbgProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,

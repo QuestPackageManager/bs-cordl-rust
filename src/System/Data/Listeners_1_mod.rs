@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+Listeners_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Listeners_1<TElem: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _listeners: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TElem>>,
@@ -330,7 +330,7 @@ impl<TElem: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Data+Listeners_1+Action_4")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Listeners_1_Action_4<
     TElem: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -569,7 +569,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_System+Data+Listeners_1+Func_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Listeners_1_Func_2<
     TElem: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,

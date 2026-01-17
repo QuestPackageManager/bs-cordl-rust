@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+ActionHook")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ActionHook {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::Manager::Hook,
     pub _Delegate_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Action>,

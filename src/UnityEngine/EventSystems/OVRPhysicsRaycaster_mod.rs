@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRPhysicsRaycaster")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPhysicsRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub m_EventMask: crate::UnityEngine::LayerMask,

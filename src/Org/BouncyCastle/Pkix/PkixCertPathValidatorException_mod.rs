@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Pkix+PkixCertPathValidatorException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PkixCertPathValidatorException {
     __cordl_parent: crate::Org::BouncyCastle::Security::GeneralSecurityException,
     pub cause: quest_hook::libil2cpp::Gc<crate::System::Exception>,

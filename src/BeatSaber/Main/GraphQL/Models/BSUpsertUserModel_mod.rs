@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertUserModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BSUpsertUserModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _XocBeatGamesUserUpsert_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -152,7 +152,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertUserModel+XocBeatGamesUserUpsertModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BSUpsertUserModel_XocBeatGamesUserUpsertModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _BeatGamesUser_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -313,7 +313,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+BSUpsertUserModel+XocBeatGamesUserUpsertModel+BeatGamesUserModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XocBeatGamesUserUpsertModel_BSUpsertUserModel_BeatGamesUserModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _Id_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

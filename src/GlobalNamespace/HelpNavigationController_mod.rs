@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HelpNavigationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HelpNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContentCatalogData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub LocalHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -760,7 +760,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ContentCatalogData_Bucket {
     pub dataOffset: i32,
@@ -880,7 +883,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
     feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContentCatalogData_CompactLocation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Locator: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub shaders: quest_hook::libil2cpp::Gc<
@@ -94,7 +94,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessData+ShaderResources")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessData_ShaderResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stopNanPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -194,7 +194,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessData+TextureResources")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessData_TextureResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub blueNoise16LTex: quest_hook::libil2cpp::Gc<

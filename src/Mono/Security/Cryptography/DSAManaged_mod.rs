@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+DSAManaged")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DSAManaged {
     __cordl_parent: crate::System::Security::Cryptography::DSA,
     pub keypairGenerated: bool,
@@ -469,7 +469,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::
 }
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+DSAManaged+KeyGeneratedEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DSAManaged_KeyGeneratedEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }

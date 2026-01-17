@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+TypeIdentifiers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeIdentifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -79,7 +79,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifiers {
 }
 #[cfg(feature = "cordl_class_System+TypeIdentifiers+Display")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeIdentifiers_Display {
     __cordl_parent: crate::System::TypeNames_ATypeName,
     pub displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRPassthroughLayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub projectionSurfaceType: crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType,
@@ -1186,7 +1186,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPassthroug
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+BCSStyleHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer_BCSStyleHandler {
     __cordl_parent: crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler,
 }
@@ -1330,7 +1330,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer_BaseGeneratedStyleHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colorMapDataHandle: crate::System::Runtime::InteropServices::GCHandle,
@@ -1697,7 +1697,7 @@ impl AsMut<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorLutHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer_ColorLutHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentFlipLutY: bool,
@@ -2088,10 +2088,15 @@ impl AsMut<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
     }
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorMapEditorType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPassthroughLayer_ColorMapEditorType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ColorAdjustment = 4i32,
     ColorLut = 5i32,
     Controls = 1i32,
@@ -2185,7 +2190,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -2290,7 +2298,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 impl crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {}
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+IStyleHandler")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRPassthroughLayer_IStyleHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -2443,7 +2451,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+InterpolatedColorLutHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer_InterpolatedColorLutHandler {
     __cordl_parent: crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler,
     pub _currentColorLutTargetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -2691,7 +2699,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToMonoStyleHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer_MonoToMonoStyleHandler {
     __cordl_parent: crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler,
 }
@@ -2863,7 +2871,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToRgbaStyleHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer_MonoToRgbaStyleHandler {
     __cordl_parent: crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler,
     pub _tmpColorMapData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -3084,7 +3092,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+NoneStyleHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer_NoneStyleHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3275,7 +3283,10 @@ impl AsMut<crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler>
     }
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+PassthroughMeshInstance")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPassthroughLayer_PassthroughMeshInstance {
     pub meshHandle: u64,
@@ -3382,10 +3393,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
 impl crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {}
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+ProjectionSurfaceType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPassthroughLayer_ProjectionSurfaceType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Reconstructed = 0i32,
     UserDefined = 1i32,
 }
@@ -3474,7 +3490,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+SerializedSurfaceGeometry")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPassthroughLayer_SerializedSurfaceGeometry {
     pub meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -3579,7 +3598,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
 impl crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {}
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+Settings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPassthroughLayer_Settings {
     pub colorLutTargetTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -3744,7 +3766,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_Settings {
 }
 #[cfg(feature = "cordl_class_OVRPassthroughLayer+StylesHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughLayer_StylesHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _noneHandler:

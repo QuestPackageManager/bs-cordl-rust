@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RuntimePanel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimePanel {
     __cordl_parent: crate::UnityEngine::UIElements::BaseRuntimePanel,
     pub m_PanelSettings: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PanelSettings>,

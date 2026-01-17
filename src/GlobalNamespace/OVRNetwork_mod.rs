@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRNetwork")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRNetwork {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -86,10 +86,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRNetwork {
     }
 }
 #[cfg(feature = "cordl_class_OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRNetworkTcpClient_OVRNetwork_ConnectionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Connected = 1i32,
     Connecting = 2i32,
     Disconnected = 0i32,
@@ -179,7 +184,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRNetwork+FrameHeader")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRNetwork_FrameHeader {
     pub protocolIdentifier: u32,
@@ -332,7 +340,7 @@ impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
 }
 #[cfg(feature = "cordl_class_OVRNetwork+OVRNetworkTcpClient")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRNetwork_OVRNetworkTcpClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectionStateChangedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -593,7 +601,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRNetwork_OV
 }
 #[cfg(feature = "cordl_class_OVRNetwork+OVRNetworkTcpServer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRNetwork_OVRNetworkTcpServer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tcpListener: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpListener>,

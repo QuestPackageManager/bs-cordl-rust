@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HealthWarningFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HealthWarningFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _selectLanguageViewController:

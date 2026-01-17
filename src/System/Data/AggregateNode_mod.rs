@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+AggregateNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AggregateNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
     pub _type: crate::System::Data::AggregateType,

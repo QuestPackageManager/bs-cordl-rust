@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Cryptography+CryptographicUnexpectedOperationException"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CryptographicUnexpectedOperationException {
     __cordl_parent: crate::System::Security::Cryptography::CryptographicException,
 }

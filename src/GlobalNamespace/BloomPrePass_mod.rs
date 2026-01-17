@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePass {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _bloomPrepassRenderer:
@@ -214,10 +214,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePass 
     }
 }
 #[cfg(feature = "cordl_class_BloomPrePass+Mode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BloomPrePass_Mode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     RenderAndSetData = 0i32,
     SetDataOnly = 1i32,
 }

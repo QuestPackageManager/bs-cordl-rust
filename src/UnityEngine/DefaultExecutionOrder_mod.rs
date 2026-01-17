@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+DefaultExecutionOrder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultExecutionOrder {
     __cordl_parent: crate::System::Attribute,
     pub m_Order: i32,

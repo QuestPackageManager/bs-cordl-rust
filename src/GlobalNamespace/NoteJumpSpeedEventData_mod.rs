@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteJumpSpeedEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteJumpSpeedEventData {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub _relativeNoteJumpSpeed_k__BackingField: f32,

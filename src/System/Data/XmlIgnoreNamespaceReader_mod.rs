@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+XmlIgnoreNamespaceReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlIgnoreNamespaceReader {
     __cordl_parent: crate::System::Xml::XmlNodeReader,
     pub _namespacesToIgnore: quest_hook::libil2cpp::Gc<

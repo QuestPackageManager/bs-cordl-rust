@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScoreUIController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoreUIController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scoreText: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -290,7 +290,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreUIContro
 }
 #[cfg(feature = "cordl_class_ScoreUIController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScoreUIController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub scoreDisplayType: crate::GlobalNamespace::ScoreUIController_ScoreDisplayType,
@@ -376,10 +376,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreUIContro
     }
 }
 #[cfg(feature = "cordl_class_ScoreUIController+ScoreDisplayType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScoreUIController_ScoreDisplayType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ModifiedScore = 1i32,
     MultipliedScore = 0i32,
 }

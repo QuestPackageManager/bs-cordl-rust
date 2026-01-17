@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ExtraRenderChainVEData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExtraRenderChainVEData {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::ExtraRenderChainVEData>,

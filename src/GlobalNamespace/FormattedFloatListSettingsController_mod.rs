@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FormattedFloatListSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FormattedFloatListSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -351,10 +351,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_FormattedFloatListSettingsController+ValueType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FormattedFloatListSettingsController_ValueType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     InvertedNormalized = 2i32,
     Normal = 0i32,
     Normalized = 1i32,

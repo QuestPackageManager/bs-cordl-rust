@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_ILevelPackProductDataContainer_2")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct ILevelPackProductDataContainer_2<
     TLevelPackProductData: quest_hook::libil2cpp::Type,

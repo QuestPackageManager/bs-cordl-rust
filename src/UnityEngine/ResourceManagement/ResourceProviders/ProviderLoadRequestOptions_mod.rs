@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProviderLoadRequestOptions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_IgnoreFailures: bool,

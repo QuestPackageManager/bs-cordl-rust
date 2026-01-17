@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LensFlareCommonSRP")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LensFlareCommonSRP {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2474,7 +2474,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::LensFl
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LensFlareCommonSRP+LensFlareCompInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LensFlareCommonSRP_LensFlareCompInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub index: i32,

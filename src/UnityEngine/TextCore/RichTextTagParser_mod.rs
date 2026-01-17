@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RichTextTagParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -484,7 +484,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextCore::RichTex
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser+ParseError")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RichTextTagParser_ParseError {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub position: i32,
@@ -754,7 +754,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser+Segment")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RichTextTagParser_Segment {
     pub tags: quest_hook::libil2cpp::Gc<
@@ -864,7 +867,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+TextCore+RichTextTagParser+Segment")]
 impl crate::UnityEngine::TextCore::RichTextTagParser_Segment {}
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser+Tag")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RichTextTagParser_Tag {
     pub tagType: crate::UnityEngine::TextCore::RichTextTagParser_TagType,
@@ -968,10 +974,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+TextCore+RichTextTagParser+Tag")]
 impl crate::UnityEngine::TextCore::RichTextTagParser_Tag {}
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser+TagType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RichTextTagParser_TagType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Align = 1i32,
     AllCaps = 2i32,
     Alpha = 3i32,
@@ -1090,7 +1101,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser+TagTypeInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RichTextTagParser_TagTypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub TagType: crate::UnityEngine::TextCore::RichTextTagParser_TagType,
@@ -1369,10 +1380,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser+TagUnitType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RichTextTagParser_TagUnitType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FontUnits = 1i32,
     Percentage = 2i32,
     Pixels = 0i32,
@@ -1463,7 +1479,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser+TagValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RichTextTagParser_TagValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::UnityEngine::TextCore::RichTextTagParser_TagValueType,
@@ -1831,10 +1847,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+RichTextTagParser+TagValueType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RichTextTagParser_TagValueType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ColorValue = 4i32,
     None = 0i32,
     NumericalValue = 1i32,

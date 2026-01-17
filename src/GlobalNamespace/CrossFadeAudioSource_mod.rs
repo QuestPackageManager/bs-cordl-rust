@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CrossFadeAudioSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CrossFadeAudioSource {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _duration: f32,

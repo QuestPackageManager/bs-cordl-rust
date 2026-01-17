@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+GameplayModifiers+EnabledObstacleType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstacleType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 0i32,
     FullHeightOnly = 1i32,
     None = 2i32,
@@ -92,10 +97,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+GameplayModifiers+EnergyType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bar = 0i32,
     Battery = 1i32,
 }
@@ -184,10 +194,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+GameplayModifiers+SongSpeed")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Faster = 1i32,
     Normal = 0i32,
     Slower = 2i32,
@@ -278,7 +293,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -392,7 +407,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+AchievementsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_AchievementsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub unlockedAchievements: quest_hook::libil2cpp::Gc<
@@ -484,7 +499,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+GameplayModifiers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_GameplayModifiers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub energyType: crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType,
@@ -584,7 +599,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+GuestPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_GuestPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -670,7 +685,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+LocalPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_LocalPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -784,7 +799,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+PlayerAllOverallStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub campaignOverallStatsData: quest_hook::libil2cpp::Gc<
@@ -947,7 +962,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+PlayerLevelStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_PlayerLevelStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1037,7 +1052,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+PlayerMissionStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_PlayerMissionStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1121,7 +1136,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+PlayerOverallStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_PlayerOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub goodCutsCount: i32,
@@ -1299,7 +1314,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PlayerSaveDataV1_0_1+PlayerSpecificSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSaveDataV1_0_1_PlayerSpecificSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub staticLights: bool,

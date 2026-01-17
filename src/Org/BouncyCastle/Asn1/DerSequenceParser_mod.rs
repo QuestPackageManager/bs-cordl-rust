@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerSequenceParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DerSequenceParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _parser: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1StreamParser>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissScoringElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissScoringElement {
     __cordl_parent: crate::GlobalNamespace::ScoringElement,
     pub _multiplierEventType: crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType,
@@ -202,7 +202,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissScoringEl
 }
 #[cfg(feature = "cordl_class_MissScoringElement+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissScoringElement_Pool {
     __cordl_parent: crate::GlobalNamespace::ScoringElement_Pool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissScoringElement>,

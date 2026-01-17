@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Focusable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Focusable {
     __cordl_parent: crate::UnityEngine::UIElements::CallbackEventHandler,
     pub m_Focusable: bool,

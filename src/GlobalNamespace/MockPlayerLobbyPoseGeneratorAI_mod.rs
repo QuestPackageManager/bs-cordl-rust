@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockPlayerLobbyPoseGeneratorAI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockPlayerLobbyPoseGeneratorAI {
     __cordl_parent: crate::GlobalNamespace::MockPlayerLobbyPoseGenerator,
     pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,

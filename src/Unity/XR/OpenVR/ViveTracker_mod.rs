@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+OpenVR+ViveTracker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ViveTracker {
     __cordl_parent: crate::UnityEngine::InputSystem::TrackedDevice,
     pub _deviceVelocity_k__BackingField:

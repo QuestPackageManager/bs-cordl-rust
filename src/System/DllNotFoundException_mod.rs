@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+DllNotFoundException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DllNotFoundException {
     __cordl_parent: crate::System::TypeLoadException,
 }

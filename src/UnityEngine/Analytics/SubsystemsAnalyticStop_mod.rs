@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Analytics+SubsystemsAnalyticStop")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubsystemsAnalyticStop {
     __cordl_parent: crate::UnityEngine::Analytics::SubsystemsAnalyticBase,
 }

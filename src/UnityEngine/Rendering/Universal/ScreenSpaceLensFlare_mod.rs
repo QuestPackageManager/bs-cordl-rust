@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceLensFlare")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceLensFlare {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeComponent,
     pub intensity: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::MinFloatParameter>,

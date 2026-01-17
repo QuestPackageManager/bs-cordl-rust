@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Main+Leaderboards+UpsertUserMutation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UpsertUserMutation {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::MutationRequest_1<
         quest_hook::libil2cpp::Gc<

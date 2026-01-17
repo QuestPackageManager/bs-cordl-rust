@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceShadows")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceShadows {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRendererFeature,
     pub m_Shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -201,7 +201,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceShadows+ScreenSpaceShadowsPass+PassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceShadowsPass_ScreenSpaceShadows_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub target: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -302,7 +302,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceShadows+ScreenSpaceShadowsPostPass+PassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceShadowsPostPass_ScreenSpaceShadows_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pass: quest_hook::libil2cpp::Gc<
@@ -402,7 +402,7 @@ for crate::UnityEngine::Rendering::Universal::ScreenSpaceShadowsPostPass_ScreenS
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceShadows+ScreenSpaceShadowsPass"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceShadows_ScreenSpaceShadowsPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_Material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -726,7 +726,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+ScreenSpaceShadows+ScreenSpaceShadowsPostPass"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenSpaceShadows_ScreenSpaceShadowsPostPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
 }

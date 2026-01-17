@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlFormatReaderGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlFormatReaderGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub helper: quest_hook::libil2cpp::Gc<
@@ -219,7 +219,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+XmlFormatReaderGenerator+CriticalHelper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlFormatReaderGenerator_CriticalHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

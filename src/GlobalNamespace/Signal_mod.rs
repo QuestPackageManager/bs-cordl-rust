@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Signal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Signal {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _event: quest_hook::libil2cpp::Gc<crate::System::Action>,

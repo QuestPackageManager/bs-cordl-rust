@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightWithIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightWithIds {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIdManager>,
@@ -395,7 +395,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightWithIds 
 }
 #[cfg(feature = "cordl_class_LightWithIds+LightWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightWithIds_LightWithId {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lightId: i32,

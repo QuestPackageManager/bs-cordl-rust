@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+CopyNonLazyBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CopyNonLazyBinder {
     __cordl_parent: crate::Zenject::NonLazyBinder,
     pub _secondaryBindInfos: quest_hook::libil2cpp::Gc<

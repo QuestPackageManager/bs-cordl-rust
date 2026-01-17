@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExtendedProtectionPolicy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

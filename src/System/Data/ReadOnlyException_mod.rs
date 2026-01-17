@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+ReadOnlyException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReadOnlyException {
     __cordl_parent: crate::System::Data::DataException,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRControllerTransformOffset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRControllerTransformOffset {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

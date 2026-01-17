@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -433,7 +433,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160r1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP160r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -555,7 +555,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP160t1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP160t1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -677,7 +677,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192r1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP192r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -799,7 +799,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP192t1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP192t1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -921,7 +921,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224r1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP224r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1043,7 +1043,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP224t1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP224t1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1165,7 +1165,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256r1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP256r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1287,7 +1287,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP256t1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP256t1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1409,7 +1409,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320r1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP320r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1531,7 +1531,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP320t1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP320t1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1653,7 +1653,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384r1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP384r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1775,7 +1775,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP384t1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP384t1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1897,7 +1897,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512r1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP512r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2019,7 +2019,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves+BrainpoolP512t1Holder"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TeleTrusTNamedCurves_BrainpoolP512t1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }

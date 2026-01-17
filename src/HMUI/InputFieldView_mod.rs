@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+InputFieldView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputFieldView {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub _textView: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -683,7 +683,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::InputFieldView {
 }
 #[cfg(feature = "cordl_class_HMUI+InputFieldView+InputFieldChanged")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputFieldView_InputFieldChanged {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
@@ -764,10 +764,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::InputFieldView_InputFiel
     }
 }
 #[cfg(feature = "cordl_class_HMUI+InputFieldView+SelectionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputFieldView_SelectionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Disabled = 3i32,
     Highlighted = 1i32,
     Normal = 0i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerScoreRingManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerScoreRingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _delayBetweenScoreUpdates: f32,

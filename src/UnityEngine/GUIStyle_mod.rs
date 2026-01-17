@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+GUIStyle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUIStyle {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -2381,7 +2381,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUIStyle {
 }
 #[cfg(feature = "cordl_class_UnityEngine+GUIStyle+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUIStyle_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

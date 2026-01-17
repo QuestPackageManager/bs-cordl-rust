@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SceneDecoratorContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneDecoratorContext {
     __cordl_parent: crate::Zenject::Context,
     pub _lateInstallers: quest_hook::libil2cpp::Gc<

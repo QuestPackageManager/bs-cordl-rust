@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_RandomExtensions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RandomExtensions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_WhiteColorOrAlphaGroupEffectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WhiteColorOrAlphaGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightGroup: quest_hook::libil2cpp::Gc<

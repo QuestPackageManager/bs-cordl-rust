@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRKeyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRKeyboard {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -133,7 +133,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRKeyboard {
     }
 }
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRKeyboard_TrackedKeyboardInfo {
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -242,7 +245,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
 impl crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {}
 #[cfg(feature = "cordl_class_OVRKeyboard+TrackedKeyboardState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRKeyboard_TrackedKeyboardState {
     pub isPositionValid: bool,

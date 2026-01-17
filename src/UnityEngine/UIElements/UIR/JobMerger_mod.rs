@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+JobMerger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JobMerger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Jobs: crate::Unity::Collections::NativeArray_1<crate::Unity::Jobs::JobHandle>,

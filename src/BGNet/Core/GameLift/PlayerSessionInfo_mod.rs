@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+PlayerSessionInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerSessionInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerSessionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

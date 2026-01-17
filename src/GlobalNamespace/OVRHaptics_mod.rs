@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRHaptics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHaptics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -77,7 +77,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics {
 }
 #[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput+ClipPlaybackTracker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ReadCount_k__BackingField: i32,
@@ -272,7 +272,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVRHaptics+Config")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHaptics_Config {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -601,7 +601,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics_Co
 }
 #[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsChannel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHaptics_OVRHapticsChannel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_output: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput>,
@@ -787,7 +787,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics_OV
 }
 #[cfg(feature = "cordl_class_OVRHaptics+OVRHapticsOutput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRHaptics_OVRHapticsOutput {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_lowLatencyMode: bool,

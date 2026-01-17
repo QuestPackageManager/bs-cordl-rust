@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TransformLayouter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TransformLayouter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

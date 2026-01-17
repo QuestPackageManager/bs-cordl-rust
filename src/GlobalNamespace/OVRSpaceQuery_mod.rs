@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSpaceQuery")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSpaceQuery {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -491,7 +491,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSpaceQuery
     }
 }
 #[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpaceQuery_Options {
     pub _MaxResults_k__BackingField: i32,
@@ -1093,7 +1096,10 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
     }
 }
 #[cfg(feature = "cordl_class_OVRSpaceQuery+QueryInfoUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSpaceQuery_QueryInfoUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<80usize>,

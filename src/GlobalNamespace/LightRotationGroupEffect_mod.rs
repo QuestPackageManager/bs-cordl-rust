@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightRotationGroupEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightRotationGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -226,7 +226,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightRotation
 }
 #[cfg(feature = "cordl_class_LightRotationGroupEffect+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightRotationGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockPlayerGamePoseGeneratorMirror")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockPlayerGamePoseGeneratorMirror {
     __cordl_parent: crate::GlobalNamespace::MockPlayerGamePoseGenerator,
     pub _nodePoseSyncStateManager:

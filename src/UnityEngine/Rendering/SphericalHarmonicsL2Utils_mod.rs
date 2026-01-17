@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SphericalHarmonicsL2Utils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SphericalHarmonicsL2Utils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

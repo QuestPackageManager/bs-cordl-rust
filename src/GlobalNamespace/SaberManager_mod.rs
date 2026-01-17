@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SaberManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaberManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftSaber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
@@ -362,7 +362,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberManager 
 }
 #[cfg(feature = "cordl_class_SaberManager+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaberManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub oneSaberMode: bool,

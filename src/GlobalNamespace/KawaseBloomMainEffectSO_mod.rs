@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_KawaseBloomMainEffectSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KawaseBloomMainEffectSO {
     __cordl_parent: crate::GlobalNamespace::MainEffectSO,
     pub _kawaseBlurRenderer:

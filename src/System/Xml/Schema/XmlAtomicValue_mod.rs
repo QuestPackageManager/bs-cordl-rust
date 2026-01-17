@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlAtomicValue {
     __cordl_parent: crate::System::Xml::XPath::XPathItem,
     pub xmlType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
@@ -726,7 +726,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Xml::Schema::XmlAtomicV
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlAtomicValue_NamespacePrefixForQName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -935,7 +935,10 @@ impl AsMut<crate::System::Xml::IXmlNamespaceResolver>
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+Union")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlAtomicValue_Union {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,

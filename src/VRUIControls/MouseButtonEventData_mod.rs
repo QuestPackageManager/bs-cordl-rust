@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRUIControls+MouseButtonEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MouseButtonEventData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buttonState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,

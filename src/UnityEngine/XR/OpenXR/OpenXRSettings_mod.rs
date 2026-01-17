@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub features: quest_hook::libil2cpp::Gc<
@@ -1609,10 +1609,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::OpenXR::OpenX
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRSettings+BackendFovationApi")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum OpenXRSettings_BackendFovationApi {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Legacy = 0u8,
     SRPFoveation = 1u8,
 }
@@ -1701,10 +1706,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRSettings+ColorSubmissionModeGroup")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRSettings_ColorSubmissionModeGroup {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     kRenderTextureFormatGroup1010102_Float = 1i32,
     kRenderTextureFormatGroup111110_Float = 4i32,
     kRenderTextureFormatGroup16161616_Float = 2i32,
@@ -1797,7 +1807,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRSettings+ColorSubmissionModeList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRSettings_ColorSubmissionModeList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_List: quest_hook::libil2cpp::Gc<
@@ -1883,10 +1893,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRSettings+DepthSubmissionMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRSettings_DepthSubmissionMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Depth16Bit = 1i32,
     Depth24Bit = 2i32,
     None = 0i32,
@@ -1976,10 +1991,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRSettings+RenderMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRSettings_RenderMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MultiPass = 0i32,
     SinglePassInstanced = 1i32,
 }
@@ -2070,10 +2090,15 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRSettings+SpaceWarpMotionVectorTextureFormat"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRSettings_SpaceWarpMotionVectorTextureFormat {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     RG16f = 1i32,
     RGBA16f = 0i32,
 }

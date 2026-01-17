@@ -2,7 +2,7 @@
     feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarDataMultiplayerAvatarsDataConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

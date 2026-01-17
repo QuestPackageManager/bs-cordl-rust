@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -262,7 +262,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+PostProcessUtils+ShaderConstants")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PostProcessUtils_ShaderConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

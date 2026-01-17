@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+ObjectModel+Collection_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Collection_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub items: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,

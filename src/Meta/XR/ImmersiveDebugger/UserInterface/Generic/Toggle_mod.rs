@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+Toggle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Toggle {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::ButtonWithIcon,
     pub _state: bool,

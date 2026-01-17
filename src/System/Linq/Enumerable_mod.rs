@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Enumerable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3175,7 +3175,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Enumerable {
 }
 #[cfg(feature = "cordl_class_System+Linq+Enumerable+Iterator_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable_Iterator_1<TSource: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub threadId: i32,
@@ -3694,7 +3694,7 @@ impl<TSource: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereArrayIterator_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable_WhereArrayIterator_1<TSource: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TSource>,
     pub source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TSource>>,
@@ -3964,7 +3964,7 @@ impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereEnumerableIterator_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable_WhereEnumerableIterator_1<TSource: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TSource>,
     pub source:
@@ -4268,7 +4268,7 @@ impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereListIterator_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable_WhereListIterator_1<TSource: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Enumerable_Iterator_1<TSource>,
     pub source: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TSource>>,
@@ -4540,7 +4540,7 @@ impl<TSource: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectArrayIterator_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable_WhereSelectArrayIterator_2<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -4844,7 +4844,7 @@ impl<TSource: quest_hook::libil2cpp::Type, TResult: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectEnumerableIterator_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable_WhereSelectEnumerableIterator_2<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -5186,7 +5186,7 @@ impl<TSource: quest_hook::libil2cpp::Type, TResult: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_System+Linq+Enumerable+WhereSelectListIterator_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Enumerable_WhereSelectListIterator_2<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

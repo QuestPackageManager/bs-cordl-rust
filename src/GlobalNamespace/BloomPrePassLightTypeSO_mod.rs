@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassLightTypeSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassLightTypeSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _renderingPriority: i32,

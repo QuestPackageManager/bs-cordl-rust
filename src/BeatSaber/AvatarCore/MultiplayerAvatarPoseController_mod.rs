@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarPoseController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerAvatarPoseController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftSaberTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

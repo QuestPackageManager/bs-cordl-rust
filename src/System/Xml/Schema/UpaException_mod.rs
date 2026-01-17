@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+UpaException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UpaException {
     __cordl_parent: crate::System::Exception,
     pub particle1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+VerticalLayoutGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VerticalLayoutGroup {
     __cordl_parent: crate::UnityEngine::UI::HorizontalOrVerticalLayoutGroup,
 }

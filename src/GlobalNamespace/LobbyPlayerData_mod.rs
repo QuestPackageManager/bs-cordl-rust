@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LobbyPlayerData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LobbyPlayerData {
     __cordl_parent: crate::GlobalNamespace::LevelGameplaySetupData,
     pub _isPartyOwner_k__BackingField: bool,

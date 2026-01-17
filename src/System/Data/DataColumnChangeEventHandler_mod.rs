@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataColumnChangeEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataColumnChangeEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+SignatureConstructedGenericType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignatureConstructedGenericType {
     __cordl_parent: crate::System::Reflection::SignatureType,
     pub _genericTypeDefinition: quest_hook::libil2cpp::Gc<crate::System::Type>,

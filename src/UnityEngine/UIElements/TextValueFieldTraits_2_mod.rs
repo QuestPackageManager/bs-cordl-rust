@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueFieldTraits_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextValueFieldTraits_2<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,

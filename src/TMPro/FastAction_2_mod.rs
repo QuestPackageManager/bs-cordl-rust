@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+FastAction_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FastAction_2<A: quest_hook::libil2cpp::Type, B: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub delegates: quest_hook::libil2cpp::Gc<

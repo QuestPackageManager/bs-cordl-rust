@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct F2mCurve {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve,
     pub m: i32,
@@ -707,7 +707,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::F
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct F2mCurve_DefaultF2mLookupTable {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
     pub m_outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::F2mCurve>,

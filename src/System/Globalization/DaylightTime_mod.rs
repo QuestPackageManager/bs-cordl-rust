@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+DaylightTime")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DaylightTime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _start: crate::System::DateTime,

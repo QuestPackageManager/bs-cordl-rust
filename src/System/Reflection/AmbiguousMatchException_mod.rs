@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+AmbiguousMatchException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AmbiguousMatchException {
     __cordl_parent: crate::System::SystemException,
 }

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+Unicode")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Unicode {}
 #[cfg(feature = "cordl_class_Unity+Collections+Unicode")]
@@ -585,7 +588,10 @@ impl crate::Unity::Collections::Unicode {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+Unicode+Rune")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Unicode_Rune {
     pub value: i32,

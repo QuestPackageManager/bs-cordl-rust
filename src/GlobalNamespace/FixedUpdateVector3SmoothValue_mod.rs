@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FixedUpdateVector3SmoothValue {
     __cordl_parent: crate::GlobalNamespace::FixedUpdateSmoothValue_1<crate::UnityEngine::Vector3>,
 }

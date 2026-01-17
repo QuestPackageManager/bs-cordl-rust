@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -577,7 +577,10 @@ impl AsMut<crate::System::IDisposable> for crate::System::Diagnostics::Tracing::
     }
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+Tracing+EventSource+EventData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct EventSource_EventData {
     pub _DataPointer_k__BackingField: crate::System::IntPtr,

@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormat")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum GraphicsFormat {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     A10R10G10B10_XRSRGBPack32 = 85i32,
     A10R10G10B10_XRUNormPack32 = 86i32,
     A1R5G5B5_UNormPack16 = 72i32,

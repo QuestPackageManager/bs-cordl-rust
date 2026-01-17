@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+StreamContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StreamContent {
     __cordl_parent: crate::System::Net::Http::HttpContent,
     pub content: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

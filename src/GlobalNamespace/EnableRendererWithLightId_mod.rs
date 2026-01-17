@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnableRendererWithLightId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnableRendererWithLightId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,

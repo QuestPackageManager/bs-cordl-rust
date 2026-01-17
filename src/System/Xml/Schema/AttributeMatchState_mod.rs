@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+AttributeMatchState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum AttributeMatchState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AnyAttributeLax = 4i32,
     AnyAttributeSkip = 5i32,
     AnyIdAttributeFound = 1i32,

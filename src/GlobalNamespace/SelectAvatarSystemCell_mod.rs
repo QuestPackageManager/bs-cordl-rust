@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SelectAvatarSystemCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectAvatarSystemCell {
     __cordl_parent: crate::HMUI::TableCell,
     pub _avatarSystemCollection:

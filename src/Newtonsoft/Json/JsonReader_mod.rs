@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tokenType: crate::Newtonsoft::Json::JsonToken,
@@ -2254,10 +2254,15 @@ impl AsMut<crate::System::IDisposable> for crate::Newtonsoft::Json::JsonReader {
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReader+State")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum JsonReader_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Array = 6i32,
     ArrayStart = 5i32,
     Closed = 7i32,

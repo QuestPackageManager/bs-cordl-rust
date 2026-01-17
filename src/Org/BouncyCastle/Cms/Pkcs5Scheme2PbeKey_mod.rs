@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+Pkcs5Scheme2PbeKey")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pkcs5Scheme2PbeKey {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsPbeKey,
 }

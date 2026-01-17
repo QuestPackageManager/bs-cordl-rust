@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LufsMetering+LufsMeter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LufsMeter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _inputDataNative: quest_hook::libil2cpp::Gc<

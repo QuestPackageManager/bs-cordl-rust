@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SceneContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneContext {
     __cordl_parent: crate::Zenject::RunnableContext,
     pub PreInstall: quest_hook::libil2cpp::Gc<crate::System::Action>,

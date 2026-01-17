@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+DSASignatureFormatter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DSASignatureFormatter {
     __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureFormatter,
     pub _oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

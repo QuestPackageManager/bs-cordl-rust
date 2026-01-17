@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MaterialPropertyBlockFloatAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaterialPropertyBlockFloatAnimator {
     __cordl_parent: crate::GlobalNamespace::MaterialPropertyBlockAnimator,
     pub _value: f32,

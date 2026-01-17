@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SphereCuttableBySaber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SphereCuttableBySaber {
     __cordl_parent: crate::GlobalNamespace::CuttableBySaber,
     pub _collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::SphereCollider>,

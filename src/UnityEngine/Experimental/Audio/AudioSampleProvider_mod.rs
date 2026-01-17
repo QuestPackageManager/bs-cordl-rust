@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioSampleProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sampleFramesAvailable: quest_hook::libil2cpp::Gc<
@@ -116,7 +116,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Experimental+Audio+AudioSampleProvider+SampleFramesHandler"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioSampleProvider_SampleFramesHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }

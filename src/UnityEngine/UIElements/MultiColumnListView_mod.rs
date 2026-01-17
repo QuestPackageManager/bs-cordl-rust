@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnListView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListView,
     pub m_Columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
@@ -483,7 +483,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Multi
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnListView_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MultiColumnListView>,
@@ -571,7 +571,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnListView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
     pub m_SortingMode: quest_hook::libil2cpp::Gc<

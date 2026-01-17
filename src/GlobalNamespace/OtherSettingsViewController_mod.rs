@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OtherSettingsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OtherSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _hideExplicitWarning: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

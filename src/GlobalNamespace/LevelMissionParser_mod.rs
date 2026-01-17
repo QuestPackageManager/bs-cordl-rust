@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelMissionParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelMissionParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _functions: quest_hook::libil2cpp::Gc<
@@ -200,7 +200,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LevelMissionP
 }
 #[cfg(feature = "cordl_class_LevelMissionParser+ParserFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelMissionParser_ParserFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

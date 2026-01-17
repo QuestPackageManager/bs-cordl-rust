@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+BurstTargetCpuAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BurstTargetCpuAttribute {
     __cordl_parent: crate::System::Attribute,
     pub TargetCpu: crate::Unity::Burst::BurstTargetCpu,

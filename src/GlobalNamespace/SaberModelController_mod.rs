@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SaberModelController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaberModelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _saberTrail: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberTrail>,

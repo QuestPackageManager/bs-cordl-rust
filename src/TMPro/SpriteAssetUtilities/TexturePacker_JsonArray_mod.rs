@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TexturePacker_JsonArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -92,7 +92,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TexturePacker_JsonArray_Frame {
     pub filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -202,7 +205,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {}
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TexturePacker_JsonArray_Meta {
     pub app: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -313,7 +319,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {}
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TexturePacker_JsonArray_SpriteDataObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub frames: quest_hook::libil2cpp::Gc<
@@ -404,7 +410,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TexturePacker_JsonArray_SpriteFrame {
     pub x: f32,
@@ -538,7 +547,10 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     }
 }
 #[cfg(feature = "cordl_class_TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TexturePacker_JsonArray_SpriteSize {
     pub w: f32,

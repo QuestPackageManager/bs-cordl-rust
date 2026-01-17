@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509ChainElementEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,

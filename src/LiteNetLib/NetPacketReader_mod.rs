@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+NetPacketReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetPacketReader {
     __cordl_parent: crate::LiteNetLib::Utils::NetDataReader,
     pub _packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,

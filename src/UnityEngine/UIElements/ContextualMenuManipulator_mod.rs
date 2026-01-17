@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ContextualMenuManipulator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContextualMenuManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
     pub m_MenuBuilder: quest_hook::libil2cpp::Gc<

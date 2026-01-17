@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HSVPanelController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HSVPanelController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _colorSaturationValueSlider:

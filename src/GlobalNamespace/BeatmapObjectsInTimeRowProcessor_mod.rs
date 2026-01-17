@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectsInTimeRowProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentTimeSliceColorNotes: quest_hook::libil2cpp::Gc<
@@ -478,7 +478,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+SliderTailData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectsInTimeRowProcessor_SliderTailData {
     __cordl_parent: crate::GlobalNamespace::BeatmapDataItem,
     pub slider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
@@ -600,7 +600,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _time_k__BackingField: f32,

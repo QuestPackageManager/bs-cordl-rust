@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Uri")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Uri {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_String: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3512,10 +3512,15 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable> for crate::Syst
     }
 }
 #[cfg(feature = "cordl_class_System+Uri+Check")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Uri_Check {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BackslashInPath = 16i32,
     DisplayCanonical = 2i32,
     DotSlashAttn = 4i32,
@@ -3601,10 +3606,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Check {
     }
 }
 #[cfg(feature = "cordl_class_System+Uri+Flags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u64)]
 pub enum Uri_Flags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AllUriInfoSet = 2147483648u64,
     AuthorityFound = 1048576u64,
     BackslashInPath = 32768u64,
@@ -3735,7 +3745,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Flags {
 }
 #[cfg(feature = "cordl_class_System+Uri+MoreInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Uri_MoreInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3818,7 +3828,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Uri_MoreInfo {
     }
 }
 #[cfg(feature = "cordl_class_System+Uri+Offset")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Uri_Offset {
     pub Scheme: u16,
@@ -3918,7 +3931,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Uri_Offset {
 impl crate::System::Uri_Offset {}
 #[cfg(feature = "cordl_class_System+Uri+UriInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Uri_UriInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNamespaceManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SchemaNamespaceManager {
     __cordl_parent: crate::System::Xml::XmlNamespaceManager,
     pub node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,

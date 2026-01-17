@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+CullingGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CullingGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -698,7 +698,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::CullingGroup {
 }
 #[cfg(feature = "cordl_class_UnityEngine+CullingGroup+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CullingGroup_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -774,7 +774,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CullingGroup_Bind
 }
 #[cfg(feature = "cordl_class_UnityEngine+CullingGroup+StateChanged")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CullingGroup_StateChanged {
     __cordl_parent: crate::System::MulticastDelegate,
 }

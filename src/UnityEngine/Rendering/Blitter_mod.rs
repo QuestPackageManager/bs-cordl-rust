@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Blitter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Blitter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1736,10 +1736,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Blitte
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Blitter+BlitColorAndDepthPassNames")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Blitter_BlitColorAndDepthPassNames {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ColorAndDepth = 1i32,
     ColorOnly = 0i32,
 }
@@ -1829,7 +1834,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Blitter+BlitShaderIDs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Blitter_BlitShaderIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1878,10 +1883,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Blitte
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Blitter+BlitShaderPassNames")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Blitter_BlitShaderPassNames {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Bilinear = 1i32,
     BilinearCubeToOctahedralPadding = 22i32,
     BilinearQuad = 3i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidGamepadWithDpadAxes {
     __cordl_parent: crate::UnityEngine::InputSystem::Android::AndroidGamepad,
 }

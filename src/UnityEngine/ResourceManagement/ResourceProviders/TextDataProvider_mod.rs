@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextDataProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase,
     pub _IgnoreFailures_k__BackingField: bool,
@@ -192,7 +192,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextDataProvider_InternalOp {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Provider: quest_hook::libil2cpp::Gc<

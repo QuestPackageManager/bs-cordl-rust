@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+ECDsaPublicBcpgKey")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ECDsaPublicBcpgKey {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::ECPublicBcpgKey,
 }

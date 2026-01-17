@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteCutInfoNetSerializable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteCutInfoNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub saberSpeed: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+Encoding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Encoding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_codePage: i32,
@@ -2037,7 +2037,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Text::Encoding {
 }
 #[cfg(feature = "cordl_class_System+Text+Encoding+DefaultDecoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Encoding_DefaultDecoder {
     __cordl_parent: crate::System::Text::Decoder,
     pub m_encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -2449,7 +2449,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 }
 #[cfg(feature = "cordl_class_System+Text+Encoding+DefaultEncoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Encoding_DefaultEncoder {
     __cordl_parent: crate::System::Text::Encoder,
     pub m_encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -2798,7 +2798,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 }
 #[cfg(feature = "cordl_class_System+Text+Encoding+EncodingByteBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Encoding_EncodingByteBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -3114,7 +3114,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::Encoding_Encodin
 }
 #[cfg(feature = "cordl_class_System+Text+Encoding+EncodingCharBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Encoding_EncodingCharBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

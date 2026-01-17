@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsDeflateCompression {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub zIn: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
@@ -191,7 +191,7 @@ impl AsMut<crate::Org::BouncyCastle::Crypto::Tls::TlsCompression>
     feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsDeflateCompression_DeflateOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
 }

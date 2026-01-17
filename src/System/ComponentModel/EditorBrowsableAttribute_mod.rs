@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+EditorBrowsableAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EditorBrowsableAttribute {
     __cordl_parent: crate::System::Attribute,
     pub browsableState: crate::System::ComponentModel::EditorBrowsableState,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaberInit")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatSaberInit {
     __cordl_parent: crate::GlobalNamespace::AppInit,
     pub _mainSystemInit: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainSystemInit>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadPoolWorkQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub queueHead:
@@ -273,7 +273,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::ThreadPoolW
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+QueueSegment")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadPoolWorkQueue_QueueSegment {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nodes: quest_hook::libil2cpp::Gc<
@@ -493,7 +493,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+SparseArray_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadPoolWorkQueue_SparseArray_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -696,7 +696,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadPoolWorkQueue+WorkStealingQueue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThreadPoolWorkQueue_WorkStealingQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_array: quest_hook::libil2cpp::Gc<

@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+NativeTypes+XrSwapchainUsageFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u64)]
 pub enum XrSwapchainUsageFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     XR_SWAPCHAIN_USAGE_COLOR_ATTACHMENT_BIT = 1u64,
     XR_SWAPCHAIN_USAGE_DEPTH_STENCIL_ATTACHMENT_BIT = 2u64,
     XR_SWAPCHAIN_USAGE_INPUT_ATTACHMENT_BIT_KHR = 128u64,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDevice")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputDevice {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl,
     pub m_DeviceFlags: crate::UnityEngine::InputSystem::InputDevice_DeviceFlags,
@@ -1654,7 +1654,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::Inpu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputDevice_ControlBitRangeNode {
     pub endBitOffset: u16,
@@ -1785,10 +1788,15 @@ impl crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputDevice+DeviceFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputDevice_DeviceFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CanRunInBackground = 2048i32,
     CanRunInBackgroundHasBeenQueried = 4096i32,
     DisabledInFrontend = 32i32,

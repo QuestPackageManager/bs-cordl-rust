@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+CStreamReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CStreamReader {
     __cordl_parent: crate::System::IO::StreamReader,
     pub driver: quest_hook::libil2cpp::Gc<crate::System::TermInfoDriver>,

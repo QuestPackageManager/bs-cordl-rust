@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+Numeric10FacetsChecker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Numeric10FacetsChecker {
     __cordl_parent: crate::System::Xml::Schema::FacetsChecker,
     pub maxValue: crate::System::Decimal,

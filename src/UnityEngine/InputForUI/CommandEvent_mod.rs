@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+CommandEvent")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CommandEvent {
     pub _cordl_type: crate::UnityEngine::InputForUI::CommandEvent_Type,
@@ -292,10 +295,15 @@ impl AsMut<crate::UnityEngine::InputForUI::IEventProperties>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+CommandEvent+Command")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CommandEvent_Command {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ColorPickerChanged = 21i32,
     Copy = 2i32,
     Cut = 1i32,
@@ -402,10 +410,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputForUI::Co
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+CommandEvent+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CommandEvent_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Execute = 2i32,
     Validate = 1i32,
 }

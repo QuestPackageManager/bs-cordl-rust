@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorBoostBeatmapEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorBoostBeatmapEventData {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
     pub boostColorsAreOn: bool,

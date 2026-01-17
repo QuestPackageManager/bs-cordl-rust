@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ElGamalPrivateKeyParameters")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ElGamalPrivateKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Parameters::ElGamalKeyParameters,
     pub x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityLightWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIdMonoBehaviour,
     pub _light: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light>,

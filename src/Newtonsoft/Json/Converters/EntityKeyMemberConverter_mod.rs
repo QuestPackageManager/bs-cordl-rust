@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+EntityKeyMemberConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EntityKeyMemberConverter {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
 }

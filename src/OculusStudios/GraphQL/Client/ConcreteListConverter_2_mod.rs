@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+ConcreteListConverter_2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConcreteListConverter_2<I: quest_hook::libil2cpp::Type, T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Newtonsoft::Json::JsonConverter,
     __cordl_phantom_I: std::marker::PhantomData<I>,

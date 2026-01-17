@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+AutoFreeAllocator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AutoFreeAllocator {
     pub m_allocated: crate::Unity::Collections::ArrayOfArrays_1<crate::System::IntPtr>,
@@ -435,7 +438,7 @@ impl AsMut<crate::Unity::Collections::AllocatorManager_IAllocator>
 }
 #[cfg(feature = "cordl_class_Unity+Collections+AutoFreeAllocator+Try_000000E3_BurstDirectCall")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AutoFreeAllocator_Try_000000E3_BurstDirectCall {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -567,7 +570,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Unity+Collections+AutoFreeAllocator+Try_000000E3_PostfixBurstDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AutoFreeAllocator_Try_000000E3_PostfixBurstDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

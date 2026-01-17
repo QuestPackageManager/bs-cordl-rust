@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNodeInfoAtom")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XPathNodeInfoAtom {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

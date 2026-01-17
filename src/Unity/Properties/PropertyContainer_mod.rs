@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+PropertyContainer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyContainer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -310,7 +310,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::PropertyCon
 }
 #[cfg(feature = "cordl_class_Unity+Properties+PropertyContainer+GetPropertyVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyContainer_GetPropertyVisitor {
     __cordl_parent: crate::Unity::Properties::PathVisitor,
     pub Property: quest_hook::libil2cpp::Gc<crate::Unity::Properties::IProperty>,
@@ -454,7 +454,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+PropertyContainer+GetValueVisitor_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyContainer_GetValueVisitor_1<TSrcValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Unity::Properties::PathVisitor,
     pub Value: TSrcValue,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Canvas")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Canvas {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
@@ -2594,7 +2594,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Canvas {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Canvas+WillRenderCanvases")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Canvas_WillRenderCanvases {
     __cordl_parent: crate::System::MulticastDelegate,
 }

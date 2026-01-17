@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ECCurve {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_field: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IFiniteField>,
@@ -1345,7 +1345,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+Config")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ECCurve_Config {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
@@ -1588,7 +1588,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ECCurve_DefaultLookupTable {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
     pub m_outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,

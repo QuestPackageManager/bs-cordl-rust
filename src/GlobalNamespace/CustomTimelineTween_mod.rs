@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CustomTimelineTween")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomTimelineTween {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub transforms: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectDynamicContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubContainerCreatorByNewGameObjectDynamicContext {
     __cordl_parent: crate::Zenject::SubContainerCreatorDynamicContext,
     pub _gameObjectBindInfo:

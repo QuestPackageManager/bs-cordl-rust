@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEditor+Analytics+PackageManagerTestAnalytic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PackageManagerTestAnalytic {
     __cordl_parent: crate::UnityEditor::Analytics::PackageManagerBaseAnalytic,
 }

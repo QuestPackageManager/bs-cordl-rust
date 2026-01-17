@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Animation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Animation {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }
@@ -2625,7 +2625,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::UnityEngine::Anim
 }
 #[cfg(feature = "cordl_class_UnityEngine+Animation+Enumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Animation_Enumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Outer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animation>,

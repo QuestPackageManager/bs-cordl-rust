@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ParticleSystemLightWithIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,

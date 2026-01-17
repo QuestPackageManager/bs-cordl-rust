@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+SegmentedControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SegmentedControl {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _separatorPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -542,7 +542,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::SegmentedControl {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+SegmentedControl+IDataSource")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct SegmentedControl_IDataSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

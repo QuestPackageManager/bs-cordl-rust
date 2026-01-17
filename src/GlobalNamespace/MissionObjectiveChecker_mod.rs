@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionObjectiveChecker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionObjectiveChecker {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionObjectiveType:
@@ -478,10 +478,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionObject
     }
 }
 #[cfg(feature = "cordl_class_MissionObjectiveChecker+Status")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MissionObjectiveChecker_Status {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Cleared = 3i32,
     Failed = 4i32,
     None = 0i32,

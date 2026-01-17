@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+NullableComparer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NullableComparer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Collections::Generic::Comparer_1<crate::System::Nullable_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,

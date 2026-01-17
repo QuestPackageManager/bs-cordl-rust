@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+OptionalFieldAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OptionalFieldAttribute {
     __cordl_parent: crate::System::Attribute,
     pub versionAdded: i32,

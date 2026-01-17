@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Unity+X509ChainImplUnityTls")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509ChainImplUnityTls {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509ChainImpl,
     pub elements: quest_hook::libil2cpp::Gc<

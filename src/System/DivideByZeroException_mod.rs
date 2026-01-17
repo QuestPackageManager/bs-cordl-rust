@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+DivideByZeroException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DivideByZeroException {
     __cordl_parent: crate::System::ArithmeticException,
 }

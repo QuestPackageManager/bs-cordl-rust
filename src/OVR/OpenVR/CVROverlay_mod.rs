@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVROverlay {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVROverlay,
@@ -2645,7 +2645,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::CVROverlay {
     }
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+PollNextOverlayEventUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CVROverlay_PollNextOverlayEventUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<8usize>,
@@ -2750,7 +2753,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {}
 #[cfg(feature = "cordl_class_OVR+OpenVR+CVROverlay+_PollNextOverlayEventPacked")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CVROverlay__PollNextOverlayEventPacked {
     __cordl_parent: crate::System::MulticastDelegate,
 }

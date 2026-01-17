@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSelectionView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AvatarSelectionView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _createButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

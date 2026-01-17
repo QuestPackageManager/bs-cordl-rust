@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIElementsRuntimeUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -889,7 +889,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UIElementsRuntimeUtility_CreateRuntimePanelDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+OTL_FeatureTag")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum OTL_FeatureTag {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     kern = 1801810542u32,
     liga = 1818847073u32,
     mark = 1835102827u32,

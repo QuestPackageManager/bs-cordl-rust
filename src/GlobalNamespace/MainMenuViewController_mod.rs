@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MainMenuViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MainMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _soloButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
@@ -529,10 +529,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MainMenuViewC
     }
 }
 #[cfg(feature = "cordl_class_MainMenuViewController+MenuButton")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MainMenuViewController_MenuButton {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BeatmapEditor = 2i32,
     FloorAdjust = 4i32,
     HowToPlay = 8i32,

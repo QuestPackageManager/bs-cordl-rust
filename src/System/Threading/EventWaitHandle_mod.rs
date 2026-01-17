@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+EventWaitHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventWaitHandle {
     __cordl_parent: crate::System::Threading::WaitHandle,
 }

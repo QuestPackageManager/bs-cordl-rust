@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ColorSchemeView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorSchemeView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _saberAColorImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,

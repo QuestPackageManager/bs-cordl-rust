@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+IPAddress+ReadOnlyIPAddress")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IPAddress_ReadOnlyIPAddress {
     __cordl_parent: crate::System::Net::IPAddress,
 }

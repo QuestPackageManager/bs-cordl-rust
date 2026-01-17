@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509KeyUsageExtension")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509KeyUsageExtension {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Extension,
     pub _keyUsages: crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+XRSystemData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRSystemData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub shaders: quest_hook::libil2cpp::Gc<
@@ -84,7 +84,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Univer
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+XRSystemData+ShaderResources")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XRSystemData_ShaderResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub xrOcclusionMeshPS: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,

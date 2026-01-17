@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRFace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRFace {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _faceExpressions: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRFaceExpressions>,
@@ -406,7 +406,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRFace {
     }
 }
 #[cfg(feature = "cordl_class_OVRFace+IMeshWeightsProvider")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct OVRFace_IMeshWeightsProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

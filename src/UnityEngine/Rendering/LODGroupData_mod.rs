@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LODGroupData {
     pub valid: bool,
@@ -109,7 +112,10 @@ impl crate::UnityEngine::Rendering::LODGroupData {
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_fadeTransitionWidth_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LODGroupData__fadeTransitionWidth_e__FixedBuffer {
     pub FixedElementField: f32,
@@ -227,7 +233,10 @@ impl crate::UnityEngine::Rendering::LODGroupData__fadeTransitionWidth_e__FixedBu
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+LODGroupData+_screenRelativeTransitionHeights_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct LODGroupData__screenRelativeTransitionHeights_e__FixedBuffer {
     pub FixedElementField: f32,

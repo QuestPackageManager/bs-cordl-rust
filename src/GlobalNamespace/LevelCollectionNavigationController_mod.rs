@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelCollectionNavigationController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelCollectionNavigationController {
     __cordl_parent: crate::HMUI::NavigationController,
     pub _loadingControl: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LoadingControl>,
@@ -1396,10 +1396,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_LevelCollectionNavigationController+AlphaAnimationType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LevelCollectionNavigationController_AlphaAnimationType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     In = 0i32,
     Out = 1i32,
 }

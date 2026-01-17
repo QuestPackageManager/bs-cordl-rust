@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapObjectData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectData {
     __cordl_parent: crate::GlobalNamespace::BeatmapDataItem,
     pub _beat_k__BackingField: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_QuickPlaySongPacksDropdown")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySongPacksDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
@@ -386,7 +386,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySong
 }
 #[cfg(feature = "cordl_class_QuickPlaySongPacksDropdown+SongPackMaskItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySongPacksDropdown_SongPackMaskItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

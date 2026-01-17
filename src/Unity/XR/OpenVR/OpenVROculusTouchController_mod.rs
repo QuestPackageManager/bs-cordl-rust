@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+XR+OpenVR+OpenVROculusTouchController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenVROculusTouchController {
     __cordl_parent: crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
     pub _thumbstick_k__BackingField:

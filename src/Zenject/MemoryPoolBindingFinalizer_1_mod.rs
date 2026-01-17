@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MemoryPoolBindingFinalizer_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MemoryPoolBindingFinalizer_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
     pub _poolBindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolBindInfo>,

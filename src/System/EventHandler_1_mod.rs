@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+EventHandler_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventHandler_1<TEventArgs: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_TEventArgs: std::marker::PhantomData<TEventArgs>,

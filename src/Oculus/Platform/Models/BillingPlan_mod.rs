@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+BillingPlan")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BillingPlan {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub PaidOffer: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PaidOffer>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DataTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DataTable {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
     pub _dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -5960,7 +5960,10 @@ impl AsMut<crate::System::Xml::Serialization::IXmlSerializable> for crate::Syste
     }
 }
 #[cfg(feature = "cordl_class_System+Data+DataTable+DSRowDiffIdUsageSection")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DataTable_DSRowDiffIdUsageSection {
     pub _targetDS: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -6089,7 +6092,10 @@ impl crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     }
 }
 #[cfg(feature = "cordl_class_System+Data+DataTable+RowDiffIdUsageSection")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct DataTable_RowDiffIdUsageSection {
     pub _targetTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,

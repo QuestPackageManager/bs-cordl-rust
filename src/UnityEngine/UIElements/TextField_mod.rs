@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextField {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -451,7 +451,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextF
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextField+TextInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextField_TextInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -631,7 +631,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextF
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextField>,
@@ -715,7 +715,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextF
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

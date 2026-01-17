@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+CopyDepthPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CopyDepthPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub _source_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
@@ -713,7 +713,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+CopyDepthPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CopyDepthPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub source: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,
@@ -809,7 +809,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+CopyDepthPass+ShaderConstants"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CopyDepthPass_ShaderConstants {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

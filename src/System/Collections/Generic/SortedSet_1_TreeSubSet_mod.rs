@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+SortedSet_1+TreeSubSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SortedSet_1_TreeSubSet<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Collections::Generic::SortedSet_1<T>,
     pub _underlying: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::SortedSet_1<T>>,

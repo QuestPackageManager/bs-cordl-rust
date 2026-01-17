@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+DtdParser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtdParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub readerAdapter: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>,
@@ -2675,10 +2675,15 @@ impl AsMut<crate::System::Xml::IDtdParser> for crate::System::Xml::DtdParser {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+DtdParser+LiteralType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DtdParser_LiteralType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AttributeValue = 0i32,
     EntityReplText = 1i32,
     SystemOrPublicID = 2i32,
@@ -2759,7 +2764,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_Lite
 }
 #[cfg(feature = "cordl_class_System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtdParser_ParseElementOnlyContent_LocalFrame {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startParenEntityId: i32,
@@ -2847,10 +2852,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+DtdParser+ScanningFunction")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DtdParser_ScanningFunction {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Attlist1 = 13i32,
     Attlist2 = 14i32,
     Attlist3 = 15i32,
@@ -2961,10 +2971,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_Scan
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+DtdParser+Token")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DtdParser_Token {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ANY = 44i32,
     AttlistDecl = 11i32,
     CDATA = 0i32,
@@ -3090,7 +3105,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_Toke
 }
 #[cfg(feature = "cordl_class_System+Xml+DtdParser+UndeclaredNotation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DtdParser_UndeclaredNotation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

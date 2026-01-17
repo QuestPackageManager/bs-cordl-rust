@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XContainerWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XContainerWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XObjectWrapper,
     pub _childNodes: quest_hook::libil2cpp::Gc<

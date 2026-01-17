@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_DynamicFontAssetUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub s_SystemFontLookup: quest_hook::libil2cpp::Gc<
@@ -210,7 +210,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_DynamicFontAssetUti
     }
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_DynamicFontAssetUtilities+FontReference")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TMP_DynamicFontAssetUtilities_FontReference {
     pub familyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

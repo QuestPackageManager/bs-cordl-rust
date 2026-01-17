@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MonoPoolableMemoryPool_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoPoolableMemoryPool_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::MemoryPool_1<TValue>,
     pub _originalParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

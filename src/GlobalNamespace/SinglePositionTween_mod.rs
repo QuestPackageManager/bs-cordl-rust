@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SinglePositionTween")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SinglePositionTween {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub transformReference: crate::UnityEngine::ExposedReference_1<

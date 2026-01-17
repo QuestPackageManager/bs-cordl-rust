@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndroidRelativeHumidity {
     __cordl_parent: crate::UnityEngine::InputSystem::HumiditySensor,
 }

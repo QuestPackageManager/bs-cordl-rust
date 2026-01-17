@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Macs+Gost28147Mac")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Gost28147Mac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bufOff: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ParticleSystemEventController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemEventController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
@@ -275,7 +275,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ParticleSyste
 }
 #[cfg(feature = "cordl_class_ParticleSystemEventController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ParticleSystemEventController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ParticleSystemEventController>,

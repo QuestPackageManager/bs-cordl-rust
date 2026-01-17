@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+RSAManaged")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RSAManaged {
     __cordl_parent: crate::System::Security::Cryptography::RSA,
     pub isCRTpossible: bool,
@@ -237,16 +237,7 @@ impl crate::Mono::Security::Cryptography::RSAManaged {
             unsafe { cordl_method_info.invoke_unchecked(self, (parameters))? };
         Ok(__cordl_ret.into())
     }
-    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self =
-            <Self as quest_hook::libil2cpp::Type>::class().instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_i32_1(
-        keySize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+    pub fn New(keySize: i32) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self =
             <Self as quest_hook::libil2cpp::Type>::class().instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -280,27 +271,7 @@ impl crate::Mono::Security::Cryptography::RSAManaged {
             unsafe { cordl_method_info.invoke_unchecked(self, (includePrivateParameters))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_0(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
-            std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
-            METHOD.get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            ".ctor",
-                            0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void =
-            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_i32_1(
+    pub fn _ctor(
         &mut self,
         keySize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -321,6 +292,33 @@ impl crate::Mono::Security::Cryptography::RSAManaged {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void =
             unsafe { cordl_method_info.invoke_unchecked(self, (keySize))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_KeyGenerated(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler,
+                    >), quest_hook::libil2cpp::Void, 1usize>("add_KeyGenerated")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "add_KeyGenerated",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn get_KeySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -361,6 +359,35 @@ impl crate::Mono::Security::Cryptography::RSAManaged {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn remove_KeyGenerated(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "remove_KeyGenerated"
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "remove_KeyGenerated",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+RSAManaged")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::RSAManaged {
@@ -373,7 +400,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::Cryptography::
 }
 #[cfg(feature = "cordl_class_Mono+Security+Cryptography+RSAManaged+KeyGeneratedEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RSAManaged_KeyGeneratedEventHandler {
     __cordl_parent: crate::System::MulticastDelegate,
 }

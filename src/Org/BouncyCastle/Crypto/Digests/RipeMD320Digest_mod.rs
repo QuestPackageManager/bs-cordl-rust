@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+RipeMD320Digest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RipeMD320Digest {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Digests::GeneralDigest,
     pub H0: i32,

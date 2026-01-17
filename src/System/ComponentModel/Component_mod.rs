@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+Component")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Component {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub site: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite>,

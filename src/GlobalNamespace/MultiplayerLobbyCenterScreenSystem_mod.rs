@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLobbyCenterScreenSystem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLobbyCenterScreenSystem {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRUIControls+VRInputModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
     pub _vrPointer: quest_hook::libil2cpp::Gc<crate::VRUIControls::VRPointer>,

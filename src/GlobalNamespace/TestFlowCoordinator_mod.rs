@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TestFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TestFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub _viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,

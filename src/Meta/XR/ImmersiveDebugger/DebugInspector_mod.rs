@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+DebugInspector")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugInspector {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _category: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,7 +220,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Meta::XR::ImmersiveDebugger::D
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+DebugInspector+InspectionRegistry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugInspector_InspectionRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub handles: quest_hook::libil2cpp::Gc<

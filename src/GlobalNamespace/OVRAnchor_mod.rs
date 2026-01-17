@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRAnchor")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRAnchor {
     pub _Handle_k__BackingField: u64,
@@ -1985,10 +1988,15 @@ impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor>>
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+ConfigureTrackerResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRAnchor_ConfigureTrackerResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failure = -1000i32,
     Invalid = -1008i32,
     NotSupported = -1004i32,
@@ -2079,7 +2087,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+DeferredKey")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRAnchor_DeferredKey {
     pub Space: u64,
@@ -2286,7 +2297,10 @@ impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor_Deferre
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+DeferredValue")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRAnchor_DeferredValue {
     pub Task: crate::GlobalNamespace::OVRTask_1<bool>,
@@ -2384,10 +2398,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRAnchor+DeferredValue")]
 impl crate::GlobalNamespace::OVRAnchor_DeferredValue {}
 #[cfg(feature = "cordl_class_OVRAnchor+EraseResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRAnchor_EraseResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failure = -1000i32,
     FailureDataIsInvalid = -1008i32,
     FailureInsufficientResources = -9000i32,
@@ -2473,7 +2492,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRAnchor_
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+FetchOptions")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRAnchor_FetchOptions {
     pub SingleUuid: crate::System::Nullable_1<crate::System::Guid>,
@@ -2626,10 +2648,15 @@ impl crate::GlobalNamespace::OVRAnchor_FetchOptions {
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+FetchResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRAnchor_FetchResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failure = -1000i32,
     FailureDataIsInvalid = -1008i32,
     FailureInsufficientResources = -9000i32,
@@ -2717,7 +2744,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRAnchor_
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+FetchTaskData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRAnchor_FetchTaskData {
     pub Anchors: quest_hook::libil2cpp::Gc<
@@ -2821,7 +2851,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRAnchor+FetchTaskData")]
 impl crate::GlobalNamespace::OVRAnchor_FetchTaskData {}
 #[cfg(feature = "cordl_class_OVRAnchor+FilterUnion")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRAnchor_FilterUnion {
     padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
@@ -2913,10 +2946,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::GlobalNamespace::OVRA
 #[cfg(feature = "OVRAnchor+FilterUnion")]
 impl crate::GlobalNamespace::OVRAnchor_FilterUnion {}
 #[cfg(feature = "cordl_class_OVRAnchor+SaveResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRAnchor_SaveResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failure = -1000i32,
     FailureDataIsInvalid = -1008i32,
     FailureInsufficientResources = -9000i32,
@@ -3006,10 +3044,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRAnchor_
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+ShareResult")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRAnchor_ShareResult {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Failure = -1000i32,
     FailureCloudStorageDisabled = -2000i32,
     FailureDataIsInvalid = -1008i32,
@@ -3101,7 +3144,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRAnchor_
 }
 #[cfg(feature = "cordl_class_OVRAnchor+Telemetry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRAnchor_Telemetry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3438,10 +3481,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRAnchor_Tel
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+TrackableType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRAnchor_TrackableType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Keyboard = 1i32,
     None = 0i32,
 }
@@ -3521,7 +3569,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRAnchor_
 }
 #[cfg(feature = "cordl_class_OVRAnchor+Tracker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRAnchor_Tracker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _configuration: crate::GlobalNamespace::OVRAnchor_TrackerConfiguration,
@@ -3901,7 +3949,10 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRAnchor_Tra
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+TrackerConfiguration")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRAnchor_TrackerConfiguration {
     pub _KeyboardTrackingEnabled_k__BackingField: bool,
@@ -4367,7 +4418,10 @@ impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor_Tracker
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+__FetchTrackablesAsync_g__QuerySingleComponentAsync_66_0_d")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRAnchor___FetchTrackablesAsync_g__QuerySingleComponentAsync_66_0_d {
     pub __1__state: i32,
@@ -4562,7 +4616,7 @@ impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
 }
 #[cfg(feature = "cordl_class_OVRAnchor+Telemetry+Annotation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Telemetry_OVRAnchor_Annotation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -4624,7 +4678,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Telemetry_OVR
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+Telemetry+Key")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Telemetry_OVRAnchor_Key {
     pub _markerId: i32,
@@ -4862,10 +4919,15 @@ impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::Telemetry_OVRAnch
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+Telemetry+MarkerId")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Telemetry_OVRAnchor_MarkerId {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ConfigureTracker = 163068237i32,
     DiscoverSpaces = 163054959i32,
     EraseSingleSpace = 163062284i32,
@@ -4955,7 +5017,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Telemetry_
     }
 }
 #[cfg(feature = "cordl_class_OVRAnchor+Tracker+AsyncLock")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Tracker_OVRAnchor_AsyncLock {
     pub _tracker: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor_Tracker>,
@@ -5150,7 +5215,10 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::Tracker_OVRAn
 #[cfg(
     feature = "cordl_class_OVRAnchor+Tracker+__SetupDynamicObjectTracker_g__CreateAndConfigureTrackerAsync_5_1_d"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Tracker_OVRAnchor___SetupDynamicObjectTracker_g__CreateAndConfigureTrackerAsync_5_1_d {
     pub __1__state: i32,

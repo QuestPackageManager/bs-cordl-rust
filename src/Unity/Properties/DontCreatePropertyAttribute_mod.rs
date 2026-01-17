@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+DontCreatePropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DontCreatePropertyAttribute {
     __cordl_parent: crate::System::Attribute,
 }

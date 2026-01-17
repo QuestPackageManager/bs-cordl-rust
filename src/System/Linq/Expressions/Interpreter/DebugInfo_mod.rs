@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub StartLine: i32,
@@ -157,7 +157,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugInfo_DebugInfoComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

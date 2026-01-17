@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloInt16")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ModuloInstruction_ModuloInt16 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::ModuloInstruction,
 }

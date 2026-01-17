@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUResidentDrawer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUResidentDrawer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ContextIntPtr: crate::System::IntPtr,
@@ -1593,7 +1593,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::GPURes
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUResidentDrawer+ClassifyMaterialsJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUResidentDrawer_ClassifyMaterialsJob {
     pub batchMaterialHash: crate::Unity::Collections::NativeParallelHashMap_2_ReadOnly<
@@ -1743,7 +1746,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUResidentDrawer+FindRenderersFromMaterialJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUResidentDrawer_FindRenderersFromMaterialJob {
     pub materialIDs: crate::Unity::Collections::NativeHashSet_1_ReadOnly<i32>,
@@ -1895,7 +1901,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelForBatch>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUResidentDrawer+FindUnsupportedRenderersJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUResidentDrawer_FindUnsupportedRenderersJob {
     pub unsupportedMaterials: crate::Unity::Collections::NativeArray_1_ReadOnly<i32>,
@@ -2043,7 +2052,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+GPUResidentDrawer+GetMaterialsWithChangedPackedMaterialJob"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct GPUResidentDrawer_GetMaterialsWithChangedPackedMaterialJob {
     pub materialIDs: crate::Unity::Collections::NativeArray_1_ReadOnly<i32>,
@@ -2205,7 +2217,7 @@ impl AsMut<crate::Unity::Jobs::IJob>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUResidentDrawer+Strings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUResidentDrawer_Strings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

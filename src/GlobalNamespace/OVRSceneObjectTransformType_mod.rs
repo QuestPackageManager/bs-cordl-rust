@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSceneObjectTransformType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneObjectTransformType {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub TransformType: crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation,
@@ -80,10 +80,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneObjec
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneObjectTransformType+Transformation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRSceneObjectTransformType_Transformation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 2i32,
     Plane = 1i32,
     Volume = 0i32,

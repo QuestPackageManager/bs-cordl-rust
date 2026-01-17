@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -457,7 +457,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::Sec::
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp112r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -569,7 +569,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp112r2Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp112r2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -681,7 +681,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp128r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -793,7 +793,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp128r2Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp128r2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -905,7 +905,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp160k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1017,7 +1017,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp160r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1129,7 +1129,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp160r2Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp160r2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1241,7 +1241,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp192k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp192k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1353,7 +1353,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp192r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp192r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1465,7 +1465,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp224k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1577,7 +1577,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp224r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp224r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1689,7 +1689,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp256k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1801,7 +1801,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp256r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp256r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -1913,7 +1913,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp384r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp384r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2025,7 +2025,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Secp521r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Secp521r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2137,7 +2137,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect113r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect113r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2251,7 +2251,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect113r2Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect113r2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2365,7 +2365,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect131r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect131r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2481,7 +2481,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect131r2Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect131r2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2597,7 +2597,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect163k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2713,7 +2713,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect163r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2829,7 +2829,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect163r2Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect163r2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -2945,7 +2945,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect193r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect193r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3059,7 +3059,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect193r2Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect193r2Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3173,7 +3173,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect233k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect233k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3287,7 +3287,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect233r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect233r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3401,7 +3401,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect239k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect239k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3515,7 +3515,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect283k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect283k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3631,7 +3631,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect283r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect283r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3747,7 +3747,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect409k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect409k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3861,7 +3861,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect409r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect409r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -3975,7 +3975,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect571k1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect571k1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }
@@ -4091,7 +4091,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Sec+SecNamedCurves+Sect571r1Holder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecNamedCurves_Sect571r1Holder {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+BinaryNode")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BinaryNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
     pub _op: i32,
@@ -705,10 +705,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::BinaryNode {
     }
 }
 #[cfg(feature = "cordl_class_System+Data+BinaryNode+DataTypePrecedence")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BinaryNode_DataTypePrecedence {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Boolean = -2i32,
     Byte = 3i32,
     Char = -8i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputActionAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_ActionMaps: quest_hook::libil2cpp::Gc<
@@ -1060,7 +1060,10 @@ impl AsMut<crate::UnityEngine::InputSystem::IInputActionCollection2>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionAsset_ReadFileJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1203,7 +1206,10 @@ impl crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionAsset_WriteFileJson {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1317,7 +1323,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 impl crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset+WriteFileJsonNoName")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputActionAsset_WriteFileJsonNoName {
     pub maps: quest_hook::libil2cpp::Gc<

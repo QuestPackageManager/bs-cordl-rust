@@ -2,7 +2,7 @@
     feature = "cordl_class_Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Il2CppEagerStaticClassConstructionAttribute {
     __cordl_parent: crate::System::Attribute,
 }

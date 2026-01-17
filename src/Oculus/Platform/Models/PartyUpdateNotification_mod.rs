@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+PartyUpdateNotification")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PartyUpdateNotification {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Action: crate::Oculus::Platform::PartyUpdateAction,

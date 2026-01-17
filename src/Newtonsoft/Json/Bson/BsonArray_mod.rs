@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonArray")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BsonArray {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonToken,
     pub _children: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Watch_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Watch_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::Manager::Watch,
     pub _getter: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
@@ -463,7 +463,7 @@ impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+Watch_1+ToDisplayStringSignature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Watch_1_ToDisplayStringSignature<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::MulticastDelegate,
     __cordl_phantom_T: std::marker::PhantomData<T>,

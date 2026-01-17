@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+ChannelData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ChannelData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Ref: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

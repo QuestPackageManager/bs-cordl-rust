@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+ETrackedDeviceProperty")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ETrackedDeviceProperty {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Prop_AllWirelessDongleDescriptions_String = 1008i32,
     Prop_AttachedDeviceId_String = 3000i32,
     Prop_AudioBridgeFirmwareVersion_Uint64 = 2061i32,

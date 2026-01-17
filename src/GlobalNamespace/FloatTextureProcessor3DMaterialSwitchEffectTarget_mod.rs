@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatTextureProcessor3DMaterialSwitchEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatTextureProcessor3DMaterialSwitchEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _materialArray: quest_hook::libil2cpp::Gc<

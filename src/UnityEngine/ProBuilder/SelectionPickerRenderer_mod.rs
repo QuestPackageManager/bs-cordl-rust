@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectionPickerRenderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1017,7 +1017,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Selec
 #[cfg(
     feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
 )]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct SelectionPickerRenderer_ISelectionPickerRenderer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -1123,7 +1123,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectionPickerRenderer_SelectionPickerRendererHDRP {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1272,7 +1272,7 @@ impl AsMut<crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPic
     feature = "cordl_class_UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectionPickerRenderer_SelectionPickerRendererStandard {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

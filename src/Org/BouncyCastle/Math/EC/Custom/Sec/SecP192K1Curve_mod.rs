@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecP192K1Curve")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecP192K1Curve {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractFpCurve,
     pub m_infinity:
@@ -454,7 +454,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecP192K1Curve+SecP192K1LookupTable"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SecP192K1Curve_SecP192K1LookupTable {
     __cordl_parent: crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable,
     pub m_outer:

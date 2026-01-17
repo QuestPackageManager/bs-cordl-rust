@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLevelSceneSetupData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLevelSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,

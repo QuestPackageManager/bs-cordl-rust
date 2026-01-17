@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VerticalVirtualizationController_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VerticalVirtualizationController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionVirtualizationController,
     pub m_Pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::ObjectPool_1<T>>,

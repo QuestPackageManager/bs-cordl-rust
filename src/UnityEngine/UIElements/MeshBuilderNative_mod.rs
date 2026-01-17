@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MeshBuilderNative {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -523,7 +523,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::MeshB
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshBuilderNative_NativeBorderParams {
     pub rect: crate::UnityEngine::Rect,
@@ -643,7 +646,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 impl crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshBuilderNative_NativeColorPage {
     pub isValid: i32,
@@ -748,7 +754,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 impl crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct MeshBuilderNative_NativeRectParams {
     pub rect: crate::UnityEngine::Rect,

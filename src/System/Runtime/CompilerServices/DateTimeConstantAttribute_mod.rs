@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DateTimeConstantAttribute {
     __cordl_parent: crate::System::Runtime::CompilerServices::CustomConstantAttribute,
     pub _date: crate::System::DateTime,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Painter2D")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Painter2D {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -283,7 +283,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::Paint
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Painter2D+Painter2DJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Painter2D_Painter2DJob {
     pub painterHandle: crate::System::IntPtr,
@@ -429,7 +432,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Painter2D+Painter2DJobData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Painter2D_Painter2DJobData {
     pub node: crate::UnityEngine::UIElements::UnsafeMeshGenerationNode,

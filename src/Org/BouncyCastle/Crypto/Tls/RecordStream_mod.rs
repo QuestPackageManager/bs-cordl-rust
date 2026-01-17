@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mHandler: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol>,
@@ -745,7 +745,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Crypto::Tls
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordStream_HandshakeHashUpdateStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream,
     pub mOuter: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::RecordStream>,
@@ -871,7 +871,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RecordStream_SequenceNumber {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: i64,

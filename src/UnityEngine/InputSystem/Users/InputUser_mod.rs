@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUser")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputUser {
     pub m_Id: u32,
@@ -1964,7 +1967,10 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Users::I
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputUser_CompareDevicesByUserAccount {
     pub platformUserAccountHandle: crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
@@ -2159,7 +2165,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputUser_ControlSchemeChangeSyntax {
     pub m_UserIndex: i32,
@@ -2292,7 +2301,10 @@ impl crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUser+GlobalState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputUser_GlobalState {
     pub pairingStateVersion: i32,
@@ -2469,7 +2481,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
 impl crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputUser_OngoingAccountSelection {
     pub device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
@@ -2574,7 +2589,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
 impl crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUser+UserData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputUser_UserData {
     pub platformUserAccountHandle:
@@ -2690,10 +2708,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
 impl crate::UnityEngine::InputSystem::Users::InputUser_UserData {}
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Users+InputUser+UserFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum InputUser_UserFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BindToAllDevices = 1i32,
     UserAccountSelectionInProgress = 2i32,
 }

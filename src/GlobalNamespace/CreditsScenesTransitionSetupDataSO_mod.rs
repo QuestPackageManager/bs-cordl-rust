@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CreditsScenesTransitionSetupDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CreditsScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<

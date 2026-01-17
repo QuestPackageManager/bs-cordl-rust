@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ScreenshotRecorder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenshotRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -309,10 +309,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenshotRec
     }
 }
 #[cfg(feature = "cordl_class_ScreenshotRecorder+RecordingType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ScreenshotRecorder_RecordingType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     F10ForScreenshot = 3i32,
     Interval = 4i32,
     Mono360Sequence = 2i32,

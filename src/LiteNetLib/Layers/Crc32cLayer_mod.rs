@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+Layers+Crc32cLayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Crc32cLayer {
     __cordl_parent: crate::LiteNetLib::Layers::PacketLayerBase,
 }

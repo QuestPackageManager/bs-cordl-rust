@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRVignette")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVignette {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub VignetteShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -485,10 +485,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVignette {
     }
 }
 #[cfg(feature = "cordl_class_OVRVignette+FalloffType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRVignette_FalloffType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Linear = 0i32,
     Quadratic = 1i32,
 }
@@ -567,10 +572,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRVignett
     }
 }
 #[cfg(feature = "cordl_class_OVRVignette+MeshComplexityLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRVignette_MeshComplexityLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Detailed = 3i32,
     Normal = 2i32,
     Simple = 1i32,

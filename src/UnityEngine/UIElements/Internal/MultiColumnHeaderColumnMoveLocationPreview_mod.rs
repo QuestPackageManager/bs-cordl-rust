@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiColumnHeaderColumnMoveLocationPreview {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Resources+MissingSatelliteAssemblyException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissingSatelliteAssemblyException {
     __cordl_parent: crate::System::SystemException,
     pub _cultureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

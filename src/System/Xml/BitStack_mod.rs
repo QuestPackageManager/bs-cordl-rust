@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+BitStack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BitStack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bitStack: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,

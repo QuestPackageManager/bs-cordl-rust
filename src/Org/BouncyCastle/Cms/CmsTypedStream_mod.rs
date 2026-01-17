@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsTypedStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsTypedStream {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -239,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Cms::CmsTyp
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsTypedStream_FullReaderStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::IO::FilterStream,
 }

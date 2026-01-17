@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateInstruction+NegateInt32")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NegateInstruction_NegateInt32 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::NegateInstruction,
 }

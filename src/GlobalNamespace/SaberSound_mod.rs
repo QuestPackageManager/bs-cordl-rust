@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SaberSound")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaberSound {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _saberTop: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

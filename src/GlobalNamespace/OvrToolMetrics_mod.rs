@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OvrToolMetrics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OvrToolMetrics {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _metricsTool: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRMetricsToolSDK>,

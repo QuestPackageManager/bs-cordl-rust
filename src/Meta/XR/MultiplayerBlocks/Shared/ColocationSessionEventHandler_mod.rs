@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+MultiplayerBlocks+Shared+ColocationSessionEventHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColocationSessionEventHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub AnchorPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

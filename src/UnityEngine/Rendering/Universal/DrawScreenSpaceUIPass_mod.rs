@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DrawScreenSpaceUIPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DrawScreenSpaceUIPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_PassData: quest_hook::libil2cpp::Gc<
@@ -453,7 +453,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DrawScreenSpaceUIPass+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DrawScreenSpaceUIPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rendererList: crate::UnityEngine::Rendering::RenderGraphModule::RendererListHandle,
@@ -538,7 +538,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DrawScreenSpaceUIPass+UnsafePassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DrawScreenSpaceUIPass_UnsafePassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rendererList: crate::UnityEngine::Rendering::RenderGraphModule::RendererListHandle,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StandardGameplaySceneSetupData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardGameplaySceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub autoRestart: bool,

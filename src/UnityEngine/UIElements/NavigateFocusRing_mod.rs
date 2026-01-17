@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NavigateFocusRing {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -310,7 +310,7 @@ impl AsMut<crate::UnityEngine::UIElements::IFocusRing>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NavigateFocusRing_ChangeDirection {
     __cordl_parent: crate::UnityEngine::UIElements::FocusChangeDirection,
 }
@@ -391,7 +391,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NavigateFocusRing_FocusableHierarchyTraversal {
     pub currentFocusable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

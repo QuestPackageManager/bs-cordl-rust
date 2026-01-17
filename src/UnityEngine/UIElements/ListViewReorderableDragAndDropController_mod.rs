@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ListViewReorderableDragAndDropController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListViewReorderableDragAndDropController {
     __cordl_parent: crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
     pub m_ListView: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseListView>,

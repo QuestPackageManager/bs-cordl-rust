@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_ColorType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ColorType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ColorA = 0i32,
     ColorB = 1i32,
     None = -1i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+FileWebRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FileWebRequest {
     __cordl_parent: crate::System::Net::WebRequest,
     pub m_connectionGroupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

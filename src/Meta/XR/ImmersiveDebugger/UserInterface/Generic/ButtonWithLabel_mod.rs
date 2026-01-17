@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+ButtonWithLabel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonWithLabel {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Button,
     pub _label: quest_hook::libil2cpp::Gc<

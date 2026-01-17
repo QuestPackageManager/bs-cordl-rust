@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OffsetByBeatmapObjectSpawnCenter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OffsetByBeatmapObjectSpawnCenter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _spawnCenter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectSpawnCenter>,

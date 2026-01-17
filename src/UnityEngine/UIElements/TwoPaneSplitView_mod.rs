@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TwoPaneSplitView {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_LeftPane: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -690,7 +690,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TwoPa
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TwoPaneSplitView_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TwoPaneSplitView>,
@@ -778,7 +778,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TwoPaneSplitView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_FixedPaneIndex:

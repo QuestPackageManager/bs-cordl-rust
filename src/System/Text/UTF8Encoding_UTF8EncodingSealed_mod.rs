@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8EncodingSealed")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF8Encoding_UTF8EncodingSealed {
     __cordl_parent: crate::System::Text::UTF8Encoding,
 }

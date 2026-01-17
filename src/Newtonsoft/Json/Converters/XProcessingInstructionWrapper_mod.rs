@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XProcessingInstructionWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XProcessingInstructionWrapper {
     __cordl_parent: crate::Newtonsoft::Json::Converters::XObjectWrapper,
 }

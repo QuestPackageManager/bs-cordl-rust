@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicAtlas {
     __cordl_parent: crate::UnityEngine::UIElements::AtlasBase,
     pub m_Database: quest_hook::libil2cpp::Gc<
@@ -538,7 +538,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Dynam
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicAtlas_TextureInfo {
     __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo>,

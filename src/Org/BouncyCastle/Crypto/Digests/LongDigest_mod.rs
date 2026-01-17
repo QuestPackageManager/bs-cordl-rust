@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+LongDigest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LongDigest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub MyByteLength: i32,

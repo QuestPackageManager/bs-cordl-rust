@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockRuntime {
     __cordl_parent: crate::UnityEngine::XR::OpenXR::Features::OpenXRFeature,
     pub ignoreValidationErrors: bool,
@@ -1115,7 +1115,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+AfterFunctionDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockRuntime_AfterFunctionDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1304,7 +1304,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+BeforeFunctionDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockRuntime_BeforeFunctionDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1486,10 +1486,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEvent")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MockRuntime_ScriptEvent {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EndFrame = 1i32,
     HapticImpulse = 2i32,
     HapticStop = 3i32,
@@ -1581,7 +1586,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+Mock+MockRuntime+ScriptEventDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockRuntime_ScriptEventDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

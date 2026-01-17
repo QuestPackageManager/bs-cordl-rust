@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebReadStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebReadStream {
     __cordl_parent: crate::System::IO::Stream,
     pub _Operation_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,

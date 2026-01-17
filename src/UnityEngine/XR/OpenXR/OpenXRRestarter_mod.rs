@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+OpenXRRestarter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRRestarter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub onAfterRestart: quest_hook::libil2cpp::Gc<crate::System::Action>,

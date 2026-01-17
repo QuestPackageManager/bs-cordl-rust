@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Gen2GcCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Gen2GcCallback {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
     pub _callback: quest_hook::libil2cpp::Gc<

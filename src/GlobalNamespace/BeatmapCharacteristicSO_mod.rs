@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapCharacteristicSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCharacteristicSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

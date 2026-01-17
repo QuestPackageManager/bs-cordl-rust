@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionClearedEnvironmentEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionClearedEnvironmentEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionObjectiveCheckersManager:

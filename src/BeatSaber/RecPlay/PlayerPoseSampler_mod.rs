@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseSampler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerPoseSampler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub offsets: crate::BeatSaber::RecPlay::PoseOffsets,

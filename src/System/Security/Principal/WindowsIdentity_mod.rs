@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Principal+WindowsIdentity")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WindowsIdentity {
     __cordl_parent: crate::System::Security::Claims::ClaimsIdentity,
     pub _token: crate::System::IntPtr,

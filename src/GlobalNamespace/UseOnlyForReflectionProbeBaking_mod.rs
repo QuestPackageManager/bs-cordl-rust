@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UseOnlyForReflectionProbeBaking")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UseOnlyForReflectionProbeBaking {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

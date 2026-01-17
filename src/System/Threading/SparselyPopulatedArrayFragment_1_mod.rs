@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+SparselyPopulatedArrayFragment_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SparselyPopulatedArrayFragment_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _elements: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

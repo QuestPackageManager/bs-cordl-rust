@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusAdvancedHapticFeedbackPlayer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVRPlatformHelper>,
@@ -354,7 +354,7 @@ impl AsMut<crate::Zenject::ITickable>
 }
 #[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub player: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::HapticClipPlayer>,

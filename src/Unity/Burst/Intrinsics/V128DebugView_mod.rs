@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+V128DebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct V128DebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Value: crate::Unity::Burst::Intrinsics::v128,

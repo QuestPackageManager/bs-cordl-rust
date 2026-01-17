@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+Sig+Exportable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Exportable {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
 }

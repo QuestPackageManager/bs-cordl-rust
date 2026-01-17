@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_nonNegativeInteger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Datatype_nonNegativeInteger {
     __cordl_parent: crate::System::Xml::Schema::Datatype_integer,
 }

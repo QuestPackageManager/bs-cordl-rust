@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BufferedLightColorGroupEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BufferedLightColorGroupEffect {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
@@ -258,7 +258,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BufferedLight
 }
 #[cfg(feature = "cordl_class_BufferedLightColorGroupEffect+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BufferedLightColorGroupEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightGroup: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultJsonNameTable {
     __cordl_parent: crate::Newtonsoft::Json::JsonNameTable,
     pub _count: i32,
@@ -226,7 +226,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::DefaultJsonN
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultJsonNameTable_Entry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

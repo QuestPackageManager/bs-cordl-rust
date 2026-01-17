@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BasicBeatmapObjectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
     pub _sliderControllerPool:
@@ -454,7 +454,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BasicBeatmapO
 }
 #[cfg(feature = "cordl_class_BasicBeatmapObjectManager+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasicBeatmapObjectManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub disappearingArrows: bool,

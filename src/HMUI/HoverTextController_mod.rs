@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+HoverTextController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HoverTextController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _textMesh: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,

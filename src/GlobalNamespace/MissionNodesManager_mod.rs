@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionNodesManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionNodesManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rootMissionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,

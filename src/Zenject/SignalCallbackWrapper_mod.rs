@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SignalCallbackWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignalCallbackWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,

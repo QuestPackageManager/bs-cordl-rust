@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerAllOverallStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerAllOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _campaignOverallStatsData_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -690,7 +690,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerAllOver
 }
 #[cfg(feature = "cordl_class_PlayerAllOverallStatsData+PlayerOverallStatsData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerAllOverallStatsData_PlayerOverallStatsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _goodCutsCount_k__BackingField: i32,

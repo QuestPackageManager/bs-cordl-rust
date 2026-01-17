@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LobbyPlayersDataModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LobbyPlayersDataModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _menuRpcManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMenuRpcManager>,

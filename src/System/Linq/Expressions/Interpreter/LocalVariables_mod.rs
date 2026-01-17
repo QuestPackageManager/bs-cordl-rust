@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariables")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalVariables {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _variables: quest_hook::libil2cpp::Gc<
@@ -322,7 +322,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariables+VariableScope")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalVariables_VariableScope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Start: i32,

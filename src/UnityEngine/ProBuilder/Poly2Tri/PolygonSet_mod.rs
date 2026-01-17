@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PolygonSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PolygonSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _polygons: quest_hook::libil2cpp::Gc<

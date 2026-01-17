@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+TypeForwardedFromAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TypeForwardedFromAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _AssemblyFullName_k__BackingField:

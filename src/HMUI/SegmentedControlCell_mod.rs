@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+SegmentedControlCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SegmentedControlCell {
     __cordl_parent: crate::HMUI::SelectableCell,
     pub _cellNumber_k__BackingField: i32,

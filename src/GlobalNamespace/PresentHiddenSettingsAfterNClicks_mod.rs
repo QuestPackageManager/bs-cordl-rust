@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PresentHiddenSettingsAfterNClicks")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PresentHiddenSettingsAfterNClicks {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _hiddenSettingsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

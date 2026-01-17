@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DeltaControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeltaControl {
     __cordl_parent: crate::UnityEngine::InputSystem::Controls::Vector2Control,
     pub _up_k__BackingField:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnvironmentIdAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentIdAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub emptyIsAllowed: bool,

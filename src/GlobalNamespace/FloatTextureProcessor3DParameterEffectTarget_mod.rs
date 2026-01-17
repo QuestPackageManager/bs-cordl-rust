@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatTextureProcessor3DParameterEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatTextureProcessor3DParameterEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _textureProcessor3D: quest_hook::libil2cpp::Gc<
@@ -168,10 +168,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_FloatTextureProcessor3DParameterEffectTarget+TextureProcessor3DChannel"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FloatTextureProcessor3DParameterEffectTarget_TextureProcessor3DChannel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     A = 0i32,
     B = 1i32,
     C = 2i32,
@@ -274,10 +279,15 @@ for crate::GlobalNamespace::FloatTextureProcessor3DParameterEffectTarget_Texture
 #[cfg(
     feature = "cordl_class_FloatTextureProcessor3DParameterEffectTarget+TextureProcessor3DParameter"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FloatTextureProcessor3DParameterEffectTarget_TextureProcessor3DParameter {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ComputeKernel = 0i32,
     OutputOffset = 7i32,
     Param1 = 5i32,

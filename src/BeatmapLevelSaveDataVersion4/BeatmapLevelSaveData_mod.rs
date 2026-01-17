@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -118,7 +118,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapLevelSaveData_AudioData {
     pub songFilename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -228,7 +231,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
 impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {}
 #[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapLevelSaveData_BeatmapAuthors {
     pub mappers: quest_hook::libil2cpp::Gc<
@@ -342,7 +348,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {}
 #[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelSaveData_ColorScheme {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub colorSchemeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -434,7 +440,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapLevelSaveData_DifficultyBeatmap {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub characteristic: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -528,7 +534,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct BeatmapLevelSaveData_SongData {
     pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

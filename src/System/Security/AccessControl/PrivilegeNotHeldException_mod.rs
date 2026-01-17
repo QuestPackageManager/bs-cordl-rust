@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+PrivilegeNotHeldException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrivilegeNotHeldException {
     __cordl_parent: crate::System::UnauthorizedAccessException,
     pub _privilegeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

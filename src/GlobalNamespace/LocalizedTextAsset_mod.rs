@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LocalizedTextAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalizedTextAsset {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _textInfos: quest_hook::libil2cpp::Gc<
@@ -150,7 +150,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedText
 }
 #[cfg(feature = "cordl_class_LocalizedTextAsset+TextInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalizedTextAsset_TextInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub language: crate::BGLib::Polyglot::LocalizationLanguage,

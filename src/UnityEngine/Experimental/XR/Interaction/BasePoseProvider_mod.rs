@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasePoseProvider {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

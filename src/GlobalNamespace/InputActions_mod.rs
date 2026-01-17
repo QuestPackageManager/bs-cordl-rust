@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_InputActions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InputActions {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _keyboardManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UIKeyboardManager>,

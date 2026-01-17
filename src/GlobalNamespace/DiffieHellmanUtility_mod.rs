@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DiffieHellmanUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiffieHellmanUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -260,7 +260,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellman
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+DiffieHellmanKeyPair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiffieHellmanUtility_DiffieHellmanKeyPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dhBasicAgreement:
@@ -478,7 +478,7 @@ impl AsMut<crate::GlobalNamespace::IDiffieHellmanKeyPair>
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+ElipticalCurveKeyPair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiffieHellmanUtility_ElipticalCurveKeyPair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ecdhBasicAgreement:
@@ -695,10 +695,15 @@ impl AsMut<crate::GlobalNamespace::IDiffieHellmanKeyPair>
     }
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+KeyType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum DiffieHellmanUtility_KeyType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DiffieHellman = 0i32,
     ElipticalCurve = 1i32,
 }
@@ -784,7 +789,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::DiffieHell
 }
 #[cfg(feature = "cordl_class_DiffieHellmanUtility+OperationTimer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DiffieHellmanUtility_OperationTimer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,

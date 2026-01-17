@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+PropertyDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::MemberDescriptor,
     pub _converter: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,

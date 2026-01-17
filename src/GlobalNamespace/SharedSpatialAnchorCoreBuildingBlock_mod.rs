@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SharedSpatialAnchorCoreBuildingBlock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SharedSpatialAnchorCoreBuildingBlock {
     __cordl_parent: crate::Meta::XR::BuildingBlocks::BuildingBlock,
 }

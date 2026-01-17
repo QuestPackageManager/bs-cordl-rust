@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+AddToExistingGameObjectComponentProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddToExistingGameObjectComponentProvider {
     __cordl_parent: crate::Zenject::AddToGameObjectComponentProviderBase,
     pub _gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

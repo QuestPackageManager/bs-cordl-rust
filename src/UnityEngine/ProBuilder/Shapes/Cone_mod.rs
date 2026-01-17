@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Cone")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Cone {
     __cordl_parent: crate::UnityEngine::ProBuilder::Shapes::Shape,
     pub m_NumberOfSides: i32,

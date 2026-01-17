@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+DriveNotFoundException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DriveNotFoundException {
     __cordl_parent: crate::System::IO::IOException,
 }

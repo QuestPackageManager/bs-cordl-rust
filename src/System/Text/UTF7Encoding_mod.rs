@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+UTF7Encoding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF7Encoding {
     __cordl_parent: crate::System::Text::Encoding,
     pub _base64Bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -762,7 +762,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF7Encoding {
 }
 #[cfg(feature = "cordl_class_System+Text+UTF7Encoding+Decoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF7Encoding_Decoder {
     __cordl_parent: crate::System::Text::DecoderNLS,
     pub bits: i32,
@@ -890,7 +890,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF7Encoding_Dec
 }
 #[cfg(feature = "cordl_class_System+Text+UTF7Encoding+DecoderUTF7Fallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF7Encoding_DecoderUTF7Fallback {
     __cordl_parent: crate::System::Text::DecoderFallback,
 }
@@ -1060,7 +1060,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Text::UTF7Encoding_Dec
 }
 #[cfg(feature = "cordl_class_System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF7Encoding_DecoderUTF7FallbackBuffer {
     __cordl_parent: crate::System::Text::DecoderFallbackBuffer,
     pub cFallback: char,
@@ -1264,7 +1264,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Text+UTF7Encoding+Encoder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UTF7Encoding_Encoder {
     __cordl_parent: crate::System::Text::EncoderNLS,
     pub bits: i32,

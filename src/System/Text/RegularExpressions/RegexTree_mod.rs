@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexTree")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RegexTree {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Root: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexNode>,

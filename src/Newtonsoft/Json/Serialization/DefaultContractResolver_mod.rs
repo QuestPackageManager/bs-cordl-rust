@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultContractResolver {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _nameTable: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::DefaultJsonNameTable>,
@@ -2112,7 +2112,7 @@ impl AsMut<crate::Newtonsoft::Json::Serialization::IContractResolver>
     feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultContractResolver_EnumerableDictionaryWrapper_2<
     TEnumeratorKey: quest_hook::libil2cpp::Type,
     TEnumeratorValue: quest_hook::libil2cpp::Type,

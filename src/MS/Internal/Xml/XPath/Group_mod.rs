@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Group")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Group {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _groupNode: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,

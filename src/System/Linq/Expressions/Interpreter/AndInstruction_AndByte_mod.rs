@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+AndInstruction+AndByte")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AndInstruction_AndByte {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::AndInstruction,
 }

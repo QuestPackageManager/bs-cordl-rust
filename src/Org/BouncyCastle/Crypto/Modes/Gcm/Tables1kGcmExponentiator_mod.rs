@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+Tables1kGcmExponentiator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Tables1kGcmExponentiator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lookupPowX2: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,

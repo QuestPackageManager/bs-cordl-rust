@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+AesManaged")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AesManaged {
     __cordl_parent: crate::System::Security::Cryptography::Aes,
     pub m_rijndael:

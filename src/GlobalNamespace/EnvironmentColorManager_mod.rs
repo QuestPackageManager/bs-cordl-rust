@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnvironmentColorManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentColorManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _defaultColorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,

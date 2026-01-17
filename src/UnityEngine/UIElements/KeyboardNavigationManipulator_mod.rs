@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationManipulator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KeyboardNavigationManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::Manipulator,
     pub m_Action: quest_hook::libil2cpp::Gc<

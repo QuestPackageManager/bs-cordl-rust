@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextGenerationSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextGenerationSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RenderedText: crate::UnityEngine::TextCore::Text::RenderedText,

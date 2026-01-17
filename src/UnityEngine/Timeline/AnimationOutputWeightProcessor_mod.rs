@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimationOutputWeightProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Output: crate::UnityEngine::Animations::AnimationPlayableOutput,
@@ -183,7 +183,10 @@ impl AsMut<crate::UnityEngine::Timeline::ITimelineEvaluateCallback>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AnimationOutputWeightProcessor_WeightInfo {
     pub mixer: crate::UnityEngine::Playables::Playable,

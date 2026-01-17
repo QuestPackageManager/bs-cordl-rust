@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ValueTask {
     pub _obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -451,7 +454,7 @@ impl AsMut<crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTas
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ValueTask+ValueTaskSourceAsTask")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ValueTask_ValueTaskSourceAsTask {
     __cordl_parent:
         crate::System::Threading::Tasks::Task_1<crate::System::Threading::Tasks::VoidTaskResult>,

@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1SetParser")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct Asn1SetParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

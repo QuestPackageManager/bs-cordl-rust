@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoPostProcessMainEffectSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoPostProcessMainEffectSO {
     __cordl_parent: crate::GlobalNamespace::MainEffectSO,
     pub _fadeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,

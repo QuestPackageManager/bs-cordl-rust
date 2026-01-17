@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Asn1Sequence {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
     pub elements: quest_hook::libil2cpp::Gc<
@@ -507,7 +507,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Sequence+Asn1SequenceParserImpl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Asn1Sequence_Asn1SequenceParserImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,

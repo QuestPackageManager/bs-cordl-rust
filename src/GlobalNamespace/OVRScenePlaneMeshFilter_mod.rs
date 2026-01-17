@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRScenePlaneMeshFilter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -192,7 +192,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRScenePlane
     }
 }
 #[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     pub Boundary: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
@@ -390,7 +393,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     pub _Count_k__BackingField: i32,

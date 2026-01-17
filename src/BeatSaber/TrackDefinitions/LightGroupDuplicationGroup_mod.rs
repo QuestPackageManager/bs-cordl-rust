@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightGroupDuplicationGroup {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _duplicationGroupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+ArrayPropertyBag_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArrayPropertyBag_1<TElement: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Unity::Properties::IndexedCollectionPropertyBag_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,

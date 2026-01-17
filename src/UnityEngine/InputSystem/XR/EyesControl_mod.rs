@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+EyesControl")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EyesControl {
     __cordl_parent:
         crate::UnityEngine::InputSystem::InputControl_1<crate::UnityEngine::InputSystem::XR::Eyes>,

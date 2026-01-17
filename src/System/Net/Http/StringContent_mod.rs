@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+StringContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StringContent {
     __cordl_parent: crate::System::Net::Http::ByteArrayContent,
 }

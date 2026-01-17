@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Component")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Component {
     __cordl_parent: crate::UnityEngine::Object,
 }

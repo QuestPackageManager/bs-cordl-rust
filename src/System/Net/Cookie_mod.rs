@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Cookie")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Cookie {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_comment: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

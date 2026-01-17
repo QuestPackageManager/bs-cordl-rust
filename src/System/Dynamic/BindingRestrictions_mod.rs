@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindingRestrictions {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -284,7 +284,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::BindingRestri
 }
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindingRestrictions_BindingRestrictionsProxy {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -338,7 +338,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindingRestrictions_TestBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _unique: quest_hook::libil2cpp::Gc<
@@ -513,7 +513,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::BindingRestri
     }
 }
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TestBuilder_BindingRestrictions_AndNode {
     pub Depth: i32,

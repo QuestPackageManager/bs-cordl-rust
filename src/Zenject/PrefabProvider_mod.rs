@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+PrefabProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrefabProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,

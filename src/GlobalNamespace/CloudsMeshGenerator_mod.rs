@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CloudsMeshGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CloudsMeshGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -132,7 +132,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CloudsMeshGen
     }
 }
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Cloud")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CloudsMeshGenerator_Cloud {
     pub precisionOpaqueMesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -233,7 +236,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "CloudsMeshGenerator+Cloud")]
 impl crate::GlobalNamespace::CloudsMeshGenerator_Cloud {}
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+ProhibitedRadius")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CloudsMeshGenerator_ProhibitedRadius {
     pub transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -339,7 +345,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
 impl crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {}
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+RadiusChunk")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CloudsMeshGenerator_RadiusChunk {
     pub normalizedStart: f32,
@@ -446,7 +455,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
 impl crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {}
 #[cfg(feature = "cordl_class_CloudsMeshGenerator+Ring")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CloudsMeshGenerator_Ring {
     pub radius: f32,

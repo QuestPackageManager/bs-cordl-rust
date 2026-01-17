@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+IconAndTextSegmentedControlCell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IconAndTextSegmentedControlCell {
     __cordl_parent: crate::HMUI::SegmentedControlCell,
     pub _icon: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,

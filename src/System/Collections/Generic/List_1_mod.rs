@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+List_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct List_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -2198,7 +2198,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IList>
     }
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+List_1+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct List_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StandardLevelDetailViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StandardLevelDetailViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _standardLevelDetailView:
@@ -1428,10 +1428,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_StandardLevelDetailViewController+ContentType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum StandardLevelDetailViewController_ContentType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Buy = 4i32,
     BuyInfo = 5i32,
     Error = 6i32,
@@ -1528,7 +1533,10 @@ unsafe impl quest_hook::libil2cpp::Return
 #[cfg(
     feature = "cordl_class_StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__56_0_d"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StandardLevelDetailViewController___BuyPackButtonWasPressed_b__56_0_d {
     pub __1__state: i32,
@@ -1716,7 +1724,10 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
 #[cfg(
     feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__57_0_d"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__57_0_d {
     pub __1__state: i32,
@@ -1905,7 +1916,10 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     }
 }
 #[cfg(feature = "cordl_class_StandardLevelDetailViewController+__OpenLevelProductStore_b__58_0_d")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StandardLevelDetailViewController___OpenLevelProductStore_b__58_0_d {
     pub __1__state: i32,
@@ -2083,7 +2097,10 @@ impl AsMut<crate::System::Runtime::CompilerServices::IAsyncStateMachine>
 #[cfg(
     feature = "cordl_class_StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__59_0_d"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__59_0_d {
     pub __1__state: i32,

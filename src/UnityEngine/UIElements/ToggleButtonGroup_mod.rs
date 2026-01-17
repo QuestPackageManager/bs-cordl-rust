@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ToggleButtonGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ToggleButtonGroup {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<
         crate::UnityEngine::UIElements::ToggleButtonGroupState,
@@ -490,7 +490,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Toggl
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ToggleButtonGroup+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ToggleButtonGroup_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ToggleButtonGroup>,
@@ -578,7 +578,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ToggleButtonGroup+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ToggleButtonGroup_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::UIElements::ToggleButtonGroupState,

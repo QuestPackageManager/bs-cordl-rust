@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+ReadObjectInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReadObjectInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objectInfoId: i32,

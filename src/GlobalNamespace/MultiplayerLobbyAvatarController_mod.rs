@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLobbyAvatarController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _spawnEffect: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
@@ -253,7 +253,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController+Factory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLobbyAvatarController_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,

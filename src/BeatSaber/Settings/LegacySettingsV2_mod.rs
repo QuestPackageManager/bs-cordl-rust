@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mainSettings:
@@ -145,7 +145,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Settings::LegacySet
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2_AudioSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub volume: f32,
@@ -230,10 +230,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LegacySettingsV2_BloomPrepassTextureEffectPreset {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HD = 0i32,
     HDWithoutToneMapping = 1i32,
 }
@@ -323,7 +328,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2_ControllerSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub positionOffset: crate::Unity::Mathematics::float3,
@@ -407,7 +412,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2_CustomServerSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useCustomServerEnvironment: bool,
@@ -492,7 +497,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2_DebugSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enableFpsCounter: bool,
@@ -576,10 +581,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LegacySettingsV2_FoveatedRenderingLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     High = 3i32,
     HighTop = 4i32,
     Low = 1i32,
@@ -672,7 +682,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2_GraphicSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub performancePresetKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -758,10 +768,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LegacySettingsV2_MainEffectPreset {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Off = 0i32,
     Pyramid = 1i32,
     PyramidForBaking = 2i32,
@@ -852,7 +867,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2_MainSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub audioSettings:
@@ -951,10 +966,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LegacySettingsV2_MirrorQualityPreset {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Fake = 1i32,
     Off = 0i32,
     RenderedHQ = 3i32,
@@ -1045,10 +1065,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LegacySettingsV2_ObstaclesQuality {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DefaultObstacleQualityBaseOnDisplacement = 0i32,
     ObstacleHW = 3i32,
     ObstacleLW = 2i32,
@@ -1140,7 +1165,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2_PerformancePreset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub presetNameLocalizationTag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1240,10 +1265,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LegacySettingsV2_ProcessorPerformanceLevel {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Boost = 3i32,
     PowerSavings = 0i32,
     SustainedHigh = 2i32,
@@ -1336,7 +1366,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LegacySettingsV2_SmoothCameraSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub enabled: bool,
@@ -1424,10 +1454,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+WindowMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LegacySettingsV2_WindowMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Fullscreen = 1i32,
     Windowed = 0i32,
 }

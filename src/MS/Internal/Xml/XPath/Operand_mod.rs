@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Operand")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Operand {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _type: crate::System::Xml::XPath::XPathResultType,

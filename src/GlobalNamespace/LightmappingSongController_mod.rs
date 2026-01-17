@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightmappingSongController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightmappingSongController {
     __cordl_parent: crate::GlobalNamespace::SongController,
 }

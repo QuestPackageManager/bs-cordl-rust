@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Linq+LineInfoAnnotation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LineInfoAnnotation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lineNumber: i32,

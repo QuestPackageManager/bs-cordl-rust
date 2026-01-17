@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DirectionalLight")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DirectionalLight {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub color: crate::UnityEngine::Color,

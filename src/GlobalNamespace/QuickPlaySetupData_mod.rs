@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_QuickPlaySetupData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySetupData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub quickPlayAvailablePacksOverride: quest_hook::libil2cpp::Gc<
@@ -103,7 +103,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySetu
 }
 #[cfg(feature = "cordl_class_QuickPlaySetupData+QuickPlaySongPacksOverride")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySetupData_QuickPlaySongPacksOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub predefinedPackIds: quest_hook::libil2cpp::Gc<
@@ -207,7 +207,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -310,7 +310,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPackName"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPackName {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -397,7 +397,7 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_Locali
 }
 #[cfg(feature = "cordl_class_QuickPlaySetupData+QuickPlaySongPacksOverride+PredefinedPack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub order: i32,

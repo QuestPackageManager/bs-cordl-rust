@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Tweening+SongTimeTweeningManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongTimeTweeningManager {
     __cordl_parent: crate::Tweening::TweeningManager,
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,

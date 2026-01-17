@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GhostEffectAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GhostEffectAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub _ghostEffectType: crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType,

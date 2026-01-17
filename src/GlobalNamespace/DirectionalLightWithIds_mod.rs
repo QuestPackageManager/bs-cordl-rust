@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DirectionalLightWithIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DirectionalLightWithIds {
     __cordl_parent: crate::GlobalNamespace::RuntimeLightWithIds,
     pub _directionalLight: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,

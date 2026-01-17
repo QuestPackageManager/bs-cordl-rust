@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatGames+Analytics+Events+BasePlatformSessionAnalyticsEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BasePlatformSessionAnalyticsEvent {
     __cordl_parent: crate::OSCE::Analytics::UserSessionAnalyticsEvent,
     pub event_time: f32,

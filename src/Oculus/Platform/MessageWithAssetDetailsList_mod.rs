@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAssetDetailsList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MessageWithAssetDetailsList {
     __cordl_parent: crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetailsList>,

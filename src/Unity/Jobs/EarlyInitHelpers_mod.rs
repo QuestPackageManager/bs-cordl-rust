@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Jobs+EarlyInitHelpers")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EarlyInitHelpers {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -153,7 +153,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Jobs::EarlyInitHelpers 
 }
 #[cfg(feature = "cordl_class_Unity+Jobs+EarlyInitHelpers+EarlyInitFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EarlyInitHelpers_EarlyInitFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

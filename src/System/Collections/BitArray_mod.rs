@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+BitArray")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BitArray {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -543,7 +543,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::BitArray {
 }
 #[cfg(feature = "cordl_class_System+Collections+BitArray+BitArrayEnumeratorSimple")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BitArray_BitArrayEnumeratorSimple {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bitarray: quest_hook::libil2cpp::Gc<crate::System::Collections::BitArray>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+IntegratedSubsystem_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IntegratedSubsystem_1<TSubsystemDescriptor: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::IntegratedSubsystem,
     __cordl_phantom_TSubsystemDescriptor: std::marker::PhantomData<TSubsystemDescriptor>,

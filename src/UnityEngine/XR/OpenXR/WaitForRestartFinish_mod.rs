@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+WaitForRestartFinish")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WaitForRestartFinish {
     __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
     pub m_Timeout: f32,

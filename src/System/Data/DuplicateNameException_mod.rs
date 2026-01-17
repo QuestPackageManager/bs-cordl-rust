@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+DuplicateNameException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DuplicateNameException {
     __cordl_parent: crate::System::Data::DataException,
 }

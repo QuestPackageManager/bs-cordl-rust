@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CompiledIdentityConstraint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -219,10 +219,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::CompiledI
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CompiledIdentityConstraint_ConstraintRole {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Key = 1i32,
     Keyref = 2i32,
     Unique = 0i32,

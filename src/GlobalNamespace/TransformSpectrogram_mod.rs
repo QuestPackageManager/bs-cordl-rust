@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TransformSpectrogram")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TransformSpectrogram {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _transforms: quest_hook::libil2cpp::Gc<

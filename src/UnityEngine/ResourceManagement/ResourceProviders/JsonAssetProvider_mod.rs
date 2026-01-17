@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonAssetProvider {
     __cordl_parent: crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider,
 }

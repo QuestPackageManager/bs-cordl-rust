@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Haptics+HapticClip")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HapticClip {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

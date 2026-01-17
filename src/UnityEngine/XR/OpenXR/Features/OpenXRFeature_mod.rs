@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRFeature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OpenXRFeature {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_enabled: bool,
@@ -1735,10 +1735,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::OpenXR::Featu
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRFeature+LoaderEvent")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRFeature_LoaderEvent {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     SubsystemCreate = 0i32,
     SubsystemDestroy = 1i32,
     SubsystemStart = 2i32,
@@ -1829,10 +1834,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRFeature+NativeEvent")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRFeature_NativeEvent {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     XrBeginSession = 4i32,
     XrChangedSpaceApp = 6i32,
     XrDestroyInstance = 9i32,
@@ -1941,10 +1951,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+OpenXR+Features+OpenXRFeature+StatFlags")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OpenXRFeature_StatFlags {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 1i32,
     StatOptionNone = 0i32,
 }

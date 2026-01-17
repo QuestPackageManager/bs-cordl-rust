@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRVirtualKeyboardInputFieldTextHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRVirtualKeyboardInputFieldTextHandler {
     __cordl_parent: crate::GlobalNamespace::OVRVirtualKeyboard_AbstractTextHandler,
     pub inputField: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,

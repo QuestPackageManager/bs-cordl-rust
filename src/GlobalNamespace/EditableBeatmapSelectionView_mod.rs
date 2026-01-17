@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EditableBeatmapSelectionView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EditableBeatmapSelectionView {
     __cordl_parent: crate::GlobalNamespace::BeatmapSelectionView,
     pub _editButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

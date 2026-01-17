@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CoreUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3173,7 +3173,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::CoreUt
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUtils+Priorities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CoreUtils_Priorities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -3229,7 +3229,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::CoreUt
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CoreUtils+Sections")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CoreUtils_Sections {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

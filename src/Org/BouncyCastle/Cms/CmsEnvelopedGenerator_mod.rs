@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CmsEnvelopedGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recipientInfoGenerators: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,

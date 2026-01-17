@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate")]
@@ -123,7 +126,10 @@ impl crate::UnityEngine::PlayerLoop::FixedUpdate {
     pub type XRFixedUpdate = crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate;
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_AudioFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
@@ -225,7 +231,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_ClearLines {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
@@ -325,7 +334,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_DirectorFixedSampleTime {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
@@ -427,7 +439,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_DirectorFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
@@ -529,7 +544,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_DirectorFixedUpdatePostPhysics {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
@@ -631,7 +649,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_LegacyFixedAnimationUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
@@ -733,7 +754,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_NewInputFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
@@ -835,7 +859,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_Physics2DFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
@@ -937,7 +964,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_PhysicsClothFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
@@ -1039,7 +1069,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_PhysicsFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
@@ -1141,7 +1174,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_ScriptRunBehaviourFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
@@ -1243,7 +1279,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_ScriptRunDelayedFixedFrameRate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
@@ -1345,7 +1384,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
 impl crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedUpdate_XRFixedUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]

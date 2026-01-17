@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Specialized+CaseSensitiveStringDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CaseSensitiveStringDictionary {
     __cordl_parent: crate::System::Collections::Specialized::StringDictionary,
 }

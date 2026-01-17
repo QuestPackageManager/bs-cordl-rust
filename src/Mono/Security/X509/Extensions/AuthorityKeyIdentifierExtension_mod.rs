@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AuthorityKeyIdentifierExtension {
     __cordl_parent: crate::Mono::Security::X509::X509Extension,
     pub aki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

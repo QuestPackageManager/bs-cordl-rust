@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MessageDictionary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _internalProperties: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
@@ -769,7 +769,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
     feature = "cordl_class_System+Runtime+Remoting+Messaging+MessageDictionary+DictionaryEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MessageDictionary_DictionaryEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _methodDictionary:

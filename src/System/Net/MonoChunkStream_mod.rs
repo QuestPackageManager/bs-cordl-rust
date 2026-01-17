@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+MonoChunkStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoChunkStream {
     __cordl_parent: crate::System::Net::WebReadStream,
     pub _Headers_k__BackingField:

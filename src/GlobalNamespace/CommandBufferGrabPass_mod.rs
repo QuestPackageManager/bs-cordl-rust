@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CommandBufferGrabPass")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CommandBufferGrabPass {
     __cordl_parent: crate::GlobalNamespace::CommandBufferGOCore,
     pub _textureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

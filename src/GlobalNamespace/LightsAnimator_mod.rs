@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightsAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightsAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lights: quest_hook::libil2cpp::Gc<

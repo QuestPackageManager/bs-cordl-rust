@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+CurrentSystemTimeZone")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CurrentSystemTimeZone {
     __cordl_parent: crate::System::TimeZone,
     pub m_ticksOffset: i64,

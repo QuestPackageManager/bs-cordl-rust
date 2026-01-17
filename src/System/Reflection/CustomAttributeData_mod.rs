@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+CustomAttributeData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomAttributeData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ctorInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
@@ -758,7 +758,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::CustomAttr
 }
 #[cfg(feature = "cordl_class_System+Reflection+CustomAttributeData+LazyCAttrData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomAttributeData_LazyCAttrData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,

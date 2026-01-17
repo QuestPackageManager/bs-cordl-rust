@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Event")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Event {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -2052,7 +2052,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Event {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Event+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Event_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

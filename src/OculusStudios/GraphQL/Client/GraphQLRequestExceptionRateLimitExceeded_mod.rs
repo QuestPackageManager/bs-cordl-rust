@@ -2,7 +2,7 @@
     feature = "cordl_class_OculusStudios+GraphQL+Client+GraphQLRequestExceptionRateLimitExceeded"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphQLRequestExceptionRateLimitExceeded {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLRequestException,
 }

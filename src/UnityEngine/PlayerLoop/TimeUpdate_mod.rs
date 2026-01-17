@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate")]
@@ -95,7 +98,10 @@ impl crate::UnityEngine::PlayerLoop::TimeUpdate {
 #[cfg(
     feature = "cordl_class_UnityEngine+PlayerLoop+TimeUpdate+WaitForLastPresentationAndUpdateTime"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TimeUpdate_WaitForLastPresentationAndUpdateTime {}
 #[cfg(

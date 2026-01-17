@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlTextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlTextWriter {
     __cordl_parent: crate::System::Xml::XmlWriter,
     pub textWriter: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -1618,7 +1618,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlTextWriter {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Namespace")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlTextWriter_Namespace {
     pub prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1743,10 +1746,15 @@ impl crate::System::Xml::XmlTextWriter_Namespace {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+NamespaceState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextWriter_NamespaceState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     DeclaredAndWrittenOut = 3i32,
     DeclaredButNotWrittenOut = 2i32,
     NotDeclaredButInScope = 1i32,
@@ -1827,10 +1835,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextWriter_
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+SpecialAttr")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextWriter_SpecialAttr {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     XmlLang = 2i32,
     XmlNs = 3i32,
@@ -1911,10 +1924,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextWriter_
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+State")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextWriter_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AttrOnly = 6i32,
     Attribute = 4i32,
     Closed = 9i32,
@@ -2001,7 +2019,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XmlTextWriter_
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+TagInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlTextWriter_TagInfo {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2125,10 +2146,15 @@ impl crate::System::Xml::XmlTextWriter_TagInfo {
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlTextWriter+Token")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlTextWriter_Token {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Base64 = 10i32,
     CData = 3i32,
     Comment = 2i32,

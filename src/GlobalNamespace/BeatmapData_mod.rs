@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _updateAllBeatmapDataOnInsert_k__BackingField: bool,
@@ -1213,7 +1213,7 @@ impl AsMut<crate::GlobalNamespace::IReadonlyBeatmapData> for crate::GlobalNamesp
 }
 #[cfg(feature = "cordl_class_BeatmapData+BeatmapDataBinaryHeapItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapData_BeatmapDataBinaryHeapItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub node: quest_hook::libil2cpp::Gc<

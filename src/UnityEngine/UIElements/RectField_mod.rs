@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectField {
     __cordl_parent: crate::UnityEngine::UIElements::BaseCompositeField_3<
         crate::UnityEngine::Rect,
@@ -174,7 +174,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::RectF
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RectField>,
@@ -258,7 +258,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::RectF
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+RectField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectField_UxmlTraits {
     __cordl_parent:
         crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<crate::UnityEngine::Rect>,

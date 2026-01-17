@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlUnionConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlUnionConverter {
     __cordl_parent: crate::System::Xml::Schema::XmlBaseConverter,
     pub converters: quest_hook::libil2cpp::Gc<

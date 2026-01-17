@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchReportFlowResult")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MessageWithLaunchReportFlowResult {
     __cordl_parent: crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchReportFlowResult>,

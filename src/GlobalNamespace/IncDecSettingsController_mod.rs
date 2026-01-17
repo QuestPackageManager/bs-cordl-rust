@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_IncDecSettingsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IncDecSettingsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _stepValuePicker: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StepValuePicker>,

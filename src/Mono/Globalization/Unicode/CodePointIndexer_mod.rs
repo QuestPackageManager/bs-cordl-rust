@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CodePointIndexer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ranges: quest_hook::libil2cpp::Gc<
@@ -123,7 +123,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Globalization::Unicode::
     }
 }
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+CodePointIndexer+TableRange")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CodePointIndexer_TableRange {
     pub Start: i32,

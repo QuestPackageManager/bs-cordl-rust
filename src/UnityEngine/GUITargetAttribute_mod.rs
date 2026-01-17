@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+GUITargetAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUITargetAttribute {
     __cordl_parent: crate::System::Attribute,
     pub displayMask: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVROverlayCanvas")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVROverlayCanvas {
     __cordl_parent: crate::GlobalNamespace::OVRRayTransformer,
     pub _rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -462,10 +462,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVROverlayCan
     }
 }
 #[cfg(feature = "cordl_class_OVROverlayCanvas+CanvasShape")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVROverlayCanvas_CanvasShape {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Curved = 1i32,
     Flat = 0i32,
 }
@@ -550,10 +555,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVROverlay
     }
 }
 #[cfg(feature = "cordl_class_OVROverlayCanvas+DrawMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVROverlayCanvas_DrawMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     AlphaToMask = 4i32,
     Opaque = 0i32,
     OpaqueWithClip = 1i32,

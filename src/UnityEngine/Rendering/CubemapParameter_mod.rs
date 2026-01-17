@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CubemapParameter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CubemapParameter {
     __cordl_parent: crate::UnityEngine::Rendering::VolumeParameter_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,

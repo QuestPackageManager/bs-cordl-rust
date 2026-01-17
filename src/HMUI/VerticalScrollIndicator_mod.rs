@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+VerticalScrollIndicator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VerticalScrollIndicator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _handle: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,

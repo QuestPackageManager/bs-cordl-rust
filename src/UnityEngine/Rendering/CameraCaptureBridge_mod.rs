@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraCaptureBridge")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CameraCaptureBridge {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -282,7 +282,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::Camera
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraCaptureBridge+CameraEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CameraCaptureBridge_CameraEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub actions: quest_hook::libil2cpp::Gc<

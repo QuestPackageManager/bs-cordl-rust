@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+CodeDom+Compiler+GeneratedCodeAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GeneratedCodeAttribute {
     __cordl_parent: crate::System::Attribute,
     pub tool: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

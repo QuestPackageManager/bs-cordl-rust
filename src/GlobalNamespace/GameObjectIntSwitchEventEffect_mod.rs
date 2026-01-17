@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameObjectIntSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
@@ -182,7 +182,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameObjectInt
 }
 #[cfg(feature = "cordl_class_GameObjectIntSwitchEventEffect+GameObjectValueList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameObjectIntSwitchEventEffect_GameObjectValueList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: i32,

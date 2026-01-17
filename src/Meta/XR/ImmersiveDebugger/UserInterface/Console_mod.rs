@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Console")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Console {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::DebugPanel,
     pub _Dirty_k__BackingField: bool,

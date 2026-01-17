@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+EventDescriptorCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventDescriptorCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _events: quest_hook::libil2cpp::Gc<
@@ -1073,7 +1073,7 @@ impl AsMut<crate::System::Collections::IList>
     feature = "cordl_class_System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventDescriptorCollection_ArraySubsetEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: quest_hook::libil2cpp::Gc<crate::System::Array>,

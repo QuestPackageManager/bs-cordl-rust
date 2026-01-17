@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+S2k")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct S2k {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::BcpgObject,
     pub _cordl_type: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Extension")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509Extension {
     __cordl_parent: crate::System::Security::Cryptography::AsnEncodedData,
     pub _critical: bool,

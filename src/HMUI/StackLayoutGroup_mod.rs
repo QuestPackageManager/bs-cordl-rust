@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+StackLayoutGroup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StackLayoutGroup {
     __cordl_parent: crate::UnityEngine::UI::LayoutGroup,
     pub m_ChildForceExpandWidth: bool,

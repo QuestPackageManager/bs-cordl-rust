@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AppStaticSettingsInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AppStaticSettingsInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _appStaticSettings: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppStaticSettingsSO>,

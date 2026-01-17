@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PrefabTemplate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PrefabTemplate {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
 }

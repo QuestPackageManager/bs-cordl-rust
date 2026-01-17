@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InitalizationObjectsOperation {
     __cordl_parent:
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<bool>,

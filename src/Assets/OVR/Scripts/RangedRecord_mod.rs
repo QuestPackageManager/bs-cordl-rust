@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Assets+OVR+Scripts+RangedRecord")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RangedRecord {
     __cordl_parent: crate::Assets::OVR::Scripts::Record,
     pub value: f32,

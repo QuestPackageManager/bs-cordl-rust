@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+InjectTypeInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InjectTypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -309,7 +309,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InjectTypeInfo {
 }
 #[cfg(feature = "cordl_class_Zenject+InjectTypeInfo+InjectConstructorInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InjectTypeInfo_InjectConstructorInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Factory: quest_hook::libil2cpp::Gc<crate::Zenject::ZenFactoryMethod>,
@@ -415,7 +415,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InjectTypeInfo_Inject
 }
 #[cfg(feature = "cordl_class_Zenject+InjectTypeInfo+InjectMemberInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InjectTypeInfo_InjectMemberInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Setter: quest_hook::libil2cpp::Gc<crate::Zenject::ZenMemberSetterMethod>,
@@ -505,7 +505,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InjectTypeInfo_Inject
 }
 #[cfg(feature = "cordl_class_Zenject+InjectTypeInfo+InjectMethodInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InjectTypeInfo_InjectMethodInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

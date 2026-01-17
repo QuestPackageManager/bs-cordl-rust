@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate")]
@@ -133,7 +136,10 @@ impl crate::UnityEngine::PlayerLoop::PreLateUpdate {
         crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager;
 }
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_AIUpdatePostScript {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
@@ -235,7 +241,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+AccessibilityUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_AccessibilityUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+AccessibilityUpdate")]
@@ -337,7 +346,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AccessibilityUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_AccessibilityUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_ConstraintManagerUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
@@ -439,7 +451,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_DirectorDeferredEvaluate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
@@ -541,7 +556,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_DirectorUpdateAnimationBegin {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
@@ -643,7 +661,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_DirectorUpdateAnimationEnd {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
@@ -747,7 +768,10 @@ impl crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {}
 #[cfg(
     feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_EndGraphicsJobsAfterScriptUpdate {}
 #[cfg(
@@ -861,7 +885,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_LegacyAnimationUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
@@ -963,7 +990,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_ParticleSystemBeginUpdateAll {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
@@ -1065,7 +1095,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_Physics2DLateUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
@@ -1167,7 +1200,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_PhysicsLateUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
@@ -1269,7 +1305,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_ScriptRunBehaviourLateUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
@@ -1371,7 +1410,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_UIElementsUpdatePanels {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
@@ -1473,7 +1515,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_UpdateMasterServerInterface {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
@@ -1575,7 +1620,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
 impl crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PreLateUpdate_UpdateNetworkManager {}
 #[cfg(feature = "cordl_class_UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]

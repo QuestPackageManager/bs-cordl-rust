@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+RectMask2D")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RectMask2D {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_VertexClipper:

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Globalization+Unicode+Level2Map")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Level2Map {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Source: u8,

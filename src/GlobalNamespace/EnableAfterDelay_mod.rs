@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnableAfterDelay")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnableAfterDelay {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _component: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,

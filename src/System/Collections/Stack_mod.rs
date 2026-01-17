@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Stack")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Stack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: quest_hook::libil2cpp::Gc<
@@ -402,7 +402,7 @@ impl AsMut<crate::System::ICloneable> for crate::System::Collections::Stack {
 }
 #[cfg(feature = "cordl_class_System+Collections+Stack+StackDebugView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Stack_StackDebugView {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -452,7 +452,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Stack_Sta
 }
 #[cfg(feature = "cordl_class_System+Collections+Stack+StackEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Stack_StackEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack: quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,

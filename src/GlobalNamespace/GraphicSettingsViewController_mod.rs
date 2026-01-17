@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GraphicSettingsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphicSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _settingsManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,

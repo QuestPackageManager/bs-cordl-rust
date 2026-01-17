@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+Function")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Function {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

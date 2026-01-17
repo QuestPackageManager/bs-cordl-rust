@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionResultsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionResultsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _failedBannerGo: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

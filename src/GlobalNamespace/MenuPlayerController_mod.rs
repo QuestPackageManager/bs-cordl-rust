@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MenuPlayerController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MenuPlayerController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,

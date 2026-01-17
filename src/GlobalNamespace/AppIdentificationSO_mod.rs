@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AppIdentificationSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AppIdentificationSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _appId: u64,

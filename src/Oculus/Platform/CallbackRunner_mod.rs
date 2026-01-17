@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+CallbackRunner")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CallbackRunner {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub IsPersistantBetweenSceneLoads: bool,

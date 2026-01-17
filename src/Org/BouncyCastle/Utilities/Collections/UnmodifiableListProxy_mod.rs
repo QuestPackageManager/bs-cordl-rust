@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableListProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnmodifiableListProxy {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableList,
     pub l: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,

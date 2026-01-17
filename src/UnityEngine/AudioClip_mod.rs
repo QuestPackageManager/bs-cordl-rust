@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AudioClip")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioClip {
     __cordl_parent: crate::UnityEngine::Audio::AudioResource,
     pub m_PCMReaderCallback:
@@ -1468,7 +1468,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AudioClip {
 }
 #[cfg(feature = "cordl_class_UnityEngine+AudioClip+PCMReaderCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioClip_PCMReaderCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1584,7 +1584,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AudioClip_PCMRead
 }
 #[cfg(feature = "cordl_class_UnityEngine+AudioClip+PCMSetPositionCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioClip_PCMSetPositionCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

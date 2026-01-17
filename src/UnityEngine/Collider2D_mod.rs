@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Collider2D")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Collider2D {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }

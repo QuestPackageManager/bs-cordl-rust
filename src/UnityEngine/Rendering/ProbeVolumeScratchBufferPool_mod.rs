@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeScratchBufferPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeVolumeScratchBufferPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _chunkSize_k__BackingField: i32,
@@ -389,7 +389,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeVolumeScratchBufferPool+ScratchBufferPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeVolumeScratchBufferPool_ScratchBufferPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub chunkCount: i32,

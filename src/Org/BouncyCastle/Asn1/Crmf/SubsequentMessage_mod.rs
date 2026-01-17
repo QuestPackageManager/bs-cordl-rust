@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Crmf+SubsequentMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubsequentMessage {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerInteger,
 }

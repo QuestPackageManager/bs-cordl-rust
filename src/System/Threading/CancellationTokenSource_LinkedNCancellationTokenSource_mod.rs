@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CancellationTokenSource_LinkedNCancellationTokenSource {
     __cordl_parent: crate::System::Threading::CancellationTokenSource,
 }

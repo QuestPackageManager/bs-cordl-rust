@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -136,7 +136,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+RenderGraphUtils+PassData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphUtils_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub texture: crate::UnityEngine::Rendering::RenderGraphModule::TextureHandle,

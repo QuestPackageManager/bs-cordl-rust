@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+DesignTimeVisibleAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesignTimeVisibleAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Visible_k__BackingField: bool,

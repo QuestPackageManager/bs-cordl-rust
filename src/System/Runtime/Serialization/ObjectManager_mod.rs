@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+ObjectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_onDeserializationHandler: quest_hook::libil2cpp::Gc<

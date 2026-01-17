@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+BuildingBlock")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BuildingBlock {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub blockId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

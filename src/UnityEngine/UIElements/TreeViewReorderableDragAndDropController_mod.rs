@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeViewReorderableDragAndDropController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TreeViewReorderableDragAndDropController {
     __cordl_parent: crate::UnityEngine::UIElements::BaseReorderableDragAndDropController,
     pub m_DropData: quest_hook::libil2cpp::Gc<
@@ -327,7 +327,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TreeViewReorderableDragAndDropController_DropData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub expandedIdsBeforeDrag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

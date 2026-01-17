@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SerializedTypeRestrictionAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

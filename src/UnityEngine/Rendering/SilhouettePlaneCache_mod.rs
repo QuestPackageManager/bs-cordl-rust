@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SilhouettePlaneCache {
     pub m_SubviewIDToIndexMap: crate::Unity::Collections::NativeParallelHashMap_2<i32, i32>,
@@ -246,7 +249,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::Silhou
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+SilhouettePlaneCache+Slot")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct SilhouettePlaneCache_Slot {
     pub isActive: bool,

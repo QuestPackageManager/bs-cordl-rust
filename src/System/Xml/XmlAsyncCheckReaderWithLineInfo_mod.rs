@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckReaderWithLineInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlAsyncCheckReaderWithLineInfo {
     __cordl_parent: crate::System::Xml::XmlAsyncCheckReader,
     pub readerAsIXmlLineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,

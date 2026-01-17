@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CutoutAnimateEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CutoutAnimateEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _cuttoutEffects: quest_hook::libil2cpp::Gc<

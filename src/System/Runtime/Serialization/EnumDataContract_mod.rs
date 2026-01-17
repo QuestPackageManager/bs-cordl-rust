@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+EnumDataContract")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumDataContract {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract,
     pub helper: quest_hook::libil2cpp::Gc<
@@ -480,7 +480,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Serialization
     feature = "cordl_class_System+Runtime+Serialization+EnumDataContract+EnumDataContractCriticalHelper"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnumDataContract_EnumDataContractCriticalHelper {
     __cordl_parent: crate::System::Runtime::Serialization::DataContract_DataContractCriticalHelper,
     pub baseContractName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,

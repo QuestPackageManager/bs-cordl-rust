@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_ScreenshotLevelStarter+RunScreenshotLevelData+BuildSpecificMetadata")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RunScreenshotLevelData_ScreenshotLevelStarter_BuildSpecificMetadata {
     pub gameVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -104,7 +107,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "ScreenshotLevelStarter+RunScreenshotLevelData+BuildSpecificMetadata")]
 impl crate::GlobalNamespace::RunScreenshotLevelData_ScreenshotLevelStarter_BuildSpecificMetadata {}
 #[cfg(feature = "cordl_class_ScreenshotLevelStarter+RunScreenshotLevelData+Command")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RunScreenshotLevelData_ScreenshotLevelStarter_Command {
     pub beatmapKey:
@@ -214,7 +220,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "ScreenshotLevelStarter+RunScreenshotLevelData+Command")]
 impl crate::GlobalNamespace::RunScreenshotLevelData_ScreenshotLevelStarter_Command {}
 #[cfg(feature = "cordl_class_ScreenshotLevelStarter+RunScreenshotLevelData+DeviceMetadata")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RunScreenshotLevelData_ScreenshotLevelStarter_DeviceMetadata {
     pub deviceUID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -322,7 +331,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "ScreenshotLevelStarter+RunScreenshotLevelData+DeviceMetadata")]
 impl crate::GlobalNamespace::RunScreenshotLevelData_ScreenshotLevelStarter_DeviceMetadata {}
 #[cfg(feature = "cordl_class_ScreenshotLevelStarter+RunScreenshotLevelData+FolderMetadata")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RunScreenshotLevelData_ScreenshotLevelStarter_FolderMetadata {
     pub command: crate::GlobalNamespace::RunScreenshotLevelData_ScreenshotLevelStarter_Command,
@@ -430,7 +442,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "ScreenshotLevelStarter+RunScreenshotLevelData+FolderMetadata")]
 impl crate::GlobalNamespace::RunScreenshotLevelData_ScreenshotLevelStarter_FolderMetadata {}
 #[cfg(feature = "cordl_class_ScreenshotLevelStarter+RunScreenshotLevelData+SerializedBeatmapKey")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RunScreenshotLevelData_ScreenshotLevelStarter_SerializedBeatmapKey {
     pub levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -596,7 +611,10 @@ impl crate::GlobalNamespace::RunScreenshotLevelData_ScreenshotLevelStarter_Seria
     }
 }
 #[cfg(feature = "cordl_class_ScreenshotLevelStarter+RunScreenshotLevelData+Settings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RunScreenshotLevelData_ScreenshotLevelStarter_Settings {
     pub framerate: i32,
@@ -703,7 +721,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::GlobalNamespace::RunScreenshotLevelData_ScreenshotLevelStarter_Settings {}
 #[cfg(feature = "cordl_class_ScreenshotLevelStarter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScreenshotLevelStarter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameScenesManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameScenesManager>,
@@ -1222,7 +1240,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenshotLev
     }
 }
 #[cfg(feature = "cordl_class_ScreenshotLevelStarter+RunScreenshotLevelData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ScreenshotLevelStarter_RunScreenshotLevelData {
     pub globalScreenshotSettings:

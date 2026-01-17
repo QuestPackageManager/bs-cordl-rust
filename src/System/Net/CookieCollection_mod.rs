@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+CookieCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CookieCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_version: i32,
@@ -432,7 +432,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::System::Net::Cook
 }
 #[cfg(feature = "cordl_class_System+Net+CookieCollection+CookieCollectionEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CookieCollection_CookieCollectionEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_cookies: quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
@@ -614,10 +614,15 @@ impl AsMut<crate::System::Collections::IEnumerator>
     }
 }
 #[cfg(feature = "cordl_class_System+Net+CookieCollection+Stamp")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CookieCollection_Stamp {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Check = 0i32,
     Set = 1i32,
     SetToMaxUsed = 3i32,

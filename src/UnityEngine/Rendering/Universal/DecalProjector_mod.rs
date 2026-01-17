@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalProjector")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalProjector {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _decalEntity_k__BackingField: crate::UnityEngine::Rendering::Universal::DecalEntity,
@@ -1251,7 +1251,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+DecalProjector+DecalProjectorAction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DecalProjector_DecalProjectorAction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+MapColorValuesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob {
     pub settings:
@@ -147,7 +150,10 @@ impl AsMut<crate::Unity::Jobs::IJobParallelFor>
     }
 }
 #[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings {
     pub _Width_k__BackingField: i32,
@@ -408,7 +414,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
 }
 #[cfg(feature = "cordl_class_OVRPassthroughColorLut")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughColorLut {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Resolution_k__BackingField: u32,
@@ -1600,10 +1606,15 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRPassthroug
     }
 }
 #[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorChannels")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPassthroughColorLut_ColorChannels {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Rgb = 1i32,
     Rgba = 2i32,
 }
@@ -1693,7 +1704,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRPassthroughColorLut_ColorLutTextureConverter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1892,10 +1903,15 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_OVRPassthroughColorLut+CreateState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRPassthroughColorLut_CreateState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Created = 2i32,
     Invalid = 0i32,
     Pending = 1i32,
@@ -1985,7 +2001,10 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_OVRPassthroughColorLut+WriteColorsAsBytesJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRPassthroughColorLut_WriteColorsAsBytesJob {
     pub target: crate::Unity::Collections::NativeArray_1<u8>,

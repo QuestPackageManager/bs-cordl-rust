@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+LinuxNetworkInterface")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LinuxNetworkInterface {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterface,
     pub iface_path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

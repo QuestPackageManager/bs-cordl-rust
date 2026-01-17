@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+UI+DebugUIHandlerCanvas")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugUIHandlerCanvas {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_DebugTreeState: i32,

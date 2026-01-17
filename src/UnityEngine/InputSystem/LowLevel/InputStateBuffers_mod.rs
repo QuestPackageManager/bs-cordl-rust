@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBuffers")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputStateBuffers {
     pub sizePerBuffer: u32,
@@ -512,7 +515,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct InputStateBuffers_DoubleBuffers {
     pub deviceToBufferMapping: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

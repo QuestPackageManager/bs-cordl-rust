@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlDictionaryReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDictionaryReader {
     __cordl_parent: crate::System::Xml::XmlReader,
 }

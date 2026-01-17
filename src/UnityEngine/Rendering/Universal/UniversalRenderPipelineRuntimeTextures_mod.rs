@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineRuntimeTextures"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineRuntimeTextures {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Version: i32,

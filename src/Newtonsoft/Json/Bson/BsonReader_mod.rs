@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BsonReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
@@ -881,10 +881,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Bson::BsonRe
     }
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BsonReader_BsonReaderState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CodeWScopeCode = 5i32,
     CodeWScopeScope = 6i32,
     CodeWScopeScopeEnd = 8i32,
@@ -981,7 +986,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BsonReader_ContainerContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::Newtonsoft::Json::Bson::BsonType,

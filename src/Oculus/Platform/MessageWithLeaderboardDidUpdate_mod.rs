@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardDidUpdate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MessageWithLeaderboardDidUpdate {
     __cordl_parent: crate::Oculus::Platform::Message_1<bool>,
 }

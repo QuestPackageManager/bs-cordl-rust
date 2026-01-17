@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CurveAnimation {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _bezierCurve:
@@ -268,7 +268,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CurveAnimation_CurveEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent,
 }
@@ -350,7 +350,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+CurveAnimation+CurveEvent_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CurveAnimation_CurveEvent_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,

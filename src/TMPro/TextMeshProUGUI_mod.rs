@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TextMeshProUGUI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextMeshProUGUI {
     __cordl_parent: crate::TMPro::TMP_Text,
     pub m_isRebuildingLayout: bool,

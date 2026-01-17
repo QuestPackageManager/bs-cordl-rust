@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultSerializationBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultSerializationBinder {
     __cordl_parent: crate::System::Runtime::Serialization::SerializationBinder,
     pub _typeCache: quest_hook::libil2cpp::Gc<

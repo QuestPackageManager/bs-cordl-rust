@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_StateBuffer_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StateBuffer_3<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -419,7 +419,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_StateBuffer_3+InterpolationDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StateBuffer_3_InterpolationDelegate<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -717,7 +717,7 @@ impl<
 }
 #[cfg(feature = "cordl_class_StateBuffer_3+SmoothingDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StateBuffer_3_SmoothingDelegate<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -1006,7 +1006,10 @@ impl<
     }
 }
 #[cfg(feature = "cordl_class_StateBuffer_3+TimestampedStateTable")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct StateBuffer_3_TimestampedStateTable<
     TStateTable: quest_hook::libil2cpp::Type,

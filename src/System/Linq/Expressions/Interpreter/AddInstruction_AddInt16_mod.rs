@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+AddInstruction+AddInt16")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddInstruction_AddInt16 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::AddInstruction,
 }

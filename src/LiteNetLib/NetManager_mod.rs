@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LiteNetLib+NetManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
@@ -2225,7 +2225,7 @@ impl AsMut<crate::System::Collections::IEnumerable> for crate::LiteNetLib::NetMa
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NetManager+IPEndPointComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetManager_IPEndPointComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -2385,7 +2385,10 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_LiteNetLib+NetManager+NetPeerEnumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct NetManager_NetPeerEnumerator {
     pub _initialPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,

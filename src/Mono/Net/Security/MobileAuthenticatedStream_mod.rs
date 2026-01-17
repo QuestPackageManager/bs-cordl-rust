@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MobileAuthenticatedStream {
     __cordl_parent: crate::System::Net::Security::AuthenticatedStream,
     pub xobileTlsContext: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsContext>,
@@ -1526,10 +1526,15 @@ impl AsMut<crate::System::IDisposable> for crate::Mono::Net::Security::MobileAut
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+Operation")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MobileAuthenticatedStream_Operation {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Authenticated = 2i32,
     Close = 6i32,
     Handshake = 1i32,
@@ -1623,10 +1628,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MobileAuthenticatedStream_OperationType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Read = 0i32,
     Renegotiate = 2i32,
     Shutdown = 3i32,

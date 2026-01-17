@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+Math+FloatMath")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatMath {
     __cordl_parent: crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f32>,
 }

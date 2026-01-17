@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VideoProjectionEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoProjectionEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _videoProjectionDataModel:
@@ -142,7 +142,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VideoProjecti
 }
 #[cfg(feature = "cordl_class_VideoProjectionEffect+BeatmapEditorVideoProjectionBehavior")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoProjectionEffect_BeatmapEditorVideoProjectionBehavior {
     __cordl_parent: crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
     pub _beatmapCallbacksController:
@@ -332,7 +332,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_VideoProjectionEffect+GameplayVideoProjectionBehavior")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoProjectionEffect_GameplayVideoProjectionBehavior {
     __cordl_parent: crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior,
 }
@@ -459,7 +459,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_VideoProjectionEffect+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoProjectionEffect_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -548,7 +548,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VideoProjecti
 }
 #[cfg(feature = "cordl_class_VideoProjectionEffect+VideoProjectionBehavior")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VideoProjectionEffect_VideoProjectionBehavior {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _coverLoaded: bool,

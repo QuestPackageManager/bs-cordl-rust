@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsIntPropertyBag")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsIntPropertyBag {
     __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<crate::UnityEngine::BoundsInt>,
 }
@@ -87,7 +87,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsIntPropertyBag+PositionProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsIntPropertyBag_PositionProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::BoundsInt,
@@ -275,7 +275,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsIntPropertyBag+SizeProperty")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BoundsIntPropertyBag_SizeProperty {
     __cordl_parent: crate::Unity::Properties::Property_2<
         crate::UnityEngine::BoundsInt,

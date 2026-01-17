@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder {
     __cordl_parent: crate::System::Xml::Schema::SchemaBuilder,
     pub _SchemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
@@ -2480,7 +2480,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XdrBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+AttributeContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_AttributeContent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _AttDef: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
@@ -2572,7 +2572,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XdrBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_DeclBaseInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -2682,7 +2682,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XdrBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+ElementContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_ElementContent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ElementDecl: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
@@ -2774,7 +2774,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XdrBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+GroupContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_GroupContent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _MinVal: u32,
@@ -2919,7 +2919,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XdrBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_XdrAttributeEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Attribute: crate::System::Xml::Schema::SchemaNames_Token,
@@ -3066,7 +3066,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_XdrBeginChildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3186,7 +3186,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_XdrBuildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3305,7 +3305,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XdrBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_XdrEndChildFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3425,7 +3425,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+XdrEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_XdrEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Name: crate::System::Xml::Schema::SchemaNames_Token,
@@ -3568,7 +3568,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XdrBuilde
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XdrBuilder+XdrInitFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XdrBuilder_XdrInitFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

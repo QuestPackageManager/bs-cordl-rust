@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+ThaiBuddhistCalendar")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ThaiBuddhistCalendar {
     __cordl_parent: crate::System::Globalization::Calendar,
     pub helper: quest_hook::libil2cpp::Gc<crate::System::Globalization::GregorianCalendarHelper>,

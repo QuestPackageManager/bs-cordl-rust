@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerFacade {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outroAnimator: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -317,7 +317,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerFacade+Factory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerFacade_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,

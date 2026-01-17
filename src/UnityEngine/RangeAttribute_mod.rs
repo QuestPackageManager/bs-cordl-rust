@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+RangeAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RangeAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub min: f32,

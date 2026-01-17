@@ -2,7 +2,7 @@
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+AdditionalLightsShadowCasterPass"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AdditionalLightsShadowCasterPass {
     __cordl_parent: crate::UnityEngine::Rendering::Universal::ScriptableRenderPass,
     pub m_AdditionalLightsShadowmapHandle: quest_hook::libil2cpp::Gc<
@@ -852,7 +852,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+AdditionalLightsShadowCasterPass+AdditionalShadowsConstantBuffer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AdditionalLightsShadowCasterPass_AdditionalShadowsConstantBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -917,7 +917,7 @@ for crate::UnityEngine::Rendering::Universal::Internal::AdditionalLightsShadowCa
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+AdditionalLightsShadowCasterPass+PassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AdditionalLightsShadowCasterPass_PassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub shadowmapID: i32,

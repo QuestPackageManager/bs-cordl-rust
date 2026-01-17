@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionCancelEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TransitionCancelEvent {
     __cordl_parent: crate::UnityEngine::UIElements::TransitionEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionCancelEvent>,

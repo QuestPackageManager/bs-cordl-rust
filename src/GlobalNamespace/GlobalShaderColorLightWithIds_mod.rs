@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GlobalShaderColorLightWithIds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GlobalShaderColorLightWithIds {
     __cordl_parent: crate::GlobalNamespace::LightWithIds,
     pub _lightIntensityData: quest_hook::libil2cpp::Gc<
@@ -149,7 +149,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GlobalShaderC
 }
 #[cfg(feature = "cordl_class_GlobalShaderColorLightWithIds+LightIntensitiesWithId")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GlobalShaderColorLightWithIds_LightIntensitiesWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIds_LightWithId,
     pub _intensity: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsNetworkInterfaceAPI")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MacOsNetworkInterfaceAPI {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI,
     pub AF_INET6: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnvironmentBrandingManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentBrandingManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _brandingObjects: quest_hook::libil2cpp::Gc<
@@ -112,7 +112,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentBr
 }
 #[cfg(feature = "cordl_class_EnvironmentBrandingManager+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnvironmentBrandingManager_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hideBranding: bool,

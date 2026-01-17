@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+SimpleBinaryExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimpleBinaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::BinaryExpression,
     pub _NodeType_k__BackingField: crate::System::Linq::Expressions::ExpressionType,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+Polyglot+SaveLanguagePreference")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SaveLanguagePreference {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub preferenceKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

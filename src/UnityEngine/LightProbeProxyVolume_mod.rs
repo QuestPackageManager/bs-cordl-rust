@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+LightProbeProxyVolume")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightProbeProxyVolume {
     __cordl_parent: crate::UnityEngine::Behaviour,
 }

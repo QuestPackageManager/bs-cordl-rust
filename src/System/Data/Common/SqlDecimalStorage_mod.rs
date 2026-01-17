@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+Common+SqlDecimalStorage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SqlDecimalStorage {
     __cordl_parent: crate::System::Data::Common::DataStorage,
     pub _values: quest_hook::libil2cpp::Gc<

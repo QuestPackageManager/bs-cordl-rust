@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContinuationTaskFromResultTask_1<TAntecedentResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Threading::Tasks::Task,
     pub m_antecedent:

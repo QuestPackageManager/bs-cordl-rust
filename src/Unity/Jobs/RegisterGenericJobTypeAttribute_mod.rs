@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Unity+Jobs+RegisterGenericJobTypeAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RegisterGenericJobTypeAttribute {
     __cordl_parent: crate::System::Attribute,
     pub ConcreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SXprUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -238,7 +238,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Bcpg::OpenP
 }
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+SXprUtilities+MyS2k")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SXprUtilities_MyS2k {
     __cordl_parent: crate::Org::BouncyCastle::Bcpg::S2k,
     pub mIterationCount64: i64,

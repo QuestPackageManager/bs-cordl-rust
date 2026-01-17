@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaInference")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlSchemaInference {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rootSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
@@ -1109,10 +1109,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::XmlSchema
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaInference+InferenceOption")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum XmlSchemaInference_InferenceOption {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Relaxed = 1i32,
     Restricted = 0i32,
 }

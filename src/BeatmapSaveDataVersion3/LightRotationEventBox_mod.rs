@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightRotationEventBox")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightRotationEventBox {
     __cordl_parent: crate::BeatmapSaveDataVersion3::EventBox,
     pub s: f32,

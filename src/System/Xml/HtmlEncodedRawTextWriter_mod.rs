@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+HtmlEncodedRawTextWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HtmlEncodedRawTextWriter {
     __cordl_parent: crate::System::Xml::XmlEncodedRawTextWriter,
     pub elementScope: quest_hook::libil2cpp::Gc<crate::System::Xml::ByteStack>,

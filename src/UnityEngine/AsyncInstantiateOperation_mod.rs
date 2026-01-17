@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AsyncInstantiateOperation {
     __cordl_parent: crate::UnityEngine::AsyncOperation,
     pub m_Result: quest_hook::libil2cpp::Gc<

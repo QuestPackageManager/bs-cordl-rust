@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Collections+FixedList128Bytes_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedList128Bytes_1<T: quest_hook::libil2cpp::Type> {
     pub data: crate::Unity::Collections::FixedBytes128Align8,
@@ -2454,7 +2457,10 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Unity::Collections::INativeLis
     }
 }
 #[cfg(feature = "cordl_class_Unity+Collections+FixedList128Bytes_1+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct FixedList128Bytes_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub m_List: crate::Unity::Collections::FixedList128Bytes_1<T>,

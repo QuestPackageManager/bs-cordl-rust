@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+Platform+Core+MockedEntitlements")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockedEntitlements {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub logger: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatformLogger>,

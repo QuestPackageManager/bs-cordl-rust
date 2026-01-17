@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+DualShock4GamepadAndroid")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DualShock4GamepadAndroid {
     __cordl_parent: crate::UnityEngine::InputSystem::DualShock::DualShockGamepad,
 }

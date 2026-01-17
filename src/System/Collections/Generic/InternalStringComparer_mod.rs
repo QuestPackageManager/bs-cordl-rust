@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Collections+Generic+InternalStringComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct InternalStringComparer {
     __cordl_parent: crate::System::Collections::Generic::EqualityComparer_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

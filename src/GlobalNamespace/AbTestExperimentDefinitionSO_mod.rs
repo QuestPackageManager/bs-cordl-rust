@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AbTestExperimentDefinitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _experimentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -274,10 +274,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AbTestExperim
     }
 }
 #[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO+Group")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum AbTestExperimentDefinitionSO_Group {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Control = 0i32,
     Test1 = 1i32,
     Test2 = 2i32,

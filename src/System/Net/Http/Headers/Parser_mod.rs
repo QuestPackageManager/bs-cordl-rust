@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -69,7 +69,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+DateTime")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_DateTime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -145,7 +145,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+EmailAddress")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_EmailAddress {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -225,7 +225,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+Host")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_Host {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -305,7 +305,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+Int")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_Int {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -381,7 +381,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+Long")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_Long {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -457,7 +457,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+MD5")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_MD5 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -537,7 +537,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+TimeSpanSeconds")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_TimeSpanSeconds {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -617,7 +617,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+Token")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_Token {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -717,7 +717,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::Headers::Pa
 }
 #[cfg(feature = "cordl_class_System+Net+Http+Headers+Parser+Uri")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Parser_Uri {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

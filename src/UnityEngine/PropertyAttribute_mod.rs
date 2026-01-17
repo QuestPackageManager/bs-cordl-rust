@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+PropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PropertyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _order_k__BackingField: i32,

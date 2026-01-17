@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JValue {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JToken,
     pub _valueType: crate::Newtonsoft::Json::Linq::JTokenType,
@@ -1941,7 +1941,7 @@ impl AsMut<crate::System::IFormattable> for crate::Newtonsoft::Json::Linq::JValu
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JValue_JValueDynamicProxy {
     __cordl_parent: crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TabBarViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TabBarViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _segmentedControll: quest_hook::libil2cpp::Gc<crate::HMUI::TextSegmentedControl>,
@@ -310,7 +310,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TabBarViewCon
 }
 #[cfg(feature = "cordl_class_TabBarViewController+TabBarItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TabBarViewController_TabBarItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

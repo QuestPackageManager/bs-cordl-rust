@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+AddOvfInstruction+AddOvfUInt64")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AddOvfInstruction_AddOvfUInt64 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::AddOvfInstruction,
 }

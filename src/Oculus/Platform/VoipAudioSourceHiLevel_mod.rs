@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VoipAudioSourceHiLevel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub initialPlaybackDelayMS: i32,
@@ -254,7 +254,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::VoipAudioSou
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VoipAudioSourceHiLevel_FilterReadDelegate {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub parent: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::VoipAudioSourceHiLevel>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+ClientInterface+ApplicationSuspendedException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ApplicationSuspendedException {
     __cordl_parent: crate::System::Exception,
 }

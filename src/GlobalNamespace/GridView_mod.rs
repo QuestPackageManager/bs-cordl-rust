@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GridView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GridView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _contentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -391,7 +391,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GridView {
 }
 #[cfg(feature = "cordl_class_GridView+GridViewCellsEnumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GridView_GridViewCellsEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gridView: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView>,
@@ -593,7 +593,7 @@ impl AsMut<crate::System::Collections::IEnumerable>
     }
 }
 #[cfg(feature = "cordl_class_GridView+IDataSource")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct GridView_IDataSource {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

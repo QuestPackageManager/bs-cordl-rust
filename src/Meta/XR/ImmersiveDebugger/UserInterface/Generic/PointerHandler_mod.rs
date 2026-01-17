@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+PointerHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PointerHandler {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub _Controller_k__BackingField: quest_hook::libil2cpp::Gc<

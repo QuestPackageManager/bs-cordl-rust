@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ScrollViewItemForVisibilityController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScrollViewItemForVisibilityController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

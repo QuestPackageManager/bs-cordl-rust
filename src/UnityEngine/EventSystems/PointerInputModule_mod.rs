@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PointerInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
     pub m_PointerData: quest_hook::libil2cpp::Gc<
@@ -527,7 +527,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EventSystems::Poi
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+ButtonState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PointerInputModule_ButtonState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Button: crate::UnityEngine::EventSystems::PointerEventData_InputButton,
@@ -721,7 +721,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseButtonEventData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PointerInputModule_MouseButtonEventData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buttonState: crate::UnityEngine::EventSystems::PointerEventData_FramePressState,
@@ -845,7 +845,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+PointerInputModule+MouseState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PointerInputModule_MouseState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TrackedButtons: quest_hook::libil2cpp::Gc<

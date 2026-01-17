@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AdditionalLightsShadowAtlasLayout {
     pub m_SortedShadowResolutionRequests: crate::Unity::Collections::NativeArray_1<
@@ -446,7 +449,10 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout+ShadowResolutionRequest"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct AdditionalLightsShadowAtlasLayout_ShadowResolutionRequest {
     pub visibleLightIndex: u16,
@@ -662,10 +668,15 @@ impl crate::UnityEngine::Rendering::Universal::AdditionalLightsShadowAtlasLayout
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+Universal+AdditionalLightsShadowAtlasLayout+ShadowResolutionRequest+SettingsOptions"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u16)]
 pub enum ShadowResolutionRequest_AdditionalLightsShadowAtlasLayout_SettingsOptions {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     All = 65535u16,
     None = 0u16,
     PointLightShadow = 2u16,

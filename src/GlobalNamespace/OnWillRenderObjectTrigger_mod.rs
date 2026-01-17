@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OnWillRenderObjectTrigger")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OnWillRenderObjectTrigger {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _overrideShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,

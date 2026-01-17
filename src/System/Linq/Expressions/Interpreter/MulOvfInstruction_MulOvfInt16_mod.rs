@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+MulOvfInstruction+MulOvfInt16")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MulOvfInstruction_MulOvfInt16 {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::MulOvfInstruction,
 }

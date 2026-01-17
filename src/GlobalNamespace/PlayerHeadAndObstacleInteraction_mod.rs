@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlayerHeadAndObstacleInteraction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerHeadAndObstacleInteraction {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerTransforms: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerTransforms>,

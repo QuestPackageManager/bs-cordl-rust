@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+LocalDataStoreMgr")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalDataStoreMgr {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_SlotInfoTable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,

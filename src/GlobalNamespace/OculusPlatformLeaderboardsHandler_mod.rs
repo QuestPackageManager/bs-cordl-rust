@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusPlatformLeaderboardsHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OculusPlatformLeaderboardsHandler {
     __cordl_parent: crate::GlobalNamespace::PlatformLeaderboardsHandler,
     pub _leaderboardIdsModel:

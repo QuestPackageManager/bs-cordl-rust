@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebRequestPrefixElement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebRequestPrefixElement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

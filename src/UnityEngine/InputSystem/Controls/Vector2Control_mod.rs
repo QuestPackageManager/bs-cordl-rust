@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+Vector2Control")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Vector2Control {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<crate::UnityEngine::Vector2>,
     pub _x_k__BackingField:

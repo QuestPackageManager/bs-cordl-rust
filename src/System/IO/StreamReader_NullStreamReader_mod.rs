@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+IO+StreamReader+NullStreamReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct StreamReader_NullStreamReader {
     __cordl_parent: crate::System::IO::StreamReader,
 }

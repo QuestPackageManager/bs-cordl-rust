@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+Rfc6637Utilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Rfc6637Utilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

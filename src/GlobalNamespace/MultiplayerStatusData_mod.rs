@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerStatusData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerStatusData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub minimum_app_version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -502,10 +502,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerSt
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerStatusData+AvailabilityStatus")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MultiplayerStatusData_AvailabilityStatus {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MaintenanceUpcoming = 1i32,
     Offline = 2i32,
     Online = 0i32,
@@ -596,7 +601,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerStatusData_UserMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub localizations: quest_hook::libil2cpp::Gc<
@@ -688,7 +693,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_MultiplayerStatusData+UserMessage+LocalizedMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UserMessage_MultiplayerStatusData_LocalizedMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

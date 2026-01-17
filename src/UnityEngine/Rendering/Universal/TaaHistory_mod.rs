@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+TaaHistory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaaHistory {
     __cordl_parent: crate::UnityEngine::Rendering::CameraHistoryItem,
     pub m_TaaAccumulationTextureIds:

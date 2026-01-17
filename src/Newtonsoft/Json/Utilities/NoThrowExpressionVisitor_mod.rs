@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoThrowExpressionVisitor {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
 }

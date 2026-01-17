@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+DebugManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub OnFocusLostAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -790,7 +790,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Meta+XR+ImmersiveDebugger+Manager+DebugManager+ShouldRetrieveInstanceDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DebugManager_ShouldRetrieveInstanceDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

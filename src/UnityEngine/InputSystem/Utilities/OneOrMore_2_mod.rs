@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OneOrMore_2<TValue: quest_hook::libil2cpp::Type, TList: quest_hook::libil2cpp::Type> {
     pub m_IsSingle: bool,
@@ -488,7 +491,7 @@ impl<TValue: quest_hook::libil2cpp::Type, TList: quest_hook::libil2cpp::Type>
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OneOrMore_2_Enumerator<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,

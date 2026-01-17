@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IMGUIContainer {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_OnGUIHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -1143,7 +1143,10 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::IMGUI
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IMGUIContainer_GUIGlobals {
     pub matrix: crate::UnityEngine::Matrix4x4,
@@ -1255,7 +1258,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IMGUIContainer_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMGUIContainer>,
@@ -1343,7 +1346,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IMGUIContainer_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
 }

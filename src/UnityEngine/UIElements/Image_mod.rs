@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Image")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Image {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_ScaleMode: crate::UnityEngine::ScaleMode,
@@ -763,7 +763,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Image
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Image+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Image_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image>,
@@ -847,7 +847,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Image
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Image+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Image_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
 }

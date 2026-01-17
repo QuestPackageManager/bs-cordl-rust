@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LocalizedAudioClipSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalizedAudioClipSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _localizedAudioClipInfo: quest_hook::libil2cpp::Gc<
@@ -117,7 +117,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedAudi
 }
 #[cfg(feature = "cordl_class_LocalizedAudioClipSO+LocalizedAudioClipInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalizedAudioClipSO_LocalizedAudioClipInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub language: crate::BGLib::Polyglot::LocalizationLanguage,

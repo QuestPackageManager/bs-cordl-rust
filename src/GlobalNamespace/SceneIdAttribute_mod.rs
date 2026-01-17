@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SceneIdAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SceneIdAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub _filter: crate::GlobalNamespace::BeatmapSceneIdFilter,

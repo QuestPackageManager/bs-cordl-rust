@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphBuilders")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphBuilders {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RenderPass: quest_hook::libil2cpp::Gc<

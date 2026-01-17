@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+CoalesceConversionBinaryExpression")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CoalesceConversionBinaryExpression {
     __cordl_parent: crate::System::Linq::Expressions::BinaryExpression,
     pub _conversion: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LambdaExpression>,

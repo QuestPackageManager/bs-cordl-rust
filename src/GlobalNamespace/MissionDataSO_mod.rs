@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionDataSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionDataSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

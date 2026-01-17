@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_X509CertificateUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509CertificateUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -183,7 +183,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::X509Certifica
 }
 #[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509CertificateUtility_PasswordFinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -356,7 +356,7 @@ impl AsMut<crate::Org::BouncyCastle::OpenSsl::IPasswordFinder>
 }
 #[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509CertificateUtility_RSACertificateEncryptionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,

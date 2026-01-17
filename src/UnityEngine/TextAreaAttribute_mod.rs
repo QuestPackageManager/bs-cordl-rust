@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextAreaAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextAreaAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
     pub minLines: i32,

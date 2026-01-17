@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NamedIntListController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamedIntListController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _textValuePairs: quest_hook::libil2cpp::Gc<
@@ -286,7 +286,7 @@ impl AsMut<crate::HMUI::IValueChanger_1<i32>> for crate::GlobalNamespace::NamedI
 }
 #[cfg(feature = "cordl_class_NamedIntListController+TextValuePair")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NamedIntListController_TextValuePair {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

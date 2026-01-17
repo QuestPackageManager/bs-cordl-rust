@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupDataPool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LODGroupDataPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_LODGroupData:
@@ -330,7 +330,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::Rendering::LODGro
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+LODGroupDataPool+LodGroupShaderIDs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LODGroupDataPool_LodGroupShaderIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

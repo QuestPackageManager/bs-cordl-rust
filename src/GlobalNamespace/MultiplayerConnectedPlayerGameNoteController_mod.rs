@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerGameNoteController {
     __cordl_parent: crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController,
     pub cubeNoteControllerDidInitEvent: quest_hook::libil2cpp::Gc<
@@ -356,7 +356,7 @@ impl AsMut<crate::GlobalNamespace::INoteVisualModifierTypeProvider>
 }
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerGameNoteController_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<

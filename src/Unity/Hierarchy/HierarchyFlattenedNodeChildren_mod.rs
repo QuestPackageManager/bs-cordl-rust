@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyFlattenedNodeChildren")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HierarchyFlattenedNodeChildren {
     pub m_HierarchyFlattened:
@@ -186,7 +189,10 @@ impl crate::Unity::Hierarchy::HierarchyFlattenedNodeChildren {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyFlattenedNodeChildren+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HierarchyFlattenedNodeChildren_Enumerator {
     pub m_Enumerable: crate::Unity::Hierarchy::HierarchyFlattenedNodeChildren,

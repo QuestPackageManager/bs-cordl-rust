@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PartyMessageHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PartyMessageHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _serializer: quest_hook::libil2cpp::Gc<
@@ -256,7 +256,7 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::PartyMessageH
 }
 #[cfg(feature = "cordl_class_PartyMessageHandler+ConnectToMasterServerDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PartyMessageHandler_ConnectToMasterServerDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -433,7 +433,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_PartyMessageHandler+ConnectToMasterServerMessage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PartyMessageHandler_ConnectToMasterServerMessage {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -700,10 +700,15 @@ impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
     }
 }
 #[cfg(feature = "cordl_class_PartyMessageHandler+MessageType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PartyMessageHandler_MessageType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ConnectToMasterServer = 0i32,
 }
 #[cfg(feature = "cordl_class_PartyMessageHandler+MessageType")]
@@ -792,7 +797,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_PartyMessageHandler+ServerStatusUpdatedDelegate")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PartyMessageHandler_ServerStatusUpdatedDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }

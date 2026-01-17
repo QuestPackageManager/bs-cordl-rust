@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CustomLevelLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomLevelLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _defaultEnvironmentInfo: quest_hook::libil2cpp::Gc<

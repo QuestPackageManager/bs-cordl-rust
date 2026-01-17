@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FlickeringNeonSign")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FlickeringNeonSign {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _flickeringSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,

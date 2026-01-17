@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Globalization+HijriCalendar")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HijriCalendar {
     __cordl_parent: crate::System::Globalization::Calendar,
     pub m_HijriAdvance: i32,

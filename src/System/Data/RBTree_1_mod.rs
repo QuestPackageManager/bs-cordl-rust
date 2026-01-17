@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+RBTree_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RBTree_1<K: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pageTable: quest_hook::libil2cpp::Gc<
@@ -1931,7 +1931,10 @@ impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerab
     }
 }
 #[cfg(feature = "cordl_class_System+Data+RBTree_1+Node")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RBTree_1_Node<K: quest_hook::libil2cpp::Type> {
     pub _selfId: i32,
@@ -2054,10 +2057,15 @@ unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "System+Data+RBTree_1+Node")]
 impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_Node<K> {}
 #[cfg(feature = "cordl_class_System+Data+RBTree_1+NodeColor")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum RBTree_1_NodeColor {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     black = 1i32,
     red = 0i32,
 }
@@ -2136,7 +2144,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::RBTree_1_Node
     }
 }
 #[cfg(feature = "cordl_class_System+Data+RBTree_1+NodePath")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RBTree_1_NodePath<K: quest_hook::libil2cpp::Type> {
     pub _nodeID: i32,
@@ -2284,7 +2295,10 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
     }
 }
 #[cfg(feature = "cordl_class_System+Data+RBTree_1+RBTreeEnumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
     pub _tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
@@ -2656,7 +2670,7 @@ impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 }
 #[cfg(feature = "cordl_class_System+Data+RBTree_1+TreePage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RBTree_1_TreePage<K: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _slots: quest_hook::libil2cpp::Gc<

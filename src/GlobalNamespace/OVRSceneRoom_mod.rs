@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSceneRoom")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneRoom {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Floor_k__BackingField: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,

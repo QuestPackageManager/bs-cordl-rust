@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerLevelFailController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerConnectedPlayerLevelFailController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _failVFXController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VFXController>,

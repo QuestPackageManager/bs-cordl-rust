@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+MouseBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MouseBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enabled_k__BackingField: bool,
@@ -394,10 +394,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::MouseBinder {
     }
 }
 #[cfg(feature = "cordl_class_HMUI+MouseBinder+ButtonType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MouseBinder_ButtonType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Middle = 2i32,
     Primary = 0i32,
     Secondary = 1i32,
@@ -477,10 +482,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::MouseBinder_ButtonTyp
     }
 }
 #[cfg(feature = "cordl_class_HMUI+MouseBinder+MouseEventType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MouseBinder_MouseEventType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ButtonDown = 0i32,
     ButtonPress = 2i32,
     ButtonUp = 1i32,

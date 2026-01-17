@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IO+SignerStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SignerStream {
     __cordl_parent: crate::System::IO::Stream,
     pub stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

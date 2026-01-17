@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+LocalizationRequiredAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalizationRequiredAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _Required_k__BackingField: bool,

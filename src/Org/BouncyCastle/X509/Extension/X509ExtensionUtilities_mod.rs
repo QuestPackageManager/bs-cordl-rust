@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Extension+X509ExtensionUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct X509ExtensionUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

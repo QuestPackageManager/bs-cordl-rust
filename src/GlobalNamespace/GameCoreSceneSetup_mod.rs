@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameCoreSceneSetup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameCoreSceneSetup {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _screenCaptureAfterDelayPrefab:

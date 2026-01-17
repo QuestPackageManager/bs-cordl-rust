@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationEventArgs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SafeSerializationEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub m_streamingContext: crate::System::Runtime::Serialization::StreamingContext,

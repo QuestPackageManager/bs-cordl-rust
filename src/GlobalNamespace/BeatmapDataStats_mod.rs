@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapDataStats")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapDataStats {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -165,10 +165,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataSt
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Events")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BeatmapDataStats_Events {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BPM = 0i32,
     Basic = 2i32,
     Boost = 3i32,
@@ -253,10 +258,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BeatmapDat
     }
 }
 #[cfg(feature = "cordl_class_BeatmapDataStats+Objects")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum BeatmapDataStats_Objects {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Notes = 0i32,
     Obstacles = 2i32,
     Sliders = 1i32,

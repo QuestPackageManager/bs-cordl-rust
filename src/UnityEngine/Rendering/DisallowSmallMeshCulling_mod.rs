@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+DisallowSmallMeshCulling")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisallowSmallMeshCulling {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_AppliedRecursively: bool,

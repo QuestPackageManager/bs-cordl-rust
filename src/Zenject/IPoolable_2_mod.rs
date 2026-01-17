@@ -1,5 +1,5 @@
 #[cfg(feature = "cordl_class_Zenject+IPoolable_2")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct IPoolable_2<TParam1: quest_hook::libil2cpp::Type, TParam2: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+ForwardLights")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ForwardLights {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AdditionalLightsBufferId: i32,
@@ -696,7 +696,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+ForwardLights+InitParams")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ForwardLights_InitParams {
     pub lightCookieManager:
@@ -832,7 +835,7 @@ impl crate::UnityEngine::Rendering::Universal::Internal::ForwardLights_InitParam
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+ForwardLights+LightConstantBuffer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ForwardLights_LightConstantBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -896,7 +899,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+Internal+ForwardLights+SetupLightPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ForwardLights_SetupLightPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub renderingData:

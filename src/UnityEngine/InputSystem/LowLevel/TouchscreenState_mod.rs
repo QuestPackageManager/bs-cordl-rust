@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TouchscreenState {
     padding: quest_hook::libil2cpp::ValueTypePadding<616usize>,
@@ -231,7 +234,10 @@ impl AsMut<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_primaryTouchData_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TouchscreenState__primaryTouchData_e__FixedBuffer {
     pub FixedElementField: u8,
@@ -351,7 +357,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDa
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+TouchscreenState+_touchData_e__FixedBuffer"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TouchscreenState__touchData_e__FixedBuffer {
     pub FixedElementField: u8,

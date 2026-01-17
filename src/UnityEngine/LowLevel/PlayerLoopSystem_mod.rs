@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PlayerLoopSystem {
     pub _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -128,7 +131,7 @@ impl crate::UnityEngine::LowLevel::PlayerLoopSystem {
 }
 #[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlayerLoopSystem_UpdateFunction {
     __cordl_parent: crate::System::MulticastDelegate,
 }

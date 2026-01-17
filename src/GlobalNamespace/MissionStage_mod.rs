@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MissionStage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MissionStage {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _minimumMissionsToUnlock: i32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteFloorMovement")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteFloorMovement {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _rotatedObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

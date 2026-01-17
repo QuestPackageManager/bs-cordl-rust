@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+RsaKeyPairGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RsaKeyPairGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parameters: quest_hook::libil2cpp::Gc<

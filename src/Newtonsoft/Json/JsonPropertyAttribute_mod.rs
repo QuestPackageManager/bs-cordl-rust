@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonPropertyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonPropertyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _nullValueHandling: crate::System::Nullable_1<crate::Newtonsoft::Json::NullValueHandling>,

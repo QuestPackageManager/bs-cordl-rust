@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+MulticastNotSupportedException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MulticastNotSupportedException {
     __cordl_parent: crate::System::SystemException,
 }

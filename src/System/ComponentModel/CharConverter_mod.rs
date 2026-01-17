@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+CharConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CharConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
 }

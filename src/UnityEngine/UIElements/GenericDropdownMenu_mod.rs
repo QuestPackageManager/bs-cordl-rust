@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+GenericDropdownMenu")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericDropdownMenu {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Items: quest_hook::libil2cpp::Gc<
@@ -980,7 +980,7 @@ impl AsMut<crate::UnityEngine::UIElements::IGenericMenu>
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+GenericDropdownMenu+MenuItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GenericDropdownMenu_MenuItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

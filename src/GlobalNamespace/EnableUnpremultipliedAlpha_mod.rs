@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_EnableUnpremultipliedAlpha")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EnableUnpremultipliedAlpha {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }

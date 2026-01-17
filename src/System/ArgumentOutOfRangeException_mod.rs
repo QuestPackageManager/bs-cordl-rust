@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ArgumentOutOfRangeException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ArgumentOutOfRangeException {
     __cordl_parent: crate::System::ArgumentException,
     pub _actualValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

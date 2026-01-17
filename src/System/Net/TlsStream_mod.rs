@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+TlsStream")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TlsStream {
     __cordl_parent: crate::System::Net::Sockets::NetworkStream,
     pub _sslStream: quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,

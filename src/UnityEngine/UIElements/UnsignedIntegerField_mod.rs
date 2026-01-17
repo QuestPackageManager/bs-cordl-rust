@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsignedIntegerField {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<u32>,
 }
@@ -259,7 +259,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Unsig
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UnsignedIntegerInput")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsignedIntegerField_UnsignedIntegerInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<u32>,
 }
@@ -482,7 +482,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UxmlFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsignedIntegerField_UxmlFactory {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UnsignedIntegerField>,
@@ -570,7 +570,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnsignedIntegerField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         u32,

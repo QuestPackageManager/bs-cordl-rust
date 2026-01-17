@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DisappearingArrowControllerBase_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DisappearingArrowControllerBase_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _transparentObjectMaterialPropertyBlocks: quest_hook::libil2cpp::Gc<

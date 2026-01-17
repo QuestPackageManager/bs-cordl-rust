@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ShowTextOnGameEventController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShowTextOnGameEventController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _textFadeTransitions:
@@ -130,7 +130,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ShowTextOnGam
 }
 #[cfg(feature = "cordl_class_ShowTextOnGameEventController+EventTextBinding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ShowTextOnGameEventController_EventTextBinding {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,

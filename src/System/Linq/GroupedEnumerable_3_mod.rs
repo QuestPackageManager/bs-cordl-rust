@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+GroupedEnumerable_3")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GroupedEnumerable_3<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+GPUDrivenRendererDataCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GPUDrivenRendererDataCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

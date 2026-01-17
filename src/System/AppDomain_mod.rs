@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+AppDomain")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AppDomain {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _mono_app_domain: crate::System::IntPtr,

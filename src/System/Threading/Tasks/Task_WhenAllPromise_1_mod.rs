@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+Task+WhenAllPromise_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Task_WhenAllPromise_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

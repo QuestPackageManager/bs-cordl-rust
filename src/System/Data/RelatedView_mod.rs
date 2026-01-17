@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+RelatedView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RelatedView {
     __cordl_parent: crate::System::Data::DataView,
     pub _parentKey: crate::System::Nullable_1<crate::System::Data::DataKey>,

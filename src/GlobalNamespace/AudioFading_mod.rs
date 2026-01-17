@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AudioFading")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioFading {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,

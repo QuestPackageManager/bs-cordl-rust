@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackClipTypeAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TrackClipTypeAttribute {
     __cordl_parent: crate::System::Attribute,
     pub inspectedType: quest_hook::libil2cpp::Gc<crate::System::Type>,

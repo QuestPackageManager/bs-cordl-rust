@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRGLTFAccessor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRGLTFAccessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _accessors: quest_hook::libil2cpp::Gc<
@@ -738,7 +738,10 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRGLTFAccess
     }
 }
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFAccessor")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRGLTFAccessor_GLTFAccessor {
     pub Type: crate::GlobalNamespace::OVRGLTFType,
@@ -845,7 +848,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRGLTFAccessor+GLTFAccessor")]
 impl crate::GlobalNamespace::OVRGLTFAccessor_GLTFAccessor {}
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBuffer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRGLTFAccessor_GLTFBuffer {
     pub ByteLength: i32,
@@ -941,7 +947,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRGLTFAccessor+GLTFBuffer")]
 impl crate::GlobalNamespace::OVRGLTFAccessor_GLTFBuffer {}
 #[cfg(feature = "cordl_class_OVRGLTFAccessor+GLTFBufferView")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRGLTFAccessor_GLTFBufferView {
     pub BufferIndex: i32,

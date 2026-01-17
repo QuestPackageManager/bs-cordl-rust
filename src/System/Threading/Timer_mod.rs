@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Timer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Timer {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub callback: quest_hook::libil2cpp::Gc<crate::System::Threading::TimerCallback>,
@@ -397,7 +397,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::Timer {
 }
 #[cfg(feature = "cordl_class_System+Threading+Timer+Scheduler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Timer_Scheduler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub needReSort: bool,
@@ -748,7 +748,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Timer_Sched
     }
 }
 #[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Timer_TimerComparer {}
 #[cfg(feature = "cordl_class_System+Threading+Timer+TimerComparer")]

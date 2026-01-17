@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SongTimeAnimationPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SongTimeAnimationPlayer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _animationClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,

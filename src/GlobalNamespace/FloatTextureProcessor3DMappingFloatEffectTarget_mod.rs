@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatTextureProcessor3DMappingFloatEffectTarget")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatTextureProcessor3DMappingFloatEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -169,10 +169,15 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_FloatTextureProcessor3DMappingFloatEffectTarget+TextureProcessor3DMapping"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum FloatTextureProcessor3DMappingFloatEffectTarget_TextureProcessor3DMapping {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     EmissiveModulationStrength = 4i32,
     MaxScale = 2i32,
     RadialDisplacementScale = 1i32,

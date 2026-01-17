@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameServerLobbyFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameServerLobbyFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase,
     pub _screenMode: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenModeSO>,

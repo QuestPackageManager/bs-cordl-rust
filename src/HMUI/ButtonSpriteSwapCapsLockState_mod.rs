@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+ButtonSpriteSwapCapsLockState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ButtonSpriteSwapCapsLockState {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lowercaseSprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,

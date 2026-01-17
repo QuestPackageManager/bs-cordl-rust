@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CanvasGroupStateTransition")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CanvasGroupStateTransition {
     __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,

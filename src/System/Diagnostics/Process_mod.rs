@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Diagnostics+Process")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Process {
     __cordl_parent: crate::System::ComponentModel::Component,
     pub haveProcessId: bool,
@@ -1363,7 +1363,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::Process {
     }
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+Process+ProcInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Process_ProcInfo {
     pub process_handle: crate::System::IntPtr,
@@ -1465,10 +1468,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Diagnostics::
 #[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
 impl crate::System::Diagnostics::Process_ProcInfo {}
 #[cfg(feature = "cordl_class_System+Diagnostics+Process+State")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Process_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Associated = 32i32,
     Exited = 16i32,
     HaveId = 1i32,
@@ -1553,10 +1561,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::System::Diagnostics::Proces
     }
 }
 #[cfg(feature = "cordl_class_System+Diagnostics+Process+StreamReadMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Process_StreamReadMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     asyncMode = 2i32,
     syncMode = 1i32,
     undefined = 0i32,

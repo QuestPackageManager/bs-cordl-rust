@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LightTranslationGroupEffectManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LightTranslationGroupEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightTranslationGroups: quest_hook::libil2cpp::Gc<

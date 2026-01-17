@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeTypeHandlerBaseEnumerable")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HierarchyNodeTypeHandlerBaseEnumerable {
     pub m_Hierarchy: quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,
@@ -161,7 +164,10 @@ impl crate::Unity::Hierarchy::HierarchyNodeTypeHandlerBaseEnumerable {
     }
 }
 #[cfg(feature = "cordl_class_Unity+Hierarchy+HierarchyNodeTypeHandlerBaseEnumerable+Enumerator")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct HierarchyNodeTypeHandlerBaseEnumerable_Enumerator {
     pub m_Handlers:

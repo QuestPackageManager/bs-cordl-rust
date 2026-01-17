@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellData+PerScenarioData")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct CellData_ProbeReferenceVolume_PerScenarioData {
     pub shL0L1RxData: crate::Unity::Collections::NativeArray_1<u16>,
@@ -113,7 +116,7 @@ impl crate::UnityEngine::Rendering::CellData_ProbeReferenceVolume_PerScenarioDat
     feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellStreamingRequest+OnStreamingCompleteDelegate"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CellStreamingRequest_ProbeReferenceVolume_OnStreamingCompleteDelegate {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -326,10 +329,15 @@ for crate::UnityEngine::Rendering::CellStreamingRequest_ProbeReferenceVolume_OnS
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellStreamingRequest+State"
 )]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum CellStreamingRequest_ProbeReferenceVolume_State {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Active = 1i32,
     Canceled = 2i32,
     Complete = 4i32,
@@ -432,7 +440,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_EmptyIndexBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
@@ -6536,7 +6544,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::ProbeR
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+Cell")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_Cell {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub desc:
@@ -6744,7 +6752,7 @@ impl
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellBlendingInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellBlendingInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub chunkList: quest_hook::libil2cpp::Gc<
@@ -6971,7 +6979,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub validityNeighMaskData: crate::Unity::Collections::NativeArray_1<u8>,
@@ -7548,7 +7556,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellDesc")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellDesc {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub position: crate::UnityEngine::Vector3Int,
@@ -7668,7 +7676,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellIndexInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellIndexInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub flatIndicesInGlobalIndirection:
@@ -7780,7 +7788,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellInstancedDebugProbes")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellInstancedDebugProbes {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub probeBuffers: quest_hook::libil2cpp::Gc<
@@ -7885,7 +7893,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellPoolInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellPoolInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub chunkList: quest_hook::libil2cpp::Gc<
@@ -7993,7 +8001,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellStreamingInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellStreamingInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub request: quest_hook::libil2cpp::Gc<
@@ -8143,7 +8151,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellStreamingRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellStreamingRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cell_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -8807,7 +8815,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellStreamingScratchBuffer"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_CellStreamingScratchBuffer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stagingBuffer: crate::Unity::Collections::NativeArray_1<u8>,
@@ -9022,7 +9030,10 @@ impl quest_hook::libil2cpp::ObjectType
 #[cfg(
     feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+CellStreamingScratchBufferLayout"
 )]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeReferenceVolume_CellStreamingScratchBufferLayout {
     pub _SharedDestChunksOffset: i32,
@@ -9166,7 +9177,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::Rendering::ProbeReferenceVolume_CellStreamingScratchBufferLayout {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+DiskStreamingRequest")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_DiskStreamingRequest {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ReadHandle: crate::Unity::IO::LowLevel::Unsafe::ReadHandle,
@@ -9416,7 +9427,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+ExtraDataActionInput")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeReferenceVolume_ExtraDataActionInput {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+ExtraDataActionInput")]
@@ -9518,7 +9532,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+ProbeReferenceVolume+ExtraDataActionInput")]
 impl crate::UnityEngine::Rendering::ProbeReferenceVolume_ExtraDataActionInput {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+IndirectionEntryInfo")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeReferenceVolume_IndirectionEntryInfo {
     pub positionInBricks: crate::UnityEngine::Vector3Int,
@@ -9627,7 +9644,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "UnityEngine+Rendering+ProbeReferenceVolume+IndirectionEntryInfo")]
 impl crate::UnityEngine::Rendering::ProbeReferenceVolume_IndirectionEntryInfo {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+RefVolTransform")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeReferenceVolume_RefVolTransform {
     pub posWS: crate::UnityEngine::Vector3,
@@ -9736,7 +9756,7 @@ impl crate::UnityEngine::Rendering::ProbeReferenceVolume_RefVolTransform {}
     feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+RenderFragmentationOverlayPassData"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_RenderFragmentationOverlayPassData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub debugFragmentationMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -9831,7 +9851,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+RuntimeResources")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeReferenceVolume_RuntimeResources {
     pub index: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
@@ -9950,7 +9973,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::UnityEngine::Rendering::ProbeReferenceVolume_RuntimeResources {}
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+ShaderIDs")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ProbeReferenceVolume_ShaderIDs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -10003,7 +10026,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+ProbeReferenceVolume+Volume")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct ProbeReferenceVolume_Volume {
     pub corner: crate::UnityEngine::Vector3,

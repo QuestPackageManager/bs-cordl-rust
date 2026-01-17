@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+MaskableGraphic")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaskableGraphic {
     __cordl_parent: crate::UnityEngine::UI::Graphic,
     pub m_ShouldRecalculateStencil: bool,
@@ -626,7 +626,7 @@ impl AsMut<crate::UnityEngine::UI::IMaterialModifier> for crate::UnityEngine::UI
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MaskableGraphic_CullStateChangedEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<bool>,
 }

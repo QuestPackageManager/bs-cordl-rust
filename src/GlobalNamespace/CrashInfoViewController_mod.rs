@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CrashInfoViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CrashInfoViewController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _crashManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CrashManagerSO>,

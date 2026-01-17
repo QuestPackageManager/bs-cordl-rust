@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+RawImage")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RawImage {
     __cordl_parent: crate::UnityEngine::UI::MaskableGraphic,
     pub m_Texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatSaberConnectedPlayer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatSaberConnectedPlayer {
     __cordl_parent: crate::GlobalNamespace::ConnectedPlayer_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,

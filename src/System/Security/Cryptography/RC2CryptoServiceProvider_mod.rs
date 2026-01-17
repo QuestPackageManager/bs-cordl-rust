@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+RC2CryptoServiceProvider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RC2CryptoServiceProvider {
     __cordl_parent: crate::System::Security::Cryptography::RC2,
     pub m_use40bitSalt: bool,

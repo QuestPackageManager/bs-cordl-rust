@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MockAudioTimeSource")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MockAudioTimeSource {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _songTime_k__BackingField: f32,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+CultureInfoConverter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CultureInfoConverter {
     __cordl_parent: crate::System::ComponentModel::TypeConverter,
     pub _values: quest_hook::libil2cpp::Gc<
@@ -351,7 +351,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::Cultur
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CultureInfoConverter_CultureComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _converter: quest_hook::libil2cpp::Gc<crate::System::ComponentModel::CultureInfoConverter>,
@@ -490,7 +490,7 @@ impl AsMut<crate::System::Collections::IComparer>
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CultureInfoConverter_CultureInfoMapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

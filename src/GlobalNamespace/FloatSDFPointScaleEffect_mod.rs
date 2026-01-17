@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FloatSDFPointScaleEffect")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FloatSDFPointScaleEffect {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _colorPoints: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SDFPoint>,

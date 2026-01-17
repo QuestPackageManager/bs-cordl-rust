@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WeakHashtable {
     __cordl_parent: crate::System::Collections::Hashtable,
 }
@@ -126,7 +126,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::WeakHa
 }
 #[cfg(feature = "cordl_class_System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WeakHashtable_WeakKeyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

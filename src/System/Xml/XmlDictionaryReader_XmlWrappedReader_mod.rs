@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlDictionaryReader+XmlWrappedReader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlDictionaryReader_XmlWrappedReader {
     __cordl_parent: crate::System::Xml::XmlDictionaryReader,
     pub reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,

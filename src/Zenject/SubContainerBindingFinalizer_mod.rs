@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+SubContainerBindingFinalizer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SubContainerBindingFinalizer {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
     pub _subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

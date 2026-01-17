@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+Cryptography+HMACSHA512")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct HMACSHA512 {
     __cordl_parent: crate::System::Security::Cryptography::HMAC,
     pub m_useLegacyBlockSize: bool,

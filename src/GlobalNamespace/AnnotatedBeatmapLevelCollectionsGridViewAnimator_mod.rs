@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _viewportTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,

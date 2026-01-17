@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PhysicsRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub m_EventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -318,7 +318,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EventSystems::Phy
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PhysicsRaycaster_RaycastHitComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

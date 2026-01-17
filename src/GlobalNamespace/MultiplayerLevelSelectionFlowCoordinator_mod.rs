@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLevelSelectionFlowCoordinator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLevelSelectionFlowCoordinator {
     __cordl_parent: crate::GlobalNamespace::LevelSelectionFlowCoordinator,
     pub _notAllowedCharacteristics: quest_hook::libil2cpp::Gc<

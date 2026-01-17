@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRBoundary")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRBoundary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cachedGeometryList: quest_hook::libil2cpp::Gc<
@@ -264,7 +264,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRBoundary {
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryTestResult")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRBoundary_BoundaryTestResult {
     pub IsTriggering: bool,
@@ -369,10 +372,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 impl crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {}
 #[cfg(feature = "cordl_class_OVRBoundary+BoundaryType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRBoundary_BoundaryType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     OuterBoundary = 1i32,
     PlayArea = 256i32,
 }
@@ -451,10 +459,15 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRBoundar
     }
 }
 #[cfg(feature = "cordl_class_OVRBoundary+Node")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum OVRBoundary_Node {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     HandLeft = 3i32,
     HandRight = 4i32,
     Head = 9i32,

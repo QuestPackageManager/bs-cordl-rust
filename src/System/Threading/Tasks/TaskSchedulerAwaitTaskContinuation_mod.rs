@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TaskSchedulerAwaitTaskContinuation {
     __cordl_parent: crate::System::Threading::Tasks::AwaitTaskContinuation,
     pub m_scheduler: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::TaskScheduler>,

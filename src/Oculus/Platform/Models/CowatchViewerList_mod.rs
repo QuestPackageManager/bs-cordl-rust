@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+CowatchViewerList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CowatchViewerList {
     __cordl_parent: crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::CowatchViewer>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_PlatformNetworkPlayerModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformNetworkPlayerModel {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel,
 }
@@ -140,7 +140,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlatformNetwo
 }
 #[cfg(feature = "cordl_class_PlatformNetworkPlayerModel+CreatePartyConfig")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PlatformNetworkPlayerModel_CreatePartyConfig {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TemplateAsset {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElementAsset,
     pub m_TemplateAlias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -209,7 +209,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Templ
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TemplateAsset_AttributeOverride {
     pub m_ElementName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -352,7 +355,10 @@ impl crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset+UxmlSerializedDataOverride")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct TemplateAsset_UxmlSerializedDataOverride {
     pub m_ElementId: i32,

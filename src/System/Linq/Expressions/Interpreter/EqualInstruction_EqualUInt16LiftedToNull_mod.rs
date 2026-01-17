@@ -2,7 +2,7 @@
     feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualUInt16LiftedToNull"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EqualInstruction_EqualUInt16LiftedToNull {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::EqualInstruction,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicUtils {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -97,7 +97,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Utilities::D
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DynamicUtils_BinderWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

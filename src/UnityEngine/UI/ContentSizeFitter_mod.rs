@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ContentSizeFitter {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_HorizontalFit: crate::UnityEngine::UI::ContentSizeFitter_FitMode,
@@ -394,10 +394,15 @@ impl AsMut<crate::UnityEngine::UI::ILayoutSelfController>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ContentSizeFitter+FitMode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum ContentSizeFitter_FitMode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     MinSize = 1i32,
     PreferredSize = 2i32,
     Unconstrained = 0i32,

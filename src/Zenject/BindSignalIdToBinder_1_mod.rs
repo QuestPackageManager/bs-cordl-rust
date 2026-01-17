@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+BindSignalIdToBinder_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BindSignalIdToBinder_1<TSignal: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Zenject::BindSignalToBinder_1<TSignal>,
     __cordl_phantom_TSignal: std::marker::PhantomData<TSignal>,

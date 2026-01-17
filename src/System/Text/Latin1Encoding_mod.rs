@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+Latin1Encoding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Latin1Encoding {
     __cordl_parent: crate::System::Text::EncodingNLS,
 }

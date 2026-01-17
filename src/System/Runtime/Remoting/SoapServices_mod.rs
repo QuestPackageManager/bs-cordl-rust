@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+SoapServices")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SoapServices {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -482,7 +482,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::Remoting::Soa
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+SoapServices+TypeInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SoapServices_TypeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,

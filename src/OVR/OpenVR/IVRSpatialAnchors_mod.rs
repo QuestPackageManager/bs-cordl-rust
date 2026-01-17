@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSpatialAnchors")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRSpatialAnchors {
     pub CreateSpatialAnchorFromDescriptor: quest_hook::libil2cpp::Gc<
@@ -114,7 +117,7 @@ impl crate::OVR::OpenVR::IVRSpatialAnchors {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -301,7 +304,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromPose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSpatialAnchors__CreateSpatialAnchorFromPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -499,7 +502,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorDescriptor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSpatialAnchors__GetSpatialAnchorDescriptor {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -701,7 +704,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorPose")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRSpatialAnchors__GetSpatialAnchorPose {
     __cordl_parent: crate::System::MulticastDelegate,
 }

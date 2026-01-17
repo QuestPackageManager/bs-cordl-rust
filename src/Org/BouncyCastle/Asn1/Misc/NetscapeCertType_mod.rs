@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Misc+NetscapeCertType")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NetscapeCertType {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerBitString,
 }

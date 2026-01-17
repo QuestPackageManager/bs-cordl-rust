@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GraphicsFormatUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

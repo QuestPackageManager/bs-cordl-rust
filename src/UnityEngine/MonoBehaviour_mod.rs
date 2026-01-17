@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+MonoBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoBehaviour {
     __cordl_parent: crate::UnityEngine::Behaviour,
     pub m_CancellationTokenSource:

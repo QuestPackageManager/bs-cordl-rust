@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CampaignProgressModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CampaignProgressModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,

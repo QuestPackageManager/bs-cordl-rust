@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ObjectGUIState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectGUIState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
@@ -198,7 +198,7 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::ObjectGUIState {
 }
 #[cfg(feature = "cordl_class_UnityEngine+ObjectGUIState+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ObjectGUIState_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

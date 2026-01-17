@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+RunnableContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RunnableContext {
     __cordl_parent: crate::Zenject::Context,
     pub _autoRun: bool,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListView")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseListView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     pub m_ShowBoundCollectionSize: bool,
@@ -1706,7 +1706,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::BaseL
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListView+UxmlTraits")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BaseListView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits,
     pub m_ShowFoldoutHeader:

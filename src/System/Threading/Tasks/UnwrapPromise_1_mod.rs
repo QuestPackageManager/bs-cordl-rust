@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+Tasks+UnwrapPromise_1")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnwrapPromise_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Threading::Tasks::Task_1<TResult>,
     pub _state: u8,

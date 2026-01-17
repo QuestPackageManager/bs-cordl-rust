@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+ImmersiveDebugger+UserInterface+Generic+Flex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Flex {
     __cordl_parent: crate::Meta::XR::ImmersiveDebugger::UserInterface::Generic::Controller,
     pub _sizeDelta: crate::UnityEngine::Vector2,

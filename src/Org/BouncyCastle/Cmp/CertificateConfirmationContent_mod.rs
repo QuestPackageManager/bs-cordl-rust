@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Cmp+CertificateConfirmationContent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CertificateConfirmationContent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub digestAlgFinder: quest_hook::libil2cpp::Gc<

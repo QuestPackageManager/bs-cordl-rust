@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+PointerEvent")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PointerEvent {
     pub _cordl_type: crate::UnityEngine::InputForUI::PointerEvent_Type,
@@ -411,10 +414,15 @@ impl AsMut<crate::UnityEngine::InputForUI::IEventProperties>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+PointerEvent+Button")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u32)]
 pub enum PointerEvent_Button {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     FingerInTouch = 1u32,
     MouseBack = 16u32,
     MouseForward = 8u32,
@@ -503,7 +511,10 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputForUI::Po
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+PointerEvent+ButtonsState")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct PointerEvent_ButtonsState {
     pub _state: u32,
@@ -706,10 +717,15 @@ impl crate::UnityEngine::InputForUI::PointerEvent_ButtonsState {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputForUI+PointerEvent+Type")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum PointerEvent_Type {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     ButtonPressed = 3i32,
     ButtonReleased = 4i32,
     PointerMoved = 1i32,

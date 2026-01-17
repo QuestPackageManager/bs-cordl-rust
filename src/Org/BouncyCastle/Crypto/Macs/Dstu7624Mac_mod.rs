@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Macs+Dstu7624Mac")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Dstu7624Mac {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub macSize: i32,

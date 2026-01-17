@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RuntimeInitializeOnLoadMethodAttribute {
     __cordl_parent: crate::UnityEngine::Scripting::PreserveAttribute,
     pub m_LoadType: crate::UnityEngine::RuntimeInitializeLoadType,

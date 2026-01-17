@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnicastIPAddressInformation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnicastIPAddressInformation {
     __cordl_parent: crate::System::Net::NetworkInformation::IPAddressInformation,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+LinuxUnicastIPAddressInformation")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LinuxUnicastIPAddressInformation {
     __cordl_parent: crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
     pub address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,

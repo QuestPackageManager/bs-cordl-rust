@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteDebrisPoolInstaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteDebrisPoolInstaller {
     __cordl_parent: crate::Zenject::ScriptableObjectInstaller,
     pub _normalNoteDebrisHDPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,

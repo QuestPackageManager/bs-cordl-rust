@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ColorPalette")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColorPalette {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _current_k__BackingField: crate::UnityEngine::Color,

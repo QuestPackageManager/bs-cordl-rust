@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XPath+XPathNavigator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XPathNavigator {
     __cordl_parent: crate::System::Xml::XPath::XPathItem,
 }

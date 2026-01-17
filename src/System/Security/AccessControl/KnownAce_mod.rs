@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Security+AccessControl+KnownAce")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct KnownAce {
     __cordl_parent: crate::System::Security::AccessControl::GenericAce,
     pub access_mask: i32,

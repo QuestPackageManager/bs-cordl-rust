@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+DesignOnlyAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DesignOnlyAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _IsDesignOnly_k__BackingField: bool,

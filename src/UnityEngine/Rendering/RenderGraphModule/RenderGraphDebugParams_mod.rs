@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphDebugParams")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphDebugParams {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DebugItems: quest_hook::libil2cpp::Gc<
@@ -557,7 +557,7 @@ impl AsMut<crate::UnityEngine::Rendering::IDebugDisplaySettingsQuery>
     feature = "cordl_class_UnityEngine+Rendering+RenderGraphModule+RenderGraphDebugParams+Strings"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RenderGraphDebugParams_Strings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

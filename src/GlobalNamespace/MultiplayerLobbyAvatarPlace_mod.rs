@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLobbyAvatarPlace")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLobbyAvatarPlace {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
 }
@@ -107,7 +107,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MultiplayerLo
 }
 #[cfg(feature = "cordl_class_MultiplayerLobbyAvatarPlace+Pool")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLobbyAvatarPlace_Pool {
     __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyAvatarPlace>,

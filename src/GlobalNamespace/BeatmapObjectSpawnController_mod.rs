@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapObjectSpawnController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectSpawnController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapObjectSpawnMovementData:
@@ -397,7 +397,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapObject
 }
 #[cfg(feature = "cordl_class_BeatmapObjectSpawnController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapObjectSpawnController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub beatsPerMinute: f32,

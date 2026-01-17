@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+DeclareSignalAsyncTickPriorityCopyBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DeclareSignalAsyncTickPriorityCopyBinder {
     __cordl_parent: crate::Zenject::SignalTickPriorityCopyBinder,
 }

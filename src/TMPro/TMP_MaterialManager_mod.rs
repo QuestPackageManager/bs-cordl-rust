@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_MaterialManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -545,7 +545,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+FallbackMaterial")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_MaterialManager_FallbackMaterial {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub fallbackID: i64,
@@ -628,7 +628,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager_Fal
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+MaskingMaterial")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TMP_MaterialManager_MaskingMaterial {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

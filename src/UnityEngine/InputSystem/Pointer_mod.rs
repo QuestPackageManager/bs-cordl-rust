@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Pointer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Pointer {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
     pub _position_k__BackingField:

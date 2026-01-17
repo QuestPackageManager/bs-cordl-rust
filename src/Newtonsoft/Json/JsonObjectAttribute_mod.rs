@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonObjectAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct JsonObjectAttribute {
     __cordl_parent: crate::Newtonsoft::Json::JsonContainerAttribute,
     pub _memberSerialization: crate::Newtonsoft::Json::MemberSerialization,

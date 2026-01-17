@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AudioManagerConfigSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioManagerConfigSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _audioMixer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Audio::AudioMixer>,

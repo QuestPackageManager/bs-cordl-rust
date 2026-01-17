@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+ColumnResizer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ColumnResizer {
     __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
     pub m_Start: crate::UnityEngine::Vector2,

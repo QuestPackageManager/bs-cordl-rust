@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_GameServerBrowserViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GameServerBrowserViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _filterServersButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

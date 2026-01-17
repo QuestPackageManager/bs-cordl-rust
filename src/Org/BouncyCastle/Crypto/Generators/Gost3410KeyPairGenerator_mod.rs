@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Gost3410KeyPairGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Gost3410KeyPairGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub param: quest_hook::libil2cpp::Gc<

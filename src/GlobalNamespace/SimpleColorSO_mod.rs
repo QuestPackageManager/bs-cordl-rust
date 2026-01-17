@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SimpleColorSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SimpleColorSO {
     __cordl_parent: crate::GlobalNamespace::ColorSO,
     pub _color: crate::UnityEngine::Color,

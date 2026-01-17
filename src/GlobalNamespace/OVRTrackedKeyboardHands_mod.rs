@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRTrackedKeyboardHands")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRTrackedKeyboardHands {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub LeftHandPresence: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -528,7 +528,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTrackedKey
     }
 }
 #[cfg(feature = "cordl_class_OVRTrackedKeyboardHands+HandBoneMapping")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTrackedKeyboardHands_HandBoneMapping {
     pub LeftHandTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -638,7 +641,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 #[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 impl crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {}
 #[cfg(feature = "cordl_class_OVRTrackedKeyboardHands+TrackedKeyboardHandsVisibilityChangedEvent")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibilityChangedEvent {
     pub leftVisible: bool,

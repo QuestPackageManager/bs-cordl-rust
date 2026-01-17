@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MetaRemoteAssetsPreloader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncPreloader,
     pub _networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NetworkConfigSO>,

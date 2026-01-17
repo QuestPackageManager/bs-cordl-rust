@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+VolumeComponentMenu")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VolumeComponentMenu {
     __cordl_parent: crate::System::Attribute,
     pub menu: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

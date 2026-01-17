@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+AnimationState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimationState {
     __cordl_parent: crate::UnityEngine::TrackedReference,
 }
@@ -277,7 +277,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AnimationState {
 }
 #[cfg(feature = "cordl_class_UnityEngine+AnimationState+BindingsMarshaller")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AnimationState_BindingsMarshaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }

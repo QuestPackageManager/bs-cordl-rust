@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Linq+Expressions+MemberMemberBinding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MemberMemberBinding {
     __cordl_parent: crate::System::Linq::Expressions::MemberBinding,
     pub _Bindings_k__BackingField: quest_hook::libil2cpp::Gc<

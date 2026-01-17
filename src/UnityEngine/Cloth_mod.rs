@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Cloth")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Cloth {
     __cordl_parent: crate::UnityEngine::Component,
     pub _useContinuousCollision_k__BackingField: f32,

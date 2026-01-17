@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapCharacteristicSelectionViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCharacteristicSelectionViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _beatmapCharacteristicSegmentedControl:

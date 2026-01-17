@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_DefaultSceneStart")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DefaultSceneStart {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _flowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BloomPrePassLight")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassLight {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _lightType: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
@@ -351,7 +351,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePassL
 }
 #[cfg(feature = "cordl_class_BloomPrePassLight+LightsDataItem")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BloomPrePassLight_LightsDataItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightType: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,

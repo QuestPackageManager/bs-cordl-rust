@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Regex {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub internalMatchTimeout: crate::System::TimeSpan,
@@ -1307,7 +1307,7 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 }
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Regex_CachedCodeEntry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Next:
@@ -1485,7 +1485,10 @@ impl quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Regex_CachedCodeEntryKey {
     pub _options: crate::System::Text::RegularExpressions::RegexOptions,

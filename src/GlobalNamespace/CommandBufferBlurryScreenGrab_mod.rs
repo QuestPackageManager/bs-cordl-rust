@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CommandBufferBlurryScreenGrab")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CommandBufferBlurryScreenGrab {
     __cordl_parent: crate::GlobalNamespace::CommandBufferGOCore,
     pub _kawaseBlurRenderer:

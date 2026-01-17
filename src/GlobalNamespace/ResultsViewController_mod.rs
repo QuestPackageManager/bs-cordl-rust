@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ResultsViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ResultsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _restartButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

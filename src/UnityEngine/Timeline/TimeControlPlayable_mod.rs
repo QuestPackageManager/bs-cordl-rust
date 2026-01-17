@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimeControlPlayable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimeControlPlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub m_timeControl: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::ITimeControl>,

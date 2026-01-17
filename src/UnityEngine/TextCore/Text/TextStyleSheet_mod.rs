@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextStyleSheet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextStyleSheet {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_StyleList: quest_hook::libil2cpp::Gc<

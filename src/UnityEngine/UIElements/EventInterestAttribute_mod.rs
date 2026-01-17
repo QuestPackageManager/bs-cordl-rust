@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct EventInterestAttribute {
     __cordl_parent: crate::System::Attribute,
     pub eventTypes: quest_hook::libil2cpp::Gc<

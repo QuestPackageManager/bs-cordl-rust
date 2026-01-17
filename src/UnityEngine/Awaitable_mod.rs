@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Awaitable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _spinLock: crate::System::Threading::SpinLock,
@@ -637,7 +637,7 @@ impl AsMut<crate::System::Collections::IEnumerator> for crate::UnityEngine::Awai
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable+AwaitableAsyncMethodBuilder_1+IStateMachineBox")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct AwaitableAsyncMethodBuilder_1_Awaitable_IStateMachineBox<T: quest_hook::libil2cpp::Type>
 {
@@ -733,7 +733,7 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable+AwaitableAsyncMethodBuilder+IStateMachineBox")]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 #[repr(C)]
 pub struct AwaitableAsyncMethodBuilder_Awaitable_IStateMachineBox {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
@@ -811,7 +811,10 @@ impl AsMut<crate::System::IDisposable>
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable+AwaitableAndFrameIndex")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Awaitable_AwaitableAndFrameIndex {
     pub _Awaitable_k__BackingField: quest_hook::libil2cpp::Gc<crate::UnityEngine::Awaitable>,
@@ -958,7 +961,10 @@ impl crate::UnityEngine::Awaitable_AwaitableAndFrameIndex {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable+AwaitableAsyncMethodBuilder")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Awaitable_AwaitableAsyncMethodBuilder {
     pub _stateMachineBox: quest_hook::libil2cpp::Gc<
@@ -1069,7 +1075,10 @@ impl crate::UnityEngine::Awaitable_AwaitableAsyncMethodBuilder {
         crate::UnityEngine::AwaitableAsyncMethodBuilder_Awaitable_IStateMachineBox;
 }
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable+AwaitableAsyncMethodBuilder_1")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Awaitable_AwaitableAsyncMethodBuilder_1<T: quest_hook::libil2cpp::Type> {
     pub _stateMachineBox: quest_hook::libil2cpp::Gc<
@@ -1197,7 +1206,10 @@ impl<T: quest_hook::libil2cpp::Type>
         crate::UnityEngine::AwaitableAsyncMethodBuilder_1_Awaitable_IStateMachineBox<T>;
 }
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable+AwaitableHandle")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Awaitable_AwaitableHandle {
     pub _handle: crate::System::IntPtr,
@@ -1378,10 +1390,15 @@ impl crate::UnityEngine::Awaitable_AwaitableHandle {
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable+AwaiterCompletionThreadAffinity")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Awaitable_AwaiterCompletionThreadAffinity {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     BackgroundThread = 2i32,
     MainThread = 1i32,
     None = 0i32,
@@ -1472,7 +1489,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_UnityEngine+Awaitable+DoubleBufferedAwaitableList")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Awaitable_DoubleBufferedAwaitableList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _awaitables: quest_hook::libil2cpp::Gc<

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+Type3Message")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Type3Message {
     __cordl_parent: crate::Mono::Security::Protocol::Ntlm::MessageBase,
     pub _level: crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel,

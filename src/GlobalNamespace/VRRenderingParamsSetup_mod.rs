@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRRenderingParamsSetup")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRRenderingParamsSetup {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _sceneType: crate::GlobalNamespace::SceneType,

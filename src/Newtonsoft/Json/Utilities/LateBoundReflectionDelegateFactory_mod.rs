@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LateBoundReflectionDelegateFactory {
     __cordl_parent: crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LobbySetupViewController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LobbySetupViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _startGameReadyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,

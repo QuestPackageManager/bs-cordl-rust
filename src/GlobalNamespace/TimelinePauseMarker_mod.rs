@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_TimelinePauseMarker")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimelinePauseMarker {
     __cordl_parent: crate::UnityEngine::Timeline::Marker,
     pub _id_k__BackingField: crate::UnityEngine::PropertyName,

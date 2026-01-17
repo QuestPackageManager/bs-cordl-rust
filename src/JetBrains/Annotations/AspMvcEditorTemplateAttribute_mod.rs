@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AspMvcEditorTemplateAttribute {
     __cordl_parent: crate::System::Attribute,
 }

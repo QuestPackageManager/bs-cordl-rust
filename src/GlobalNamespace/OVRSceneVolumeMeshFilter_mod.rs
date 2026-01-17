@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRSceneVolumeMeshFilter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRSceneVolumeMeshFilter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _IsCompleted_k__BackingField: bool,
@@ -203,7 +203,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneVolum
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneVolumeMeshFilter+BakeMeshJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneVolumeMeshFilter_BakeMeshJob {
     pub MeshID: i32,
@@ -345,7 +348,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
@@ -487,7 +493,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
     pub Space: crate::GlobalNamespace::OVRSpace,
@@ -630,7 +639,10 @@ impl AsMut<crate::Unity::Jobs::IJob>
     }
 }
 #[cfg(feature = "cordl_class_OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
     pub Vertices: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,

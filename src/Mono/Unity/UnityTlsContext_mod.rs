@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTlsContext")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UnityTlsContext {
     __cordl_parent: crate::Mono::Net::Security::MobileTlsContext,
     pub tlsContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

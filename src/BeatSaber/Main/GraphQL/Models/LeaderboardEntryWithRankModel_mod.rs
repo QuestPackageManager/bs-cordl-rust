@@ -2,7 +2,7 @@
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+LeaderboardEntryWithRankModel+UserModel+FirstPartyXplatformUserModel+OwnersModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FirstPartyXplatformUserModel_UserModel_LeaderboardEntryWithRankModel_OwnersModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _Nodes_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -186,7 +186,7 @@ for crate::BeatSaber::Main::GraphQL::Models::FirstPartyXplatformUserModel_UserMo
 }
 #[cfg(feature = "cordl_class_BeatSaber+Main+GraphQL+Models+LeaderboardEntryWithRankModel")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardEntryWithRankModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _User_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -432,7 +432,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+LeaderboardEntryWithRankModel+UserModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardEntryWithRankModel_UserModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _Id_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -648,7 +648,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+LeaderboardEntryWithRankModel+UserModel+FirstPartyXplatformUserModel+OwnersModel+NodesModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OwnersModel_FirstPartyXplatformUserModel_UserModel_LeaderboardEntryWithRankModel_NodesModel
 {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
@@ -851,7 +851,7 @@ for crate::BeatSaber::Main::GraphQL::Models::OwnersModel_FirstPartyXplatformUser
     feature = "cordl_class_BeatSaber+Main+GraphQL+Models+LeaderboardEntryWithRankModel+UserModel+FirstPartyXplatformUserModel"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UserModel_LeaderboardEntryWithRankModel_FirstPartyXplatformUserModel {
     __cordl_parent: crate::OculusStudios::GraphQL::Client::GraphQLModel,
     pub _Owners_k__BackingField: quest_hook::libil2cpp::Gc<

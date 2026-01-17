@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRRaycaster")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRRaycaster {
     __cordl_parent: crate::UnityEngine::UI::GraphicRaycaster,
     pub pointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -556,7 +556,10 @@ impl AsMut<crate::UnityEngine::EventSystems::IPointerEnterHandler>
     }
 }
 #[cfg(feature = "cordl_class_OVRRaycaster+RaycastHit")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct OVRRaycaster_RaycastHit {
     pub graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,

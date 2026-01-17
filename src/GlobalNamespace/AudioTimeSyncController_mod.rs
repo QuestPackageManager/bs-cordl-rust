@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_AudioTimeSyncController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioTimeSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSyncLerpSpeed: f32,
@@ -733,7 +733,7 @@ impl AsMut<crate::GlobalNamespace::IAudioTimeSource>
 }
 #[cfg(feature = "cordl_class_AudioTimeSyncController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AudioTimeSyncController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+TimerCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TimerCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

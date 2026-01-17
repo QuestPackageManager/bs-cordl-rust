@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LocalLeaderboardsAsyncLoader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LocalLeaderboardsAsyncLoader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
 }

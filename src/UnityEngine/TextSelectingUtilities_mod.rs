@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TextSelectingUtilities {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub dblClickSnap: crate::UnityEngine::TextEditor_DblClickSnapping,
@@ -1749,10 +1749,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextSelectingUtil
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+CharacterType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TextSelectingUtilities_CharacterType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     LetterLike = 0i32,
     NewLine = 4i32,
     Symbol = 1i32,
@@ -1844,10 +1849,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextSelectingUtilities+Direction")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum TextSelectingUtilities_Direction {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Backward = 1i32,
     Forward = 0i32,
 }

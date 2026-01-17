@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+GUILayoutUtility")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUILayoutUtility {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -804,7 +804,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUILayoutUtility 
 }
 #[cfg(feature = "cordl_class_UnityEngine+GUILayoutUtility+LayoutCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct GUILayoutUtility_LayoutCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _id_k__BackingField: i32,

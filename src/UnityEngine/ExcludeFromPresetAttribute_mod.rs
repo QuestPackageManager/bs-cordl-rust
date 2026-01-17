@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+ExcludeFromPresetAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExcludeFromPresetAttribute {
     __cordl_parent: crate::System::Attribute,
 }

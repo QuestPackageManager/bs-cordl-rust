@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+XmlCanonicalWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlCanonicalWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlUTF8NodeWriter>,
@@ -1043,7 +1043,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlCanonicalWrite
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlCanonicalWriter+Attribute")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlCanonicalWriter_Attribute {
     pub prefixOffset: i32,
@@ -1145,7 +1148,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument
 impl crate::System::Xml::XmlCanonicalWriter_Attribute {}
 #[cfg(feature = "cordl_class_System+Xml+XmlCanonicalWriter+AttributeSorter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XmlCanonicalWriter_AttributeSorter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlCanonicalWriter>,
@@ -1295,7 +1298,10 @@ impl AsMut<crate::System::Collections::IComparer>
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlCanonicalWriter+Element")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlCanonicalWriter_Element {
     pub prefixOffset: i32,
@@ -1390,7 +1396,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Xml::XmlCanon
 #[cfg(feature = "System+Xml+XmlCanonicalWriter+Element")]
 impl crate::System::Xml::XmlCanonicalWriter_Element {}
 #[cfg(feature = "cordl_class_System+Xml+XmlCanonicalWriter+Scope")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlCanonicalWriter_Scope {
     pub xmlnsAttributeCount: i32,
@@ -1483,7 +1492,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Xml::XmlCanon
 #[cfg(feature = "System+Xml+XmlCanonicalWriter+Scope")]
 impl crate::System::Xml::XmlCanonicalWriter_Scope {}
 #[cfg(feature = "cordl_class_System+Xml+XmlCanonicalWriter+XmlnsAttribute")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct XmlCanonicalWriter_XmlnsAttribute {
     pub prefixOffset: i32,

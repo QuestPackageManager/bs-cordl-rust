@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_VRControllersRecorder+SavedData+KeyframeSerializable")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SavedData_VRControllersRecorder_KeyframeSerializable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _xPos1: f32,
@@ -108,7 +108,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_VRControllersRecorder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRControllersRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _dontMoveHead: bool,
@@ -1007,7 +1007,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VRControllers
 }
 #[cfg(feature = "cordl_class_VRControllersRecorder+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRControllersRecorder_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recordingRelativePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1097,7 +1097,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VRControllers
 }
 #[cfg(feature = "cordl_class_VRControllersRecorder+Keyframe")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRControllersRecorder_Keyframe {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pos1: crate::UnityEngine::Vector3,
@@ -1583,10 +1583,15 @@ impl
     }
 }
 #[cfg(feature = "cordl_class_VRControllersRecorder+Mode")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum VRControllersRecorder_Mode {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Off = 2i32,
     Playback = 1i32,
     Record = 0i32,
@@ -1669,7 +1674,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::VRControll
 }
 #[cfg(feature = "cordl_class_VRControllersRecorder+SavedData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRControllersRecorder_SavedData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyframes: quest_hook::libil2cpp::Gc<
@@ -1759,7 +1764,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VRControllers
 }
 #[cfg(feature = "cordl_class_VRControllersRecorder+State")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRControllersRecorder_State {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyframes: quest_hook::libil2cpp::Gc<
@@ -2251,7 +2256,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::VRControllers
 }
 #[cfg(feature = "cordl_class_VRControllersRecorder+TypeSerializationBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VRControllersRecorder_TypeSerializationBinder {
     __cordl_parent: crate::System::Runtime::Serialization::SerializationBinder,
 }

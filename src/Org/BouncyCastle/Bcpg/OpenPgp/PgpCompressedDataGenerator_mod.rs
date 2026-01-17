@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpCompressedDataGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algorithm: crate::Org::BouncyCastle::Bcpg::CompressionAlgorithmTag,
@@ -252,7 +252,7 @@ impl AsMut<crate::Org::BouncyCastle::Bcpg::OpenPgp::IStreamGenerator>
     feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator+SafeCBZip2OutputStream"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpCompressedDataGenerator_SafeCBZip2OutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream,
 }
@@ -372,7 +372,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator+SafeZOutputStream"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpCompressedDataGenerator_SafeZOutputStream {
     __cordl_parent: crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream,
 }

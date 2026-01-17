@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerSessionManager_5")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerSessionManager_5<
     TMessageType: quest_hook::libil2cpp::Type,
     TConnectedPlayerSessionManager: quest_hook::libil2cpp::Type,
@@ -3713,10 +3713,15 @@ impl<
     }
 }
 #[cfg(feature = "cordl_class_MultiplayerSessionManager_5+ConnectionState")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum MultiplayerSessionManager_5_ConnectionState {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Connected = 2i32,
     Connecting = 1i32,
     Disconnected = 0i32,

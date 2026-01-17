@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+ScriptableRendererFeature")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ScriptableRendererFeature {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_Active: bool,

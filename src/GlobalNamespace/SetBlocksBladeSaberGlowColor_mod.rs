@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_SetBlocksBladeSaberGlowColor")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SetBlocksBladeSaberGlowColor {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberTypeObject>,

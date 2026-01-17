@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_CustomTweenBehaviour")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CustomTweenBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub _transforms: quest_hook::libil2cpp::Gc<

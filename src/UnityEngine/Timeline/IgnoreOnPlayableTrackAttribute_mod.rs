@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+IgnoreOnPlayableTrackAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IgnoreOnPlayableTrackAttribute {
     __cordl_parent: crate::System::Attribute,
 }

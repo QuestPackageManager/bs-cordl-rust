@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Mono+Security+Interface+MonoLocalCertificateSelectionCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MonoLocalCertificateSelectionCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

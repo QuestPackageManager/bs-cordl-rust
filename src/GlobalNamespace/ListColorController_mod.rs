@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_ListColorController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ListColorController {
     __cordl_parent: crate::GlobalNamespace::IncDecColorController,
     pub _idx: i32,

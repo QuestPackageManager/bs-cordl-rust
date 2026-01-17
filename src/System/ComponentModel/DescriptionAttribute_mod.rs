@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+ComponentModel+DescriptionAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct DescriptionAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _DescriptionValue_k__BackingField:

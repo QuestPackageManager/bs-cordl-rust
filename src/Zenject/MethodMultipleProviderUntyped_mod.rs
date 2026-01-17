@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Zenject+MethodMultipleProviderUntyped")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MethodMultipleProviderUntyped {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

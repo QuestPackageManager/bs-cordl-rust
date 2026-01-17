@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FinishTutorialAchievementHandler")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FinishTutorialAchievementHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _platform: quest_hook::libil2cpp::Gc<crate::OculusStudios::Platform::Core::IPlatform>,

@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Dimension {
     pub unit: crate::UnityEngine::UIElements::StyleSheets::Dimension_Unit,
@@ -339,10 +342,15 @@ impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleShee
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum Dimension_Unit {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Degree = 5i32,
     Gradian = 6i32,
     Millisecond = 4i32,

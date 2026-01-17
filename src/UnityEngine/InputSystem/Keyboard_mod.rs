@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Keyboard")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Keyboard {
     __cordl_parent: crate::UnityEngine::InputSystem::InputDevice,
     pub _anyKey_k__BackingField:

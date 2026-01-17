@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Net+WebHeaderCollection")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct WebHeaderCollection {
     __cordl_parent: crate::System::Collections::Specialized::NameValueCollection,
     pub m_CommonHeaders: quest_hook::libil2cpp::Gc<
@@ -952,10 +952,15 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable>
     }
 }
 #[cfg(feature = "cordl_class_System+Net+WebHeaderCollection+RfcChar")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(u8)]
 pub enum WebHeaderCollection_RfcChar {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     CR = 3u8,
     Colon = 6u8,
     Ctl = 2u8,

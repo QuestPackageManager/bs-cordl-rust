@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+TerrainCallbacks")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TerrainCallbacks {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -121,7 +121,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TerrainCallbacks 
 }
 #[cfg(feature = "cordl_class_UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TerrainCallbacks_HeightmapChangedCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -242,7 +242,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+TerrainCallbacks+TextureChangedCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TerrainCallbacks_TextureChangedCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

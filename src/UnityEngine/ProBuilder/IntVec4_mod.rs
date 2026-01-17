@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+IntVec4")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IntVec4 {
     pub value: crate::UnityEngine::Vector4,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LeaderboardScoreUploader")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardScoreUploader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub allScoresDidUploadEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -355,7 +355,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LeaderboardSc
 }
 #[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoreData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardScoreUploader_ScoreData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _playerId_k__BackingField: u64,
@@ -955,7 +955,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LeaderboardScoreUploader+ScoresToUploadData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardScoreUploader_ScoresToUploadData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub scores: quest_hook::libil2cpp::Gc<
@@ -1042,7 +1042,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_LeaderboardScoreUploader+UploadScoreCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardScoreUploader_UploadScoreCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

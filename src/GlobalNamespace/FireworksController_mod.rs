@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_FireworksController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FireworksController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _spawnSize: crate::UnityEngine::Vector3,

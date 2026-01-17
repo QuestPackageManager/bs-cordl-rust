@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LeaderboardIdsSO")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardIdsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _leaderboardIds: quest_hook::libil2cpp::Gc<
@@ -243,7 +243,7 @@ impl AsMut<crate::GlobalNamespace::ILeaderboardIdContainer>
 }
 #[cfg(feature = "cordl_class_LeaderboardIdsSO+LeaderboardIdData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LeaderboardIdsSO_LeaderboardIdData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _difficultyBeatmapId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

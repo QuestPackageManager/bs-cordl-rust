@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OVRMicrogesturesSample")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct OVRMicrogesturesSample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub leftGestureSource:

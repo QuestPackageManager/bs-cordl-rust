@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineAsset")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineAsset {
     __cordl_parent: crate::UnityEngine::Rendering::RenderPipelineAsset_1<
         quest_hook::libil2cpp::Gc<
@@ -4426,7 +4426,7 @@ impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineAsset+Strings")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineAsset_Strings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -4486,7 +4486,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+Rendering+Universal+UniversalRenderPipelineAsset+TextureResources"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct UniversalRenderPipelineAsset_TextureResources {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub blueNoise64LTex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,

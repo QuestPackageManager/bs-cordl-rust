@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteWaiting")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteWaiting {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _waitingPosition: crate::UnityEngine::Vector3,

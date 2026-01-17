@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Vector2Mask")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct Vector2Mask {
     pub m_Mask: u8,

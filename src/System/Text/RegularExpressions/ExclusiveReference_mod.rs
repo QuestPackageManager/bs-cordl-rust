@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+RegularExpressions+ExclusiveReference")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ExclusiveReference {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ref: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexRunner>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+CircleSlider")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct CircleSlider {
     __cordl_parent: crate::UnityEngine::UI::Selectable,
     pub _handleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,

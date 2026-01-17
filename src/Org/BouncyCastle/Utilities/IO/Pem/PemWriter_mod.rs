@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemWriter")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PemWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,

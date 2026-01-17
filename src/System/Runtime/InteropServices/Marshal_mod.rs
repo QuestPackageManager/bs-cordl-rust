@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Marshal {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1739,7 +1739,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Runtime::InteropServic
 }
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Marshal_MarshalerInstanceKeyComparer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
@@ -1935,7 +1935,7 @@ impl
 }
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Marshal_SecureStringAllocator {
     __cordl_parent: crate::System::MulticastDelegate,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Reflection+AssemblyDelaySignAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssemblyDelaySignAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _DelaySign_k__BackingField: bool,

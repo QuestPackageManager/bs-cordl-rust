@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Runtime+InteropServices+MarshalAsAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MarshalAsAttribute {
     __cordl_parent: crate::System::Attribute,
     pub MarshalCookie: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

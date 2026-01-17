@@ -2,7 +2,7 @@
     feature = "cordl_class_System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RootDesignerSerializerAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _typeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Dynamic+ConvertBinder")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ConvertBinder {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SchemaNames {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -340,10 +340,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaNam
     }
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNames+Token")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SchemaNames_Token {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Empty = 0i32,
     SchemaAbstract = 54i32,
     SchemaAttributeFormDefault = 70i32,

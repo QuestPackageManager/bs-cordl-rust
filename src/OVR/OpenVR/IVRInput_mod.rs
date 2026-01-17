@@ -1,5 +1,8 @@
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput")]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
 #[repr(C)]
 pub struct IVRInput {
     pub SetActionManifestPath:
@@ -164,7 +167,7 @@ impl crate::OVR::OpenVR::IVRInput {
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__DecompressSkeletalBoneData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -409,7 +412,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetActionHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -585,7 +588,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetActi
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionOrigins")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetActionOrigins {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -795,7 +798,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetActi
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetActionSetHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetActionSetHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -972,7 +975,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetActi
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetAnalogActionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetAnalogActionData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1176,7 +1179,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetAnal
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetDigitalActionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetDigitalActionData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1380,7 +1383,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetDigi
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetInputSourceHandle {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1557,7 +1560,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetInpu
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetOriginLocalizedName {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1740,7 +1743,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetOrig
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetOriginTrackedDeviceInfo {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1928,7 +1931,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetPoseActionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetPoseActionData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2143,7 +2146,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetPose
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetSkeletalActionData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2347,7 +2350,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetSkel
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetSkeletalBoneData {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2581,7 +2584,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__GetSkel
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__GetSkeletalBoneDataCompressed {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2807,7 +2810,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_SetActionManifestPath")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__SetActionManifestPath {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -2979,7 +2982,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__SetActi
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowActionOrigins")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__ShowActionOrigins {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3152,7 +3155,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__ShowAct
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__ShowBindingsForActionSet {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3374,7 +3377,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::IVRInput__ShowBin
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__TriggerHapticVibrationAction {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -3588,7 +3591,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_OVR+OpenVR+IVRInput+_UpdateActionState")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct IVRInput__UpdateActionState {
     __cordl_parent: crate::System::MulticastDelegate,
 }

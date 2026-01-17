@@ -1,8 +1,13 @@
 #[cfg(feature = "cordl_class_TutorialSongController+SequenceCutInfo+NoteType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum SequenceCutInfo_TutorialSongController_NoteType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Arc = 2i32,
     Chain = 1i32,
     Normal = 0i32,
@@ -93,7 +98,7 @@ unsafe impl quest_hook::libil2cpp::Return
 }
 #[cfg(feature = "cordl_class_TutorialSongController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController {
     __cordl_parent: crate::GlobalNamespace::SongController,
     pub _audioTimeSyncController:
@@ -781,7 +786,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TutorialSongC
 }
 #[cfg(feature = "cordl_class_TutorialSongController+InitData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_InitData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub songBpm: f32,
@@ -873,7 +878,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TutorialSongC
 }
 #[cfg(feature = "cordl_class_TutorialSongController+SequenceCutInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_SequenceCutInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub anyWasCutTooSoon: bool,
@@ -1080,7 +1085,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_TutorialSongController+TutorialArcSpawnData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_TutorialArcSpawnData {
     __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
     pub headNote: quest_hook::libil2cpp::Gc<
@@ -1196,7 +1201,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_TutorialSongController+TutorialBasicNoteSpawnData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_TutorialBasicNoteSpawnData {
     __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
     pub cutDirection: crate::GlobalNamespace::NoteCutDirection,
@@ -1329,7 +1334,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_TutorialSongController+TutorialBombNoteSpawnData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_TutorialBombNoteSpawnData {
     __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData,
 }
@@ -1450,7 +1455,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_TutorialSongController+TutorialChainSpawnData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_TutorialChainSpawnData {
     __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
     pub colorType: crate::GlobalNamespace::ColorType,
@@ -1631,7 +1636,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_TutorialSongController+TutorialJumpingNoteSpawnData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_TutorialJumpingNoteSpawnData {
     __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
     pub noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
@@ -1755,7 +1760,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_TutorialSongController+TutorialObjectSpawnData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_TutorialObjectSpawnData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub signal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
@@ -1861,7 +1866,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_TutorialSongController+TutorialObstacleSpawnData")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct TutorialSongController_TutorialObstacleSpawnData {
     __cordl_parent: crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData,
     pub noteLineLayer: crate::GlobalNamespace::NoteLineLayer,

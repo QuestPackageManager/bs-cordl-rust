@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Meta+XR+BuildingBlocks+RoomMeshEvent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct RoomMeshEvent {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub OnRoomMeshLoadCompleted: quest_hook::libil2cpp::Gc<

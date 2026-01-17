@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNodePageInfo")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct XPathNodePageInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pageNum: i32,

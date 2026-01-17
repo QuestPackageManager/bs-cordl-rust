@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeBindingsUpdater")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct VisualTreeBindingsUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater,
     pub m_ElementsWithBindings: quest_hook::libil2cpp::Gc<

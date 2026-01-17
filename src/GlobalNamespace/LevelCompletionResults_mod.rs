@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_LevelCompletionResults")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct LevelCompletionResults {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub gameplayModifiers: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
@@ -468,10 +468,15 @@ impl AsMut<crate::System::IComparable> for crate::GlobalNamespace::LevelCompleti
     }
 }
 #[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndAction")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LevelCompletionResults_LevelEndAction {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     None = 0i32,
     Quit = 1i32,
     Restart = 2i32,
@@ -561,10 +566,15 @@ unsafe impl quest_hook::libil2cpp::Return
     }
 }
 #[cfg(feature = "cordl_class_LevelCompletionResults+LevelEndStateType")]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
+#[cfg_attr(feature = "derive_Clone", derive(Clone))]
+#[cfg_attr(feature = "derive_Copy", derive(Copy))]
+#[cfg_attr(feature = "derive_PartialEq", derive(PartialEq))]
+#[cfg_attr(feature = "derive_Eq", derive(Eq))]
+#[cfg_attr(feature = "derive_Default", derive(Default))]
 #[repr(i32)]
 pub enum LevelCompletionResults_LevelEndStateType {
-    #[default]
+    #[cfg_attr(feature = "derive_Default", default)]
     Cleared = 1i32,
     Failed = 2i32,
     Incomplete = 0i32,

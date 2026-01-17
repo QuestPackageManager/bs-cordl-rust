@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionConditionAttribute")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct AssertionConditionAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _ConditionType_k__BackingField: crate::JetBrains::Annotations::AssertionConditionType,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_HMUI+SelectableCellStaticAnimations")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SelectableCellStaticAnimations {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _selectableCell: quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_BeatmapCharacteristicSegmentedControlController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct BeatmapCharacteristicSegmentedControlController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::IconSegmentedControl>,

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerResultsController")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct MultiplayerLocalInactivePlayerResultsController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _multiplayerController:

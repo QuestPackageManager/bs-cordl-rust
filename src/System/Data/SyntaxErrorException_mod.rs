@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Data+SyntaxErrorException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SyntaxErrorException {
     __cordl_parent: crate::System::Data::InvalidExpressionException,
 }

@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpSecretKeyRingBundle")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct PgpSecretKeyRingBundle {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub secretRings: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,

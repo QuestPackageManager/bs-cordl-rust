@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Text+Base64Encoding")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct Base64Encoding {
     __cordl_parent: crate::System::Text::Encoding,
 }

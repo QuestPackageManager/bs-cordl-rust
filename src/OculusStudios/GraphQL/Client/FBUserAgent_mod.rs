@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_OculusStudios+GraphQL+Client+FBUserAgent")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct FBUserAgent {
     __cordl_parent: crate::System::Collections::Generic::Dictionary_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

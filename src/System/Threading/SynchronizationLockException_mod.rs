@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_System+Threading+SynchronizationLockException")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct SynchronizationLockException {
     __cordl_parent: crate::System::SystemException,
 }

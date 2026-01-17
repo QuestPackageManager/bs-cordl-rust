@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionMethodsCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub raycast3D:
@@ -136,7 +136,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::ReflectionMet
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionMethodsCache_GetRayIntersectionAllCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -336,7 +336,7 @@ impl quest_hook::libil2cpp::ObjectType
     feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRayIntersectionAllNonAllocCallback"
 )]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -538,7 +538,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+GetRaycastNonAllocCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionMethodsCache_GetRaycastNonAllocCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -734,7 +734,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast2DCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionMethodsCache_Raycast2DCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -920,7 +920,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+Raycast3DCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionMethodsCache_Raycast3DCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }
@@ -1106,7 +1106,7 @@ impl quest_hook::libil2cpp::ObjectType
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ReflectionMethodsCache+RaycastAllCallback")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct ReflectionMethodsCache_RaycastAllCallback {
     __cordl_parent: crate::System::MulticastDelegate,
 }

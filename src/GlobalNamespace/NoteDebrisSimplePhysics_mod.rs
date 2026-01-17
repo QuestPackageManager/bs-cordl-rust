@@ -1,6 +1,6 @@
 #[cfg(feature = "cordl_class_NoteDebrisSimplePhysics")]
 #[repr(C)]
-#[derive(Debug)]
+#[cfg_attr(feature = "derive_Debug", derive(Debug))]
 pub struct NoteDebrisSimplePhysics {
     __cordl_parent: crate::GlobalNamespace::NoteDebrisPhysics,
     pub _currentLinearVelocity: crate::UnityEngine::Vector3,
