@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Painter2D {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Ctx: Blacklisted,
+    pub m_Ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_DetachedAllocator:
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::DetachedAllocator>,
     pub m_Handle: crate::UnityEngine::UIElements::SafeHandleAccess,
@@ -108,8 +108,8 @@ impl crate::UnityEngine::UIElements::Painter2D {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Blacklisted0(
-        ctx: Blacklisted,
+    pub fn New_Gc0(
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self =
             <Self as quest_hook::libil2cpp::Type>::class().instantiate();
@@ -119,7 +119,7 @@ impl crate::UnityEngine::UIElements::Painter2D {
     }
     pub fn OnMeshGeneration(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -128,7 +128,7 @@ impl crate::UnityEngine::UIElements::Painter2D {
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 2usize>("OnMeshGeneration")
                     .unwrap_or_else(|e| {
@@ -166,22 +166,23 @@ impl crate::UnityEngine::UIElements::Painter2D {
     }
     pub fn ScheduleJobs(
         &mut self,
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "ScheduleJobs",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ScheduleJobs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "ScheduleJobs",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleJobs", 1usize
                         )
                     })
             });
@@ -209,21 +210,24 @@ impl crate::UnityEngine::UIElements::Painter2D {
             unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Blacklisted0(
+    pub fn _ctor_Gc0(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            ".ctor",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
                             1usize
                         )
                     })

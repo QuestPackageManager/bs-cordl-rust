@@ -4,7 +4,7 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 #[repr(C)]
 pub struct CompilerContextData_NativePassIterator {
-    pub m_Ctx: Blacklisted,
+    pub m_Ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_Index: i32,
 }
 #[cfg(
@@ -164,14 +164,14 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn _ctor(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (Blacklisted),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

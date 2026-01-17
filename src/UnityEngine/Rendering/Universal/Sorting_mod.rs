@@ -298,7 +298,7 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
         a: i32,
         b: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject<T>>,
+            quest_hook::libil2cpp::ValueTypePadding<T>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -314,9 +314,7 @@ impl crate::UnityEngine::Rendering::Universal::Sorting {
                     .find_static_method::<(
                         i32,
                         i32,
-                        quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject<T>>,
-                        >,
+                        quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::ValueTypePadding<T>>,
                     ), quest_hook::libil2cpp::Void, 3usize>(
                         "<Median3Pivot>g__Swap|4_0"
                     )

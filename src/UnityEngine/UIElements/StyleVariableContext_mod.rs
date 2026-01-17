@@ -182,7 +182,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
     pub fn _Add_g__ComputeOrderSensitiveHash_7_0(
         index: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<4>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -192,9 +192,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(
                         i32,
-                        quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        >,
+                        quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::ValueTypePadding<4>>,
                     ), i32, 2usize>("<Add>g__ComputeOrderSensitiveHash|7_0")
                     .unwrap_or_else(|e| {
                         panic!(

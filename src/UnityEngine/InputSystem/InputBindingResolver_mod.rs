@@ -16,7 +16,11 @@ pub struct InputBindingResolver {
         >,
     >,
     pub memory: crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory,
-    pub interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<Blacklisted>>,
+    pub interactions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >,
     pub processors: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputProcessor>,

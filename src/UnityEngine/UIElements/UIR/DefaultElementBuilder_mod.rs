@@ -44,22 +44,23 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::DefaultElementB
 impl crate::UnityEngine::UIElements::UIR::DefaultElementBuilder {
     pub fn DrawVisualElementBackground(
         &mut self,
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "DrawVisualElementBackground",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("DrawVisualElementBackground")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "DrawVisualElementBackground",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DrawVisualElementBackground", 1usize
                         )
                     })
             });
@@ -69,22 +70,23 @@ impl crate::UnityEngine::UIElements::UIR::DefaultElementBuilder {
     }
     pub fn DrawVisualElementBorder(
         &mut self,
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "DrawVisualElementBorder",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("DrawVisualElementBorder")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "DrawVisualElementBorder",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DrawVisualElementBorder", 1usize
                         )
                     })
             });
@@ -94,22 +96,23 @@ impl crate::UnityEngine::UIElements::UIR::DefaultElementBuilder {
     }
     pub fn DrawVisualElementStencilMask(
         &mut self,
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "DrawVisualElementStencilMask",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("DrawVisualElementStencilMask")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "DrawVisualElementStencilMask",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DrawVisualElementStencilMask", 1usize
                         )
                     })
             });
@@ -118,22 +121,23 @@ impl crate::UnityEngine::UIElements::UIR::DefaultElementBuilder {
         Ok(__cordl_ret.into())
     }
     pub fn GenerateStencilClipEntryForRoundedRectBackground(
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "GenerateStencilClipEntryForRoundedRectBackground",
-                    )
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("GenerateStencilClipEntryForRoundedRectBackground")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "GenerateStencilClipEntryForRoundedRectBackground",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateStencilClipEntryForRoundedRectBackground", 1usize
                         )
                     })
             });
@@ -179,22 +183,23 @@ impl crate::UnityEngine::UIElements::UIR::DefaultElementBuilder {
     }
     pub fn ScheduleMeshGenerationJobs(
         &mut self,
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "ScheduleMeshGenerationJobs",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ScheduleMeshGenerationJobs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "ScheduleMeshGenerationJobs",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleMeshGenerationJobs", 1usize
                         )
                     })
             });

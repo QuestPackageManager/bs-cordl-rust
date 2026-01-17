@@ -133,7 +133,7 @@ for crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::
 impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::ResourceUnversionedData {
     pub fn GetName(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         h: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -144,7 +144,9 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            Blacklisted,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
                             crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

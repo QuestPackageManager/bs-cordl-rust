@@ -197,23 +197,29 @@ impl crate::UnityEngine::Experimental::Rendering::XRSystem {
             unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetActiveDisplay() -> quest_hook::libil2cpp::Result<Blacklisted> {
+    pub fn GetActiveDisplay(
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(), Blacklisted, 0usize>("GetActiveDisplay")
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        0usize,
+                    >("GetActiveDisplay")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "GetActiveDisplay",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetActiveDisplay", 0usize
                         )
                     })
             });
-        let __cordl_ret: Blacklisted = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDisplayMSAASamples(
@@ -648,7 +654,7 @@ impl crate::UnityEngine::Experimental::Rendering::XRSystem {
         renderPass: crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass,
         renderParamIndex: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<8>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -662,9 +668,7 @@ impl crate::UnityEngine::Experimental::Rendering::XRSystem {
                         >,
                         crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass,
                         i32,
-                        quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        >,
+                        quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::ValueTypePadding<8>>,
                     ), quest_hook::libil2cpp::Void, 4usize>(
                         "<CreateDefaultLayout>g__AddViewToPass|44_0",
                     )

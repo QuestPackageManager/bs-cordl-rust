@@ -4409,14 +4409,18 @@ impl AsMut<crate::UnityEngine::Rendering::RenderGraphModule::IRenderGraphEnabled
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+UniversalRenderPipelineAsset")]
-impl AsRef<Blacklisted> for crate::UnityEngine::Rendering::Universal::UniversalRenderPipelineAsset {
-    fn as_ref(&self) -> &Blacklisted {
+impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    for crate::UnityEngine::Rendering::Universal::UniversalRenderPipelineAsset
+{
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+Universal+UniversalRenderPipelineAsset")]
-impl AsMut<Blacklisted> for crate::UnityEngine::Rendering::Universal::UniversalRenderPipelineAsset {
-    fn as_mut(&mut self) -> &mut Blacklisted {
+impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    for crate::UnityEngine::Rendering::Universal::UniversalRenderPipelineAsset
+{
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> {
         unsafe { std::mem::transmute(self) }
     }
 }

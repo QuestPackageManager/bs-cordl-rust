@@ -510,25 +510,26 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
     pub fn UpdateNative(
         &mut self,
         success: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<Blacklisted> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ValueTypePadding<8>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(quest_hook::libil2cpp::ByRefMut<bool>), Blacklisted, 1usize>(
-                        "UpdateNative",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<bool>),
+                        quest_hook::libil2cpp::ValueTypePadding<8>,
+                        1usize,
+                    >("UpdateNative")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "UpdateNative",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateNative", 1usize
                         )
                     })
             });
-        let __cordl_ret: Blacklisted =
+        let __cordl_ret: quest_hook::libil2cpp::ValueTypePadding<8> =
             unsafe { cordl_method_info.invoke_unchecked(self, (success))? };
         Ok(__cordl_ret.into())
     }
@@ -714,23 +715,30 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
             unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_TextLib(&mut self) -> quest_hook::libil2cpp::Result<Blacklisted> {
+    pub fn get_TextLib(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
+    {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), Blacklisted, 0usize>("get_TextLib")
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        0usize,
+                    >("get_TextLib")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "get_TextLib",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TextLib", 0usize
                         )
                     })
             });
-        let __cordl_ret: Blacklisted = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn hasLinkAndHyperlink(

@@ -78,18 +78,20 @@ impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsRef<Blacklisted>
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
     for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue>
 {
-    fn as_ref(&self) -> &Blacklisted {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+IInputInteraction_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsMut<Blacklisted>
+impl<TValue: quest_hook::libil2cpp::Type>
+    AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>
     for crate::UnityEngine::InputSystem::IInputInteraction_1<TValue>
 {
-    fn as_mut(&mut self) -> &mut Blacklisted {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject> {
         unsafe { std::mem::transmute(self) }
     }
 }

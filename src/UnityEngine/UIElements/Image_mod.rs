@@ -238,22 +238,23 @@ impl crate::UnityEngine::UIElements::Image {
     }
     pub fn OnGenerateVisualContent(
         &mut self,
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "OnGenerateVisualContent",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnGenerateVisualContent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "OnGenerateVisualContent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnGenerateVisualContent", 1usize
                         )
                     })
             });

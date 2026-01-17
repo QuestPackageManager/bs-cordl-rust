@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRMeshSubsystem {
-    __cordl_parent: crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>,
+    __cordl_parent: crate::UnityEngine::IntegratedSubsystem_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRMeshSubsystem {
@@ -26,7 +28,9 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRMeshSubsys
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRMeshSubsystem {
-    type Target = crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>;
+    type Target = crate::UnityEngine::IntegratedSubsystem_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

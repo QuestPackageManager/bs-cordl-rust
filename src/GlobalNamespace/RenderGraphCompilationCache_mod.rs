@@ -14,7 +14,9 @@ pub struct RenderGraphCompilationCache {
     >,
     pub m_NativeHashEntries: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::DynamicArray_1<
-            crate::GlobalNamespace::RenderGraphCompilationCache_HashEntry_1<Blacklisted>,
+            crate::GlobalNamespace::RenderGraphCompilationCache_HashEntry_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >,
     pub m_CompiledGraphPool: quest_hook::libil2cpp::Gc<
@@ -24,8 +26,11 @@ pub struct RenderGraphCompilationCache {
             >,
         >,
     >,
-    pub m_NativeCompiledGraphPool:
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Stack_1<Blacklisted>>,
+    pub m_NativeCompiledGraphPool: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >,
 }
 #[cfg(feature = "cordl_class_RenderGraphCompilationCache")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RenderGraphCompilationCache {
@@ -190,23 +195,28 @@ impl crate::GlobalNamespace::RenderGraphCompilationCache {
         &mut self,
         hash: i32,
         frameIndex: i32,
-        outGraph: quest_hook::libil2cpp::ByRefMut<Blacklisted>,
+        outGraph: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32, quest_hook::libil2cpp::ByRefMut<Blacklisted>),
-                        bool,
-                        3usize,
-                    >("GetCompilationCache")
+                    .find_method::<(
+                        i32,
+                        i32,
+                        quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    ), bool, 3usize>("GetCompilationCache")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCompilationCache", 3usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "GetCompilationCache",
+                            3usize
                         )
                     })
             });

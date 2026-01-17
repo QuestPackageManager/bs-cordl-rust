@@ -153,7 +153,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     pub fn AddFirstUse(
         &mut self,
         h: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
@@ -162,7 +162,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(
                         crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 2usize>("AddFirstUse")
                     .unwrap_or_else(|e| {
                         panic!(
@@ -180,7 +180,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     pub fn AddFragment(
         &mut self,
         h: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
@@ -189,7 +189,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(
                         crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 2usize>("AddFragment")
                     .unwrap_or_else(|e| {
                         panic!(
@@ -207,7 +207,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     pub fn AddFragmentInput(
         &mut self,
         h: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
@@ -216,7 +216,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(
                         crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 2usize>("AddFragmentInput")
                     .unwrap_or_else(|e| {
                         panic!(
@@ -234,7 +234,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     pub fn AddLastUse(
         &mut self,
         h: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
@@ -243,7 +243,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(
                         crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 2usize>("AddLastUse")
                     .unwrap_or_else(|e| {
                         panic!(
@@ -284,7 +284,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn FirstUsedResources(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ReadOnlySpan_1<
             crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
@@ -295,15 +295,18 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), crate::System::ReadOnlySpan_1<
-                        crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-                    >, 1usize>("FirstUsedResources")
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        crate::System::ReadOnlySpan_1<
+                            crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
+                        >,
+                        1usize,
+                    >("FirstUsedResources")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "FirstUsedResources",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FirstUsedResources", 1usize
                         )
                     })
             });
@@ -314,7 +317,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn FragmentInputs(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ReadOnlySpan_1<
             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassFragmentData,
@@ -326,7 +329,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (Blacklisted),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::ReadOnlySpan_1<
                             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassFragmentData,
                         >,
@@ -347,7 +350,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn Fragments(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ReadOnlySpan_1<
             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassFragmentData,
@@ -359,7 +362,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (Blacklisted),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::ReadOnlySpan_1<
                             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassFragmentData,
                         >,
@@ -380,7 +383,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn GetName(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::Name,
     > {
@@ -390,7 +393,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (Blacklisted),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::Name,
                         1usize,
                     >("GetName")
@@ -409,7 +412,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn Inputs(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ReadOnlySpan_1<
             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassInputData,
@@ -421,7 +424,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (Blacklisted),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::ReadOnlySpan_1<
                             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassInputData,
                         >,
@@ -443,7 +446,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     pub fn IsUsedAsFragment(
         &mut self,
         h: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
@@ -452,7 +455,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(
                         crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), bool, 2usize>("IsUsedAsFragment")
                     .unwrap_or_else(|e| {
                         panic!(
@@ -468,7 +471,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn LastUsedResources(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ReadOnlySpan_1<
             crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
@@ -479,15 +482,18 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), crate::System::ReadOnlySpan_1<
-                        crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-                    >, 1usize>("LastUsedResources")
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        crate::System::ReadOnlySpan_1<
+                            crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
+                        >,
+                        1usize,
+                    >("LastUsedResources")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "LastUsedResources",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LastUsedResources", 1usize
                         )
                     })
             });
@@ -498,7 +504,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn Outputs(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ReadOnlySpan_1<
             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassOutputData,
@@ -510,7 +516,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (Blacklisted),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::ReadOnlySpan_1<
                             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassOutputData,
                         >,
@@ -531,7 +537,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     }
     pub fn RandomWriteTextures(
         &mut self,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ReadOnlySpan_1<
             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassRandomWriteData,
@@ -543,7 +549,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (Blacklisted),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::ReadOnlySpan_1<
                             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassRandomWriteData,
                         >,
@@ -600,7 +606,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
     pub fn SetupAndValidateFragmentInfo(
         &mut self,
         h: crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
@@ -609,7 +615,7 @@ impl crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler:
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(
                         crate::UnityEngine::Rendering::RenderGraphModule::ResourceHandle,
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 2usize>(
                         "SetupAndValidateFragmentInfo"
                     )

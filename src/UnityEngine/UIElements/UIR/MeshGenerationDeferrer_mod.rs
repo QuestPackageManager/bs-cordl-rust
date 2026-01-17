@@ -190,7 +190,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshGenerationDeferrer {
     }
     pub fn Invoke(
         ci: crate::UnityEngine::UIElements::UIR::MeshGenerationDeferrer_CallbackInfo,
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
@@ -199,7 +199,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshGenerationDeferrer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(
                         crate::UnityEngine::UIElements::UIR::MeshGenerationDeferrer_CallbackInfo,
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 2usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
@@ -223,22 +223,23 @@ impl crate::UnityEngine::UIElements::UIR::MeshGenerationDeferrer {
     }
     pub fn ProcessDeferredWork(
         &mut self,
-        meshGenerationContext: Blacklisted,
+        meshGenerationContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "ProcessDeferredWork",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ProcessDeferredWork")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "ProcessDeferredWork",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessDeferredWork", 1usize
                         )
                     })
             });

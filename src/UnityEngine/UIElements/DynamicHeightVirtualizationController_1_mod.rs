@@ -1172,7 +1172,7 @@ impl<T: quest_hook::libil2cpp::Type>
             >,
         >,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject<T>>,
+            quest_hook::libil2cpp::ValueTypePadding<T>,
         >,
     ) -> quest_hook::libil2cpp::Result<f32>
     where
@@ -1195,9 +1195,7 @@ impl<T: quest_hook::libil2cpp::Type>
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject<T>,
-                                >,
+                                quest_hook::libil2cpp::ValueTypePadding<T>,
                             >,
                         ),
                         f32,

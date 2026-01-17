@@ -1753,7 +1753,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         &mut self,
         index: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<16>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -1764,7 +1764,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
                     .find_method::<(
                         i32,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<16>,
                         >,
                     ), quest_hook::libil2cpp::Void, 2usize>(
                         "<Apply>g__HandleSelectionAndScroll|202_0",
@@ -1786,7 +1786,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     pub fn _RefreshSelection_g__NotifyIfChanged_191_0(
         &mut self,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<24>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -1794,17 +1794,18 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >), quest_hook::libil2cpp::Void, 1usize>(
-                        "<RefreshSelection>g__NotifyIfChanged|191_0",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::ValueTypePadding<24>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("<RefreshSelection>g__NotifyIfChanged|191_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "<RefreshSelection>g__NotifyIfChanged|191_0",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<RefreshSelection>g__NotifyIfChanged|191_0", 1usize
                         )
                     })
             });

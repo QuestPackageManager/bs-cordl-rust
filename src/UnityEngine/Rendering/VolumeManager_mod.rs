@@ -1089,7 +1089,7 @@ impl crate::UnityEngine::Rendering::VolumeManager {
     pub fn _EvaluateVolumeDefaultState_g__ApplyDefaultProfile_58_0(
         profile: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::VolumeProfile>,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<8>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -1099,9 +1099,7 @@ impl crate::UnityEngine::Rendering::VolumeManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::VolumeProfile>,
-                        quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        >,
+                        quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::ValueTypePadding<8>>,
                     ), quest_hook::libil2cpp::Void, 2usize>(
                         "<EvaluateVolumeDefaultState>g__ApplyDefaultProfile|58_0",
                     )

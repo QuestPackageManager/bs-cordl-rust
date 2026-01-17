@@ -2814,7 +2814,7 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPass {
     pub fn _Render_g__GetDestination_89_1(
         &mut self,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<40>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
@@ -2824,17 +2824,20 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPass {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >), quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>, 1usize>(
-                        "<Render>g__GetDestination|89_1",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::ValueTypePadding<40>,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RTHandle,
+                        >,
+                        1usize,
+                    >("<Render>g__GetDestination|89_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "<Render>g__GetDestination|89_1",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<Render>g__GetDestination|89_1", 1usize
                         )
                     })
             });
@@ -2846,7 +2849,7 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPass {
     pub fn _Render_g__GetSource_89_0(
         &mut self,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<40>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
@@ -2856,17 +2859,20 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPass {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >), quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>, 1usize>(
-                        "<Render>g__GetSource|89_0",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::ValueTypePadding<40>,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Rendering::RTHandle,
+                        >,
+                        1usize,
+                    >("<Render>g__GetSource|89_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "<Render>g__GetSource|89_0",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<Render>g__GetSource|89_0", 1usize
                         )
                     })
             });
@@ -2881,7 +2887,7 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPass {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::Universal::ScriptableRenderer>,
         >,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<40>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -2896,7 +2902,7 @@ impl crate::UnityEngine::Rendering::Universal::PostProcessPass {
                             >,
                         >,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<40>,
                         >,
                     ), quest_hook::libil2cpp::Void, 2usize>(
                         "<Render>g__Swap|89_2"

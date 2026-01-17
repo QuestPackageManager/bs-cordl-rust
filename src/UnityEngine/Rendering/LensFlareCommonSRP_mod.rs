@@ -2233,7 +2233,7 @@ impl crate::UnityEngine::Rendering::LensFlareCommonSRP {
         curSize: crate::UnityEngine::Vector2,
         distortionCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<48>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -2247,7 +2247,7 @@ impl crate::UnityEngine::Rendering::LensFlareCommonSRP {
                         crate::UnityEngine::Vector2,
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<48>,
                         >,
                     ), crate::UnityEngine::Vector2, 5usize>(
                         "<ProcessLensFlareSRPElementsSingle>g__ComputeLocalSize|74_0",

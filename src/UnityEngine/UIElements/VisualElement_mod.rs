@@ -49,8 +49,9 @@ pub struct VisualElement {
     pub m_EnabledSelf: bool,
     pub m_LanguageDirection: crate::UnityEngine::UIElements::LanguageDirection,
     pub m_LocalLanguageDirection: crate::UnityEngine::UIElements::LanguageDirection,
-    pub _generateVisualContent_k__BackingField:
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<Blacklisted>>,
+    pub _generateVisualContent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>,
+    >,
     pub m_SubRenderTargetMode: crate::UnityEngine::UIElements::VisualElement_RenderTargetMode,
     pub m_defaultMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub m_RunningAnimations: quest_hook::libil2cpp::Gc<
@@ -1947,22 +1948,23 @@ impl crate::UnityEngine::UIElements::VisualElement {
     }
     pub fn InvokeGenerateVisualContent(
         &mut self,
-        mgc: Blacklisted,
+        mgc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(Blacklisted), quest_hook::libil2cpp::Void, 1usize>(
-                        "InvokeGenerateVisualContent",
-                    )
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("InvokeGenerateVisualContent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "InvokeGenerateVisualContent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeGenerateVisualContent", 1usize
                         )
                     })
             });
@@ -7706,28 +7708,32 @@ impl crate::UnityEngine::UIElements::VisualElement {
     pub fn get_generateVisualContent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<Blacklisted>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::System::Action_1<Blacklisted>>,
-                        0usize,
-                    >("get_generateVisualContent")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    >, 0usize>("get_generateVisualContent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_generateVisualContent", 0usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_generateVisualContent",
+                            0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<Blacklisted>> =
-            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_has3DRotation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -9482,25 +9488,28 @@ impl crate::UnityEngine::UIElements::VisualElement {
     }
     pub fn set_generateVisualContent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<Blacklisted>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<Blacklisted>,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_generateVisualContent")
+                    .find_method::<(quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        >,
+                    >), quest_hook::libil2cpp::Void, 1usize>(
+                        "set_generateVisualContent"
+                    )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_generateVisualContent", 1usize
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "set_generateVisualContent",
+                            1usize
                         )
                     })
             });

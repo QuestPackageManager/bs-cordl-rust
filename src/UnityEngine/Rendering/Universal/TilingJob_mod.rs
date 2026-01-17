@@ -752,7 +752,7 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
     pub fn _TileLightOrthographic_g__SpherePointIsValid_20_0(
         p: crate::Unity::Mathematics::float3,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<144>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -763,7 +763,7 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
                     .find_static_method::<(
                         crate::Unity::Mathematics::float3,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<144>,
                         >,
                     ), bool, 2usize>(
                         "<TileLightOrthographic>g__SpherePointIsValid|20_0"
@@ -785,7 +785,7 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
     pub fn _TileLight_g__ConicPointIsValid_19_1(
         p: crate::Unity::Mathematics::float3,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<148>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -796,7 +796,7 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
                     .find_static_method::<(
                         crate::Unity::Mathematics::float3,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<148>,
                         >,
                     ), bool, 2usize>("<TileLight>g__ConicPointIsValid|19_1")
                     .unwrap_or_else(|e| {
@@ -816,7 +816,7 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
     pub fn _TileLight_g__SpherePointIsValid_19_0(
         p: crate::Unity::Mathematics::float3,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<148>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -827,7 +827,7 @@ impl crate::UnityEngine::Rendering::Universal::TilingJob {
                     .find_static_method::<(
                         crate::Unity::Mathematics::float3,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<148>,
                         >,
                     ), bool, 2usize>("<TileLight>g__SpherePointIsValid|19_0")
                     .unwrap_or_else(|e| {

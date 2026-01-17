@@ -6,8 +6,10 @@
 pub struct NativePassCompiler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub graph: crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativePassCompiler_RenderGraphInputInfo,
-    pub contextData: Blacklisted,
-    pub defaultContextData: Blacklisted,
+    pub contextData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub defaultContextData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub previousCommandBuffer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::CommandBuffer,
     >,
@@ -745,7 +747,7 @@ impl
         Ok(__cordl_ret.into())
     }
     pub fn MakeAttachmentInfo(
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nativePass: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativePassData,
         >,
@@ -762,7 +764,9 @@ impl
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            Blacklisted,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativePassData,
                             >,
@@ -789,7 +793,7 @@ impl
         Ok(__cordl_ret.into())
     }
     pub fn MakePassBreakInfoMessage(
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nativePass: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativePassData,
         >,
@@ -802,7 +806,9 @@ impl
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            Blacklisted,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::NativePassData,
                             >,
@@ -823,7 +829,7 @@ impl
         Ok(__cordl_ret.into())
     }
     pub fn MakePassMergeMessage(
-        ctx: Blacklisted,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         pass: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassData,
         >,
@@ -840,7 +846,9 @@ impl
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            Blacklisted,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::Rendering::RenderGraphModule::NativeRenderPassCompiler::PassData,
                             >,

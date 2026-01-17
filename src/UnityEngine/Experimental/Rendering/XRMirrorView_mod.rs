@@ -45,7 +45,7 @@ impl crate::UnityEngine::Experimental::Rendering::XRMirrorView {
         cmd: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
         camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        display: Blacklisted,
+        display: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
@@ -56,7 +56,7 @@ impl crate::UnityEngine::Experimental::Rendering::XRMirrorView {
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 4usize>("RenderMirrorView")
                     .unwrap_or_else(|e| {
                         panic!(

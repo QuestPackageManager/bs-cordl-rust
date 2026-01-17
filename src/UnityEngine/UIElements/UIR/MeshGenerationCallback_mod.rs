@@ -43,7 +43,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::MeshGenerationC
 impl crate::UnityEngine::UIElements::UIR::MeshGenerationCallback {
     pub fn Invoke(
         &mut self,
-        meshGenerationContext: Blacklisted,
+        meshGenerationContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshGenerationCallback {
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(
-                        Blacklisted,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                     ), quest_hook::libil2cpp::Void, 2usize>("Invoke")
                     .unwrap_or_else(|e| {

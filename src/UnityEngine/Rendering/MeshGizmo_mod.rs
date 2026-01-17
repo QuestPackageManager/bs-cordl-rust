@@ -194,7 +194,7 @@ impl crate::UnityEngine::Rendering::MeshGizmo {
         p1: crate::UnityEngine::Vector3,
         p2: crate::UnityEngine::Vector3,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<24>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -206,7 +206,7 @@ impl crate::UnityEngine::Rendering::MeshGizmo {
                         crate::UnityEngine::Vector3,
                         crate::UnityEngine::Vector3,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<24>,
                         >,
                     ), quest_hook::libil2cpp::Void, 3usize>(
                         "<AddWireCube>g__AddEdge|10_0"

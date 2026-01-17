@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRInputSubsystem {
-    __cordl_parent: crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>,
+    __cordl_parent: crate::UnityEngine::IntegratedSubsystem_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
     pub trackingOriginUpdated: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
@@ -38,7 +40,9 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRInputSubsy
 }
 #[cfg(feature = "UnityEngine+XR+XRInputSubsystem")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRInputSubsystem {
-    type Target = crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>;
+    type Target = crate::UnityEngine::IntegratedSubsystem_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

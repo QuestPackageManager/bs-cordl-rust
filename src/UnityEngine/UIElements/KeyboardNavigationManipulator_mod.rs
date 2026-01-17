@@ -248,7 +248,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
     }
     pub fn _OnKeyDown_g__GetOperation_4_0(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<8>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::KeyboardNavigationOperation>
     {
@@ -257,17 +257,18 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >), crate::UnityEngine::UIElements::KeyboardNavigationOperation, 1usize>(
-                        "<OnKeyDown>g__GetOperation|4_0",
-                    )
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::ValueTypePadding<8>,
+                        >),
+                        crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+                        1usize,
+                    >("<OnKeyDown>g__GetOperation|4_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "<OnKeyDown>g__GetOperation|4_0",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnKeyDown>g__GetOperation|4_0", 1usize
                         )
                     })
             });

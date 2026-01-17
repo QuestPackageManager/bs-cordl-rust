@@ -464,7 +464,7 @@ impl crate::Unity::Properties::PropertyPath {
     }
     pub fn _ConstructFromPath_g__ReadNext_36_1(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<24>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -472,17 +472,18 @@ impl crate::Unity::Properties::PropertyPath {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >), quest_hook::libil2cpp::Void, 1usize>(
-                        "<ConstructFromPath>g__ReadNext|36_1"
-                    )
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::ValueTypePadding<24>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("<ConstructFromPath>g__ReadNext|36_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "<ConstructFromPath>g__ReadNext|36_1",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<ConstructFromPath>g__ReadNext|36_1", 1usize
                         )
                     })
             });
@@ -493,7 +494,7 @@ impl crate::Unity::Properties::PropertyPath {
     }
     pub fn _ConstructFromPath_g__TrimStart_36_0(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<24>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -501,17 +502,18 @@ impl crate::Unity::Properties::PropertyPath {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(quest_hook::libil2cpp::ByRefMut<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >), quest_hook::libil2cpp::Void, 1usize>(
-                        "<ConstructFromPath>g__TrimStart|36_0"
-                    )
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            quest_hook::libil2cpp::ValueTypePadding<24>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("<ConstructFromPath>g__TrimStart|36_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            "<ConstructFromPath>g__TrimStart|36_0",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<ConstructFromPath>g__TrimStart|36_0", 1usize
                         )
                     })
             });

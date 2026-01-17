@@ -1130,7 +1130,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     }
     pub fn _Create_g__CreateError_81_0(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<8>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -1142,9 +1142,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
+                            quest_hook::libil2cpp::ValueTypePadding<8>,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,

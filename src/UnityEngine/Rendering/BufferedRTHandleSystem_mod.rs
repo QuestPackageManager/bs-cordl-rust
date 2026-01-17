@@ -431,7 +431,7 @@ impl crate::UnityEngine::Rendering::BufferedRTHandleSystem {
         mipBias: f32,
         n: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<16>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>,
@@ -452,7 +452,7 @@ impl crate::UnityEngine::Rendering::BufferedRTHandleSystem {
                         f32,
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<16>,
                         >,
                     ), quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RTHandle>, 8usize>(
                         "<AllocBuffer>g__Alloc|12_0",

@@ -749,7 +749,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         &mut self,
         newIndex: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<16>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -760,7 +760,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
                     .find_method::<(
                         i32,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<16>,
                         >,
                     ), quest_hook::libil2cpp::Void, 2usize>(
                         "<Apply>g__UpdateSelectionDown|48_0"
@@ -784,7 +784,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         &mut self,
         newIndex: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::ValueTypePadding<16>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
@@ -795,7 +795,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
                     .find_method::<(
                         i32,
                         quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                            quest_hook::libil2cpp::ValueTypePadding<16>,
                         >,
                     ), quest_hook::libil2cpp::Void, 2usize>(
                         "<Apply>g__UpdateSelectionUp|48_1"
