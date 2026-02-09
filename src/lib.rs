@@ -9,6 +9,7 @@
 #![allow(bad_style)]
 #![allow(clippy::module_name_repetitions)]
 #![allow(clippy::similar_names)]
+#![allow(clippy::case_sensitive_file_name)]
 #![allow(clippy::enum_variant_names)]
 #![allow(clippy::large_enum_variant)]
 

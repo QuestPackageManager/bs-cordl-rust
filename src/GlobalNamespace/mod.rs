@@ -5476,6 +5476,15 @@ pub use PreviousColorPanelController_mod::*;
 // class PrivacyPolicyDisplayViewController_mod; export all
 mod PrivacyPolicyDisplayViewController_mod;
 pub use PrivacyPolicyDisplayViewController_mod::*;
+// class PrivacyPolicyNoticeDisplayViewController_mod; export all
+mod PrivacyPolicyNoticeDisplayViewController_mod;
+pub use PrivacyPolicyNoticeDisplayViewController_mod::*;
+// class PrivacyPolicyNoticeViewController_mod; export all
+mod PrivacyPolicyNoticeViewController_mod;
+pub use PrivacyPolicyNoticeViewController_mod::*;
+// class PrivacyPolicyNoticeView_mod; export all
+mod PrivacyPolicyNoticeView_mod;
+pub use PrivacyPolicyNoticeView_mod::*;
 // class PrivacyPolicyViewController_mod; export all
 mod PrivacyPolicyViewController_mod;
 pub use PrivacyPolicyViewController_mod::*;

@@ -18,11 +18,6 @@ pub struct BeatmapLevelsModel {
     pub _localizationModel: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
     pub _entitlements:
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelsEntitlementModel>,
-    pub _excludedLevelIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
-    >,
     pub _allLoadedBeatmapLevelsRepository:
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelsRepository>,
     pub _allExistingBeatmapLevelsRepository:

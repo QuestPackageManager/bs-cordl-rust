@@ -1296,6 +1296,7 @@ pub struct PlayerSaveData_PlayerAgreementsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub eulaVersion: i32,
     pub privacyPolicyVersion: i32,
+    pub privacyPolicyNoticeVersion: i32,
     pub healthAndSafetyVersion: i32,
     pub playerSensitivityFlagVersion: i32,
     pub endOfLifeVersion: i32,

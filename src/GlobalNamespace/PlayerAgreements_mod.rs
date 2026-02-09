@@ -6,6 +6,7 @@ pub struct PlayerAgreements {
     pub agreedToEulaEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub eulaVersion: i32,
     pub privacyPolicyVersion: i32,
+    pub privacyPolicyNoticeVersion: i32,
     pub healthAndSafetyVersion: i32,
     pub playerSensitivityFlagVersion: i32,
     pub endOfLifeNoticeVersion: i32,
@@ -49,6 +50,7 @@ impl crate::GlobalNamespace::PlayerAgreements {
     pub const kCurrentEulaVersion: i32 = 5i32;
     pub const kCurrentHealthAndSafetyVersion: i32 = 1i32;
     pub const kCurrentPlayerSensitivityFlagVersion: i32 = 3i32;
+    pub const kCurrentPrivacyPolicyNoticeVersion: i32 = 1i32;
     pub const kCurrentPrivacyPolicyVersion: i32 = 5i32;
     pub const kFirstEulaVersion: i32 = 1i32;
     pub const kFirstPrivacyPolicyVersion: i32 = 1i32;
@@ -158,6 +160,30 @@ impl crate::GlobalNamespace::PlayerAgreements {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             <Self as quest_hook::libil2cpp::Type>::class(),
                             "AgreeToPrivacyPolicy",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn AgreeToPrivacyPolicyNotice(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(
+                        "AgreeToPrivacyPolicyNotice",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AgreeToPrivacyPolicyNotice",
                             0usize
                         )
                     })
@@ -358,6 +384,25 @@ impl crate::GlobalNamespace::PlayerAgreements {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn AgreedToPrivacyPolicyNotice(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("AgreedToPrivacyPolicyNotice")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "AgreedToPrivacyPolicyNotice",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self =
             <Self as quest_hook::libil2cpp::Type>::class().instantiate();
@@ -365,9 +410,10 @@ impl crate::GlobalNamespace::PlayerAgreements {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_i32_i32_i32_1(
+    pub fn New_i32_i32_i32_i32_i32_i32_1(
         eulaVersion: i32,
         privacyPolicyVersion: i32,
+        privacyPolicyNoticeVersion: i32,
         healthAndSafetyVersion: i32,
         playerSensitivityFlagVersion: i32,
         endOfLifeNoticeVersion: i32,
@@ -379,6 +425,7 @@ impl crate::GlobalNamespace::PlayerAgreements {
             (
                 eulaVersion,
                 privacyPolicyVersion,
+                privacyPolicyNoticeVersion,
                 healthAndSafetyVersion,
                 playerSensitivityFlagVersion,
                 endOfLifeNoticeVersion,
@@ -406,10 +453,11 @@ impl crate::GlobalNamespace::PlayerAgreements {
             unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_i32_i32_i32_1(
+    pub fn _ctor_i32_i32_i32_i32_i32_i32_1(
         &mut self,
         eulaVersion: i32,
         privacyPolicyVersion: i32,
+        privacyPolicyNoticeVersion: i32,
         healthAndSafetyVersion: i32,
         playerSensitivityFlagVersion: i32,
         endOfLifeNoticeVersion: i32,
@@ -419,15 +467,16 @@ impl crate::GlobalNamespace::PlayerAgreements {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(i32, i32, i32, i32, i32), quest_hook::libil2cpp::Void, 5usize>(
-                        ".ctor",
-                    )
+                    .find_method::<
+                        (i32, i32, i32, i32, i32, i32),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            <Self as quest_hook::libil2cpp::Type>::class(),
-                            ".ctor",
-                            5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -437,6 +486,7 @@ impl crate::GlobalNamespace::PlayerAgreements {
                 (
                     eulaVersion,
                     privacyPolicyVersion,
+                    privacyPolicyNoticeVersion,
                     healthAndSafetyVersion,
                     playerSensitivityFlagVersion,
                     endOfLifeNoticeVersion,

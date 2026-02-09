@@ -77,6 +77,56 @@ impl crate::JetBrains::Annotations::CollectionAccessAttribute {
             unsafe { cordl_method_info.invoke_unchecked(self, (collectionAccessType))? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_CollectionAccessType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::JetBrains::Annotations::CollectionAccessType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), crate::JetBrains::Annotations::CollectionAccessType, 0usize>(
+                        "get_CollectionAccessType",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "get_CollectionAccessType",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::JetBrains::Annotations::CollectionAccessType =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_CollectionAccessType(
+        &mut self,
+        value: crate::JetBrains::Annotations::CollectionAccessType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::JetBrains::Annotations::CollectionAccessType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_CollectionAccessType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CollectionAccessType", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void =
+            unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "cordl_class_JetBrains+Annotations+CollectionAccessAttribute")]
 impl quest_hook::libil2cpp::ObjectType

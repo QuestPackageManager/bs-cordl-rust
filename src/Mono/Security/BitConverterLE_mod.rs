@@ -39,8 +39,8 @@ impl std::ops::DerefMut for crate::Mono::Security::BitConverterLE {
 }
 #[cfg(feature = "Mono+Security+BitConverterLE")]
 impl crate::Mono::Security::BitConverterLE {
-    pub fn GetBytes_f32_0(
-        value: f32,
+    pub fn GetBytes_i32_0(
+        value: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
@@ -50,7 +50,7 @@ impl crate::Mono::Security::BitConverterLE {
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (f32),
+                        (i32),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
                         >,
@@ -68,8 +68,8 @@ impl crate::Mono::Security::BitConverterLE {
             unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetBytes_f64_1(
-        value: f64,
+    pub fn GetBytes_i64_1(
+        value: i64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
@@ -79,7 +79,7 @@ impl crate::Mono::Security::BitConverterLE {
             METHOD.get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (f64),
+                        (i64),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
                         >,
@@ -155,10 +155,10 @@ impl crate::Mono::Security::BitConverterLE {
             unsafe { cordl_method_info.invoke_unchecked((), (bytes))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToDouble(
+    pub fn ToInt32(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<f64> {
+    ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
@@ -167,24 +167,24 @@ impl crate::Mono::Security::BitConverterLE {
                     .find_static_method::<(
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                    ), f64, 2usize>("ToDouble")
+                    ), i32, 2usize>("ToInt32")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             <Self as quest_hook::libil2cpp::Type>::class(),
-                            "ToDouble",
+                            "ToInt32",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: f64 =
+        let __cordl_ret: i32 =
             unsafe { cordl_method_info.invoke_unchecked((), (value, startIndex))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToSingle(
+    pub fn ToUInt16(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<f32> {
+    ) -> quest_hook::libil2cpp::Result<u16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
             std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
@@ -193,17 +193,43 @@ impl crate::Mono::Security::BitConverterLE {
                     .find_static_method::<(
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                    ), f32, 2usize>("ToSingle")
+                    ), u16, 2usize>("ToUInt16")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             <Self as quest_hook::libil2cpp::Type>::class(),
-                            "ToSingle",
+                            "ToUInt16",
                             2usize
                         )
                     })
             });
-        let __cordl_ret: f32 =
+        let __cordl_ret: u16 =
+            unsafe { cordl_method_info.invoke_unchecked((), (value, startIndex))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUInt32(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                        i32,
+                    ), u32, 2usize>("ToUInt32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            <Self as quest_hook::libil2cpp::Type>::class(),
+                            "ToUInt32",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 =
             unsafe { cordl_method_info.invoke_unchecked((), (value, startIndex))? };
         Ok(__cordl_ret.into())
     }
@@ -235,7 +261,7 @@ impl crate::Mono::Security::BitConverterLE {
             unsafe { cordl_method_info.invoke_unchecked((), (dst, src, startIndex))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ULongFromBytes(
+    pub fn UShortFromBytes(
         dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         startIndex: i32,
@@ -249,12 +275,12 @@ impl crate::Mono::Security::BitConverterLE {
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                         i32,
-                    ), quest_hook::libil2cpp::Void, 3usize>("ULongFromBytes")
+                    ), quest_hook::libil2cpp::Void, 3usize>("UShortFromBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             <Self as quest_hook::libil2cpp::Type>::class(),
-                            "ULongFromBytes",
+                            "UShortFromBytes",
                             3usize
                         )
                     })

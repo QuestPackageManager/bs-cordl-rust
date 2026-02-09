@@ -8,8 +8,8 @@ pub struct HelpMenuViewController {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HowToPlayViewController>,
     pub _healthWarningDisplayViewController:
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HealthWarningDisplayViewController>,
-    pub _privacyPolicyDisplayViewController:
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PrivacyPolicyDisplayViewController>,
+    pub _privacyPolicyNoticeDisplayViewController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PrivacyPolicyNoticeDisplayViewController>,
     pub _eulaDisplayViewController:
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EulaDisplayViewController>,
     pub _licensesDisplayViewController:

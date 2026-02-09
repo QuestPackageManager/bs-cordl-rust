@@ -10,6 +10,8 @@ pub struct HealthWarningFlowCoordinator {
     pub _eulaViewController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EulaViewController>,
     pub _privacyPolicyViewController:
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PrivacyPolicyViewController>,
+    pub _privacyPolicyNoticeViewController:
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PrivacyPolicyNoticeViewController>,
     pub _healthWarningViewController:
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HealthWarningViewController>,
     pub _explicitContentWarningViewController:
@@ -120,6 +122,33 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "AgreeToPrivacyPolicyAsync", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task> =
+            unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn AgreeToPrivacyPolicyNoticeAsync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> =
+            std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo =
+            METHOD.get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        0usize,
+                    >("AgreeToPrivacyPolicyNoticeAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AgreeToPrivacyPolicyNoticeAsync", 0usize
                         )
                     })
             });
@@ -511,7 +540,7 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
             unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ShowSelectLanguageViewControllerAsync_g__HandleDidChangeLanguage_28_0(
+    pub fn _ShowSelectLanguageViewControllerAsync_g__HandleDidChangeLanguage_29_0(
         &mut self,
         language: crate::BGLib::Polyglot::LocalizationLanguage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -525,13 +554,13 @@ impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(
-                        "<ShowSelectLanguageViewControllerAsync>g__HandleDidChangeLanguage|28_0",
+                        "<ShowSelectLanguageViewControllerAsync>g__HandleDidChangeLanguage|29_0",
                     )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<ShowSelectLanguageViewControllerAsync>g__HandleDidChangeLanguage|28_0",
+                            "<ShowSelectLanguageViewControllerAsync>g__HandleDidChangeLanguage|29_0",
                             1usize
                         )
                     })
